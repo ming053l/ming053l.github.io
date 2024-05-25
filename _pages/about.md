@@ -41,7 +41,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 # 🔥 News
 
 
-- *2024/05/23*: &nbsp;🎉🎉 I receive the top3% runner-up (After 小米Xiaomi、快手Kuaishou) in Image Super-resolution (x4) Challange, in conjuncted with CVPR 2024 (NTIRE workshop). 
+- *2024/05/25*: &nbsp;🎉🎉 I receive the top3% ranking (After 小米Xiaomi、快手Kuaishou) in Image Super-resolution (x4) Challange, in conjuncted with CVPR 2024 (NTIRE workshop). 
 - *2024/05/21*: &nbsp;🎉🎉 Two paper are accepted by MIPR 2024 (Acceptance rate: 19.5%).
 - *2024/05/15*: &nbsp;🎉🎉 I receive the 3rd place in SMP Challenge in ACMMM 2024! 
 - *2024/04/11*: &nbsp;🎉🎉 Two paper are accepted by CVPRW 2024, see you in Seattle! 
