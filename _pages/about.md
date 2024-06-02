@@ -81,7 +81,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Ch
 
 **CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
 
-Submitted to IEEE Transactions on Geoscience and Remote Sensing
+Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS)
 
 Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 
@@ -98,7 +98,7 @@ Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 
 **GRACE: Graph-Regularized Attentive Convolutional Entanglement with Laplacian Smoothing for Robust DeepFake Video Detection**
 
-Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence
+Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 
 Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Yi-Shiuan Chou
 
@@ -204,7 +204,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 
 **Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat**
 
-IEEE Transactions on Geoscience and Remote Sensing (IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering)
+IEEE Transactions on Geoscience and Remote Sensing (TGRS, IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering)
 
 Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
 
@@ -245,7 +245,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 
 **Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach**
 
-ACM International Conference on Multimedia at Asia, Tainan, Taiwan
+ACM International Conference on Multimedia at Asia (MMAsia2024)
 
 Chih-Chung Hsu, Wen-Hai Tseng, Ming-Husan Wu, **Chia-Ming Lee** and Wei-Hao Huang
 
@@ -263,7 +263,7 @@ Chih-Chung Hsu, Wen-Hai Tseng, Ming-Husan Wu, **Chia-Ming Lee** and Wei-Hao Huan
 
 **Gradient Boost Tree Network based on Extensive Feature Analysis for Popularity Prediction of Social Posts**
 
-ACM International Conference on Multimedia (ACMMM2023), Ottawa, Canada
+ACM International Conference on Multimedia (ACMMM2023)
 
 Chih-Chung Hsu, **Chia-Ming Lee**, Xiu-Yu Hou and Chi-Han Tsai
 
@@ -280,7 +280,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Xiu-Yu Hou and Chi-Han Tsai
 
 **Bag of Tricks of Hybrid Network for Covid-19 Detection of CT Scans**
 
-IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP2023), Rhodes Island, Greece
+IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP2023)
 
 Chih-Chung Hsu, Chih-Yu Jian, **Chia-Ming Lee**, Chi-Han Tsai, Shen-Chieh Tai
 
@@ -319,11 +319,12 @@ Chih-Chung Hsu, Chih-Yu Jian, **Chia-Ming Lee**, Chi-Han Tsai, Shen-Chieh Tai
 - *2023.09 - (now)*, M.S. National Cheng Kung University (NCKU), the Institute of Data Science, Taiwan. 
 - *2019.09 - 2023.06*, B.S. Fu Jen Catholic University (FJCU), the Department of Statistics and Information Science, Taiwan.
   
-# 💼 Academic Services
+# 🚀 Academic Services
 
-- *2024.05*, Experiences on Competitions and Challenges in International Conference, National Taiwan University of Science and Technology (NTUST)
+- *Keynote Speaker*, Experiences on Competitions and Challenges, National Taiwan University of Science and Technology (NTUST)
 
 - *Conference paper Reviewer*, CVPR2024
+- *Workshop paper Reviewer*, AICITY2024, NTIRE2024
 
 # 🗺️ Visitor Map
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=54e0ojatafc&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
