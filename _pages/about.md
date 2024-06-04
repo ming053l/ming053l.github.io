@@ -326,7 +326,7 @@ Chih-Chung Hsu, Chih-Yu Jian, **Chia-Ming Lee**, Chi-Han Tsai, Shen-Chieh Tai
 - *Conference paper Reviewer*, CVPR2024
 - *Workshop paper Reviewer*, AICITY2024, NTIRE2024
 
-- *Teaching Assistant*,
+- *Teaching Assistant*, in National Cheng Kung University (NCKU)
   
    [112-Spring]: Fundamental and Applications of Geneartive AI (CSIE4037)
   
