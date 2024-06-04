@@ -329,8 +329,11 @@ Chih-Chung Hsu, Chih-Yu Jian, **Chia-Ming Lee**, Chi-Han Tsai, Shen-Chieh Tai
 - *Teaching Assistant*, in National Cheng Kung University (NCKU)
   
 *2024-Spring*: Fundamental and Applications of Geneartive AI (CSIE4037)
+
 *2024-Spring*: Deep Learning (DS6016)
+
 *2023-Fall*: Programming Language (STAT6060)
+
 *2023-Fall*: Statistical methods for Analysis with Missing data (STAT2004)
 
 # 🗺️ Visitor Map
