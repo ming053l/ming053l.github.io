@@ -114,7 +114,8 @@ Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Y
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**DRCT: Saving Image Super-Resolution away from Information Bottleneck**
+**DRCT: Saving Image Super-Resolution away from Information Bottleneck** <img alt="Stars" src="https://img.shields.io/github/stars/ming053l/DRCT">
+
 
 IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop
 
