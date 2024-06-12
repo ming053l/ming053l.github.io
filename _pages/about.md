@@ -41,6 +41,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 # 🔥 News
 
 
+- *2024/06/12*: &nbsp;🎉🎉 Our paper 'DRCT' is selected for Oral Presentation!
 - *2024/06/06*: &nbsp;🎉🎉 I receive the Top Performance Award in ACMMM 2024 (Social Media Prediction Challenge)!
 - *2024/05/25*: &nbsp;🎉🎉 I receive the top3% ranking (after Xiaomi, Kuaishou corp.) in SISR Challenge, CVPR 2024 (NTIRE workshop). 
 - *2024/05/21*: &nbsp;🎉🎉 Two paper are accepted by MIPR 2024 (Acceptance rate: 19.5%).
