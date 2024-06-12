@@ -117,7 +117,7 @@ Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Y
 **DRCT: Saving Image Super-Resolution away from Information Bottleneck** 
 
 
-IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop
+IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop  <font color="red">[Oral]</font>
 
 Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
 
