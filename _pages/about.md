@@ -118,6 +118,7 @@ Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Y
 **DRCT: Saving Image Super-Resolution away from Information Bottleneck** 
 
 
+
 IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop  <font color="red">[Oral]</font>
 
 Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
@@ -131,6 +132,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
       <a href="https://github.com/ming053l/DRCT" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
       <a href="https://allproj002.github.io/drct.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project page</a>
       <a href="https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Poster</a>
+      <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing&ouid=105932000013245886245&rtpof=true&sd=true" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slide</a>
   </div>
 
 </div>
