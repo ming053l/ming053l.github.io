@@ -63,7 +63,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Revisiting CLIP-Features for Learning Multi-Modal Representations from Social Posts**
+**Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction**
 
 Submitted to ACM International Conference on Multimedia (ACMMM2024)
 
@@ -82,7 +82,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Ch
 
 **CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
 
-Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS)
+Submitted to IEEE Transactions on Image Processing (TIP)
 
 Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 
@@ -140,23 +140,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIP2024</div><img src='images/ICIP.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Divide and Conquer: Grounding the Bleeding Areas with Two-Stage Model**
-
-IEEE International Conference on Image Processing (ICIP2024)
-
-Chih-Chung Hsu, Yu-Fan Lin, **Chia-Ming Lee**, Bo-Cheng Chiu
-
-**Keywords**
-- Multi-task Learning
-- Medical Image
-  <div class="links">
-      <a href="https://github.com/VanLinLin/Auto-WCEBleedGen-Challenge-Version-V2" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-</div>
-</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/4SFL.png' alt="sym" width="100%"></div></div>
