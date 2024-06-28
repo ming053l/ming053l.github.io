@@ -165,23 +165,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yang Fan Chiang, Yi-Shiuan Chou, Chih-Yu Jian
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to CVPRW</div><img src='images/pfatsne3.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-**Progressive Alignment with VLM-LLM Feature to Augment Defect Classification for the ASE Dataset**
-
-Submitted to IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), Multimodal Learning and Applications (MLA) Workshop
-
-Chih-Chung Hsu, **Chia-Ming Lee**
-
-**Keywords**
-- Feature Alignment
-- Vision-Language Model
-- Large-Lauguage Model
-- Defect Classification
-
-</div>
-</div>
 
 
 
