@@ -77,7 +77,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Ch
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS2024</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIP2024</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
