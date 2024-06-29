@@ -92,7 +92,6 @@ Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 - Image Pan-sharping
   
   <div class="links">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10474407" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">IEEE Xplore</a>
       <a href="https://github.com/ming053l/CSAKD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
   </div>
 </div>
