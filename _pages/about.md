@@ -95,7 +95,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction**
