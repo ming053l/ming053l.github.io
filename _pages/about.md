@@ -130,6 +130,11 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Ch
 - Vision-Language Model 
 - Social Media Analysis
 
+  <div class="links">
+      <a href="https://arxiv.org/pdf/2407.00556.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://arxiv.org/abs/2407.00556" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+  
 </div>
 </div>
 
@@ -149,6 +154,8 @@ Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 - Image Pan-sharping
   
   <div class="links">
+      <a href="https://arxiv.org/pdf/2406.19666.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://arxiv.org/abs/2406.19666" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
       <a href="https://github.com/ming053l/CSAKD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
   </div>
 </div>
@@ -170,6 +177,8 @@ Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Y
 - Forgery Detection
   
   <div class="links">
+      <a href="https://arxiv.org/pdf/2406.19941.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://arxiv.org/abs/2406.19941" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
       <a href="https://github.com/ming053l/GRACE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
   </div>
   
