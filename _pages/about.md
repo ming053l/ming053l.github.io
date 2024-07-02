@@ -22,7 +22,7 @@ redirect_from:
 # 🧍‍♂️ Biography
 
 
-I am currently a M.S. student with the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> at the Institute of Data Science, National Cheng Kung University (NCKU), Tainan, Taiwan. I am a passionate computer vision and deep learning researcher. I am fortunate to be advised by and work with Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a> (NCKU).
+I am currently a M.S. student with the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> at the Institute of Data Science, National Cheng Kung University (NCKU), Tainan, Taiwan. I am a passionate computer vision and deep learning researcher. I am fortunate to be advised by and work with Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a> (NCKU). I am
 
 I received a B.S. degree at the Department of Statistics and Information Science, Fu Jen Catholic University (FJCU), Taiwan, in 2023. I was advised by Prof. Hao-Chiang Shao.
 
@@ -59,6 +59,63 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 - *2023/4/15*: &nbsp;🎉🎉 One paper is accepted by ICASSP 2023.
 
 # 📝 Selected Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**HyFusion: Enhanced Cross-Scale Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
+
+Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Hao Ho, Li-Wei Kang
+
+**Keywords**
+
+- Hyperspectral Image Fusion
+- Image Super-resolution
+  
+  <div class="links">
+      <a href="https://github.com/ming053l/HyFusion" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
+  </div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
+
+Chih-Chung Hsu, **Chia-Ming Lee**
+
+**Keywords**
+
+- Image Super-resolution
+- Non-local Neural Network
+- Fractal Coding
+  
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIP2024</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
+
+Submitted to IEEE Transactions on Image Processing (TIP)
+
+Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
+
+**Keywords**
+- Knowledge Distillation
+- Hyperspectral Image Fusion
+- Image Pan-sharping
+  
+  <div class="links">
+      <a href="https://github.com/ming053l/CSAKD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
+  </div>
+</div>
+</div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
