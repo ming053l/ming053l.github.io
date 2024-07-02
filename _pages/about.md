@@ -60,6 +60,8 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -78,6 +80,9 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Hao Ho, Li-Wei Kang
 </div>
 </div>
 
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -94,26 +99,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIP2024</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
-
-Submitted to IEEE Transactions on Image Processing (TIP)
-
-Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
-
-**Keywords**
-- Knowledge Distillation
-- Hyperspectral Image Fusion
-- Image Pan-sharping
-  
-  <div class="links">
-      <a href="https://github.com/ming053l/CSAKD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-</div>
-</div>
 
 
 
@@ -137,7 +122,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Ch
   
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIP2024</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
