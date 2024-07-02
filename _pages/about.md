@@ -60,7 +60,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **HyFusion: Enhanced Cross-Scale Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
@@ -79,7 +79,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Hao Ho, Li-Wei Kang
 </div>
 </div>
 
-<div class='paper-box'><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
