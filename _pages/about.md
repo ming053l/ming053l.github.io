@@ -26,7 +26,7 @@ I am currently a M.S. student with the <a href="https://sites.google.com/view/ac
 
 I received a B.S. degree at the Department of Statistics and Information Science, Fu Jen Catholic University (FJCU), Taiwan, in 2023. I was advised by Prof. Hao-Chiang Shao.
 
-Find my resume <a href="https://drive.google.com/file/d/1VLU50K4xps7-vwV9hsEFGDTw28EIorcd/view?usp=sharing" target="https://drive.google.com/file/d/1VLU50K4xps7-vwV9hsEFGDTw28EIorcd/view?usp=sharing">here</a> (last updated May 27, 2024).
+Find my resume <a href="https://drive.google.com/file/d/1VLU50K4xps7-vwV9hsEFGDTw28EIorcd/view?usp=sharing" target="https://drive.google.com/file/d/1VLU50K4xps7-vwV9hsEFGDTw28EIorcd/view?usp=sharing">here</a> (last updated Jul 2, 2024).
 
 My research interests include: 
 
@@ -60,9 +60,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **HyFusion: Enhanced Cross-Scale Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
@@ -77,13 +75,11 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Hao Ho, Li-Wei Kang
   <div class="links">
       <a href="https://github.com/ming053l/HyFusion" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
   </div>
+  
 </div>
 </div>
 
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
@@ -98,9 +94,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**
   
 </div>
 </div>
-
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
