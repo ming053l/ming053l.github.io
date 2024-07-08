@@ -74,7 +74,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
