@@ -59,12 +59,27 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**HyFusion: Enhanced Cross-Scale Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
+**PromptHSI: Hyperspectral Image Restoration with Text Prompt Guidance**
 
-Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Hao Ho, Li-Wei Kang
+**Chia-Ming Lee**, Ching-Heng Cheng, Chih-Chung Hsu
+
+**Keywords**
+
+- Hyperspectral Image Restoration
+- All-in-One Image Restoration
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
+
+Chih-Chung Hsu, **Chia-Ming Lee**, Li-Wei Kang
 
 **Keywords**
 
@@ -88,8 +103,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 **Keywords**
 
 - Image Super-resolution
-- Non-local Neural Network
-- Fractal Coding
   
 </div>
 </div>
