@@ -59,53 +59,6 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**PromptHSI: Hyperspectral Image Restoration with Text Prompt Guidance**
-
-**Chia-Ming Lee**, Ching-Heng Cheng, Chih-Chung Hsu
-
-**Keywords**
-
-- Hyperspectral Image Restoration
-- All-in-One Image Restoration
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
-
-Chih-Chung Hsu, **Chia-Ming Lee**, Li-Wei Kang
-
-**Keywords**
-
-- Hyperspectral Image Fusion
-- Image Super-resolution
-  
-  <div class="links">
-      <a href="https://github.com/ming053l/HyFusion" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-  
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
-
-Chih-Chung Hsu, **Chia-Ming Lee**
-
-**Keywords**
-
-- Image Super-resolution
-  
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -253,7 +206,55 @@ Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
 </div>
 
 
+# Future Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**PromptHSI: Hyperspectral Image Restoration with Text Prompt Guidance**
+
+**Chia-Ming Lee**, Ching-Heng Cheng, Chih-Chung Hsu
+
+**Keywords**
+
+- Hyperspectral Image Restoration
+- All-in-One Image Restoration
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
+
+Chih-Chung Hsu, **Chia-Ming Lee**, Li-Wei Kang
+
+**Keywords**
+
+- Hyperspectral Image Fusion
+- Image Super-resolution
+  
+  <div class="links">
+      <a href="https://github.com/ming053l/HyFusion" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
+  </div>
+  
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
+
+Chih-Chung Hsu, **Chia-Ming Lee**
+
+**Keywords**
+
+- Image Super-resolution
+  
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
