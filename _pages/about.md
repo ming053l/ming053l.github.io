@@ -40,6 +40,9 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 # 🔥 News
 
 
+- *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024.
+- *2024/07/31*: &nbsp;🎉🎉 Five paper are accepted by CVGIP 2024.
+- *2024/07/21*: &nbsp;🎉🎉 I receive the 1st performance in ICPR 2024 (Beyond Visible Spectrum: AI for Agriculture)!
 - *2024/06/12*: &nbsp;🎉🎉 Our 'DRCT' have been selected for Oral Presentation in CVPR - NTIRE!
 - *2024/06/06*: &nbsp;🎉🎉 I receive the Top Performance Award in ACMMM 2024 (Social Media Prediction Challenge)!
 - *2024/05/25*: &nbsp;🎉🎉 I receive the top3% ranking (after Xiaomi, Kuaishou corp.) in SISR Challenge, CVPR 2024 (NTIRE workshop). 
@@ -257,6 +260,8 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 </div>
 
 # 🎖 Honors and Awards
+
+- *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
 - *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
 - *2024.03*:  9th place (9/288), AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras, IEEE Computer Vision & Pattern Recognition (CVPR). 
 - *2024.03*:  **6th place (6/195)**, NTIRE 2024 Image Super-Resolution (x4), IEEE Computer Vision & Pattern Recognition (CVPR). 
@@ -274,6 +279,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 
 # 💼 Projects
 
+- *2024.7~*: Brake system Defect Detection, Taiwan High Speed Rail.
 - *2024.4~*: Cybersecurity in distributed computing for remote sensing, NVIDIA Taiwan Research.
 - *2024.4~*: AI Enhancing Substrate Manufacturing Yield with Optimized Process Factors, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
 - *2023.2~2024.1* :Substrate Drilling Scatter Plot Defect Detection, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
