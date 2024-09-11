@@ -40,6 +40,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 # 🔥 News
 
 
+- *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
 - *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024, see you in Melbourne! 
 - *2024/07/31*: &nbsp;🎉🎉 Five paper are accepted by CVGIP 2024.
 - *2024/07/21*: &nbsp;🎉🎉 I receive the 1st performance in ICPR 2024 (Beyond Visible Spectrum: AI for Agriculture)!
@@ -293,17 +294,15 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 
 - *Keynote Speaker*, Experiences on Competitions and Challenges, National Taiwan University of Science and Technology (NTUST)
 
-- *Conference paper Reviewer*, CVPR2024
+- *Conference paper Reviewer*, CVPR2024, ICLR2024
+- *Journal paper Reviewer*, TMM, TIFS
 - *Workshop paper Reviewer*, AICITY2024, NTIRE2024
-
 - *Teaching Assistant*, in National Cheng Kung University (NCKU)
   
+*2024-Fall*: Machine Learning (DS6012)
 *2024-Spring*: Fundamental and Applications of Geneartive AI (CSIE4037)
-
 *2024-Spring*: Deep Learning (DS6016)
-
 *2023-Fall*: Programming Language (STAT6060)
-
 *2023-Fall*: Statistical methods for Analysis with Missing data (STAT2004)
 
 # 🗺️ Visitor Map
