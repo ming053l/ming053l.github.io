@@ -39,7 +39,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 🔥 News
 
-
+- *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards. <a href="link" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">here</a>
 - *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
 - *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024, see you in Melbourne! 
 - *2024/07/31*: &nbsp;🎉🎉 Five paper are accepted by CVGIP 2024.
@@ -217,15 +217,33 @@ Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
 
 **PromptHSI: Hyperspectral Image Restoration with Text Prompt Guidance**
 
-**Chia-Ming Lee**, Ching-Heng Cheng, Chih-Chung Hsu
+**Chia-Ming Lee**, Ching-Heng Cheng, Yu-Fan Lin, Yi-Jhing Zheng, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
 
 **Keywords**
 
 - Hyperspectral Image Restoration
 - All-in-One Image Restoration
+- Prompt Learning
 
 </div>
 </div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/DGA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Learning Dynamic Grapher for Robust Hyperspectral Image Fusion**
+
+**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Chung Hsu
+
+**Keywords**
+
+- Robust Hyperspectral Image Restoration
+- Graph Neural Network
+
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
