@@ -304,7 +304,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**
 
 - *Keynote Speaker*, Experiences on Competitions and Challenges, National Taiwan University of Science and Technology (NTUST)
 
-- *Conference paper Reviewer*, CVPR2024, ICLR2024
+- *Conference paper Reviewer*, CVPR2024, ICLR2025
 - *Journal paper Reviewer*, TMM, TIFS
 - *Workshop paper Reviewer*, AICITY2024, NTIRE2024
 - *Teaching Assistant*, in National Cheng Kung University (NCKU)
