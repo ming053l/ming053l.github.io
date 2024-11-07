@@ -65,7 +65,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI5.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **PromptHSI: Universal Hyperspectral Image Restoration Framework for Composite Degradation**
