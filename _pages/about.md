@@ -61,7 +61,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 - *2023/10/2*: &nbsp;🎉🎉 I receive the Jury Prize in ICCV 2023 (Visual Inducitve Priors Workshop).
 - *2023/8/1*: &nbsp;🎉🎉 Two paper are accepted by CVGIP 2023.
 - *2023/7/13*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2023.
-- *2023/4/15*: &nbsp;🎉🎉 One paper is accepted by ICASSP 2023.
+- *2023/4/15*: &nbsp;🎉🎉 One paper is accepted by ICASSP 2023 (AI-enabled Medical Image Analysis Workshop).
 
 # 📝 Selected Publications 
 
