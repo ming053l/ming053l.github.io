@@ -70,7 +70,8 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 **PromptHSI: Universal Hyperspectral Image Restoration Framework for Composite Degradation**
 
-**Chia-Ming Lee**, Ching-Heng Cheng, Yu-Fan Lin, Yi-Ching Cheng, Wo-Ting Liao, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
+**Chia-Ming Lee**, Ching-Heng Cheng, Yu-Fan Lin, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
+
 
 **Keywords**
 
@@ -87,7 +88,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
   
 **RobustDGA: Generalized Hyperspectral Image Fusion via High Frequency Information Sharing and Compensation**
 
-**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Fu-En Yang, Yu-Chiang Frank Wang
+**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
 
 **Keywords**
 
@@ -98,7 +99,6 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 </div>
 </div>
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -106,7 +106,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 ACM International Conference on Multimedia (ACMMM2024)
 
-Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Chi-Han Tsai
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Chi-Han Tsai
 
 **Keywords**
 - Vision-Language Model 
@@ -127,7 +127,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Ch
 
 Submitted to IEEE Transactions on Image Processing (TIP)
 
-Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 
 **Keywords**
 - Knowledge Distillation
@@ -149,7 +149,7 @@ Chih-Chung Hsu, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
 
 Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 
-Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Yi-Shiuan Chou
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Yi-Shiuan Chou
 
 **Keywords**
 - Adversarial Attack
@@ -173,7 +173,7 @@ Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Y
 
 IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop  <font color="red">[Oral]</font>
 
-Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Yi-Shiuan Chou
 
 **Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/ming053l/DRCT">
 - Image Super-resolution
@@ -197,7 +197,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
 
 IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), Domain adaptation, Explainability, Fairness in AI for Medical Image Analysis (DEF-AI-MIA) Workshop
 
-Chih-Chung Hsu, **Chia-Ming Lee**, Yang Fan Chiang, Yi-Shiuan Chou, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Yang Fan Chiang, Yi-Shiuan Chou, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai
 
 **Keywords**
 - Semi-supervised learning
@@ -220,7 +220,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yang Fan Chiang, Yi-Shiuan Chou, Chih-Yu Jian
 
 IEEE Transactions on Geoscience and Remote Sensing (TGRS, IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering)
 
-Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee**, Guan-Lin Chen
 
 **Keywords**
 - Hypersepctral Image
@@ -243,7 +243,7 @@ Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
   
 **HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
 
-Chih-Chung Hsu, **Chia-Ming Lee**, Li-Wei Kang
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
 
 **Keywords**
 
@@ -262,7 +262,7 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Li-Wei Kang
 
 **GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
 
-Chih-Chung Hsu, **Chia-Ming Lee**
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**
 
 **Keywords**
 
