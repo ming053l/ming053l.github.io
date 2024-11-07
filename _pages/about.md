@@ -87,7 +87,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
   
 **RobustDGA: Generalized Hyperspectral Image Fusion via High Frequency Information Sharing and Compensation**
 
-**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
+**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Fu-En Yang, Yu-Chiang Frank Wang
 
 **Keywords**
 
