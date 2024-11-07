@@ -43,7 +43,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 - *2024/11/4*: &nbsp;🎉🎉 One paper are accepted by ICCE 2025.
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 - *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
-- *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024, see you in Melbourne! 
+- *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024.
 - *2024/07/31*: &nbsp;🎉🎉 Five paper are accepted by CVGIP 2024.
 - *2024/07/21*: &nbsp;🎉🎉 I receive the 1st performance in ICPR 2024 (Beyond Visible Spectrum: AI for Agriculture)!
 - *2024/06/12*: &nbsp;🎉🎉 Our 'DRCT' have been selected for Oral Presentation in CVPR - NTIRE!
