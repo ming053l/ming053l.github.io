@@ -127,7 +127,7 @@ ACM International Conference on Multimedia (ACMMM2024)
 
 Submitted to IEEE Transactions on Image Processing (TIP)
 
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Chien Ni, **Chia-Ming Lee**, Li-Wei Kang
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Chien Ni, **Chia-Ming Lee**, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
 
 **Keywords**
 - Knowledge Distillation
