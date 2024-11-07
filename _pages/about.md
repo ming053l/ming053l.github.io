@@ -65,13 +65,12 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv2024</div></div><img src='images/promptHSI5.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv2024</div><img src='images/promptHSI5.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **PromptHSI: Universal Hyperspectral Image Restoration Framework for Composite Degradation**
 
 **Chia-Ming Lee**, Ching-Heng Cheng, Yu-Fan Lin, Yi-Ching Cheng, Wo-Ting Liao, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
-
 
 **Keywords**
 
