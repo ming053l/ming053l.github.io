@@ -39,6 +39,8 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 🔥 News
 
+- *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
+- *2024/11/4*: &nbsp;🎉🎉 One paper are accepted by ICCE 2025.
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 - *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
 - *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024, see you in Melbourne! 
@@ -63,13 +65,51 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 
 # 📝 Selected Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**PromptHSI: Universal Hyperspectral Image Restoration Framework for Composite Degradation**
+
+**Chia-Ming Lee**, Ching-Heng Cheng, Yu-Fan Lin, Yi-Ching Cheng, Wo-Ting Liao, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
+
+
+**Keywords**
+
+- Hyperspectral Image Restoration
+- All-in-One Image Restoration
+- Text Prompt Learning
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/DGA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+**RobustDGA: Generalized Hyperspectral Image Fusion via High Frequency Information Sharing and Compensation**
+
+**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
+
+**Keywords**
+
+- Hyperspectral Image Restoration
+- Robust Hyperspectral Image Fusion
+- Graph Neural Network
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction**
 
-Submitted to ACM International Conference on Multimedia (ACMMM2024)
+ACM International Conference on Multimedia (ACMMM2024)
 
 Chih-Chung Hsu, **Chia-Ming Lee**, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Yu Jiang, Chi-Han Tsai
 
@@ -136,8 +176,6 @@ Chih-Chung Hsu, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, Y
 
 **DRCT: Saving Image Super-Resolution away from Information Bottleneck** 
 
-
-
 IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop  <font color="red">[Oral]</font>
 
 Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
@@ -156,10 +194,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yi-Shiuan Chou
 
 </div>
 </div>
-
-
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/4SFL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -183,10 +217,6 @@ Chih-Chung Hsu, **Chia-Ming Lee**, Yang Fan Chiang, Yi-Shiuan Chou, Chih-Yu Jian
   </div>
 </div>
 </div>
-
-
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS2024</div><img src='images/RTCS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -212,41 +242,7 @@ Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
 
 # Future Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/promptHSI.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-**PromptHSI: Hyperspectral Image Restoration with Text Prompt Guidance**
-
-**Chia-Ming Lee**, Ching-Heng Cheng, Yu-Fan Lin, Yi-Jhing Zheng, Chih-Chung Hsu, Fu-En Yang, Yu-Chiang Frank Wang
-
-**Keywords**
-
-- Hyperspectral Image Restoration
-- All-in-One Image Restoration
-- Prompt Learning
-
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/DGA.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Learning Dynamic Grapher for Robust Hyperspectral Image Fusion**
-
-**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, Yu-Fan Lin, Yi-Shiuan Chou, Chih-Chung Hsu
-
-**Keywords**
-
-- Robust Hyperspectral Image Restoration
-- Graph Neural Network
-
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
 **HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
 
