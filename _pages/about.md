@@ -239,7 +239,9 @@ Chih-Chung Hsu, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee** and Guan-Lin Chen
 # Future Publications 
 
 
-
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
 **HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
 
 Chih-Chung Hsu, **Chia-Ming Lee**, Li-Wei Kang
