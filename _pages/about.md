@@ -33,14 +33,12 @@ My research interests include:
 - **Multi-Media Information Security**
 - **Multi-Modal Learning and Modeling**
   
-I am also exploring other computer vision-related fields which are interested to me, such as Multi-Object Tracking, 3D-scene Reconstruction. I am actively seeking a collaboration. 
-
-In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and traveling🌐, welcome to talk about that with me if you have the same hobbyXD.
+I am also exploring other computer vision-related fields which are interested to me, such as Trustworthy/Efficient AI.
 
 # 🔥 News
 
 - *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
-- *2024/11/4*: &nbsp;🎉🎉 One paper are accepted by ICCE 2025.
+- *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025, See you in Las Vegas!
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 - *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
 - *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024.
@@ -55,7 +53,7 @@ In addition, I also enjoy fishing🐬, boxing🥊, cooking🍲, baking🍞 and t
 - *2024/03/13*: &nbsp;🎉🎉 One paper is accepted by TGRS (IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering).
 - *2024/03/06*: &nbsp;🎉🎉 I receive the 2nd Position in the Auto-WCEBleedGen Challenge Version V2, in conjunted with ICIP 2024.
 - *2023/11/25*: &nbsp;🎉🎉 I receive the Gold Medal Award in SAS Hackthon 2023.
-- *2023/11/23*: &nbsp;🎉🎉 I am the Ministry of Education Presidential Education Award (總統教育獎) Candicate in NCKU.
+- *2023/11/23*: &nbsp;🎉🎉 I am the Ministry of Education Presidential Education Award (總統教育獎) Candidate in NCKU.
 - *2023/10/31*: &nbsp;🎉🎉 I receive the Top Paper Award in ACMMM 2023 (Social Media Prediction Challenge).
 - *2023/10/17*: &nbsp;🎉🎉 One paper is accepted by MMAsia 2023.
 - *2023/10/2*: &nbsp;🎉🎉 I receive the Jury Prize in ICCV 2023 (Visual Inducitve Priors Workshop).
@@ -120,14 +118,14 @@ ACM International Conference on Multimedia (ACMMM2024)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIP2024</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
 
-Submitted to IEEE Transactions on Image Processing (TIP)
+Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS)
 
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Chien Ni, **Chia-Ming Lee**, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Chih-Chien Ni, Yu-Fan Lin, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
 
 **Keywords**
 - Knowledge Distillation
@@ -218,7 +216,7 @@ IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), Domain a
 
 **Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat**
 
-IEEE Transactions on Geoscience and Remote Sensing (TGRS, IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering)
+IEEE Transactions on Geoscience and Remote Sensing
 
 <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee**, Guan-Lin Chen
 
@@ -234,42 +232,6 @@ IEEE Transactions on Geoscience and Remote Sensing (TGRS, IF: 8.2, Rank 29/1409=
 </div>
 </div>
 
-
-# Future Publications 
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/hyfusion.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-**HyFusion: Enhanced Reception Field Transformer for Hyperspectral and Multispectral Image Fusion**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
-
-**Keywords**
-
-- Hyperspectral Image Fusion
-- Image Super-resolution
-  
-  <div class="links">
-      <a href="https://github.com/ming053l/HyFusion" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-  
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/FratalCoding.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**GLARE: Global-Local Window Attention Refinement for Image Super-resolution**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**
-
-**Keywords**
-
-- Image Super-resolution
-  
-</div>
-</div>
 
 # 🎖 Honors and Awards
 
@@ -316,5 +278,4 @@ IEEE Transactions on Geoscience and Remote Sensing (TGRS, IF: 8.2, Rank 29/1409=
 *2023-Fall*: Programming Language (STAT6060)
 *2023-Fall*: Statistical methods for Analysis with Missing data (STAT2004)
 
-# 🗺️ Visitor Map
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=54e0ojatafc&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+
