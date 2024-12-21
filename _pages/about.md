@@ -73,9 +73,9 @@ I am also exploring other computer vision-related fields which are interested to
 
 **Keywords**
 
-- Image Super-Resolution
+- Efficient Image Super-Resolution
 - Fractal Coding for Image Compression
-- Model Quantization
+- Network Compression and Quantization
   
   <div class="links">
       <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
