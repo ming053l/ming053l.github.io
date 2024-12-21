@@ -68,7 +68,7 @@ I am also exploring other computer vision-related fields which are interested to
   
 **Towards Ultra Low-bit Quantization with Fractal Compression Prior for Image Super-resolution Network**
 
-**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
+**Chia-Ming Lee**, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
 
 
 **Keywords**
@@ -78,7 +78,7 @@ I am also exploring other computer vision-related fields which are interested to
 - Model Quantization
   
   <div class="links">
-      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
   </div>
 </div>
 </div>
@@ -97,7 +97,7 @@ I am also exploring other computer vision-related fields which are interested to
 - Fractal Coding for Image Compression
   
   <div class="links">
-      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
   </div>
 </div>
 </div>
