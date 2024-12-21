@@ -63,7 +63,47 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv2024</div><img src='images/promptHSI5.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FracQuantmain.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+**Towards Ultra Low-bit Quantization with Fractal Compression Prior for Image Super-resolution Network**
+
+**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
+
+
+**Keywords**
+
+- Image Super-Resolution
+- Fractal Coding for Image Compression
+- Model Quantization
+  
+  <div class="links">
+      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**FLARE: Fractal Local Attention Refinement for Image Super-Resolution**
+
+**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
+**Keywords**
+
+- Efficient Image Super-Resolution
+- Fractal Coding for Image Compression
+  
+  <div class="links">
+      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to CVPR25</div><img src='images/promptHSI5.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **PromptHSI: Universal Hyperspectral Image Restoration Framework for Composite Degradation**
@@ -84,7 +124,7 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv2024</div><img src='images/DGA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to CVPR25</div><img src='images/DGA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **RobustDGA: Generalized Hyperspectral Image Fusion via High Frequency Information Sharing and Compensation**
