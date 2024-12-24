@@ -277,15 +277,16 @@ IEEE Transactions on Geoscience and Remote Sensing
 </div>
 </div>
 
-
+Maritime Computer Vision
 # 🎖 Honors and Awards
 
+- *2024.12*:  **Runner-up**, USV-based Embedded Obstacle Segmentation Challenge, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
 - *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
 - *2024.03*:  9th place (9/288), AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras, IEEE Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **6th place (6/195)**, NTIRE 2024 Image Super-Resolution (x4), IEEE Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **3rd place (3/21)**, COVID-19 Detection Challange, Domain adaptation, Explainability and Fairness in AI for Medical Image Analysis, IEEE Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **2nd place (2/1200+)**, Auto-WCEBleedGen Challenge Version V2, IEEE International Conference on Image Processing (ICIP).
+- *2024.03*:  **6th place (6/195)**, NTIRE 2024 Image Super-Resolution (x4), IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
+- *2024.03*:  **3rd place (3/21)**, COVID-19 Detection Challange, Domain adaptation, Explainability and Fairness in AI for Medical Image Analysis, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
+- *2024.03*:  **Runner-up (2/1200+)**, Auto-WCEBleedGen Challenge Version V2, IEEE International Conference on Image Processing (ICIP).
 - *2024.01*:  **(?/8) Ministry of Education Presidential Education Award Candicate in NCKU**.
 - *2024.01*:  6th place (6/195), SeaDroneSee Multi-Object Tracking and Re-Identification Challenge, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Workshop on Maritime Computer Vision (MaCVi).
 - *2023.12*:  **2nd place (2/129)**, Embedded AI Object Detection Model Design, PAIR-LITEON Competition, ACM International Conference on Multimedia Asia (MMAsia).
