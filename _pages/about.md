@@ -37,7 +37,7 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
-- *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025 (Maritime Computer Vision Workshop).
+- *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
 - *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
 - *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
 - *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025, See you in Las Vegas!
