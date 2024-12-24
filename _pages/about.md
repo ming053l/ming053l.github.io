@@ -280,10 +280,10 @@ IEEE Transactions on Geoscience and Remote Sensing
 </div>
 </div>
 
-Maritime Computer Vision
+
 # 🎖 Honors and Awards
 
-- *2024.12*:  **Runner-up**, USV-based Embedded Obstacle Segmentation Challenge, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
+- *2024.12*:  **Runner-up**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
 - *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
 - *2024.03*:  9th place (9/288), AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras, IEEE Computer Vision & Pattern Recognition (CVPR). 
