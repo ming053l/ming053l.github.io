@@ -37,6 +37,8 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
+- *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025 (Maritime Computer Vision Workshop).
+- *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
 - *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
 - *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025, See you in Las Vegas!
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
@@ -308,17 +310,29 @@ IEEE Transactions on Geoscience and Remote Sensing
   
 # 🚀 Academic Services
 
-- *Keynote Speaker*, Experiences on Competitions and Challenges, National Taiwan University of Science and Technology (NTUST)
+### 🗣️ Invited Talk
+- **Keynote Speaker**  
+  *Experiences on Competitions and Challenges*, National Taiwan University of Science and Technology (NTUST) (Invited by Prof. <a href="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN" target="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN">Tse-Yu Pan</a>)
 
-- *Conference paper Reviewer*, CVPR2024, ICLR2025
-- *Journal paper Reviewer*, TMM, TIFS
-- *Workshop paper Reviewer*, AICITY2024, NTIRE2024
-- *Teaching Assistant*, in National Cheng Kung University (NCKU)
-  
-- *2024-Fall*: Machine Learning (DS6012)
-- *2024-Spring*: Fundamental and Applications of Geneartive AI (CSIE4037)
-- *2024-Spring*: Deep Learning (DS6016)
-- *2023-Fall*: Programming Language (STAT6060)
-- *2023-Fall*: Statistical methods for Analysis with Missing data (STAT2004)
+### 📝 Reviewer Roles
+- **Conference Papers**  
+  - The Fourtyfisrt IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2024).
+  - The Thirteenth International Conference on Learning Representations (ICLR2025). 
+- **Journal Papers**  
+  - *IEEE Transactions on Multimedia (TMM)*  
+  - *IEEE Transactions on Information Forensics and Security (TIFS)*  
+  - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*  
+- **Workshop Papers**  
+  - The 8th AI City Challenge Workshop (AI-City2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
+  - New Trends in Image Restoration and Enhancement Workshop (NTIRE2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
 
+### 🎓 Teaching Experience  
+- **National Cheng Kung University (NCKU)**  
+  - **2024 Fall**: Machine Learning (*DS6012*)  
+  - **2024 Spring**:  
+    - Fundamental and Applications of Generative AI (*CSIE4037*)  
+    - Deep Learning (*DS6016*)  
+  - **2023 Fall**:  
+    - Programming Language (*STAT6060*)  
+    - Statistical Methods for Analysis with Missing Data (*STAT2004*)  
 
