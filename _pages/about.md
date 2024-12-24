@@ -138,7 +138,10 @@ I am also exploring other computer vision-related fields which are interested to
 - Hyperspectral Image Restoration
 - Robust Hyperspectral Image Fusion
 - Graph Neural Network
-
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
 </div>
 </div>
 
@@ -304,10 +307,6 @@ Maritime Computer Vision
 - *2024.4~*: AI Enhancing Substrate Manufacturing Yield with Optimized Process Factors, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
 - *2023.2~2024.1* :Substrate Drilling Scatter Plot Defect Detection, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
 - *2022.6~2022.12*: A Large Scale Whitebait Dataset for Long-tailed Distribution Image Classification and Domain Adaptation, Department of Statistic and Information Science, Fu Jen Catholic University. (Joint-project with Institute of Fisheries Science, National Taiwan University)
-
-# 📖 Educations
-- *2023.09 - (now)*, M.S. National Cheng Kung University (NCKU), the Institute of Data Science, Taiwan. 
-- *2019.09 - 2023.06*, B.S. Fu Jen Catholic University (FJCU), the Department of Statistics and Information Science, Taiwan.
   
 # 🚀 Academic Services
 
