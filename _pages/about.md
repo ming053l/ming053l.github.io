@@ -314,7 +314,7 @@ IEEE Transactions on Geoscience and Remote Sensing
 - **Keynote Speaker**  
   *Experiences on Competitions and Challenges*, National Taiwan University of Science and Technology (NTUST) (Invited by Prof. <a href="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN" target="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN">Tse-Yu Pan</a>)
 
-### 📝 Reviewer Roles
+### 📝 Reviewer
 - **Conference Papers**  
   - The Fourtyfisrt IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2024).
   - The Thirteenth International Conference on Learning Representations (ICLR2025). 
