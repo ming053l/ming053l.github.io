@@ -65,6 +65,27 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 📝 Selected Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/HyFusionhp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+**HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion**
+
+**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Hao Ho, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
+
+**Keywords**
+
+- Efficient Hyperspectral Image Fusion
+- Image Pan-sharping
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FracQuantmain.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
