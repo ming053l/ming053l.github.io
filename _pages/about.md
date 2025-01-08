@@ -75,9 +75,10 @@ I am also exploring other computer vision-related fields which are interested to
 
 **Keywords**
 
-- Efficient Hyperspectral Image Fusion
-- Image Pan-sharping
-  
+- Hyperspectral Image Fusion
+- Data Efficiency
+- Reception Field
+
   <div class="links">
       <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
   </div>
