@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Chia-Ming Chris Lee"
-description              : "CV/DL Researcher"
+title                    : "Chia-Ming Lee"
+description              : "I work on computer vision and related problems."
 repository               : "ming053l/ming053l.github.io"
 google_scholar_stats_use_cdn : False
 
