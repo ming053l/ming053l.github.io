@@ -67,7 +67,7 @@ I am also exploring other computer vision-related fields which are interested to
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/S3RNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-**Robust Hyperspectral Image Panshapring via Sparse Spatial-Spectral Representation**
+**Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation**
 
 **Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
 
