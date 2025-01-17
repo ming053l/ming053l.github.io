@@ -21,7 +21,7 @@ redirect_from:
 # 🧍‍♂️ Biography
 
 
-I am currently a M.S. student with the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> at the Institute of Data Science, National Cheng Kung University (NCKU), Tainan, Taiwan. I am a passionate computer vision and deep learning researcher. I am fortunate to be advised by and work with Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a> (NCKU).
+I am currently a M.S. student with the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> at the Institute of Data Science, National Cheng Kung University (NCKU), Tainan, Taiwan. I am fortunate to be advised by and work with Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a> (NCKU).
 
 I received a B.S. degree at the Department of Statistics and Information Science, Fu Jen Catholic University (FJCU), Taiwan, in 2023. I was advised by Prof. Hao-Chiang Shao.
 
@@ -94,7 +94,7 @@ I am also exploring other computer vision-related fields which are interested to
 
 **Keywords**
 
-- Hyperspectral Image Forencis
+- Hyperspectral Image Forensics
 - Adversarial Perturbation
 - Image Forgery Detection
 
