@@ -64,7 +64,7 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/S3RNet' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/S3RNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **Robust Hyperspectral Image Panshapring via Sparse Spatial-Spectral Representation**
