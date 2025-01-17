@@ -31,7 +31,6 @@ My research interests include:
 
 - **Image/Video Processing and Restoration**
 - **Multi-Media Information Security**
-- **Multi-Modal Learning and Modeling**
   
 I am also exploring other computer vision-related fields which are interested to me, such as Trustworthy/Efficient AI.
 
@@ -64,6 +63,49 @@ I am also exploring other computer vision-related fields which are interested to
 - *2023/4/15*: &nbsp;🎉🎉 One paper is accepted by ICASSP 2023 (AI-enabled Medical Image Analysis Workshop).
 
 # 📝 Selected Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/S3RNet' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+**Robust Hyperspectral Image Panshapring via Sparse Spatial-Spectral Representation**
+
+**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
+
+**Keywords**
+
+- Hyperspectral Image Fusion
+- Sparse Representation
+
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/HyForen.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+**HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset**
+
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://www.albany.edu/faculty/mchang2/" target="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a>
+
+**Keywords**
+
+- Hyperspectral Image Forencis
+- Adversarial Perturbation
+- Image Forgery Detection
+
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/HyFusionhpe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
