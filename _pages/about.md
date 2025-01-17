@@ -29,8 +29,8 @@ Find my resume <a href="https://drive.google.com/file/d/1VLU50K4xps7-vwV9hsEFGDT
 
 My research interests include: 
 
-- **Image/Video Processing and Restoration**
-- **Multi-Media Information Security**
+- **Low-level computer vision problems**
+- **Multimedia information security**
   
 I am also exploring other computer vision-related fields which are interested to me, such as Trustworthy/Efficient AI.
 
