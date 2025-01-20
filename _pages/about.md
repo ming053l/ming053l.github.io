@@ -347,7 +347,7 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
-- *2024.12*:  **Runner-up**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
+- *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
 - *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
 - *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
@@ -386,7 +386,8 @@ IEEE Transactions on Geoscience and Remote Sensing
 - **Journal Papers**  
   - *IEEE Transactions on Multimedia (TMM)*  
   - *IEEE Transactions on Information Forensics and Security (TIFS)*  
-  - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*  
+  - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*
+  - *IEEE Geoscience and Remote Sensing Letters (GRSL)*  
 - **Workshop Papers**  
   - The 8th AI City Challenge Workshop (AI-City2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
   - New Trends in Image Restoration and Enhancement Workshop (NTIRE2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
