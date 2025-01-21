@@ -36,10 +36,11 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
+- *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
 - *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
 - *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
 - *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
-- *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025, See you in Las Vegas!
+- *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025.
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 - *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
 - *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024.
