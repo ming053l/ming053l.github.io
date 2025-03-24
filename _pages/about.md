@@ -328,7 +328,11 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 ### 📝 Reviewer
 - **Conference Papers**
-  - CVPR2024, ICLR2025, CVPR2025, ICCV2025, ACMMM2025
+  - The Forty-fisrt IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2024).
+  - The Thirteenth International Conference on Learning Representations (ICLR2025).
+  - The Forty-second IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2025).
+  - The Twentieth IEEE/CVF Conference on Computer Vision and Pattern Recognition (ICCV25).
+  - The Thirty-third ACM International Conference on Multimedia (ACMMM25).
 - **Journal Papers**  
   - *IEEE Transactions on Multimedia (TMM)*  
   - *IEEE Transactions on Information Forensics and Security (TIFS)*  
