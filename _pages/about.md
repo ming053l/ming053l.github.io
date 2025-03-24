@@ -104,7 +104,7 @@ Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TPAMI2025</div><img src='images/GRACE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TPAMI2025</div><img src='images/GRACEv2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Towards Robust DeepFake Detection: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Smoothing**
@@ -241,29 +241,6 @@ ACM International Conference on Multimedia (ACMMM2024)
   
 </div>
 </div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/CSAKD.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**CSAKD: Knowledge Distillation with Cross Self-Attention for Hyperspectral and Multispectral Image Fusion**
-
-Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS)
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Chih-Chien Ni, Yu-Fan Lin, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
-
-**Keywords**
-- Knowledge Distillation
-- Hyperspectral Image Fusion
-- Image Pan-sharping
-  
-  <div class="links">
-      <a href="https://arxiv.org/pdf/2406.19666.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://arxiv.org/abs/2406.19666" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://github.com/ming053l/CSAKD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-</div>
-</div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
