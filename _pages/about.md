@@ -36,6 +36,8 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
+- *2025/3/24*: &nbsp;🎉🎉 I receive the 1st performance in Single image shadow removal Challenge, CVPR 2025 (NTIRE Workshop), see you in Nashvile!
+- *2025/3/15*: &nbsp;🎉🎉 Three paper are accepted by IGARSS 2025, see you in Brisbane!
 - *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
 - *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
 - *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
@@ -65,13 +67,66 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/S3RNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Fractal Refined Transformer: Image Super-Resolution meets Block-level Decomposition and Token Augmentation**
+
+**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
+**Keywords**
+
+- Image Super-Resolution
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IJCV25</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection**
+
+Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="https://www.cs.nthu.edu.tw/~cthsu/candy.html">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="https://www.ee.nthu.edu.tw/cwlin/">Chia-Wen Lin</a>
+
+**Keywords**
+
+- Constrative Learning
+- Multimodality Learning
+- Robust DeepFake Detection
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TPAMI2025</div><img src='images/GRACE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Towards Robust DeepFake Detection: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Smoothing**
+
+Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, **Chia-Ming Lee**, Yi-Fang Wang, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
+
+**Keywords**
+- Adversarial Attack
+- Robust DeepFake Detection
+- Graph Convolution Network
+  
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IGARSS25</div><img src='images/S3RNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation**
 
 **Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
 
 **Keywords**
 
@@ -84,9 +139,7 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 </div>
 
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/HyForen.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IGARSS25</div><img src='images/HyForen.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset**
@@ -106,36 +159,12 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 
 
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IGARSS25</div><img src='images/HyFusionhpe.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FracQuant.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-**HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion**
+**FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization**
 
-**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Hao Ho, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-
-**Keywords**
-
-- Hyperspectral Image Fusion
-- Data Efficiency
-- Reception Field
-
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FracQuantmain.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-**Towards Ultra Low-bit Quantization with Fractal Compression Prior for Image Super-resolution Network**
-
-**Chia-Ming Lee**, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+**Chia-Ming Lee**, Jen-Wei Lee, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
 
 
 **Keywords**
@@ -151,29 +180,11 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/PromptHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**FLARE: Fractal Local Attention Refinement for Image Super-Resolution**
-
-**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Efficient Image Super-Resolution
-- Fractal Coding for Image Compression
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to CVPR25</div><img src='images/promptHSI5.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**PromptHSI: Universal Hyperspectral Image Restoration Framework for Composite Degradation**
+**PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation**
 
 **Chia-Ming Lee**, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
 
@@ -191,10 +202,10 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to CVPR25</div><img src='images/DGA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-**RobustDGA: Generalized Hyperspectral Image Fusion via High Frequency Information Sharing and Compensation**
+**AuroraHSI: Degradation-agnostic Hyperspectral Image Fusion Transformer via Mask-guided Information Sharing and Compensation**
 
 **Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
 
@@ -253,29 +264,6 @@ Submitted to IEEE Transactions on Geoscience and Remote Sensing (TGRS)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TPAMI2024</div><img src='images/GRACE.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**GRACE: Graph-Regularized Attentive Convolutional Entanglement with Laplacian Smoothing for Robust DeepFake Video Detection**
-
-Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, Yi-Fang Wang, **Chia-Ming Lee**, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
-
-**Keywords**
-- Adversarial Attack
-- Robust DeepFake Detection
-- Graph Convolution Network
-- Forgery Detection
-  
-  <div class="links">
-      <a href="https://arxiv.org/pdf/2406.19941.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://arxiv.org/abs/2406.19941" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://github.com/ming053l/GRACE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-  
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -298,29 +286,6 @@ IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Tren
       <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing&ouid=105932000013245886245&rtpof=true&sd=true" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slide</a>
   </div>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/4SFL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**A Closer Look at Spatial-Slice Features for COVID-19 Detection**
-
-IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), Domain adaptation, Explainability, Fairness in AI for Medical Image Analysis (DEF-AI-MIA) Workshop
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Yang Fan Chiang, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai
-
-**Keywords**
-- Semi-supervised learning
-- COVID-19 Recognition
-- Image/Video Processing and Understanding
-
-  <div class="links">
-      <a href="https://arxiv.org/abs/2404.01643.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://arxiv.org/abs/2404.01643" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://github.com/ming053l/E2D" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-      <a href="https://allproj001.github.io/cov19d.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project page</a>
-  </div>
 </div>
 </div>
 
@@ -348,6 +313,7 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
+- *2025.03*:  **Winner (1/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
 - *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
