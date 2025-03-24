@@ -327,9 +327,8 @@ IEEE Transactions on Geoscience and Remote Sensing
   *Experiences on Competitions and Challenges*, National Taiwan University of Science and Technology (NTUST) (Invited by Prof. <a href="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN" target="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN">Tse-Yu Pan</a>)
 
 ### 📝 Reviewer
-- **Conference Papers**  
-  - The Fourtyfisrt IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2024).
-  - The Thirteenth International Conference on Learning Representations (ICLR2025). 
+- **Conference Papers**
+  - CVPR2024, ICLR2025, CVPR2025, ICCV2025, ACMMM2025
 - **Journal Papers**  
   - *IEEE Transactions on Multimedia (TMM)*  
   - *IEEE Transactions on Information Forensics and Security (TIFS)*  
