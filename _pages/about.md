@@ -37,7 +37,7 @@ I am also exploring other computer vision-related fields which are interested to
 # 🔥 News
 
 - *2025/3/24*: &nbsp;🎉🎉 I receive the 1st performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge), see you in Nashvile!
-- *2025/3/15*: &nbsp;🎉🎉 Three paper are accepted by IGARSS 2025, see you in Brisbane!
+- *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025, see you in Brisbane!
 - *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
 - *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
 - *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
