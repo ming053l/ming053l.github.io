@@ -36,7 +36,8 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
-- *2025/3/24*: &nbsp;🎉🎉 I receive the 1st performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge), see you in Nashvile!
+- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge), see you in Nashvile!
+- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge)!
 - *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025, see you in Brisbane!
 - *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
 - *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
@@ -293,7 +294,8 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
-- *2025.03*:  **Winner (1/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
+- *2025.03*:  **Winner (3/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
+- *2025.03*:  **Winner (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
 - *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
