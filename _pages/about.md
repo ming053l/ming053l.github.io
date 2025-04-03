@@ -68,6 +68,28 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 📝 Selected Publications 
 
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/S3RNET_SSAWB_beforeafter.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**S$^{3}$RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening**
+
+<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>,
+
+**Keywords**
+
+- Efficient Hyperspectral Image Pansharpening
+- Robustness and Sparse Representation
+- Network Compression and Knowledge Distillation
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -134,7 +156,7 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 
 **Keywords**
 
-- Hyperspectral Image Fusion
+- Hyperspectral Image Pansharpening
 - Sparse Representation
 
   <div class="links">
@@ -294,8 +316,8 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
-- *2025.03*:  **Winner (3/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2025.03*:  **Winner (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
+- *2025.03*:  **3rd place (3/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
+- *2025.03*:  **3rd place (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
 - *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
