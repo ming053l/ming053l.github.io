@@ -76,6 +76,7 @@ I am also exploring other computer vision-related fields which are interested to
 **DenseSR: Image Shadow Removal as Dense Prediction**
 
 <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
 **Keywords**
 
 - Single Image Shadow Removal
