@@ -70,6 +70,22 @@ I am also exploring other computer vision-related fields which are interested to
 
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/DenseSR' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**DenseSR: Image Shadow Removal as Dense Prediction**
+
+<a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+**Keywords**
+
+- Single Image Shadow Removal
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/S3RNET_SSAWB_beforeafter.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
