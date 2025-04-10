@@ -70,7 +70,7 @@ I am also exploring other computer vision-related fields which are interested to
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **DenseSR: Image Shadow Removal as Dense Prediction**
