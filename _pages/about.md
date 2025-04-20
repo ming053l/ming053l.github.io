@@ -69,6 +69,23 @@ I am also exploring other computer vision-related fields which are interested to
 # 📝 Selected Publications 
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/SSCNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**SSCNet: Factorized Spatial-Spectral Correlation for Efficient Hyperspectral Image Fusion**
+
+**Chia-Ming Lee**, Yo-Hao Ho, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
+**Keywords**
+
+- Efficient Hyperspectral Image Pansharpening
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -87,7 +104,7 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/S3RNET_SSAWB_beforeafter.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/S3RNET_SSAWB_beforeafter.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **S$^{3}$RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening**
