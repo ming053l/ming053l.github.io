@@ -43,8 +43,6 @@ I am also exploring other computer vision-related fields which are interested to
 - *2025/5/30*: &nbsp;🎉🎉 I receive the 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.
 - *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
 - *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
-- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
-- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
 - *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025, see you in Brisbane!
 - *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
 - *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
