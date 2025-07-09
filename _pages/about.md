@@ -36,8 +36,15 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
-- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge), see you in Nashvile!
-- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge)!
+- *2025/7/7*:: &nbsp;🎉🎉 I have successfully defended my Master's Thesis in NCKU!
+- *2025/7/7*:: &nbsp;🎉🎉 I receive the 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge. See you in Honolulu, Hawai!
+- *2025/7/5*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2025. See you in Dublin, Ireland!
+- *2025/6/18*: &nbsp;🎉🎉 I receive the top2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge. 
+- *2025/5/30*: &nbsp;🎉🎉 I receive the 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.
+- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
+- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
+- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
+- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
 - *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025, see you in Brisbane!
 - *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
 - *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
@@ -69,25 +76,9 @@ I am also exploring other computer vision-related fields which are interested to
 # 📝 Selected Publications 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/SSCNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**SSCNet: Factorized Spatial-Spectral Correlation for Efficient Hyperspectral Image Fusion**
-
-**Chia-Ming Lee**, Yo-Hao Ho, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Efficient Hyperspectral Image Pansharpening
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **DenseSR: Image Shadow Removal as Dense Prediction**
@@ -124,7 +115,7 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pending</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Fractal Refined Transformer: Image Super-Resolution meets Block-level Decomposition and Token Augmentation**
@@ -219,7 +210,7 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/FracQuant.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pending</div><img src='images/FracQuant.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization**
@@ -241,7 +232,7 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/PromptHSI.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/PromptHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation**
@@ -262,7 +253,7 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICCV25</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to AAAI26</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **AuroraHSI: Degradation-agnostic Hyperspectral Image Fusion Transformer via Mask-guided Information Sharing and Compensation**
@@ -281,26 +272,6 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM2024</div><img src='images/SMPD24.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction**
-
-ACM International Conference on Multimedia (ACMMM2024)
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Chi-Han Tsai
-
-**Keywords**
-- Vision-Language Model 
-- Social Media Analysis
-
-  <div class="links">
-      <a href="https://arxiv.org/pdf/2407.00556.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://arxiv.org/abs/2407.00556" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-  
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -350,6 +321,9 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
+- *2025.07*:  **Winner**, Multi-source COV19 Detection Challenge, PHAROS Adaptation, Fairness, Explainability in AI Medical Imaging Workshop, IEEE/CVF International Conference on Computer Vision (ICCV) 
+- *2025.06*:  **5th place (5/486)**, Social Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
+- *2025.05*:  **Winner**, TreeScope Tree Diameter Estimation Challenge, IEEE International Conference on Robotics and Automation (ICRA)
 - *2025.03*:  **6th place (6/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2025.03*:  **3rd place (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
@@ -397,11 +371,14 @@ IEEE Transactions on Geoscience and Remote Sensing
   - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*
   - *IEEE Geoscience and Remote Sensing Letters (GRSL)*  
 - **Workshop Papers**  
+  - The 9th AI City Challenge Workshop (AI-City2025), in conjuncted with IEEE/CVF Conference on Computer Vision and Pattern Recognition (ICCV).
   - The 8th AI City Challenge Workshop (AI-City2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
   - New Trends in Image Restoration and Enhancement Workshop (NTIRE2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
 
 ### 🎓 Teaching Experience  
 - **National Cheng Kung University (NCKU)**  
+  - **2025 Spring**:  
+    - Deep Learning (*DS6016*) 
   - **2024 Fall**: Machine Learning (*DS6012*)  
   - **2024 Spring**:  
     - Fundamental and Applications of Generative AI (*CSIE4037*)  
