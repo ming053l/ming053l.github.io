@@ -36,7 +36,7 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
-- *2025/7/15*:: &nbsp;🎉🎉 I receive the 1st performance in ACMMM 2025, SoccerTrack competition@MMSports. See you in Dublin, Ireland!
+- *2025/7/15*:: &nbsp;🎉🎉 I receive the 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports. See you in Dublin, Ireland!
 - *2025/7/7*:: &nbsp;🎉🎉 I have successfully defended my Master's Thesis in NCKU!
 - *2025/7/6*:: &nbsp;🎉🎉 I receive the 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge. See you in Honolulu, Hawai!
 - *2025/7/5*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2025. See you in Dublin, Ireland!
@@ -320,9 +320,10 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
-- *2025.07*:  **Winner**, Multi-source COV19 Detection Challenge, PHAROS Adaptation, Fairness, Explainability in AI Medical Imaging Workshop, IEEE/CVF International Conference on Computer Vision (ICCV) 
+- *2025.07*:  **Winner**, SoccerTrack Challenge, Multimedia Content Analysis in Sports, ACM International Conference on Multimedia (ACMMM). 
+- *2025.07*:  **Winner**, Multi-source COV19 Detection Challenge, PHAROS Adaptation, Fairness, Explainability in AI Medical Imaging Workshop, IEEE/CVF International Conference on Computer Vision (ICCV).
 - *2025.06*:  **5th place (5/486)**, Social Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
-- *2025.05*:  **Winner**, TreeScope Tree Diameter Estimation Challenge, IEEE International Conference on Robotics and Automation (ICRA)
+- *2025.05*:  **Winner**, TreeScope Tree Diameter Estimation Challenge, IEEE International Conference on Robotics and Automation (ICRA).
 - *2025.03*:  **6th place (6/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2025.03*:  **3rd place (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
