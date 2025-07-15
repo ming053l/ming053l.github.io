@@ -36,10 +36,11 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 🔥 News
 
+- *2025/7/15*:: &nbsp;🎉🎉 I receive the 1st performance in ACMMM 2025, SoccerTrack competition@MMSports. See you in Dublin, Ireland!
 - *2025/7/7*:: &nbsp;🎉🎉 I have successfully defended my Master's Thesis in NCKU!
 - *2025/7/6*:: &nbsp;🎉🎉 I receive the 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge. See you in Honolulu, Hawai!
 - *2025/7/5*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2025. See you in Dublin, Ireland!
-- *2025/6/18*: &nbsp;🎉🎉 I receive the top2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge. 
+- *2025/6/18*: &nbsp;🎉🎉 I receive the top2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge. See you in Dublin, Ireland!
 - *2025/5/30*: &nbsp;🎉🎉 I receive the 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.
 - *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
 - *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
