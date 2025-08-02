@@ -20,11 +20,9 @@ redirect_from:
 
 # 🧍‍♂️ Biography
 
-I recently received my M.S. degree from National Cheng Kung University (NCKU), where I conducted research at the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> under the mentorship of Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a>. During my time there, I benefited greatly from Prof. Hsu’s guidance, and I continue to collaborate closely with him after graduation.
+I received my B.S. degree in 2023 from the Department of Statistics and Information Science at Fu Jen Catholic University (FJCU), Taiwan, where I was advised by Prof. Hao-Chiang Shao. I recently completed my M.S. degree at National Cheng Kung University (NCKU), where I conducted research at the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> under the mentorship of Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a>. During my time there, I benefited greatly from Prof. Hsu’s guidance and continue to collaborate closely with him after graduation.
 
-While awaiting my mandatory military service, I am currently a visiting researcher at the Computational Photography Laboratory, working with Prof. <a href="https://yulunalexliu.github.io/">Yu-Lun Liu</a>. I also maintain an active research collaboration with Prof. <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a> at the University at Albany, State University of New York (SUNY).
-
-I received a B.S. degree at the Department of Statistics and Information Science, Fu Jen Catholic University (FJCU), Taiwan, in 2023. I was advised by Prof. Hao-Chiang Shao.
+While awaiting my mandatory military service, I am currently a research assistant at the Computational Photography Laboratory, working with Prof. <a href="https://yulunalexliu.github.io/">Yu-Lun Liu</a>. I will be pursuing my Ph.D. at the University at Albany, State University of New York (SUNY), where I will continue my research collaboration with Prof. <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a>.
 
 Find my resume <a href="https://drive.google.com/file/d/1xu92XDAillZLk1Dg-WzbTan9NyWXrHjm/view?usp=sharing" target="https://drive.google.com/file/d/1xu92XDAillZLk1Dg-WzbTan9NyWXrHjm/view?usp=sharing">here</a> (last updated Mar 24, 2025).
 
