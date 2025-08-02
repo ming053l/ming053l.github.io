@@ -20,8 +20,9 @@ redirect_from:
 
 # 🧍‍♂️ Biography
 
+I recently received my M.S. degree from National Cheng Kung University (NCKU), where I conducted research at the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> under the mentorship of Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a>. During my time there, I benefited greatly from Prof. Hsu’s guidance, and I continue to collaborate closely with him after graduation.
 
-I am currently a M.S. student with the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> at the Institute of Data Science, National Cheng Kung University (NCKU), Tainan, Taiwan. I am fortunate to be advised by and work with Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a> (NCKU).
+While awaiting my mandatory military service, I am currently a visiting researcher at the Computational Photography Laboratory, working with Prof. <a href="https://yulunalexliu.github.io/">Yu-Lun Liu</a>. I also maintain an active research collaboration with Prof. <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a> at the University at Albany, State University of New York (SUNY).
 
 I received a B.S. degree at the Department of Statistics and Information Science, Fu Jen Catholic University (FJCU), Taiwan, in 2023. I was advised by Prof. Hao-Chiang Shao.
 
@@ -32,7 +33,7 @@ My research interests include:
 - **Low-level computer vision problems**
 - **Multimedia information security**
   
-I am also exploring other computer vision-related fields which are interested to me, such as Trustworthy/Efficient AI.
+I am also exploring other computer vision-related fields which are interested to me, such as 3D reconstruction and Efficient AI.
 
 # 🔥 News
 
