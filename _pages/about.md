@@ -71,43 +71,6 @@ I am also exploring other computer vision-related fields which are interested to
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/S3RNET_SSAWB_beforeafter.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**S$^{3}$RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
-
-**Keywords**
-
-- Efficient Hyperspectral Image Pansharpening
-- Robustness and Sparse Representation
-- Network Compression and Knowledge Distillation
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pending</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Fractal Refined Transformer: Image Super-Resolution meets Block-level Decomposition and Token Augmentation**
-
-**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Image Super-Resolution
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IJCV25</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -166,27 +129,8 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IGARSS25</div><img src='images/HyForen.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-**HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset**
 
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://www.albany.edu/faculty/mchang2/" target="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a>
-
-**Keywords**
-
-- Hyperspectral Image Forensics
-- Adversarial Perturbation
-- Image Forgery Detection
-
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pending</div><img src='images/FracQuant.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to AAAI2026</div><img src='images/FracQuant.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 **FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization**
@@ -229,10 +173,10 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to AAAI26</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-**AuroraHSI: Degradation-agnostic Hyperspectral Image Fusion Transformer via Mask-guided Information Sharing and Compensation**
+**AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery**
 
 **Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
 
@@ -240,7 +184,6 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 
 - Hyperspectral Image Restoration
 - Robust Hyperspectral Image Fusion
-- Graph Neural Network
   
   <div class="links">
       <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
