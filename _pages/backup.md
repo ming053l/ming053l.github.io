@@ -307,6 +307,15 @@ IEEE Transactions on Geoscience and Remote Sensing
 - *2023.06*:  **The Highest Prize (1/96)**, International Competition Scholarship, Fu Jen Catholic University.
 - *2021.09*:  Zhang Wang Wei Foundation Scholarship, Fu Jen Catholic University.
 
+# 💼 Projects
+
+- *2024.7~*: Brake system Defect Detection, Taiwan High Speed Rail.
+- *2024.4~*: Cybersecurity in distributed computing for remote sensing, NVIDIA Taiwan Research.
+- *2024.4~*: AI Enhancing Substrate Manufacturing Yield with Optimized Process Factors, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
+- *2023.2~2024.1* :Substrate Drilling Scatter Plot Defect Detection, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
+- *2022.6~2022.12*: A Large Scale Whitebait Dataset for Long-tailed Distribution Image Classification and Domain Adaptation, Department of Statistic and Information Science, Fu Jen Catholic University. (Joint-project with Institute of Fisheries Science, National Taiwan University)
+
+
 # 🚀 Academic Services
 
 ### 🗣️ Invited Talk
