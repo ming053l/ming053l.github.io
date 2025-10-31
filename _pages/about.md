@@ -240,11 +240,9 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🎖 Honors and Awards
 
-
-
-- *2025.10*:  **Best Master Thesis Award** in IEEE Tainan Section 2025.
+- *2025.10*:  **Best Master Thesis Award**, IEEE Tainan Section 2025.
 - *2025.09*:  **Future Tech Awards** (2025 未來科技獎) (Top-3%).
-- *2025.08*:  **Excellent Master Thesis Award** in IPPR 2025.
+- *2025.08*:  **Excellent Master Thesis Award**, IPPR 2025.
 - *2025.07*:  **Winner**, SoccerTrack Challenge, Multimedia Content Analysis in Sports, ACM International Conference on Multimedia (ACMMM). 
 - *2025.07*:  **Winner**, Multi-source COV19 Detection Challenge, PHAROS Adaptation, Fairness, Explainability in AI Medical Imaging Workshop, IEEE/CVF International Conference on Computer Vision (ICCV).
 - *2025.06*:  **5th place (5/486)**, Social Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
@@ -267,8 +265,6 @@ IEEE Transactions on Geoscience and Remote Sensing
 - *2023.10*:  **Top Paper Award (3/700+)** , Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM).
 - *2023.10*:  **Jury Prize (1/176)**, Visual Inductive Priors Workshop on Instance Segmentation Challenge, IEEE/CVF International Conference on Computer Vision (ICCV).
 - *2023.06*:  **Winner (1/18)**, COV19 Detection Challenge, AI-enabled Medical Image Analysis Workshop in IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
-- *2023.06*:  **The Highest Prize (1/96)**, International Competition Scholarship, Fu Jen Catholic University.
-- *2021.09*:  Zhang Wang Wei Foundation Scholarship, Fu Jen Catholic University.
 
 # 🚀 Academic Services
 
@@ -287,21 +283,4 @@ IEEE Transactions on Geoscience and Remote Sensing
   - *IEEE Transactions on Multimedia (TMM)*  
   - *IEEE Transactions on Information Forensics and Security (TIFS)*  
   - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*
-  - *IEEE Geoscience and Remote Sensing Letters (GRSL)*  
-- **Workshop Papers**  
-  - The 9th AI City Challenge Workshop (AI-City2025), in conjuncted with IEEE/CVF Conference on Computer Vision and Pattern Recognition (ICCV).
-  - The 8th AI City Challenge Workshop (AI-City2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
-  - New Trends in Image Restoration and Enhancement Workshop (NTIRE2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
-
-### 🎓 Teaching Experience  
-- **National Cheng Kung University (NCKU)**  
-  - **2025 Spring**:  
-    - Deep Learning (*DS6016*) 
-  - **2024 Fall**: Machine Learning (*DS6012*)  
-  - **2024 Spring**:  
-    - Fundamental and Applications of Generative AI (*CSIE4037*)  
-    - Deep Learning (*DS6016*)  
-  - **2023 Fall**:  
-    - Programming Language (*STAT6060*)  
-    - Statistical Methods for Analysis with Missing Data (*STAT2004*)  
-
+  - *IEEE Geoscience and Remote Sensing Letters (GRSL)*
