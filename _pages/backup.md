@@ -1,0 +1,38 @@
+# 🔥 News
+
+- *2025/7/24*: &nbsp;🎉🎉 One paper is accepted by ICCVW 2025. See you in Honolulu, Hawai!
+- *2025/7/19*: &nbsp;🎉🎉 Three paper is accepted by ACMMM 2025.
+- *2025/7/15*:: &nbsp;🎉🎉 I receive the 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.
+- *2025/7/7*:: &nbsp;🎉🎉 I have successfully defended my Master's Thesis in NCKU!
+- *2025/7/6*:: &nbsp;🎉🎉 I receive the 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.
+- *2025/6/18*: &nbsp;🎉🎉 I receive the top2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge.
+- *2025/5/30*: &nbsp;🎉🎉 I receive the 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.
+- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
+- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
+- *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025!
+- *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
+- *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
+- *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
+- *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
+- *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025.
+- *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
+- *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
+- *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024.
+- *2024/07/31*: &nbsp;🎉🎉 Five paper are accepted by CVGIP 2024.
+- *2024/07/21*: &nbsp;🎉🎉 I receive the 1st performance in ICPR 2024 (Beyond Visible Spectrum: AI for Agriculture)!
+- *2024/06/12*: &nbsp;🎉🎉 Our 'DRCT' have been selected for Oral Presentation in CVPR - NTIRE!
+- *2024/06/06*: &nbsp;🎉🎉 I receive the Top Performance Award in ACMMM 2024 (Social Media Prediction Challenge)!
+- *2024/05/25*: &nbsp;🎉🎉 I receive the top3% ranking (after Xiaomi, Kuaishou corp.) in SISR Challenge, CVPR 2024 (NTIRE workshop). 
+- *2024/05/21*: &nbsp;🎉🎉 Two paper are accepted by MIPR 2024 (Acceptance rate: 19.5%).
+- *2024/04/11*: &nbsp;🎉🎉 Two paper are accepted by CVPRW 2024.
+- *2024/03/23*: &nbsp;🎉🎉 I receive the 3rd place in COVID-19 detection Challange, in conjuncted with CVPR 2024 (DEF-AI-MIA workshop). 
+- *2024/03/13*: &nbsp;🎉🎉 One paper is accepted by TGRS (IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering).
+- *2024/03/06*: &nbsp;🎉🎉 I receive the 2nd Position in the Auto-WCEBleedGen Challenge Version V2, in conjunted with ICIP 2024.
+- *2023/11/25*: &nbsp;🎉🎉 I receive the Gold Medal Award in SAS Hackthon 2023.
+- *2023/11/23*: &nbsp;🎉🎉 I am the Ministry of Education Presidential Education Award (總統教育獎) Candidate in NCKU.
+- *2023/10/31*: &nbsp;🎉🎉 I receive the Top Paper Award in ACMMM 2023 (Social Media Prediction Challenge).
+- *2023/10/17*: &nbsp;🎉🎉 One paper is accepted by MMAsia 2023.
+- *2023/10/2*: &nbsp;🎉🎉 I receive the Jury Prize in ICCV 2023 (Visual Inducitve Priors Workshop).
+- *2023/8/1*: &nbsp;🎉🎉 Two paper are accepted by CVGIP 2023.
+- *2023/7/13*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2023.
+- *2023/4/15*: &nbsp;🎉🎉 One paper is accepted by ICASSP 2023 (AI-enabled Medical Image Analysis Workshop).
