@@ -251,7 +251,7 @@ IEEE Transactions on Geoscience and Remote Sensing
 - *2025.03*:  **3rd place (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
 - *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
 - *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
-- *2024.09*:  **Future Tech Awards** (2024 未來科技獎) (Top-3%).
+- *2024.09*:  **Future Tech Awards** (2024 未來科技獎).
 - *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
 - *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
 - *2024.03*:  9th place (9/288), AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras, IEEE Computer Vision & Pattern Recognition (CVPR). 
@@ -268,19 +268,6 @@ IEEE Transactions on Geoscience and Remote Sensing
 
 # 🚀 Academic Services
 
-### 🗣️ Invited Talk
-- **Keynote Speaker**  
-  *Experiences on Competitions and Challenges*, National Taiwan University of Science and Technology (NTUST) (Invited by Prof. <a href="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN" target="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN">Tse-Yu Pan</a>)
-
 ### 📝 Reviewer
-- **Conference Papers**
-  - The Forty-fisrt IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2024).
-  - The Thirteenth International Conference on Learning Representations (ICLR2025).
-  - The Forty-second IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2025).
-  - The Twentieth IEEE/CVF Conference on Computer Vision and Pattern Recognition (ICCV25).
-  - The Thirty-third ACM International Conference on Multimedia (ACMMM25).
-- **Journal Papers**  
-  - *IEEE Transactions on Multimedia (TMM)*  
-  - *IEEE Transactions on Information Forensics and Security (TIFS)*  
-  - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*
-  - *IEEE Geoscience and Remote Sensing Letters (GRSL)*
+- *Conference Papers*: CVPR'24, ICLR'25, CVPR'25, ICCV'25, ACMMM'25, MMAsia'25, AAAI'26, CVPR'26
+- *Journal Papers*: TMM, TIFS, TGRS, GRSL, IJPRAI
