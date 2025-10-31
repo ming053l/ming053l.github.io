@@ -54,9 +54,6 @@ I am also exploring other computer vision-related fields which are interested to
 
 # 📝 Selected Publications 
 
-
-
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
