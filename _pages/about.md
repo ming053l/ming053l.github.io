@@ -34,7 +34,7 @@ My research interests include:
 I am also exploring other computer vision-related fields which are interested to me, such as 3D reconstruction and Efficient AI.
 
 # 🔥 News
-
+- *2025/11/14*: &nbsp;🎉🎉 One paper is accepted by WACV 2026. See you in Tucson!
 - *2025/10/23*: &nbsp;🎉🎉 I receive the Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/">Link</a>
 - *2025/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2025 未來科技獎) (Top-3%).
 - *2025/08/20*: &nbsp;🎉🎉 I receive the Excellent Master Thesis Award in IPPR 2025. <a href="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf" target="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf">Link</a>
@@ -53,6 +53,25 @@ I am also exploring other computer vision-related fields which are interested to
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 
 # 📝 Selected Publications 
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/juxtapose-gif.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**WWE-UIE: A Wavelet & White Balance Efficient Network for Underwater Image Enhancement**
+
+Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+
+**Keywords**
+
+- Under-water Image Enhancement
+- Color Correction
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
