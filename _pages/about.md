@@ -55,7 +55,7 @@ I am also exploring other computer vision-related fields which are interested to
 # 📝 Selected Publications 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/juxtapose-gif.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/WWEUIE.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **WWE-UIE: A Wavelet & White Balance Efficient Network for Underwater Image Enhancement**
