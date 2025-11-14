@@ -115,8 +115,6 @@ Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https:
 
 **Towards Robust DeepFake Detection: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Smoothing**
 
-Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
-
 <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, **Chia-Ming Lee**, Yi-Fang Wang, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
 
 **Keywords**
@@ -216,8 +214,6 @@ Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPA
 
 **DRCT: Saving Image Super-Resolution away from Information Bottleneck** 
 
-IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop  <font color="red">[Oral]</font>
-
 <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
 
 **Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/ming053l/DRCT">
@@ -239,8 +235,6 @@ IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Tren
 <div class='paper-box-text' markdown="1">
 
 **Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat**
-
-IEEE Transactions on Geoscience and Remote Sensing
 
 <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee**, Guan-Lin Chen
 
