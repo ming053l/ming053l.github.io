@@ -56,6 +56,26 @@ I am also exploring other computer vision-related fields which are interested to
 # 📝 Selected Publications 
 
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCV25</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection**
+
+Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="https://www.cs.nthu.edu.tw/~cthsu/candy.html">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="https://www.ee.nthu.edu.tw/cwlin/">Chia-Wen Lin</a>
+
+**Keywords**
+
+- Constrative Learning
+- Multimodality Learning
+- Robust DeepFake Detection
+  
+  <div class="links">
+      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  </div>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/WWEUIE.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -91,25 +111,6 @@ Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" 
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IJCV25</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection**
-
-Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="https://www.cs.nthu.edu.tw/~cthsu/candy.html">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="https://www.ee.nthu.edu.tw/cwlin/">Chia-Wen Lin</a>
-
-**Keywords**
-
-- Constrative Learning
-- Multimodality Learning
-- Robust DeepFake Detection
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TPAMI2025</div><img src='images/GRACEv2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
