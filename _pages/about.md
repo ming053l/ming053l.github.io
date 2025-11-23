@@ -34,7 +34,7 @@ My research interests include:
 I am also exploring other computer vision-related fields which are interested to me, such as 3D reconstruction and Efficient AI.
 
 # 🔥 News
-- *2025/11/174*: &nbsp;🎉🎉 One paper is accepted by IJCV 2025!
+- *2025/11/17*: &nbsp;🎉🎉 One paper is accepted by IJCV 2025!
 - *2025/11/14*: &nbsp;🎉🎉 One paper is accepted by WACV 2026. See you in Arizona!
 - *2025/10/23*: &nbsp;🎉🎉 I receive the Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/">Link</a>
 - *2025/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2025 未來科技獎) (Top-3%).
