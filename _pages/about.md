@@ -34,7 +34,7 @@ My research interests include:
 I am also exploring other computer vision-related fields which are interested to me, such as 3D reconstruction and Efficient AI.
 
 # 🔥 News
-- *2025/12/3*: &nbsp;🎉🎉 I receive the 3rd performance in ICASSP 2026, Hyper-Object Challenge@Spatial and Spectral Reconstruction from Mosaic Images.
+- *2025/12/3*: &nbsp;🎉🎉 I receive the 3rd performance in ICASSP 2026, Hyper-Object Challenge. See you in Barcelona.
 - *2025/11/24*: &nbsp;🎉🎉 I receive the top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.
 - *2025/11/17*: &nbsp;🎉🎉 One paper is accepted by IJCV 2025!
 - *2025/11/14*: &nbsp;🎉🎉 One paper is accepted by WACV 2026. See you in Arizona!
@@ -256,6 +256,9 @@ Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https:
 
 # 🎖 Honors and Awards
 
+- *2025.12*:  **3rd place (3/136)**, Hyper-Object Challenge, Spectral Reconstruction from Mosaic Images, IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
+- *2025.12*:  **3rd place (3/274)**, Hyper-Object Challenge, Joint Spatial and Spectral Super-Resolution, IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
+- *2025.11*:  **4th place (4/418)**, Data-Centric Land Cover Classification Challenge, British Machine Vision Conference (BMVC).
 - *2025.10*:  **Best Master Thesis Award**, IEEE Tainan Section 2025.
 - *2025.09*:  **Future Tech Awards** (2025 未來科技獎) (Top-3%).
 - *2025.08*:  **Excellent Master Thesis Award**, IPPR 2025.
