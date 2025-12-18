@@ -34,6 +34,8 @@ My research interests include:
 I am also exploring other computer vision-related fields which are interested to me, such as 3D reconstruction and Efficient AI.
 
 # 🔥 News
+- *2025/12/23*: &nbsp;🎉🎉 I start my military service.
+- *2025/12/17*: &nbsp;🎉🎉 I receive the 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.
 - *2025/12/3*: &nbsp;🎉🎉 I receive the 3rd performance in ICASSP 2026, Hyper-Object Challenge. See you in Barcelona.
 - *2025/11/24*: &nbsp;🎉🎉 I receive the top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.
 - *2025/11/17*: &nbsp;🎉🎉 One paper is accepted by IJCV 2025!
