@@ -87,9 +87,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <span style="margin-left: 15px;"><b style="color: #27ae60;">[WACV]</b> One paper accepted by WACV 2026.</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.10.23</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Best Thesis]</b> Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Best Thesis]</b> Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
