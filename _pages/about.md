@@ -623,7 +623,78 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </div>
     </div>
   </div>
+</div>
+
+
+<div id="section-recognition" class="category-section">
+  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Visual Recognition and Reasoning</h2>
+
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
+      <img src='images/gtatrack.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">GTATrack: Winner Solution to SoccerTrack 2025 with Deep-EIoU and Global Tracklet Association
+</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Rong-Lin Jian, Ming-Chi Luo, Cheng-Wei Huang, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Fisheye Camera</li>
+        <li>Object Detection and Tracking</li>
+      </ul>
+    </div>
+  </div>
   
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MIPR 2024</div>
+      <img src='images/omnidet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OmniDet: Omnidirectional Object Detection via Fisheye Camera Adaptation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wei-Hao Huang, Wen-Hai Tseng, Ming-Hsuan Wu, Ren-Jung Xu, <strong>Chia-Ming Lee</strong>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Fisheye Camera</li>
+        <li>Object Detection</li>
+      </ul>
+    </div>
+  </div>
+        
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2023</div>
+      <img src='images/ICME.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Few-shot Learning</li>
+        <li>Instance Segmentation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MMAsia 2023</div>
+      <img src='images/mmasia.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wen-Hai Tseng, Ming-Husan Wu, <strong>Chia-Ming Lee</strong>, Wei-Hao Huang
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Fisheye Camera</li>
+        <li>Object Detection</li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
 # 🎖 Honors and Awards
 
 - *2025.12*:  **3rd place (3/136)**, Hyper-Object Challenge, Spectral Reconstruction from Mosaic Images, IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
