@@ -44,7 +44,107 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
-  
+
+
+# 📢 News & Achievements
+
+<div class="news-buttons" style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+  <span style="font-weight: bold;">Filter:</span>
+  <button onclick="filterNews('all', event)" style="background: #333; color: white; border: none; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em;">Show All</button>
+  <button onclick="filterNews('award', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🏆 Awards</button>
+  <button onclick="filterNews('paper', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">📝 Publications</button>
+  <button onclick="filterNews('challenge', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🚀 Challenges</button>
+</div>
+
+<div id="news-timeline" style="max-height: 550px; overflow-y: auto; padding-right: 15px; border-left: 2px solid #eee; margin-left: 10px;">
+
+  <div class="news-item general" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.12.23</span> &nbsp; 🪖 Started military service.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.12.17</span> &nbsp; 
+    <span class="badge" style="background: #0B3C8A; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Winner</span> 
+    1st place in WACV 2026, SkiTB Visual Tracking Challenge.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.12.03</span> &nbsp; 
+    <span class="badge" style="background: #7a838b; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">3rd Place</span> 
+    Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution), ICASSP 2026.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.11.24</span> &nbsp; 
+    <span class="badge" style="background: #7a838b; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Top 2%</span> 
+    Data-Centric Land Cover Classification Challenge, BMVC 2025.
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.11.17</span> &nbsp; 
+    <span class="badge" style="background: #27ae60; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">IJCV</span> 
+    One paper accepted by **International Journal of Computer Vision (IJCV)**.
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.10.23</span> &nbsp; 
+    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Best Thesis</span> 
+    Best Master Thesis Award, IEEE Tainan Section 2025.
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.09.19</span> &nbsp; 
+    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Future Tech</span> 
+    Future Tech Awards (未來科技獎) - Top 3%.
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.08.20</span> &nbsp; 
+    Excellent Master Thesis Award (IPPR) & Best Paper Award (CVGIP 2025).
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.07.19</span> &nbsp; 
+    <span class="badge" style="background: #27ae60; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">ACMMM</span> 
+    Three papers accepted by **ACM Multimedia (ACMMM) 2025**.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.07.15</span> &nbsp; 
+    <span class="badge" style="background: #0B3C8A; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Winner</span> 
+    1st performance in ACMMM 2025, SoccerTrack Challenge.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2024.12.24</span> &nbsp; 
+    Runner-up in WACV 2025, Embedded Obstacle Segmentation Challenge.
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2024.09.19</span> &nbsp; 
+    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Future Tech</span> 
+    Future Tech Awards (未來科技獎) 2024.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2024.03.24</span> &nbsp; 
+    <span class="badge" style="background: #7a838b; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Runner-up</span> 
+    NTIRE 2024 Image Super-Resolution & COVID-19 Detection Challenge (CVPRW).
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2023.11.01</span> &nbsp; 
+    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Gold Medal</span> 
+    Gold Medal Award (1/150+) in SAS Hackathon.
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2023.06.01</span> &nbsp; 
+    <span class="badge" style="background: #0B3C8A; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Winner</span> 
+    Winner in ICASSP 2023, COV19 Detection Challenge.
+  </div>
+
+</div>
 # 🔥 News
 - *2025/12/23*: &nbsp; I have started my military service.
 - *2025/12/17*: &nbsp;🎉🎉 I receive the 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.
@@ -731,6 +831,26 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 - *Conference Papers*: CVPR'24, ICLR'25, CVPR'25, ICCV'25, ACMMM'25, MMAsia'25, AAAI'26, CVPR'26, ICME'26
 - *Journal Papers*: TMM, TIFS, TGRS, GRSL, IJPRAI
 
+<script>
+function filterNews(type, e) {
+  const items = document.querySelectorAll('.news-item');
+  items.forEach(item => {
+    if (type === 'all' || item.classList.contains(type)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  const btns = document.querySelectorAll('.news-buttons button');
+  btns.forEach(b => { 
+    b.style.background = '#f1f1f1'; 
+    b.style.color = '#333'; 
+  });
+  e.currentTarget.style.background = '#333';
+  e.currentTarget.style.color = 'white';
+}
+</script>
 
 <script>
 function filterCategory(categoryId, e) {
