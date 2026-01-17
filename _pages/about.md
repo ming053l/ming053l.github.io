@@ -72,11 +72,16 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;"> 
   <span style="font-weight: bold;">Filter by Topic:</span> 
-  <a href="javascript:void(0)" onclick="filterCategory('all')" class="filter-btn active" style="background-color: #333; color: white; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none;">Show All</a> 
-  <a href="javascript:void(0)" onclick="filterCategory('restoration')" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">Image Restoration</a> 
-  <a href="javascript:void(0)" onclick="filterCategory('hsi')" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">HSI & Remote Sensing</a> 
-  <a href="javascript:void(0)" onclick="filterCategory('efficient')" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">Efficient AI</a> 
-  <a href="javascript:void(0)" onclick="filterCategory('security')" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">Security & Deepfake</a> 
+  
+  <button onclick="filterCategory('all', event)" class="filter-btn active" style="background-color: #333; color: white; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em;">Show All</button> 
+  
+  <button onclick="filterCategory('restoration', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Image Restoration</button> 
+  
+  <button onclick="filterCategory('hsi', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">HSI & Remote Sensing</button> 
+  
+  <button onclick="filterCategory('efficient', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Efficient AI</button> 
+  
+  <button onclick="filterCategory('security', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Security & Deepfake</button> 
 </div>
 
 <div id="section-restoration" class="category-section">
@@ -270,7 +275,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
 <script>
-function filterCategory(categoryId) {
+function filterCategory(categoryId, e) {
+  // 防止任何連結跳轉行為
+  if (e) e.preventDefault();
+
   // 1. 取得所有類別區塊
   const sections = document.querySelectorAll('.category-section');
   
@@ -278,7 +286,6 @@ function filterCategory(categoryId) {
     if (categoryId === 'all') {
       section.style.display = 'block';
     } else {
-      // 檢查 section 的 ID 是否匹配
       if (section.id === 'section-' + categoryId) {
         section.style.display = 'block';
       } else {
@@ -287,15 +294,17 @@ function filterCategory(categoryId) {
     }
   });
 
-  // 2. 更新按鈕樣式 (讓點選的按鈕變深色)
-  const buttons = document.querySelectorAll('.category-buttons a');
+  // 2. 更新按鈕樣式
+  const buttons = document.querySelectorAll('.category-buttons button');
   buttons.forEach(btn => {
     btn.style.backgroundColor = '#f1f1f1';
     btn.style.color = '#333';
   });
   
-  // 針對點擊的按鈕給予高亮
-  event.currentTarget.style.backgroundColor = '#333';
-  event.currentTarget.style.color = 'white';
+  // 高亮當前點擊的按鈕
+  if (e && e.currentTarget) {
+    e.currentTarget.style.backgroundColor = '#333';
+    e.currentTarget.style.color = 'white';
+  }
 }
 </script>
