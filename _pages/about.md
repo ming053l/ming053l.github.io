@@ -20,21 +20,18 @@ redirect_from:
 
 # 🧍‍♂️ Biography
 
-I received my B.S. degree in 2023 from the Department of Statistics and Information Science at Fu Jen Catholic University (FJCU), Taiwan, where I was advised by Prof. Hao-Chiang Shao. I recently completed my M.S. degree at National Cheng Kung University (NCKU), where I conducted research at the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> under the mentorship of Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a>. During my time there, I benefited greatly from Prof. Hsu’s guidance and continue to collaborate closely with him after graduation.
+I received my B.S. degree in 2023 from the Department of Statistics and Information Science at Fu Jen Catholic University (FJCU), Taiwan, where I was advised by Prof. Hao-Chiang Shao. I recently completed my M.S. degree at National Cheng Kung University (NCKU), where I conducted research at the <a href="https://sites.google.com/view/acvlab/">Advanced Computer Vision Laboratory (ACVLAB)</a> under the mentorship of Prof. <a href="https://cchsu.info/">Chih-Chung Hsu</a> and the Computational Photography Laboratory at National Yang Ming Chiao Tung University (NYCU), working with Prof. <a href="https://yulunalexliu.github.io/">Yu-Lun Liu</a>. I will be pursuing my Ph.D. at the University at Albany, State University of New York (SUNY), where I will continue my research collaboration with Prof. <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a>.
 
-While awaiting my mandatory military service, I am currently a research assistant at the Computational Photography Laboratory at National Yang Ming Chiao Tung University (NYCU), working with Prof. <a href="https://yulunalexliu.github.io/">Yu-Lun Liu</a>. I will be pursuing my Ph.D. at the University at Albany, State University of New York (SUNY), where I will continue my research collaboration with Prof. <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a>.
-
-Find my resume <a href="https://drive.google.com/file/d/1xu92XDAillZLk1Dg-WzbTan9NyWXrHjm/view?usp=sharing" target="https://drive.google.com/file/d/1xu92XDAillZLk1Dg-WzbTan9NyWXrHjm/view?usp=sharing">here</a> (last updated Mar 24, 2025).
+Find my resume <a href="https://drive.google.com/file/d/1eScbrrYYBnmpGsqvjF-DXRo07L2i7evm/view?usp=sharing" target="https://drive.google.com/file/d/1eScbrrYYBnmpGsqvjF-DXRo07L2i7evm/view?usp=sharing">here</a> (last updated Jan 17, 2026).
 
 My research interests include: 
 
-- **Low-level computer vision problems**
-- **Multimedia information security**
+- **Low-level Vision Problems**
+- **Computational Photography**
+- **Multimedia Information security**
   
-I am also exploring other computer vision-related fields which are interested to me, such as 3D reconstruction and Efficient AI.
-
 # 🔥 News
-- *2025/12/23*: &nbsp;🎉🎉 I start my military service.
+- *2025/12/23*: &nbsp;🎉🎉 I have started my military service.
 - *2025/12/17*: &nbsp;🎉🎉 I receive the 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.
 - *2025/12/3*: &nbsp;🎉🎉 I receive the 3rd performance in ICASSP 2026, Hyper-Object Challenge. See you in Barcelona.
 - *2025/11/24*: &nbsp;🎉🎉 I receive the top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.
