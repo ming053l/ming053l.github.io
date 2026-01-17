@@ -664,7 +664,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2023</div>
-      <img src='images/ICME.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/icme.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
