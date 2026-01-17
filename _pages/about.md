@@ -530,6 +530,41 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="section-medical" class="category-section">
   <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Medical Image Analysis</h2>
 
+
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <img src='images/DSSFT.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DSSFT: Dense Spatial-Slice Fusion Transformer for Medical Volumetric Super-Resolution/h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> I-An Tsai, <strong>Chia-Ming Lee</strong>, Shen-Chieh Tai, <a href="http://cvml.cs.nycu.edu.tw/" target="_blank" style="text-decoration: underline;">Chun-Rong Huang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>3D Medical Volumetric Super-Resolution</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2025</div>
+      <img src='images/covid2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Ting-Yao Chen, Ming-Han Sun, Fang-Ying Lin, Jung-Tse Tsai, I-An Tsai, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Kernel-density Guided Sampling</li>
+        <li>Multi-source Domain Adaption</li>
+      </ul>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://openaccess.thecvf.com/content/ICCV2025W/PHAROS-AFE-AIMI/papers/Lee_Taming_Domain_Shift_in_Multi-source_CT-Scan_Classification_via_Input-Space_Standardization_ICCVW_2025_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+      </div>
+    </div>
+  </div>
+  
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
