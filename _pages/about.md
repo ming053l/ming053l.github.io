@@ -45,7 +45,6 @@ My research interests include, but are not limited to,
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
-
 # 📢 News & Achievements
 
 <div class="news-buttons" style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
@@ -59,43 +58,78 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="news-timeline" style="max-height: 600px; overflow-y: auto; padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
   <div class="news-item general" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.23</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.23</span>
     <span style="margin-left: 15px;">🪖 Started military service.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.17</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.17</span>
     <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.03</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.03</span>
     <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in ICASSP 2026, Hyper-Object Challenge.</span>
   </div>
 
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 2%]</b> Top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.</span>
+  </div>
+
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper is accepted by **International Journal of Computer Vision**!</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper is accepted by **International Journal of Computer Vision (IJCV 2025)**.</span>
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.14</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[WACV]</b> One paper is accepted by **WACV 2026**.</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.10.23</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Thesis]</b> Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.10.23</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Thesis]</b> Best Master Thesis Award in IEEE Tainan Section 2025.</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.09.19</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.09.19</span>
     <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2025 未來科技獎) (Top-3%).</span>
   </div>
 
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.08.20</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Excellent Master Thesis Award in IPPR 2025 & Best Paper Award in CVGIP 2025.</span>
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.24</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICCVW]</b> One paper is accepted by **ICCVW 2025**.</span>
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.19</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers are accepted by **ACM Multimedia (ACMMM) 2025**.</span>
+  </div>
+
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.06</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.15</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.06</span>
     <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.</span>
   </div>
 
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.15</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IGARSS]</b> Four papers are accepted by **IGARSS 2025**.</span>
+  </div>
+
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="min-width: 95px; flex-shrink: 0; color: #666; font-size: 0.95em; font-family: monospace;">2024.09.19</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="_blank">Link</a></span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.09.19</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2024 未來科技獎).</span>
   </div>
 
 </div>
