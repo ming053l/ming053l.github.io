@@ -537,7 +537,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DSSFT: Dense Spatial-Slice Fusion Transformer for Medical Volumetric Super-Resolution</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> I-An Tsai, <strong>Chia-Ming Lee</strong>, Shen-Chieh Tai, <a href="http://cvml.cs.nycu.edu.tw/" target="_blank" style="text-decoration: underline;">Chun-Rong Huang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> I-An Tsai, <strong>Chia-Ming Lee</strong>, Shen-Chieh Tai, <a href="http://cvml.cs.nycu.edu.tw/" target="_blank" style="text-decoration: underline;">Chun-Rong Huang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>3D Medical Volumetric Super-Resolution</li>
@@ -552,7 +552,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Ting-Yao Chen, Ming-Han Sun, Fang-Ying Lin, Jung-Tse Tsai, I-An Tsai, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Ting-Yao Chen, Ming-Han Sun, Fang-Ying Lin, Jung-Tse Tsai, I-An Tsai, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Kernel-density Guided Sampling</li>
@@ -571,7 +571,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">A Closer Look at Spatial-Slice Features Learning for COVID-19 Detection</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Yang Fan Chiang, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Yang Fan Chiang, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai</p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Computed Tomography Scanning</li>
@@ -592,7 +592,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Divide and Conquer: Grounding a Bleeding Areas in Gastrointestinal Image with Two-Stage Model</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu</p>,  <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu,  <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Gastrointestinal Image</li>
@@ -611,7 +611,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Bag of Tricks of Hybrid Network for Covid-19 Detection of CT Scans</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu</p>,  <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Computed Tomography Scanning</li>
@@ -636,7 +636,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">GTATrack: Winner Solution to SoccerTrack 2025 with Deep-EIoU and Global Tracklet Association
 </h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Rong-Lin Jian, Ming-Chi Luo, Cheng-Wei Huang, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Rong-Lin Jian, Ming-Chi Luo, Cheng-Wei Huang, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Fisheye Camera</li>
@@ -652,7 +652,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OmniDet: Omnidirectional Object Detection via Fisheye Camera Adaptation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wei-Hao Huang, Wen-Hai Tseng, Ming-Hsuan Wu, Ren-Jung Xu, <strong>Chia-Ming Lee</strong>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wei-Hao Huang, Wen-Hai Tseng, Ming-Hsuan Wu, Ren-Jung Xu, <strong>Chia-Ming Lee</strong></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Fisheye Camera</li>
@@ -668,7 +668,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Few-shot Learning</li>
@@ -684,7 +684,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wen-Hai Tseng, Ming-Husan Wu, <strong>Chia-Ming Lee</strong>, Wei-Hao Huang
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wen-Hai Tseng, Ming-Husan Wu, <strong>Chia-Ming Lee</strong>, Wei-Hao Huang</p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Fisheye Camera</li>
