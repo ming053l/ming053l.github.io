@@ -70,109 +70,29 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 # 📝 Selected Publications 
 
-# 📝 Selected Publications 
-
-<div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;"> 
-  <span style="font-weight: bold;">Filter by Topic:</span> 
-  <a href="#restoration" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd;">Image Restoration</a> 
-  <a href="#hsi" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd;">HSI & Remote Sensing</a> 
-  <a href="#efficient" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd;">Efficient AI</a> 
-  <a href="#security" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd;">Security & Deepfake</a> 
-</div>
+<div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;"> <span style="font-weight: bold;">Filter by Topic:</span> <a href="#restoration" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">Image Restoration</a> <a href="#hsi" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">HSI & Remote Sensing</a> <a href="#efficient" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">Efficient AI</a> <a href="#security" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; text-decoration: none; color: #333;">Security & Deepfake</a> </div>
 
 <h2 id="restoration" style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">✨ Image Restoration & Enhancement</h2>
 
-<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-  <div class='paper-box-image' style="flex: 0 0 250px; max-width: 100%; margin-right: 20px;">
-    <div class="badge" style="position: absolute; background: red; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">New!</div>
-    <img src='images/simflowsr.gif' alt="sym" style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-    <h4 style="margin-top: 0;">SimFlowSR: Self-similarity Aggregation over Consistent Information Flow for Single Image Super-Resolution</h4>
-    <p><strong>Chia-Ming Lee</strong>, Chih-Chung Hsu</p>
-    <p style="font-size: 0.9em; color: #555;"><i>Keywords: Super-resolution, Information Bottleneck, Self-similarity</i></p>
-    <div class="links">
-      <a href="https://ming053l.github.io/SimFlowSR/" class="btn btn-sm z-depth-0" target="_blank" style="border: 1px solid #0B3C8A; padding: 2px 10px;">Project Page</a>
-      <a href="https://github.com/ming053l/SimFlowSR" class="btn btn-sm z-depth-0" target="_blank" style="border: 1px solid #0B3C8A; padding: 2px 10px;">Github</a>
-    </div>
-  </div>
-</div>
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;"> <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">New!</div> <img src='images/simflowsr.gif' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Self-similarity Aggregation over Consistent Information Flow for Single Image Super-Resolution</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p> <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Image Super-resolution (Stronger, faster DRCT)</li> <li>Information Bottleneck & Self-similarity Aggregation</li> </ul> <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;"> <a href="https://ming053l.github.io/SimFlowSR/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a> <a href="https://github.com/ming053l/SimFlowSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a> </div> </div> </div>
 
-<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-  <div class='paper-box-image' style="flex: 0 0 250px; max-width: 100%; margin-right: 20px;">
-    <div class="badge" style="position: absolute; background: #555; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">CVPRW 2024</div>
-    <img src='images/drct_fix.gif' alt="sym" style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-    <h4 style="margin-top: 0;">DRCT: Saving Image Super-Resolution away from Information Bottleneck</h4>
-    <p>Chih-Chung Hsu, <strong>Chia-Ming Lee</strong>, Yi-Shiuan Chou</p>
-    <p style="font-size: 0.9em; color: #555;"><i>Keywords: Super-resolution, Information Bottleneck</i></p>
-    <div class="links">
-      <a href="https://arxiv.org/abs/2404.00722" class="btn btn-sm z-depth-0" target="_blank" style="border: 1px solid #0B3C8A; padding: 2px 10px;">arXiv</a>
-      <a href="https://github.com/ming053l/DRCT" class="btn btn-sm z-depth-0" target="_blank" style="border: 1px solid #0B3C8A; padding: 2px 10px;">Github</a>
-    </div>
-  </div>
-</div>
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;"> <div style="position: absolute; background: #0B3C8A; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW2024</div> <img src='images/drct_fix.gif' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DRCT: Saving Image Super-Resolution away from Information Bottleneck</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a></p> <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;"> <span style="font-weight: bold;">Keywords</span> <img src="https://img.shields.io/github/stars/ming053l/DRCT?style=social" alt="Github Stars"> </div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Image Super-resolution</li> <li>Information Bottleneck</li> </ul> <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;"> <a href="https://arxiv.org/pdf/2404.00722.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">PDF</a> <a href="https://arxiv.org/abs/2404.00722" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a> <a href="https://github.com/ming053l/DRCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a> <a href="https://allproj002.github.io/drct.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project page</a> <a href="https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Poster</a> <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Slide</a> </div> </div> </div>
 
-<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-  <div class='paper-box-image' style="flex: 0 0 250px; max-width: 100%; margin-right: 20px;">
-    <img src='images/PhaSR.png' style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-    <h4 style="margin-top: 0;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors</h4>
-    <p><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, Yu-Jou Hsiao, Chih-Chung Hsu, Yu-Lun Liu</p>
-    <p style="font-size: 0.9em; color: #555;"><i>Keywords: Shadow Removal, Physical Priors</i></p>
-    <div class="links">
-      <a href="https://ming053l.github.io/PhaSR/" class="btn btn-sm z-depth-0" target="_blank" style="border: 1px solid #0B3C8A; padding: 2px 10px;">Project Page</a>
-    </div>
-  </div>
-</div>
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;"> <img src='images/PhaSR.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p> <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Single Image Shadow Removal</li> <li>Ambient Light Normalization</li> </ul> <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;"> <a href="https://ming053l.github.io/PhaSR/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a> </div> </div> </div>
+
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;"> <img src='images/ReflexSplit.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p> <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Single Reflection Removal</li> </ul> <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;"> <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a> </div> </div> </div>
 
 <h2 id="hsi" style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛰️ Hyperspectral & Remote Sensing</h2>
 
-<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-  <div class='paper-box-image' style="flex: 0 0 250px; max-width: 100%; margin-right: 20px;">
-    <div class="badge" style="position: absolute; background: #e67e22; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">TGRS Submitted</div>
-    <img src='images/PromptHSI.png' style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-    <h4 style="margin-top: 0;">PromptHSI: Universal Hyperspectral Image Restoration</h4>
-    <p><strong>Chia-Ming Lee</strong>, et al.</p>
-    <p style="font-size: 0.9em; color: #555;"><i>Keywords: HSI Restoration, Vision-Language Prompt</i></p>
-    <div class="links">
-      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" target="_blank" style="border: 1px solid #0B3C8A; padding: 2px 10px;">arXiv</a>
-    </div>
-  </div>
-</div>
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;"> <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TGRS</div> <img src='images/PromptHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p> <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Hyperspectral Image Restoration & Text-Prompt Learning</li> </ul> <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;"> <a href="https://arxiv.org/abs/2411.15922" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a> <a href="https://github.com/chingheng0808/PromptHSI" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a> <a href="https://drive.google.com/drive/folders/1O0GDzoPt3AVD4mjXeu3R_lxyuTDEWWW1" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Dataset</a> </div> </div> </div>
 
 <h2 id="efficient" style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">⚡ Efficient AI & Acceleration</h2>
 
-<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-  <div class='paper-box-image' style="flex: 0 0 250px; max-width: 100%; margin-right: 20px;">
-    <img src='images/ELSA.png' style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-    <h4 style="margin-top: 0;">ELSA: Exact Linear-Scan Attention for Vision Transformers</h4>
-    <p>Chih-Chung Hsu, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
-    <p style="font-size: 0.9em; color: #555;"><i>Keywords: ViT Acceleration, Linear Attention</i></p>
-  </div>
-</div>
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;"> <img src='images/ELSA.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p> <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Hardware-Agnositic Transformer Acceleration</li> <li>Exact Linear-Scan Attention</li> </ul> </div> </div>
 
 <h2 id="security" style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Multimedia Security & Deepfake Detection</h2>
 
-<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 25px;">
-  <div class='paper-box-image' style="flex: 0 0 250px; max-width: 100%; margin-right: 20px;">
-    <div class="badge" style="position: absolute; background: #27ae60; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">IJCV 2025</div>
-    <img src='images/UMCL.png' style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-    <h4 style="margin-top: 0;">UMCL: Cross-compression-rate Deepfake Detection</h4>
-    <p>Ching-Yi Lai, et al.</p>
-    <p style="font-size: 0.9em; color: #555;"><i>Keywords: Deepfake Detection, Contrastive Learning</i></p>
-  </div>
-</div>
-
-
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;"> <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;"> <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IJCV 2025</div> <img src='images/UMCL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;"> </div> <div class='paper-box-text' style="flex: 1; min-width: 300px;"> <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection</h4> <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Yi Lai, Chih-Yu Jian, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p> <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div> <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;"> <li>Multimodality Constrative Learning</li> <li>Robust DeepFake Detection</li> </ul> <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;"> <a href="https://arxiv.org/abs/2511.18983" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a> </div> </div> </div>
 # 🎖 Honors and Awards
 
 - *2025.12*:  **3rd place (3/136)**, Hyper-Object Challenge, Spectral Reconstruction from Mosaic Images, IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
