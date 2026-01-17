@@ -109,7 +109,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 **PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors**
 
-**Chia-Ming Lee**, <a href=https://vanlinlin.github.io/ target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jing-Hui Jung, <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jing-Hui Jung, <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
 
 **Keywords**
 
@@ -128,7 +128,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 **ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation**
 
-**Chia-Ming Lee**, <a href=https://vanlinlin.github.io/ target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jing-Hui Jung, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">Yu-Lun Liu</a>
+**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jing-Hui Jung, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">Yu-Lun Liu</a>
 
 **Keywords**
 
@@ -168,7 +168,7 @@ Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https:
 
 Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
 
-**Keywords**
+**Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/chingheng0808/WWE-UIE">
 
 - Under-water Image Enhancement
 - Color Correction
@@ -193,8 +193,6 @@ Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" 
   
   <div class="links">
       <a href="https://arxiv.org/abs/2507.16472" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-  <div class="links">
       <a href="https://githubcom/VanLinLin/DenseSR" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
   </div>
 </div>
@@ -226,18 +224,17 @@ Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" 
 **Chia-Ming Lee**, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
 
 
-**Keywords**
-
+**Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/chingheng0808/PromptHSI">
 - Hyperspectral Image Restoration
 - All-in-One Image Restoration
 - Text-Prompt Learning
   
   <div class="links">
-      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
+      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv>
+      <a href="https://github.com/chingheng0808/PromptHSI" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
+      <a href="https://drive.google.com/drive/folders/1O0GDzoPt3AVD4mjXeu3R_lxyuTDEWWW1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Dataset</a>
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
