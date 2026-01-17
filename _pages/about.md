@@ -82,11 +82,7 @@ My research interests include, but are not limited to,
 
   <div class="links">
       <a href="https://ming053l.github.io/SimFlowSR/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project Page</a>
-  </div>
-  <div class="links">
       <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv (Coming Soon)</a>
-  </div>
-  <div class="links">
       <a href="https://github.com/ming053l/SimFlowSR" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github (Coming Soon)</a>
   </div>
 </div>
@@ -119,11 +115,7 @@ My research interests include, but are not limited to,
 - Ambient Light Normalization
   <div class="links">
       <a href="https://ming053l.github.io/PhaSR/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project Page</a>
-  </div>
-  <div class="links">
       <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv (Coming Soon)</a>
-  </div>
-  <div class="links">
       <a href="https://github.com/ming053l/PhaSR" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github (Coming Soon)</a>
   </div>
 </div>
@@ -141,11 +133,7 @@ My research interests include, but are not limited to,
 - Single Reflection Removal
   <div class="links">
       <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project Page</a>
-  </div>
-  <div class="links">
       <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv (Coming Soon)</a>
-  </div>
-  <div class="links">
       <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github (Coming Soon)</a>
   </div>
 </div>
@@ -184,8 +172,6 @@ Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" 
 - Color Correction
   <div class="links">
       <a href="https://arxiv.org/abs/2511.16321" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-  <div class="links">
       <a href="https://github.com/chingheng0808/WWE-UIE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
   </div>
 </div>
