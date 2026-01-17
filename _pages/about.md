@@ -44,7 +44,6 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
-
 # 📢 News & Achievements
 
 <div class="news-buttons" style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
@@ -58,91 +57,79 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="news-timeline" style="max-height: 600px; overflow-y: auto; padding: 10px 15px 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
   <div class="news-item general" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.23</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.23</span>
     <span style="margin-left: 10px;">🪖 Started military service.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.17</span>
-    <span class="badge" style="background: #0B3C8A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Winner</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.17</span>
+    <span class="badge" style="flex: 0 0 85px; background: #0B3C8A; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Winner</span>
     <span style="margin-left: 12px;">1st performance in WACV 2026, SkiTB Visual Tracking Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.03</span>
-    <span class="badge" style="background: #7a838b; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">3rd Place</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.03</span>
+    <span class="badge" style="flex: 0 0 85px; background: #7a838b; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">3rd Place</span>
     <span style="margin-left: 12px;">3rd performance in ICASSP 2026, Hyper-Object Challenge. See you in Barcelona.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.24</span>
-    <span class="badge" style="background: #7a838b; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Top 2%</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.24</span>
+    <span class="badge" style="flex: 0 0 85px; background: #7a838b; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Top 2%</span>
     <span style="margin-left: 12px;">Top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.</span>
   </div>
 
   <div class="news-item paper" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.17</span>
-    <span class="badge" style="background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">IJCV</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.17</span>
+    <span class="badge" style="flex: 0 0 85px; background: #27ae60; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">IJCV</span>
     <span style="margin-left: 12px;">One paper is accepted by **IJCV 2025**!</span>
   </div>
 
   <div class="news-item paper" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.14</span>
-    <span class="badge" style="background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">WACV</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.14</span>
+    <span class="badge" style="flex: 0 0 85px; background: #27ae60; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">WACV</span>
     <span style="margin-left: 12px;">One paper is accepted by **WACV 2026**. See you in Arizona!</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.10.23</span>
-    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Thesis</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.10.23</span>
+    <span class="badge" style="flex: 0 0 85px; background: #f1c40f; color: black; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Thesis</span>
     <span style="margin-left: 12px;">Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.09.19</span>
-    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Award</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.09.19</span>
+    <span class="badge" style="flex: 0 0 85px; background: #f1c40f; color: black; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Award</span>
     <span style="margin-left: 12px;">Future Tech Awards (2025 未來科技獎) (Top-3%).</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.08.20</span>
-    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Thesis</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.08.20</span>
+    <span class="badge" style="flex: 0 0 85px; background: #f1c40f; color: black; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Thesis</span>
     <span style="margin-left: 12px;">Excellent Master Thesis Award in IPPR 2025 & Best Paper Award in CVGIP 2025.</span>
   </div>
 
   <div class="news-item paper" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.19</span>
-    <span class="badge" style="background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">ACMMM</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.19</span>
+    <span class="badge" style="flex: 0 0 85px; background: #27ae60; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">ACMMM</span>
     <span style="margin-left: 12px;">Three papers are accepted by **ACMMM 2025** and one by ICCVW 2025.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.15</span>
-    <span class="badge" style="background: #0B3C8A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Winner</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.15</span>
+    <span class="badge" style="flex: 0 0 85px; background: #0B3C8A; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Winner</span>
     <span style="margin-left: 12px;">1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.</span>
   </div>
 
   <div class="news-item general" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.07</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.07</span>
     <span style="margin-left: 10px;">🎉 Successfully defended Master's Thesis in NCKU!</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.06</span>
-    <span class="badge" style="background: #0B3C8A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Winner</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.06</span>
+    <span class="badge" style="flex: 0 0 85px; background: #0B3C8A; color: white; padding: 2px 0; border-radius: 3px; font-size: 0.75em; margin-left: 10px; text-align: center; font-weight: bold;">Winner</span>
     <span style="margin-left: 12px;">1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2024.12.24</span>
-    <span class="badge" style="background: #7a838b; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Runner-up</span>
-    <span style="margin-left: 12px;">Runner-up in USV-based Embedded Obstacle Segmentation (WACV 2025).</span>
-  </div>
-
-  <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2024.09.19</span>
-    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Award</span>
-    <span style="margin-left: 12px;">Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="_blank">Link</a></span>
   </div>
 
 </div>
@@ -154,7 +141,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   
   <button onclick="filterCategory('all', event)" class="filter-btn active" style="background-color: #333; color: white; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em;">Show All</button> 
   
-  <button onclick="filterCategory('restoration', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Low-level Vision</button> 
+  <button onclick="filterCategory('restoration', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Image Restoration and Enhancement</button> 
   
   <button onclick="filterCategory('hsi', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Hyperspectral Image Processing, Photogrammetry and Remote Sensing</button> 
   
@@ -166,7 +153,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   
   <button onclick="filterCategory('medical', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Medical Image Analysis</button> 
 
-  <button onclick="filterCategory('recognition', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Visual Recognition and Reasoning</button> 
+  <button onclick="filterCategory('recognition', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Visual Recognition, Tracking and Reasoning</button> 
 </div>
 
 <div id="section-restoration" class="category-section">
@@ -498,7 +485,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 
 <div id="section-security" class="category-section">
-  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Deepfake Video Detection</h2>
+  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">📱 Deepfake Video Detection</h2>
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
@@ -544,7 +531,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
 <div id="section-smp" class="category-section">
-  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Social Media Analysis</h2>
+  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">💬 Social Media Analysis</h2>
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
@@ -606,7 +593,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
 <div id="section-medical" class="category-section">
-  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Medical Image Analysis</h2>
+  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🧠 Medical Image Analysis</h2>
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
@@ -704,7 +691,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
 <div id="section-recognition" class="category-section">
-  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">🛡️ Visual Recognition and Reasoning</h2>
+  <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">👁️ Visual Recognition and Reasoning</h2>
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
