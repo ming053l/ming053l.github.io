@@ -747,13 +747,13 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </ul>
     </div>
   </div>
-        
+</div>        
 # 🚀 Academic Services
 
 ### 📝 Reviewer
 - *Conference Papers*: CVPR'24, ICLR'25, CVPR'25, ICCV'25, ACMMM'25, MMAsia'25, AAAI'26, CVPR'26, ICME'26
 - *Journal Papers*: TMM, TIFS, TGRS, GRSL, IJPRAI
-- 
+
 <script>
 function filterNews(type, e) {
   const items = document.querySelectorAll('.news-item');
