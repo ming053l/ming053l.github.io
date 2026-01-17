@@ -21,16 +21,16 @@ redirect_from:
 # 🧍‍♂️ Biography
 
 I received my B.S. degree in 2023 from the Department of Statistics and Information Science at Fu Jen Catholic University (FJCU), Taiwan, where I was advised by Prof. Hao-Chiang Shao. I recently completed my M.S. degree at National Cheng Kung University (NCKU), where I conducted research at the 
-<a href="https://sites.google.com/view/acvlab/" style="color:#1a73e8;">Advanced Computer Vision Laboratory (ACVLAB)</a> 
+<a href="https://sites.google.com/view/acvlab/" style="color:#0B3C8A;">Advanced Computer Vision Laboratory (ACVLAB)</a> 
 under the mentorship of Prof. 
-<a href="https://cchsu.info/" style="color:#1a73e8;">Chih-Chung Hsu</a> 
+<a href="https://cchsu.info/" style="color:#0B3C8A;">Chih-Chung Hsu</a> 
 and the Computational Photography Laboratory at National Yang Ming Chiao Tung University (NYCU), working with Prof. 
-<a href="https://yulunalexliu.github.io/" style="color:#1a73e8;">Yu-Lun Liu</a>. 
+<a href="https://yulunalexliu.github.io/" style="color:#0B3C8A;">Yu-Lun Liu</a>. 
 I will be pursuing my Ph.D. at the University at Albany, State University of New York (SUNY), where I will continue my research collaboration with Prof. 
-<a href="https://www.albany.edu/faculty/mchang2/" style="color:#1a73e8;">Ming-Ching Chang</a>. 
+<a href="https://www.albany.edu/faculty/mchang2/" style="color:#0B3C8A;">Ming-Ching Chang</a>. 
 Find my resume 
 <a href="https://drive.google.com/file/d/1eScbrrYYBnmpGsqvjF-DXRo07L2i7evm/view?usp=sharing" 
-   style="color:#1a73e8;" 
+   style="color:#0B3C8A;" 
    target="_blank">here</a> 
 (last updated Jan 17, 2026).
 
@@ -40,7 +40,9 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Computational Photography</b></span>, 
 <span style="color:#0B5D1E"><b>Multimedia Information Security</b></span>, 
 <span style="color:#0B5D1E"><b>Efficient AI</b></span>, and 
-<span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
+<span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
+
+In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
   
 # 🔥 News
 - *2025/12/23*: &nbsp; I have started my military service.
