@@ -200,6 +200,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
       <img src='images/ELSA.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
@@ -209,6 +210,22 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Hardware-Agnositic Transformer Acceleration</li>
         <li>Exact Linear-Scan Attention</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <img src='images/FracQuant.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Fractal Coding for Image Compression</li>
+        <li>Network Compression and Quantization</li>
       </ul>
     </div>
   </div>
@@ -237,7 +254,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">New</div>
+      <div style="position: absolute; background: #27ae60; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TIFS</div>
       <img src='images/GRACEv2.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
