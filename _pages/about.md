@@ -242,7 +242,24 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </div>
     </div>
   </div>
+
+
     
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <img src='images/SSCNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HSSDCT: Factorized Spatial-Spectral Correlation for Hyperspectral Image Fusion</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-How He, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jen-Wei Lee, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <liHyperspectral Image Fusion</li>
+      </ul>
+    </div>
+  </div>
+  
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TGRS</div>
@@ -262,17 +279,20 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
+
+  
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS2025</div>
-      <img src='images/S3RNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to JSTARS</div>
+      <img src='images/S3RNET_SSAWB_beforeafter.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">S3RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Pansharpening & Sparse Representation</li>
+        <li>Efficient Hyperspectral Image Fusion</li>
+        <li>Knowledge Distillation</li>
       </ul>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
@@ -283,6 +303,58 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
+      <img src='images/S3RNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Hyperspectral Image Pansharpening & Sparse Representation</li>
+      </ul>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2501.07953" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
+      <img src='images/HyForen.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.albany.edu/faculty/mchang2/" target="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Hyperspectral Image Forensics & Adversarial Attack </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
+      <img src='images/HyFusionhpe.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class='paper-box-text' style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Hao Ho, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a></p>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
+      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+        <li>Hyperspectral Image Pansharpening </li>
+      </ul>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2501.04665" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2024</div>
       <img src='images/RTCS.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
@@ -290,6 +362,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, <strong>Chia-Ming Lee</strong>, Guan-Lin Chen</p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+        <span style="font-weight: bold;">Keywords</span>
         <img src="https://img.shields.io/github/stars/ming053l/RTCS?style=social" alt="Github Stars">
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Hyperspectral Image Restoration & Compression Sensing</li>
@@ -302,6 +375,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   </div>
 </div>
 
+
+      
 <div id="section-efficient" class="category-section">
   <h2 style="clear: both; border-bottom: 2px solid #0B3C8A; padding-bottom: 10px; margin-top: 50px;">⚡ Efficient AI & Acceleration</h2>
 
