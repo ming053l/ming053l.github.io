@@ -40,7 +40,7 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Computational Photography</b></span>, 
 <span style="color:#0B5D1E"><b>Hyperspectral Image Processing</b></span>, 
 <span style="color:#0B5D1E"><b>Multimedia Analysis and Security</b></span>, 
-<span style="color:#0B5D1E"><b>Efficient AI</b></span>, and 
+<span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
@@ -67,7 +67,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.</span>
   </div>
 
-  <div class="news-item challenge award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.03</span>
     <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in ICASSP 2026, Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution).</span>
   </div>
@@ -79,12 +79,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper accepted by **International Journal of Computer Vision (IJCV 2025)**.</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper accepted by International Journal of Computer Vision (IJCV).</span>
   </div>
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.14</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[WACV]</b> One paper accepted by **WACV 2026**.</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[WACV]</b> One paper accepted by WACV 2026.</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -109,7 +109,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.19</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers accepted by **ACM Multimedia (ACMMM) 2025**.</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers accepted by ACM Multimedia (ACMMM) 2025.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
