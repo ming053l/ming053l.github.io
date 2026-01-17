@@ -31,7 +31,7 @@ My research interests include, but are not limited to:
   <li><b>Medical Image Analysis</b></li>
 </ul>
 
-In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and creating desserts 🍰.
+In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
   
 # 🔥 News
 - *2025/12/23*: &nbsp; I have started my military service.
