@@ -45,7 +45,6 @@ My research interests include, but are not limited to,
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
-
 # 📢 News & Achievements
 
 <div class="news-buttons" style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
@@ -56,118 +55,97 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   <button onclick="filterNews('challenge', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🚀 Challenges</button>
 </div>
 
-<div id="news-timeline" style="max-height: 550px; overflow-y: auto; padding-right: 15px; border-left: 2px solid #eee; margin-left: 10px;">
+<div id="news-timeline" style="max-height: 600px; overflow-y: auto; padding: 10px 15px 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
-  <div class="news-item general" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.12.23</span> &nbsp; 🪖 Started military service.
+  <div class="news-item general" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.23</span>
+    <span style="margin-left: 10px;">🪖 Started military service.</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.12.17</span> &nbsp; 
-    <span class="badge" style="background: #0B3C8A; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Winner</span> 
-    1st place in WACV 2026, SkiTB Visual Tracking Challenge.
+  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.17</span>
+    <span class="badge" style="background: #0B3C8A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Winner</span>
+    <span style="margin-left: 12px;">1st performance in WACV 2026, SkiTB Visual Tracking Challenge.</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.12.03</span> &nbsp; 
-    <span class="badge" style="background: #7a838b; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">3rd Place</span> 
-    Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution), ICASSP 2026.
+  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.12.03</span>
+    <span class="badge" style="background: #7a838b; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">3rd Place</span>
+    <span style="margin-left: 12px;">3rd performance in ICASSP 2026, Hyper-Object Challenge. See you in Barcelona.</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.11.24</span> &nbsp; 
-    <span class="badge" style="background: #7a838b; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Top 2%</span> 
-    Data-Centric Land Cover Classification Challenge, BMVC 2025.
+  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.24</span>
+    <span class="badge" style="background: #7a838b; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Top 2%</span>
+    <span style="margin-left: 12px;">Top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.</span>
   </div>
 
-  <div class="news-item paper" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.11.17</span> &nbsp; 
-    <span class="badge" style="background: #27ae60; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">IJCV</span> 
-    One paper accepted by **International Journal of Computer Vision (IJCV)**.
+  <div class="news-item paper" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.17</span>
+    <span class="badge" style="background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">IJCV</span>
+    <span style="margin-left: 12px;">One paper is accepted by **IJCV 2025**!</span>
   </div>
 
-  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.10.23</span> &nbsp; 
-    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Best Thesis</span> 
-    Best Master Thesis Award, IEEE Tainan Section 2025.
+  <div class="news-item paper" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.11.14</span>
+    <span class="badge" style="background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">WACV</span>
+    <span style="margin-left: 12px;">One paper is accepted by **WACV 2026**. See you in Arizona!</span>
   </div>
 
-  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.09.19</span> &nbsp; 
-    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Future Tech</span> 
-    Future Tech Awards (未來科技獎) - Top 3%.
+  <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.10.23</span>
+    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Thesis</span>
+    <span style="margin-left: 12px;">Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
   </div>
 
-  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.08.20</span> &nbsp; 
-    Excellent Master Thesis Award (IPPR) & Best Paper Award (CVGIP 2025).
+  <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.09.19</span>
+    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Award</span>
+    <span style="margin-left: 12px;">Future Tech Awards (2025 未來科技獎) (Top-3%).</span>
   </div>
 
-  <div class="news-item paper" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.07.19</span> &nbsp; 
-    <span class="badge" style="background: #27ae60; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">ACMMM</span> 
-    Three papers accepted by **ACM Multimedia (ACMMM) 2025**.
+  <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.08.20</span>
+    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Thesis</span>
+    <span style="margin-left: 12px;">Excellent Master Thesis Award in IPPR 2025 & Best Paper Award in CVGIP 2025.</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2025.07.15</span> &nbsp; 
-    <span class="badge" style="background: #0B3C8A; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Winner</span> 
-    1st performance in ACMMM 2025, SoccerTrack Challenge.
+  <div class="news-item paper" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.19</span>
+    <span class="badge" style="background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">ACMMM</span>
+    <span style="margin-left: 12px;">Three papers are accepted by **ACMMM 2025** and one by ICCVW 2025.</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2024.12.24</span> &nbsp; 
-    Runner-up in WACV 2025, Embedded Obstacle Segmentation Challenge.
+  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.15</span>
+    <span class="badge" style="background: #0B3C8A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Winner</span>
+    <span style="margin-left: 12px;">1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.</span>
   </div>
 
-  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2024.09.19</span> &nbsp; 
-    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Future Tech</span> 
-    Future Tech Awards (未來科技獎) 2024.
+  <div class="news-item general" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.07</span>
+    <span style="margin-left: 10px;">🎉 Successfully defended Master's Thesis in NCKU!</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2024.03.24</span> &nbsp; 
-    <span class="badge" style="background: #7a838b; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Runner-up</span> 
-    NTIRE 2024 Image Super-Resolution & COVID-19 Detection Challenge (CVPRW).
+  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2025.07.06</span>
+    <span class="badge" style="background: #0B3C8A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Winner</span>
+    <span style="margin-left: 12px;">1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.</span>
   </div>
 
-  <div class="news-item award" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2023.11.01</span> &nbsp; 
-    <span class="badge" style="background: #f1c40f; color: black; padding: 1px 8px; border-radius: 3px; font-size: 0.8em; font-weight: bold;">Gold Medal</span> 
-    Gold Medal Award (1/150+) in SAS Hackathon.
+  <div class="news-item challenge" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2024.12.24</span>
+    <span class="badge" style="background: #7a838b; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center;">Runner-up</span>
+    <span style="margin-left: 12px;">Runner-up in USV-based Embedded Obstacle Segmentation (WACV 2025).</span>
   </div>
 
-  <div class="news-item challenge" style="margin-bottom: 12px; padding-left: 20px; position: relative;">
-    <span style="color: #666; font-size: 0.9em; font-family: monospace;">2023.06.01</span> &nbsp; 
-    <span class="badge" style="background: #0B3C8A; color: white; padding: 1px 8px; border-radius: 3px; font-size: 0.8em;">Winner</span> 
-    Winner in ICASSP 2023, COV19 Detection Challenge.
+  <div class="news-item award" style="margin-bottom: 18px; display: flex; align-items: flex-start;">
+    <span style="min-width: 90px; color: #666; font-size: 0.9em; font-family: monospace; padding-top: 2px;">2024.09.19</span>
+    <span class="badge" style="background: #f1c40f; color: black; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; min-width: 80px; text-align: center; font-weight: bold;">Award</span>
+    <span style="margin-left: 12px;">Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="_blank">Link</a></span>
   </div>
 
 </div>
-# 🔥 News
-- *2025/12/23*: &nbsp; I have started my military service.
-- *2025/12/17*: &nbsp;🎉🎉 I receive the 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.
-- *2025/12/3*: &nbsp;🎉🎉 I receive the 3rd performance in ICASSP 2026, Hyper-Object Challenge. See you in Barcelona.
-- *2025/11/24*: &nbsp;🎉🎉 I receive the top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.
-- *2025/11/17*: &nbsp;🎉🎉 One paper is accepted by IJCV 2025!
-- *2025/11/14*: &nbsp;🎉🎉 One paper is accepted by WACV 2026. See you in Arizona!
-- *2025/10/23*: &nbsp;🎉🎉 I receive the Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/">Link</a>
-- *2025/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2025 未來科技獎) (Top-3%).
-- *2025/08/20*: &nbsp;🎉🎉 I receive the Excellent Master Thesis Award in IPPR 2025. <a href="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf" target="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf">Link</a>
-- *2025/08/20*: &nbsp;🎉🎉 I receive the Best paper Awards in CVGIP 2025.
-- *2025/7/24*: &nbsp;🎉🎉 One paper is accepted by ICCVW 2025.
-- *2025/7/19*: &nbsp;🎉🎉 Three paper is accepted by ACMMM 2025.
-- *2025/7/15*:: &nbsp;🎉🎉 I receive the 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.
-- *2025/7/7*:: &nbsp;🎉🎉 I have successfully defended my Master's Thesis in NCKU!
-- *2025/7/6*:: &nbsp;🎉🎉 I receive the 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.
-- *2025/6/18*: &nbsp;🎉🎉 I receive the top2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge.
-- *2025/5/30*: &nbsp;🎉🎉 I receive the 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.
-- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
-- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
-- *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025.
-- *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
-- *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 
 # 📝 Selected Publications 
 
@@ -794,49 +772,18 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   </div>
 </div>
         
-# 🎖 Honors and Awards
-
-- *2025.12*:  **3rd place (3/136)**, Hyper-Object Challenge, Spectral Reconstruction from Mosaic Images, IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
-- *2025.12*:  **3rd place (3/274)**, Hyper-Object Challenge, Joint Spatial and Spectral Super-Resolution, IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
-- *2025.11*:  **4th place (4/418)**, Data-Centric Land Cover Classification Challenge, British Machine Vision Conference (BMVC).
-- *2025.10*:  **Best Master Thesis Award**, IEEE Tainan Section 2025.
-- *2025.09*:  **Future Tech Awards** (2025 未來科技獎) (Top-3%).
-- *2025.08*:  **Excellent Master Thesis Award**, IPPR 2025.
-- *2025.07*:  **Winner**, SoccerTrack Challenge, Multimedia Content Analysis in Sports, ACM International Conference on Multimedia (ACMMM). 
-- *2025.07*:  **Winner**, Multi-source COV19 Detection Challenge, PHAROS Adaptation, Fairness, Explainability in AI Medical Imaging Workshop, IEEE/CVF International Conference on Computer Vision (ICCV).
-- *2025.06*:  **5th place (5/486)**, Social Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
-- *2025.05*:  **Winner**, TreeScope Tree Diameter Estimation Challenge, IEEE International Conference on Robotics and Automation (ICRA).
-- *2025.03*:  **6th place (6/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2025.03*:  **3rd place (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
-- *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
-- *2024.09*:  **Future Tech Awards** (2024 未來科技獎).
-- *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
-- *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
-- *2024.03*:  9th place (9/288), AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras, IEEE Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **6th place (6/195)**, NTIRE 2024 Image Super-Resolution (x4), IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **3rd place (3/21)**, COVID-19 Detection Challange, Domain adaptation, Explainability and Fairness in AI for Medical Image Analysis, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **Runner-up (2/1200+)**, Auto-WCEBleedGen Challenge Version V2, IEEE International Conference on Image Processing (ICIP).
-- *2024.01*:  **(?/8) Ministry of Education Presidential Education Award Candicate in NCKU**.
-- *2024.01*:  6th place (6/195), SeaDroneSee Multi-Object Tracking and Re-Identification Challenge, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Workshop on Maritime Computer Vision (MaCVi).
-- *2023.12*:  **2nd place (2/129)**, Embedded AI Object Detection Model Design, PAIR-LITEON Competition, ACM International Conference on Multimedia Asia (MMAsia).
-- *2023.11*:  **Gold Medal Award (1/150+)**, SAS Hackathon, [Reported by 6+ domsetic media].
-- *2023.10*:  **Top Paper Award (3/700+)** , Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM).
-- *2023.10*:  **Jury Prize (1/176)**, Visual Inductive Priors Workshop on Instance Segmentation Challenge, IEEE/CVF International Conference on Computer Vision (ICCV).
-- *2023.06*:  **Winner (1/18)**, COV19 Detection Challenge, AI-enabled Medical Image Analysis Workshop in IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
-
 # 🚀 Academic Services
 
 ### 📝 Reviewer
 - *Conference Papers*: CVPR'24, ICLR'25, CVPR'25, ICCV'25, ACMMM'25, MMAsia'25, AAAI'26, CVPR'26, ICME'26
 - *Journal Papers*: TMM, TIFS, TGRS, GRSL, IJPRAI
-
+- 
 <script>
 function filterNews(type, e) {
   const items = document.querySelectorAll('.news-item');
   items.forEach(item => {
     if (type === 'all' || item.classList.contains(type)) {
-      item.style.display = 'block';
+      item.style.display = 'flex';
     } else {
       item.style.display = 'none';
     }
