@@ -69,228 +69,119 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 - *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
 
 # 📝 Selected Publications 
+<div class="category-buttons" style="margin-bottom: 20px;"> <span style="font-weight: bold; margin-right: 10px;">Filter by Topic:</span> <a href="#restoration" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1;">Image Restoration</a> <a href="#hsi" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1;">HSI & Remote Sensing</a> <a href="#efficient" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1;">Efficient AI</a> <a href="#security" class="btn btn-sm z-depth-0" style="background-color: #f1f1f1;">Security & Deepfake</a> </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/simflowsr.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<h2 id="restoration" style="border-bottom: 1px solid #eee; padding-bottom: 10px;">✨ Image Restoration & Enhancement</h2>
 
-**SimFlowSR: Self-similarity Aggregation over Consistent Information Flow for Single Image Super-Resolution**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/simflowsr.gif' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> SimFlowSR: Self-similarity Aggregation over Consistent Information Flow for Single Image Super-Resolution Chia-Ming Lee, Chih-Chung Hsu
 
- **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+Keywords: Super-resolution, Information Bottleneck, Self-similarity <div class="links">
 
-**Keywords**
-- Image Super-resolution (Stronger, faster DRCT)
-- Information Bottleneck
-- Self-similarity Aggregation
+<a href="https://ming053l.github.io/SimFlowSR/" class="btn btn-sm z-depth-0" target="_blank">Project Page</a>
 
-  <div class="links">
-      <a href="https://ming053l.github.io/SimFlowSR/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project Page</a>
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv (Coming Soon)</a>
-      <a href="https://github.com/ming053l/SimFlowSR" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github (Coming Soon)</a>
-  </div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/ELSA.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, **Chia-Ming Lee**
-
-**Keywords**
-- Hardware-Agnositic Transformer Accerlation
-- Exact Linear-Scan Attention
-- Long-sequence and High Precision Vision
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/PhaSR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors**
-
-**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jing-Hui Jung, <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Single Image Shadow Removal
-- Ambient Light Normalization
-  <div class="links">
-      <a href="https://ming053l.github.io/PhaSR/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project Page</a>
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv (Coming Soon)</a>
-      <a href="https://github.com/ming053l/PhaSR" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github (Coming Soon)</a>
-  </div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/ReflexSplit.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation**
-
-**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jing-Hui Jung, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">Yu-Lun Liu</a>
-
-**Keywords**
-
-- Single Reflection Removal
-  <div class="links">
-      <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project Page</a>
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv (Coming Soon)</a>
-      <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github (Coming Soon)</a>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCV26</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection**
-
-Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="https://www.cs.nthu.edu.tw/~cthsu/candy.html">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="https://www.ee.nthu.edu.tw/cwlin/">Chia-Wen Lin</a>
-
-**Keywords**
-
-- Constrative Learning
-- Multimodality Learning
-- Robust DeepFake Detection
-  
-  <div class="links">
-      <a href="https://arxiv.org/abs/2511.18983" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-  </div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/wweuie.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**WWE-UIE: A Wavelet & White Balance Efficient Network for Underwater Image Enhancement**
-
-Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/chingheng0808/WWE-UIE">
-
-- Under-water Image Enhancement
-- Color Correction
-  <div class="links">
-      <a href="https://arxiv.org/abs/2511.16321" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://github.com/chingheng0808/WWE-UIE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**DenseSR: Image Shadow Removal as Dense Prediction**
-
-<a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Single Image Shadow Removal
-  
-  <div class="links">
-      <a href="https://arxiv.org/abs/2507.16472" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://githubcom/VanLinLin/DenseSR" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
-</div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIFS</div><img src='images/GRACEv2.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Towards Robust DeepFake Detection: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Smoothing**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, **Chia-Ming Lee**, Yi-Fang Wang, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
-
-**Keywords**
-- Adversarial Attack
-- Robust DeepFake Detection
-- Graph Convolution Network
-</div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/PromptHSI.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation**
-
-**Chia-Ming Lee**, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
-
-
-**Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/chingheng0808/PromptHSI">
-- Hyperspectral Image Restoration
-- All-in-One Image Restoration
-- Text-Prompt Learning
-  
-  <div class="links">
-      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv>
-      <a href="https://github.com/chingheng0808/PromptHSI" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-      <a href="https://drive.google.com/drive/folders/1O0GDzoPt3AVD4mjXeu3R_lxyuTDEWWW1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Dataset</a>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-**AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery**
-
-**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
-
-**Keywords**
-
-- Hyperspectral Image Restoration
-- Robust Hyperspectral Image Fusion
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**DRCT: Saving Image Super-Resolution away from Information Bottleneck** 
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
-
-**Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/ming053l/DRCT">
-- Image Super-resolution
-- Information Bottleneck
-  <div class="links">
-      <a href="https://arxiv.org/pdf/2404.00722.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://arxiv.org/abs/2404.00722" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://github.com/ming053l/DRCT" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-      <a href="https://allproj002.github.io/drct.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project page</a>
-      <a href="https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Poster</a>
-      <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing&ouid=105932000013245886245&rtpof=true&sd=true" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slide</a>
-  </div>
+<a href="https://github.com/ming053l/SimFlowSR" class="btn btn-sm z-depth-0" target="_blank">Github</a>
 
 </div>
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> DRCT: Saving Image Super-Resolution away from Information Bottleneck Chih-Chung Hsu, Chia-Ming Lee, Yi-Shiuan Chou
+
+Keywords: Super-resolution, Information Bottleneck <div class="links">
+
+<a href="https://arxiv.org/abs/2404.00722" class="btn btn-sm z-depth-0" target="_blank">arXiv</a>
+
+<a href="https://github.com/ming053l/DRCT" class="btn btn-sm z-depth-0" target="_blank">Github</a>
+
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS2024</div><img src='images/RTCS.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+</div></div>
 
-**Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/PhaSR.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors Chia-Ming Lee, Yu-Fan Lin, Yu-Jou Hsiao, Jing-Hui Jung, Yu-Lun Liu, Chih-Chung Hsu
 
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee**, Guan-Lin Chen
+Keywords: Shadow Removal, Physical Priors <div class="links">
 
-**Keywords**
-- Hypersepctral Image
-- Compression and Sensing
-- Image Restoration
-  
-  <div class="links">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10474407" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">IEEE Xplore</a>
-      <a href="https://github.com/ming053l/RTCS" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-  </div>
+<a href="https://ming053l.github.io/PhaSR/" class="btn btn-sm z-depth-0" target="_blank">Project Page</a>
+
 </div>
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM 2025</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> DenseSR: Image Shadow Removal as Dense Prediction Yu-Fan Lin, Chia-Ming Lee, Chih-Chung Hsu
+
+Keywords: Shadow Removal, Dense Prediction <div class="links">
+
+<a href="https://arxiv.org/abs/2507.16472" class="btn btn-sm z-depth-0" target="_blank">arXiv</a>
+
 </div>
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/ReflexSplit.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation Chia-Ming Lee, Yu-Fan Lin, Jing-Hui Jung, Yu-Jou Hsiao, Chih-Chung Hsu, Yu-Lun Liu
+
+Keywords: Reflection Removal <div class="links">
+
+<a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" class="btn btn-sm z-depth-0" target="_blank">Project Page</a>
+
+</div>
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2026</div><img src='images/wweuie.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> WWE-UIE: A Wavelet & White Balance Efficient Network for Underwater Image Enhancement Ching-Heng Cheng, Jen-Wei Lee, Chia-Ming Lee, Chih-Chung Hsu
+
+Keywords: Underwater Enhancement, Color Correction <div class="links">
+
+<a href="https://arxiv.org/abs/2511.16321" class="btn btn-sm z-depth-0" target="_blank">arXiv</a>
+
+</div>
+
+</div></div>
+
+<h2 id="hsi" style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 50px;">🛰️ Hyperspectral & Remote Sensing</h2>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/PromptHSI.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation Chia-Ming Lee, et al.
+
+Keywords: HSI Restoration, Vision-Language Prompt <div class="links">
+
+<a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" target="_blank">arXiv</a>
+
+</div>
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery Chia-Ming Lee, et al.
+
+Keywords: HSI Fusion, Robust Restoration </div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS 2024</div><img src='images/RTCS.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat Chih-Chung Hsu, et al.
+
+Keywords: CubeSat, Compressed Sensing, HSI <div class="links">
+
+<a href="https://ieeexplore.ieee.org/abstract/document/10474407" class="btn btn-sm z-depth-0" target="_blank">Paper</a>
+
+</div>
+
+</div></div>
+
+<h2 id="efficient" style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 50px;">⚡ Efficient AI & Acceleration</h2>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">New!</div><img src='images/ELSA.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers Chih-Chung Hsu, Xin-Di Ma, Wo-Ting Liao, Chia-Ming Lee Keywords: ViT Acceleration, Linear Attention, Memory-Efficient </div></div>
+
+<h2 id="security" style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 50px;">🛡️ Multimedia Security & Deepfake Detection</h2>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCV 2025</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection Ching-Yi Lai, et al.
+
+Keywords: Deepfake Detection, Contrastive Learning, Multimodal <div class="links">
+
+<a href="https://arxiv.org/abs/2511.18983" class="btn btn-sm z-depth-0" target="_blank">arXiv</a>
+
+</div>
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TIFS</div><img src='images/GRACEv2.png' alt="sym" width="100%"></div></div> <div class='paper-box-text' markdown="1"> Towards Robust DeepFake Detection: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Smoothing Chih-Chung Hsu, et al.
+
+Keywords: Adversarial Attack, GCN, Robustness </div></div>
 
 
 # 🎖 Honors and Awards
@@ -327,5 +218,5 @@ Ching-Heng Cheng, Jen-Wei Lee, **Chia-Ming Lee**, <a href="https://cchsu.info/" 
 # 🚀 Academic Services
 
 ### 📝 Reviewer
-- *Conference Papers*: CVPR'24, ICLR'25, CVPR'25, ICCV'25, ACMMM'25, MMAsia'25, AAAI'26, CVPR'26
+- *Conference Papers*: CVPR'24, ICLR'25, CVPR'25, ICCV'25, ACMMM'25, MMAsia'25, AAAI'26, CVPR'26, ICME'26
 - *Journal Papers*: TMM, TIFS, TGRS, GRSL, IJPRAI
