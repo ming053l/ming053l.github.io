@@ -161,7 +161,7 @@ Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/CC7.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV26</div><img src='images/wweuie.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **WWE-UIE: A Wavelet & White Balance Efficient Network for Underwater Image Enhancement**
