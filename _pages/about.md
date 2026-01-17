@@ -38,7 +38,8 @@ Find my resume
 My research interests include, but are not limited to, 
 <span style="color:#0B5D1E"><b>Low-level Vision Problems</b></span>, 
 <span style="color:#0B5D1E"><b>Computational Photography</b></span>, 
-<span style="color:#0B5D1E"><b>Multimedia Information Security</b></span>, 
+<span style="color:#0B5D1E"><b>Hyperspectral Image Processing</b></span>, 
+<span style="color:#0B5D1E"><b>Multimedia Information Analysis and Security</b></span>, 
 <span style="color:#0B5D1E"><b>Efficient AI</b></span>, and 
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
