@@ -57,6 +57,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div id="news-timeline" style="max-height: 650px; overflow-y: auto; padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICASSP]</b> One paper accepted by ICASSP 2026.</span>
+  </div>
+  
   <div class="news-item general" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.23</span>
     <span style="margin-left: 15px;">🪖 Started military service.</span>
@@ -76,10 +81,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.24</span>
     <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 2%]</b> Top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.</span>
   </div>
-
+  
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper accepted by International Journal of Computer Vision (IJCV).</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper accepted by IJCV.</span>
   </div>
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -109,7 +114,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.19</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers accepted by ACM Multimedia (ACMMM) 2025.</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers accepted by ACMMM 2025.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -139,12 +144,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in CVPR 2025, NTIRE Workshop, Image Shadow Removal Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 3%]</b> Top 3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 3%]</b> Top 3% ranking in CVPR 2025, NTIRE Workshop, Image Reflection Removal Challenge.</span>
   </div>
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -154,7 +159,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item challenge" style="margin-bottom: 15px; padding-left: 0px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.12.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Runner-up]</b> Runner-up in USV-based Embedded Obstacle Segmentation (WACV 2025).</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Runner-up]</b> Runner-up in WACV 2025, USV-based Embedded Obstacle Segmentation Challenge.</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -164,22 +169,22 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.07.01</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Winner, Beyond Visible Spectrum: AI for Agriculture Challenge (ICPR 2024).</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Winner in ICPR 2024, Beyond Visible Spectrum: AI for Agriculture Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.05.01</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Award]</b> Top Performance Award, Social Media Popularity Prediction Challenge (ACMMM 2024).</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Award]</b> Top Performance Award in ACMMM 2024, Social Media Popularity Prediction Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd place, COVID-19 Detection Challenge (CVPRW 2024).</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd place in CVPRW 2024,, COVID-19 Detection Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[6th Place]</b> 6th place, NTIRE 2024 Image Super-Resolution (x4) (CVPRW).</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[6th Place]</b> 6th place in CVPRW, NTIRE 2024 Image Super-Resolution (x4).</span>
   </div>
 
   <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -189,7 +194,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.10.01</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Jury Prize]</b> Jury Prize (1/176), Visual Inductive Priors Workshop Instance Segmentation Challenge (ICCV 2023).</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Jury Prize]</b> Jury Prize (1/176) in ICCV 2023, Visual Inductive Priors Workshop Instance Segmentation Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
