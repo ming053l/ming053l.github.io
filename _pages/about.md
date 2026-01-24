@@ -858,7 +858,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 ### 📝 Reviewer
 - *Conference Papers*: CVPR, ECCV, ICCV, ICLR, ACMMM, MMAsia, AAAI, ICME, IGARSS, ICMR
-- *Journal Papers*: TMM, TIFS, TGRS, GRSL, IJPRAI
+- *Journal Papers*: TMM, TIFS, TGRS, TCVST, GRSL, IJPRAI
 
 <script>
 function filterNews(type, e) {
