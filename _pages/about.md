@@ -329,7 +329,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </ul>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2507.16472" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-        <a href="https://githubcom/VanLinLin/DenseSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+        <a href="https://github.com/VanLinLin/DenseSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
       </div>
     </div>
   </div>
