@@ -862,7 +862,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 # 🚀 Academic Services
 
 ### 📝 Reviewer
-- *Conference Papers*: CVPR, ECCV, ICCV, ICLR, ACMMM, MMAsia, AAAI, ICME, IGARSS, ICMR
+- *Conference Papers*: CVPR, ECCV, ICCV, ICLR, KDD, ACMMM, MMAsia, AAAI, ICME, IGARSS, ICMR, ICIP
 - *Journal Papers*: TMM, TIFS, TGRS, TCVST, GRSL, IJPRAI
 
 <script>
