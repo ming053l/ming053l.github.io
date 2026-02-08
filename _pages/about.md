@@ -408,6 +408,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Hyperspectral Image Fusion</li>
       </ul>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://www.arxiv.org/abs/2602.00490" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/jemmyleee/HSSDCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
     </div>
   </div>
   
