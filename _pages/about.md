@@ -288,7 +288,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Single Reflection Removal</li>
+        <li>Single Image Reflection Separation</li>
       </ul>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://www.arxiv.org/abs/2601.17468" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
@@ -311,7 +311,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
         <img src="https://img.shields.io/github/stars/chingheng0808/WWE-UIE?style=social" alt="Github Stars">
       </div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Single Image Shadow Removal</li>
+        <li>Under Water Image Enhancement</li>
+        <li>Color Correction</li>
       </ul>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2511.16321" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
