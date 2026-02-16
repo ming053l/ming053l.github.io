@@ -264,14 +264,20 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jing-Hui Jung, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Single Image Shadow Removal</li>
         <li>Ambient Light Normalization</li>
       </ul>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/PhaSR/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
+        <a href="https://www.arxiv.org/abs/2601.17470" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://github.com/ming053l/PhaSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/PhaSR_github/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
       </div>
     </div>
   </div>
@@ -283,11 +289,17 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jing-Hui Jung, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Single Reflection Removal</li>
       </ul>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://www.arxiv.org/abs/2601.17468" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://github.com/wuw2135/ReflexSplit" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
       </div>
