@@ -267,7 +267,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
         <span style="font-weight: bold;">Keywords</span>
-        <img src="https://github.com/ming053l/PhaSR?style=social" alt="Github Stars">
+        <img src="https://img.shields.io/github/stars/ming053l/PhaSR?style=social" alt="Github Stars">
       </div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Single Image Shadow Removal</li>
@@ -288,7 +288,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">Keywords</span>
+        <img src="https://img.shields.io/github/stars/wuw2135/ReflexSplit?style=social" alt="Github Stars">
+      </div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
         <li>Single Image Reflection Separation</li>
       </ul>
