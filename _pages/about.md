@@ -58,8 +58,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="news-timeline" style="max-height: 650px; overflow-y: auto; padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.29</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Three paper accepted by CVPR and CVPR Findings!</span>
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.02.21</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Three paper accepted by CVPR and CVPR Findings.</span>
   </div>
   
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
