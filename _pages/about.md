@@ -59,6 +59,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.29</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[TGRS]</b> Three paper accepted by CVPR and CVPR Findings!</span>
+  </div>
+  
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.29</span>
     <span style="margin-left: 15px;"><b style="color: #27ae60;">[TGRS]</b> One paper accepted by TGRS.</span>
   </div>
   
@@ -259,7 +264,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
       <img src='images/PhaSR.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
@@ -282,7 +287,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
       <img src='images/ReflexSplit.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
@@ -547,7 +552,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR Findings 2026</div>
       <img src='images/ELSA.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
