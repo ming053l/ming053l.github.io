@@ -522,7 +522,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+<div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
   <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
     <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2024</div>
     <img src='images/RTCS.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
@@ -530,18 +530,22 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   <div class='paper-box-text' style="flex: 1; min-width: 300px;">
     <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</h4>
     <p style="margin: 0 0 10px 0; font-size: 1.05em;">
-      <a href="https://cchsu.info/" target="_blank">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, <strong>Chia-Ming Lee</strong>, Guan-Lin Chen
+      <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, <strong>Chia-Ming Lee</strong>, Guan-Lin Chen
     </p>
-    <div style="margin-bottom: 15px;">
-      <span style="font-weight: bold;">Keywords: </span>
-      <span style="color: #555;">Hyperspectral Image Restoration & Compression Sensing</span>
-    </div>
+    <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
+    <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
+      <li>Hyperspectral Image Restoration & Compressed Sensing</li>
+      <li>Real-Time Transmission for CubeSat</li>
+    </ul>
     <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
       <a href="https://ieeexplore.ieee.org/abstract/document/10474407" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
       <a href="https://github.com/ming053l/RTCS" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
       <img src="https://img.shields.io/github/stars/ming053l/RTCS?style=social" alt="Github Stars">
     </div>
   </div>
+</div>
+
+
 </div>
 
 
