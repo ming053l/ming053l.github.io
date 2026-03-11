@@ -247,7 +247,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <img src='images/simflowsr.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Self-similarity Aggregation over Consistent Information Flow for Single Image Super-Resolution</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Consistent Information Flow with Self-similarity Aggregation for Single Image Super-Resolution</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
@@ -265,7 +265,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
-      <img src='images/PhaSR.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+          <video muted loop playsinline
+    onmouseover="this.play()" 
+    onmouseout="this.pause(); this.currentTime=0;"
+    style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
+      <source src="images/PhaSR_demo.mp4" type="video/mp4">
+    </video>
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors</h4>
@@ -289,7 +294,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   <div class='paper-box' style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class='paper-box-image' style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
-      <img src='images/ReflexSplit.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <video muted loop playsinline
+onmouseover="this.play()" 
+onmouseout="this.pause(); this.currentTime=0;"
+style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
+  <source src="images/ReflexSplit_demo.mp4" type="video/mp4">
+</video>
     </div>
     <div class='paper-box-text' style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation</h4>
