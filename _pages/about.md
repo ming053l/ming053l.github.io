@@ -262,7 +262,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="restoration" data-sort="20268"
+  <div class="paper-box" data-category="restoration" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
@@ -290,7 +290,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="restoration" data-sort="20267"
+  <div class="paper-box" data-category="restoration" data-sort="20265"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
@@ -317,7 +317,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="restoration" data-sort="20263"
+  <div class="paper-box" data-category="restoration" data-sort="20262"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">WACV 2026</div>
@@ -394,7 +394,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <!-- ===================== HSI / REMOTE SENSING ===================== -->
 
-  <div class="paper-box" data-category="hsi" data-sort="20267"
+  <div class="paper-box" data-category="hsi" data-sort="20261"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2026</div>
@@ -418,7 +418,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="hsi" data-sort="20264"
+  <div class="paper-box" data-category="hsi" data-sort="20260"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSP 2026</div>
@@ -559,7 +559,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <!-- ===================== EFFICIENT AI ===================== -->
 
-  <div class="paper-box" data-category="efficient" data-sort="20265"
+  <div class="paper-box" data-category="efficient" data-sort="20264"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR Findings 2026</div>
@@ -595,7 +595,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <!-- ===================== DEEPFAKE ===================== -->
 
-  <div class="paper-box" data-category="security" data-sort="20266"
+  <div class="paper-box" data-category="security" data-sort="20263"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #001c4e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IJCV 2026</div>
