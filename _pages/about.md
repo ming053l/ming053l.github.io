@@ -273,7 +273,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors
-        <span style="color: red; font-size: 0.75em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px;">NEW</span>
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
@@ -303,7 +303,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation
-        <span style="color: red; font-size: 0.75em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px;">NEW</span>
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
@@ -571,7 +571,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
-        <span style="color: red; font-size: 0.75em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px;">NEW</span>
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
