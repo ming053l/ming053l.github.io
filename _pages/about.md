@@ -608,7 +608,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <img src='images/UMCL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection
+          <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="_blank" style="text-decoration: underline;">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="_blank" style="text-decoration: underline;">Chia-Wen Lin</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
