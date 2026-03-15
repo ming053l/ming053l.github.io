@@ -37,7 +37,7 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
-I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:YOUR_EMAIL@albany.edu" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee ☕ or a virtual meeting 💻 — do not hesitate to get in touch!
+I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee ☕ or a virtual meeting 💻 — do not hesitate to get in touch!
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
@@ -51,8 +51,16 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   <button onclick="filterNews('challenge', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🚀 Challenges</button>
 </div>
 
+
+
 <div id="news-timeline" style="max-height: 650px; overflow-y: auto; padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.14</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Top 2% performance in CVPR 2026, PBVS Mars Landslide Segmentation Challenge.</span>
+  </div>
+  
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.02.21</span>
     <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Three paper accepted by CVPR and CVPR Findings.</span>
