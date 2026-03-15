@@ -37,6 +37,8 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
+I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:YOUR_EMAIL@albany.edu" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee ☕ or a virtual meeting 💻 — do not hesitate to get in touch!
+
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
 # 📢 News & Achievements
