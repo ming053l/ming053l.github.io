@@ -37,7 +37,7 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
-I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee ☕ or a virtual meeting 💻 — if you are a prospective graduate or undergraduate student, please include your CV and availability in your email so we can make the most of our time together!
+I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee chat ☕ or a virtual meeting 💻 — if you are a prospective graduate or undergraduate student, please include your CV and availability in your email so we can make the most of our time together!
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
