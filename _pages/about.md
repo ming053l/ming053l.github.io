@@ -272,7 +272,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </video>
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors
+        <span style="color: red; font-size: 0.75em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px;">NEW</span>
+      </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
         <span style="font-weight: bold;">Keywords</span>
@@ -300,7 +302,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </video>
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation
+        <span style="color: red; font-size: 0.75em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px;">NEW</span>
+      </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
         <span style="font-weight: bold;">Keywords</span>
@@ -566,7 +570,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <img src='images/ELSA.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
+        <span style="color: red; font-size: 0.75em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px;">NEW</span>
+      </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
       <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
       <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
@@ -888,35 +894,35 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 </div><!-- end #pub-container -->
 
+<style>
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+</style>
+
 <script>
 (function () {
   const container = document.getElementById('pub-container');
 
-  // Sort all paper-box children by data-sort descending (higher = newer/priority)
   function sortAllPapers() {
     const cards = Array.from(container.querySelectorAll('.paper-box'));
     cards.sort((a, b) => parseInt(b.dataset.sort) - parseInt(a.dataset.sort));
-    cards.forEach(c => container.appendChild(c)); // reorder in DOM
+    cards.forEach(c => container.appendChild(c));
   }
 
-  // Call once on page load
   sortAllPapers();
 
   window.filterCategory = function (categoryId, e) {
     if (e) e.preventDefault();
-
     const cards = Array.from(container.querySelectorAll('.paper-box'));
-
     if (categoryId === 'all') {
-      // Show all, maintain time-sorted order
       cards.forEach(c => { c.style.display = 'flex'; });
     } else {
       cards.forEach(c => {
         c.style.display = (c.dataset.category === categoryId) ? 'flex' : 'none';
       });
     }
-
-    // Update button styles
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.style.backgroundColor = '#f1f1f1';
       btn.style.color = '#333';
