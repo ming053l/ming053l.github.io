@@ -57,6 +57,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.18</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[3rd Place]</b> 3rd in CVPR 2026, NTIRE Ambient Lighening Normalization Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.14</span>
     <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 2%]</b> Top 2% performance in CVPR 2026, PBVS Mars Landslide Segmentation Challenge.</span>
   </div>
