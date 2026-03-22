@@ -588,7 +588,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR Findings 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
-        <source src="images/ELSATeaserNoTitle.mp4" type="video/mp4">
+        <source src="images/ELSATeaserLight.mp4" type="video/mp4">
       </video>
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
