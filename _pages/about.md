@@ -55,6 +55,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div id="news-timeline" style="max-height: 650px; overflow-y: auto; padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.24</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPRW]</b> Two paper accepted by CVPR Workshops (CV4Edu and NTIRE).</span>
+  </div>
+  
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.21</span>
     <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (5/258) performance in CVPR 2026, NTIRE Bokeh Rendering Challenge.</span>
