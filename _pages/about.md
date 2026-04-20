@@ -289,7 +289,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="efficiency" data-sort="20266"
+  <div class="paper-box" data-category="efficient" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
