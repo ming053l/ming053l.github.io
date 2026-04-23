@@ -53,7 +53,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
 
-<div id="news-timeline" style="max-height: 650px; overflow-y: auto; padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
+<div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -218,7 +218,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd place in CVPRW 2024,, COVID-19 Detection Challenge.</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd place in CVPRW 2024, COVID-19 Detection Challenge.</span>
   </div>
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -242,6 +242,53 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   </div>
 
 </div>
+<div style="text-align: center; margin-top: 10px;">
+  <button id="news-toggle-btn" onclick="toggleNews()" style="background: #f1f1f1; border: 1px solid #ddd; padding: 5px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">Show More</button>
+</div>
+<script>
+(function() {
+  const timeline = document.getElementById('news-timeline');
+  const btn = document.getElementById('news-toggle-btn');
+  const items = Array.from(timeline.querySelectorAll('.news-item'));
+  const LIMIT = 10;
+  let expanded = false;
+
+  function applyFilter(activeCategory) {
+    let visible = 0;
+    items.forEach(item => {
+      const matchesCategory = (activeCategory === 'all' || item.classList.contains(activeCategory));
+      if (matchesCategory) {
+        if (!expanded && visible >= LIMIT) {
+          item.style.display = 'none';
+        } else {
+          item.style.display = 'flex';
+        }
+        visible++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    btn.style.display = visible > LIMIT ? 'inline-block' : 'none';
+  }
+
+  window.toggleNews = function() {
+    expanded = !expanded;
+    btn.textContent = expanded ? 'Show Less' : 'Show More';
+    applyFilter('all');
+  };
+
+  // intercept news filter buttons
+  window._newsCategory = 'all';
+  const origFilterNews = window.filterNews;
+  window.filterNews = function(cat, e) {
+    window._newsCategory = cat;
+    if (origFilterNews) origFilterNews(cat, e);
+    applyFilter(cat);
+  };
+
+  applyFilter('all');
+})();
+</script>
 <!-- ========================================================
      USAGE: Replace your entire publications block with this.
      All paper-box divs now carry data-sort and data-category.
@@ -891,6 +938,21 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
+@media (max-width: 768px) {
+  .paper-box {
+    flex-direction: column !important;
+  }
+  .paper-box-image {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  .paper-box-image img,
+  .paper-box-image video {
+    width: 100% !important;
+  }
+}
 </style>
 
 <script>
@@ -918,10 +980,14 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.style.backgroundColor = '#f1f1f1';
       btn.style.color = '#333';
+      btn.style.borderLeft = '1px solid #ddd';
+      btn.style.fontWeight = 'normal';
     });
     if (e && e.currentTarget) {
       e.currentTarget.style.backgroundColor = '#333';
       e.currentTarget.style.color = 'white';
+      e.currentTarget.style.borderLeft = '4px solid #0B3C8A';
+      e.currentTarget.style.fontWeight = 'bold';
     }
   };
 })();
