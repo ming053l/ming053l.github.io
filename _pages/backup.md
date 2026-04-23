@@ -37,7 +37,7 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
 <span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
 
-I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee chat ☕ or a virtual meeting 💻 — if you are a prospective graduate or undergraduate student, please include your CV/resume and availability in your email so we can make the most of our time together!
+I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>.
 
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
@@ -317,185 +317,8 @@ window.addEventListener('scroll', function() {
      JS at the bottom handles Show All (time-sorted) vs filter.
      ======================================================== -->
 
+     
 
-# 🏆 Competition Results
-
-<div style="overflow-x: auto; margin-bottom: 40px;">
-<table id="comp-table" style="width: 100%; border-collapse: collapse; font-size: 0.92em;">
-  <thead>
-    <tr style="background: #f8f8f8; border-bottom: 2px solid #ddd;">
-      <th style="padding: 10px 14px; text-align: left;">Date</th>
-      <th style="padding: 10px 14px; text-align: left;">Venue</th>
-      <th style="padding: 10px 14px; text-align: left;">Challenge</th>
-      <th style="padding: 10px 14px; text-align: center;">Rank</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2026.03</td>
-      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
-      <td style="padding: 9px 14px;">Bokeh Rendering Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 1% (5/258)</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2026.03</td>
-      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
-      <td style="padding: 9px 14px;">Image Super-Resolution Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 1% (5/569)</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2026.03</td>
-      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
-      <td style="padding: 9px 14px;">Robust Deepfake Detection Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 1% (6/5268)</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2026.03</td>
-      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
-      <td style="padding: 9px 14px;">Ambient Lightening Normalization Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2026.03</td>
-      <td style="padding: 9px 14px;">CVPR 2026 PBVS</td>
-      <td style="padding: 9px 14px;">Mars Landslide Segmentation Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 2%</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2025.12</td>
-      <td style="padding: 9px 14px;">WACV 2026</td>
-      <td style="padding: 9px 14px;">SkiTB Visual Tracking Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2025.12</td>
-      <td style="padding: 9px 14px;">ICASSP 2026</td>
-      <td style="padding: 9px 14px;">Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution)</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2025.11</td>
-      <td style="padding: 9px 14px;">BMVC 2025</td>
-      <td style="padding: 9px 14px;">Data-Centric Land Cover Classification Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 2%</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2025.07</td>
-      <td style="padding: 9px 14px;">ACMMM 2025</td>
-      <td style="padding: 9px 14px;">SoccerTrack Challenge @ MMSports</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2025.07</td>
-      <td style="padding: 9px 14px;">ICCV 2025</td>
-      <td style="padding: 9px 14px;">Multi-source COV19 Detection Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2025.06</td>
-      <td style="padding: 9px 14px;">ACMMM 2025</td>
-      <td style="padding: 9px 14px;">Social Media Popularity Prediction Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 2%</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2025.05</td>
-      <td style="padding: 9px 14px;">ICRA 2025</td>
-      <td style="padding: 9px 14px;">TreeScope Tree Diameter Estimation Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2025.03</td>
-      <td style="padding: 9px 14px;">CVPR 2025 NTIRE</td>
-      <td style="padding: 9px 14px;">Image Shadow Removal Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2025.03</td>
-      <td style="padding: 9px 14px;">CVPR 2025 NTIRE</td>
-      <td style="padding: 9px 14px;">Image Reflection Removal Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 3%</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2024.12</td>
-      <td style="padding: 9px 14px;">WACV 2025</td>
-      <td style="padding: 9px 14px;">USV-based Embedded Obstacle Segmentation Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#7a838b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥈 Runner-up</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2024.07</td>
-      <td style="padding: 9px 14px;">ICPR 2024</td>
-      <td style="padding: 9px 14px;">Beyond Visible Spectrum: AI for Agriculture Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2024.05</td>
-      <td style="padding: 9px 14px;">ACMMM 2024</td>
-      <td style="padding: 9px 14px;">Social Media Popularity Prediction Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top Performance Award</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2024.03</td>
-      <td style="padding: 9px 14px;">CVPR 2024 NTIRE</td>
-      <td style="padding: 9px 14px;">Image Super-Resolution (×4)</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#7a838b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">6th Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2024.03</td>
-      <td style="padding: 9px 14px;">CVPR 2024</td>
-      <td style="padding: 9px 14px;">COVID-19 Detection Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2023.11</td>
-      <td style="padding: 9px 14px;">SAS Hackathon</td>
-      <td style="padding: 9px 14px;">SAS Hackathon</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 Gold Medal (1/150+)</span></td>
-    </tr>
-    <tr style="border-bottom: 1px solid #eee;">
-      <td style="padding: 9px 14px; color: #666;">2023.10</td>
-      <td style="padding: 9px 14px;">ICCV 2023</td>
-      <td style="padding: 9px 14px;">Visual Inductive Priors Workshop Instance Segmentation Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🏅 Jury Prize (1/176)</span></td>
-    </tr>
-    <tr style="background:#fafafa;">
-      <td style="padding: 9px 14px; color: #666;">2023.06</td>
-      <td style="padding: 9px 14px;">ICASSP 2023</td>
-      <td style="padding: 9px 14px;">COV19 Detection Challenge</td>
-      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<div style="text-align: center; margin-top: 8px; margin-bottom: 40px;">
-  <button id="comp-toggle-btn" onclick="toggleComp()" 
-    style="background:#f1f1f1; border:1px solid #ddd; padding:5px 20px; 
-           border-radius:20px; cursor:pointer; font-size:0.9em; color:#333;">
-    Show All Competitions ▾
-  </button>
-</div>
-<script>
-(function() {
-  const PREVIEW = 5;
-  let expanded = false;
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const rows = document.querySelectorAll('#comp-table tbody tr');
-    rows.forEach((row, i) => {
-      if (i >= PREVIEW) row.style.display = 'none';
-    });
-  });
-
-  window.toggleComp = function() {
-    expanded = !expanded;
-    const rows = document.querySelectorAll('#comp-table tbody tr');
-    rows.forEach((row, i) => {
-      if (i >= PREVIEW) row.style.display = expanded ? '' : 'none';
-    });
-    const btn = document.getElementById('comp-toggle-btn');
-    btn.textContent = expanded ? 'Show Less ▴' : 'Show All Competitions ▾';
-  };
-})();
-</script>
 
 <div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
   <span style="font-weight: bold;">Filter by Topic:</span>
@@ -515,48 +338,11 @@ window.addEventListener('scroll', function() {
 
   <!-- ===================== IMAGE RESTORATION ===================== -->
 
-  <div class="paper-box" data-category="security" data-sort="20267"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/IMG_5794.jpeg' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Doctor Trigger: Pre-Embedded Phase-Coded Triggers for Proactive Deepfake Attribution
-      </h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Embeds invisible phase-coded triggers into face images before generation, enabling traceable attribution of deepfakes back to their source even after heavy post-processing or compression.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
-        <a href="https://github.com/ming053l/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-box" data-category="efficient" data-sort="20266"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/IMG_5793.jpeg' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Holographic Token Compressive Sensing: A Semantic Transport Protocol for LLM Long-Context Serving
-      </h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Ming-Ching Chang, Xin Li</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Compresses long token sequences into compact holographic representations for efficient LLM serving, enabling faithful semantic reconstruction at the receiver side — functioning like a JPEG codec operating in token space.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
-        <a href="https://github.com/ming053l/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
-      </div>
-    </div>
-  </div>
 
   <div class="paper-box" data-category="restoration" data-sort="9999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
       <img src='images/simflowsr.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -574,8 +360,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="restoration" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
         <source src="images/PhaSR_demo.mp4" type="video/mp4">
@@ -600,8 +386,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="restoration" data-sort="20265"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
         <source src="images/ReflexSplit_demo.mp4" type="video/mp4">
@@ -626,8 +412,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="restoration" data-sort="20262"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">WACV 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">WACV 2026</div>
       <img src='images/wweuie.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -647,8 +433,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="restoration" data-sort="20251"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
       <img src='images/DenseSR.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -668,8 +454,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="restoration" data-sort="20241"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
       <img src='images/drct_fix.gif' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -695,8 +481,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="20261"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2026</div>
       <img src='images/PromptHSI.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -717,8 +503,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="20260"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSP 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSP 2026</div>
       <img src='images/SSCNet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -735,8 +521,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="9998"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TGRS</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TGRS</div>
       <img src='images/AuroraHSI.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -753,8 +539,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="9997"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to JSTARS</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to JSTARS</div>
       <img src='images/S3RNET_SSAWB_beforeafter.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -771,8 +557,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="20253"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
       <img src='images/S3RNet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -788,8 +574,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="20254"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
       <img src='images/HyForen.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -802,8 +588,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="20255"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
       <img src='images/HyFusionhpe.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -819,8 +605,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="hsi" data-sort="20242"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2024</div>
       <img src='images/RTCS.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -842,8 +628,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="efficient" data-sort="20264"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR Findings 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR Findings 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
         <source src="images/ELSATeaserLight.mp4" type="video/mp4">
@@ -865,8 +651,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="efficient" data-sort="9996"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
       <img src='images/FracQuant.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -881,8 +667,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="security" data-sort="20263"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IJCV 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IJCV 2026</div>
       <img src='images/UMCL.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -899,8 +685,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="security" data-sort="9995"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TIFS</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TIFS</div>
       <img src='images/GRACEv2.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -918,8 +704,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="smp" data-sort="20256"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
       <img src='images/smpd2025.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -935,8 +721,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="smp" data-sort="20243"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2024</div>
       <img src='images/SMPD24.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -952,8 +738,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="smp" data-sort="20231"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2023</div>
       <img src='images/acmmm.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -971,8 +757,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="medical" data-sort="9994"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
       <img src='images/DSSFT.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -985,8 +771,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="medical" data-sort="20257"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2025</div>
       <img src='images/covid2025.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1002,8 +788,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="medical" data-sort="20244"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
       <img src='images/4SFL.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1020,8 +806,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="medical" data-sort="20245"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">arxiv 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">arxiv 2024</div>
       <img src='images/ICIP.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1037,8 +823,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="medical" data-sort="20232"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSPW 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSPW 2023</div>
       <img src='images/icassp.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1056,8 +842,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="recognition" data-sort="20258"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
       <img src='images/gtatrack.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1070,8 +856,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="recognition" data-sort="20246"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MIPR 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MIPR 2024</div>
       <img src='images/omnidet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1084,8 +870,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="recognition" data-sort="20233"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2023</div>
       <img src='images/icme.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1098,8 +884,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="recognition" data-sort="20234"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MMAsia 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MMAsia 2023</div>
       <img src='images/mmasia.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1114,8 +900,8 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" data-category="defect" data-sort="20259"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
-      <div style="display: block; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">APCCAS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">APCCAS 2025</div>
       <img src='images/pfvl.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -1133,8 +919,6 @@ window.addEventListener('scroll', function() {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
-@media (prefers-color-scheme: dark) {
-  .paper-box-text h4 { color: #e8e8e8 !important; }
   .paper-box-text p  { color: #aaa !important; }
   #news-timeline     { border-left-color: #444 !important; }
   #news-timeline span[style*="color: #666"] { color: #888 !important; }
