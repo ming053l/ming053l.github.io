@@ -295,6 +295,18 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 })();
 </script>
 
+<div id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  style="display:none; position:fixed; bottom:30px; right:30px; z-index:999;
+         background:#333; color:white; border:none; border-radius:50%;
+         width:44px; height:44px; font-size:20px; line-height:44px;
+         text-align:center; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.3);">↑</div>
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('back-to-top').style.display =
+    window.scrollY > 400 ? 'block' : 'none';
+});
+</script>
+
 <div style="text-align: center; margin: 16px 0 32px 0;">
   <button id="news-toggle-btn" onclick="toggleNews()" style="background: #f1f1f1; border: 1px solid #ddd; padding: 5px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">Show More</button>
 </div>
@@ -304,6 +316,156 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
      All paper-box divs now carry data-sort and data-category.
      JS at the bottom handles Show All (time-sorted) vs filter.
      ======================================================== -->
+
+
+# 🏆 Competition Results
+
+<div style="overflow-x: auto; margin-bottom: 40px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.92em;">
+  <thead>
+    <tr style="background: #f8f8f8; border-bottom: 2px solid #ddd;">
+      <th style="padding: 10px 14px; text-align: left;">Date</th>
+      <th style="padding: 10px 14px; text-align: left;">Venue</th>
+      <th style="padding: 10px 14px; text-align: left;">Challenge</th>
+      <th style="padding: 10px 14px; text-align: center;">Rank</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2026.03</td>
+      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
+      <td style="padding: 9px 14px;">Bokeh Rendering Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 1% (5/258)</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2026.03</td>
+      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
+      <td style="padding: 9px 14px;">Image Super-Resolution Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 1% (5/569)</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2026.03</td>
+      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
+      <td style="padding: 9px 14px;">Robust Deepfake Detection Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 1% (6/5268)</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2026.03</td>
+      <td style="padding: 9px 14px;">CVPR 2026 NTIRE</td>
+      <td style="padding: 9px 14px;">Ambient Lightening Normalization Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2026.03</td>
+      <td style="padding: 9px 14px;">CVPR 2026 PBVS</td>
+      <td style="padding: 9px 14px;">Mars Landslide Segmentation Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 2%</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2025.12</td>
+      <td style="padding: 9px 14px;">WACV 2026</td>
+      <td style="padding: 9px 14px;">SkiTB Visual Tracking Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2025.12</td>
+      <td style="padding: 9px 14px;">ICASSP 2026</td>
+      <td style="padding: 9px 14px;">Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution)</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2025.11</td>
+      <td style="padding: 9px 14px;">BMVC 2025</td>
+      <td style="padding: 9px 14px;">Data-Centric Land Cover Classification Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 2%</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2025.07</td>
+      <td style="padding: 9px 14px;">ACMMM 2025</td>
+      <td style="padding: 9px 14px;">SoccerTrack Challenge @ MMSports</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2025.07</td>
+      <td style="padding: 9px 14px;">ICCV 2025</td>
+      <td style="padding: 9px 14px;">Multi-source COV19 Detection Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2025.06</td>
+      <td style="padding: 9px 14px;">ACMMM 2025</td>
+      <td style="padding: 9px 14px;">Social Media Popularity Prediction Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 2%</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2025.05</td>
+      <td style="padding: 9px 14px;">ICRA 2025</td>
+      <td style="padding: 9px 14px;">TreeScope Tree Diameter Estimation Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2025.03</td>
+      <td style="padding: 9px 14px;">CVPR 2025 NTIRE</td>
+      <td style="padding: 9px 14px;">Image Shadow Removal Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2025.03</td>
+      <td style="padding: 9px 14px;">CVPR 2025 NTIRE</td>
+      <td style="padding: 9px 14px;">Image Reflection Removal Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#0B3C8A;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top 3%</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2024.12</td>
+      <td style="padding: 9px 14px;">WACV 2025</td>
+      <td style="padding: 9px 14px;">USV-based Embedded Obstacle Segmentation Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#7a838b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥈 Runner-up</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2024.07</td>
+      <td style="padding: 9px 14px;">ICPR 2024</td>
+      <td style="padding: 9px 14px;">Beyond Visible Spectrum: AI for Agriculture Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2024.05</td>
+      <td style="padding: 9px 14px;">ACMMM 2024</td>
+      <td style="padding: 9px 14px;">Social Media Popularity Prediction Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">Top Performance Award</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2024.03</td>
+      <td style="padding: 9px 14px;">CVPR 2024 NTIRE</td>
+      <td style="padding: 9px 14px;">Image Super-Resolution (×4)</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#7a838b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">6th Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2024.03</td>
+      <td style="padding: 9px 14px;">CVPR 2024</td>
+      <td style="padding: 9px 14px;">COVID-19 Detection Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#c0392b;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥉 3rd Place</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee; background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2023.11</td>
+      <td style="padding: 9px 14px;">SAS Hackathon</td>
+      <td style="padding: 9px 14px;">SAS Hackathon</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 Gold Medal (1/150+)</span></td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 9px 14px; color: #666;">2023.10</td>
+      <td style="padding: 9px 14px;">ICCV 2023</td>
+      <td style="padding: 9px 14px;">Visual Inductive Priors Workshop Instance Segmentation Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🏅 Jury Prize (1/176)</span></td>
+    </tr>
+    <tr style="background:#fafafa;">
+      <td style="padding: 9px 14px; color: #666;">2023.06</td>
+      <td style="padding: 9px 14px;">ICASSP 2023</td>
+      <td style="padding: 9px 14px;">COV19 Detection Challenge</td>
+      <td style="padding: 9px 14px; text-align: center;"><span style="background:#d4af37;color:white;padding:2px 10px;border-radius:12px;font-size:0.88em;font-weight:bold;">🥇 1st Place</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
   <span style="font-weight: bold;">Filter by Topic:</span>
@@ -327,11 +489,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/IMG_5794.jpeg' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/IMG_5794.jpeg' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Doctor Trigger: Pre-Embedded Phase-Coded Triggers for Proactive Deepfake Attribution
-        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
@@ -347,11 +508,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/IMG_5793.jpeg' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/IMG_5793.jpeg' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Holographic Token Compressive Sensing: A Semantic Transport Protocol for LLM Long-Context Serving
-         <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Ming-Ching Chang, Xin Li</p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
@@ -367,11 +527,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/simflowsr.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/simflowsr.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Consistent Information Flow with Self-similarity Aggregation for Single Image Super-Resolution 
-         <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Consistent Information Flow with Self-similarity Aggregation for Single Image Super-Resolution
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
@@ -394,7 +553,6 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors
-        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
@@ -421,7 +579,6 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation
-        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
@@ -441,7 +598,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">WACV 2026</div>
-      <img src='images/wweuie.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/wweuie.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement</h4>
@@ -462,7 +619,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
-      <img src='images/DenseSR.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/DenseSR.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DenseSR: Image Shadow Removal as Dense Prediction</h4>
@@ -483,7 +640,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
-      <img src='images/drct_fix.gif' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/drct_fix.gif' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DRCT: Saving Image Super-Resolution away from Information Bottleneck</h4>
@@ -510,7 +667,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2026</div>
-      <img src='images/PromptHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/PromptHSI.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
@@ -532,7 +689,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSP 2026</div>
-      <img src='images/SSCNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/SSCNet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HSSDCT: Factorized Spatial-Spectral Correlation for Hyperspectral Image Fusion</h4>
@@ -550,7 +707,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TGRS</div>
-      <img src='images/AuroraHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/AuroraHSI.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery</h4>
@@ -568,7 +725,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to JSTARS</div>
-      <img src='images/S3RNET_SSAWB_beforeafter.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/S3RNET_SSAWB_beforeafter.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">S3RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening</h4>
@@ -586,7 +743,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
-      <img src='images/S3RNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/S3RNet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation</h4>
@@ -603,7 +760,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
-      <img src='images/HyForen.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/HyForen.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset</h4>
@@ -617,7 +774,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
-      <img src='images/HyFusionhpe.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/HyFusionhpe.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion</h4>
@@ -634,7 +791,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2024</div>
-      <img src='images/RTCS.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/RTCS.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</h4>
@@ -664,7 +821,6 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
-        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
@@ -681,7 +837,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/FracQuant.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/FracQuant.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization</h4>
@@ -697,11 +853,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IJCV 2026</div>
-      <img src='images/UMCL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/UMCL.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection
-          <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="_blank" style="text-decoration: underline;">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="_blank" style="text-decoration: underline;">Chia-Wen Lin</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
@@ -716,7 +871,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TIFS</div>
-      <img src='images/GRACEv2.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/GRACEv2.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Towards Robust DeepFake Detection under Unstable Face Sequences: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Spectral Prior</h4>
@@ -735,7 +890,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
-      <img src='images/smpd2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/smpd2025.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Anchoring Trends: Mitigating Social Media Popularity Prediction Drift via Feature Clustering and Expansion</h4>
@@ -752,7 +907,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2024</div>
-      <img src='images/SMPD24.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/SMPD24.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</h4>
@@ -769,7 +924,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2023</div>
-      <img src='images/acmmm.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/acmmm.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Gradient Boost Tree Network based on Extensive Feature Analysis for Popularity Prediction of Social Posts</h4>
@@ -788,7 +943,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
-      <img src='images/DSSFT.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/DSSFT.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DSSFT: Dense Spatial-Slice Fusion Transformer for Medical Volumetric Super-Resolution</h4>
@@ -802,7 +957,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2025</div>
-      <img src='images/covid2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/covid2025.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</h4>
@@ -819,7 +974,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
-      <img src='images/4SFL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/4SFL.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">A Closer Look at Spatial-Slice Features Learning for COVID-19 Detection</h4>
@@ -837,7 +992,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">arxiv 2024</div>
-      <img src='images/ICIP.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/ICIP.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Divide and Conquer: Grounding a Bleeding Areas in Gastrointestinal Image with Two-Stage Model</h4>
@@ -854,7 +1009,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSPW 2023</div>
-      <img src='images/icassp.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/icassp.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Bag of Tricks of Hybrid Network for Covid-19 Detection of CT Scans</h4>
@@ -873,7 +1028,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
-      <img src='images/gtatrack.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/gtatrack.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">GTATrack: Winner Solution to SoccerTrack 2025 with Deep-EIoU and Global Tracklet Association</h4>
@@ -887,7 +1042,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MIPR 2024</div>
-      <img src='images/omnidet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/omnidet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OmniDet: Omnidirectional Object Detection via Fisheye Camera Adaptation</h4>
@@ -901,7 +1056,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2023</div>
-      <img src='images/icme.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/icme.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
@@ -915,7 +1070,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MMAsia 2023</div>
-      <img src='images/mmasia.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/mmasia.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach</h4>
@@ -931,7 +1086,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">APCCAS 2025</div>
-      <img src='images/pfvl.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      <img src='images/pfvl.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OCR is All you need: Importing Multi-Modality into Image-based Defect Classification System</h4>
@@ -947,6 +1102,18 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
+}
+@media (prefers-color-scheme: dark) {
+  .paper-box-text h4 { color: #e8e8e8 !important; }
+  .paper-box-text p  { color: #aaa !important; }
+  #news-timeline     { border-left-color: #444 !important; }
+  #news-timeline span[style*="color: #666"] { color: #888 !important; }
+  table              { color: #e8e8e8; }
+  table thead tr     { background: #2a2a2a !important; border-bottom-color: #444 !important; }
+  table tbody tr[style*="#fafafa"] { background: #1e1e1e !important; }
+  table tbody tr     { border-bottom-color: #333 !important; }
+  .filter-btn        { background-color: #2a2a2a !important; color: #ccc !important; border-color: #444 !important; }
+  .news-buttons button { background: #2a2a2a !important; color: #ccc !important; border-color: #444 !important; }
 }
 @media (max-width: 768px) {
   .paper-box {
@@ -1000,5 +1167,30 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       e.currentTarget.style.fontWeight = 'bold';
     }
   };
+
+  // NEW badge: show only if paper published within 90 days
+  const today = new Date();
+  container.querySelectorAll('.paper-box').forEach(card => {
+    const sort = parseInt(card.dataset.sort);
+    if (!sort || sort > 9000) return; // skip under-review / submitted
+    const year = Math.floor(sort / 100) + 2000 - 2000; // e.g. 20266 -> 2026
+    const fullYear = Math.floor(sort / 100);
+    // data-sort format: YYYYMM as integer e.g. 202603
+    const sortStr = String(sort);
+    if (sortStr.length < 5) return;
+    const y = parseInt(sortStr.slice(0, 4));
+    const m = parseInt(sortStr.slice(4)) - 1;
+    const pubDate = new Date(y, m, 1);
+    const diffDays = (today - pubDate) / (1000 * 60 * 60 * 24);
+    if (diffDays <= 90) {
+      const titleEl = card.querySelector('h4');
+      if (titleEl) {
+        const badge = document.createElement('span');
+        badge.textContent = 'NEW';
+        badge.style.cssText = 'background-color:orange;color:white;font-size:0.65em;font-weight:bold;animation:blink 1s step-start infinite;margin-left:6px;padding:1px 5px;border-radius:3px;';
+        titleEl.appendChild(badge);
+      }
+    }
+  });
 })();
 </script>
