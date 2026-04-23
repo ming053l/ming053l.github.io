@@ -344,7 +344,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
         <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/ming053l/PhaSR?style=social" alt="Github Stars">
       </div>
-      <p style="margin: 0 0 15px 0; color: #555;">Removes shadows from images by incorporating physical light models and geometric priors, enabling robust restoration across diverse real-world scenes and lighting conditions without retraining for each domain.</p>
+      <p style="margin: 0 0 15px 0; color: #555;">Removes shadows from images by incorporating physical light models and geometric priors, achieving robust generalization across diverse real-world scenes and lighting conditions beyond the training distribution.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://www.arxiv.org/abs/2601.17470" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/ming053l/PhaSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
