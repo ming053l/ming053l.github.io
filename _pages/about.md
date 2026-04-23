@@ -317,6 +317,8 @@ window.addEventListener('scroll', function() {
      JS at the bottom handles Show All (time-sorted) vs filter.
      ======================================================== -->
 
+     
+
 
 <div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
   <span style="font-weight: bold;">Filter by Topic:</span>
@@ -364,7 +366,7 @@ window.addEventListener('scroll', function() {
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Holographic Token Compressive Sensing: A Semantic Transport Protocol for LLM Long-Context Serving
       </h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Ming-Ching Chang, Xin Li</p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Ming-Ching Chang, Xin Li</p>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
       <p style="margin: 0 0 15px 0; color: #555;">Compresses long token sequences into compact holographic representations for efficient LLM serving, enabling faithful semantic reconstruction at the receiver side — functioning like a JPEG codec operating in token space.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
