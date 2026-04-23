@@ -321,7 +321,7 @@ window.addEventListener('scroll', function() {
 # 🏆 Competition Results
 
 <div style="overflow-x: auto; margin-bottom: 40px;">
-<table style="width: 100%; border-collapse: collapse; font-size: 0.92em;">
+<table id="comp-table" style="width: 100%; border-collapse: collapse; font-size: 0.92em;">
   <thead>
     <tr style="background: #f8f8f8; border-bottom: 2px solid #ddd;">
       <th style="padding: 10px 14px; text-align: left;">Date</th>
@@ -466,6 +466,36 @@ window.addEventListener('scroll', function() {
   </tbody>
 </table>
 </div>
+<div style="text-align: center; margin-top: 8px; margin-bottom: 40px;">
+  <button id="comp-toggle-btn" onclick="toggleComp()" 
+    style="background:#f1f1f1; border:1px solid #ddd; padding:5px 20px; 
+           border-radius:20px; cursor:pointer; font-size:0.9em; color:#333;">
+    Show All Competitions ▾
+  </button>
+</div>
+<script>
+(function() {
+  const PREVIEW = 5;
+  let expanded = false;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const rows = document.querySelectorAll('#comp-table tbody tr');
+    rows.forEach((row, i) => {
+      if (i >= PREVIEW) row.style.display = 'none';
+    });
+  });
+
+  window.toggleComp = function() {
+    expanded = !expanded;
+    const rows = document.querySelectorAll('#comp-table tbody tr');
+    rows.forEach((row, i) => {
+      if (i >= PREVIEW) row.style.display = expanded ? '' : 'none';
+    });
+    const btn = document.getElementById('comp-toggle-btn');
+    btn.textContent = expanded ? 'Show Less ▴' : 'Show All Competitions ▾';
+  };
+})();
+</script>
 
 <div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
   <span style="font-weight: bold;">Filter by Topic:</span>
