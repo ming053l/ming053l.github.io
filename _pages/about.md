@@ -279,10 +279,22 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   // intercept news filter buttons
   window._newsCategory = 'all';
-  const origFilterNews = window.filterNews;
   window.filterNews = function(cat, e) {
     window._newsCategory = cat;
-    if (origFilterNews) origFilterNews(cat, e);
+
+    // Update news filter button styles
+    const newsBtns = document.querySelectorAll('.news-buttons button');
+    newsBtns.forEach(btn => {
+      btn.style.background = '#f1f1f1';
+      btn.style.color = '#333';
+    });
+    if (e && e.currentTarget) {
+      e.currentTarget.style.background = '#333';
+      e.currentTarget.style.color = 'white';
+    }
+
+    expanded = false;
+    btn.textContent = 'Show More';
     applyFilter(cat);
   };
 
