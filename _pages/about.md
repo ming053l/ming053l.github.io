@@ -268,8 +268,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="security" data-sort="20267"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
       <img src='images/IMG_5794.jpeg' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -288,15 +288,15 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="efficient" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
       <img src='images/IMG_5793.jpeg' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Holographic Token Compressive Sensing: A Semantic Transport Protocol for LLM Long-Context Serving
          <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Ming-Ching Chang, Xin Li</p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Po-Jan Pan, Ming-Ching Chang, Xin Li, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
       <p style="margin: 0 0 15px 0; color: #555;">Compresses long token sequences into compact holographic representations for efficient LLM serving, enabling faithful semantic reconstruction at the receiver side — functioning like a JPEG codec operating in token space.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
@@ -308,8 +308,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="restoration" data-sort="9999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
       <img src='images/simflowsr.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -328,8 +328,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="restoration" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
         <source src="images/PhaSR_demo.mp4" type="video/mp4">
@@ -344,7 +344,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
         <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/ming053l/PhaSR?style=social" alt="Github Stars">
       </div>
-      <p style="margin: 0 0 15px 0; color: #555;">Removes shadows from images by incorporating physical light models and geometric priors, achieving robust generalization across diverse real-world scenes and lighting conditions beyond the training distribution.</p>
+      <p style="margin: 0 0 15px 0; color: #555;">Removes shadows from images by incorporating physical light models and geometric priors, enabling robust restoration across diverse real-world scenes and lighting conditions without retraining for each domain.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://www.arxiv.org/abs/2601.17470" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/ming053l/PhaSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -355,8 +355,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="restoration" data-sort="20265"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
         <source src="images/ReflexSplit_demo.mp4" type="video/mp4">
@@ -382,8 +382,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="restoration" data-sort="20262"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">WACV 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">WACV 2026</div>
       <img src='images/wweuie.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -403,8 +403,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="restoration" data-sort="20251"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
       <img src='images/DenseSR.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -424,8 +424,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="restoration" data-sort="20241"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
       <img src='images/drct_fix.gif' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -451,8 +451,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="20261"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2026</div>
       <img src='images/PromptHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -473,8 +473,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="20260"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSP 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSP 2026</div>
       <img src='images/SSCNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -491,8 +491,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="9998"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TGRS</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TGRS</div>
       <img src='images/AuroraHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -509,8 +509,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="9997"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to JSTARS</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to JSTARS</div>
       <img src='images/S3RNET_SSAWB_beforeafter.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -527,8 +527,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="20253"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
       <img src='images/S3RNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -544,8 +544,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="20254"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
       <img src='images/HyForen.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -558,8 +558,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="20255"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
       <img src='images/HyFusionhpe.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -575,8 +575,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="hsi" data-sort="20242"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2024</div>
       <img src='images/RTCS.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -598,8 +598,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="efficient" data-sort="20264"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR Findings 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR Findings 2026</div>
       <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
         style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
         <source src="images/ELSATeaserLight.mp4" type="video/mp4">
@@ -622,8 +622,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="efficient" data-sort="9996"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
       <img src='images/FracQuant.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -638,8 +638,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="security" data-sort="20263"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #001c4e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IJCV 2026</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #001c4e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IJCV 2026</div>
       <img src='images/UMCL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -657,8 +657,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="security" data-sort="9995"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #001c4e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TIFS</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #001c4e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TIFS</div>
       <img src='images/GRACEv2.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -676,8 +676,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="smp" data-sort="20256"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #eeff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #eeff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
       <img src='images/smpd2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -693,8 +693,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="smp" data-sort="20243"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #eeff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #eeff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2024</div>
       <img src='images/SMPD24.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -710,8 +710,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="smp" data-sort="20231"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #eeff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #eeff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2023</div>
       <img src='images/acmmm.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -729,8 +729,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="medical" data-sort="9994"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
       <img src='images/DSSFT.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -743,8 +743,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="medical" data-sort="20257"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2025</div>
       <img src='images/covid2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -760,8 +760,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="medical" data-sort="20244"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
       <img src='images/4SFL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -778,8 +778,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="medical" data-sort="20245"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">arxiv 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">arxiv 2024</div>
       <img src='images/ICIP.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -795,8 +795,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="medical" data-sort="20232"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSPW 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #b3ff89; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSPW 2023</div>
       <img src='images/icassp.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -814,8 +814,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="recognition" data-sort="20258"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
       <img src='images/gtatrack.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -828,8 +828,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="recognition" data-sort="20246"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MIPR 2024</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MIPR 2024</div>
       <img src='images/omnidet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -842,8 +842,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="recognition" data-sort="20233"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2023</div>
       <img src='images/icme.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -856,8 +856,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="recognition" data-sort="20234"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MMAsia 2023</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MMAsia 2023</div>
       <img src='images/mmasia.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
@@ -872,8 +872,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="paper-box" data-category="defect" data-sort="20259"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">APCCAS 2025</div>
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px;">
+      <div style="display: inline-block; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">APCCAS 2025</div>
       <img src='images/pfvl.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
