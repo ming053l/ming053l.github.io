@@ -277,11 +277,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
         <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Proactive Deepfake Detection  </li>
-        <li>Phase-codec Trigger </li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Embeds invisible phase-coded triggers into face images before generation, enabling traceable attribution of deepfakes back to their source even after heavy post-processing or compression.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
         <a href="https://github.com/ming053l/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
@@ -300,11 +297,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
          <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Ming-Ching Chang, Xin Li</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Large Language Model Inference</li>
-        <li>Transmission Protocal</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Compresses long token sequences into compact holographic representations for efficient LLM serving, enabling faithful semantic reconstruction at the receiver side — functioning like a JPEG codec operating in token space.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
         <a href="https://github.com/ming053l/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
@@ -323,11 +317,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
          <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Image Super-resolution (Stronger, faster DRCT)</li>
-        <li>Information Bottleneck &amp; Self-similarity Aggregation</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Recovers fine image details by aggregating recurring self-similar patterns across the image while maintaining consistent information flow through the network, preventing useful texture signals from fading in deep layers.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/SimFlowSR/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
         <a href="https://github.com/ming053l/SimFlowSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -350,13 +341,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/ming053l/PhaSR?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Single Image Shadow Removal</li>
-        <li>Ambient Light Normalization</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Removes shadows from images by incorporating physical light models and geometric priors, enabling robust restoration across diverse real-world scenes and lighting conditions without retraining for each domain.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://www.arxiv.org/abs/2601.17470" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/ming053l/PhaSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -380,12 +368,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/wuw2135/ReflexSplit?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Single Image Reflection Separation</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Separates reflected and transmitted layers in a single photo by alternating between fusing and splitting mixed features, teaching the network to disentangle overlapping visual signals that are hard to distinguish.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://www.arxiv.org/abs/2601.17468" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/wuw2135/ReflexSplit" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -404,13 +390,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Heng Cheng, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/chingheng0808/WWE-UIE?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Under Water Image Enhancement</li>
-        <li>Color Correction</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Enhances murky underwater photos by combining wavelet-based frequency analysis with white balance correction, efficiently restoring natural colors and recovering details lost to water scattering.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2511.16321" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/chingheng0808/WWE-UIE" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -428,12 +411,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DenseSR: Image Shadow Removal as Dense Prediction</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/VanLinLin/DenseSR?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Single Image Shadow Removal</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Reframes shadow removal as a per-pixel dense prediction task, allowing the model to jointly estimate shadow regions and restore the underlying colors in a single unified pass.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2507.16472" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/VanLinLin/DenseSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -451,13 +432,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DRCT: Saving Image Super-Resolution away from Information Bottleneck</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/ming053l/DRCT?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Image Super-resolution</li>
-        <li>Information Bottleneck</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Keeps high-frequency image details alive throughout the super-resolution process by introducing dense residual connections in a transformer backbone, preventing fine textures from being discarded in deep layers.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/pdf/2404.00722.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">PDF</a>
         <a href="https://arxiv.org/abs/2404.00722" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
@@ -481,12 +459,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="_blank" style="text-decoration: underline;">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank" style="text-decoration: underline;">Yu-Chiang Frank Wang</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/chingheng0808/PromptHSI?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Restoration &amp; Text-Prompt Learning</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Restores degraded hyperspectral images using text prompts to guide frequency-domain adaptation, allowing a single model to handle multiple types of noise and distortion without task-specific retraining.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2411.15922" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/chingheng0808/PromptHSI" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -504,10 +480,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HSSDCT: Factorized Spatial-Spectral Correlation for Hyperspectral Image Fusion</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-How He, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jen-Wei Lee, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Fusion</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Fuses low-resolution hyperspectral and high-resolution RGB images by factorizing spatial and spectral correlations separately, producing sharp, spectrally accurate results with reduced computational cost.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://www.arxiv.org/abs/2602.00490" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
         <a href="https://github.com/jemmyleee/HSSDCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -524,10 +498,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Restoration &amp; Robust Hyperspectral Image Fusion</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">An end-to-end pipeline that simultaneously denoises and fuses degraded hyperspectral imagery, recovering both spatial sharpness and spectral fidelity even when the input is corrupted by multiple types of real-world noise.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
@@ -544,11 +516,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">S3RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Efficient Hyperspectral Image Fusion</li>
-        <li>Knowledge Distillation</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Sharpens hyperspectral images efficiently by using sparse representations to capture the most informative spatial-spectral patterns, while knowledge distillation from a larger teacher model compensates for the reduced capacity.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
@@ -565,10 +534,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Pansharpening &amp; Sparse Representation</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Enhances the spatial resolution of hyperspectral images by learning sparse representations that capture the most salient spatial and spectral features, maintaining robustness against noise and misalignment.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2501.07953" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
       </div>
@@ -584,10 +551,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Forensics &amp; Adversarial Attack</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Introduces a benchmark dataset and detection framework for hyperspectral image forensics, targeting adversarial perturbations and object replacement attacks that are invisible in RGB but detectable across spectral bands.</p>
     </div>
   </div>
 
@@ -600,10 +565,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Hao Ho, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Pansharpening</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Improves hyperspectral image fusion by enlarging the transformer's receptive field, enabling the model to capture long-range spatial dependencies that are critical for preserving fine structural details in the fused output.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2501.04665" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
       </div>
@@ -620,13 +583,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, <strong>Chia-Ming Lee</strong>, Guan-Lin Chen</p>
       <div style="margin-bottom: 5px; display: flex; align-items: center; gap: 10px;">
-        <span style="font-weight: bold;">Keywords</span>
+        <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/ming053l/RTCS?style=social" alt="Github Stars">
       </div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hyperspectral Image Restoration &amp; Compressed Sensing</li>
-        <li>Real-Time Transmission for CubeSat</li>
-      </ul>
+      <p style="margin: 0 0 15px 0; color: #555;">Enables tiny CubeSat satellites to transmit hyperspectral data in real time by compressing imagery on-board via compressed sensing and jointly restoring it on the ground, trading bandwidth for fidelity under strict power constraints.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ieeexplore.ieee.org/abstract/document/10474407" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
         <a href="https://github.com/ming053l/RTCS" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -650,11 +610,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
         <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Hardware-Agnostic Transformer Acceleration</li>
-        <li>Exact Linear-Scan Attention</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Speeds up vision transformers by replacing the standard quadratic attention with a hardware-friendly linear scan, achieving the same exact results at a fraction of the memory and compute cost — with no approximation involved.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/ELSA_projectpage/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
         <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
@@ -672,11 +629,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Fractal Coding for Image Compression</li>
-        <li>Network Compression and Quantization</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Compresses super-resolution networks more intelligently by measuring the fractal complexity of each image region, allocating higher precision where detail matters and lower precision where the content is simple.</p>
     </div>
   </div>
 
@@ -693,11 +647,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
           <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
       </h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="_blank" style="text-decoration: underline;">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="_blank" style="text-decoration: underline;">Chia-Wen Lin</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Multimodality Contrastive Learning</li>
-        <li>Robust DeepFake Detection</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Detects deepfakes robustly across different video compression levels by synthesizing multimodal training signals from a single modality, using contrastive learning to keep real and fake representations well-separated even when compression artifacts obscure subtle forgery traces.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2511.18983" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
       </div>
@@ -713,12 +664,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Towards Robust DeepFake Detection under Unstable Face Sequences: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Spectral Prior</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, <strong>Chia-Ming Lee</strong>, Yi-Fang Wang, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Adversarial Attack</li>
-        <li>Graph Convolutional Network</li>
-        <li>Robust DeepFake Detection</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Detects deepfakes in low-quality or temporally inconsistent video sequences by modeling facial dynamics as sparse graphs, using order-free representations and spectral graph priors to stay robust against missing frames and heavy compression.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2511.18983" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
       </div>
@@ -736,11 +683,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Anchoring Trends: Mitigating Social Media Popularity Prediction Drift via Feature Clustering and Expansion</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Cheng-Jun Kang, Yi-Hsuan Wu, Jun-Lin Chen, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Social Media Popularity Prediction</li>
-        <li>LLM-guided Feature Expansion</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Addresses prediction drift in social media popularity models by anchoring features to stable trend clusters and using LLM-guided expansion to enrich representations, keeping forecasts accurate as content trends shift over time.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2507.19863" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
       </div>
@@ -756,11 +700,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, Chi-Han Tsai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Social Media Popularity Prediction</li>
-        <li>Multimodal Feature Alignment</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Predicts social media post popularity by identifying and resolving inconsistencies between visual and language features, using cross-modal adaptation to better capture what makes content resonate with audiences.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/abs/2407.00556" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
       </div>
@@ -776,11 +717,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Gradient Boost Tree Network based on Extensive Feature Analysis for Popularity Prediction of Social Posts</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Xiu-Yu Hou, Chi-Han Tsai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Social Media Popularity Prediction</li>
-        <li>Multimodal Time Series Data</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Forecasts social post popularity by combining gradient boosted trees with an extensive set of handcrafted visual, textual, and temporal features, providing strong interpretable baselines for multimodal popularity prediction.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://dl.acm.org/doi/10.1145/3581783.3612843" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
       </div>
@@ -798,10 +736,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DSSFT: Dense Spatial-Slice Fusion Transformer for Medical Volumetric Super-Resolution</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;">I-An Tsai, <strong>Chia-Ming Lee</strong>, Shen-Chieh Tai, <a href="http://cvml.cs.nycu.edu.tw/" target="_blank" style="text-decoration: underline;">Chun-Rong Huang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>3D Medical Volumetric Super-Resolution</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Upscales low-resolution 3D medical scans (e.g., MRI/CT) by densely fusing spatial and slice-wise features across the volume, recovering fine anatomical details that are critical for accurate clinical diagnosis.</p>
     </div>
   </div>
 
@@ -814,11 +750,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Ting-Yao Chen, Ming-Han Sun, Fang-Ying Lin, Jung-Tse Tsai, I-An Tsai, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Kernel-density Guided Sampling</li>
-        <li>Multi-source Domain Adaption</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Improves COVID-19 detection across CT scans from different hospitals by standardizing inputs at the image level before they enter the model, reducing domain gap without requiring access to target domain labels.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://openaccess.thecvf.com/content/ICCV2025W/PHAROS-AFE-AIMI/papers/Lee_Taming_Domain_Shift_in_Multi-source_CT-Scan_Classification_via_Input-Space_Standardization_ICCVW_2025_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
       </div>
@@ -834,11 +767,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">A Closer Look at Spatial-Slice Features Learning for COVID-19 Detection</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Yang Fan Chiang, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Computed Tomography Scanning</li>
-        <li>Mathematical Morphology</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Detects COVID-19 in CT scans by jointly learning spatial features within each slice and inter-slice features across the volume, using morphological analysis to focus attention on clinically relevant lung regions.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Hsu_A_Closer_Look_at_Spatial-Slice_Features_Learning_for_COVID-19_Detection_CVPRW_2024_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
         <a href="https://github.com/ming053l/E2D" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
@@ -855,11 +785,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Divide and Conquer: Grounding a Bleeding Areas in Gastrointestinal Image with Two-Stage Model</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Gastrointestinal Image</li>
-        <li>Multitask Learning</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Locates bleeding regions in gastrointestinal endoscopy images using a two-stage pipeline that first detects candidate areas and then precisely segments them, improving sensitivity for small or subtle lesions.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://arxiv.org/pdf/2412.16723?" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
       </div>
@@ -875,11 +802,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Bag of Tricks of Hybrid Network for Covid-19 Detection of CT Scans</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, <strong>Chia-Ming Lee</strong>, Chi-Han Tsai, Shen-Chieh Tai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Computed Tomography Scanning</li>
-        <li>Ensemble Learning</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Diagnoses COVID-19 from CT scans by combining CNN and transformer branches in a hybrid network, augmented with a collection of training and inference tricks (augmentation, test-time ensembling, etc.) to maximize detection accuracy.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ieeexplore.ieee.org/document/10192945" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
       </div>
@@ -897,11 +821,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">GTATrack: Winner Solution to SoccerTrack 2025 with Deep-EIoU and Global Tracklet Association</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;">Rong-Lin Jian, Ming-Chi Luo, Cheng-Wei Huang, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Fisheye Camera</li>
-        <li>Object Detection and Tracking</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Tracks soccer players in fisheye video by combining an improved IoU-based detector with a global tracklet association strategy, handling severe occlusion and wide-angle distortion to achieve winning performance at SoccerTrack 2025.</p>
     </div>
   </div>
 
@@ -914,11 +835,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OmniDet: Omnidirectional Object Detection via Fisheye Camera Adaptation</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wei-Hao Huang, Wen-Hai Tseng, Ming-Hsuan Wu, Ren-Jung Xu, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Fisheye Camera</li>
-        <li>Object Detection</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Adapts standard object detectors to handle the extreme radial distortion of fisheye cameras, enabling reliable 360° omnidirectional detection without requiring purpose-built hardware or full dataset re-annotation.</p>
     </div>
   </div>
 
@@ -931,11 +849,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Few-shot Learning</li>
-        <li>Instance Segmentation</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Performs instance segmentation with low memory overhead by propagating visual inductive priors across frames, enabling accurate object masking even under a few-shot setting without storing large feature maps.</p>
     </div>
   </div>
 
@@ -948,11 +863,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wen-Hai Tseng, Ming-Husan Wu, <strong>Chia-Ming Lee</strong>, Wei-Hao Huang</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Fisheye Camera</li>
-        <li>Object Detection</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Adapts pretrained object detectors to fisheye cameras using a combination of knowledge distillation and semi-supervised pseudo-labels, reducing the need for expensive fisheye-specific annotations.</p>
     </div>
   </div>
 
@@ -967,11 +879,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OCR is All you need: Importing Multi-Modality into Image-based Defect Classification System</h4>
       <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Po-Tsun Yu, Chun-Hung Sun, Kuang-Ming Wu</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">Keywords</div>
-      <ul style="margin: 0 0 15px 20px; padding: 0; color: #555;">
-        <li>Multimodal Defect Classification</li>
-        <li>OCR-based Feature Extraction</li>
-      </ul>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Enriches image-based defect classification by extracting text from product labels via OCR and fusing it with visual features, allowing the model to leverage both appearance and specification information for more accurate industrial defect detection.</p>
     </div>
   </div>
 
