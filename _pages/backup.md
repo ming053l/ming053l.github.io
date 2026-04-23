@@ -244,22 +244,21 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <script>
 (function() {
-  const timeline = document.getElementById('news-timeline');
-  const btn = document.getElementById('news-toggle-btn');
-  const items = Array.from(timeline.querySelectorAll('.news-item'));
   const LIMIT = 10;
   let expanded = false;
 
+  function getBtn() { return document.getElementById('news-toggle-btn'); }
+
   function applyFilter(activeCategory) {
+    const timeline = document.getElementById('news-timeline');
+    const btn = getBtn();
+    if (!timeline || !btn) return;
+    const items = Array.from(timeline.querySelectorAll('.news-item'));
     let visible = 0;
     items.forEach(item => {
       const matchesCategory = (activeCategory === 'all' || item.classList.contains(activeCategory));
       if (matchesCategory) {
-        if (!expanded && visible >= LIMIT) {
-          item.style.display = 'none';
-        } else {
-          item.style.display = 'flex';
-        }
+        item.style.display = (!expanded && visible >= LIMIT) ? 'none' : 'flex';
         visible++;
       } else {
         item.style.display = 'none';
@@ -270,32 +269,29 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   window.toggleNews = function() {
     expanded = !expanded;
-    btn.textContent = expanded ? 'Show Less' : 'Show More';
-    applyFilter('all');
+    const btn = getBtn();
+    if (btn) btn.textContent = expanded ? 'Show Less' : 'Show More';
+    applyFilter(window._newsCategory || 'all');
   };
 
-  // intercept news filter buttons
   window._newsCategory = 'all';
   window.filterNews = function(cat, e) {
     window._newsCategory = cat;
-
-    // Update news filter button styles
     const newsBtns = document.querySelectorAll('.news-buttons button');
-    newsBtns.forEach(btn => {
-      btn.style.background = '#f1f1f1';
-      btn.style.color = '#333';
-    });
+    newsBtns.forEach(b => { b.style.background = '#f1f1f1'; b.style.color = '#333'; });
     if (e && e.currentTarget) {
       e.currentTarget.style.background = '#333';
       e.currentTarget.style.color = 'white';
     }
-
     expanded = false;
-    btn.textContent = 'Show More';
+    const btn = getBtn();
+    if (btn) btn.textContent = 'Show More';
     applyFilter(cat);
   };
 
-  applyFilter('all');
+  document.addEventListener('DOMContentLoaded', function() {
+    applyFilter('all');
+  });
 })();
 </script>
 
@@ -327,7 +323,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <!-- ===================== IMAGE RESTORATION ===================== -->
 
-  <div class="paper-box" data-category="security" data-sort="20269"
+  <div class="paper-box" data-category="security" data-sort="20267"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
@@ -347,7 +343,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="efficient" data-sort="20268"
+  <div class="paper-box" data-category="efficient" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
@@ -367,7 +363,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
     </div>
   </div>
 
-  <div class="paper-box" data-category="restoration" data-sort="20267"
+  <div class="paper-box" data-category="restoration" data-sort="9999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
       <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
