@@ -1,352 +1,1008 @@
-# 🔥 News
+---
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 
-- *2025/7/24*: &nbsp;🎉🎉 One paper is accepted by ICCVW 2025. See you in Honolulu, Hawai!
-- *2025/7/19*: &nbsp;🎉🎉 Three paper is accepted by ACMMM 2025.
-- *2025/7/15*:: &nbsp;🎉🎉 I receive the 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.
-- *2025/7/7*:: &nbsp;🎉🎉 I have successfully defended my Master's Thesis in NCKU!
-- *2025/7/6*:: &nbsp;🎉🎉 I receive the 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.
-- *2025/6/18*: &nbsp;🎉🎉 I receive the top2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge.
-- *2025/5/30*: &nbsp;🎉🎉 I receive the 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.
-- *2025/3/24*: &nbsp;🎉🎉 I receive the 3rd performance in CVPR 2025 (NTIRE Workshop, Image Shadow Removal Challenge).
-- *2025/3/24*: &nbsp;🎉🎉 I receive the top3% ranking in CVPR 2025 (NTIRE Workshop, Image Reflection Removal Challenge).
-- *2025/3/15*: &nbsp;🎉🎉 Four paper are accepted by IGARSS 2025!
-- *2025/1/21*: &nbsp;🎉🎉 One paper is accepted by ICCT-Pacific 2025.
-- *2024/12/24*: &nbsp;🎉🎉 I receive the runner-up in USV-based Embedded Obstacle Segmentation, in conjuncted with WACV 2025.
-- *2024/12/12*: &nbsp;🎉🎉 I receive the Scholarship from Shanghai Commercial and Savings Bank.
-- *2024/11/7*: &nbsp;🎉🎉 Two paper are accepted by TAAI 2024.
-- *2024/11/4*: &nbsp;🎉🎉 One paper is accepted by ICCE 2025.
-- *2024/09/19*: &nbsp;🎉🎉 I receive the Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us">Link</a>
-- *2024/08/23*: &nbsp;🎉🎉 One paper is accepted by APCCAS 2024.
-- *2024/08/05*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2024.
-- *2024/07/31*: &nbsp;🎉🎉 Five paper are accepted by CVGIP 2024.
-- *2024/07/21*: &nbsp;🎉🎉 I receive the 1st performance in ICPR 2024 (Beyond Visible Spectrum: AI for Agriculture)!
-- *2024/06/12*: &nbsp;🎉🎉 Our 'DRCT' have been selected for Oral Presentation in CVPR - NTIRE!
-- *2024/06/06*: &nbsp;🎉🎉 I receive the Top Performance Award in ACMMM 2024 (Social Media Prediction Challenge)!
-- *2024/05/25*: &nbsp;🎉🎉 I receive the top3% ranking (after Xiaomi, Kuaishou corp.) in SISR Challenge, CVPR 2024 (NTIRE workshop). 
-- *2024/05/21*: &nbsp;🎉🎉 Two paper are accepted by MIPR 2024 (Acceptance rate: 19.5%).
-- *2024/04/11*: &nbsp;🎉🎉 Two paper are accepted by CVPRW 2024.
-- *2024/03/23*: &nbsp;🎉🎉 I receive the 3rd place in COVID-19 detection Challange, in conjuncted with CVPR 2024 (DEF-AI-MIA workshop). 
-- *2024/03/13*: &nbsp;🎉🎉 One paper is accepted by TGRS (IF: 8.2, Rank 29/1409=2% in Electrical and Electronic Engineering).
-- *2024/03/06*: &nbsp;🎉🎉 I receive the 2nd Position in the Auto-WCEBleedGen Challenge Version V2, in conjunted with ICIP 2024.
-- *2023/11/25*: &nbsp;🎉🎉 I receive the Gold Medal Award in SAS Hackthon 2023.
-- *2023/11/23*: &nbsp;🎉🎉 I am the Ministry of Education Presidential Education Award (總統教育獎) Candidate in NCKU.
-- *2023/10/31*: &nbsp;🎉🎉 I receive the Top Paper Award in ACMMM 2023 (Social Media Prediction Challenge).
-- *2023/10/17*: &nbsp;🎉🎉 One paper is accepted by MMAsia 2023.
-- *2023/10/2*: &nbsp;🎉🎉 I receive the Jury Prize in ICCV 2023 (Visual Inducitve Priors Workshop).
-- *2023/8/1*: &nbsp;🎉🎉 Two paper are accepted by CVGIP 2023.
-- *2023/7/13*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2023.
-- *2023/4/15*: &nbsp;🎉🎉 One paper is accepted by ICASSP 2023 (AI-enabled Medical Image Analysis Workshop).
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 
-# 📝 Selected Publications 
+<span class='anchor' id='about-me'></span>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM25</div><img src='images/DenseSR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+# 🧍‍♂️ Biography
 
-**DenseSR: Image Shadow Removal as Dense Prediction**
+I received my B.S. degree in 2023 from the Department of Statistics and Information Science at Fu Jen Catholic University (FJCU), Taiwan, where I was advised by Prof. Hao-Chiang Shao. I completed my M.S. degree in 2025 at National Cheng Kung University (NCKU), where I conducted research at the <a href="https://sites.google.com/view/acvlab/" style="color:#0B3C8A;">Advanced Computer Vision Laboratory (ACVLAB)</a> under the mentorship of Prof. <a href="https://cchsu.info/" style="color:#0B3C8A;">Chih-Chung Hsu</a> and the Computational Photography Laboratory (CPLAB) at National Yang Ming Chiao Tung University (NYCU), working with Prof. <a href="https://yulunalexliu.github.io/" style="color:#0B3C8A;">Yu-Lun Liu</a>. I will be pursuing my Ph.D. at the University at Albany, State University of New York (SUNY Albany), where I will conduct research at the Computer Vision and Machine Learning Laboratory (CVML LAB) under the co-supervision of Prof. <a href="https://www.albany.edu/faculty/mchang2/" style="color:#0B3C8A;">Ming-Ching Chang</a> and Prof. <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" style="color:#0B3C8A;">Xin Li</a>.
 
-<a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
+Find my resume 
+<a href="https://drive.google.com/file/d/1eScbrrYYBnmpGsqvjF-DXRo07L2i7evm/view?usp=sharing" 
+   style="color:#0B3C8A;" 
+   target="_blank">here</a> 
+(last updated Jan 17, 2026).
 
-**Keywords**
 
-- Single Image Shadow Removal
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+My research interests include, but are not limited to, 
+<span style="color:#0B5D1E"><b>Low-level Vision Problems</b></span>, 
+<span style="color:#0B5D1E"><b>Computational Photography</b></span>, 
+<span style="color:#0B5D1E"><b>Hyperspectral Image Processing</b></span>, 
+<span style="color:#0B5D1E"><b>Multimedia Analysis and Security</b></span>, 
+<span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
+<span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
+
+I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>. I am also happy to chat with graduate or undergraduate students over coffee chat ☕ or a virtual meeting 💻 — if you are a prospective graduate or undergraduate student, please include your CV/resume and availability in your email so we can make the most of our time together!
+
+In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
+
+# 📢 News & Achievements
+
+<div class="news-buttons" style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+  <span style="font-weight: bold;">Filter:</span>
+  <button onclick="filterNews('all', event)" style="background: #333; color: white; border: none; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em;">Show All</button>
+  <button onclick="filterNews('award', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🏆 Awards</button>
+  <button onclick="filterNews('paper', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">📝 Publications</button>
+  <button onclick="filterNews('challenge', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🚀 Challenges</button>
+</div>
+
+
+
+<div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
+
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.24</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPRW]</b> Two paper accepted by CVPR Workshops (CV4Edu and NTIRE).</span>
   </div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/S3RNET_SSAWB_beforeafter.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**S$^{3}$RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>
-
-**Keywords**
-
-- Efficient Hyperspectral Image Pansharpening
-- Robustness and Sparse Representation
-- Network Compression and Knowledge Distillation
   
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.21</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (5/258) performance in CVPR 2026, NTIRE Bokeh Rendering Challenge.</span>
   </div>
-</div>
-</div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pending</div><img src='images/FLARE.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Fractal Refined Transformer: Image Super-Resolution meets Block-level Decomposition and Token Augmentation**
-
-**Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Image Super-Resolution
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.20</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (5/569) performance in CVPR 2026, NTIRE Image Super-resolution Challenge.</span>
   </div>
-</div>
-</div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to IJCV25</div><img src='images/UMCL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**UMCL: Unimodal-generated Multimodal Constrative Learning for Cross-compression-rate Deepfake Detection**
-
-Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, **Chia-Ming Lee**, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="https://www.cs.nthu.edu.tw/~cthsu/candy.html">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="https://www.ee.nthu.edu.tw/cwlin/">Chia-Wen Lin</a>
-
-**Keywords**
-
-- Constrative Learning
-- Multimodality Learning
-- Robust DeepFake Detection
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.19</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (6/5268) performance in CVPR 2026, NTIRE Robust Deepfake Detection Challenge.</span>
   </div>
-</div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TPAMI2025</div><img src='images/GRACEv2.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**Towards Robust DeepFake Detection: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Smoothing**
-
-Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, **Chia-Ming Lee**, Yi-Fang Wang, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
-
-**Keywords**
-- Adversarial Attack
-- Robust DeepFake Detection
-- Graph Convolution Network
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.18</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[3rd Place]</b> 3rd in CVPR 2026, NTIRE Ambient Lighening Normalization Challenge.</span>
   </div>
-</div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IGARSS25</div><img src='images/S3RNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-  
-**Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation**
-
-**Chia-Ming Lee**, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en" target="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-**Keywords**
-
-- Hyperspectral Image Pansharpening
-- Sparse Representation
-
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.14</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 2%]</b> Top 2% performance in CVPR 2026, PBVS Mars Landslide Segmentation Challenge.</span>
   </div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IGARSS25</div><img src='images/HyForen.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
   
-**HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset**
-
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://www.albany.edu/faculty/mchang2/" target="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a>
-
-**Keywords**
-
-- Hyperspectral Image Forensics
-- Adversarial Perturbation
-- Image Forgery Detection
-
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.02.21</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Three paper accepted by CVPR and CVPR Findings.</span>
   </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pending</div><img src='images/FracQuant.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
   
-**FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization**
-
-**Chia-Ming Lee**, Jen-Wei Lee, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>
-
-
-**Keywords**
-
-- Efficient Image Super-Resolution
-- Fractal Coding for Image Compression
-- Network Compression and Quantization
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.29</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[TGRS]</b> One paper accepted by TGRS.</span>
   </div>
-</div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to TGRS25</div><img src='images/PromptHSI.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation**
-
-**Chia-Ming Lee**, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
-
-
-**Keywords**
-
-- Hyperspectral Image Restoration
-- All-in-One Image Restoration
-- Text-Prompt Learning
   
-  <div class="links">
-      <a href="https://arxiv.org/abs/2411.15922" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.18</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICASSP]</b> Two papers accepted by ICASSP 2026.</span>
   </div>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to AAAI26</div><img src='images/AuroraHSI.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
   
-**AuroraHSI: Degradation-agnostic Hyperspectral Image Fusion Transformer via Mask-guided Information Sharing and Compensation**
-
-**Chia-Ming Lee**, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>
-
-**Keywords**
-
-- Hyperspectral Image Restoration
-- Robust Hyperspectral Image Fusion
-- Graph Neural Network
-  
-  <div class="links">
-      <a href="https://ming053l.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
+  <div class="news-item general" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.23</span>
+    <span style="margin-left: 15px;">🪖 Started military service.</span>
   </div>
-</div>
-</div>
 
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.17</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.</span>
+  </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW2024</div><img src='images/drct_fix.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.03</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in ICASSP 2026, Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution).</span>
+  </div>
 
-**DRCT: Saving Image Super-Resolution away from Information Bottleneck** 
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 2%]</b> Top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.</span>
+  </div>
+  
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper accepted by IJCV.</span>
+  </div>
 
-IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR2024), New Trends in Image Restoration and Enhancement (NTIRE) Workshop  <font color="red">[Oral]</font>
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.14</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[WACV]</b> One paper accepted by WACV 2026.</span>
+  </div>
 
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, **Chia-Ming Lee**, <a href="https://nelly0421.github.io/" target="https://nelly0421.github.io/">Yi-Shiuan Chou</a>
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.10.23</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Best Thesis]</b> Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
+  </div>
 
-**Keywords** <img alt="Stars" src="https://img.shields.io/github/stars/ming053l/DRCT">
-- Image Super-resolution
-- Information Bottleneck
-  <div class="links">
-      <a href="https://arxiv.org/pdf/2404.00722.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://arxiv.org/abs/2404.00722" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arxiv</a>
-      <a href="https://github.com/ming053l/DRCT" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
-      <a href="https://allproj002.github.io/drct.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project page</a>
-      <a href="https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Poster</a>
-      <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing&ouid=105932000013245886245&rtpof=true&sd=true" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slide</a>
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.09.19</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2025 未來科技獎) (Top-3%).</span>
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.08.20</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Excellent Master Thesis Award (IPPR 2025) & Best Paper Award (CVGIP 2025). <a href="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf" target="_blank">Link</a></span>
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.24</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICCVW]</b> One paper accepted by ICCVW 2025.</span>
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.19</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers accepted by ACMMM 2025.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.15</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.</span>
+  </div>
+
+  <div class="news-item general" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.07</span>
+    <span style="margin-left: 15px;">🎉 Successfully defended Master's Thesis in NCKU!</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.06</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.06.18</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 2%]</b> Top 2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.05.30</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in CVPR 2025, NTIRE Workshop, Image Shadow Removal Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 3%]</b> Top 3% ranking in CVPR 2025, NTIRE Workshop, Image Reflection Removal Challenge.</span>
+  </div>
+
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.15</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IGARSS]</b> Four papers accepted by IGARSS 2025.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; padding-left: 0px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.12.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Runner-up]</b> Runner-up in WACV 2025, USV-based Embedded Obstacle Segmentation Challenge.</span>
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.09.19</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="_blank">Link</a></span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.07.01</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Winner in ICPR 2024, Beyond Visible Spectrum: AI for Agriculture Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.05.01</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Award]</b> Top Performance Award in ACMMM 2024, Social Media Popularity Prediction Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd place in CVPRW 2024, COVID-19 Detection Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[6th Place]</b> 6th place in CVPRW, NTIRE 2024 Image Super-Resolution (x4).</span>
+  </div>
+
+  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.11.01</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Gold Medal]</b> Gold Medal Award (1/150+) in SAS Hackathon.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.10.01</span>
+    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Jury Prize]</b> Jury Prize (1/176) in ICCV 2023, Visual Inductive Priors Workshop Instance Segmentation Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.06.01</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Winner in ICASSP 2023, COV19 Detection Challenge.</span>
   </div>
 
 </div>
+<script>
+(function() {
+  const timeline = document.getElementById('news-timeline');
+  const btn = document.getElementById('news-toggle-btn');
+  const items = Array.from(timeline.querySelectorAll('.news-item'));
+  const LIMIT = 10;
+  let expanded = false;
+
+  function applyFilter(activeCategory) {
+    let visible = 0;
+    items.forEach(item => {
+      const matchesCategory = (activeCategory === 'all' || item.classList.contains(activeCategory));
+      if (matchesCategory) {
+        if (!expanded && visible >= LIMIT) {
+          item.style.display = 'none';
+        } else {
+          item.style.display = 'flex';
+        }
+        visible++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    btn.style.display = visible > LIMIT ? 'inline-block' : 'none';
+  }
+
+  window.toggleNews = function() {
+    expanded = !expanded;
+    btn.textContent = expanded ? 'Show Less' : 'Show More';
+    applyFilter('all');
+  };
+
+  // intercept news filter buttons
+  window._newsCategory = 'all';
+  window.filterNews = function(cat, e) {
+    window._newsCategory = cat;
+
+    // Update news filter button styles
+    const newsBtns = document.querySelectorAll('.news-buttons button');
+    newsBtns.forEach(btn => {
+      btn.style.background = '#f1f1f1';
+      btn.style.color = '#333';
+    });
+    if (e && e.currentTarget) {
+      e.currentTarget.style.background = '#333';
+      e.currentTarget.style.color = 'white';
+    }
+
+    expanded = false;
+    btn.textContent = 'Show More';
+    applyFilter(cat);
+  };
+
+  applyFilter('all');
+})();
+</script>
+
+<div style="text-align: center; margin: 16px 0 32px 0;">
+  <button id="news-toggle-btn" onclick="toggleNews()" style="background: #f1f1f1; border: 1px solid #ddd; padding: 5px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">Show More</button>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS2024</div><img src='images/RTCS.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<!-- ========================================================
+     USAGE: Replace your entire publications block with this.
+     All paper-box divs now carry data-sort and data-category.
+     JS at the bottom handles Show All (time-sorted) vs filter.
+     ======================================================== -->
 
-**Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat**
+<div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+  <span style="font-weight: bold;">Filter by Topic:</span>
+  <button onclick="filterCategory('all', event)" class="filter-btn active" style="background-color: #333; color: white; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em;">Show All</button>
+  <button onclick="filterCategory('restoration', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Image Restoration and Enhancement</button>
+  <button onclick="filterCategory('hsi', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Hyperspectral Image Processing, Photogrammetry and Remote Sensing</button>
+  <button onclick="filterCategory('efficient', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Efficient AI and Model Acceleration</button>
+  <button onclick="filterCategory('security', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Deepfake Video Detection</button>
+  <button onclick="filterCategory('smp', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Social Media Content Analysis</button>
+  <button onclick="filterCategory('medical', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Medical Image Analysis</button>
+  <button onclick="filterCategory('recognition', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Visual Recognition, Tracking and Reasoning</button>
+  <button onclick="filterCategory('defect', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Image Defect Detection</button>
+</div>
 
-IEEE Transactions on Geoscience and Remote Sensing
+<!-- Unified paper container — JS will reorder children on Show All -->
+<div id="pub-container">
 
-<a href="https://cchsu.info/" target="https://cchsu.info/">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, **Chia-Ming Lee**, Guan-Lin Chen
+  <!-- ===================== IMAGE RESTORATION ===================== -->
 
-**Keywords**
-- Hypersepctral Image
-- Compression and Sensing
-- Image Restoration
-  
-  <div class="links">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10474407" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">IEEE Xplore</a>
-      <a href="https://github.com/ming053l/RTCS" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Github</a>
+  <div class="paper-box" data-category="security" data-sort="20269"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+      <img src='images/IMG_5794.jpeg' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Doctor Trigger: Pre-Embedded Phase-Coded Triggers for Proactive Deepfake Attribution
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Embeds invisible phase-coded triggers into face images before generation, enabling traceable attribution of deepfakes back to their source even after heavy post-processing or compression.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
+        <a href="https://github.com/ming053l/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
+  <div class="paper-box" data-category="efficient" data-sort="20268"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+      <img src='images/IMG_5793.jpeg' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Holographic Token Compressive Sensing: A Semantic Transport Protocol for LLM Long-Context Serving
+         <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Ming-Ching Chang, Xin Li</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Compresses long token sequences into compact holographic representations for efficient LLM serving, enabling faithful semantic reconstruction at the receiver side — functioning like a JPEG codec operating in token space.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
+        <a href="https://github.com/ming053l/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
+      </div>
+    </div>
+  </div>
 
-# 🎖 Honors and Awards
+  <div class="paper-box" data-category="restoration" data-sort="20267"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+      <img src='images/simflowsr.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Consistent Information Flow with Self-similarity Aggregation for Single Image Super-Resolution 
+         <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Recovers fine image details by aggregating recurring self-similar patterns across the image while maintaining consistent information flow through the network, preventing useful texture signals from fading in deep layers.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/SimFlowSR/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
+        <a href="https://github.com/ming053l/SimFlowSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+    </div>
+  </div>
 
-- *2025.07*:  **Winner**, SoccerTrack Challenge, Multimedia Content Analysis in Sports, ACM International Conference on Multimedia (ACMMM). 
-- *2025.07*:  **Winner**, Multi-source COV19 Detection Challenge, PHAROS Adaptation, Fairness, Explainability in AI Medical Imaging Workshop, IEEE/CVF International Conference on Computer Vision (ICCV).
-- *2025.06*:  **5th place (5/486)**, Social Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
-- *2025.05*:  **Winner**, TreeScope Tree Diameter Estimation Challenge, IEEE International Conference on Robotics and Automation (ICRA).
-- *2025.03*:  **6th place (6/244)**, NTIRE 2025 Single Image Reflection Removal in the Wild Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2025.03*:  **3rd place (3/306)**, NTIRE 2025 Single Image Shadow Removal Challenge, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2024.12*:  **Runner-up (2/700)**, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
-- *2024.12*:  Shanghai Commercial and Savings Bank Foundation Scholarship.
-- *2024.07*:  **Winner**, Beyond Visible Spectrum: AI for Agriculture Challenge, International Conference on Pattern Recognition (ICPR). 
-- *2024.05*:  **Top Performance Award**, Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM). 
-- *2024.03*:  9th place (9/288), AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras, IEEE Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **6th place (6/195)**, NTIRE 2024 Image Super-Resolution (x4), IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **3rd place (3/21)**, COVID-19 Detection Challange, Domain adaptation, Explainability and Fairness in AI for Medical Image Analysis, IEEE/CVF Computer Vision & Pattern Recognition (CVPR). 
-- *2024.03*:  **Runner-up (2/1200+)**, Auto-WCEBleedGen Challenge Version V2, IEEE International Conference on Image Processing (ICIP).
-- *2024.01*:  **(?/8) Ministry of Education Presidential Education Award Candicate in NCKU**.
-- *2024.01*:  6th place (6/195), SeaDroneSee Multi-Object Tracking and Re-Identification Challenge, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Workshop on Maritime Computer Vision (MaCVi).
-- *2023.12*:  **2nd place (2/129)**, Embedded AI Object Detection Model Design, PAIR-LITEON Competition, ACM International Conference on Multimedia Asia (MMAsia).
-- *2023.11*:  **Gold Medal Award (1/150+)**, SAS Hackathon, [Reported by 6+ domsetic media].
-- *2023.10*:  **Top Paper Award (3/700+)** , Socia Media Popularity Prediction Challenge, ACM International Conference on Multimedia (ACMMM).
-- *2023.10*:  **Jury Prize (1/176)**, Visual Inductive Priors Workshop on Instance Segmentation Challenge, IEEE/CVF International Conference on Computer Vision (ICCV).
-- *2023.06*:  **Winner (1/18)**, COV19 Detection Challenge, AI-enabled Medical Image Analysis Workshop in IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP).
-- *2023.06*:  **The Highest Prize (1/96)**, International Competition Scholarship, Fu Jen Catholic University.
-- *2021.09*:  Zhang Wang Wei Foundation Scholarship, Fu Jen Catholic University.
+  <div class="paper-box" data-category="restoration" data-sort="20266"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR 2026</div>
+      <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
+        style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
+        <source src="images/PhaSR_demo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/ming053l/PhaSR?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Removes shadows from images by incorporating physical light models and geometric priors, enabling robust restoration across diverse real-world scenes and lighting conditions without retraining for each domain.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://www.arxiv.org/abs/2601.17470" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/ming053l/PhaSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+        <a href="https://ming053l.github.io/PhaSR_github/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
+      </div>
+    </div>
+  </div>
 
-# 💼 Projects
+  <div class="paper-box" data-category="restoration" data-sort="20265"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR 2026</div>
+      <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
+        style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
+        <source src="images/ReflexSplit_demo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/wuw2135/ReflexSplit?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Separates reflected and transmitted layers in a single photo by alternating between fusing and splitting mixed features, teaching the network to disentangle overlapping visual signals that are hard to distinguish.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://www.arxiv.org/abs/2601.17468" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/wuw2135/ReflexSplit" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+        <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
+      </div>
+    </div>
+  </div>
 
-- *2024.7~*: Brake system Defect Detection, Taiwan High Speed Rail.
-- *2024.4~*: Cybersecurity in distributed computing for remote sensing, NVIDIA Taiwan Research.
-- *2024.4~*: AI Enhancing Substrate Manufacturing Yield with Optimized Process Factors, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
-- *2023.2~2024.1* :Substrate Drilling Scatter Plot Defect Detection, Corporate R&D, Advanced Semiconductor Engineering Group (ASE).
-- *2022.6~2022.12*: A Large Scale Whitebait Dataset for Long-tailed Distribution Image Classification and Domain Adaptation, Department of Statistic and Information Science, Fu Jen Catholic University. (Joint-project with Institute of Fisheries Science, National Taiwan University)
+  <div class="paper-box" data-category="restoration" data-sort="20262"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">WACV 2026</div>
+      <img src='images/wweuie.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Heng Cheng, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/chingheng0808/WWE-UIE?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Enhances murky underwater photos by combining wavelet-based frequency analysis with white balance correction, efficiently restoring natural colors and recovering details lost to water scattering.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2511.16321" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/chingheng0808/WWE-UIE" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="paper-box" data-category="restoration" data-sort="20251"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
+      <img src='images/DenseSR.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DenseSR: Image Shadow Removal as Dense Prediction</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/VanLinLin/DenseSR?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Reframes shadow removal as a per-pixel dense prediction task, allowing the model to jointly estimate shadow regions and restore the underlying colors in a single unified pass.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2507.16472" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/VanLinLin/DenseSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+    </div>
+  </div>
 
-# 🚀 Academic Services
+  <div class="paper-box" data-category="restoration" data-sort="20241"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
+      <img src='images/drct_fix.gif' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DRCT: Saving Image Super-Resolution away from Information Bottleneck</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/ming053l/DRCT?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Keeps high-frequency image details alive throughout the super-resolution process by introducing dense residual connections in a transformer backbone, preventing fine textures from being discarded in deep layers.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/pdf/2404.00722.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">PDF</a>
+        <a href="https://arxiv.org/abs/2404.00722" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/ming053l/DRCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+        <a href="https://allproj002.github.io/drct.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project page</a>
+        <a href="https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Poster</a>
+        <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Slide</a>
+      </div>
+    </div>
+  </div>
 
-### 🗣️ Invited Talk
-- **Keynote Speaker**  
-  *Experiences on Competitions and Challenges*, National Taiwan University of Science and Technology (NTUST) (Invited by Prof. <a href="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN" target="https://scholar.google.com/citations?user=brn1ZwsAAAAJ&hl=EN">Tse-Yu Pan</a>)
+  <!-- ===================== HSI / REMOTE SENSING ===================== -->
 
-### 📝 Reviewer
-- **Conference Papers**
-  - The Forty-fisrt IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2024).
-  - The Thirteenth International Conference on Learning Representations (ICLR2025).
-  - The Forty-second IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR2025).
-  - The Twentieth IEEE/CVF Conference on Computer Vision and Pattern Recognition (ICCV25).
-  - The Thirty-third ACM International Conference on Multimedia (ACMMM25).
-- **Journal Papers**  
-  - *IEEE Transactions on Multimedia (TMM)*  
-  - *IEEE Transactions on Information Forensics and Security (TIFS)*  
-  - *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*
-  - *IEEE Geoscience and Remote Sensing Letters (GRSL)*  
-- **Workshop Papers**  
-  - The 9th AI City Challenge Workshop (AI-City2025), in conjuncted with IEEE/CVF Conference on Computer Vision and Pattern Recognition (ICCV).
-  - The 8th AI City Challenge Workshop (AI-City2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
-  - New Trends in Image Restoration and Enhancement Workshop (NTIRE2024), in conjuncted with IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
+  <div class="paper-box" data-category="hsi" data-sort="20261"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2026</div>
+      <img src='images/PromptHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="_blank" style="text-decoration: underline;">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank" style="text-decoration: underline;">Yu-Chiang Frank Wang</a></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/chingheng0808/PromptHSI?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Restores degraded hyperspectral images using text prompts to guide frequency-domain adaptation, allowing a single model to handle multiple types of noise and distortion without task-specific retraining.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2411.15922" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/chingheng0808/PromptHSI" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+        <a href="https://drive.google.com/drive/folders/1O0GDzoPt3AVD4mjXeu3R_lxyuTDEWWW1" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Dataset</a>
+      </div>
+    </div>
+  </div>
 
-### 🎓 Teaching Experience  
-- **National Cheng Kung University (NCKU)**  
-  - **2025 Spring**:  
-    - Deep Learning (*DS6016*) 
-  - **2024 Fall**: Machine Learning (*DS6012*)  
-  - **2024 Spring**:  
-    - Fundamental and Applications of Generative AI (*CSIE4037*)  
-    - Deep Learning (*DS6016*)  
-  - **2023 Fall**:  
-    - Programming Language (*STAT6060*)  
-    - Statistical Methods for Analysis with Missing Data (*STAT2004*)  
+  <div class="paper-box" data-category="hsi" data-sort="20260"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSP 2026</div>
+      <img src='images/SSCNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HSSDCT: Factorized Spatial-Spectral Correlation for Hyperspectral Image Fusion</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-How He, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jen-Wei Lee, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Fuses low-resolution hyperspectral and high-resolution RGB images by factorizing spatial and spectral correlations separately, producing sharp, spectrally accurate results with reduced computational cost.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://www.arxiv.org/abs/2602.00490" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/jemmyleee/HSSDCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="hsi" data-sort="9998"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TGRS</div>
+      <img src='images/AuroraHSI.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">An end-to-end pipeline that simultaneously denoises and fuses degraded hyperspectral imagery, recovering both spatial sharpness and spectral fidelity even when the input is corrupted by multiple types of real-world noise.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="hsi" data-sort="9997"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to JSTARS</div>
+      <img src='images/S3RNET_SSAWB_beforeafter.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">S3RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Sharpens hyperspectral images efficiently by using sparse representations to capture the most informative spatial-spectral patterns, while knowledge distillation from a larger teacher model compensates for the reduced capacity.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="hsi" data-sort="20253"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
+      <img src='images/S3RNet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Enhances the spatial resolution of hyperspectral images by learning sparse representations that capture the most salient spatial and spectral features, maintaining robustness against noise and misalignment.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2501.07953" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="hsi" data-sort="20254"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
+      <img src='images/HyForen.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Introduces a benchmark dataset and detection framework for hyperspectral image forensics, targeting adversarial perturbations and object replacement attacks that are invisible in RGB but detectable across spectral bands.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="hsi" data-sort="20255"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IGARSS 2025</div>
+      <img src='images/HyFusionhpe.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Hao Ho, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Improves hyperspectral image fusion by enlarging the transformer's receptive field, enabling the model to capture long-range spatial dependencies that are critical for preserving fine structural details in the fused output.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2501.04665" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="hsi" data-sort="20242"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">TGRS 2024</div>
+      <img src='images/RTCS.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, <strong>Chia-Ming Lee</strong>, Guan-Lin Chen</p>
+      <div style="margin-bottom: 5px; display: flex; align-items: center; gap: 10px;">
+        <span style="font-weight: bold;">About</span>
+        <img src="https://img.shields.io/github/stars/ming053l/RTCS?style=social" alt="Github Stars">
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">Enables tiny CubeSat satellites to transmit hyperspectral data in real time by compressing imagery on-board via compressed sensing and jointly restoring it on the ground, trading bandwidth for fidelity under strict power constraints.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10474407" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+        <a href="https://github.com/ming053l/RTCS" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== EFFICIENT AI ===================== -->
+
+  <div class="paper-box" data-category="efficient" data-sort="20264"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPR Findings 2026</div>
+      <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
+        style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
+        <source src="images/ELSATeaserLight.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
+        <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Speeds up vision transformers by replacing the standard quadratic attention with a hardware-friendly linear scan, achieving the same exact results at a fraction of the memory and compute cost — with no approximation involved.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/ELSA_projectpage/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="efficient" data-sort="9996"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+      <img src='images/FracQuant.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Compresses super-resolution networks more intelligently by measuring the fractal complexity of each image region, allocating higher precision where detail matters and lower precision where the content is simple.</p>
+    </div>
+  </div>
+
+  <!-- ===================== DEEPFAKE ===================== -->
+
+  <div class="paper-box" data-category="security" data-sort="20263"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">IJCV 2026</div>
+      <img src='images/UMCL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection
+          <span style="background-color: orange; color: white; font-size: 0.65em; font-weight: bold; animation: blink 1s step-start infinite; margin-left: 6px; padding: 1px 5px; border-radius: 3px;">NEW</span>
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" target="_blank" style="text-decoration: underline;">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" target="_blank" style="text-decoration: underline;">Chia-Wen Lin</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Detects deepfakes robustly across different video compression levels by synthesizing multimodal training signals from a single modality, using contrastive learning to keep real and fake representations well-separated even when compression artifacts obscure subtle forgery traces.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2511.18983" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="security" data-sort="9995"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Submitted to TIFS</div>
+      <img src='images/GRACEv2.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Towards Robust DeepFake Detection under Unstable Face Sequences: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Spectral Prior</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, <strong>Chia-Ming Lee</strong>, Yi-Fang Wang, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Detects deepfakes in low-quality or temporally inconsistent video sequences by modeling facial dynamics as sparse graphs, using order-free representations and spectral graph priors to stay robust against missing frames and heavy compression.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2511.18983" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SOCIAL MEDIA ===================== -->
+
+  <div class="paper-box" data-category="smp" data-sort="20256"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
+      <img src='images/smpd2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Anchoring Trends: Mitigating Social Media Popularity Prediction Drift via Feature Clustering and Expansion</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Cheng-Jun Kang, Yi-Hsuan Wu, Jun-Lin Chen, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Addresses prediction drift in social media popularity models by anchoring features to stable trend clusters and using LLM-guided expansion to enrich representations, keeping forecasts accurate as content trends shift over time.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2507.19863" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="smp" data-sort="20243"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2024</div>
+      <img src='images/SMPD24.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, Chi-Han Tsai</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Predicts social media post popularity by identifying and resolving inconsistencies between visual and language features, using cross-modal adaptation to better capture what makes content resonate with audiences.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/abs/2407.00556" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="smp" data-sort="20231"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2023</div>
+      <img src='images/acmmm.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Gradient Boost Tree Network based on Extensive Feature Analysis for Popularity Prediction of Social Posts</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Xiu-Yu Hou, Chi-Han Tsai</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Forecasts social post popularity by combining gradient boosted trees with an extensive set of handcrafted visual, textual, and temporal features, providing strong interpretable baselines for multimodal popularity prediction.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://dl.acm.org/doi/10.1145/3581783.3612843" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MEDICAL ===================== -->
+
+  <div class="paper-box" data-category="medical" data-sort="9994"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">Under Review</div>
+      <img src='images/DSSFT.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DSSFT: Dense Spatial-Slice Fusion Transformer for Medical Volumetric Super-Resolution</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">I-An Tsai, <strong>Chia-Ming Lee</strong>, Shen-Chieh Tai, <a href="http://cvml.cs.nycu.edu.tw/" target="_blank" style="text-decoration: underline;">Chun-Rong Huang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Upscales low-resolution 3D medical scans (e.g., MRI/CT) by densely fusing spatial and slice-wise features across the volume, recovering fine anatomical details that are critical for accurate clinical diagnosis.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="medical" data-sort="20257"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2025</div>
+      <img src='images/covid2025.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Ting-Yao Chen, Ming-Han Sun, Fang-Ying Lin, Jung-Tse Tsai, I-An Tsai, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Improves COVID-19 detection across CT scans from different hospitals by standardizing inputs at the image level before they enter the model, reducing domain gap without requiring access to target domain labels.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://openaccess.thecvf.com/content/ICCV2025W/PHAROS-AFE-AIMI/papers/Lee_Taming_Domain_Shift_in_Multi-source_CT-Scan_Classification_via_Input-Space_Standardization_ICCVW_2025_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="medical" data-sort="20244"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">CVPRW 2024</div>
+      <img src='images/4SFL.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">A Closer Look at Spatial-Slice Features Learning for COVID-19 Detection</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Yang Fan Chiang, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Detects COVID-19 in CT scans by jointly learning spatial features within each slice and inter-slice features across the volume, using morphological analysis to focus attention on clinically relevant lung regions.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Hsu_A_Closer_Look_at_Spatial-Slice_Features_Learning_for_COVID-19_Detection_CVPRW_2024_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+        <a href="https://github.com/ming053l/E2D" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="medical" data-sort="20245"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">arxiv 2024</div>
+      <img src='images/ICIP.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Divide and Conquer: Grounding a Bleeding Areas in Gastrointestinal Image with Two-Stage Model</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Locates bleeding regions in gastrointestinal endoscopy images using a two-stage pipeline that first detects candidate areas and then precisely segments them, improving sensitivity for small or subtle lesions.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://arxiv.org/pdf/2412.16723?" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="medical" data-sort="20232"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICASSPW 2023</div>
+      <img src='images/icassp.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Bag of Tricks of Hybrid Network for Covid-19 Detection of CT Scans</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, <strong>Chia-Ming Lee</strong>, Chi-Han Tsai, Shen-Chieh Tai</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Diagnoses COVID-19 from CT scans by combining CNN and transformer branches in a hybrid network, augmented with a collection of training and inference tricks (augmentation, test-time ensembling, etc.) to maximize detection accuracy.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ieeexplore.ieee.org/document/10192945" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== VISUAL RECOGNITION ===================== -->
+
+  <div class="paper-box" data-category="recognition" data-sort="20258"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ACMMM 2025</div>
+      <img src='images/gtatrack.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">GTATrack: Winner Solution to SoccerTrack 2025 with Deep-EIoU and Global Tracklet Association</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Rong-Lin Jian, Ming-Chi Luo, Cheng-Wei Huang, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Tracks soccer players in fisheye video by combining an improved IoU-based detector with a global tracklet association strategy, handling severe occlusion and wide-angle distortion to achieve winning performance at SoccerTrack 2025.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="recognition" data-sort="20246"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MIPR 2024</div>
+      <img src='images/omnidet.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OmniDet: Omnidirectional Object Detection via Fisheye Camera Adaptation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wei-Hao Huang, Wen-Hai Tseng, Ming-Hsuan Wu, Ren-Jung Xu, <strong>Chia-Ming Lee</strong></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Adapts standard object detectors to handle the extreme radial distortion of fisheye cameras, enabling reliable 360° omnidirectional detection without requiring purpose-built hardware or full dataset re-annotation.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="recognition" data-sort="20233"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">ICCVW 2023</div>
+      <img src='images/icme.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Performs instance segmentation with low memory overhead by propagating visual inductive priors across frames, enabling accurate object masking even under a few-shot setting without storing large feature maps.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" data-category="recognition" data-sort="20234"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">MMAsia 2023</div>
+      <img src='images/mmasia.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wen-Hai Tseng, Ming-Husan Wu, <strong>Chia-Ming Lee</strong>, Wei-Hao Huang</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Adapts pretrained object detectors to fisheye cameras using a combination of knowledge distillation and semi-supervised pseudo-labels, reducing the need for expensive fisheye-specific annotations.</p>
+    </div>
+  </div>
+
+  <!-- ===================== DEFECT ===================== -->
+
+  <div class="paper-box" data-category="defect" data-sort="20259"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; display: flex; flex-direction: column;">
+      <div style="display: block; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; margin-bottom: 6px;">APCCAS 2025</div>
+      <img src='images/pfvl.png' style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OCR is All you need: Importing Multi-Modality into Image-based Defect Classification System</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Po-Tsun Yu, Chun-Hung Sun, Kuang-Ming Wu</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Enriches image-based defect classification by extracting text from product labels via OCR and fusing it with visual features, allowing the model to leverage both appearance and specification information for more accurate industrial defect detection.</p>
+    </div>
+  </div>
+
+</div><!-- end #pub-container -->
+
+<style>
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+@media (max-width: 768px) {
+  .paper-box {
+    flex-direction: column !important;
+  }
+  .paper-box-image {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  .paper-box-image img,
+  .paper-box-image video {
+    width: 100% !important;
+  }
+}
+</style>
+
+<script>
+(function () {
+  const container = document.getElementById('pub-container');
+
+  function sortAllPapers() {
+    const cards = Array.from(container.querySelectorAll('.paper-box'));
+    cards.sort((a, b) => parseInt(b.dataset.sort) - parseInt(a.dataset.sort));
+    cards.forEach(c => container.appendChild(c));
+  }
+
+  sortAllPapers();
+
+  window.filterCategory = function (categoryId, e) {
+    if (e) e.preventDefault();
+    const cards = Array.from(container.querySelectorAll('.paper-box'));
+    if (categoryId === 'all') {
+      cards.forEach(c => { c.style.display = 'flex'; });
+    } else {
+      cards.forEach(c => {
+        c.style.display = (c.dataset.category === categoryId) ? 'flex' : 'none';
+      });
+    }
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.style.backgroundColor = '#f1f1f1';
+      btn.style.color = '#333';
+      btn.style.borderLeft = '1px solid #ddd';
+      btn.style.fontWeight = 'normal';
+    });
+    if (e && e.currentTarget) {
+      e.currentTarget.style.backgroundColor = '#333';
+      e.currentTarget.style.color = 'white';
+      e.currentTarget.style.borderLeft = '4px solid #0B3C8A';
+      e.currentTarget.style.fontWeight = 'bold';
+    }
+  };
+})();
+</script>
