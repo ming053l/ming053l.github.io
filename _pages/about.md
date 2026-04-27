@@ -58,7 +58,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.04.28</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPRW]</b> One paper accepted by JSTARS.</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[JSTARS]</b> One paper accepted by JSTARS.</span>
   </div>
   
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
