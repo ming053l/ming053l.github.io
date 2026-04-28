@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 
+
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -55,7 +56,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
-
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.04.28</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[JSTARS]</b> One paper accepted by JSTARS.</span>
+  </div>
+  
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.24</span>
     <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPRW]</b> Two paper accepted by CVPR Workshops (CV4Edu and NTIRE).</span>
@@ -540,7 +545,7 @@ window.addEventListener('scroll', function() {
   <div class="paper-box" data-category="hsi" data-sort="9997"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to JSTARS</div>
+      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">JSTARS 2026</div>
       <img src='images/S3RNET_SSAWB_beforeafter.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
