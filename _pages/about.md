@@ -55,7 +55,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 
 <div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
-
+  
+  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.04.30</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICIP]</b> One paper accepted by ICIP.</span>
+  </div>
+  
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.04.28</span>
     <span style="margin-left: 15px;"><b style="color: #27ae60;">[JSTARS]</b> One paper accepted by JSTARS.</span>
