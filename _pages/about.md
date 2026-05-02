@@ -653,8 +653,8 @@ window.addEventListener('scroll', function() {
       <p style="margin: 0 0 15px 0; color: #555;">Speeds up vision transformers by replacing the standard quadratic attention with a hardware-friendly linear scan, achieving the same exact results at a fraction of the memory and compute cost — with no approximation involved.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
         <a href="https://ming053l.github.io/ELSA_projectpage/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
+        <a href="https://arxiv.org/abs/2604.23798" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
+        <a href="https://github.com/ming053l/ELSA" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
       </div>
     </div>
   </div>
