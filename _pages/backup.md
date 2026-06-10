@@ -58,7 +58,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.06.08</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Our ELSA received CVPR 2026 Computational Transparency Award Champion!!</span>
+    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Our ELSA received the CVPR 2026 Computational Transparency Award Champion!!</span>
   </div>
   
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
