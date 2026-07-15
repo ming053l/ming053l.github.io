@@ -56,6 +56,21 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.07.15</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Runner-up]</b> 2nd place in ECCV 2026, EBMV Event-guided Segmentation Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.07.15</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Runner-up]</b> 2nd place in ECCV 2026, EBMV Event-guided Brightness Adjustment Challenge.</span>
+  </div>
+
+  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.07.01</span>
+    <span style="margin-left: 15px;"><b style="color: #7a838b;">[4th Place]</b> 4th place in IJCAI 2026, DDL2.0 Deepfake Localization Challenge.</span>
+  </div>
+
   <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.06.08</span>
     <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Our ELSA received the CVPR 2026 Computational Transparency Award Champion!!</span>
@@ -262,6 +277,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   </div>
 
 </div>
+
 <script>
 (function() {
   const LIMIT = 10;
