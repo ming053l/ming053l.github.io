@@ -36,7 +36,7 @@ My research interests include, but are not limited to,
 <span style="color:#0B5D1E"><b>Hyperspectral Image Processing</b></span>, 
 <span style="color:#0B5D1E"><b>Multimedia Analysis and Security</b></span>, 
 <span style="color:#0B5D1E"><b>Efficient AI and Model Acceleration</b></span>, and 
-<span style="color:#0B5D1E"><b>Medical Image Analysis</b></span>. 
+<span style="color:#0B5D1E"><b>Flow Matching</b></span>. 
 
 I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>.
 
