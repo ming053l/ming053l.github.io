@@ -683,7 +683,7 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="efficient" data-sort="9999"
+  <div class="paper-box" data-category="efficient" data-sort="20267"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
