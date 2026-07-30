@@ -514,7 +514,31 @@ window.addEventListener('scroll', function() {
   </div>
 
   <!-- ===================== HSI / REMOTE SENSING ===================== -->
-
+  <div class="paper-box" data-category="hsi" data-sort="20268"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
+        style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
+        <source src="images/rayspectralgs.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">RaySpectral-GS: Spectral-Angle Consistent Gaussian Splatting for Hyperspectral Novel View Synthesis
+      </h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"> <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Yu-Jou Xiao, <strong>Chia-Ming Lee</strong></p>
+      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+        <span style="font-weight: bold;">About</span>
+      </div>
+      <p style="margin: 0 0 15px 0; color: #555;">RaySpectral-GS combines a frozen RGB-trained 3DGS anchor with pixel- and camera-conditioned spectral decoding to improve spectral-angle fidelity while keeping the Gaussian payload band-independent.</p>
+      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (coming soon)</a>
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (coming soon)</a>
+        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page (coming soon)</a>
+      </div>
+    </div>
+  </div>
+  
   <div class="paper-box" data-category="hsi" data-sort="20261"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
@@ -688,12 +712,12 @@ window.addEventListener('scroll', function() {
   <div class="paper-box" data-category="efficient" data-sort="9996"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
+      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICML Workshop 2026</div>
       <img src='images/FracQuant.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, Wen-Hsin Tsai, <a href="https://www.albany.edu/faculty/mchang2/" target="_blank" style="text-decoration: underline;">Ming-Ching Chang</a>, <a href="https://www.albany.edu/computer-science/faculty/xin-li" target="_blank" style="text-decoration: underline;">Xin Li</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
       <p style="margin: 0 0 15px 0; color: #555;">Compresses super-resolution networks more intelligently by measuring the fractal complexity of each image region, allocating higher precision where detail matters and lower precision where the content is simple.</p>
     </div>
