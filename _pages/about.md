@@ -44,291 +44,28 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 # 📢 News & Achievements
 
-<div class="news-buttons" style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-  <span style="font-weight: bold;">Filter:</span>
-  <button onclick="filterNews('all', event)" style="background: #333; color: white; border: none; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em;">Show All</button>
-  <button onclick="filterNews('award', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🏆 Awards</button>
-  <button onclick="filterNews('paper', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">📝 Publications</button>
-  <button onclick="filterNews('challenge', event)" style="background: #f1f1f1; border: 1px solid #ddd; padding: 4px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">🚀 Challenges</button>
-</div>
-
-
 <div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.07.15</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Runner-up]</b> 2nd place in ECCV 2026, EBMV Event-guided Segmentation Challenge.</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Runner-up]</b> 2nd place in both the Event-guided Segmentation and Brightness Adjustment challenges at ECCV 2026 EBMV.</span>
   </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.07.15</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Runner-up]</b> 2nd place in ECCV 2026, EBMV Event-guided Brightness Adjustment Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.07.01</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[4th Place]</b> 4th place in IJCAI 2026, DDL2.0 Deepfake Localization Challenge.</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[4th Place]</b> 4th place in the IJCAI 2026 DDL2.0 Deepfake Localization Challenge.</span>
   </div>
-
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.06.08</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Our ELSA received the CVPR 2026 Computational Transparency Award Champion!!</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Award]</b> ELSA won the CVPR 2026 Computational Transparency Award.</span>
   </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.05.27</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICML]</b> One paper accepted by ICML CoLoRAI Workshop.</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[ICML]</b> One paper accepted to the ICML CoLoRAI Workshop.</span>
   </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.04.30</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICIP]</b> One paper accepted by ICIP.</span>
-  </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.04.28</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[JSTARS]</b> One paper accepted by JSTARS.</span>
-  </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPRW]</b> Two paper accepted by CVPR Workshops (CV4Edu and NTIRE).</span>
-  </div>
-  
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.21</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (5/258) performance in CVPR 2026, NTIRE Bokeh Rendering Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.20</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (5/569) performance in CVPR 2026, NTIRE Image Super-resolution Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.19</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 1%]</b> Top 1% (6/5268) performance in CVPR 2026, NTIRE Robust Deepfake Detection Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.18</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[3rd Place]</b> 3rd in CVPR 2026, NTIRE Ambient Lighening Normalization Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.03.14</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Top 2%]</b> Top 2% performance in CVPR 2026, PBVS Mars Landslide Segmentation Challenge.</span>
-  </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+  <div class="news-item" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
     <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.02.21</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[CVPR]</b> Three paper accepted by CVPR and CVPR Findings.</span>
+    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[CVPR]</b> Three papers accepted to CVPR and CVPR Findings.</span>
   </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.29</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[TGRS]</b> One paper accepted by TGRS.</span>
-  </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2026.01.18</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICASSP]</b> Two papers accepted by ICASSP 2026.</span>
-  </div>
-  
-  <div class="news-item general" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.23</span>
-    <span style="margin-left: 15px;">🪖 Started military service.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.17</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in WACV 2026, SkiTB Visual Tracking Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.12.03</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in ICASSP 2026, Hyper-Object Challenge (Spectral Reconstruction & Super-Resolution).</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 2%]</b> Top 2% performance in BMVC 2025, Data-Centric Land Cover Classification Challenge.</span>
-  </div>
-  
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.17</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IJCV]</b> One paper accepted by IJCV.</span>
-  </div>
-
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.11.14</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[WACV]</b> One paper accepted by WACV 2026.</span>
-  </div>
-
-  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.10.23</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Best Thesis]</b> Best Master Thesis Award in IEEE Tainan Section 2025. <a href="https://r10.ieee.org/tainan/blog/2025/10/20/2025-awards-recipients/" target="_blank">Link</a></span>
-  </div>
-
-  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.09.19</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2025 未來科技獎) (Top-3%).</span>
-  </div>
-
-  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.08.20</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Excellent Master Thesis Award (IPPR 2025) & Best Paper Award (CVGIP 2025). <a href="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf" target="_blank">Link</a></span>
-  </div>
-
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.24</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ICCVW]</b> One paper accepted by ICCVW 2025.</span>
-  </div>
-
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.19</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[ACMMM]</b> Three papers accepted by ACMMM 2025.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.15</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ACMMM 2025, SoccerTrack Challenge@MMSports.</span>
-  </div>
-
-  <div class="news-item general" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.07</span>
-    <span style="margin-left: 15px;">🎉 Successfully defended Master's Thesis in NCKU!</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.07.06</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ICCV 2025, Multi-source COV19 Detection Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.06.18</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 2%]</b> Top 2% ranking in ACMMM 2025, Social Media Popularity Prediction Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.05.30</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> 1st performance in ICRA 2025, TreeScope Tree Diameter Estimation Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd performance in CVPR 2025, NTIRE Workshop, Image Shadow Removal Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Top 3%]</b> Top 3% ranking in CVPR 2025, NTIRE Workshop, Image Reflection Removal Challenge.</span>
-  </div>
-
-  <div class="news-item paper" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2025.03.15</span>
-    <span style="margin-left: 15px;"><b style="color: #27ae60;">[IGARSS]</b> Four papers accepted by IGARSS 2025.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; padding-left: 0px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.12.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[Runner-up]</b> Runner-up in WACV 2025, USV-based Embedded Obstacle Segmentation Challenge.</span>
-  </div>
-
-  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.09.19</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Award]</b> Future Tech Awards (2024 未來科技獎). <a href="https://www.futuretech.org.tw/futuretech/index.php?action=brands_detail&br_uid=389&web_lang=en-us" target="_blank">Link</a></span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.07.01</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Winner in ICPR 2024, Beyond Visible Spectrum: AI for Agriculture Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.05.01</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Award]</b> Top Performance Award in ACMMM 2024, Social Media Popularity Prediction Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[3rd Place]</b> 3rd place in CVPRW 2024, COVID-19 Detection Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2024.03.24</span>
-    <span style="margin-left: 15px;"><b style="color: #7a838b;">[6th Place]</b> 6th place in CVPRW, NTIRE 2024 Image Super-Resolution (x4).</span>
-  </div>
-
-  <div class="news-item award" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.11.01</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Gold Medal]</b> Gold Medal Award (1/150+) in SAS Hackathon.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.10.01</span>
-    <span style="margin-left: 15px;"><b style="color: #d4af37;">[Jury Prize]</b> Jury Prize (1/176) in ICCV 2023, Visual Inductive Priors Workshop Instance Segmentation Challenge.</span>
-  </div>
-
-  <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-    <span style="flex: 0 0 100px; color: #666; font-size: 0.95em; font-family: monospace;">2023.06.01</span>
-    <span style="margin-left: 15px;"><b style="color: #0B3C8A;">[Winner]</b> Winner in ICASSP 2023, COV19 Detection Challenge.</span>
-  </div>
-
 </div>
-
-<script>
-(function() {
-  const LIMIT = 10;
-  let expanded = false;
-
-  function getBtn() { return document.getElementById('news-toggle-btn'); }
-
-  function applyFilter(activeCategory) {
-    const timeline = document.getElementById('news-timeline');
-    const btn = getBtn();
-    if (!timeline || !btn) return;
-    const items = Array.from(timeline.querySelectorAll('.news-item'));
-    let visible = 0;
-    items.forEach(item => {
-      const matchesCategory = (activeCategory === 'all' || item.classList.contains(activeCategory));
-      if (matchesCategory) {
-        item.style.display = (!expanded && visible >= LIMIT) ? 'none' : 'flex';
-        visible++;
-      } else {
-        item.style.display = 'none';
-      }
-    });
-    btn.style.display = visible > LIMIT ? 'inline-block' : 'none';
-  }
-
-  window.toggleNews = function() {
-    expanded = !expanded;
-    const btn = getBtn();
-    if (btn) btn.textContent = expanded ? 'Show Less' : 'Show More';
-    applyFilter(window._newsCategory || 'all');
-  };
-
-  window._newsCategory = 'all';
-  window.filterNews = function(cat, e) {
-    window._newsCategory = cat;
-    const newsBtns = document.querySelectorAll('.news-buttons button');
-    newsBtns.forEach(b => { b.style.background = '#f1f1f1'; b.style.color = '#333'; });
-    if (e && e.currentTarget) {
-      e.currentTarget.style.background = '#333';
-      e.currentTarget.style.color = 'white';
-    }
-    expanded = false;
-    const btn = getBtn();
-    if (btn) btn.textContent = 'Show More';
-    applyFilter(cat);
-  };
-
-  document.addEventListener('DOMContentLoaded', function() {
-    applyFilter('all');
-  });
-})();
-</script>
 
 <div id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
   style="display:none; position:fixed; bottom:30px; right:30px; z-index:999;
@@ -342,9 +79,6 @@ window.addEventListener('scroll', function() {
 });
 </script>
 
-<div style="text-align: center; margin: 16px 0 32px 0;">
-  <button id="news-toggle-btn" onclick="toggleNews()" style="background: #f1f1f1; border: 1px solid #ddd; padding: 5px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">Show More</button>
-</div>
 
 # Publications
 
@@ -596,7 +330,6 @@ window.addEventListener('scroll', function() {
   table thead tr     { background: #2a2a2a !important; border-bottom-color: #444 !important; }
   table tbody tr[style*="#fafafa"] { background: #1e1e1e !important; }
   table tbody tr     { border-bottom-color: #333 !important; }
-  .news-buttons button { background: #2a2a2a !important; color: #ccc !important; border-color: #444 !important; }
 }
 @media (max-width: 768px) {
   .paper-box {
