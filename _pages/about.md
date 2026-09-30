@@ -86,7 +86,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-authors">Ching-Heng Cheng*, <strong>Chia-Ming Lee*</strong>, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
 <p class="paper-note">* Equal contribution.</p>
 
-<p class="paper-summary">Restores an all-in-focus image once with a single diffusion step, then uses a lightweight depth-guided renderer for interactive focal and aperture edits.</p>
+<p class="paper-summary">Restores an all-in-focus image once with a single diffusion step, then uses a lightweight depth-guided renderer for interactive focal and aperture edits. By reusing the restored image across edits, it enables rapid exploration of different focal settings without rerunning diffusion.</p>
 </div>
 </div><div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
