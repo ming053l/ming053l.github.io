@@ -65,9 +65,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
   </div>
 </div>
 
-<h2 id="publications">Research &amp; publications</h2>
+<h2 id="publications">Selected Publications</h2>
 
-<p class="section-note">2026 · Selected papers and current manuscripts. Click a figure to view it in detail.</p>
+<p>My research focuses on <strong>Computational Photography and Low-Level Vision</strong>, with an emphasis on <strong>Efficient and Reliable Visual Computing</strong>. I develop methods for image restoration and editing, hyperspectral image processing, and multimedia forensics, aiming to recover visual detail, preserve spectral information, and assess the integrity of visual content. Alongside these efforts, I study efficient attention mechanisms and inference strategies that reduce the computational and memory costs of modern AI models. Across these directions, my goal is to build practical methods that balance reconstruction quality, reliability, and efficiency. Full list of publications <a href="https://scholar.google.com/citations?user=koBVaaUAAAAJ" target="_blank" rel="noopener">here</a>.</p>
 
 <div id="pub-container"><div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
 <div class="paper-box-image">
