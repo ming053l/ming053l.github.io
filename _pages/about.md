@@ -352,6 +352,11 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" id="paper-doctor-trigger" data-category="security" data-sort="99999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <a href="images/doctor-trigger-preview.png" target="_blank" rel="noopener" aria-label="View full-size doctor-trigger figure">
+        <img src="images/doctor-trigger-preview.png" alt="Doctor Trigger release verification and review framework" loading="lazy" style="width: 100%; height: auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      </a>
+    </div>
     <div class="paper-box-text" style="flex: 1; min-width: 0;">
       <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
@@ -364,6 +369,11 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" id="paper-flashfocus" data-category="restoration" data-sort="99999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <a href="images/flashfocus-preview.png" target="_blank" rel="noopener" aria-label="View full-size flashfocus figure">
+        <img src="images/flashfocus-preview.png" alt="FlashFocus one-step deblurring and interactive bokeh rendering pipeline" loading="lazy" style="width: 100%; height: auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      </a>
+    </div>
     <div class="paper-box-text" style="flex: 1; min-width: 0;">
       <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FlashFocus: Interactive Image Refocusing in Seconds</h4>
@@ -376,6 +386,11 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" id="paper-c4" data-category="efficient" data-sort="99999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <a href="images/c4-preview.png" target="_blank" rel="noopener" aria-label="View full-size c4 figure">
+        <img src="images/c4-preview.png" alt="C4 local token commitment and confidence-verified early exit" loading="lazy" style="width: 100%; height: auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      </a>
+    </div>
     <div class="paper-box-text" style="flex: 1; min-width: 0;">
       <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">C⁴: Commit Locally, Exit Globally — Coordinating Adaptive Sampling and Early Exit in Diffusion Language Models</h4>
@@ -388,6 +403,11 @@ window.addEventListener('scroll', function() {
 
   <div class="paper-box" id="paper-decobias" data-category="restoration" data-sort="99999"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
+      <a href="images/decobias-preview.png" target="_blank" rel="noopener" aria-label="View full-size decobias figure">
+        <img src="images/decobias-preview.png" alt="DecoBias super-resolution transformer and decomposed spatial bias architecture" loading="lazy" style="width: 100%; height: auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      </a>
+    </div>
     <div class="paper-box-text" style="flex: 1; min-width: 0;">
       <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DecoBias: Decomposing Neural Spatial Bias for Scalable Super-Resolution Transformers</h4>
