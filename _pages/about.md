@@ -70,7 +70,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Yu-Chen Liang, Hung-Kai Huang, Yi-Ting Ku, Chih-Chung Hsu</p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, Chih-Chung Hsu</p>
 
 <p class="paper-summary">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
 </div>
