@@ -372,6 +372,54 @@ window.addEventListener('scroll', function() {
 <!-- Unified paper container — JS will reorder children on Show All -->
 <div id="pub-container">
 
+  <div class="paper-box" id="paper-doctor-trigger" data-category="security" data-sort="99999"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-text" style="flex: 1; min-width: 0;">
+      <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Yu-Chen Liang, Hung-Kai Huang, Yi-Ting Ku, Chih-Chung Hsu</p>
+
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" id="paper-flashfocus" data-category="restoration" data-sort="99999"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-text" style="flex: 1; min-width: 0;">
+      <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FlashFocus: Interactive Image Refocusing in Seconds</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Heng Cheng*, <strong>Chia-Ming Lee*</strong>, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+      <p style="margin: 0 0 10px 0; font-size: 0.9em;">* Equal contribution.</p>
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Restores an all-in-focus image once with a single diffusion step, then uses a lightweight depth-guided renderer for interactive focal and aperture edits. Introduces 3CReal, a benchmark of paired photographs from three camera and lens systems.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" id="paper-c4" data-category="efficient" data-sort="99999"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-text" style="flex: 1; min-width: 0;">
+      <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">C⁴: Commit Locally, Exit Globally — Coordinating Adaptive Sampling and Early Exit in Diffusion Language Models</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Shao-Kai Liu, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Introduces C⁴, a training-free framework combining local token commitment with confidence-verified global early exit to reduce diffusion language model decoding steps while largely preserving task performance.</p>
+    </div>
+  </div>
+
+  <div class="paper-box" id="paper-decobias" data-category="restoration" data-sort="99999"
+       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
+    <div class="paper-box-text" style="flex: 1; min-width: 0;">
+      <div style="margin-bottom: 10px; font-size: 0.85em; font-weight: bold;">Manuscript</div>
+      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DecoBias: Decomposing Neural Spatial Bias for Scalable Super-Resolution Transformers</h4>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+
+      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
+      <p style="margin: 0 0 15px 0; color: #555;">Decomposes spatial bias into geometry, locality, and topology, representing each outside additive attention-score space. Enables a standard fused-attention call for scalable super-resolution transformers while preserving shifted-window connectivity.</p>
+    </div>
+  </div>
+
   <!-- ===================== IMAGE RESTORATION ===================== -->
 
 
@@ -488,30 +536,7 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="restoration" data-sort="20241"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
-      <img src='images/drct_fix.gif' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DRCT: Saving Image Super-Resolution away from Information Bottleneck</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a></p>
-      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">About</span>
-        <img src="https://img.shields.io/github/stars/ming053l/DRCT?style=social" alt="Github Stars">
-      </div>
-      <p style="margin: 0 0 15px 0; color: #555;">Keeps high-frequency image details alive throughout the super-resolution process by introducing dense residual connections in a transformer backbone, preventing fine textures from being discarded in deep layers.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/pdf/2404.00722.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">PDF</a>
-        <a href="https://arxiv.org/abs/2404.00722" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-        <a href="https://github.com/ming053l/DRCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-        <a href="https://allproj002.github.io/drct.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project page</a>
-        <a href="https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Poster</a>
-        <a href="https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Slide</a>
-      </div>
-    </div>
-  </div>
+
 
   <!-- ===================== HSI / REMOTE SENSING ===================== -->
   <div class="paper-box" data-category="hsi" data-sort="20268"
@@ -663,26 +688,7 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="hsi" data-sort="20242"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">TGRS 2024</div>
-      <img src='images/RTCS.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, Eng-Shen Tu, <strong>Chia-Ming Lee</strong>, Guan-Lin Chen</p>
-      <div style="margin-bottom: 5px; display: flex; align-items: center; gap: 10px;">
-        <span style="font-weight: bold;">About</span>
-        <img src="https://img.shields.io/github/stars/ming053l/RTCS?style=social" alt="Github Stars">
-      </div>
-      <p style="margin: 0 0 15px 0; color: #555;">Enables tiny CubeSat satellites to transmit hyperspectral data in real time by compressing imagery on-board via compressed sensing and jointly restoring it on the ground, trading bandwidth for fidelity under strict power constraints.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ieeexplore.ieee.org/abstract/document/10474407" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
-        <a href="https://github.com/ming053l/RTCS" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-      </div>
-    </div>
-  </div>
+
 
   <!-- ===================== EFFICIENT AI ===================== -->
 
@@ -723,23 +729,7 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="efficient" data-sort="20267"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
-      <img src='images/LATCH.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Where and When to Commit: Candidate-Aware Decoding for Diffusion Language Models</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://www.albany.edu/faculty/mchang2/" target="_blank" style="text-decoration: underline;">Ming-Ching Chang</a>, <a href="https://www.albany.edu/computer-science/faculty/xin-li" target="_blank" style="text-decoration: underline;">Xin Li</a>, <a href="https://yulunalexliu.github.io/" target="_blank" style="text-decoration: underline;">Yu-Lun Liu</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Speeds up diffusion language model decoding by verifying the identity of the extracted answer itself before committing it, training-free, rather than trusting a confidence score or buffer position alone; the only early-exit gate tested that stays lossless on long chain-of-thought reasoning while still cutting compute substantially.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/LATCH-dLLM/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
-        <a href="https://github.com/ming053l/LATCH-dLLM" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-      </div>
-    </div>
-  </div>
+
 
   <!-- ===================== DEEPFAKE ===================== -->
 
@@ -798,39 +788,9 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="smp" data-sort="20243"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2024</div>
-      <img src='images/SMPD24.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, Chi-Han Tsai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Predicts social media post popularity by identifying and resolving inconsistencies between visual and language features, using cross-modal adaptation to better capture what makes content resonate with audiences.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/abs/2407.00556" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="paper-box" data-category="smp" data-sort="20231"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2023</div>
-      <img src='images/acmmm.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Gradient Boost Tree Network based on Extensive Feature Analysis for Popularity Prediction of Social Posts</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Xiu-Yu Hou, Chi-Han Tsai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Forecasts social post popularity by combining gradient boosted trees with an extensive set of handcrafted visual, textual, and temporal features, providing strong interpretable baselines for multimodal popularity prediction.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://dl.acm.org/doi/10.1145/3581783.3612843" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
-      </div>
-    </div>
-  </div>
+
+
 
   <!-- ===================== MEDICAL ===================== -->
 
@@ -865,57 +825,11 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="medical" data-sort="20244"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPRW 2024</div>
-      <img src='images/4SFL.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">A Closer Look at Spatial-Slice Features Learning for COVID-19 Detection</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Yang Fan Chiang, <a href="https://nelly0421.github.io/" target="_blank" style="text-decoration: underline;">Yi-Shiuan Chou</a>, Chih-Yu Jiang, Shen-Chieh Tai, Chi-Han Tsai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Detects COVID-19 in CT scans by jointly learning spatial features within each slice and inter-slice features across the volume, using morphological analysis to focus attention on clinically relevant lung regions.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Hsu_A_Closer_Look_at_Spatial-Slice_Features_Learning_for_COVID-19_Detection_CVPRW_2024_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
-        <a href="https://github.com/ming053l/E2D" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="paper-box" data-category="medical" data-sort="20245"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">arxiv 2024</div>
-      <img src='images/ICIP.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Divide and Conquer: Grounding a Bleeding Areas in Gastrointestinal Image with Two-Stage Model</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Bo-Cheng Qiu, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Locates bleeding regions in gastrointestinal endoscopy images using a two-stage pipeline that first detects candidate areas and then precisely segments them, improving sensitivity for small or subtle lesions.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/pdf/2412.16723?" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="paper-box" data-category="medical" data-sort="20232"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSPW 2023</div>
-      <img src='images/icassp.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Bag of Tricks of Hybrid Network for Covid-19 Detection of CT Scans</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Chih-Yu Jian, <strong>Chia-Ming Lee</strong>, Chi-Han Tsai, Shen-Chieh Tai</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Diagnoses COVID-19 from CT scans by combining CNN and transformer branches in a hybrid network, augmented with a collection of training and inference tricks (augmentation, test-time ensembling, etc.) to maximize detection accuracy.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ieeexplore.ieee.org/document/10192945" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
-      </div>
-    </div>
-  </div>
+
+
+
 
   <!-- ===================== VISUAL RECOGNITION ===================== -->
 
@@ -933,47 +847,11 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="recognition" data-sort="20246"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MIPR 2024</div>
-      <img src='images/omnidet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OmniDet: Omnidirectional Object Detection via Fisheye Camera Adaptation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wei-Hao Huang, Wen-Hai Tseng, Ming-Hsuan Wu, Ren-Jung Xu, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Adapts standard object detectors to handle the extreme radial distortion of fisheye cameras, enabling reliable 360° omnidirectional detection without requiring purpose-built hardware or full dataset re-annotation.</p>
-    </div>
-  </div>
 
-  <div class="paper-box" data-category="recognition" data-sort="20233"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2023</div>
-      <img src='images/icme.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">MISS: Memory-efficient Instance Segmentation Framework By Visual Inductive Priors Flow Propagation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Performs instance segmentation with low memory overhead by propagating visual inductive priors across frames, enabling accurate object masking even under a few-shot setting without storing large feature maps.</p>
-    </div>
-  </div>
 
-  <div class="paper-box" data-category="recognition" data-sort="20234"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">MMAsia 2023</div>
-      <img src='images/mmasia.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Adapting Object Detection to Fisheye Cameras: A Knowledge Distillation with Semi-Pseudo-Label Approach</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, Wen-Hai Tseng, Ming-Husan Wu, <strong>Chia-Ming Lee</strong>, Wei-Hao Huang</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Adapts pretrained object detectors to fisheye cameras using a combination of knowledge distillation and semi-supervised pseudo-labels, reducing the need for expensive fisheye-specific annotations.</p>
-    </div>
-  </div>
+
+
+
 
   <!-- ===================== DEFECT ===================== -->
 
