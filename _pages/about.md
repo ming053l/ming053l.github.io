@@ -53,7 +53,6 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 
 
-
 <div id="news-timeline" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
 
   <div class="news-item challenge" style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -347,29 +346,8 @@ window.addEventListener('scroll', function() {
   <button id="news-toggle-btn" onclick="toggleNews()" style="background: #f1f1f1; border: 1px solid #ddd; padding: 5px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9em; color: #333;">Show More</button>
 </div>
 
-<!-- ========================================================
-     USAGE: Replace your entire publications block with this.
-     All paper-box divs now carry data-sort and data-category.
-     JS at the bottom handles Show All (time-sorted) vs filter.
-     ======================================================== -->
+# Publications
 
-     
-
-
-<div class="category-buttons" style="margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-  <span style="font-weight: bold;">Filter by Topic:</span>
-  <button onclick="filterCategory('all', event)" class="filter-btn active" style="background-color: #333; color: white; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em;">Show All</button>
-  <button onclick="filterCategory('restoration', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Image Restoration and Enhancement</button>
-  <button onclick="filterCategory('hsi', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Hyperspectral Image Processing, Photogrammetry and Remote Sensing</button>
-  <button onclick="filterCategory('efficient', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Efficient AI and Model Acceleration</button>
-  <button onclick="filterCategory('security', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Deepfake Video Detection</button>
-  <button onclick="filterCategory('smp', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Social Media Content Analysis</button>
-  <button onclick="filterCategory('medical', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Medical Image Analysis</button>
-  <button onclick="filterCategory('recognition', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Visual Recognition, Tracking and Reasoning</button>
-  <button onclick="filterCategory('defect', event)" class="filter-btn" style="background-color: #f1f1f1; border: 1px solid #ddd; padding: 2px 12px; border-radius: 5px; cursor: pointer; font-size: 0.9em; color: #333;">Image Defect Detection</button>
-</div>
-
-<!-- Unified paper container — JS will reorder children on Show All -->
 <div id="pub-container">
 
   <div class="paper-box" id="paper-doctor-trigger" data-category="security" data-sort="99999"
@@ -422,25 +400,6 @@ window.addEventListener('scroll', function() {
 
   <!-- ===================== IMAGE RESTORATION ===================== -->
 
-
-  <div class="paper-box" data-category="restoration" data-sort="9999"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
-      <img src='images/simflowsr.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">SimFlowSR: Consistent Information Flow with Self-similarity Aggregation for Single Image Super-Resolution
-      </h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Recovers fine image details by aggregating recurring self-similar patterns across the image while maintaining consistent information flow through the network, preventing useful texture signals from fading in deep layers.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/SimFlowSR/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Project Page</a>
-        <a href="https://github.com/ming053l/SimFlowSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-      </div>
-    </div>
-  </div>
 
   <div class="paper-box" data-category="restoration" data-sort="20266"
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
@@ -515,28 +474,6 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="restoration" data-sort="20251"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #c0392b; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
-      <img src='images/DenseSR.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DenseSR: Image Shadow Removal as Dense Prediction</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-weight: bold;">About</span>
-        <img src="https://img.shields.io/github/stars/VanLinLin/DenseSR?style=social" alt="Github Stars">
-      </div>
-      <p style="margin: 0 0 15px 0; color: #555;">Reframes shadow removal as a per-pixel dense prediction task, allowing the model to jointly estimate shadow regions and restore the underlying colors in a single unified pass.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/abs/2507.16472" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-        <a href="https://github.com/VanLinLin/DenseSR" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- ===================== HSI / REMOTE SENSING ===================== -->
   <div class="paper-box" data-category="hsi" data-sort="20268"
@@ -604,91 +541,6 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="hsi" data-sort="9998"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TGRS</div>
-      <img src='images/AuroraHSI.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">An end-to-end pipeline that simultaneously denoises and fuses degraded hyperspectral imagery, recovering both spatial sharpness and spectral fidelity even when the input is corrupted by multiple types of real-world noise.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-box" data-category="hsi" data-sort="9997"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">JSTARS 2026</div>
-      <img src='images/S3RNET_SSAWB_beforeafter.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">S3RNet: Sparse Spatial-Spectral Representation with Hybrid Knowledge Distillation for Efficient Hyperspectral Image Pansharpening</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Sharpens hyperspectral images efficiently by using sparse representations to capture the most informative spatial-spectral patterns, while knowledge distillation from a larger teacher model compensates for the reduced capacity.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv (Coming Soon)</a>
-        <a href="https://ming053l.github.io/" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github (Coming Soon)</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-box" data-category="hsi" data-sort="20253"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
-      <img src='images/S3RNet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Robust Hyperspectral Image Pansharpening via Sparse Spatial-Spectral Representation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Enhances the spatial resolution of hyperspectral images by learning sparse representations that capture the most salient spatial and spectral features, maintaining robustness against noise and misalignment.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/abs/2501.07953" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-box" data-category="hsi" data-sort="20254"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
-      <img src='images/HyForen.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyperForensics++: Toward Adversarial Perturbed and Object Replacement in Hyperspectral Imaging Dataset</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Min-Zo Ko, En-Zhao Liu, Yi-Ching Cheng, <a href="https://www.albany.edu/faculty/mchang2/">Ming-Ching Chang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Introduces a benchmark dataset and detection framework for hyperspectral image forensics, targeting adversarial perturbations and object replacement attacks that are invisible in RGB but detectable across spectral bands.</p>
-    </div>
-  </div>
-
-  <div class="paper-box" data-category="hsi" data-sort="20255"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">IGARSS 2025</div>
-      <img src='images/HyFusionhpe.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Yu-Hao Ho, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Improves hyperspectral image fusion by enlarging the transformer's receptive field, enabling the model to capture long-range spatial dependencies that are critical for preserving fine structural details in the fused output.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/abs/2501.04665" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- ===================== EFFICIENT AI ===================== -->
 
@@ -715,21 +567,6 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="efficient" data-sort="9996"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICML Workshop 2026</div>
-      <img src='images/FracQuant.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">FracQuant: Fractal Complexity Assessment for Content-aware Image Super-resolution Network Quantization</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, Wen-Hsin Tsai, <a href="https://www.albany.edu/faculty/mchang2/" target="_blank" style="text-decoration: underline;">Ming-Ching Chang</a>, <a href="https://www.albany.edu/computer-science/faculty/xin-li" target="_blank" style="text-decoration: underline;">Xin Li</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Compresses super-resolution networks more intelligently by measuring the fractal complexity of each image region, allocating higher precision where detail matters and lower precision where the content is simple.</p>
-    </div>
-  </div>
-
-
 
   <!-- ===================== DEEPFAKE ===================== -->
 
@@ -752,122 +589,18 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="security" data-sort="9995"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #6c3483; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Submitted to TIFS</div>
-      <img src='images/GRACEv2.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Towards Robust DeepFake Detection under Unstable Face Sequences: Adaptive Sparse Graph Embedding with Order-Free Representation and Explicit Laplacian Spectral Prior</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/">Chih-Chung Hsu</a>, Shao-Ning Chen, Mei-Hsuan Wu, <strong>Chia-Ming Lee</strong>, Yi-Fang Wang, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Detects deepfakes in low-quality or temporally inconsistent video sequences by modeling facial dynamics as sparse graphs, using order-free representations and spectral graph priors to stay robust against missing frames and heavy compression.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/abs/2511.18983" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-      </div>
-    </div>
-  </div>
 
   <!-- ===================== SOCIAL MEDIA ===================== -->
-
-  <div class="paper-box" data-category="smp" data-sort="20256"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #b7950b; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
-      <img src='images/smpd2025.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Anchoring Trends: Mitigating Social Media Popularity Prediction Drift via Feature Clustering and Expansion</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Cheng-Jun Kang, Yi-Hsuan Wu, Jun-Lin Chen, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Addresses prediction drift in social media popularity models by anchoring features to stable trend clusters and using LLM-guided expansion to enrich representations, keeping forecasts accurate as content trends shift over time.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://arxiv.org/abs/2507.19863" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-      </div>
-    </div>
-  </div>
-
-
-
 
 
   <!-- ===================== MEDICAL ===================== -->
 
-  <div class="paper-box" data-category="medical" data-sort="9994"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">Under Review</div>
-      <img src='images/DSSFT.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">DSSFT: Dense Spatial-Slice Fusion Transformer for Medical Volumetric Super-Resolution</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;">I-An Tsai, <strong>Chia-Ming Lee</strong>, Shen-Chieh Tai, <a href="http://cvml.cs.nycu.edu.tw/" target="_blank" style="text-decoration: underline;">Chun-Rong Huang</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Upscales low-resolution 3D medical scans (e.g., MRI/CT) by densely fusing spatial and slice-wise features across the volume, recovering fine anatomical details that are critical for accurate clinical diagnosis.</p>
-    </div>
-  </div>
-
-  <div class="paper-box" data-category="medical" data-sort="20257"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #1e8449; color: black; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICCVW 2025</div>
-      <img src='images/covid2025.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Bo-Cheng Qiu, Ting-Yao Chen, Ming-Han Sun, Fang-Ying Lin, Jung-Tse Tsai, I-An Tsai, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Improves COVID-19 detection across CT scans from different hospitals by standardizing inputs at the image level before they enter the model, reducing domain gap without requiring access to target domain labels.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://openaccess.thecvf.com/content/ICCV2025W/PHAROS-AFE-AIMI/papers/Lee_Taming_Domain_Shift_in_Multi-source_CT-Scan_Classification_via_Input-Space_Standardization_ICCVW_2025_paper.pdf" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">paper</a>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
 
   <!-- ===================== VISUAL RECOGNITION ===================== -->
-
-  <div class="paper-box" data-category="recognition" data-sort="20258"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #4e001c; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ACMMM 2025</div>
-      <img src='images/gtatrack.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">GTATrack: Winner Solution to SoccerTrack 2025 with Deep-EIoU and Global Tracklet Association</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Rong-Lin Jian, Ming-Chi Luo, Cheng-Wei Huang, <strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Tracks soccer players in fisheye video by combining an improved IoU-based detector with a global tracklet association strategy, handling severe occlusion and wide-angle distortion to achieve winning performance at SoccerTrack 2025.</p>
-    </div>
-  </div>
-
-
-
-
-
 
 
   <!-- ===================== DEFECT ===================== -->
 
-  <div class="paper-box" data-category="defect" data-sort="20259"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #32004e; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">APCCAS 2025</div>
-      <img src='images/pfvl.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">OCR is All you need: Importing Multi-Modality into Image-based Defect Classification System</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <strong>Chia-Ming Lee</strong>, Po-Tsun Yu, Chun-Hung Sun, Kuang-Ming Wu</p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Enriches image-based defect classification by extracting text from product labels via OCR and fusing it with visual features, allowing the model to leverage both appearance and specification information for more accurate industrial defect detection.</p>
-    </div>
-  </div>
 
 </div><!-- end #pub-container -->
 
@@ -883,7 +616,6 @@ window.addEventListener('scroll', function() {
   table thead tr     { background: #2a2a2a !important; border-bottom-color: #444 !important; }
   table tbody tr[style*="#fafafa"] { background: #1e1e1e !important; }
   table tbody tr     { border-bottom-color: #333 !important; }
-  .filter-btn        { background-color: #2a2a2a !important; color: #ccc !important; border-color: #444 !important; }
   .news-buttons button { background: #2a2a2a !important; color: #ccc !important; border-color: #444 !important; }
 }
 @media (max-width: 768px) {
@@ -914,30 +646,6 @@ window.addEventListener('scroll', function() {
   }
 
   sortAllPapers();
-
-  window.filterCategory = function (categoryId, e) {
-    if (e) e.preventDefault();
-    const cards = Array.from(container.querySelectorAll('.paper-box'));
-    if (categoryId === 'all') {
-      cards.forEach(c => { c.style.display = 'flex'; });
-    } else {
-      cards.forEach(c => {
-        c.style.display = (c.dataset.category === categoryId) ? 'flex' : 'none';
-      });
-    }
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.style.backgroundColor = '#f1f1f1';
-      btn.style.color = '#333';
-      btn.style.borderLeft = '1px solid #ddd';
-      btn.style.fontWeight = 'normal';
-    });
-    if (e && e.currentTarget) {
-      e.currentTarget.style.backgroundColor = '#333';
-      e.currentTarget.style.color = 'white';
-      e.currentTarget.style.borderLeft = '4px solid #0B3C8A';
-      e.currentTarget.style.fontWeight = 'bold';
-    }
-  };
 
   // NEW badge: show only if paper published within 90 days
   const today = new Date();
