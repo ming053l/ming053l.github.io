@@ -77,16 +77,16 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="99999" id="paper-flashfocus">
 <div class="paper-box-image">
 <a aria-label="View full-size flashfocus figure" href="images/flashfocus-preview.png" rel="noopener" target="_blank">
-<img alt="FlashFocus one-step deblurring and interactive bokeh rendering pipeline" decoding="async" loading="lazy" src="images/flashfocus-preview.png"/>
+<img alt="FlashReFocus one-step deblurring and interactive bokeh rendering pipeline" decoding="async" loading="lazy" src="images/flashfocus-preview.png"/>
 </a>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
-<h4>FlashFocus: Interactive Image Refocusing in Seconds</h4>
+<h4>FlashReFocus: Interactive Image Refocusing in Seconds</h4>
 <p class="paper-authors">Ching-Heng Cheng*, <strong>Chia-Ming Lee*</strong>, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
 <p class="paper-note">* Equal contribution.</p>
 
-<p class="paper-summary">Restores an all-in-focus image once with a single diffusion step, then uses a lightweight depth-guided renderer for interactive focal and aperture edits. Introduces 3CReal, a benchmark of paired photographs from three camera and lens systems.</p>
+<p class="paper-summary">Restores an all-in-focus image once with a single diffusion step, then uses a lightweight depth-guided renderer for interactive focal and aperture edits.</p>
 </div>
 </div><div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
