@@ -29,7 +29,7 @@
         <li><a href="{{ author.uri }}">Website</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}">Email</a></li>
+        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}">Keybase</a></li>
@@ -65,7 +65,7 @@
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}">Bitbucket</a></li>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}">Github</a></li>
+        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}">Stackoverflow</a></li>
@@ -104,13 +104,13 @@
         <li><a href="https://vine.co/u/{{ author.vine }}">Vine</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}">Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}">PubMed</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}">ORCID</a></li>
+        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a></li>
       {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}">Impactstory</a></li>
@@ -120,10 +120,10 @@
 {% endif %}
     </ul>
       <div class="author__urls_sm">
-      {% if author.email %}<a href="mailto:{{ author.email }}">Email</a>{% endif %}
-      {% if author.github %}<a href="https://github.com/{{ author.github }}">GitHub</a>{% endif %}
-      {% if author.googlescholar %}<a href="{{ author.googlescholar }}">Google Scholar</a>{% endif %}
-      {% if author.orcid %}<a href="{{ author.orcid }}">ORCID</a>{% endif %}
+      {% if author.email %}<a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>{% endif %}
+      {% if author.github %}<a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
+      {% if author.googlescholar %}<a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>{% endif %}
+      {% if author.orcid %}<a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a>{% endif %}
     </div>
   </div>
 </div>
