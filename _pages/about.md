@@ -545,10 +545,9 @@ window.addEventListener('scroll', function() {
        style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
     <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
       <div style="position: absolute; background: #4e8dff; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">CVPR Findings 2026</div>
-      <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
-        style="width:100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius:2px;">
-        <source src="images/ELSATeaserLight.mp4" type="video/mp4">
-      </video>
+      <a href="images/elsa-scan-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA scan comparison">
+        <img src="images/elsa-scan-preview.png" alt="Sequential scan with linear depth versus ELSA two-level prefix scan with logarithmic depth" loading="lazy" style="width: 100%; height: auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
+      </a>
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
