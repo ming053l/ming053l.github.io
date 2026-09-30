@@ -70,3 +70,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0e7490; outline-offs
  .back-to-top { bottom: 12px; right: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *:before, *:after { animation: none !important; transition: none !important; } }
+
+@media (max-width: 1023px) {
+ .sidebar .author__urls-wrapper { display: block; width: 100%; clear: both; }
+ .sidebar .author__urls_sm { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 14px 0 0; font-size: 13px; }
+ .sidebar .author__urls_sm a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+}
