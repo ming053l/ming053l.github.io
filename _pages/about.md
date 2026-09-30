@@ -520,23 +520,7 @@ window.addEventListener('scroll', function() {
     </div>
   </div>
 
-  <div class="paper-box" data-category="hsi" data-sort="20260"
-       style="display: flex; flex-wrap: wrap; margin-bottom: 35px; align-items: flex-start;">
-    <div class="paper-box-image" style="flex: 0 0 350px; max-width: 100%; margin-right: 25px; position: relative;">
-      <div style="position: absolute; background: #e67e22; color: white; padding: 2px 10px; font-size: 13px; font-weight: bold; top: 10px; left: 0px; z-index: 1;">ICASSP 2026</div>
-      <img src='images/SSCNet.png' loading="lazy" style="width: 100%; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); border-radius: 2px;">
-    </div>
-    <div class="paper-box-text" style="flex: 1; min-width: 300px;">
-      <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">HSSDCT: Factorized Spatial-Spectral Correlation for Hyperspectral Image Fusion</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Yu-How He, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, Jen-Wei Lee, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://scholar.google.com/citations?user=QwSzhgEAAAAJ&hl=en">Li-Wei Kang</a></p>
-      <div style="margin-bottom: 5px; font-weight: bold;">About</div>
-      <p style="margin: 0 0 15px 0; color: #555;">Fuses low-resolution hyperspectral and high-resolution RGB images by factorizing spatial and spectral correlations separately, producing sharp, spectrally accurate results with reduced computational cost.</p>
-      <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">
-        <a href="https://www.arxiv.org/abs/2602.00490" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">arxiv</a>
-        <a href="https://github.com/jemmyleee/HSSDCT" target="_blank" style="background: #7a838b; color: white; padding: 5px 15px; border-radius: 4px; font-size: 0.9em; font-weight: bold; text-decoration: none;">Github</a>
-      </div>
-    </div>
-  </div>
+
 
 
   <!-- ===================== EFFICIENT AI ===================== -->
