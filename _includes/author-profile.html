@@ -41,13 +41,13 @@
         <li><a href="https://twitter.com/{{ author.twitter }}">Twitter</a></li>
       {% endif %}
       {% if author.facebook %}
-        <li><a href="https://www.facebook.com/{{ author.facebook }}">Facebook</a></li>
+        <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> Facebook</a></li>
       {% endif %}
       {% if author.google_plus %}
         <li><a href="https://plus.google.com/+{{ author.google_plus }}">Google+</a></li>
       {% endif %}
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       {% endif %}
       {% if author.dblp %}
         <li><a href="{{ author.dblp }}">DBLP</a></li>
@@ -55,8 +55,11 @@
       {% if author.xing %}
         <li><a href="https://www.xing.com/profile/{{ author.xing }}">XING</a></li>
       {% endif %}
+      {% if author.threads %}
+        <li><a href="https://www.threads.com/@{{ author.threads }}"><span aria-hidden="true" style="display:inline-block;width:1.25em;text-align:center;font-weight:600;">@</span> Threads</a></li>
+      {% endif %}
       {% if author.instagram %}
-        <li><a href="https://instagram.com/{{ author.instagram }}">Instagram</a></li>
+        <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
       {% endif %}
       {% if author.tumblr %}
         <li><a href="https://{{ author.tumblr }}.tumblr.com">Tumblr</a></li>
@@ -120,6 +123,10 @@
 {% endif %}
     </ul>
       <div class="author__urls_sm">
+      {% if author.instagram %}<a href="https://www.instagram.com/{{ author.instagram }}/"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a>{% endif %}
+      {% if author.facebook %}<a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> Facebook</a>{% endif %}
+      {% if author.linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a>{% endif %}
+      {% if author.threads %}<a href="https://www.threads.com/@{{ author.threads }}"><span aria-hidden="true" style="display:inline-block;width:1.25em;text-align:center;font-weight:600;">@</span> Threads</a>{% endif %}
       {% if author.email %}<a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>{% endif %}
       {% if author.github %}<a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
       {% if author.googlescholar %}<a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>{% endif %}
