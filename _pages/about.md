@@ -30,14 +30,6 @@ I am an incoming Ph.D. student at the University at Albany, State University of 
 <span>Updated Jan 17, 2026</span>
 </div>
 
-<div class="research-interests"><span class="interest-label">Research interests</span>
-<span class="interest-tag">Low-level Vision Problems</span>
-<span class="interest-tag">Computational Photography</span>
-<span class="interest-tag">Hyperspectral Image Processing</span>
-<span class="interest-tag">Multimedia Analysis and Security</span>
-<span class="interest-tag">Efficient AI and Model Acceleration</span>
-</div>
-
 In my free time, I enjoy traveling ✈️, capturing moments through photography 📸, and making desserts 🍰.
 
 <h2 id="news">Recent highlights</h2>
