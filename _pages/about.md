@@ -61,7 +61,21 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p>My research goal is to advance <strong>Reliable and Efficient Multimodal Intelligence</strong>, developing systems that integrate complementary information to build a faithful understanding of the world from imperfect observations. Building on my work in visual reconstruction and computational photography, I aim to extend this perspective across modalities: recovering missing information, assessing whether the resulting representations can be trusted, and making that process computationally practical. These challenges connect <strong>perception, trust, and efficiency</strong> within a common goal—to develop intelligent systems that remain useful and dependable when information is incomplete and computational resources are limited. Full list of publications <a href="https://scholar.google.com/citations?user=koBVaaUAAAAJ" target="_blank" rel="noopener">here</a>.</p>
 
-<div id="pub-container"><div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
+<div id="pub-container">
+<div class="paper-box" data-sort="99999" id="paper-elsa-journal">
+<div class="paper-box-image">
+<a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
+<img src="images/elsa-journal-preview.png" alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async"/>
+</a>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Journal Manuscript</div>
+<h4>ELSA: Two-Phase Standard-Softmax Scan Attention with Path-Specific Precision and Carried Statistics</h4>
+<p class="paper-authors">Chih-Chung Hsu, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
+<p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
+</div>
+</div>
+<div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
 <div class="paper-box-image">
 <a aria-label="View full-size doctor-trigger figure" href="images/doctor-trigger-preview.png" rel="noopener" target="_blank">
 <img alt="Doctor Trigger release verification and review framework" decoding="async" loading="lazy" src="images/doctor-trigger-preview.png"/>
