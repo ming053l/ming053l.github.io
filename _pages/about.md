@@ -128,8 +128,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Removes shadows from images by incorporating physical light models and geometric priors, enabling robust restoration across diverse real-world scenes and lighting conditions without retraining for each domain.</p>
 <div class="links">
-<a href="https://www.arxiv.org/abs/2601.17470" rel="noopener" target="_blank">arxiv</a>
-<a href="https://github.com/ming053l/PhaSR" rel="noopener" target="_blank">Github</a>
+<a href="https://www.arxiv.org/abs/2601.17470" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/ming053l/PhaSR" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/PhaSR_github/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
@@ -147,8 +147,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Separates reflected and transmitted layers in a single photo by alternating between fusing and splitting mixed features, teaching the network to disentangle overlapping visual signals that are hard to distinguish.</p>
 <div class="links">
-<a href="https://www.arxiv.org/abs/2601.17468" rel="noopener" target="_blank">arxiv</a>
-<a href="https://github.com/wuw2135/ReflexSplit" rel="noopener" target="_blank">Github</a>
+<a href="https://www.arxiv.org/abs/2601.17468" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/wuw2135/ReflexSplit" rel="noopener" target="_blank">GitHub</a>
 <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
@@ -166,9 +166,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Speeds up vision transformers by replacing the standard quadratic attention with a hardware-friendly linear scan, achieving the same exact results at a fraction of the memory and compute cost — with no approximation involved.</p>
 <div class="links">
+<a href="https://arxiv.org/abs/2604.23798" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/ming053l/ELSA" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/ELSA_projectpage/" rel="noopener" target="_blank">Project Page</a>
-<a href="https://arxiv.org/abs/2604.23798" rel="noopener" target="_blank">arxiv</a>
-<a href="https://github.com/ming053l/ELSA" rel="noopener" target="_blank">Github</a>
 </div>
 </div>
 </div><div class="paper-box" data-sort="20263">
@@ -183,8 +183,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Detects deepfakes robustly across different video compression levels by synthesizing multimodal training signals from a single modality, using contrastive learning to keep real and fake representations well-separated even when compression artifacts obscure subtle forgery traces.</p>
 <div class="links">
-<a href="https://arxiv.org/abs/2511.18983" rel="noopener" target="_blank">arxiv</a>
-<a href="https://github.com/IlikeBB/Unimodal-generated-Multimodal-Contrastive-Learning-for-Cross-compression-rate-Deepfake-Detection" rel="noopener" target="_blank">Github</a>
+<a href="https://arxiv.org/abs/2511.18983" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/IlikeBB/Unimodal-generated-Multimodal-Contrastive-Learning-for-Cross-compression-rate-Deepfake-Detection" rel="noopener" target="_blank">GitHub</a>
 </div>
 </div>
 </div><div class="paper-box" data-sort="20262">
@@ -198,8 +198,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Enhances murky underwater photos by combining wavelet-based frequency analysis with white balance correction, efficiently restoring natural colors and recovering details lost to water scattering.</p>
 <div class="links">
-<a href="https://arxiv.org/abs/2511.16321" rel="noopener" target="_blank">arxiv</a>
-<a href="https://github.com/chingheng0808/WWE-UIE" rel="noopener" target="_blank">Github</a>
+<a href="https://arxiv.org/abs/2511.16321" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/chingheng0808/WWE-UIE" rel="noopener" target="_blank">GitHub</a>
 </div>
 </div>
 </div><div class="paper-box" data-sort="20261">
@@ -213,8 +213,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Restores degraded hyperspectral images using text prompts to guide frequency-domain adaptation, allowing a single model to handle multiple types of noise and distortion without task-specific retraining.</p>
 <div class="links">
-<a href="https://arxiv.org/abs/2411.15922" rel="noopener" target="_blank">arxiv</a>
-<a href="https://github.com/chingheng0808/PromptHSI" rel="noopener" target="_blank">Github</a>
+<a href="https://arxiv.org/abs/2411.15922" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/chingheng0808/PromptHSI" rel="noopener" target="_blank">GitHub</a>
 <a href="https://drive.google.com/drive/folders/1O0GDzoPt3AVD4mjXeu3R_lxyuTDEWWW1" rel="noopener" target="_blank">Dataset</a>
 </div>
 </div>
