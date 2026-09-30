@@ -36,7 +36,7 @@ I will be pursuing my Ph.D. at the University at Albany, State University of New
 <span class="interest-tag">Hyperspectral Image Processing</span>
 <span class="interest-tag">Multimedia Analysis and Security</span>
 <span class="interest-tag">Efficient AI and Model Acceleration</span>
-<span class="interest-tag">Flow Matching</span></div>
+</div>
 
 I am always open to research collaborations. If you are interested in working together or simply want to exchange ideas, please feel free to reach out to me via <a href="mailto:zuw408421476@gmail.com" style="color:#0B3C8A;">email</a>.
 
