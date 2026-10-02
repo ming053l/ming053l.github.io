@@ -87,6 +87,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, Chih-Chung Hsu</p>
 
 <p class="paper-summary">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
+<div class="links">
+<a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
+<a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
+</div>
 </div>
 </div><div class="paper-box" data-sort="99999" id="paper-flashfocus">
 <div class="paper-box-image">
