@@ -124,7 +124,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Introduces C⁴, a training-free framework combining local token commitment with confidence-verified global early exit to reduce diffusion language model decoding steps while largely preserving task performance.</p>
 <div class="links">
-<a href="https://c4-dllm.github.io/static/pdf/paper.pdf" rel="noopener" target="_blank">Paper</a>
+<a href="https://github.com/ming053l/C4-dLLM" rel="noopener" target="_blank">GitHub</a>
 <a href="https://c4-dllm.github.io/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
