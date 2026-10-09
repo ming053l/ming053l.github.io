@@ -64,9 +64,29 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="pub-container">
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
-<a href="https://ming053l.github.io/Spectral-World-Renderer/" target="_blank" rel="noopener" aria-label="Spectral World Renderer project page">
-<img src="images/spectral-world-renderer-preview.webp" alt="Eight indoor and outdoor hyperspectral worlds with aligned material ground truth" loading="lazy" decoding="async"/>
-</a>
+<video id="swr-home-preview" width="640" height="400" muted loop playsinline controls preload="none" poster="images/swr-material-preview.webp" aria-label="RGB and all-material mixture comparison across NVIDIA HQ, Forbidden City, Karst valley and Song study">
+<source src="images/swr-material-preview.mp4" type="video/mp4"/>
+<a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('swr-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) {
+      video.play().catch(function () {});
+    } else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) {
+    visible = entries[0].isIntersecting;
+    updatePlayback();
+  }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+  reducedMotion.addEventListener('change', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
