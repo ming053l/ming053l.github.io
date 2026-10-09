@@ -62,6 +62,27 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p>My research goal is to advance <strong>Reliable and Efficient Multimodal Intelligence</strong>, developing systems that integrate complementary information to build a faithful understanding of the world from imperfect observations. Building on my work in visual reconstruction and computational photography, I aim to extend this perspective across modalities: recovering missing information, assessing whether the resulting representations can be trusted, and making that process computationally practical. These challenges connect <strong>perception, trust, and efficiency</strong> within a common goal—to develop intelligent systems that remain useful and dependable when information is incomplete and computational resources are limited. Full list of publications <a href="https://scholar.google.com/citations?user=koBVaaUAAAAJ" target="_blank" rel="noopener">here</a>.</p>
 
 <div id="pub-container">
+<div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
+<div class="paper-box-image">
+<a href="https://ming053l.github.io/Spectral-World-Renderer/" target="_blank" rel="noopener" aria-label="Spectral World Renderer project page">
+<img src="images/spectral-world-renderer-preview.webp" alt="Eight indoor and outdoor hyperspectral worlds with aligned material ground truth" loading="lazy" decoding="async"/>
+</a>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Manuscript</div>
+<h4>Spectral World Renderer: Towards Verifiable 3D Hyperspectral Unmixing</h4>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Xiao, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+<p class="paper-summary">Creates eight verifiable hyperspectral worlds with aligned material labels and subpixel proportions. Abundance-GS learns a compact Gaussian representation for efficient spectral rendering and material decomposition, enabling joint evaluation of reconstruction fidelity and material identification.</p>
+<div class="links">
+<a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
+<a href="https://ming053l.github.io/Spectral-World-Renderer/assets/paper.pdf" rel="noopener" target="_blank">Paper</a>
+<a href="https://ming053l.github.io/Spectral-World-Renderer/assets/supplementary.pdf" rel="noopener" target="_blank">Supplement</a>
+<a href="https://ming053l.github.io/Spectral-World-Renderer/#demo" rel="noopener" target="_blank">Videos</a>
+<a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+
 <div class="paper-box" data-sort="99999" id="paper-elsa-journal">
 <div class="paper-box-image">
 <a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
