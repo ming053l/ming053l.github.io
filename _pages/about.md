@@ -64,8 +64,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="pub-container">
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
-<video id="swr-home-preview" width="640" height="400" muted loop playsinline controls preload="none" poster="images/swr-material-preview.webp" aria-label="RGB and all-material mixture comparison across NVIDIA HQ, Forbidden City, Karst valley and Song study">
-<source src="images/swr-material-preview.mp4" type="video/mp4"/>
+<video id="swr-home-preview" width="640" height="420" muted loop playsinline controls preload="metadata" poster="images/swr-separate-preview-v2.webp" aria-label="Separate model material shares for white coating, vegetation and glazing, with an RGB reference">
+<source src="images/swr-separate-preview-v2.mp4" type="video/mp4"/>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
 </video>
 <script>
