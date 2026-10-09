@@ -71,7 +71,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>Spectral World Renderer: Towards Verifiable 3D Hyperspectral Unmixing</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Xiao, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
 <p class="paper-summary">Creates eight verifiable hyperspectral worlds with aligned material labels and subpixel proportions. Abundance-GS learns a compact Gaussian representation for efficient spectral rendering and material decomposition, enabling joint evaluation of reconstruction fidelity and material identification.</p>
 <div class="links">
 <a href="https://ming053l.github.io/Spectral-World-Renderer/assets/paper.pdf" rel="noopener" target="_blank">Paper</a>
