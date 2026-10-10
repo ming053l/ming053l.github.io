@@ -105,7 +105,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-elsa-journal">
 <div class="paper-box-image">
 <a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
-<img src="images/elsa-journal-preview.png" alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async"/>
+<img alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async" src="images/elsa-journal-preview.webp" width="920" height="368"/>
 </a>
 </div>
 <div class="paper-box-text">
@@ -118,7 +118,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
 <div class="paper-box-image">
 <a aria-label="View full-size doctor-trigger figure" href="images/doctor-trigger-preview.png" rel="noopener" target="_blank">
-<img alt="Doctor Trigger release verification and review framework" decoding="async" loading="lazy" src="images/doctor-trigger-preview.png"/>
+<img alt="Doctor Trigger release verification and review framework" decoding="async" loading="lazy" src="images/doctor-trigger-preview.webp" width="920" height="348"/>
 </a>
 </div>
 <div class="paper-box-text">
@@ -174,7 +174,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
 <a aria-label="View full-size c4 figure" href="images/c4-preview.png" rel="noopener" target="_blank">
-<img alt="C4 local token commitment and confidence-verified early exit" decoding="async" loading="lazy" src="images/c4-preview.png"/>
+<img alt="C4 local token commitment and confidence-verified early exit" decoding="async" loading="lazy" src="images/c4-preview.webp" width="920" height="311"/>
 </a>
 </div>
 <div class="paper-box-text">
@@ -191,7 +191,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="99999" id="paper-decobias">
 <div class="paper-box-image">
 <a aria-label="View full-size decobias figure" href="images/decobias-preview.png" rel="noopener" target="_blank">
-<img alt="DecoBias super-resolution transformer and decomposed spatial bias architecture" decoding="async" loading="lazy" src="images/decobias-preview.png"/>
+<img alt="DecoBias super-resolution transformer and decomposed spatial bias architecture" decoding="async" loading="lazy" src="images/decobias-preview.webp" width="920" height="362"/>
 </a>
 </div>
 <div class="paper-box-text">
@@ -204,7 +204,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20266">
 <div class="paper-box-image">
 
-<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<video width="1280" height="720" controls="" loop="" muted="" playsinline="" preload="none" poster="images/PhaSR_demo.webp">
 <source src="images/PhaSR_demo.mp4" type="video/mp4"/>
 </video>
 </div>
@@ -223,7 +223,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20265">
 <div class="paper-box-image">
 
-<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<video width="960" height="640" controls="" loop="" muted="" playsinline="" preload="none" poster="images/ReflexSplit_demo.webp">
 <source src="images/ReflexSplit_demo.mp4" type="video/mp4"/>
 </video>
 </div>
@@ -243,7 +243,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 
 <a aria-label="View full-size ELSA scan comparison" href="images/elsa-scan-preview.png" rel="noopener" target="_blank">
-<img alt="Sequential scan with linear depth versus ELSA two-level prefix scan with logarithmic depth" decoding="async" loading="lazy" src="images/elsa-scan-preview.png"/>
+<img alt="Sequential scan with linear depth versus ELSA two-level prefix scan with logarithmic depth" decoding="async" loading="lazy" src="images/elsa-scan-preview.webp" width="783" height="341"/>
 </a>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR Findings 2026</div>
@@ -261,7 +261,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20263">
 <div class="paper-box-image">
 
-<a href="images/UMCL.png" rel="noopener" target="_blank"><img alt="UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection — overview" decoding="async" loading="lazy" src="images/UMCL.png"/></a>
+<a href="images/UMCL.png" rel="noopener" target="_blank"><img alt="UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection — overview" decoding="async" loading="lazy" src="images/UMCL.webp" width="920" height="429"/></a>
 </div>
 <div class="paper-box-text"><div class="paper-venue">IJCV 2026</div>
 <h4>UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection
@@ -292,7 +292,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20261">
 <div class="paper-box-image">
 
-<a href="images/PromptHSI.png" rel="noopener" target="_blank"><img alt="PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation — overview" decoding="async" loading="lazy" src="images/PromptHSI.png"/></a>
+<a href="images/PromptHSI.png" rel="noopener" target="_blank"><img alt="PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation — overview" decoding="async" loading="lazy" src="images/PromptHSI.webp" width="590" height="357"/></a>
 </div>
 <div class="paper-box-text"><div class="paper-venue">TGRS 2026</div>
 <h4>PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
