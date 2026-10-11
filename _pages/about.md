@@ -133,6 +133,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="links">
 <a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
+<a href="https://youtu.be/qtT09O2Ib1U" rel="noopener" target="_blank">Video</a>
+<a href="https://youtu.be/F8ZLMuwN4hc" rel="noopener" target="_blank">Video (中文)</a>
 </div>
 </div>
 </div>
