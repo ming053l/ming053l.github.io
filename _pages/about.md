@@ -91,7 +91,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>Spectral World Renderer: Towards Verifiable 3D Hyperspectral Unmixing</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-summary">Creates eight verifiable hyperspectral worlds with aligned material labels and subpixel proportions. Abundance-GS learns a compact Gaussian representation for efficient spectral rendering and material decomposition, enabling joint evaluation of reconstruction fidelity and material identification.</p>
 <div class="links">
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
@@ -111,7 +111,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Journal Manuscript</div>
 <h4>ELSA: Two-Phase Standard-Softmax Scan Attention with Path-Specific Precision and Carried Statistics</h4>
-<p class="paper-authors">Chih-Chung Hsu, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
+<p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
 <p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
 </div>
 </div>
@@ -124,7 +124,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, Chih-Chung Hsu</p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
 <p class="paper-summary">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
 <div class="links">
@@ -161,7 +161,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>FlashReFocus: Interactive Image Refocusing in Seconds</h4>
-<p class="paper-authors">Ching-Heng Cheng*, <strong>Chia-Ming Lee*</strong>, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+<p class="paper-authors">Ching-Heng Cheng*, <strong>Chia-Ming Lee*</strong>, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-note">* Equal contribution.</p>
 
 <p class="paper-summary">Enables interactive refocusing of a single photograph, allowing users to explore focal points, aperture settings, and depth-of-field effects with responsive visual feedback. After a one-time restoration step, a lightweight renderer updates each focal edit in about half a second, making it practical to compare and refine the desired look.</p>
@@ -180,7 +180,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>C⁴: Commit Locally, Exit Globally — Coordinating Adaptive Sampling and Early Exit in Diffusion Language Models</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Shao-Kai Liu, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Shao-Kai Liu, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
 <p class="paper-summary">Introduces C⁴, a training-free framework combining local token commitment with confidence-verified global early exit to reduce diffusion language model decoding steps while largely preserving task performance.</p>
 <div class="links">
@@ -197,7 +197,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
 <h4>DecoBias: Decomposing Neural Spatial Bias for Scalable Super-Resolution Transformers</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Fan Lin, Ming-Ching Chang, Xin Li, Yu-Lun Liu, Chih-Chung Hsu</p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
 <p class="paper-summary">Decomposes spatial bias into geometry, locality, and topology, representing each outside additive attention-score space. Enables a standard fused-attention call for scalable super-resolution transformers while preserving shifted-window connectivity.</p>
 </div>
