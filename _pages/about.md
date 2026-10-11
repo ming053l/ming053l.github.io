@@ -177,7 +177,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/FlashReFocus" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/FlashReFocus/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/g032M7moWQ4" rel="noopener" target="_blank">Video</a>
-<a href="https://huggingface.co/ming0531/FlashReFocus" rel="noopener" target="_blank">Hugging Face</a>
+<a href="https://huggingface.co/spaces/ming0531/FlashReFocus" rel="noopener" target="_blank">Demo</a>
 </div>
 </div>
 </div>
