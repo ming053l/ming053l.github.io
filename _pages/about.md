@@ -103,6 +103,26 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 
+<div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
+<div class="paper-box-image">
+<video width="960" height="540" controls playsinline preload="none" poster="images/doctor-trigger-promo.webp" aria-label="Doctor Trigger overview video (84 s, with sound)">
+<source src="images/doctor-trigger-promo.mp4" type="video/mp4"/>
+<a href="https://ming053l.github.io/Doctor-Trigger/">View the Doctor Trigger project page</a>
+</video>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Manuscript</div>
+<h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+
+<p class="paper-summary">People often know when their face has been swapped into an image, yet they have no objective evidence that fact-checkers or investigators can act on. Doctor Trigger binds each face image to its original release, so a circulating copy can be checked against what was actually published, supporting digital governance and giving users and investigators verifiable evidence.</p>
+<div class="links">
+<a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
+<a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
+</div>
+</div>
+</div>
+
 <div class="paper-box" data-sort="99999" id="paper-flashfocus">
 <div class="paper-box-image">
 <video id="flashrefocus-home-preview" width="960" height="640" muted loop playsinline controls preload="metadata" poster="images/flashrefocus-preview.webp" aria-label="FlashReFocus on a portrait above a city: the photo is restored once, then clicks refocus from the valley to the face, and the blur strength is turned like an aperture">
@@ -158,24 +178,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
 </div>
 </div>
-<div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
-<div class="paper-box-image">
-<a aria-label="View full-size doctor-trigger figure" href="images/doctor-trigger-preview.png" rel="noopener" target="_blank">
-<img alt="Doctor Trigger release verification and review framework" decoding="async" loading="lazy" src="images/doctor-trigger-preview.webp" width="920" height="348"/>
-</a>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">Manuscript</div>
-<h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-
-<p class="paper-summary">People often know when their face has been swapped into an image, yet they have no objective evidence that fact-checkers or investigators can act on. Doctor Trigger binds each face image to its original release, so a circulating copy can be checked against what was actually published, supporting digital governance and giving users and investigators verifiable evidence.</p>
-<div class="links">
-<a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
-<a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
-</div>
-</div>
-</div><div class="paper-box" data-sort="99999" id="paper-c4">
+<div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
 <a aria-label="View full-size c4 figure" href="images/c4-preview.png" rel="noopener" target="_blank">
 <img alt="C4 local token commitment and confidence-verified early exit" decoding="async" loading="lazy" src="images/c4-preview.webp" width="920" height="311"/>
