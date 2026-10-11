@@ -105,10 +105,24 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
 <div class="paper-box-image">
-<video width="960" height="540" controls playsinline preload="none" poster="images/doctor-trigger-promo.webp" aria-label="Doctor Trigger overview video (84 s, with sound)">
-<source src="images/doctor-trigger-promo.mp4" type="video/mp4"/>
+<video id="doctor-trigger-home-preview" width="960" height="540" muted loop playsinline preload="none" poster="images/doctor-trigger-home.webp" aria-label="Doctor Trigger: face images are swapped and reposted online; a private record verifies which copies are the ones actually posted">
+<source src="images/doctor-trigger-home.mp4" type="video/mp4"/>
 <a href="https://ming053l.github.io/Doctor-Trigger/">View the Doctor Trigger project page</a>
 </video>
+<script>
+(function () {
+  const video = document.getElementById('doctor-trigger-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
