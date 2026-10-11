@@ -175,6 +175,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">Enables interactive refocusing of a single photograph, allowing users to explore focal points, aperture settings, and depth-of-field effects with responsive visual feedback. After a one-time restoration step, a lightweight renderer updates each focal edit in about half a second, making it practical to compare and refine the desired look.</p>
 <div class="links">
+<a href="https://ming053l.github.io/FlashReFocus/assets/FlashReFocus.pdf" rel="noopener" target="_blank">Paper</a>
 <a href="https://github.com/ming053l/FlashReFocus" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/FlashReFocus/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/g032M7moWQ4" rel="noopener" target="_blank">Video</a>
