@@ -1,7 +1,7 @@
 main:
   - title: "About"
     url: "/#about-me"
-  - title: "Highlights"
-    url: "/#news"
+  # - title: "Highlights"   # news hidden for now
+  #   url: "/#news"
   - title: "Publications"
     url: "/#publications"
