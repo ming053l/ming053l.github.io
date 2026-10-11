@@ -133,7 +133,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div><div class="paper-box" data-sort="99999" id="paper-flashfocus">
 <div class="paper-box-image">
-<video id="flashrefocus-home-preview" width="960" height="640" muted loop playsinline controls preload="metadata" poster="images/flashrefocus-preview.webp" aria-label="FlashReFocus on a portrait: the photo is restored once, then clicks refocus between the globe and the face, and the blur strength is turned like an aperture">
+<video id="flashrefocus-home-preview" width="960" height="640" muted loop playsinline controls preload="metadata" poster="images/flashrefocus-preview.webp" aria-label="FlashReFocus on a portrait above a city: the photo is restored once, then clicks refocus from the valley to the face, and the blur strength is turned like an aperture">
 <source src="images/flashrefocus-preview.mp4" type="video/mp4"/>
 <a href="https://ming053l.github.io/FlashReFocus/">View FlashReFocus</a>
 </video>
