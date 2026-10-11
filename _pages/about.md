@@ -66,7 +66,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="pub-container">
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
-<video id="swr-home-preview" width="640" height="420" muted loop playsinline preload="metadata" poster="images/swr-query-preview.webp?v=2" aria-label="Material queries across four worlds: marble and glazed tile in Forbidden City, terracotta and wood in Market, water and limestone in Karst, living leaves and terracotta in City; each query lights up the matching surfaces">
+<video id="swr-home-preview" width="640" height="420" muted loop playsinline controls preload="metadata" poster="images/swr-query-preview.webp?v=2" aria-label="Material queries across four worlds: marble and glazed tile in Forbidden City, terracotta and wood in Market, water and limestone in Karst, living leaves and terracotta in City; each query lights up the matching surfaces">
 <source src="images/swr-query-preview.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
 </video>
@@ -105,7 +105,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
 <div class="paper-box-image">
-<video id="doctor-trigger-home-preview" width="960" height="540" muted loop playsinline preload="none" poster="images/doctor-trigger-home.webp" aria-label="Doctor Trigger: face images are swapped and reposted online; a private record verifies which copies are the ones actually posted">
+<video id="doctor-trigger-home-preview" width="960" height="540" muted loop playsinline controls preload="metadata" poster="images/doctor-trigger-home.webp" aria-label="Doctor Trigger: face images are swapped and reposted online; a private record verifies which copies are the ones actually posted">
 <source src="images/doctor-trigger-home.mp4" type="video/mp4"/>
 <a href="https://ming053l.github.io/Doctor-Trigger/">View the Doctor Trigger project page</a>
 </video>
