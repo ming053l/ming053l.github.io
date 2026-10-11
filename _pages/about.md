@@ -101,37 +101,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 
-<div class="paper-box" data-sort="99999" id="paper-elsa-journal">
-<div class="paper-box-image">
-<a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
-<img alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async" src="images/elsa-journal-preview.webp" width="920" height="368"/>
-</a>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">Journal Manuscript</div>
-<h4>ELSA: Two-Phase Standard-Softmax Scan Attention with Path-Specific Precision and Carried Statistics</h4>
-<p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
-<p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
-</div>
-</div>
-<div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
-<div class="paper-box-image">
-<a aria-label="View full-size doctor-trigger figure" href="images/doctor-trigger-preview.png" rel="noopener" target="_blank">
-<img alt="Doctor Trigger release verification and review framework" decoding="async" loading="lazy" src="images/doctor-trigger-preview.webp" width="920" height="348"/>
-</a>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">Manuscript</div>
-<h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-
-<p class="paper-summary">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
-<div class="links">
-<a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
-<a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
-</div>
-</div>
-</div><div class="paper-box" data-sort="99999" id="paper-flashfocus">
+<div class="paper-box" data-sort="99999" id="paper-flashfocus">
 <div class="paper-box-image">
 <video id="flashrefocus-home-preview" width="960" height="640" muted loop playsinline controls preload="metadata" poster="images/flashrefocus-preview.webp" aria-label="FlashReFocus on a portrait above a city: the photo is restored once, then clicks refocus from the valley to the face, and the blur strength is turned like an aperture">
 <source src="images/flashrefocus-preview.mp4" type="video/mp4"/>
@@ -168,6 +138,38 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/FlashReFocus" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/FlashReFocus/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://huggingface.co/ming0531/FlashReFocus" rel="noopener" target="_blank">Hugging Face</a>
+</div>
+</div>
+</div>
+
+<div class="paper-box" data-sort="99999" id="paper-elsa-journal">
+<div class="paper-box-image">
+<a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
+<img alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async" src="images/elsa-journal-preview.webp" width="920" height="368"/>
+</a>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Journal Manuscript</div>
+<h4>ELSA: Two-Phase Standard-Softmax Scan Attention with Path-Specific Precision and Carried Statistics</h4>
+<p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
+<p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
+</div>
+</div>
+<div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
+<div class="paper-box-image">
+<a aria-label="View full-size doctor-trigger figure" href="images/doctor-trigger-preview.png" rel="noopener" target="_blank">
+<img alt="Doctor Trigger release verification and review framework" decoding="async" loading="lazy" src="images/doctor-trigger-preview.webp" width="920" height="348"/>
+</a>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Manuscript</div>
+<h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+
+<p class="paper-summary">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
+<div class="links">
+<a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
+<a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
 </div><div class="paper-box" data-sort="99999" id="paper-c4">
