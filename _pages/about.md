@@ -167,7 +167,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
-<p class="paper-summary">Verifies circulating face images against private publisher-held release records using spectral agreement and a weak keyed Fourier-phase signal, providing release-specific evidence to flag suspicious copies for review.</p>
+<p class="paper-summary">Lets publishers verify whether a face image circulating online matches what they actually released, turning their own release records into private, release-specific evidence for flagging suspicious copies.</p>
 <div class="links">
 <a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
