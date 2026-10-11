@@ -94,7 +94,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-venue">Manuscript</div>
 <h4>Spectral World Renderer: Towards Verifiable 3D Hyperspectral Unmixing</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-summary">Brings hyperspectral unmixing from images to 3D scenes. Generated worlds with known composition make 3D unmixing verifiable, and Abundance-GS unmixes every Gaussian of a compact scene, so its materials can be queried directly, accurately and efficiently.</p>
+<p class="paper-summary">Carries classical hyperspectral unmixing efficiently from images into 3D scenes. Generated worlds with known composition make 3D unmixing verifiable, and Abundance-GS unmixes every Gaussian of a compact scene, so its materials can be queried directly and accurately.</p>
 <div class="links">
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
