@@ -64,8 +64,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="pub-container">
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
-<video id="swr-home-preview" width="640" height="420" muted loop playsinline preload="metadata" poster="images/swr-query-preview.webp" aria-label="Forbidden City: the Gaussian wireframe resolves into the rendered world, and material queries for marble and glazed tile light up the matching surfaces">
-<source src="images/swr-query-preview.mp4" type="video/mp4"/>
+<video id="swr-home-preview" width="640" height="420" muted loop playsinline preload="metadata" poster="images/swr-query-preview.webp?v=2" aria-label="Material queries across four worlds: marble and glazed tile in Forbidden City, terracotta and wood in Market, water and limestone in Karst, living leaves and terracotta in City; each query lights up the matching surfaces">
+<source src="images/swr-query-preview.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
 </video>
 <script>
