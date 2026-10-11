@@ -64,8 +64,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="pub-container">
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
-<video id="swr-home-preview" width="640" height="420" muted loop playsinline controls preload="metadata" poster="images/swr-separate-preview-v2.webp" aria-label="Separate model material shares for white coating, vegetation and glazing, with an RGB reference">
-<source src="images/swr-separate-preview-v2.mp4" type="video/mp4"/>
+<video id="swr-home-preview" width="640" height="420" muted loop playsinline preload="metadata" poster="images/swr-query-preview.webp" aria-label="Forbidden City: the Gaussian wireframe resolves into the rendered world, and material queries for marble and glazed tile light up the matching surfaces">
+<source src="images/swr-query-preview.mp4" type="video/mp4"/>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
 </video>
 <script>
@@ -92,12 +92,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-venue">Manuscript</div>
 <h4>Spectral World Renderer: Towards Verifiable 3D Hyperspectral Unmixing</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-summary">Creates eight verifiable hyperspectral worlds with aligned material labels and subpixel proportions. Abundance-GS learns a compact Gaussian representation for efficient spectral rendering and material decomposition, enabling joint evaluation of reconstruction fidelity and material identification.</p>
+<p class="paper-summary">Generates eight indoor and outdoor hyperspectral worlds whose material composition is known by construction. Abundance-GS decodes abundances at every ray intersection of a compact Gaussian representation, so every primitive carries queryable materials; it identifies materials best in all eight worlds and trains 3.7–12.8× faster than unmixing baselines.</p>
 <div class="links">
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
-<a href="https://ming053l.github.io/Spectral-World-Renderer/assets/supplementary.pdf" rel="noopener" target="_blank">Supplement</a>
-<a href="https://ming053l.github.io/Spectral-World-Renderer/#demo" rel="noopener" target="_blank">Videos</a>
+<a href="https://youtu.be/5eKuSb7DITo" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
 </div>
