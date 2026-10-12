@@ -66,8 +66,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div id="pub-container">
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
-<video id="swr-home-preview" width="640" height="420" muted loop playsinline controls preload="metadata" poster="images/swr-query-preview.webp?v=2" aria-label="Material queries across four worlds: marble and glazed tile in Forbidden City, terracotta and wood in Market, water and limestone in Karst, living leaves and terracotta in City; each query lights up the matching surfaces">
-<source src="images/swr-query-preview.mp4?v=2" type="video/mp4"/>
+<video id="swr-home-preview" width="640" height="420" muted loop playsinline controls preload="metadata" poster="images/swr-query-preview.webp?v=3" aria-label="Material queries in four worlds, each in its own colour: in Market, terracotta by name, wood by a click in shadow and stone or travertine; in Karst, limestone by a click in shadow and water; in City, a living-leaf reference spectrum and terracotta; in Botanical, a near-infrared index and wood">
+<source src="images/swr-query-preview.mp4?v=3" type="video/mp4"/>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
 </video>
 <script>
