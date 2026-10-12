@@ -199,23 +199,41 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
-<a aria-label="View full-size c4 figure" href="images/c4-preview.png" rel="noopener" target="_blank">
-<img alt="C4 local token commitment and confidence-verified early exit" decoding="async" loading="lazy" src="images/c4-preview.webp" width="920" height="311"/>
-</a>
+<video id="c4-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/c4-home.webp" aria-label="C4 versus full decoding on the same GSM8K prompt with LLaDA-8B, replayed from recorded runs: C4 reaches the answer 288 at step 50 in 7.2 seconds, full decoding needs all 256 steps and 37.6 seconds">
+<source src="images/c4-home.mp4" type="video/mp4"/>
+<a href="https://c4-dllm.github.io/">View the C4 project page</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('c4-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text">
-<div class="paper-venue">Manuscript</div>
+<div class="paper-venue">Preprint</div>
 <h4>C⁴: Commit Locally, Exit Globally — Coordinating Adaptive Sampling and Early Exit in Diffusion Language Models</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Shao-Kai Liu, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
-<p class="paper-summary">Introduces C⁴, a training-free framework combining local token commitment with confidence-verified global early exit to reduce diffusion language model decoding steps while largely preserving task performance.</p>
+<p class="paper-summary">Diffusion language models predict every token in parallel, yet still run a fixed number of decoding steps. C⁴ makes two decisions separately: inside each block it commits confident tokens sooner, and for the whole sequence it stops once the answer is both confident and no longer changing. Training-free, with one frozen setting, it decodes 2.6–18.6× faster across 12 tasks on LLaDA and Dream, with no setting losing more than 2 accuracy points.</p>
 <div class="links">
 <a href="https://github.com/ming053l/C4-dLLM/blob/main/paper/C4_preprint.pdf" rel="noopener" target="_blank">Paper</a>
+<a href="https://arxiv.org/abs/2607.28166" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/C4-dLLM" rel="noopener" target="_blank">GitHub</a>
 <a href="https://c4-dllm.github.io/" rel="noopener" target="_blank">Project Page</a>
+<a href="images/c4-promo.mp4" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
-</div><div class="paper-box" data-sort="99999" id="paper-decobias">
+</div>
+<div class="paper-box" data-sort="99999" id="paper-decobias">
 <div class="paper-box-image">
 <a aria-label="View full-size decobias figure" href="images/decobias-preview.png" rel="noopener" target="_blank">
 <img alt="DecoBias super-resolution transformer and decomposed spatial bias architecture" decoding="async" loading="lazy" src="images/decobias-preview.webp" width="920" height="362"/>
