@@ -229,7 +229,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://arxiv.org/abs/2607.28166" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/C4-dLLM" rel="noopener" target="_blank">GitHub</a>
 <a href="https://c4-dllm.github.io/" rel="noopener" target="_blank">Project Page</a>
-<a href="images/c4-promo.mp4?v=2" rel="noopener" target="_blank">Video</a>
+<a href="images/c4-promo.mp4?v=3" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
 </div>
