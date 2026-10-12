@@ -188,7 +188,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <video id="c4-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/c4-home.webp?v=3" aria-label="C4 versus full decoding on the same GSM8K prompt with LLaDA-8B, replayed from recorded runs: C4 reaches the answer 288 at step 50 in 7.2 seconds, full decoding needs all 256 steps and 37.6 seconds; replayed at 4x speed">
 <source src="images/c4-home.mp4?v=3" type="video/mp4"/>
-<a href="https://c4-dllm.github.io/">View the C4 project page</a>
+<a href="https://ming053l.github.io/c4-dllm.github.io/">View the C4 project page</a>
 </video>
 <script>
 (function () {
@@ -215,7 +215,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/C4-dLLM/blob/main/paper/C4_preprint.pdf" rel="noopener" target="_blank">Paper</a>
 <a href="https://arxiv.org/abs/2607.28166" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/C4-dLLM" rel="noopener" target="_blank">GitHub</a>
-<a href="https://c4-dllm.github.io/" rel="noopener" target="_blank">Project Page</a>
+<a href="https://ming053l.github.io/c4-dllm.github.io/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3xLC-tNUOjA" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
