@@ -99,7 +99,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/assets/paper.pdf" rel="noopener" target="_blank">Paper</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
-<a href="https://youtu.be/5eKuSb7DITo" rel="noopener" target="_blank">Video</a>
+<a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
 </div>
