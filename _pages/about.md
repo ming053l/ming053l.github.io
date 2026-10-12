@@ -184,19 +184,6 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 
-<div class="paper-box" data-sort="99999" id="paper-elsa-journal">
-<div class="paper-box-image">
-<a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
-<img alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async" src="images/elsa-journal-preview.webp" width="920" height="368"/>
-</a>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">Journal Manuscript</div>
-<h4>ELSA: Two-Phase Standard-Softmax Scan Attention with Path-Specific Precision and Carried Statistics</h4>
-<p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
-<p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
-</div>
-</div>
 <div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
 <video id="c4-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/c4-home.webp?v=3" aria-label="C4 versus full decoding on the same GSM8K prompt with LLaDA-8B, replayed from recorded runs: C4 reaches the answer 288 at step 50 in 7.2 seconds, full decoding needs all 256 steps and 37.6 seconds; replayed at 4x speed">
@@ -231,6 +218,19 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://c4-dllm.github.io/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3xLC-tNUOjA" rel="noopener" target="_blank">Video</a>
 </div>
+</div>
+</div>
+<div class="paper-box" data-sort="99999" id="paper-elsa-journal">
+<div class="paper-box-image">
+<a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
+<img alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async" src="images/elsa-journal-preview.webp" width="920" height="368"/>
+</a>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Journal Manuscript</div>
+<h4>ELSA: Two-Phase Standard-Softmax Scan Attention with Path-Specific Precision and Carried Statistics</h4>
+<p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, <strong>Chia-Ming Lee</strong>, Po-Jen Pan, Wo-Ting Liao</p>
+<p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
 </div>
 </div>
 <div class="paper-box" data-sort="99999" id="paper-decobias">
