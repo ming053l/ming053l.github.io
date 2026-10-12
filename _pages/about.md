@@ -234,20 +234,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-summary">Extends ELSA into a two-phase attention framework with path-specific precision, analytic gradients for the standard output, and attention-weighted statistics computed without a second score pass. Independent partition summaries and fixed-order merging support memory-efficient execution, with numerical accuracy and repeatability evaluated across multiple hardware platforms.</p>
 </div>
 </div>
-<div class="paper-box" data-sort="99999" id="paper-decobias">
-<div class="paper-box-image">
-<a aria-label="View full-size decobias figure" href="images/decobias-preview.png" rel="noopener" target="_blank">
-<img alt="DecoBias super-resolution transformer and decomposed spatial bias architecture" decoding="async" loading="lazy" src="images/decobias-preview.webp" width="920" height="362"/>
-</a>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">Manuscript</div>
-<h4>DecoBias: Decomposing Neural Spatial Bias for Scalable Super-Resolution Transformers</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-
-<p class="paper-summary">Decomposes spatial bias into geometry, locality, and topology, representing each outside additive attention-score space. Enables a standard fused-attention call for scalable super-resolution transformers while preserving shifted-window connectivity.</p>
-</div>
-</div><div class="paper-box" data-sort="20266">
+<div class="paper-box" data-sort="20266">
 <div class="paper-box-image">
 
 <video width="1280" height="720" controls="" loop="" muted="" playsinline="" preload="none" poster="images/PhaSR_demo.webp">
