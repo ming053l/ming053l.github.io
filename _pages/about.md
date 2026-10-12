@@ -199,8 +199,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
-<video id="c4-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/c4-home.webp" aria-label="C4 versus full decoding on the same GSM8K prompt with LLaDA-8B, replayed from recorded runs: C4 reaches the answer 288 at step 50 in 7.2 seconds, full decoding needs all 256 steps and 37.6 seconds">
-<source src="images/c4-home.mp4" type="video/mp4"/>
+<video id="c4-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/c4-home.webp?v=2" aria-label="C4 versus full decoding on the same GSM8K prompt with LLaDA-8B, replayed from recorded runs: C4 reaches the answer 288 at step 50 in 7.2 seconds, full decoding needs all 256 steps and 37.6 seconds">
+<source src="images/c4-home.mp4?v=2" type="video/mp4"/>
 <a href="https://c4-dllm.github.io/">View the C4 project page</a>
 </video>
 <script>
