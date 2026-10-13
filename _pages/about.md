@@ -67,12 +67,13 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-spectral-world-renderer">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video id="swr-home-preview" width="854" height="560" muted loop playsinline preload="auto" aria-label="Material queries in four worlds, each in its own colour: in Market, terracotta by name, wood by a click in shadow and stone or travertine; in Karst, limestone by a click in shadow and water; in City, a living-leaf reference spectrum and terracotta; in Botanical, a near-infrared index and wood">
-<source src="images/web/swr-query-preview.mp4?v=1" type="video/mp4"/>
+<video id="swr-home-preview" width="854" height="560" muted loop playsinline preload="none" aria-label="Material queries in four worlds, each in its own colour: in Market, terracotta by name, wood by a click in shadow and stone or travertine; in Karst, limestone by a click in shadow and water; in City, a living-leaf reference spectrum and terracotta; in Botanical, a near-infrared index and wood">
+<source src="images/web/swr-query-preview.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/">View Spectral World Renderer</a>
 </video>
-<img class="pv-poster" src="images/web/swr-query-preview.webp?v=1" width="854" height="560" alt="" decoding="async" fetchpriority="high"/>
+<picture><source srcset="images/web/swr-query-preview.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/swr-query-preview.webp?v=2" width="854" height="560" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
+<script>/* top preview: pick the file and start buffering while the page is still parsing; same rules as previews.js */(function(v,c){if(c.saveData||/2g$|^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(c.saveData||/2g$/.test(c.effectiveType||'')||matchMedia('(prefers-reduced-motion: reduce)').matches)return;v.preload='auto';v.load()})(document.getElementById('swr-home-preview'),navigator.connection||{})</script>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
@@ -92,10 +93,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="doctor-trigger-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="Doctor Trigger: face images are swapped and reposted online; a private record verifies which copies are the ones actually posted">
-<source src="images/web/doctor-trigger-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/doctor-trigger-home.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/Doctor-Trigger/">View the Doctor Trigger project page</a>
 </video>
-<img class="pv-poster" src="images/web/doctor-trigger-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/doctor-trigger-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/doctor-trigger-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
@@ -118,10 +119,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="flashrefocus-home-preview" width="854" height="570" muted loop playsinline preload="none" aria-label="FlashReFocus montage: a defocused photo is restored once, then the focus is pulled from near to far, the aperture opens on a portrait, a tilt-shift band sweeps over a tulip field, and two focal planes keep a face and a shark sharp">
-<source src="images/web/flashrefocus-preview.mp4?v=1" type="video/mp4"/>
+<source src="images/web/flashrefocus-preview.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/FlashReFocus/">View FlashReFocus</a>
 </video>
-<img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=1" width="854" height="570" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/flashrefocus-preview.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=2" width="854" height="570" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
@@ -146,10 +147,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="c4-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="C4 versus full decoding on the same GSM8K prompt with LLaDA-8B, replayed from recorded runs: C4 reaches the answer 288 at step 50 in 7.2 seconds, full decoding needs all 256 steps and 37.6 seconds; replayed at 4x speed">
-<source src="images/web/c4-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/c4-home.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/c4-dllm.github.io/">View the C4 project page</a>
 </video>
-<img class="pv-poster" src="images/web/c4-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/c4-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/c4-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
@@ -171,10 +172,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="elsa-v2-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="ELSA v2 compared with v1: v1 computes exact softmax attention as a parallel scan over the state (m, S, W); v2 adds a two-phase fixed-order merge, precision routes, an analytic backward pass, carried statistics and CUDA/ROCm validation. Shown: 32 partitions summarised at once and folded in a fixed order; at 65K tokens on A100 the fp16x3 route takes 632 ms versus 979 ms for memory-efficient SDPA; carrying the second moment uses 120 MiB instead of 8,288 MiB; 130 configurations give identical bits over 100 runs">
-<source src="images/web/elsa-v2-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/elsa-v2-home.mp4?v=2" type="video/mp4"/>
 <a href="images/elsa-journal-preview.png">View the ELSA journal overview</a>
 </video>
-<img class="pv-poster" src="images/web/elsa-v2-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/elsa-v2-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/elsa-v2-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
@@ -189,10 +190,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="pv" data-pv>
 <video id="phasr-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="PhaSR removes shadows from real photos: a shadow on grass is erased by a sweeping band of light; a brick wall, cans on striped cloth, an indoor bedroom and grass are restored the same way; a histogram of the brick photo shows the shadow pixels moving to match the lit ones once the lighting is corrected.">
-<source src="images/web/phasr-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/phasr-home.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/PhaSR_github/">View the project page</a>
 </video>
-<img class="pv-poster" src="images/web/phasr-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/phasr-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/phasr-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR 2026</div>
@@ -213,10 +214,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="pv" data-pv>
 <video id="reflexsplit-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="ReflexSplit: a camera shoots through glass that carries a reflection; an AI-generated cafe clip with a reflection of a street added on the glass; the released ReflexSplit model separates every frame into the scene behind the glass and the reflection, shown as two layers moving apart; three real photos through windows are separated the same way.">
-<source src="images/web/reflexsplit-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/reflexsplit-home.mp4?v=2" type="video/mp4"/>
 <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/">View the project page</a>
 </video>
-<img class="pv-poster" src="images/web/reflexsplit-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/reflexsplit-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/reflexsplit-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR 2026</div>
@@ -237,10 +238,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="pv" data-pv>
 <video id="elsa-v1-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="ELSA v1: the online recurrence takes one step per token, while ELSA merges the same (m, S, W) states as a tree in 4 levels for 16 tokens and 24 levels at 16K tokens. In FP32 on A100 at 16K tokens ELSA takes 12.06 ms versus 41.77 ms for memory-efficient SDPA, and Math-SDPA runs out of memory. Drop-in results: 1.5 to 1.6 times faster on Jetson TX2, 2.27 times on BERT IMDB, 60 to 62 percent higher throughput on hyperspectral HSIMAE-L, and 1,309 versus 791 images per second for ViT-T against FlashAttention-2">
-<source src="images/web/elsa-v1-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/elsa-v1-home.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/ELSA_projectpage/">View the ELSA project page</a>
 </video>
-<img class="pv-poster" src="images/web/elsa-v1-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/elsa-v1-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/elsa-v1-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR Findings 2026</div><div class="paper-venue" style="margin-left: 6px;">★ CVPR 2026 Computational Transparency Award</div>
@@ -260,10 +261,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="pv" data-pv>
 <video id="umcl-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="UMCL: a campus vlog is re-uploaded and compressed; of four reposts, two are deepfakes that detectors miss after compression. UMCL reads the facial pulse, landmark motion and a text prompt from the same video and still tells real from fake after compression. All people shown are AI-generated">
-<source src="images/web/umcl-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/umcl-home.mp4?v=2" type="video/mp4"/>
 <a href="images/UMCL.png">View the UMCL overview</a>
 </video>
-<img class="pv-poster" src="images/web/umcl-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/umcl-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/umcl-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text"><div class="paper-venue">IJCV 2026</div>
@@ -282,10 +283,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="pv" data-pv>
 <video id="wwe-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="WWE-UIE on AI-generated underwater footage: a depth gauge shows red, orange, yellow and green fading away; a moving divider compares the raw green-tinted video of a sea turtle with the same frames enhanced by the released WWE-UIE model; a diver scene with its three priors, white balance, wavelets and edges.">
-<source src="images/web/wwe-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/wwe-home.mp4?v=2" type="video/mp4"/>
 <a href="https://github.com/chingheng0808/WWE-UIE">View the paper</a>
 </video>
-<img class="pv-poster" src="images/web/wwe-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/wwe-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/wwe-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text"><div class="paper-venue">WACV 2026</div>
@@ -303,10 +304,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <div class="pv" data-pv>
 <video id="prompthsi-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="PromptHSI: an AI-generated satellite scans the Earth; a real hyperspectral cube stacks up band by band with pixel spectra from visible to shortwave infrared; clouds, noise, missing bands and low resolution damage it, and no clean copy of the same moment exists; damage is simulated with the authors' code, each with a written description; the released PromptHSI model restores three damaged scenes following those descriptions.">
-<source src="images/web/prompthsi-home.mp4?v=1" type="video/mp4"/>
+<source src="images/web/prompthsi-home.mp4?v=2" type="video/mp4"/>
 <a href="https://github.com/chingheng0808/PromptHSI">View the paper</a>
 </video>
-<img class="pv-poster" src="images/web/prompthsi-home.webp?v=1" width="854" height="480" alt="" decoding="async" loading="lazy"/>
+<picture><source srcset="images/web/prompthsi-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/prompthsi-home.webp?v=2" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text"><div class="paper-venue">TGRS 2026</div>
@@ -324,4 +325,4 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <a class="back-to-top" href="#about-me" aria-label="Back to top">↑</a>
 
-<script src="{{ '/assets/js/previews.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/previews.js' | relative_url }}?v=2" defer></script>
