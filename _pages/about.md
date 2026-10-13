@@ -314,7 +314,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
       </h4>
 <p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
 
-<p class="paper-summary">Speeds up vision transformers by replacing the standard quadratic attention with a hardware-friendly linear scan, achieving the same exact results at a fraction of the memory and compute cost — with no approximation involved.</p>
+<p class="paper-summary">Memory-efficient attention processes tokens one block after another, and the fastest exact kernels rely on Tensor Cores that offer no fast FP32 path. ELSA computes the same softmax attention as a parallel scan: blocks are summarised independently and merged in a logarithmic number of steps. No retraining and no Tensor Cores: up to 3.5× faster than memory-efficient attention in FP32 at 16K tokens, with the same kernel running from A100 GPUs to the Jetson TX2.</p>
 <div class="links">
 <a href="https://arxiv.org/abs/2604.23798" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/ELSA" rel="noopener" target="_blank">GitHub</a>
