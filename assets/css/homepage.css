@@ -76,3 +76,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0e7490; outline-offs
  .sidebar .author__urls_sm { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 14px 0 0; font-size: 13px; }
  .sidebar .author__urls_sm a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 }
+/* publication preview videos: poster image on top until the first frame plays, then a short crossfade */
+#pub-container .pv { position: relative; overflow: hidden; border-radius: 8px; border: 1px solid var(--line); background: #e9eef3; }
+#pub-container .pv video { display: block; width: 100%; height: auto; border: 0; border-radius: 0; background: transparent; }
+#pub-container .pv .pv-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; pointer-events: none; transition: opacity .45s ease; }
+#pub-container .pv.pv-on .pv-poster { opacity: 0; }
