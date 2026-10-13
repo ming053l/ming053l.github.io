@@ -252,8 +252,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="20266">
 <div class="paper-box-image">
 
-<video id="phasr-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/phasr-home.webp" aria-label="PhaSR removes shadows from real photos: a shadow on grass is erased by a sweeping band of light; a brick wall, cans on striped cloth, an indoor bedroom and grass are restored the same way; a histogram of the brick photo shows the shadow pixels moving to match the lit ones once the lighting is corrected.">
-<source src="images/phasr-home.mp4" type="video/mp4"/>
+<video id="phasr-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/phasr-home.webp?v=2" aria-label="PhaSR removes shadows from real photos: a shadow on grass is erased by a sweeping band of light; a brick wall, cans on striped cloth, an indoor bedroom and grass are restored the same way; a histogram of the brick photo shows the shadow pixels moving to match the lit ones once the lighting is corrected.">
+<source src="images/phasr-home.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/PhaSR_github/">View the project page</a>
 </video>
 <script>
@@ -286,8 +286,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20265">
 <div class="paper-box-image">
 
-<video id="reflexsplit-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/reflexsplit-home.webp" aria-label="ReflexSplit separates a photo taken through glass into the scene behind the glass and the reflection: a hotel photo mixed with a reflected bridge splits into two layers, and three more photos, including real ones taken through windows, are separated the same way. Reflection layers are shown brightened.">
-<source src="images/reflexsplit-home.mp4" type="video/mp4"/>
+<video id="reflexsplit-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/reflexsplit-home.webp?v=2" aria-label="A camera shoots through a pane of glass that carries a reflection; ReflexSplit separates the resulting photo into the scene behind the glass and the reflection: a hotel photo mixed with a reflected bridge splits into two layers, and three more photos, including real ones taken through windows, are separated the same way. Reflection layers are shown brightened.">
+<source src="images/reflexsplit-home.mp4?v=2" type="video/mp4"/>
 <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/">View the project page</a>
 </video>
 <script>
@@ -355,7 +355,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 
 <video id="umcl-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/umcl-home.webp?v=3" aria-label="UMCL: a campus vlog is re-uploaded and compressed; of four reposts, two are deepfakes that detectors miss after compression. UMCL reads the facial pulse, landmark motion and a text prompt from the same video and still tells real from fake after compression. All people shown are AI-generated">
-<source src="images/umcl-home.mp4?v=3" type="video/mp4"/>
+<source src="images/umcl-home.mp4?v=4" type="video/mp4"/>
 <a href="images/UMCL.png">View the UMCL overview</a>
 </video>
 <script>
@@ -387,13 +387,30 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20262">
 <div class="paper-box-image">
 
-<a href="images/wweuie.png" rel="noopener" target="_blank"><img alt="WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement — overview" decoding="async" loading="lazy" src="images/wweuie.png"/></a>
+<video id="wwe-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/wwe-home.webp?v=2" aria-label="WWE-UIE restores underwater photos: a blue-green reef photo sweeps to natural color, four more underwater scenes follow, and the average red, green and blue of a color-chart photo rebalance from before to after.">
+<source src="images/wwe-home.mp4?v=2" type="video/mp4"/>
+<a href="https://github.com/chingheng0808/WWE-UIE">View the paper</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('wwe-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text"><div class="paper-venue">WACV 2026</div>
 <h4>WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement</h4>
 <p class="paper-authors">Ching-Heng Cheng, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
 
-<p class="paper-summary">Enhances murky underwater photos by combining wavelet-based frequency analysis with white balance correction, efficiently restoring natural colors and recovering details lost to water scattering.</p>
+<p class="paper-summary">Water absorbs red light first, leaving underwater photos hazy and blue-green, and the strongest enhancement networks are too heavy for real-time use. WWE-UIE builds three simple priors into a compact network: adaptive white balance to restore the missing reds, wavelet decomposition to recover both overall structure and fine texture, and an edge-aware module to keep outlines sharp. It restores natural color with a fraction of the computation, fast enough for real-time use on limited hardware.</p>
 <div class="links">
 <a href="https://arxiv.org/abs/2511.16321" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/chingheng0808/WWE-UIE" rel="noopener" target="_blank">GitHub</a>
@@ -402,13 +419,30 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20261">
 <div class="paper-box-image">
 
-<a href="images/PromptHSI.png" rel="noopener" target="_blank"><img alt="PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation — overview" decoding="async" loading="lazy" src="images/PromptHSI.webp" width="590" height="357"/></a>
+<video id="prompthsi-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/prompthsi-home.webp?v=2" aria-label="PromptHSI restores damaged satellite hyperspectral images: thin cloud, noise, low resolution and missing bands; the same damaged image restored under different text prompts, where the prompt that names the actual damage matches the reference; three more scenes restored by the same model. Results are from the paper.">
+<source src="images/prompthsi-home.mp4?v=2" type="video/mp4"/>
+<a href="https://github.com/chingheng0808/PromptHSI">View the paper</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('prompthsi-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text"><div class="paper-venue">TGRS 2026</div>
 <h4>PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" rel="noopener" target="_blank">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" rel="noopener" target="_blank">Yu-Chiang Frank Wang</a></p>
 
-<p class="paper-summary">Restores degraded hyperspectral images using text prompts to guide frequency-domain adaptation, allowing a single model to handle multiple types of noise and distortion without task-specific retraining.</p>
+<p class="paper-summary">Hyperspectral images from satellites and aircraft often arrive with several kinds of damage at once, such as thin cloud, noise, blur and missing bands, while restoration models are usually built for one kind at a time. PromptHSI is a single all-in-one model guided by a short text description of the damage: a vision-language model turns the description into controls that adjust frequency-aware features. One model handles many combinations of damage, and changing the description changes what it repairs.</p>
 <div class="links">
 <a href="https://arxiv.org/abs/2411.15922" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/chingheng0808/PromptHSI" rel="noopener" target="_blank">GitHub</a>
