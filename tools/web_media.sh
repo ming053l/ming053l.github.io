@@ -17,7 +17,7 @@ x264="-c:v libx264 -preset veryslow -profile:v high -pix_fmt yuv420p -g 60 -an -
 ffmpeg -v error -y -i "$src" -vf "scale=854:-2:flags=lanczos" $x264 -crf 31 -maxrate 1200k -bufsize 2400k "$out/$name.mp4"
 ffmpeg -v error -y -i "$src" -vf "scale=640:-2:flags=lanczos" $x264 -crf 33 -maxrate 600k -bufsize 1200k "$out/$name-lite.mp4"
 ffmpeg -v error -y -i "$poster" -vf "scale=854:-2:flags=lanczos" -quality 80 "$out/$name.webp"
-${PYTHON:-python3} - "$poster" "$out/$name.avif" <<'EOF'
+${PYTHON:-$HOME/miniconda3/envs/figs/bin/python} - "$poster" "$out/$name.avif" <<'EOF'
 import sys
 from PIL import Image, features
 if not features.check("avif"):
