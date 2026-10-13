@@ -324,8 +324,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20263">
 <div class="paper-box-image">
 
-<video id="umcl-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/umcl-home.webp?v=2" aria-label="UMCL: a game-stream clip is re-uploaded and compressed; of four reposts, two are deepfakes and a standard detector drops from 96.3 to 74.9 AUC after compression. UMCL reads the facial pulse, landmark motion and a text prompt from the same video; trained on clean video it keeps 95.7 AUC after compression. All people shown are AI-generated">
-<source src="images/umcl-home.mp4?v=2" type="video/mp4"/>
+<video id="umcl-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/umcl-home.webp?v=3" aria-label="UMCL: a campus vlog is re-uploaded and compressed; of four reposts, two are deepfakes that detectors miss after compression. UMCL reads the facial pulse, landmark motion and a text prompt from the same video and still tells real from fake after compression. All people shown are AI-generated">
+<source src="images/umcl-home.mp4?v=3" type="video/mp4"/>
 <a href="images/UMCL.png">View the UMCL overview</a>
 </video>
 <script>
