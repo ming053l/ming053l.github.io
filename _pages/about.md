@@ -77,7 +77,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
-<h4>Spectral World Renderer: 3D Hyperspectral Unmixing</h4>
+<h4>Spectral World Renderer: Unified 3D Hyperspectral Unmixing</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, <a href="https://www.albany.edu/faculty/mchang2/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-summary">Reveals what a 3D scene is made of, not just how it looks, to support tasks such as inspecting wafers and thin films in semiconductor manufacturing, examining building materials and monitoring crop health. It carries classical hyperspectral unmixing efficiently into 3D, so every part of a scene can be queried for its materials by name, by a click on the image or by a reference spectrum within milliseconds, and generated worlds with known material composition make the results verifiable.</p>
 <div class="links">
