@@ -223,9 +223,24 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box" data-sort="99999" id="paper-elsa-journal">
 <div class="paper-box-image">
-<a href="images/elsa-journal-preview.png" target="_blank" rel="noopener" aria-label="View full-size ELSA journal overview">
-<img alt="ELSA two-phase attention: independent partition summaries followed by fixed-order flat or hybrid reductions" loading="lazy" decoding="async" src="images/elsa-journal-preview.webp" width="920" height="368"/>
-</a>
+<video id="elsa-v2-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/elsa-v2-home.webp?v=2" aria-label="ELSA v2 compared with v1: v1 computes exact softmax attention as a parallel scan over the state (m, S, W); v2 adds a two-phase fixed-order merge, precision routes, an analytic backward pass, carried statistics and CUDA/ROCm validation. Shown: 32 partitions summarised at once and folded in a fixed order; at 65K tokens on A100 the fp16x3 route takes 632 ms versus 979 ms for memory-efficient SDPA; carrying the second moment uses 120 MiB instead of 8,288 MiB; 130 configurations give identical bits over 100 runs">
+<source src="images/elsa-v2-home.mp4?v=2" type="video/mp4"/>
+<a href="images/elsa-journal-preview.png">View the ELSA journal overview</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('elsa-v2-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Journal Manuscript</div>
@@ -275,9 +290,24 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20264">
 <div class="paper-box-image">
 
-<a aria-label="View full-size ELSA scan comparison" href="images/elsa-scan-preview.png" rel="noopener" target="_blank">
-<img alt="Sequential scan with linear depth versus ELSA two-level prefix scan with logarithmic depth" decoding="async" loading="lazy" src="images/elsa-scan-preview.webp" width="783" height="341"/>
-</a>
+<video id="elsa-v1-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/elsa-v1-home.webp" aria-label="ELSA v1: the online recurrence takes one step per token, while ELSA merges the same (m, S, W) states as a tree in 4 levels for 16 tokens and 24 levels at 16K tokens. In FP32 on A100 at 16K tokens ELSA takes 12.06 ms versus 41.77 ms for memory-efficient SDPA, and Math-SDPA runs out of memory. Drop-in results: 1.5 to 1.6 times faster on Jetson TX2, 2.27 times on BERT IMDB, 60 to 62 percent higher throughput on hyperspectral HSIMAE-L, and 1,309 versus 791 images per second for ViT-T against FlashAttention-2">
+<source src="images/elsa-v1-home.mp4" type="video/mp4"/>
+<a href="https://ming053l.github.io/ELSA_projectpage/">View the ELSA project page</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('elsa-v1-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR Findings 2026</div>
 <h4>ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
