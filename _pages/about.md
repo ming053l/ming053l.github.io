@@ -324,14 +324,31 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20263">
 <div class="paper-box-image">
 
-<a href="images/UMCL.png" rel="noopener" target="_blank"><img alt="UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection — overview" decoding="async" loading="lazy" src="images/UMCL.webp" width="920" height="429"/></a>
+<video id="umcl-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/umcl-home.webp" aria-label="UMCL, shown on a drawn face: as the video is compressed from raw to c23 and c40, a standard detector trained on raw video drops from 96.3 to 74.9 and 63.5 AUC. UMCL derives a pulse signal, landmark motion and a text prompt from the same video and aligns them; trained on raw video it keeps 98.2, 95.7 and 80.2 AUC. Compared with the earlier CPML, it holds up when one signal is corrupted: 94.5 versus 11.0 AUC with a misleading prompt, 86.5 versus 54.2 with pulse from 30 percent of frames, and 76.2 versus 34.4 with noisy landmarks">
+<source src="images/umcl-home.mp4" type="video/mp4"/>
+<a href="images/UMCL.png">View the UMCL overview</a>
+</video>
+<script>
+(function () {
+  const video = document.getElementById('umcl-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text"><div class="paper-venue">IJCV 2026</div>
 <h4>UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection
       </h4>
 <p class="paper-authors">Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, <a href="https://www.cs.nthu.edu.tw/~cthsu/candy.html" rel="noopener" target="_blank">Chiou-Ting Hsu</a>, <a href="https://www.ee.nthu.edu.tw/cwlin/" rel="noopener" target="_blank">Chia-Wen Lin</a></p>
 
-<p class="paper-summary">Detects deepfakes robustly across different video compression levels by synthesizing multimodal training signals from a single modality, using contrastive learning to keep real and fake representations well-separated even when compression artifacts obscure subtle forgery traces.</p>
+<p class="paper-summary">Social platforms re-compress every upload, and deepfake detectors trained on clean video lose much of their accuracy on the compressed copies. UMCL needs no extra recordings: from the face video it derives the facial pulse (rPPG) and landmark motion, pairs them with text prompts, and aligns all three so that fakes remain separable after compression and when one signal is unreliable. Trained on uncompressed FaceForensics++ video, it keeps 95.7 AUC at moderate compression, where a standard detector falls to 74.9.</p>
 <div class="links">
 <a href="https://arxiv.org/abs/2511.18983" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/IlikeBB/Unimodal-generated-Multimodal-Contrastive-Learning-for-Cross-compression-rate-Deepfake-Detection" rel="noopener" target="_blank">GitHub</a>
