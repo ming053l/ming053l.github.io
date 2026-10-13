@@ -81,3 +81,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0e7490; outline-offs
 #pub-container .pv video { display: block; width: 100%; height: auto; border: 0; border-radius: 0; background: transparent; }
 #pub-container .pv .pv-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; pointer-events: none; transition: opacity .45s ease; }
 #pub-container .pv.pv-on .pv-poster { opacity: 0; }
+/* the full-resolution copy loads hidden on top of the lite one and fades in once it plays in step with it */
+#pub-container .pv video.pv-hd { position: absolute; inset: 0; height: 100%; opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+#pub-container .pv video.pv-hd.pv-hd-in { opacity: 1; }

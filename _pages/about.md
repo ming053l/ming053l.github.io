@@ -73,7 +73,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </video>
 <picture><source srcset="images/web/swr-query-preview.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/swr-query-preview.webp?v=2" width="854" height="560" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
-<script>/* top preview: pick the file and start buffering while the page is still parsing; same rules as previews.js */(function(v,c){if(c.saveData||/2g$|^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(c.saveData||/2g$/.test(c.effectiveType||'')||matchMedia('(prefers-reduced-motion: reduce)').matches)return;v.preload='auto';v.load()})(document.getElementById('swr-home-preview'),navigator.connection||{})</script>
+<script>/* top preview: start the lite file buffering while the page is still parsing; same rules as previews.js, which later upgrades it to the full file on fast links */(function(v,c){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,m=c.saveData||/2g$/.test(c.effectiveType||'');if(!r||m||/^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(m||r)return;v.preload='auto';v.load()})(document.getElementById('swr-home-preview'),navigator.connection||{})</script>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Manuscript</div>
@@ -325,4 +325,4 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <a class="back-to-top" href="#about-me" aria-label="Back to top">↑</a>
 
-<script src="{{ '/assets/js/previews.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/previews.js' | relative_url }}?v=3" defer></script>
