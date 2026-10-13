@@ -252,16 +252,31 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="20266">
 <div class="paper-box-image">
 
-<video width="1280" height="720" controls="" loop="" muted="" playsinline="" preload="none" poster="images/PhaSR_demo.webp">
-<source src="images/PhaSR_demo.mp4" type="video/mp4"/>
+<video id="phasr-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/phasr-home.webp" aria-label="PhaSR removes shadows from real photos: a shadow on grass is erased by a sweeping band of light; a brick wall, cans on striped cloth, an indoor bedroom and grass are restored the same way; a histogram of the brick photo shows the shadow pixels moving to match the lit ones once the lighting is corrected.">
+<source src="images/phasr-home.mp4" type="video/mp4"/>
+<a href="https://ming053l.github.io/PhaSR_github/">View the project page</a>
 </video>
+<script>
+(function () {
+  const video = document.getElementById('phasr-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR 2026</div>
 <h4>PhaSR: Generalized Image Shadow Removal with Physically Aligned Priors
       </h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, Yu-Jou Hsiao, Jin-Hui Jiang, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
-<p class="paper-summary">Removes shadows from images by incorporating physical light models and geometric priors, enabling robust restoration across diverse real-world scenes and lighting conditions without retraining for each domain.</p>
+<p class="paper-summary">Shadows are easily mistaken for dark materials, and most shadow-removal methods break down indoors, where light comes from many directions at once. PhaSR first corrects the lighting with a closed-form, physically based normalization, then aligns depth geometry with semantic features so it can tell where a shadow ends and an object begins. It removes hard outdoor shadows and soft indoor ones while keeping the surface texture intact.</p>
 <div class="links">
 <a href="https://www.arxiv.org/abs/2601.17470" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/PhaSR" rel="noopener" target="_blank">GitHub</a>
@@ -271,16 +286,31 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20265">
 <div class="paper-box-image">
 
-<video width="960" height="640" controls="" loop="" muted="" playsinline="" preload="none" poster="images/ReflexSplit_demo.webp">
-<source src="images/ReflexSplit_demo.mp4" type="video/mp4"/>
+<video id="reflexsplit-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/reflexsplit-home.webp" aria-label="ReflexSplit separates a photo taken through glass into the scene behind the glass and the reflection: a hotel photo mixed with a reflected bridge splits into two layers, and three more photos, including real ones taken through windows, are separated the same way. Reflection layers are shown brightened.">
+<source src="images/reflexsplit-home.mp4" type="video/mp4"/>
+<a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/">View the project page</a>
 </video>
+<script>
+(function () {
+  const video = document.getElementById('reflexsplit-home-preview');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!video || !('IntersectionObserver' in window)) return;
+  let visible = false;
+  function updatePlayback() {
+    if (visible && !document.hidden && !reducedMotion.matches) { video.play().catch(function () {}); }
+    else { video.pause(); }
+  }
+  new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; updatePlayback(); }, { threshold: 0.25 }).observe(video);
+  document.addEventListener('visibilitychange', updatePlayback);
+})();
+</script>
 </div>
 <div class="paper-box-text"><div class="paper-venue">CVPR 2026</div>
 <h4>ReflexSplit: Single Image Reflection Separation via Layer Fusion–Separation
       </h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, Jin-Hui Jiang, Yu-Jou Hsiao, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a></p>
 
-<p class="paper-summary">Separates reflected and transmitted layers in a single photo by alternating between fusing and splitting mixed features, teaching the network to disentangle overlapping visual signals that are hard to distinguish.</p>
+<p class="paper-summary">A photo taken through glass mixes the scene behind it with a reflection, and existing methods often confuse the two where the reflection is strong. ReflexSplit separates the layers by repeatedly fusing the structure they share and then subtracting one stream from the other, coordinated across scales. It recovers both a clean view of the scene and the reflection itself, including on real photos taken through windows.</p>
 <div class="links">
 <a href="https://www.arxiv.org/abs/2601.17468" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/wuw2135/ReflexSplit" rel="noopener" target="_blank">GitHub</a>
