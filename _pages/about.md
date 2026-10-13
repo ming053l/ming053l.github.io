@@ -324,8 +324,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20263">
 <div class="paper-box-image">
 
-<video id="umcl-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/umcl-home.webp" aria-label="UMCL, shown on a drawn face: as the video is compressed from raw to c23 and c40, a standard detector trained on raw video drops from 96.3 to 74.9 and 63.5 AUC. UMCL derives a pulse signal, landmark motion and a text prompt from the same video and aligns them; trained on raw video it keeps 98.2, 95.7 and 80.2 AUC. Compared with the earlier CPML, it holds up when one signal is corrupted: 94.5 versus 11.0 AUC with a misleading prompt, 86.5 versus 54.2 with pulse from 30 percent of frames, and 76.2 versus 34.4 with noisy landmarks">
-<source src="images/umcl-home.mp4" type="video/mp4"/>
+<video id="umcl-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/umcl-home.webp?v=2" aria-label="UMCL: a game-stream clip is re-uploaded and compressed; of four reposts, two are deepfakes and a standard detector drops from 96.3 to 74.9 AUC after compression. UMCL reads the facial pulse, landmark motion and a text prompt from the same video; trained on clean video it keeps 95.7 AUC after compression. All people shown are AI-generated">
+<source src="images/umcl-home.mp4?v=2" type="video/mp4"/>
 <a href="images/UMCL.png">View the UMCL overview</a>
 </video>
 <script>
