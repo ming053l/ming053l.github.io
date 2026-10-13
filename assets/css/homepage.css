@@ -40,6 +40,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0e7490; outline-offs
 #pub-container .paper-box-image a:hover { box-shadow: 0 3px 16px #172b3e14; }
 #pub-container .paper-box-text { order: 1; min-width: 0; max-width: none; padding: 0; }
 .paper-venue { display: inline-block; background: #edf5f7; color: var(--accent); padding: 3px 8px; border-radius: 5px; font-size: 11px; font-weight: 700; margin-bottom: 9px; letter-spacing: .02em; }
+.paper-award { display: inline-block; background: #fbf1dc; color: #7a4f05; padding: 3px 8px; border-radius: 5px; font-size: 11px; font-weight: 700; margin: 0 0 9px 6px; letter-spacing: .02em; }
 #pub-container h4 { font-size: 18px; line-height: 1.45; letter-spacing: -.015em; color: var(--ink); margin: 0 0 10px; }
 #pub-container p { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0 0 12px; }
 #pub-container .paper-authors { font-size: 12px; line-height: 1.8; }

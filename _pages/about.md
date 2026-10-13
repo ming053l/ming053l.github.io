@@ -309,7 +309,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 })();
 </script>
 </div>
-<div class="paper-box-text"><div class="paper-venue">CVPR Findings 2026</div>
+<div class="paper-box-text"><div class="paper-venue">CVPR Findings 2026</div><div class="paper-award">★ CVPR 2026 Computational Transparency Award</div>
 <h4>ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers
       </h4>
 <p class="paper-authors"><a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, Xin-Di Ma, Wo-Ting Liao, <strong>Chia-Ming Lee</strong></p>
