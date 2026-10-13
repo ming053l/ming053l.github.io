@@ -286,8 +286,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20265">
 <div class="paper-box-image">
 
-<video id="reflexsplit-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/reflexsplit-home.webp?v=2" aria-label="A camera shoots through a pane of glass that carries a reflection; ReflexSplit separates the resulting photo into the scene behind the glass and the reflection: a hotel photo mixed with a reflected bridge splits into two layers, and three more photos, including real ones taken through windows, are separated the same way. Reflection layers are shown brightened.">
-<source src="images/reflexsplit-home.mp4?v=2" type="video/mp4"/>
+<video id="reflexsplit-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/reflexsplit-home.webp?v=3" aria-label="ReflexSplit: a camera shoots through glass that carries a reflection; an AI-generated cafe clip with a reflection of a street added on the glass; the released ReflexSplit model separates every frame into the scene behind the glass and the reflection, shown as two layers moving apart; three real photos through windows are separated the same way.">
+<source src="images/reflexsplit-home.mp4?v=3" type="video/mp4"/>
 <a href="https://wuw2135.github.io/ReflexSplit-ProjectPage/">View the project page</a>
 </video>
 <script>
@@ -387,8 +387,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20262">
 <div class="paper-box-image">
 
-<video id="wwe-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/wwe-home.webp?v=2" aria-label="WWE-UIE restores underwater photos: a blue-green reef photo sweeps to natural color, four more underwater scenes follow, and the average red, green and blue of a color-chart photo rebalance from before to after.">
-<source src="images/wwe-home.mp4?v=2" type="video/mp4"/>
+<video id="wwe-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/wwe-home.webp?v=3" aria-label="WWE-UIE on AI-generated underwater footage: a depth gauge shows red, orange, yellow and green fading away; a moving divider compares the raw green-tinted video of a sea turtle with the same frames enhanced by the released WWE-UIE model; a diver scene with its three priors, white balance, wavelets and edges.">
+<source src="images/wwe-home.mp4?v=3" type="video/mp4"/>
 <a href="https://github.com/chingheng0808/WWE-UIE">View the paper</a>
 </video>
 <script>
@@ -419,8 +419,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div><div class="paper-box" data-sort="20261">
 <div class="paper-box-image">
 
-<video id="prompthsi-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/prompthsi-home.webp?v=2" aria-label="PromptHSI restores damaged satellite hyperspectral images: thin cloud, noise, low resolution and missing bands; the same damaged image restored under different text prompts, where the prompt that names the actual damage matches the reference; three more scenes restored by the same model. Results are from the paper.">
-<source src="images/prompthsi-home.mp4?v=2" type="video/mp4"/>
+<video id="prompthsi-home-preview" width="1280" height="720" muted loop playsinline controls preload="metadata" poster="images/prompthsi-home.webp?v=3" aria-label="PromptHSI: an AI-generated satellite scans the Earth; a real hyperspectral cube stacks up band by band with pixel spectra from visible to shortwave infrared; clouds, noise, missing bands and low resolution damage it, and no clean copy of the same moment exists; damage is simulated with the authors' code, each with a written description; the released PromptHSI model restores three damaged scenes following those descriptions.">
+<source src="images/prompthsi-home.mp4?v=3" type="video/mp4"/>
 <a href="https://github.com/chingheng0808/PromptHSI">View the paper</a>
 </video>
 <script>
