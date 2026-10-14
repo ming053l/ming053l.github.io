@@ -107,7 +107,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <p class="paper-summary">People often know when their face has been swapped into an image, yet they have no objective evidence that fact-checkers or investigators can act on. Doctor Trigger binds each face image to its original release, so a circulating copy can be checked against what was actually published, supporting digital governance and giving users and investigators verifiable evidence.</p>
 <div class="links">
-<a href="https://ming053l.github.io/Doctor-Trigger/static/pdf/paper.pdf" rel="noopener" target="_blank">Paper</a>
+<a href="https://arxiv.org/abs/2610.16336" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/qtT09O2Ib1U" rel="noopener" target="_blank">Video</a>
