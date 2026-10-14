@@ -82,6 +82,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-summary">Reveals what a 3D scene is made of, not just how it looks, to support tasks such as inspecting wafers and thin films in semiconductor manufacturing, examining building materials and monitoring crop health. It carries classical hyperspectral unmixing efficiently into 3D, so every part of a scene can be queried for its materials by name, by a click on the image or by a reference spectrum within milliseconds, and generated worlds with known material composition make the results verifiable.</p>
 <div class="links">
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
+<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/assets/paper.pdf" rel="noopener" target="_blank">Paper</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
