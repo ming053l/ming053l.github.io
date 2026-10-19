@@ -76,16 +76,17 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <script>/* top preview: start the lite file buffering while the page is still parsing; same rules as previews.js, which later upgrades it to the full file on fast links */(function(v,c){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,m=c.saveData||/2g$/.test(c.effectiveType||'');if(!r||m||/^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(m||r)return;v.preload='auto';v.load()})(document.getElementById('swr-home-preview'),navigator.connection||{})</script>
 </div>
 <div class="paper-box-text">
-<div class="paper-venue">Manuscript</div>
+<div class="paper-venue">Preprint</div>
 <h4>Spectral World Renderer: Unified 3D Hyperspectral Unmixing</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Yu-Jou Hsiao, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-summary">Reveals what a 3D scene is made of, not just how it looks, to support tasks such as inspecting wafers and thin films in semiconductor manufacturing, examining building materials and monitoring crop health. It carries classical hyperspectral unmixing efficiently into 3D, so every part of a scene can be queried for its materials by name, by a click on the image or by a reference spectrum within milliseconds, and generated worlds with known material composition make the results verifiable.</p>
 <div class="links">
+<a href="https://arxiv.org/pdf/2610.19520" rel="noopener" target="_blank">Paper</a>
+<a href="https://arxiv.org/abs/2610.19520" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
-<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset</a>
-<a href="https://ming053l.github.io/Spectral-World-Renderer/assets/paper.pdf" rel="noopener" target="_blank">Paper</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
+<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset</a>
 </div>
 </div>
 </div>
@@ -101,13 +102,14 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 <div class="paper-box-text">
-<div class="paper-venue">Manuscript</div>
+<div class="paper-venue">Preprint</div>
 <h4>Doctor Trigger: A Framework for Release-Bound Face Verification</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Chia-Yu Lin, Hung-Kai Huang, Yi-Ting Ku, Yu-Chen Liang, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 
 <p class="paper-summary">People often know when their face has been swapped into an image, yet they have no objective evidence that fact-checkers or investigators can act on. Doctor Trigger binds each face image to its original release, so a circulating copy can be checked against what was actually published, supporting digital governance and giving users and investigators verifiable evidence.</p>
 <div class="links">
-<a href="https://arxiv.org/abs/2610.16336" rel="noopener" target="_blank">arXiv</a>
+<a href="https://arxiv.org/pdf/2610.16336v2" rel="noopener" target="_blank">Paper</a>
+<a href="https://arxiv.org/abs/2610.16336v2" rel="noopener" target="_blank">arXiv</a>
 <a href="https://github.com/ming053l/Doctor-Trigger" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/qtT09O2Ib1U" rel="noopener" target="_blank">Video</a>
