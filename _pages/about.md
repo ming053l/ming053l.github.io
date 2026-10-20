@@ -69,7 +69,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="pv" data-pv>
 <video id="irismix-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="IrisMix on one face: eyes, lips and blush are picked from different reference looks and put on her photo part by part; her look splits into a bare face and one layer per part; lip shades and finishes change on the lip layer, and a face-paint design is dragged and scaled before rendering">
 <source src="images/web/irismix-home.mp4?v=2" type="video/mp4"/>
-<a href="images/web/irismix-teaser.mp4?v=2">View the IrisMix video</a>
+<a href="images/web/irismix-teaser.mp4?v=3">View the IrisMix video</a>
 </video>
 <picture><source srcset="images/web/irismix-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=2" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
@@ -81,7 +81,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-summary">Lets a user compose a makeup look from parts of different references, such as the eyes of one photo, the lips of another and the face paint of a third, and apply it to their own photo while keeping their identity and background. Each reference is split once into a bare face and an explicit makeup layer, so strength, color, lip finish, blending between looks and the placement of a design can all be adjusted directly on the layer before it is rendered onto the face.</p>
 <div class="links">
-<a href="images/web/irismix-teaser.mp4?v=2" rel="noopener" target="_blank">Video</a>
+<a href="images/web/irismix-teaser.mp4?v=3" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
 </div>
