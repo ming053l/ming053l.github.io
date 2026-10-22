@@ -1,7 +1,7 @@
 {
   "format": "irismix-public-frontend-v1",
   "sourceReleaseInventorySHA256": "1c2916671b319a0839e8530413e42014b2ede3cf9d0f65e09940f48f253ba4fc",
-  "modelBase": "https://huggingface.co/ming0531/IrisMix-browser/resolve/b961ede36941fcab68a71a8ce7f2b74677db8aa0/",
+  "modelBase": "",
   "weightsIncluded": false,
   "parentAssets": {
     "qualityModule": "../quality.js",
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1018,
-      "sha256": "8c11a1454331c940e3fbd1a58c2e9330536dde03c01d654bf29800597eae75e9"
+      "bytes": 786,
+      "sha256": "a494d038915279a233c26f78f08485783fd0de29db69e33b84c63ef63e149979"
     },
     {
       "path": "REMOTE-MODELFILES.json",
@@ -85,8 +85,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 4257,
-      "sha256": "79fd03bad676f421b3728c50beb57c56a665c0315ad9472e1b005eb92f174d8b"
+      "bytes": 1629,
+      "sha256": "594945299a7af40360a52a04bdc1ffc2b969ff618625c824ff6322ddbe21ae8c"
     },
     {
       "path": "lab-assets/manifest.json",
@@ -205,8 +205,8 @@
     },
     {
       "path": "model-config.json",
-      "bytes": 249,
-      "sha256": "93fcdea263b138bd64d8f1bb6b420f2bed0198abc4978856a284e457aaf301a8"
+      "bytes": 201,
+      "sha256": "a417da5ec7abeaef4688e5bfd4d63b19c52f949db17b1b48e862fcbffe02e856"
     },
     {
       "path": "photo-demo.css",
@@ -273,5 +273,14 @@
       "bytes": 4056,
       "sha256": "f1a6d9df903967e98dd9b752d78253428e23e1d857ba960845d2597fd5553063"
     }
-  ]
+  ],
+  "publicInferenceEnabled": false,
+  "suspension": {
+    "status": "temporarily-paused",
+    "changedOn": "2026-10-22",
+    "reason": "The project owner requested temporarily closing public browser inference.",
+    "entryPage": "index.html",
+    "modelDownloadsEnabled": false,
+    "standaloneLocalPackageAffected": false
+  }
 }
