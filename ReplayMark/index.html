@@ -14,7 +14,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="https://ming053l.github.io/ReplayMark/" rel="canonical"/>
 <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="style.css?v=3" rel="stylesheet"/>
+<link href="style.css?v=4" rel="stylesheet"/>
 <title>ReplayMark | NeurIPS 2026 FLMSec</title>
 <script defer="" src="script.js"></script>
 <script defer="" src="video.js?v=3"></script></head>
@@ -39,13 +39,47 @@
 
 </header>
 <section class="section soft" id="idea"><div class="wrap">
-<p class="eyebrow">The idea</p><h2>Introduction</h2>
+<p class="eyebrow">The idea</p><h2>Model-response Watermarking for dLLMs</h2>
 <div class="prose"><p>A watermark helps establish where generated text came from. But diffusion language models fill in many positions in parallel, following their own confidence-based order. A scheme designed for left-to-right generation does not naturally fit this process.</p><p>ReplayMark starts from a different observation: <strong>hide part of the context, and the same model consistently changes its token probabilities.</strong> Those changes provide two response directions. A secret key chooses which direction to favor while the model generates; later, a verifier recreates the same conditions and checks for agreement.</p></div>
 <figure class="comparison-video method-film" id="fig-paradigm">
 <div class="film-controls" hidden=""><button aria-label="Play paradigm animation" class="film-toggle" type="button">▶</button><button aria-label="Replay paradigm animation" class="film-restart" type="button">↻</button></div>
-<video aria-label="Animated comparison of token-level and model-response watermarking, from text generation to verification inputs and statistics." controls="" height="720" id="paradigm-video" loop="" muted="" playsinline="" poster="assets/paradigm-animation.webp" preload="none" width="1280"><source src="assets/paradigm-animation.mp4" type="video/mp4"/><a href="assets/paradigm-animation.mp4">Download animation</a></video>
+<video aria-label="Three animated comparisons: token-level watermarking, generic diffusion decoding, and ReplayMark model-response watermarking." controls="" height="440" id="paradigm-video" loop="" muted="" playsinline="" poster="assets/paradigm-animation.webp" preload="none" width="1280"><source src="assets/paradigm-animation.mp4" type="video/mp4"/><a href="assets/paradigm-animation.mp4">Download animation</a></video>
 <figcaption><strong>Where the signal lives.</strong> Token-level verification reads keyed token patterns; ReplayMark replays the checkpoint’s response.<br/><span>Mechanism illustration, not a measured model run. <a href="assets/paradigm-animation.mp4">Download animation</a></span></figcaption>
-</figure><details class="original-figure"><summary>View the original paper figure (Figure 1)</summary><figure><a aria-label="Open the full-size watermarking comparison" href="assets/paradigm.webp"><img alt="Token-level watermarking counts keyed tokens from text alone. ReplayMark queries the same checkpoint on re-masked text and counts keyed model-response matches." height="438" loading="lazy" src="assets/paradigm.webp" width="1191"/></a><figcaption>Figure 1 from the paper. The signal moves from token identities to the checkpoint’s response to re-masked context.</figcaption></figure></details>
+</figure>
+<ul class="paradigm-notes">
+<li><strong class="token-label">Token-level watermarking.</strong> A key favors particular token identities during generation. Verification counts keyed token patterns in the resulting text.</li>
+<li><strong class="decode-label">Generic dLLM decoding.</strong> Masked positions are filled in a flexible order determined by the reference decoder. Token predictions and the commit schedule evolve as context is revealed.</li>
+<li><strong class="replay-label">ReplayMark.</strong> Two hidden-prefix probes expose how the checkpoint responds to context. Select carriers before consulting the key, favor a keyed response when sampling, and preserve the reference commit schedule. Verification reconstructs those responses with the same checkpoint.</li>
+</ul>
+<p class="algorithm-intro">The simplified procedures below separate the unchanged decoding schedule from ReplayMark’s additional sampling step.</p>
+<div class="algorithm-grid">
+<article><h3>Generic dLLM Decoding</h3><pre><code><b>Require:</b> prompt x, model θ, decoder F
+
+1  y ← masked continuation
+2  <b>while</b> masked positions remain:
+3    p ← model predictions for y
+4    J ← positions chosen by F
+5    <b>for</b> i in J:
+6      v ← reference token draw from pᵢ
+7      yᵢ ← v
+8  <b>return</b> y</code></pre></article>
+<article><h3>ReplayMark: Probe and Write</h3><pre><code><b>Require:</b> same x, θ, F; key K, R, κ
+
+1  y ← masked continuation
+2  <b>while</b> masked positions remain:
+3    p ← model predictions for y
+4    J ← <em>same reference schedule F</em>
+5    <b>for</b> i in J:
+6      <em>rebuild probes; select carrier</em>
+7      <em>if carrier: consult keyed direction</em>
+8        <em>try ≤ R plausible matching draws</em>
+9        <em>otherwise: unchecked fallback draw</em>
+10     <em>else: reference token draw</em>
+11     yᵢ ← selected token
+12 <b>return</b> y</code></pre></article>
+</div>
+<p class="algorithm-note">Conceptual pseudocode. Carriers are selected independently of the keyed direction; accepted candidates must have probability at least κ times the live maximum. Verification re-masks the finished text, rebuilds the probes and carriers, and applies the exact binomial-tail test. See the paper for the complete construction.</p>
+<details class="original-figure"><summary>View the original paper figure (Figure 1)</summary><figure><a aria-label="Open the full-size watermarking comparison" href="assets/paradigm.webp"><img alt="Token-level watermarking counts keyed tokens from text alone. ReplayMark queries the same checkpoint on re-masked text and counts keyed model-response matches." height="438" loading="lazy" src="assets/paradigm.webp" width="1191"/></a><figcaption>Figure 1 from the paper. The signal moves from token identities to the checkpoint’s response to re-masked context.</figcaption></figure></details>
 </div></section>
 <section class="section" id="method"><div class="wrap">
 <p class="eyebrow">How it works</p><h2>Probe-and-Replay Watermarking</h2>
