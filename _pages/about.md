@@ -168,6 +168,31 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 
+<div class="paper-box" data-sort="20266" id="paper-replaymark">
+<div class="paper-box-image">
+<div class="pv" data-pv>
+<video id="replaymark-home-preview" width="854" height="512" muted loop playsinline preload="none" aria-label="ReplayMark compared with unwatermarked generation: paired saved LLaDA text excerpts are revealed, then replay verification finds p=0.9628 without a watermark and p=0.00002882 with ReplayMark. Scores cover the complete saved outputs; animation timing is illustrative.">
+<source src="images/web/replaymark-home.mp4?v=2" type="video/mp4"/>
+<a href="https://ming053l.github.io/ReplayMark/">View the ReplayMark project page</a>
+</video>
+<picture><img class="pv-poster" src="images/web/replaymark-home.webp?v=2" width="854" height="512" alt="" decoding="async" loading="lazy"/></picture>
+</div>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">NeurIPS 2026 FLMSec Workshop</div><div class="paper-venue" style="margin-left: 6px;">★ Distinguished Paper</div>
+<h4>ReplayMark: Probe-and-Replay Model-Response Watermarking for Diffusion Language Models</h4>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Wen-Hsin Tsai, Tung Yuk Ying, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+<p class="paper-summary">How can we verify where AI-generated text came from when a model writes tokens in parallel? ReplayMark embeds a watermark in how a diffusion language model responds to re-masked context, while preserving its decoding schedule. A verifier replays the same checkpoint on the finished text and checks whether its responses agree with a secret key, providing exact false-positive control without calibration.</p>
+<div class="links">
+<a href="https://openreview.net/pdf?id=fmXX4kVZ30" rel="noopener" target="_blank">Paper</a>
+<a href="https://openreview.net/forum?id=fmXX4kVZ30" rel="noopener" target="_blank">OpenReview</a>
+<a href="https://github.com/ming053l/ReplayMark" rel="noopener" target="_blank">GitHub</a>
+<a href="https://ming053l.github.io/ReplayMark/" rel="noopener" target="_blank">Project Page</a>
+<a href="https://ming053l.github.io/ReplayMark/assets/replaymark-comparison.mp4" rel="noopener" target="_blank">Video</a>
+</div>
+</div>
+</div>
+
 <div class="paper-box" data-sort="99999" id="paper-c4">
 <div class="paper-box-image">
 <div class="pv" data-pv>
@@ -234,32 +259,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://ming053l.github.io/PhaSR_github/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
-</div><div class="paper-box" data-sort="20266" id="paper-replaymark">
-<div class="paper-box-image">
-<div class="pv" data-pv>
-<video id="replaymark-home-preview" width="854" height="512" muted loop playsinline preload="none" aria-label="ReplayMark compared with unwatermarked generation: paired saved LLaDA text excerpts are revealed, then replay verification finds p=0.9628 without a watermark and p=0.00002882 with ReplayMark. Scores cover the complete saved outputs; animation timing is illustrative.">
-<source src="images/web/replaymark-home.mp4?v=2" type="video/mp4"/>
-<a href="https://ming053l.github.io/ReplayMark/">View the ReplayMark project page</a>
-</video>
-<picture><img class="pv-poster" src="images/web/replaymark-home.webp?v=2" width="854" height="512" alt="" decoding="async" loading="lazy"/></picture>
-</div>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">NeurIPS 2026 FLMSec Workshop</div><div class="paper-venue" style="margin-left: 6px;">★ Distinguished Paper</div>
-<h4>ReplayMark: Probe-and-Replay Model-Response Watermarking for Diffusion Language Models</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Wen-Hsin Tsai, Tung Yuk Ying, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-summary">How can we verify where AI-generated text came from when a model writes tokens in parallel? ReplayMark embeds a watermark in how a diffusion language model responds to re-masked context, while preserving its decoding schedule. A verifier replays the same checkpoint on the finished text and checks whether its responses agree with a secret key, providing exact false-positive control without calibration.</p>
-<div class="links">
-<a href="https://openreview.net/pdf?id=fmXX4kVZ30" rel="noopener" target="_blank">Paper</a>
-<a href="https://openreview.net/forum?id=fmXX4kVZ30" rel="noopener" target="_blank">OpenReview</a>
-<a href="https://github.com/ming053l/ReplayMark" rel="noopener" target="_blank">GitHub</a>
-<a href="https://ming053l.github.io/ReplayMark/" rel="noopener" target="_blank">Project Page</a>
-<a href="https://ming053l.github.io/ReplayMark/assets/replaymark-comparison.mp4" rel="noopener" target="_blank">Video</a>
-</div>
-</div>
-</div>
-
-<div class="paper-box" data-sort="20265">
+</div><div class="paper-box" data-sort="20265">
 <div class="paper-box-image">
 
 <div class="pv" data-pv>

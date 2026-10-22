@@ -12,3 +12,5 @@ body{font-family:InterTight,Arial,sans-serif;font-size:18px;color:#363636;line-h
 @media(min-width:1101px){.hero .venue{display:none}.award{top:157px}}
 .comparison-video{position:relative}.film-controls{position:absolute;top:9px;right:9px;z-index:2;display:flex;gap:5px}.film-controls button{background:#fff;border:1px solid #b6b6b6;border-radius:50%;width:27px;height:27px;padding:0;display:grid;place-items:center;color:#333;font-size:15px;line-height:1}.film-controls button:hover{background:#eee}.comparison-video video{border-radius:0}
 @media(max-width:600px){.film-controls{top:2px;right:3px;gap:3px}.film-controls button{width:22px;height:22px;font-size:12px}}
+
+.award .badge-workshop{font-size:10px;font-weight:500;margin-top:5px;white-space:nowrap}
