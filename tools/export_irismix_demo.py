@@ -9,7 +9,7 @@ ROOT=Path('/ssd1/chingheng/FlashMakeUp');PREP=ROOT/'work/webdemo_prepared';ITEMS
 OUT=Path(__file__).resolve().parents[1]/'IrisMix/assets/v3';OUT.mkdir(parents=True,exist_ok=True)
 sys.path.insert(0,str(ROOT/'work/stage1_data'));import make_composites as MC
 N,M=640,512
-info=json.loads((PREP/'manifest.json').read_text());rejected={('warm','lily'):'此角度的花卉圖案不完整，未收錄此組合。'}
+info=json.loads((PREP/'manifest.json').read_text());info['references']=[{'id':'poppy','label':'緋紅罌粟','reference':'redhood6g1_rh024_ref0'} if r['id']=='line' else r for r in info['references']];rejected={('warm','lily'):'此角度的花卉圖案不完整，未收錄此組合。',('night','poppy'):'此角度會遮住花形，未收錄此組合。',('smile','poppy'):'此組合的花形與花梗不完整，未收錄此組合。'}
 def save(a,name,size=(N,N),q=95):Image.fromarray(a).resize(size,Image.Resampling.LANCZOS).save(OUT/name,'WEBP',quality=q,method=6)
 manifest={'version':3,'width':N,'height':N,'maskSize':M,'defaultSource':'studio','source':'source-studio.webp','sources':[],'looks':[],'rejected':[]}
 points={}
@@ -19,9 +19,9 @@ for src in info['sources']:
  manifest['sources'].append({**src,'image':f'source-{sid}.webp','thumbnail':f'source-{sid}-thumb.webp'})
 for index,r in enumerate(info['references']):
  rid,refid=r['id'],r['reference'];ref=np.asarray(Image.open(ITEMS/refid/'madeup.webp').convert('RGB'));bare=np.asarray(Image.open(ITEMS/refid/'bare.webp').convert('RGB'))
- q=MC.landmarks(bare);assert q is not None;lo,hi=q.min(0),q.max(0);side=int(min(max(hi-lo)*1.55,*ref.shape[:2]));xy=np.clip((lo+hi)/2-side/2,0,np.array(ref.shape[:2][::-1])-side).astype(int);x,y=xy
+ q=np.asarray(json.loads((PREP/'poppy-browser-stage1.json').read_text())['points'],np.float32)[:,:2] if rid=='poppy' else MC.landmarks(bare);assert q is not None;lo,hi=q.min(0),q.max(0);side=int(min(max(hi-lo)*1.55,*ref.shape[:2]));xy=np.clip((lo+hi)/2-side/2,0,np.array(ref.shape[:2][::-1])-side).astype(int);x,y=xy
  save(ref[y:y+side,x:x+side],f'{rid}-reference.webp',(768,768));save(ref[y:y+side,x:x+side],f'{rid}-thumb.webp',(180,180),91)
- look={'id':rid,'label':r['label'],'category':'daily' if index<3 else 'art','reference':f'{rid}-reference.webp','thumbnail':f'{rid}-thumb.webp','description':['細緻眼線、暖色唇妝','酒紅眼影、莓果唇色','綠色眼影、自然唇色','綠色眼妝、花卉圖案','飽和藍色舞台眼妝','跨越鼻樑的藍色線條'][index],'pairs':{},'masks':{},'provenance':{'reference':refid,'stage2':'FULL/lora_step3000_ema','sampler':'sigma=0.65, 1 step','rendered':True}}
+ look={'id':rid,'label':r['label'],'category':'daily' if index<3 else 'art','reference':f'{rid}-reference.webp','thumbnail':f'{rid}-thumb.webp','description':['細緻眼線、暖色唇妝','酒紅眼影、莓果唇色','綠色眼影、自然唇色','綠色眼妝、花卉圖案','飽和藍色舞台眼妝','紅色罌粟與細緻綠色花梗'][index],'pairs':{},'masks':{},'provenance':{'reference':refid,'stage2':'FULL/lora_step3000_ema','sampler':'sigma=0.65, 1 step','rendered':True,**({'stage1':'C2/lora_step2000','execution':'browser WebGPU, shared Q4 base and FP32 LoRA','referenceGeometry':'actual Stage I bare-face landmarks'} if rid=='poppy' else {})}}
  qs=(q-xy)/side*M;eye=np.zeros((M,M),np.uint8)
  for a,b in [(33,133),(362,263)]:
   c=(qs[a]+qs[b])/2;w=np.linalg.norm(qs[a]-qs[b]);cv2.ellipse(eye,tuple(c.astype(int)),(int(w*.95),int(w*.65)),0,0,360,255,-1)

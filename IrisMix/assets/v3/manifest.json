@@ -250,6 +250,42 @@
         "sampler": "sigma=0.65, 1 step",
         "rendered": true
       }
+    },
+    {
+      "id": "poppy",
+      "label": "緋紅罌粟",
+      "category": "art",
+      "reference": "poppy-reference.webp",
+      "thumbnail": "poppy-thumb.webp",
+      "description": "紅色罌粟與細緻綠色花梗",
+      "pairs": {
+        "studio": {
+          "layer": "studio-poppy-layer.webp",
+          "map": "studio-poppy-map.png",
+          "render": "studio-poppy-render.webp",
+          "warp": "studio-poppy-warp.webp"
+        },
+        "warm": {
+          "layer": "warm-poppy-layer.webp",
+          "map": "warm-poppy-map.png",
+          "render": "warm-poppy-render.webp",
+          "warp": "warm-poppy-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "poppy-eyes-mask.png",
+        "lips": "poppy-lips-mask.png",
+        "face": "poppy-face-mask.png"
+      },
+      "provenance": {
+        "reference": "redhood6g1_rh024_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true,
+        "stage1": "C2/lora_step2000",
+        "execution": "browser WebGPU, shared Q4 base and FP32 LoRA",
+        "referenceGeometry": "actual Stage I bare-face landmarks"
+      }
     }
   ],
   "rejected": [
@@ -257,6 +293,16 @@
       "source": "warm",
       "reference": "lily",
       "reason": "此角度的花卉圖案不完整，未收錄此組合。"
+    },
+    {
+      "source": "night",
+      "reference": "poppy",
+      "reason": "此角度會遮住花形，未收錄此組合。"
+    },
+    {
+      "source": "smile",
+      "reference": "poppy",
+      "reason": "此組合的花形與花梗不完整，未收錄此組合。"
     }
   ]
 }
