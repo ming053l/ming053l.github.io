@@ -1,0 +1,22 @@
+ONNX Runtime Web1.23.2 — IrisMix local JS marshalling modification, 2026-10-22.
+Upstream copyright: Microsoft Corporation. MIT; preserve LICENSE.txt.
+Only change: validate and forward executionProviders[{name:"webgpu",storageBufferCacheMode}]
+to the existing C++ WebGPU provider BEFORE its context/cache is initialized.
+Accepted modes are the original1.23.2 C++ values: disabled, lazyRelease, simple, bucket.
+No defaults, ONNX graphs, model weights, WASM binaries, kernels, or arithmetic change.
+The IrisMix application selects lazyRelease on every WebGPU parser/VAE session.
+Actual browser probe found disabled unsafe for this C++ runtime: buffers can be
+destroyed before pending command buffers are submitted. Do not ship disabled.
+Cache configuration is shared-context first-initialization-wins. Start a fresh page/runtime
+when changing policy; later sessions cannot reconfigure an already initialized context.
+Controlled actual FP32 VAE test: fresh Chromium per mode, encoder512 followed by
+encoder release and the unchanged1536x512 Stage I decoder, NVIDIA Blackwell/Linux.
+Bucket, simple and lazyRelease returned bit-identical2359296float32 outputs.
+Output SHA256: c806cf0dfffd3362ead0889a014a7265e14d2c6870031b1de4ef812ab0688958
+bucket: observed physical GPU memory rise 21.0039 GiB; tracked live GPUBuffer peak 11.6646 GiB.
+simple: observed physical GPU memory rise 17.8281 GiB; tracked live GPUBuffer peak 17.6931 GiB.
+lazyRelease: observed physical GPU memory rise 16.7363 GiB; tracked live GPUBuffer peak 10.1102 GiB.
+Physical measurements used the same55025MiB baseline and500ms nvidia-smi sampling.
+These measurements describe this controlled test, not a universal GPU memory minimum.
+Model/photographic quality and complete application validation are documented separately
+in VALIDATION.md; cache policy does not change model weights or numerical kernels.

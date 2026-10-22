@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "modelBase": "https://huggingface.co/ming0531/IrisMix-browser/resolve/b961ede36941fcab68a71a8ce7f2b74677db8aa0/",
+  "runtimeBase": "./runtime/",
+  "landmarkerBase": "../vendor/mediapipe/",
+  "qualityModule": "../quality.js"
+}

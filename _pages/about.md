@@ -83,6 +83,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="links">
 <a href="images/web/irismix-teaser.mp4?v=3" rel="noopener" target="_blank">Video</a>
 <a href="{{ "/IrisMix/" | relative_url }}" target="_self">線上體驗 ↗</a>
+<a href="{{ "/IrisMix/inference/" | relative_url }}" target="_self">瀏覽器推論研究版 ↗</a>
 </div>
 </div>
 </div>

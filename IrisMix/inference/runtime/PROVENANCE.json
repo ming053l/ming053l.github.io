@@ -1,0 +1,85 @@
+{
+  "upstreamPackage": "onnxruntime-web",
+  "upstreamVersion": "1.23.2",
+  "sourceSHA256": "df590731d1378c41f193b05133c33dd3567ebd7da46be09c2cd07d0a28e635c3",
+  "candidateSHA256": "304f492f359b8b07fe3a99369d596e2b4e1a97ba5ce499cee5cc366741a2a491",
+  "patchSHA256": "bbc1a1baecbc6ed684f44710a2629ffb8e0ef03483b5af083f1ae1d32f43c8bb",
+  "officialSources": [
+    "https://github.com/microsoft/onnxruntime/blob/v1.23.2/js/web/lib/wasm/session-options.ts",
+    "https://github.com/microsoft/onnxruntime/blob/v1.23.2/onnxruntime/core/providers/webgpu/webgpu_provider_options.h",
+    "https://github.com/microsoft/onnxruntime/blob/v1.23.2/onnxruntime/core/providers/webgpu/webgpu_provider_factory.cc",
+    "https://github.com/microsoft/onnxruntime/blob/v1.23.2/onnxruntime/core/providers/webgpu/buffer_manager.cc",
+    "https://github.com/microsoft/onnxruntime/blob/v1.23.2/LICENSE"
+  ],
+  "change": "storageBufferCacheMode EP option passthrough before provider append",
+  "runtimeFiles": [
+    {
+      "file": "ort-wasm-simd-threaded.asyncify.mjs",
+      "bytes": 51913,
+      "sha256": "249b4dc791f081d33bd11760bfd669fe85f97289e679bbeb291b874272125dff",
+      "modified": false
+    },
+    {
+      "file": "ort-wasm-simd-threaded.asyncify.wasm",
+      "bytes": 25499390,
+      "sha256": "babec0bbddb6d3082623b99b7e1391b75e0729bcca076ff8424d7753af97fada",
+      "modified": false
+    }
+  ],
+  "metadataFiles": [
+    {
+      "file": "LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "file": "ORT-MODIFICATIONS.txt",
+      "bytes": 1871,
+      "sha256": "68d2fd7ec59c6454aef98d8436a6373db4b20a3b3a838621e795a328bbea46a8"
+    },
+    {
+      "file": "ort-storage-cache.patch",
+      "bytes": 1490,
+      "sha256": "bbc1a1baecbc6ed684f44710a2629ffb8e0ef03483b5af083f1ae1d32f43c8bb"
+    }
+  ],
+  "selectedStorageBufferCacheMode": "lazyRelease",
+  "focusedValidation": {
+    "scope": "Actual unchanged FP32 wide Stage I VAE: encoder512, release, decoder1536x512; fresh Chromium per mode",
+    "exactOutputMatch": true,
+    "outputSHA256": "c806cf0dfffd3362ead0889a014a7265e14d2c6870031b1de4ef812ab0688958",
+    "floatCount": 2359296,
+    "results": {
+      "bucket": {
+        "outputSHA256": "c806cf0dfffd3362ead0889a014a7265e14d2c6870031b1de4ef812ab0688958",
+        "floatCount": 2359296,
+        "decodeMs": 3347.0999999046326,
+        "peakLiveBuffersGiB": 11.664627611637115,
+        "physicalBaselineMiB": 55025,
+        "physicalPeakMiB": 76533,
+        "physicalIncreaseGiB": 21.00390625
+      },
+      "simple": {
+        "outputSHA256": "c806cf0dfffd3362ead0889a014a7265e14d2c6870031b1de4ef812ab0688958",
+        "floatCount": 2359296,
+        "decodeMs": 3379.2000000476837,
+        "peakLiveBuffersGiB": 17.693121641874313,
+        "physicalBaselineMiB": 55025,
+        "physicalPeakMiB": 73281,
+        "physicalIncreaseGiB": 17.828125
+      },
+      "lazyRelease": {
+        "outputSHA256": "c806cf0dfffd3362ead0889a014a7265e14d2c6870031b1de4ef812ab0688958",
+        "floatCount": 2359296,
+        "decodeMs": 3265.2999999523163,
+        "peakLiveBuffersGiB": 10.110157936811447,
+        "physicalBaselineMiB": 55025,
+        "physicalPeakMiB": 72163,
+        "physicalIncreaseGiB": 16.736328125
+      }
+    },
+    "sourceEvidenceSHA256": "d199c6bda357bd91db159a0a62ed44dcfaa26c63cf46402e5950ef71123e8f13",
+    "limitation": "Hardware/browser/workload-specific observations; not a universal GPU memory minimum"
+  },
+  "modelOrArithmeticChanges": false
+}

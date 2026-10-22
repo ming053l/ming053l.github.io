@@ -1,0 +1,4 @@
+jonathandinu/face-parsing
+License: non-commercial research and educational purposes.
+Official model card: https://huggingface.co/jonathandinu/face-parsing#model-description
+This local research package does not grant commercial-use permission.

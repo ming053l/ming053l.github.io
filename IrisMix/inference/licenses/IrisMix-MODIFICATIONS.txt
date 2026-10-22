@@ -1,0 +1,6 @@
+Local IrisMix browser research prototype, 2026.
+FLUX.2-klein-4B base matrices use symmetric Q4 groups of 32; IrisMix C2/FULL LoRA adapters retain FP32.
+Fixed-time modulation is precomputed in FP32. VAE uses FP32 ONNX with learned IrisMix skips; identical external tensors are content-deduplicated.
+Full Stage I and Stage II execute on the visitor device through WebGPU. No server GPU or image-upload endpoint is included.
+The owner has authorized a browser research release. IrisMix-owned parameters are provided for non-commercial research and personal evaluation; retain the research notice and upstream rights.
+Retain all upstream licenses and notices. See MODELS.md.

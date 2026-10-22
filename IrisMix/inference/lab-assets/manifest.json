@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "id": "studio",
+      "label": "柔光人像",
+      "image": "source-studio.png"
+    },
+    {
+      "id": "night",
+      "label": "夜景人像",
+      "image": "source-night.png"
+    },
+    {
+      "id": "smile",
+      "label": "微笑人像",
+      "image": "source-smile.png"
+    },
+    {
+      "id": "warm",
+      "label": "暖光人像",
+      "image": "source-warm.png"
+    }
+  ],
+  "references": [
+    {
+      "id": "satin",
+      "label": "柔霧日常",
+      "image": "reference-satin.webp",
+      "prompt": "stage2-satin"
+    },
+    {
+      "id": "merlot",
+      "label": "酒紅妝容",
+      "image": "reference-merlot.webp",
+      "prompt": "stage2-merlot"
+    },
+    {
+      "id": "mint",
+      "label": "薄荷眼妝",
+      "image": "reference-mint.webp",
+      "prompt": "stage2-mint"
+    },
+    {
+      "id": "lily",
+      "label": "睡蓮彩繪",
+      "image": "reference-lily.webp",
+      "prompt": "stage2-lily"
+    },
+    {
+      "id": "cobalt",
+      "label": "鈷藍眼妝",
+      "image": "reference-cobalt.webp",
+      "prompt": "stage2-cobalt"
+    },
+    {
+      "id": "poppy",
+      "label": "緋紅罌粟",
+      "image": "reference-poppy.webp",
+      "prompt": "stage2-poppy"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "warm",
+      "reference": "lily",
+      "reason": "此角度的花卉圖案不完整，請選擇其他人像或參考妝容。"
+    },
+    {
+      "source": "night",
+      "reference": "poppy",
+      "reason": "此角度會遮住花形，請改用柔光或暖光人像。"
+    },
+    {
+      "source": "smile",
+      "reference": "poppy",
+      "reason": "此組合的花形與花梗不完整，請改用柔光或暖光人像。"
+    }
+  ]
+}
