@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ReplayMark: Probe-and-Replay Model-Response Watermarking for Diffusion Language Models. Distinguished Paper at the NeurIPS 2026 FLMSec Workshop.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="ReplayMark · Probe, write, replay, verify">
+<meta property="og:description" content="A watermark in a diffusion language model’s response to context. The same checkpoint replays the evidence. NeurIPS 2026 FLMSec Workshop · Distinguished Paper.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ming053l.github.io/ReplayMark/">
+<meta property="og:image" content="https://ming053l.github.io/ReplayMark/assets/pipeline.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ming053l.github.io/ReplayMark/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="style.css">
+<title>ReplayMark | NeurIPS 2026 FLMSec</title>
+<script src="script.js" defer></script>
+<script src="animation.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Page sections"><div class="nav-inner"><a class="wordmark" href="#top"><span aria-hidden="true">↻</span> ReplayMark</a><div class="nav-links"><a href="#idea">The idea</a><a href="#method">Method</a><a href="#results">Results</a><a href="#citation">Citation</a></div></div></nav>
+<main id="main">
+<header class="hero wrap" id="top">
+<p class="venue">NeurIPS 2026 · Foundations of Language Model Security Workshop</p>
+<p class="award"><span aria-hidden="true">✦</span> Distinguished Paper</p>
+<h1><span class="title-name">ReplayMark</span><span class="title-detail">Probe-and-Replay Model-Response Watermarking<br class="desktop-break"> for Diffusion Language Models</span></h1>
+<div class="authors"><a href="https://ming053l.github.io/">Chia-Ming Lee<sup>1,3</sup></a><span>Wen-Hsin Tsai<sup>2</sup></span><span>Tung Yuk Ying<sup>2</sup></span><a href="https://cchsu.info/">Chih-Chung Hsu<sup>1</sup></a></div>
+<div class="affiliations"><span><sup>1</sup> National Yang Ming Chiao Tung University</span><span><sup>2</sup> National Cheng Kung University</span><span><sup>3</sup> University at Albany, State University of New York</span></div>
+<div class="resource-links">
+<a href="https://openreview.net/pdf?id=fmXX4kVZ30"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg>Paper</a>
+<a href="https://openreview.net/forum?id=fmXX4kVZ30"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v13H9l-4 4zM8 8h8M8 12h6"/></svg>OpenReview</a>
+<a href="https://github.com/ming053l/ReplayMark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code</a>
+</div>
+<p class="tldr"><strong>TL;DR</strong> A diffusion language model can leave a watermark in <em>how it responds to context</em>.<br class="desktop-break"> Replay the same model to recover the evidence—without a generation trace.</p>
+<div class="replay-animation" id="replay-animation" hidden>
+<div class="animation-heading"><div><span class="animation-kicker">Watch the mechanism</span><h2>A watermark the model can replay.</h2></div><button type="button" id="animation-play" class="animation-control" aria-label="Pause the animation">Ⅱ Pause</button></div>
+<div class="animation-timeline" role="group" aria-label="Jump to an animation step"><button type="button" data-phase="0" aria-pressed="true"><span>1</span> Probe</button><button type="button" data-phase="1" aria-pressed="false"><span>2</span> Write</button><button type="button" data-phase="2" aria-pressed="false"><span>3</span> Receive</button><button type="button" data-phase="3" aria-pressed="false"><span>4</span> Replay</button><button type="button" data-phase="4" aria-pressed="false"><span>5</span> Test</button></div>
+<div class="animation-panels">
+<div class="animation-panel provider-panel"><div class="panel-title"><h3><span class="panel-dot"></span> Generation</h3><span class="model-chip">Checkpoint θ + key K</span></div><div class="probe-display"><div class="probe-line"><span class="probe-name">A</span><span>The <mark>[M]</mark> asks where <mark>[M]</mark> text came from.</span></div><div class="probe-line"><span class="probe-name">B</span><span><mark>[M]</mark> auditor asks <mark>[M]</mark> this text came from.</span></div><div class="probe-output"><span class="probe-arrow">↓</span><span id="provider-action">Compare responses to two hidden-prefix probes</span></div></div><div class="animation-tokens" id="generation-tokens" aria-label="Illustrative generated text"></div><div class="panel-status" id="generation-status">Current block masked. Both response directions must be viable.</div></div>
+<div class="transfer-arrow" aria-hidden="true">→</div>
+<div class="animation-panel verifier-panel"><div class="panel-title"><h3><span class="panel-dot"></span> Verification</h3><span class="model-chip">Same θ + key K</span></div><div class="verifier-process"><div class="replay-orbit" aria-hidden="true">↻</div><div><strong id="verifier-action">Waiting for finished text</strong><span id="verifier-detail">No generation trace is sent.</span></div></div><div class="animation-tokens" id="verification-tokens" aria-label="Illustrative replay outcomes"></div><div class="panel-status" id="verification-status">The verifier will rebuild the same probes.</div></div>
+</div>
+<div class="animation-bottom"><p id="animation-caption">Hide different parts of the prefix to find reproducible model responses.</p><button type="button" id="animation-restart" class="text-button">Replay ↺</button></div><div class="animation-progress" aria-hidden="true"><span id="animation-progress"></span></div>
+<p class="animation-note">Illustrative animation, not a model recording. Words stand in for tokens; the 12 outcomes demonstrate the test, not measured detection performance.</p>
+</div>
+<details class="diagram-details" open><summary>View the paper’s generation and verification diagram</summary>
+<figure class="hero-figure"><a href="assets/pipeline.webp" aria-label="Open the full-size ReplayMark generation and verification diagram"><img src="assets/pipeline.webp" width="1191" height="498" alt="During generation, two hidden-prefix probes split candidate tokens into response directions; a key selects one direction. During verification, the same checkpoint replays those probes on the finished text." fetchpriority="high"></a><figcaption><strong>Write with the model. Verify by replay.</strong> The decoding schedule stays intact; the verifier reconstructs the probes from the finished text.</figcaption></figure>
+</details>
+</header>
+<section class="section soft" id="idea"><div class="wrap">
+<p class="eyebrow">The idea</p><h2>Can a model recognize the mark<br class="desktop-break"> in its own response?</h2>
+<div class="prose"><p>A watermark helps establish where generated text came from. But diffusion language models fill in many positions in parallel, following their own confidence-based order. A scheme designed for left-to-right generation does not naturally fit this process.</p><p>ReplayMark starts from a different observation: <strong>hide part of the context, and the same model consistently changes its token probabilities.</strong> Those changes provide two response directions. A secret key chooses which direction to favor while the model generates; later, a verifier recreates the same conditions and checks for agreement.</p></div>
+<figure><a href="assets/paradigm.webp" aria-label="Open the full-size watermarking comparison"><img src="assets/paradigm.webp" width="1191" height="438" alt="Token-level watermarking counts keyed tokens from text alone. ReplayMark queries the same checkpoint on re-masked text and counts keyed model-response matches." loading="lazy"></a><figcaption>Figure 1 from the paper. The signal moves from token identities to the checkpoint’s response to re-masked context.</figcaption></figure>
+<div class="principles"><div><span class="principle-number">01</span><h3>Keep the schedule</h3><p>The reference decoder still chooses which position to commit next.</p></div><div><span class="principle-number">02</span><h3>Replay the evidence</h3><p>The finished text, key, and same checkpoint are enough to rebuild the probes.</p></div><div><span class="principle-number">03</span><h3>Test exactly</h3><p>Key-independent carrier selection gives an exact binomial false-positive bound.</p></div></div>
+</div></section>
+<section class="section" id="method"><div class="wrap">
+<p class="eyebrow">How it works</p><h2>Probe. Write. Replay.</h2>
+<p class="section-lead">A carrier is a text position where plausible tokens support both response directions. Choose the carriers first; consult the keyed direction second.</p>
+<ol class="method-steps"><li><span class="step-number">1</span><div><h3>Probe the context</h3><p>Re-mask the current block and suffix, then hide different parts of the completed prefix. Compare the model’s token probabilities and retain positions with two viable response directions.</p></div></li><li><span class="step-number">2</span><div><h3>Write a keyed response</h3><p>At a carrier, draw up to <i>R</i> candidates from the live model distribution. Accept the first plausible token in the keyed direction; otherwise, use an unchecked draw. The model’s commit order remains unchanged.</p></div></li><li><span class="step-number">3</span><div><h3>Replay and count</h3><p>Re-mask the finished text and query the same checkpoint. Reconstruct the carriers, count responses that agree with the key, and calculate an exact binomial-tail <i>p</i>-value.</p></div></li></ol>
+<figure class="carrier-figure"><a href="assets/carriers.webp" aria-label="Open the full-size carrier map"><img src="assets/carriers.webp" width="1191" height="285" alt="Carrier availability in a saved 512-token LLaDA output, arranged in 16 blocks of 32 positions. Blue positions pass the response-balance threshold; outlined positions are skipped." loading="lazy"></a><figcaption><strong>Where can the signal live?</strong> In this saved LLaDA example, 490 of 512 positions pass the carrier threshold. Positions close to revealed text are often too predictable to support both directions. Figure 3 from the paper.</figcaption></figure>
+</div></section>
+<section class="section soft" id="verification"><div class="wrap">
+<p class="eyebrow">From responses to evidence</p><h2>How many matches are more than chance?</h2>
+<div class="prose"><p>For text written without the document key, each carrier agrees with its keyed direction with probability ½. When carrier selection is independent of that direction, the total match count follows an exact binomial distribution.</p></div>
+<div class="interactive" id="evidence-demo" hidden>
+<div class="demo-heading"><div><h3>Try a small replay</h3><p>Click a carrier to switch between a match and a mismatch.</p></div><span class="demo-label">Illustrative · no model inference</span></div>
+<div class="demo-body"><div class="demo-input"><div id="carrier-grid" class="carrier-grid" role="group" aria-label="Twenty illustrative carrier outcomes"></div><div class="demo-legend"><span><i class="legend-dot match"></i> Matches the key</span><span><i class="legend-dot miss"></i> Does not match</span></div><button id="reset-demo" class="text-button" type="button">Reset example ↺</button></div><div class="demo-output" aria-live="polite" aria-atomic="true"><p class="metric-label">Matching responses</p><p class="match-count"><span id="match-count">16</span><span> / 20</span></p><div class="pvalue-line"><span>Exact <i>p</i>-value</span><strong id="p-value">0.005909</strong></div><p id="decision" class="decision detected">Below the 1% threshold</p><p class="demo-threshold">Decision rule: detect when <i>p</i> ≤ 0.01.</p></div></div>
+<p class="demo-note">These 20 outcomes are a teaching example, not generated text or a benchmark result. Real verification reruns the registered checkpoint to obtain the outcomes.</p>
+</div>
+<div class="formula" aria-label="The p-value is the probability that a binomial random variable with n trials and success probability one half is at least the observed match count T"><i>p</i> = Pr[Binomial(<i>n</i>, ½) ≥ <i>T</i>]</div>
+<p class="formula-note">The false-positive guarantee assumes independent hash domains and text produced without the document key. No calibration corpus is required.</p>
+</div></section>
+<section class="section" id="results"><div class="wrap">
+<p class="eyebrow">Experimental results</p><h2>One setting. Two checkpoints.</h2>
+<p class="section-lead">A configuration selected on LLaDA-8B-Instruct is reused on Dream-7B-Instruct without retuning.</p>
+<div class="results-highlights"><div><strong>80<span>%</span></strong><span>LLaDA detection at 1% FPR</span></div><div><strong>90<span>%</span></strong><span>Dream detection at 1% FPR</span></div><div><strong>144</strong><span>Verification passes / 512 tokens</span></div></div>
+<h3 class="table-heading">Detection, text quality, and compute</h3><p class="table-intro">Select a checkpoint to compare the measured tradeoffs. Higher TPR means more watermarked documents detected; PPL ratio compares each method with its own unwatermarked run.</p>
+<div class="model-switch" role="group" aria-label="Checkpoint" hidden><button type="button" class="active" data-model="llada" aria-pressed="true">LLaDA-8B-Instruct</button><button type="button" data-model="dream" aria-pressed="false">Dream-7B-Instruct</button></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Watermark detection and compute results"><table class="results-table" id="detection-table"><caption>Detection and cost · <span id="model-caption">LLaDA-8B-Instruct</span></caption><thead><tr><th scope="col">Method / setting</th><th scope="col">TPR @ 1% ↑</th><th scope="col">TPR @ 0.1% ↑</th><th scope="col">PPL ratio ↓</th><th scope="col">Generation<br>passes ↓</th><th scope="col">Verification<br>passes ↓</th></tr></thead><tbody id="llada-results"><tr><th scope="row">KGW <small>δ = 1</small></th><td>0.90</td><td>0.83</td><td>1.22×</td><td>512</td><td>0</td></tr><tr><th scope="row">dgMARK <small>k = 1</small></th><td>0.83</td><td>0.80</td><td>1.45×</td><td>512</td><td>0</td></tr><tr><th scope="row">dgMARK <small>+3-beam</small></th><td>0.93</td><td>0.93</td><td>1.21×</td><td>~2,048</td><td>0</td></tr><tr><th scope="row">ReplayMark <small>R = 1</small></th><td>0.43</td><td>0.20</td><td>0.97×</td><td>656</td><td>144</td></tr><tr><th scope="row">ReplayMark <small>R = 8, κ = 0.1</small></th><td>0.70</td><td>0.60</td><td>0.87×</td><td>656</td><td>144</td></tr><tr class="ours"><th scope="row">ReplayMark <small>R = 16, κ = 0.05</small></th><td>0.80</td><td>0.60</td><td>0.74×</td><td>656</td><td>144</td></tr></tbody><tbody id="dream-results"><tr class="model-divider"><th colspan="6">Dream-7B-Instruct</th></tr><tr><th scope="row">KGW <small>δ = 1</small></th><td>0.57</td><td>0.37</td><td>1.84×</td><td>512</td><td>0</td></tr><tr><th scope="row">dgMARK <small>k = 1</small></th><td>0.37</td><td>0.27</td><td>1.75×</td><td>512</td><td>0</td></tr><tr><th scope="row">dgMARK <small>+3-beam</small></th><td>0.30</td><td>0.30</td><td>0.71×</td><td>~2,048</td><td>0</td></tr><tr><th scope="row">ReplayMark <small>R = 1</small></th><td>0.40</td><td>0.27</td><td>1.34×</td><td>656</td><td>144</td></tr><tr><th scope="row">ReplayMark <small>R = 8, κ = 0.1</small></th><td>0.70</td><td>0.67</td><td>0.79×</td><td>656</td><td>144</td></tr><tr class="ours"><th scope="row">ReplayMark <small>R = 16, κ = 0.05</small></th><td>0.90</td><td>0.90</td><td>1.09×</td><td>656</td><td>144</td></tr></tbody></table></div>
+<p class="table-note">Table 1 of the paper. C4 realnewslike prompts; 512-token continuations; 32-token blocks. Detection cohorts: n = 30, or n = 20 for R = 16. Dream PPL uses 8–13 scored pairs. PPL ratios are relative to each method’s own unwatermarked decoder.</p>
+<p class="result-takeaway"><strong>The tradeoff:</strong> ReplayMark’s main setting transfers from 0.80 to 0.90 TPR across checkpoints, but verification requires model access and 144 forward passes. The baselines need no verification forward passes, and some detect LLaDA output more often.</p>
+<details class="quality-details"><summary>Downstream task performance <span>MMLU · GSM8K · HumanEval</span></summary><div class="table-scroll" tabindex="0" role="region" aria-label="Downstream task performance"><table class="quality-table"><caption>Table 2 · Task accuracy under greedy and multinomial decoding</caption><thead><tr><th scope="col" rowspan="2">Model / method</th><th scope="colgroup" colspan="3">Greedy</th><th scope="colgroup" colspan="3">Multinomial</th></tr><tr><th scope="col">MMLU</th><th scope="col">GSM8K</th><th scope="col">HumanEval</th><th scope="col">MMLU</th><th scope="col">GSM8K</th><th scope="col">HumanEval</th></tr></thead><tbody><tr class="model-divider"><th colspan="7">LLaDA-8B-Instruct</th></tr><tr><th scope="row">Unwatermarked</th><td>0.605</td><td>0.740</td><td>0.409</td><td>0.595</td><td>0.640</td><td>0.335</td></tr><tr><th scope="row">KGW</th><td>0.615</td><td>0.680</td><td>0.384</td><td>0.535</td><td>0.740</td><td>0.293</td></tr><tr><th scope="row">dgMARK</th><td>0.595</td><td>0.660</td><td>0.396</td><td>0.530</td><td>0.660</td><td>0.341</td></tr><tr><th scope="row">dgMARK +3-beam</th><td>0.595</td><td>0.620</td><td>0.329</td><td>0.530</td><td>0.660</td><td>0.280</td></tr><tr class="ours"><th scope="row">ReplayMark</th><td>0.590</td><td>0.680</td><td>0.335</td><td>0.575</td><td>0.700</td><td>0.384</td></tr><tr class="model-divider"><th colspan="7">Dream-7B-Instruct</th></tr><tr><th scope="row">Unwatermarked</th><td>0.740</td><td>0.840</td><td>0.549</td><td>0.695</td><td>0.660</td><td>0.427</td></tr><tr><th scope="row">KGW</th><td>0.680</td><td>0.760</td><td>0.524</td><td>0.625</td><td>0.700</td><td>0.421</td></tr><tr><th scope="row">dgMARK</th><td>0.740</td><td>0.720</td><td>0.530</td><td>0.570</td><td>0.560</td><td>0.421</td></tr><tr><th scope="row">dgMARK +3-beam</th><td>0.745</td><td>0.580</td><td>0.470</td><td>0.645</td><td>0.560</td><td>0.329</td></tr><tr class="ours"><th scope="row">ReplayMark</th><td>0.745</td><td>0.700</td><td>0.470</td><td>0.710</td><td>0.680</td><td>0.439</td></tr></tbody></table></div><p class="table-note">ReplayMark: R = 16, κ = 0.05. MMLU and GSM8K report accuracy; HumanEval reports pass@1 (higher is better). Evaluated on 200, 50, and 164 problems, respectively. Harnesses differ across methods; the paper’s accuracy-change analysis uses each method’s paired unwatermarked runs.</p></details>
+</div></section>
+<section class="section soft" id="scope"><div class="wrap">
+<p class="eyebrow">Scope &amp; limitations</p><h2>Evidence for a registered checkpoint.</h2>
+<p class="section-lead">Designed for a provider or auditor who can replay the model—not for screening arbitrary text without model access.</p>
+<div class="scope-grid"><div><h3>What verification needs</h3><p>The same checkpoint, numerical precision, document key, and probe construction. At 512 tokens, verification takes 144 forward passes—about 27 seconds on a TITAN RTX in the reported setup.</p></div><div><h3>Where edits matter</h3><p>In the editing study, contiguous re-denoising of 10% or 30% of tokens retains 0.88 TPR. Scattering 10% of edits lowers it to 0.50, and full paraphrasing removes detection. Short fragments also offer fewer carriers.</p></div></div>
+<p class="scope-note">A low <i>p</i>-value is evidence of agreement with the registered key and replay procedure. It does not identify the requester or attribute individual passages. The study covers two masked DLMs and small document cohorts; broader validation remains future work.</p>
+</div></section>
+<section class="section citation-section" id="citation"><div class="wrap">
+<div class="citation-heading"><div><p class="eyebrow">Citation</p><h2>BibTeX</h2></div><button id="copy-citation" type="button" class="copy-button" hidden>Copy BibTeX</button></div>
+<pre><code id="bibtex">@inproceedings{lee2026replaymark,
+  title     = {ReplayMark: Probe-and-Replay Model-Response
+               Watermarking for Diffusion Language Models},
+  author    = {Chia-Ming Lee and Wen-Hsin Tsai and
+               Tung Yuk Ying and Chih-Chung Hsu},
+  booktitle = {NeurIPS 2026 Workshop on Foundations of
+               Language Model Security},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=fmXX4kVZ30}
+}</code></pre><span id="copy-status" role="status"></span>
+</div></section>
+</main>
+<footer><div class="wrap"><a class="wordmark" href="#top"><span aria-hidden="true">↻</span> ReplayMark</a><p>NeurIPS 2026 FLMSec Workshop · Distinguished Paper</p><p class="footer-links"><a href="https://ming053l.github.io/">Chia-Ming Lee</a><span>·</span><a href="https://github.com/ming053l/ReplayMark">Code &amp; reproducibility</a></p><p class="credits">Figures and results from the ReplayMark paper. Page structure inspired by <a href="https://dgmark-watermarking.github.io/">dgMARK</a>.</p></div></footer>
+</body>
+</html>

@@ -247,6 +247,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://openreview.net/pdf?id=fmXX4kVZ30" rel="noopener" target="_blank">Paper</a>
 <a href="https://openreview.net/forum?id=fmXX4kVZ30" rel="noopener" target="_blank">OpenReview</a>
 <a href="https://github.com/ming053l/ReplayMark" rel="noopener" target="_blank">GitHub</a>
+<a href="https://ming053l.github.io/ReplayMark/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
 </div>
