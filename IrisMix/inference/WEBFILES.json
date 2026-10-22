@@ -1,6 +1,6 @@
 {
   "format": "irismix-public-frontend-v1",
-  "sourceReleaseInventorySHA256": "513359a164b822531540c9a8e30ded023efc2cc92395fbc62430fe97d02ab60d",
+  "sourceReleaseInventorySHA256": "1c2916671b319a0839e8530413e42014b2ede3cf9d0f65e09940f48f253ba4fc",
   "modelBase": "https://huggingface.co/ming0531/IrisMix-browser/resolve/b961ede36941fcab68a71a8ce7f2b74677db8aa0/",
   "weightsIncluded": false,
   "parentAssets": {
@@ -29,6 +29,36 @@
       "sha256": "f058d20f345948f3b21095345acf085d0f19973ab100da666c4bc4df31de7dff"
     },
     {
+      "path": "brand/favicon.svg",
+      "bytes": 806,
+      "sha256": "4aae1e4b51d53fab0dabf7e982c4a6f9d610bc74561a28118ddf861b1201b7d3"
+    },
+    {
+      "path": "brand/irismix-logo-inverse.svg",
+      "bytes": 6654,
+      "sha256": "1d0a7f127c58bff7bd720f268c26ff769e01915ad901f719fcd096bd19183a5f"
+    },
+    {
+      "path": "brand/irismix-logo-mono.svg",
+      "bytes": 6654,
+      "sha256": "b34e642ae219e8074d0a53b5dbd990aa03b334e74b78ee82003e6f840a507a48"
+    },
+    {
+      "path": "brand/irismix-logo.svg",
+      "bytes": 6654,
+      "sha256": "c7c2f9f6610628a64fd8b1006e28efdc6c3c7a47c4ddd79f97c37c024edaa944"
+    },
+    {
+      "path": "brand/irismix-mark-mono.svg",
+      "bytes": 730,
+      "sha256": "003256c4a05575a250151db6d911d5a34ef6ce3d3093499cb9552f9b9f73fd9d"
+    },
+    {
+      "path": "brand/irismix-mark.svg",
+      "bytes": 730,
+      "sha256": "fd8357bc388aa963a67a5ce71f0f572ef633ee6dde9b1dd5f56ea8e7f2e9f2f1"
+    },
+    {
       "path": "browser-prep/opencv.js",
       "bytes": 10964323,
       "sha256": "63366510248adf3a7eddf3e793dd825404efb7df3749f4d6f8557c7fa4ca8aa0"
@@ -55,8 +85,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 4102,
-      "sha256": "649eab07a967952d113282fc9f2c5ca3b60f36133fc760edcbfb3c7cca063bbc"
+      "bytes": 4257,
+      "sha256": "79fd03bad676f421b3728c50beb57c56a665c0315ad9472e1b005eb92f174d8b"
     },
     {
       "path": "lab-assets/manifest.json",
@@ -180,8 +210,8 @@
     },
     {
       "path": "photo-demo.css",
-      "bytes": 2869,
-      "sha256": "21da9526bc66804cc460482d3c9904ac9d2b9181c5eedc5057da6da64bb5a0c1"
+      "bytes": 3181,
+      "sha256": "a5a336e146ab1d1ba967d2c4a0cf137464618a7b846a50f7003d515138688a00"
     },
     {
       "path": "photo-demo.mjs",
