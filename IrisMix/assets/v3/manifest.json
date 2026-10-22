@@ -3,41 +3,9 @@
   "width": 640,
   "height": 640,
   "maskSize": 512,
-  "defaultSource": "sample",
-  "source": "source-sample.webp",
+  "defaultSource": "studio",
+  "source": "source-studio.webp",
   "sources": [
-    {
-      "id": "sample",
-      "label": "瀏海人像",
-      "image": "source-sample.webp",
-      "thumbnail": "source-sample-thumb.webp",
-      "provenance": {
-        "kind": "user-provided portrait",
-        "originalSHA256": "8945fe32f1506e06f832584976562e7673c73939bfcc89c883f426370063c062",
-        "originalSize": [
-          459,
-          600
-        ],
-        "cropBoxPIL": [
-          0,
-          136,
-          459,
-          595
-        ],
-        "preparedSize": [
-          459,
-          459
-        ],
-        "preparedSHA256": "228a870d467ad51209aae4ed623fecffd021e0dedcc5eb5744e3f9abdda21b0a",
-        "resampling": "none",
-        "retouch": "none",
-        "qualityNotes": [
-          "Short side459px, below public upload checker512px requirement.",
-          "Original is soft and has light existing makeup; no sharpening or generative correction.",
-          "Fringe covers the upper forehead; forehead designs may be occluded."
-        ]
-      }
-    },
     {
       "id": "studio",
       "label": "柔光人像",
@@ -95,41 +63,6 @@
           "map": "warm-satin-map.png",
           "render": "warm-satin-render.webp",
           "warp": "warm-satin-warp.webp"
-        },
-        "sample": {
-          "layer": "sample-satin-layer.webp",
-          "map": "sample-satin-map.png",
-          "render": "sample-satin-render.webp",
-          "warp": "sample-satin-warp.webp",
-          "provenance": {
-            "execution": "actual native PyTorch Stage II; static browser layer compositing",
-            "stage2": "FULL/lora_step3000_ema",
-            "checkpointSHA256": "b000426662e8ee11157f8636fea00824715f485119596062b700d18ebd03543e",
-            "arithmetic": "native bfloat16 autocast, native full weights and learned skips",
-            "sampler": {
-              "sigma": 0.65,
-              "steps": 1,
-              "seed": 0,
-              "omega": 2
-            },
-            "stage1": "C2/lora_step2000",
-            "stage1Execution": "cached native Stage I C2 prediction",
-            "stage1CacheSHA256": "7b606baa7144e2aa2539b0c8a024ae35b15d5de5fb595b3206ba9d950915f1bb",
-            "sourceKind": "user-provided portrait",
-            "sourcePreparedFileSHA256": "228a870d467ad51209aae4ed623fecffd021e0dedcc5eb5744e3f9abdda21b0a",
-            "sourcePixelsSHA256": "611b001cbdbc56d45252657be475b76f9f050f4792450ef6ba21237cb2073431",
-            "nativePairSHA256": "7fcfab74ffd9616ec0de4875995ce4c0e4a4bce1bd1648db8d4fb199c1c9173c",
-            "referenceDisplay": {
-              "cropXY": [
-                24,
-                56
-              ],
-              "cropSide": 894,
-              "image": "satin-reference.webp",
-              "sha256": "fa42cbda30eab912a78a3d23e663f24c782d39152be37eeab93ad474a0e568ed"
-            },
-            "referenceGeometry": "actual cached Stage I bare-face landmarks mapped into the unchanged displayed REF crop"
-          }
         }
       },
       "masks": {
@@ -175,41 +108,6 @@
           "map": "warm-merlot-map.png",
           "render": "warm-merlot-render.webp",
           "warp": "warm-merlot-warp.webp"
-        },
-        "sample": {
-          "layer": "sample-merlot-layer.webp",
-          "map": "sample-merlot-map.png",
-          "render": "sample-merlot-render.webp",
-          "warp": "sample-merlot-warp.webp",
-          "provenance": {
-            "execution": "actual native PyTorch Stage II; static browser layer compositing",
-            "stage2": "FULL/lora_step3000_ema",
-            "checkpointSHA256": "b000426662e8ee11157f8636fea00824715f485119596062b700d18ebd03543e",
-            "arithmetic": "native bfloat16 autocast, native full weights and learned skips",
-            "sampler": {
-              "sigma": 0.65,
-              "steps": 1,
-              "seed": 0,
-              "omega": 2
-            },
-            "stage1": "C2/lora_step2000",
-            "stage1Execution": "cached native Stage I C2 prediction",
-            "stage1CacheSHA256": "7b606baa7144e2aa2539b0c8a024ae35b15d5de5fb595b3206ba9d950915f1bb",
-            "sourceKind": "user-provided portrait",
-            "sourcePreparedFileSHA256": "228a870d467ad51209aae4ed623fecffd021e0dedcc5eb5744e3f9abdda21b0a",
-            "sourcePixelsSHA256": "611b001cbdbc56d45252657be475b76f9f050f4792450ef6ba21237cb2073431",
-            "nativePairSHA256": "3ee21e70b5922191d7a2c506cfb12bc4003b98fb59292bea170bb821284a3bcb",
-            "referenceDisplay": {
-              "cropXY": [
-                0,
-                0
-              ],
-              "cropSide": 1024,
-              "image": "merlot-reference.webp",
-              "sha256": "5a73935afbaeff04ac16c400cf726e85606a2e51eca7731d20a0abefb526d8e4"
-            },
-            "referenceGeometry": "actual cached Stage I bare-face landmarks mapped into the unchanged displayed REF crop"
-          }
         }
       },
       "masks": {
@@ -255,41 +153,6 @@
           "map": "warm-mint-map.png",
           "render": "warm-mint-render.webp",
           "warp": "warm-mint-warp.webp"
-        },
-        "sample": {
-          "layer": "sample-mint-layer.webp",
-          "map": "sample-mint-map.png",
-          "render": "sample-mint-render.webp",
-          "warp": "sample-mint-warp.webp",
-          "provenance": {
-            "execution": "actual native PyTorch Stage II; static browser layer compositing",
-            "stage2": "FULL/lora_step3000_ema",
-            "checkpointSHA256": "b000426662e8ee11157f8636fea00824715f485119596062b700d18ebd03543e",
-            "arithmetic": "native bfloat16 autocast, native full weights and learned skips",
-            "sampler": {
-              "sigma": 0.65,
-              "steps": 1,
-              "seed": 0,
-              "omega": 2
-            },
-            "stage1": "C2/lora_step2000",
-            "stage1Execution": "cached native Stage I C2 prediction",
-            "stage1CacheSHA256": "7b606baa7144e2aa2539b0c8a024ae35b15d5de5fb595b3206ba9d950915f1bb",
-            "sourceKind": "user-provided portrait",
-            "sourcePreparedFileSHA256": "228a870d467ad51209aae4ed623fecffd021e0dedcc5eb5744e3f9abdda21b0a",
-            "sourcePixelsSHA256": "611b001cbdbc56d45252657be475b76f9f050f4792450ef6ba21237cb2073431",
-            "nativePairSHA256": "82a98ca1564c4e28cb07380a4c29a4a7c3e68f934a6fb8e33ff521d0aecd9895",
-            "referenceDisplay": {
-              "cropXY": [
-                38,
-                0
-              ],
-              "cropSide": 986,
-              "image": "mint-reference.webp",
-              "sha256": "a6ea284d9c0f3342ada9f3eec74035ad118d97c964d4d145fa9696ee3c37785b"
-            },
-            "referenceGeometry": "actual cached Stage I bare-face landmarks mapped into the unchanged displayed REF crop"
-          }
         }
       },
       "masks": {
@@ -329,41 +192,6 @@
           "map": "smile-lily-map.png",
           "render": "smile-lily-render.webp",
           "warp": "smile-lily-warp.webp"
-        },
-        "sample": {
-          "layer": "sample-lily-layer.webp",
-          "map": "sample-lily-map.png",
-          "render": "sample-lily-render.webp",
-          "warp": "sample-lily-warp.webp",
-          "provenance": {
-            "execution": "actual native PyTorch Stage II; static browser layer compositing",
-            "stage2": "FULL/lora_step3000_ema",
-            "checkpointSHA256": "b000426662e8ee11157f8636fea00824715f485119596062b700d18ebd03543e",
-            "arithmetic": "native bfloat16 autocast, native full weights and learned skips",
-            "sampler": {
-              "sigma": 0.65,
-              "steps": 1,
-              "seed": 0,
-              "omega": 2
-            },
-            "stage1": "C2/lora_step2000",
-            "stage1Execution": "cached native Stage I C2 prediction",
-            "stage1CacheSHA256": "7b606baa7144e2aa2539b0c8a024ae35b15d5de5fb595b3206ba9d950915f1bb",
-            "sourceKind": "user-provided portrait",
-            "sourcePreparedFileSHA256": "228a870d467ad51209aae4ed623fecffd021e0dedcc5eb5744e3f9abdda21b0a",
-            "sourcePixelsSHA256": "611b001cbdbc56d45252657be475b76f9f050f4792450ef6ba21237cb2073431",
-            "nativePairSHA256": "a88bcbcf5d74df0f444134f25ec17f180569741eaae2df252e9bbd7432b0e08f",
-            "referenceDisplay": {
-              "cropXY": [
-                97,
-                94
-              ],
-              "cropSide": 863,
-              "image": "lily-reference.webp",
-              "sha256": "e9e454f71444feb7d524d44e807fff8a08f38f757992c50a44d75937f8cd0eae"
-            },
-            "referenceGeometry": "actual cached Stage I bare-face landmarks mapped into the unchanged displayed REF crop"
-          }
         }
       },
       "masks": {
@@ -409,41 +237,6 @@
           "map": "warm-cobalt-map.png",
           "render": "warm-cobalt-render.webp",
           "warp": "warm-cobalt-warp.webp"
-        },
-        "sample": {
-          "layer": "sample-cobalt-layer.webp",
-          "map": "sample-cobalt-map.png",
-          "render": "sample-cobalt-render.webp",
-          "warp": "sample-cobalt-warp.webp",
-          "provenance": {
-            "execution": "actual native PyTorch Stage II; static browser layer compositing",
-            "stage2": "FULL/lora_step3000_ema",
-            "checkpointSHA256": "b000426662e8ee11157f8636fea00824715f485119596062b700d18ebd03543e",
-            "arithmetic": "native bfloat16 autocast, native full weights and learned skips",
-            "sampler": {
-              "sigma": 0.65,
-              "steps": 1,
-              "seed": 0,
-              "omega": 2
-            },
-            "stage1": "C2/lora_step2000",
-            "stage1Execution": "cached native Stage I C2 prediction",
-            "stage1CacheSHA256": "7b606baa7144e2aa2539b0c8a024ae35b15d5de5fb595b3206ba9d950915f1bb",
-            "sourceKind": "user-provided portrait",
-            "sourcePreparedFileSHA256": "228a870d467ad51209aae4ed623fecffd021e0dedcc5eb5744e3f9abdda21b0a",
-            "sourcePixelsSHA256": "611b001cbdbc56d45252657be475b76f9f050f4792450ef6ba21237cb2073431",
-            "nativePairSHA256": "a57bbdcda363b4e1a6809061228299b6b4ecf41962a184ab957197707cf02e0d",
-            "referenceDisplay": {
-              "cropXY": [
-                0,
-                0
-              ],
-              "cropSide": 1024,
-              "image": "cobalt-reference.webp",
-              "sha256": "5a2de25dcdd72d774d4b31798c7648dfa0284af87c8d89e760cb4eba1c2ad17c"
-            },
-            "referenceGeometry": "actual cached Stage I bare-face landmarks mapped into the unchanged displayed REF crop"
-          }
         }
       },
       "masks": {
@@ -510,11 +303,6 @@
       "source": "smile",
       "reference": "poppy",
       "reason": "此組合的花形與花梗不完整，未收錄此組合。"
-    },
-    {
-      "source": "sample",
-      "reference": "poppy",
-      "reason": "瀏海與臉部角度使花形和花梗不完整，未收錄此組合。"
     }
   ]
 }
