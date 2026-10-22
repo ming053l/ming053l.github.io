@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "width": 640,
+  "height": 640,
+  "maskSize": 512,
+  "source": "source.webp",
+  "looks": [
+    {
+      "id": "satin",
+      "label": "Bare Satin",
+      "description": "Soft liner \u00b7 warm satin lips",
+      "reference": "satin-reference.webp",
+      "render": "satin-render.webp",
+      "warp": "satin-warp.webp",
+      "thumbnail": "satin-thumb.webp",
+      "layer": "satin-layer.webp",
+      "map": "satin-map.png",
+      "masks": {
+        "eyes": "satin-eyes-mask.png",
+        "lips": "satin-lips-mask.png",
+        "face": "satin-face-mask.png"
+      },
+      "provenance": {
+        "reference": "krelite5g1_ke045_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "source": "dailyjpb8g0_djp009_ref0",
+        "rendered": true
+      }
+    },
+    {
+      "id": "merlot",
+      "label": "Merlot",
+      "description": "Burgundy eyes \u00b7 deep berry lips",
+      "reference": "merlot-reference.webp",
+      "render": "merlot-render.webp",
+      "warp": "merlot-warp.webp",
+      "thumbnail": "merlot-thumb.webp",
+      "layer": "merlot-layer.webp",
+      "map": "merlot-map.png",
+      "masks": {
+        "eyes": "merlot-eyes-mask.png",
+        "lips": "merlot-lips-mask.png",
+        "face": "merlot-face-mask.png"
+      },
+      "provenance": {
+        "reference": "jpol6g1_jo016_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "source": "dailyjpb8g0_djp009_ref0",
+        "rendered": true
+      }
+    },
+    {
+      "id": "mint",
+      "label": "Mint Breeze",
+      "description": "Mint eyes \u00b7 soft rose lips",
+      "reference": "mint-reference.webp",
+      "render": "mint-render.webp",
+      "warp": "mint-warp.webp",
+      "thumbnail": "mint-thumb.webp",
+      "layer": "mint-layer.webp",
+      "map": "mint-map.png",
+      "masks": {
+        "eyes": "mint-eyes-mask.png",
+        "lips": "mint-lips-mask.png",
+        "face": "mint-face-mask.png"
+      },
+      "provenance": {
+        "reference": "jpol5g1_jo050_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "source": "dailyjpb8g0_djp009_ref0",
+        "rendered": true
+      }
+    },
+    {
+      "id": "lily",
+      "label": "Water Lily",
+      "description": "Green shadow \u00b7 floral face art",
+      "reference": "lily-reference.webp",
+      "render": "lily-render.webp",
+      "warp": "lily-warp.webp",
+      "thumbnail": "lily-thumb.webp",
+      "layer": "lily-layer.webp",
+      "map": "lily-map.png",
+      "masks": {
+        "eyes": "lily-eyes-mask.png",
+        "lips": "lily-lips-mask.png",
+        "face": "lily-face-mask.png"
+      },
+      "provenance": {
+        "reference": "eufairy6g1_ef032_ref1",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "source": "dailyjpb8g0_djp009_ref0",
+        "rendered": true
+      }
+    }
+  ]
+}

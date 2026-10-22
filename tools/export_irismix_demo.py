@@ -1,51 +1,85 @@
-"""Export the existing IrisMix teaser layers for the static browser demo; CPU only.
-Run from the homepage checkout. No model is loaded or invoked.
+"""Export curated, provenance-checked Stage II results and CPU brush correspondence.
+No generative model, diffusion pipeline or GPU is loaded by this exporter.
+Run with the existing flashmakeup Python environment from this website checkout.
 """
 from pathlib import Path
-import json
+import json, sys
 import numpy as np
+import cv2
 from PIL import Image
 
-CACHE = Path('/ssd1/chingheng/FlashMakeUp/work/teaser_video/cache/FULL_lora_step3000_ema/faces')
-OUT = Path(__file__).resolve().parents[1] / 'IrisMix/assets'
-LOOKS = [('everyday', 'hero', 'Everyday', ['Soft Brown', 'Brick Red', 'Rosy Blush']),
-         ('moon', 'rm', 'Sun & Moon', ['Rose & Pearl', 'Silver Moon', 'Sun & Moon']),
-         ('rose', 'bl_rose', 'Rose Garden', ['Pink Bloom', 'Rose Satin', 'Painted Roses']),
-         ('gold', 'bl_gold', 'Gilded', ['Golden Haze', 'Crimson', 'Gold Leaf'])]
-PARTS = ['eyes', 'lips', 'face']
-SIZE = (640, 640)
-
-def save(rgb, path, alpha=None):
-    im = Image.fromarray(rgb)
-    if alpha is not None:
-        im = im.convert('RGBA'); im.putalpha(Image.fromarray(alpha))
-    im = im.resize(SIZE, Image.Resampling.LANCZOS)
-    im.save(OUT / path, 'WEBP', quality=94, method=6)
-
+ROOT = Path('/ssd1/chingheng/FlashMakeUp')
+RENDERS = Path('/ssd5/ming/oneface_cache/FULL_lora_step3000_ema_s065n1r2')
+ITEMS = ROOT / 'LayerBeauty-Creative/items'
+OUT = Path(__file__).resolve().parents[1] / 'IrisMix/assets/v2'
 OUT.mkdir(parents=True, exist_ok=True)
-manifest = {'width': 640, 'height': 640, 'source': 'source.webp', 'looks': []}
-first = None
-for ident, name, label, names in LOOKS:
-    z = np.load(CACHE / f'look_{name}.npz')
-    # Use one shared spatial partition so references can be exchanged cleanly.
-    # The everyday cache's derived partition has no eye seed; the rose layout
-    # provides all three regions on this exact same source portrait.
-    pm = np.load(CACHE / 'pm_bl_rose.npz')['pm'].astype(np.float32)
-    if first is None:
-        first = z['S']; save(first, 'source.webp')
-    assert np.array_equal(first, z['S']), 'All selectable layers must share the same source portrait'
-    F = np.clip(z['F'].astype(np.float32), 0, 1)
-    alpha = z['at'].astype(np.float32)
-    entry = {'id': ident, 'label': label, 'preview': f'{ident}-preview.webp', 'parts': {}}
-    save(z['R'], entry['preview'])
-    for k, part in enumerate(PARTS):
-        fn = f'{ident}-{part}.webp'
-        save((F * 255 + .5).astype(np.uint8), fn, (np.clip(alpha * pm[k], 0, 1) * 255 + .5).astype(np.uint8))
-        refid = str(z['refs'][list(z['parts']).index(part)])
-        ref = np.load(CACHE / f'ref_{refid}.npz')['I']
-        thumb = Image.fromarray(ref).resize((128, 128), Image.Resampling.LANCZOS)
-        thumb.save(OUT / f'{ident}-{part}-ref.webp', 'WEBP', quality=85, method=6)
-        entry['parts'][part] = {'image': fn, 'reference': f'{ident}-{part}-ref.webp', 'label': names[k]}
-    manifest['looks'].append(entry)
-(OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-print(f'Exported {len(LOOKS)} looks; {sum(p.stat().st_size for p in OUT.iterdir()) / 1024:.0f} KiB total')
+sys.path.insert(0, str(ROOT / 'work/stage1_data'))
+import make_composites as MC
+
+LOOKS = [('satin', 'Bare Satin', 'Soft liner · warm satin lips', 'krelite5g1_ke045_ref0'),
+         ('merlot', 'Merlot', 'Burgundy eyes · deep berry lips', 'jpol6g1_jo016_ref0'),
+         ('mint', 'Mint Breeze', 'Mint eyes · soft rose lips', 'jpol5g1_jo050_ref0'),
+         ('lily', 'Water Lily', 'Green shadow · floral face art', 'eufairy6g1_ef032_ref1')]
+N, M = 640, 512
+S = np.asarray(Image.open(ITEMS/'dailyjpb8g0_djp009_ref0/bare.webp').convert('RGB'))
+P = MC.landmarks(S)
+assert P is not None
+P = MC.extend(P, S.shape) if hasattr(MC, 'extend') else P
+
+def webp(a, filename, size=(N,N), quality=95):
+    Image.fromarray(a).resize(size, Image.Resampling.LANCZOS).save(OUT/filename, 'WEBP', quality=quality, method=6)
+webp(S, 'source.webp')
+manifest = {'version': 2, 'width': N, 'height': N, 'maskSize': M, 'source': 'source.webp', 'looks': []}
+for ident, name, description, refid in LOOKS:
+    stamp=json.loads((RENDERS/f'{ident}.ckpt.json').read_text())
+    assert stamp['stage2'].endswith('/FULL/lora_step3000_ema.pt')
+    R=np.asarray(Image.open(RENDERS/f'{ident}.png').convert('RGB'))
+    assert R.shape == S.shape
+    ref=np.asarray(Image.open(ITEMS/refid/'madeup.webp').convert('RGB'))
+    bare=np.asarray(Image.open(ITEMS/refid/'bare.webp').convert('RGB'))
+    q=MC.landmarks(bare);assert q is not None, refid
+    # A face-centred reference crop makes the brush editor substantially larger.
+    lo=q.min(0);hi=q.max(0);mid=(lo+hi)/2
+    side=int(min(max(hi-lo)*1.55,*ref.shape[:2]));xy=np.clip(mid-side/2,0,np.array(ref.shape[:2][::-1])-side).astype(int)
+    x,y=xy;refcrop=ref[y:y+side,x:x+side]
+    webp(refcrop, f'{ident}-reference.webp',(768,768))
+    webp(R, f'{ident}-render.webp');webp(np.asarray(Image.open(RENDERS/f'{ident}_paste.png').convert('RGB')),f'{ident}-warp.webp')
+    webp(R,f'{ident}-thumb.webp',(160,160),90)
+    # Recover a layer from the actual Stage II output, never from the warp.
+    B=S.astype(np.float32)/255;I=R.astype(np.float32)/255;d=I-B
+    a=np.clip(np.maximum(np.max(d/np.maximum(1-B,1e-6),2),np.max(-d/np.maximum(B,1e-6),2)),0,1)
+    F=np.clip(B+d/np.maximum(a[...,None],1e-6),0,1)
+    rgba=np.dstack([(F*255+.5).astype(np.uint8),(a*255+.5).astype(np.uint8)])
+    webp(rgba,f'{ident}-layer.webp')
+    # For every target pixel, encode its corresponding pixel in the REF editor.
+    # RGB is a lossless 24-bit index; alpha must stay opaque to avoid premultiplication.
+    pd=P*(N/S.shape[0]);ps=MC.extend(q,ref.shape)
+    MC.pwarp(np.zeros(ref.shape[:2],np.float32),ps,pd,(N,N))
+    mx,my,inside=MC.pwarp.last_map
+    rx=np.rint((mx-x)/side*(M-1)).astype(int);ry=np.rint((my-y)/side*(M-1)).astype(int)
+    valid=inside&(rx>=0)&(rx<M)&(ry>=0)&(ry<M)
+    index=np.where(valid,ry*M+rx,0xffffff).astype(np.uint32)
+    packed=np.stack([(index>>16)&255,(index>>8)&255,index&255],2).astype(np.uint8)
+    Image.fromarray(packed).save(OUT/f'{ident}-map.png',optimize=True)
+    # Quick selections are optional conveniences; freehand masks use this same REF frame.
+    qs=(q-xy)/side*M
+    eye=np.zeros((M,M),np.uint8)
+    for a_,b_ in [(33,133),(362,263)]:
+        center=(qs[a_]+qs[b_])/2;w=np.linalg.norm(qs[a_]-qs[b_])
+        cv2.ellipse(eye,tuple(center.astype(int)),(int(w*.95),int(w*.65)),0,0,360,255,-1)
+    lip=np.zeros_like(eye);lipids=[61,146,91,181,84,17,314,405,321,375,291,409,270,269,267,0,37,39,40,185]
+    cv2.fillPoly(lip,[qs[lipids].astype(np.int32)],255);lip=cv2.dilate(lip,np.ones((9,9),np.uint8))
+    face=np.zeros_like(eye);cv2.fillConvexPoly(face,cv2.convexHull(qs[:468].astype(np.int32)),255)
+    face=cv2.subtract(face,cv2.max(eye,lip))
+    for key,mask in [('eyes',eye),('lips',lip),('face',face)]:
+        mask=cv2.GaussianBlur(mask,(0,0),2.5);Image.fromarray(mask).convert('RGB').save(OUT/f'{ident}-{key}-mask.png',optimize=True)
+    manifest['looks'].append({'id':ident,'label':name,'description':description,'reference':f'{ident}-reference.webp',
+      'render':f'{ident}-render.webp','warp':f'{ident}-warp.webp','thumbnail':f'{ident}-thumb.webp','layer':f'{ident}-layer.webp','map':f'{ident}-map.png',
+      'masks':{key:f'{ident}-{key}-mask.png' for key in ['eyes','lips','face']},
+      'provenance':{'reference':refid,'stage2':'FULL/lora_step3000_ema','sampler':'sigma=0.65, 1 step','source':'dailyjpb8g0_djp009_ref0','rendered':True}})
+    print('Exported',name,flush=True)
+(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print('Total KiB:',sum(p.stat().st_size for p in OUT.iterdir())//1024)
+if MC.LM is not None:
+    MC.LM.close()
+    MC.LM = None

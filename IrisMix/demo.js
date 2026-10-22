@@ -1,172 +1,69 @@
 (() => {
-  'use strict';
-  const parts = ['eyes', 'lips', 'face'];
-  const titles = { eyes: 'Eyes', lips: 'Lips', face: 'Blush & face art' };
-  const canvas = document.getElementById('portrait');
-  const ctx = canvas.getContext('2d');
-  const images = new Map();
-  const state = { selected: {}, strength: { eyes: 100, lips: 100, face: 100 }, hue: 0, original: false };
-  let data, pendingFrame = false, tinted = null;
-  const $ = id => document.getElementById(id);
-  const asset = file => `assets/${file}`;
-  function loadImage(file) {
-    if (images.has(file)) return Promise.resolve(images.get(file));
-    return new Promise((resolve, reject) => {
-      const image = new Image();
-      image.onload = () => { images.set(file, image); resolve(image); };
-      image.onerror = () => reject(new Error(`Could not load ${file}`));
-      image.src = asset(file);
-    });
-  }
-  function announce(message) { $('status').textContent = message; }
-  function requestDraw() {
-    if (pendingFrame) return;
-    pendingFrame = true;
-    requestAnimationFrame(() => { pendingFrame = false; draw(); });
-  }
-  function hueLayer(file) {
-    const key = `${file}:${state.hue}`;
-    if (tinted && tinted.key === key) return tinted.canvas;
-    const layer = document.createElement('canvas'); layer.width = data.width; layer.height = data.height;
-    const lc = layer.getContext('2d', { willReadFrequently: true });
-    lc.drawImage(images.get(file), 0, 0);
-    const pixels = lc.getImageData(0, 0, data.width, data.height), p = pixels.data;
-    // Rotate hue only on the prepared lip layer; the source portrait never changes.
-    for (let i = 0; i < p.length; i += 4) {
-      if (!p[i + 3]) continue;
-      const r = p[i] / 255, g = p[i + 1] / 255, b = p[i + 2] / 255;
-      const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min;
-      if (!d) continue;
-      const l = (max + min) / 2, sat = d / (1 - Math.abs(2 * l - 1));
-      let h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
-      h = ((h * 60 + state.hue) % 360 + 360) % 360 / 60;
-      const c = (1 - Math.abs(2 * l - 1)) * sat, x = c * (1 - Math.abs(h % 2 - 1)), m = l - c / 2;
-      const rgb = h < 1 ? [c,x,0] : h < 2 ? [x,c,0] : h < 3 ? [0,c,x] : h < 4 ? [0,x,c] : h < 5 ? [x,0,c] : [c,0,x];
-      p[i] = (rgb[0] + m) * 255; p[i + 1] = (rgb[1] + m) * 255; p[i + 2] = (rgb[2] + m) * 255;
-    }
-    lc.putImageData(pixels, 0, 0); tinted = { key, canvas: layer }; return layer;
-  }
-  function paint(target, original = false) {
-    target.globalAlpha = 1;
-    target.drawImage(images.get(data.source), 0, 0, data.width, data.height);
-    if (original) return;
-    for (const part of parts) {
-      const look = data.looks.find(l => l.id === state.selected[part]);
-      if (!look || !state.strength[part]) continue;
-      const file = look.parts[part].image;
-      target.globalAlpha = state.strength[part] / 100;
-      target.drawImage(part === 'lips' && state.hue ? hueLayer(file) : images.get(file), 0, 0);
-    }
-    target.globalAlpha = 1;
-  }
-  function draw() { paint(ctx, state.original); }
-  function showMix() {
-    state.original = false;
-    $('compare').setAttribute('aria-pressed', 'false');
-    $('compare').innerHTML = '<span aria-hidden="true">◐</span> Show original';
-    $('view-label').textContent = 'Your mix';
-  }
-  function updateControls() {
-    for (const part of parts) {
-      document.querySelectorAll(`[data-part="${part}"]`).forEach(button => {
-        button.setAttribute('aria-pressed', String(button.dataset.look === state.selected[part]));
-      });
-      const look = data.looks.find(l => l.id === state.selected[part]);
-      $(`${part}-name`).textContent = look ? look.parts[part].label : 'No layer';
-      $(`${part}-strength`).value = state.strength[part];
-      $(`${part}-strength`).disabled = !look;
-      $(`${part}-value`).value = `${state.strength[part]}%`;
-    }
-    for (const button of document.querySelectorAll('[data-preset]')) {
-      const matches = parts.every(part => state.selected[part] === button.dataset.preset && state.strength[part] === 100) && state.hue === 0;
-      button.setAttribute('aria-pressed', String(matches));
-    }
-    $('hue').disabled = state.selected.lips === 'none';
-    $('hue').value = state.hue;
-    $('hue-value').value = `${state.hue > 0 ? '+' : ''}${state.hue}°`;
-  }
-  function applyPreset(id) {
-    for (const part of parts) { state.selected[part] = id; state.strength[part] = 100; }
-    state.hue = 0; showMix(); updateControls(); requestDraw();
-    announce(`${data.looks.find(l => l.id === id).label} · Ready to remix`);
-  }
-  function buildControls() {
-    for (const look of data.looks) {
-      const button = document.createElement('button'); button.type = 'button'; button.className = 'preset';
-      button.dataset.preset = look.id; button.setAttribute('aria-pressed', 'false');
-      button.innerHTML = `<img src="${asset(look.preview)}" width="120" height="120" alt=""><span>${look.label}</span>`;
-      button.addEventListener('click', () => applyPreset(look.id)); $('presets').append(button);
-    }
-    for (const part of parts) {
-      const field = document.createElement('fieldset'); field.className = 'part';
-      field.innerHTML = `<legend><span class="part-title">${titles[part]}</span><span class="part-name" id="${part}-name"></span></legend><div class="part-options" id="${part}-options"></div>`;
-      $('parts').append(field); const options = $(`${part}-options`);
-      for (const look of [null, ...data.looks]) {
-        const button = document.createElement('button'); button.type = 'button'; button.className = 'part-option';
-        button.dataset.part = part; button.dataset.look = look ? look.id : 'none';
-        button.title = look ? look.parts[part].label : `Remove ${titles[part].toLowerCase()}`;
-        button.setAttribute('aria-label', button.title); button.setAttribute('aria-pressed', 'false');
-        if (look) button.innerHTML = `<img src="${asset(look.parts[part].reference)}" width="44" height="44" alt="">`;
-        else { button.classList.add('part-none'); button.innerHTML = '<span aria-hidden="true">∅</span>'; }
-        button.addEventListener('click', () => {
-          state.selected[part] = button.dataset.look; showMix(); updateControls(); requestDraw();
-          announce(`${titles[part]}: ${look ? look.parts[part].label : 'removed'}`);
-        });
-        options.append(button);
-      }
-      const strength = document.createElement('div'); strength.className = 'strength';
-      strength.innerHTML = `<input type="range" id="${part}-strength" min="0" max="100" value="100" aria-label="${titles[part]} strength" aria-describedby="${part}-value"><output id="${part}-value" for="${part}-strength">100%</output>`;
-      options.append(strength);
-      $(`${part}-strength`).addEventListener('input', event => {
-        state.strength[part] = Number(event.target.value); showMix(); updateControls(); requestDraw();
-      });
-    }
-  }
-  async function start() {
-    try {
-      if (!ctx) throw new Error('Canvas is not available');
-      const response = await fetch(asset('manifest.json'));
-      if (!response.ok) throw new Error('Palette is not available');
-      data = await response.json();
-      await Promise.all([loadImage(data.source), ...data.looks.flatMap(look => parts.map(part => loadImage(look.parts[part].image)))]);
-      buildControls();
-      canvas.hidden = false; $('portrait-fallback').hidden = true;
-      for (const id of ['compare','download','reset','shuffle','hue']) $(id).disabled = false;
-      $('hue').addEventListener('input', event => {
-        state.hue = Number(event.target.value); showMix(); updateControls(); requestDraw();
-      });
-      $('compare').addEventListener('click', () => {
-        state.original = !state.original;
-        $('compare').setAttribute('aria-pressed', String(state.original));
-        $('compare').innerHTML = state.original ? '<span aria-hidden="true">◐</span> Back to your mix' : '<span aria-hidden="true">◐</span> Show original';
-        $('view-label').textContent = state.original ? 'Original' : 'Your mix';
-        requestDraw(); announce(state.original ? 'Showing the original portrait' : 'Showing your makeup mix');
-      });
-      $('reset').addEventListener('click', () => applyPreset('everyday'));
-      $('shuffle').addEventListener('click', () => {
-        for (const part of parts) {
-          const choices = data.looks.filter(look => look.id !== state.selected[part]);
-          state.selected[part] = choices[Math.floor(Math.random() * choices.length)].id;
-          state.strength[part] = 100;
-        }
-        state.hue = 0; showMix(); updateControls(); requestDraw(); announce('A fresh mix · Make it yours');
-      });
-      $('download').addEventListener('click', () => {
-        // Export the mix even when the original is being compared on screen.
-        const output = document.createElement('canvas'); output.width = data.width; output.height = data.height;
-        paint(output.getContext('2d'));
-        output.toBlob(blob => {
-          if (!blob) { announce('Could not save this look. Please try again.'); return; }
-          const url = URL.createObjectURL(blob), a = document.createElement('a');
-          a.href = url; a.download = 'irismix-my-look.png'; a.click();
-          setTimeout(() => URL.revokeObjectURL(url), 10000); announce('Your look is ready to save');
-        }, 'image/png');
-      });
-      $('studio').setAttribute('aria-busy', 'false'); applyPreset('everyday');
-    } catch (error) {
-      $('studio').setAttribute('aria-busy', 'false'); $('error').hidden = false;
-      announce('The palette could not load'); console.error(error);
-    }
-  }
-  start();
+'use strict';
+const $ = id => document.getElementById(id), SIZE = 640, MASK = 512;
+const asset = name => `assets/v2/${name}`;
+const result = $('result'), rc = result.getContext('2d');
+const ref = $('reference'), fc = ref.getContext('2d');
+const brush = document.createElement('canvas'); brush.width = brush.height = MASK;
+const bc = brush.getContext('2d', { willReadFrequently: true });
+const overlay = document.createElement('canvas'); overlay.width = overlay.height = MASK;
+const oc = overlay.getContext('2d');
+const working = document.createElement('canvas'); working.width = working.height = SIZE;
+const wc = working.getContext('2d');
+const images = new Map(), maps = new Map(), layerPixels = new Map(), regionMasks = new Map();
+let manifest, selected = 'satin', layers = [], nextId = 1, selection = new Uint8ClampedArray(MASK * MASK);
+let history = [], future = [], tool = 'brush', drawing = false, last = null, reveal = 0, original = false;
+let scheduled = false, previewCache = null, mobileVisible = false, pendingStroke = false;
+const announce = text => { $('status').textContent = text; };
+const current = () => manifest.looks.find(look => look.id === selected);
+function image(name) {
+ if (images.has(name)) return Promise.resolve(images.get(name));
+ return new Promise((resolve, reject) => { const i = new Image(); i.onload = () => { images.set(name, i); resolve(i); }; i.onerror = () => reject(new Error(`Unable to load ${name}`)); i.src = asset(name); });
+}
+function pixels(i, size) { const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d',{willReadFrequently:true}); x.drawImage(i,0,0,size,size);return x.getImageData(0,0,size,size).data; }
+function snapshot() { return { selected, selection: selection.slice(), layers: layers.map(l => ({...l})), nextId }; }
+function remember() { history.push(snapshot()); if(history.length>30)history.shift(); future=[]; updateHistory(); }
+function restore(s) { selected=s.selected;selection=s.selection.slice();layers=s.layers.map(l=>({...l}));nextId=s.nextId;loadBrush();refreshReference();refreshLayers();updateHistory();schedule(); }
+function updateHistory(){ $('undo').disabled=!history.length; $('redo').disabled=!future.length; }
+function undo(){if(!history.length)return;future.push(snapshot());restore(history.pop());announce('Undone');}
+function redo(){if(!future.length)return;history.push(snapshot());restore(future.pop());announce('Redone');}
+function loadBrush(){const d=bc.createImageData(MASK,MASK);for(let i=0;i<selection.length;i++){d.data[i*4]=255;d.data[i*4+1]=255;d.data[i*4+2]=255;d.data[i*4+3]=selection[i];}bc.putImageData(d,0,0);previewCache=null;updateSelection();}
+function captureBrush(){const d=bc.getImageData(0,0,MASK,MASK).data;selection=new Uint8ClampedArray(MASK*MASK);for(let i=0;i<selection.length;i++)selection[i]=d[i*4+3];previewCache=null;updateSelection();}
+function updateSelection(){let count=0;for(const a of selection)if(a>20)count++;$('selection-label').textContent=count?`${Math.round(count/selection.length*100)}% selected`:'No selection';$('add-layer').disabled=!count;$('clear-selection').disabled=!count;$('result-label').textContent=count&&$('live-preview').checked?'Selection preview':'Committed layers';}
+function setSelection(values,label){remember();selection=values.slice();loadBrush();schedule();announce(label);}
+function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;drawReference();drawResult();});}
+function drawReference(){if(!manifest)return;fc.clearRect(0,0,MASK,MASK);fc.drawImage(images.get(current().reference),0,0,MASK,MASK);const d=oc.createImageData(MASK,MASK);for(let i=0;i<selection.length;i++){d.data[i*4]=45;d.data[i*4+1]=139;d.data[i*4+2]=222;d.data[i*4+3]=selection[i]*.46;}oc.putImageData(d,0,0);fc.drawImage(overlay,0,0);}
+function makeLayer(refId,mask){const l=manifest.looks.find(l=>l.id===refId),base=layerPixels.get(refId),map=maps.get(refId);const c=document.createElement('canvas');c.width=c.height=SIZE;const x=c.getContext('2d'),d=x.createImageData(SIZE,SIZE);d.data.set(base);for(let i=0;i<map.length;i++){const at=map[i];d.data[i*4+3]=at<mask.length?base[i*4+3]*mask[at]/255:0;}x.putImageData(d,0,0);return c;}
+function draft(){if(!previewCache)previewCache=makeLayer(selected,selection);return previewCache;}
+function paint(x,includeDraft){x.globalAlpha=1;x.drawImage(images.get(manifest.source),0,0,SIZE,SIZE);for(const l of layers){if(!l.visible)continue;x.globalAlpha=l.opacity/100;x.drawImage(l.canvas,0,0);}if(includeDraft&&$('live-preview').checked&&!$('add-layer').disabled){x.globalAlpha=1;x.drawImage(draft(),0,0);}x.globalAlpha=1;}
+function drawResult(){if(!manifest)return;paint(wc,true);rc.drawImage(working,0,0);const amount=original?100:reveal;if(amount){rc.save();rc.beginPath();rc.rect(0,0,SIZE*amount/100,SIZE);rc.clip();rc.drawImage(images.get(manifest.source),0,0);rc.restore();if(amount<100){rc.strokeStyle='#fff';rc.lineWidth=2;rc.beginPath();rc.moveTo(SIZE*amount/100,0);rc.lineTo(SIZE*amount/100,SIZE);rc.stroke();}}const mini=$('mobile-preview').querySelector('canvas').getContext('2d');mini.drawImage(result,0,0,160,160);}
+function refreshReference(){$('reference-label').textContent=current().label;document.querySelectorAll('[data-reference]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.reference===selected)));previewCache=null;updateSelection();}
+function refreshLayers(){const container=$('layers');container.replaceChildren();$('layer-count').textContent=layers.length;$('empty-layers').hidden=!!layers.length;
+ // The topmost layer is listed first, matching familiar image editors.
+ [...layers].reverse().forEach(layer=>{const look=manifest.looks.find(l=>l.id===layer.refId);const row=document.createElement('div');row.className=`layer${layer.visible?'':' is-hidden'}`;row.dataset.layerId=layer.id;
+ row.innerHTML=`<img src="${asset(look.reference)}" alt="" width="38" height="44"><div class="layer-meta"><strong>${look.label} · ${layer.label}</strong><div><input type="range" min="0" max="100" value="${layer.opacity}" aria-label="${look.label} layer strength"><output>${layer.opacity}%</output></div></div><div class="layer-tools"><button type="button" data-action="visibility" aria-label="${layer.visible?'Hide':'Show'} ${look.label} layer" aria-pressed="${layer.visible}">${layer.visible?'◉':'○'}</button><button type="button" data-action="up" aria-label="Move ${look.label} layer up">↑</button><button type="button" data-action="down" aria-label="Move ${look.label} layer down">↓</button><button type="button" data-action="remove" aria-label="Remove ${look.label} layer">×</button></div>`;
+ const i=layers.indexOf(layer);row.querySelector('[data-action=up]').disabled=i===layers.length-1;row.querySelector('[data-action=down]').disabled=i===0;
+ const range=row.querySelector('input');let tracked=false;range.addEventListener('pointerdown',()=>{remember();tracked=true;});range.addEventListener('input',()=>{if(!tracked){remember();tracked=true;}layer.opacity=Number(range.value);row.querySelector('output').value=`${layer.opacity}%`;schedule();});range.addEventListener('change',()=>{tracked=false;});
+ row.querySelectorAll('button[data-action]').forEach(b=>b.addEventListener('click',()=>{remember();const j=layers.indexOf(layer);switch(b.dataset.action){case 'visibility':layer.visible=!layer.visible;break;case 'remove':layers.splice(j,1);break;case 'up':[layers[j],layers[j+1]]=[layers[j+1],layers[j]];break;case 'down':[layers[j],layers[j-1]]=[layers[j-1],layers[j]];break;}refreshLayers();schedule();announce('Layer updated');}));container.append(row);});}
+function addSelection(){if($('add-layer').disabled)return;remember();if(layers.length>=12){announce('Keep up to 12 layers. Remove a layer before adding another.');return;}
+ const mask=selection.slice(),canvas=makeLayer(selected,mask);layers.push({id:nextId++,refId:selected,label:'Brush selection',opacity:100,visible:true,mask,canvas});selection=new Uint8ClampedArray(MASK*MASK);loadBrush();refreshLayers();schedule();announce(`${current().label} selection added`);}
+function point(event){const b=ref.getBoundingClientRect();return{x:Math.max(0,Math.min(MASK,(event.clientX-b.left)/b.width*MASK)),y:Math.max(0,Math.min(MASK,(event.clientY-b.top)/b.height*MASK))};}
+function stroke(from,to){bc.save();bc.globalCompositeOperation=tool==='eraser'?'destination-out':'source-over';bc.strokeStyle='white';bc.fillStyle='white';bc.lineCap='round';bc.lineJoin='round';bc.lineWidth=Number($('brush-size').value);bc.beginPath();bc.moveTo(from.x,from.y);bc.lineTo(to.x,to.y);bc.stroke();bc.beginPath();bc.arc(to.x,to.y,bc.lineWidth/2,0,Math.PI*2);bc.fill();bc.restore();pendingStroke=true;if(!scheduled){requestAnimationFrame(()=>{if(pendingStroke){pendingStroke=false;captureBrush();schedule();}});} }
+function wireBrush(){ref.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();remember();drawing=true;ref.setPointerCapture(e.pointerId);last=point(e);stroke(last,last);});ref.addEventListener('pointermove',e=>{const p=point(e),bounds=ref.getBoundingClientRect();const cursor=$('brush-cursor');cursor.hidden=e.pointerType==='touch';cursor.style.left=`${p.x/MASK*bounds.width}px`;cursor.style.top=`${p.y/MASK*bounds.height}px`;cursor.style.width=cursor.style.height=`${Number($('brush-size').value)/MASK*bounds.width}px`;if(drawing){stroke(last,p);last=p;}});const finish=()=>{if(!drawing)return;drawing=false;pendingStroke=false;captureBrush();schedule();announce('Reference region selected · add it to your look');};ref.addEventListener('pointerup',finish);ref.addEventListener('pointercancel',finish);ref.addEventListener('lostpointercapture',finish);ref.addEventListener('pointerleave',()=>{$('brush-cursor').hidden=true;});}
+function quickRegion(region){if(region==='all'){setSelection(new Uint8ClampedArray(MASK*MASK).fill(255),'Full reference selected');return;}setSelection(regionMasks.get(`${selected}:${region}`),`${region==='face'?'Face art':region} selected · brush to refine`);}
+function buildReferences(){for(const look of manifest.looks){const b=document.createElement('button');b.type='button';b.className='reference-card';b.dataset.reference=look.id;b.setAttribute('aria-pressed','false');b.innerHTML=`<img src="${asset(look.reference)}" alt="${look.label} reference portrait" width="88" height="88"><span><strong>${look.label}</strong><small>${look.description}</small></span>`;b.addEventListener('click',()=>{if(selected===look.id)return;remember();selected=look.id;selection=new Uint8ClampedArray(MASK*MASK);loadBrush();refreshReference();schedule();announce(`${look.label} · paint any reference region`);});$('references').append(b);}}
+function reset(){remember();layers=[];selected='satin';selection=new Uint8ClampedArray(MASK*MASK);original=false;reveal=0;$('reveal').value=0;$('reveal-value').value='0%';$('compare').setAttribute('aria-pressed','false');$('compare').textContent='◐ Show original';$('view-label').textContent='Your mix';loadBrush();refreshReference();refreshLayers();schedule();announce('Studio reset · start a new look');}
+async function start(){try{if(!rc||!fc)throw new Error('Canvas unavailable');const response=await fetch(asset('manifest.json'));if(!response.ok)throw new Error('Palette unavailable');manifest=await response.json();
+ await image(manifest.source);await Promise.all(manifest.looks.map(async look=>{await Promise.all([image(look.reference),image(look.layer),image(look.map),...Object.values(look.masks).map(image)]);layerPixels.set(look.id,pixels(images.get(look.layer),SIZE));const p=pixels(images.get(look.map),SIZE),map=new Uint32Array(SIZE*SIZE);for(let i=0;i<map.length;i++)map[i]=(p[i*4]<<16)|(p[i*4+1]<<8)|p[i*4+2];maps.set(look.id,map);for(const key of ['eyes','lips','face']){const d=pixels(images.get(look.masks[key]),MASK),mask=new Uint8ClampedArray(MASK*MASK);for(let i=0;i<mask.length;i++)mask[i]=d[i*4];regionMasks.set(`${look.id}:${key}`,mask);}}));
+ buildReferences();wireBrush();for(const id of ['brush','eraser','brush-size','live-preview','compare','download','reveal','reset','proof'])$(id).disabled=false;document.querySelectorAll('[data-region]').forEach(b=>{b.disabled=false;b.addEventListener('click',()=>quickRegion(b.dataset.region));});
+ $('brush').addEventListener('click',()=>{tool='brush';$('brush').setAttribute('aria-pressed','true');$('eraser').setAttribute('aria-pressed','false');});$('eraser').addEventListener('click',()=>{tool='eraser';$('brush').setAttribute('aria-pressed','false');$('eraser').setAttribute('aria-pressed','true');});$('brush-size').addEventListener('input',()=>{$('brush-size-value').value=$('brush-size').value;});$('clear-selection').addEventListener('click',()=>setSelection(new Uint8ClampedArray(MASK*MASK),'Selection cleared'));$('add-layer').addEventListener('click',addSelection);$('live-preview').addEventListener('change',()=>{updateSelection();schedule();});$('undo').addEventListener('click',undo);$('redo').addEventListener('click',redo);$('reset').addEventListener('click',reset);
+ $('compare').addEventListener('click',()=>{original=!original;$('compare').setAttribute('aria-pressed',String(original));$('compare').textContent=original?'◐ Back to your mix':'◐ Show original';$('view-label').textContent=original?'Original':'Your mix';schedule();});$('reveal').addEventListener('input',()=>{reveal=Number($('reveal').value);$('reveal-value').value=`${reveal}%`;original=false;$('compare').setAttribute('aria-pressed','false');$('compare').textContent='◐ Show original';$('view-label').textContent=reveal?'Original / mix':'Your mix';schedule();});
+ $('download').addEventListener('click',()=>{if(!layers.length){announce('Add a selection to your look before saving.');return;}const c=document.createElement('canvas');c.width=c.height=SIZE;paint(c.getContext('2d'),false);c.toBlob(blob=>{if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='irismix-my-look.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);announce('Saved your committed layers; unadded selections are not included');},'image/png');});
+ $('proof').addEventListener('click',()=>{$('proof-title').textContent=`${current().label}: warp vs. render`;$('proof-warp').src=asset(current().warp);$('proof-render').src=asset(current().render);$('proof-dialog').showModal();});$('close-proof').addEventListener('click',()=>$('proof-dialog').close());$('proof-dialog').addEventListener('click',e=>{if(e.target===$('proof-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
+ document.addEventListener('keydown',e=>{if(e.target.matches('input,textarea,select')||$('proof-dialog').open)return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo();}if(e.key==='b')$('brush').click();if(e.key==='e')$('eraser').click();});
+ $('mobile-preview').addEventListener('click',()=>$('result-panel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
+ if('IntersectionObserver'in window){let refVisible=false,resultVisible=false;const update=()=>{$('mobile-preview').hidden=!(refVisible&&!resultVisible&&innerWidth<=720);};new IntersectionObserver(es=>{refVisible=es[0].isIntersecting;update();},{threshold:.3}).observe(ref);new IntersectionObserver(es=>{resultVisible=es[0].isIntersecting;update();},{threshold:.1}).observe(result);window.addEventListener('resize',update);}
+ result.hidden=false;$('fallback').hidden=true;$('studio').setAttribute('aria-busy','false');loadBrush();refreshReference();refreshLayers();schedule();announce('Ready · paint on a reference to begin');
+ }catch(error){$('studio').setAttribute('aria-busy','false');$('error').hidden=false;announce('Studio could not load');console.error(error);}}
+start();
 })();

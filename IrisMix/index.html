@@ -1,59 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f4ee">
-  <meta name="description" content="Try IrisMix: mix eyes, lips and face art from sample references, adjust each layer and compare your look instantly.">
-  <title>IrisMix — The makeup playground</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
-  <script src="demo.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f4ee">
+<meta name="description" content="Brush any region of a makeup reference and mix prepared IrisMix layers on a sample portrait.">
+<title>IrisMix — The makeup studio</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css?v=2"><script src="demo.js?v=2" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="./" aria-label="IrisMix playground"><span class="brand-flower" aria-hidden="true">✳</span> IrisMix<span class="brand-tag">PLAYGROUND</span></a>
-    <a class="back" href="../#paper-irismix">Chia-Ming Lee <span aria-hidden="true">↗</span></a>
-  </header>
-  <main>
-    <section class="intro" aria-labelledby="title">
-      <div><p class="eyebrow">A LITTLE INSPIRATION. A LOOK OF YOUR OWN.</p><h1 id="title">Your look. <em>Your mix.</em></h1></div>
-      <p class="intro-copy">Eyes from one reference. Lips from another.<br>Mix the layers, find your balance, make it yours.</p>
-    </section>
-    <section class="playground" aria-label="Interactive makeup studio" aria-busy="true" id="studio">
-      <div class="portrait-column">
-        <div class="portrait-frame">
-          <img id="portrait-fallback" src="assets/everyday-preview.webp" width="640" height="640" alt="IrisMix everyday makeup on the sample portrait">
-          <canvas id="portrait" width="640" height="640" role="img" aria-label="Sample portrait with your selected makeup layers" hidden></canvas>
-          <div class="portrait-top"><span class="sample-tag">SAMPLE PORTRAIT</span><span id="view-label">Your mix</span></div>
-          <span class="portrait-signature" aria-hidden="true">IrisMix</span>
-        </div>
-        <div class="portrait-toolbar">
-          <button type="button" id="compare" aria-pressed="false" disabled><span aria-hidden="true">◐</span> Show original</button>
-          <button type="button" id="download" disabled>Save your look <span aria-hidden="true">↓</span></button>
-        </div>
-        <p class="preview-note">Interactive preview with prepared IrisMix layers.<br>Explore this sample portrait; no photo upload or live generation.</p>
-      </div>
-      <div class="controls-column">
-        <div class="section-label"><span>01 / START WITH A LOOK</span><button type="button" class="text-button" id="reset" disabled>Reset ↺</button></div>
-        <div id="presets" class="presets" aria-label="Starting looks"></div>
-        <div class="mix-heading"><div><p class="section-label">02 / MAKE IT YOURS</p><h2>A little of each.</h2></div><span class="mix-hint">Pick a reference.<br>Dial in the strength.</span></div>
-        <div id="parts" class="parts"></div>
-        <div class="hue-control">
-          <label for="hue">Lip color shift <output id="hue-value" for="hue">0°</output></label>
-          <input id="hue" class="hue-slider" type="range" min="-45" max="45" step="1" value="0" disabled>
-          <div class="range-ends"><span>Cooler</span><span>Original</span><span>Warmer</span></div>
-        </div>
-        <div class="bottom-actions"><span class="live-dot" aria-hidden="true"></span><p id="status" role="status" aria-live="polite">Loading your makeup palette…</p><button type="button" class="shuffle" id="shuffle" disabled>Surprise me ↗</button></div>
-        <p id="error" class="error" role="alert" hidden>We couldn’t load the palette. <button type="button" onclick="location.reload()">Try again</button></p>
-        <noscript><p>Enable JavaScript to mix makeup layers. The portrait above shows a prepared IrisMix result.</p></noscript>
-      </div>
-    </section>
-    <section class="about-demo" aria-labelledby="about-title">
-      <div><p class="eyebrow">BEHIND THE LOOK</p><h2 id="about-title">Makeup you can<br> <em>keep playing with.</em></h2></div>
-      <div><p>IrisMix separates a reference look into an explicit makeup layer. Parts from different references can be combined on a new face, then refined and edited without starting over.</p><p>This playground uses prepared model results on a synthetic sample portrait. Selection, strength and color edits happen in your browser. New photos and new transfers require the full IrisMix pipeline.</p><a href="../images/web/irismix-teaser.mp4">Watch IrisMix in action <span aria-hidden="true">↗</span></a></div>
-    </section>
-  </main>
-  <footer><span>IRISMIX / COMPOSITIONAL MAKEUP TRANSFER</span><a href="../#paper-irismix">Research by Chia-Ming Lee &amp; collaborators ↗</a></footer>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="./"><span aria-hidden="true">✳</span> IrisMix <small>MAKEUP STUDIO</small></a><a href="../#paper-irismix">Back to research ↗</a></header>
+<main>
+<section class="intro"><div><p class="eyebrow">BORROW A DETAIL. MAKE IT YOURS.</p><h1>Pick. Paint. <em>Remix.</em></h1></div><p>Brush over the makeup you like in a reference.<br>See exactly that region on your sample portrait.</p></section>
+<div id="studio" aria-busy="true">
+<section class="reference-library" aria-label="Reference library"><div class="section-heading"><h2>01 <span>Choose a reference</span></h2><span>Four selected looks · prepared Stage II results</span></div><div id="references" class="references"></div></section>
+<section class="workspace">
+<div class="reference-panel"><div class="panel-heading"><h2>02 <span>Paint your selection</span></h2><button type="button" id="proof" disabled>Warp vs. render ↗</button></div>
+<div class="image-frame brush-frame" id="brush-frame"><canvas id="reference" width="512" height="512" role="img" aria-label="Large makeup reference; drag to paint a region" tabindex="0"></canvas><div class="image-tag"><span id="reference-label">Loading reference…</span><span id="selection-label">No selection</span></div><div id="brush-cursor" aria-hidden="true" hidden></div></div>
+<p class="hint" id="brush-help">Paint on the reference to select makeup. The blue overlay marks your selection.</p>
+<div class="brush-toolbar" role="group" aria-label="Selection tools"><button type="button" id="brush" aria-pressed="true" disabled>Brush</button><button type="button" id="eraser" aria-pressed="false" disabled>Erase</button><label for="brush-size">Size</label><input id="brush-size" aria-label="Brush size" type="range" min="6" max="100" value="36" disabled><output id="brush-size-value" for="brush-size">36</output><button type="button" id="clear-selection" disabled>Clear</button></div>
+<div class="quick-selections" role="group" aria-label="Quick selection"><span>Or start with</span><button type="button" data-region="eyes" disabled>Eyes</button><button type="button" data-region="lips" disabled>Lips</button><button type="button" data-region="face" disabled>Face art</button><button type="button" data-region="all" disabled>Full look</button></div>
+<div class="selection-actions"><label class="preview-toggle"><input id="live-preview" type="checkbox" checked disabled> Preview selection</label><button class="primary" type="button" id="add-layer" disabled>Add selection to look <span aria-hidden="true">＋</span></button></div>
+</div>
+<div class="result-panel" id="result-panel"><div class="panel-heading"><h2>03 <span>Your look</span></h2><span id="result-label">Committed layers</span></div><div class="image-frame"><img id="fallback" src="assets/v2/satin-render.webp" width="640" height="640" alt="Prepared Bare Satin IrisMix result"><canvas id="result" width="640" height="640" aria-label="Your composed makeup look" role="img" hidden></canvas><div class="image-tag"><span>SAMPLE PORTRAIT</span><span id="view-label">Your mix</span></div><span class="signature" aria-hidden="true">IrisMix</span></div>
+<div class="result-toolbar"><button type="button" id="compare" aria-pressed="false" disabled>◐ Show original</button><button type="button" id="download" disabled>Save look ↓</button></div>
+<div class="compare-slider"><label for="reveal">Before / after divider</label><input id="reveal" type="range" min="0" max="100" value="0" aria-label="Original portrait reveal" disabled><output id="reveal-value" for="reveal">0%</output></div>
+<div class="layers-heading"><h3>Your layers <span id="layer-count">0</span></h3><div><button type="button" id="undo" disabled title="Undo (Ctrl/Cmd+Z)">↶ Undo</button><button type="button" id="redo" disabled title="Redo (Ctrl/Cmd+Shift+Z)">↷ Redo</button></div></div>
+<div id="layers" class="layers" aria-label="Makeup layer stack"></div><p id="empty-layers" class="hint">Your portrait is bare. Paint a reference region, then add it here.</p>
+<div class="studio-bottom"><p id="status" role="status" aria-live="polite">Loading the selected references…</p><button type="button" id="reset" disabled>Reset studio ↺</button></div>
+</div>
+</section>
+<p class="demo-note">Prepared model results, edited in your browser. Custom selections and mixes do not run a new generation.</p><p id="error" class="error" role="alert" hidden>We couldn’t load the studio. <button type="button" onclick="location.reload()">Reload</button></p><noscript>Enable JavaScript to use the makeup studio.</noscript>
+</div>
+<section class="about-demo"><div><p class="eyebrow">A LOOK IS JUST THE BEGINNING</p><h2>Keep the detail.<br> <em>Keep the control.</em></h2></div><div><p>Start with a complete look or brush a small detail from any reference. Add several selections, adjust their strength, and reorder or hide layers to find your balance. Undo takes you back through both selections and layer edits.</p><p>The selected examples were rendered offline by IrisMix Stage II. Freehand masks follow a face correspondence map from the reference to the sample portrait; the browser edits those saved results. This is a synthetic sample portrait, not a live photo upload service.</p><a href="../images/web/irismix-teaser.mp4">See the full IrisMix workflow ↗</a></div></section>
+</main>
+<footer><span>IRISMIX / COMPOSITIONAL MAKEUP TRANSFER</span><a href="../#paper-irismix">Chia-Ming Lee &amp; collaborators ↗</a></footer>
+<button id="mobile-preview" type="button" aria-label="Scroll to your look" hidden><canvas width="160" height="160" aria-hidden="true"></canvas><span>Your look ↑</span></button>
+<dialog id="proof-dialog"><div class="dialog-heading"><h2 id="proof-title">Warp vs. Stage II render</h2><button type="button" id="close-proof" aria-label="Close comparison">×</button></div><p>Same reference and sample portrait. These are saved pipeline outputs, before browser edits.</p><div class="proof-images"><figure><img id="proof-warp" alt="Warped makeup before Stage II"><figcaption>Warp / paste</figcaption></figure><figure><img id="proof-render" alt="Actual Stage II rendered result"><figcaption>Stage II rendered</figcaption></figure></div><p class="proof-footnote">Stage II: FULL/lora_step3000_ema · σ = 0.65 · 1 step. Custom brush mixes reuse the rendered layer; they are not newly rendered.</p></dialog>
+</body></html>
