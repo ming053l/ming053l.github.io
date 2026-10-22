@@ -171,11 +171,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="20266" id="paper-replaymark">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video id="replaymark-home-preview" width="854" height="512" muted loop playsinline preload="none" aria-label="ReplayMark compared with unwatermarked generation: paired saved LLaDA text excerpts are revealed, then replay verification finds p=0.9628 without a watermark and p=0.00002882 with ReplayMark. Scores cover the complete saved outputs; animation timing is illustrative.">
-<source src="images/web/replaymark-home-story.mp4?v=2" type="video/mp4"/>
+<video id="replaymark-home-preview" width="854" height="512" muted loop playsinline preload="none" aria-label="Concept animation: ordinary words appear, the model replays hidden context, and a response signal is recognized. Illustration, not a measured example.">
+<source src="images/web/replaymark-home-editorial.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/ReplayMark/">View the ReplayMark project page</a>
 </video>
-<picture><img class="pv-poster" src="images/web/replaymark-home-story.webp?v=2" width="854" height="512" alt="" decoding="async" loading="lazy"/></picture>
+<picture><img class="pv-poster" src="images/web/replaymark-home-editorial.webp?v=2" width="854" height="512" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
