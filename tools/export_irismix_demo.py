@@ -1,5 +1,9 @@
 """CPU export of independently rendered source/reference pairs for the browser studio.
 The inputs are genuine Stage II samples from work/webdemo_prepared/render_samples.py.
+This rebuilds the original gallery manifest. Reapply reviewed extra portraits
+afterwards with tools/export_irismix_source.py --prepared-dir PREP --source-id ID
+--label LABEL --approved REVIEWED_LOOK_IDS [--rejected JSON] [--make-default] --write.
+The incremental exporter preserves every existing image, mask and map byte.
 """
 from pathlib import Path
 import json,sys
