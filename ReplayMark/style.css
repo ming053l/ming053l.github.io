@@ -14,3 +14,6 @@ body{font-family:InterTight,Arial,sans-serif;font-size:18px;color:#363636;line-h
 @media(max-width:600px){.film-controls{top:2px;right:3px;gap:3px}.film-controls button{width:22px;height:22px;font-size:12px}}
 
 .award .badge-workshop{font-size:10px;font-weight:500;margin-top:5px;white-space:nowrap}
+.method-film{margin:36px auto 0;max-width:768px}.method-film figcaption{margin:14px -45px 0;line-height:1.65}.original-figure{max-width:900px;margin:14px auto 30px;text-align:center}.original-figure summary{font-size:13px;color:#555;cursor:pointer}.original-figure[open] summary{margin-bottom:20px}.original-figure figure{margin:0}.original-figure img{max-width:100%;height:auto}.original-figure figcaption{font-size:13px}.original-figure+.method-film{margin-top:44px}
+@media(max-width:900px){.method-film figcaption{margin:14px 0 0}}
+@media(max-width:600px){.method-film{width:calc(100% + 10px);margin-left:-5px;margin-top:28px}.method-film figcaption{font-size:13px;margin:10px 5px 0}.original-figure summary{font-size:11px}.original-figure figcaption{font-size:12px}}

@@ -179,7 +179,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 <div class="paper-box-text">
-<div class="paper-venue">NeurIPS 2026 FLMSec Workshop</div><div class="paper-venue" style="margin-left: 6px;">★ Distinguished Paper</div>
+<div class="paper-venue">NeurIPS 2026 FLMSec Workshop</div><div class="paper-venue" style="margin-left: 6px;">★ Distinguished Paper Award</div>
 <h4>ReplayMark: Probe-and-Replay Model-Response Watermarking for Diffusion Language Models</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, Wen-Hsin Tsai, Tung Yuk Ying, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-summary">How can we verify where AI-generated text came from when a model writes tokens in parallel? ReplayMark embeds a watermark in how a diffusion language model responds to re-masked context, while preserving its decoding schedule. A verifier replays the same checkpoint on the finished text and checks whether its responses agree with a secret key, providing exact false-positive control without calibration.</p>

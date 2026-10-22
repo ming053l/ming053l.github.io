@@ -4,29 +4,25 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="ReplayMark: Probe-and-Replay Model-Response Watermarking for Diffusion Language Models. Distinguished Paper at the NeurIPS 2026 FLMSec Workshop." name="description"/>
+<meta content="ReplayMark: Probe-and-Replay Model-Response Watermarking for Diffusion Language Models. Distinguished Paper Award at the NeurIPS 2026 FLMSec Workshop." name="description"/>
 <meta content="#ffffff" name="theme-color"/>
 <meta content="ReplayMark · Probe, write, replay, verify" property="og:title"/>
-<meta content="A watermark in a diffusion language model’s response to context. The same checkpoint replays the evidence. NeurIPS 2026 FLMSec Workshop · Distinguished Paper." property="og:description"/>
+<meta content="A watermark in a diffusion language model’s response to context. The same checkpoint replays the evidence. NeurIPS 2026 FLMSec Workshop · Distinguished Paper Award." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://ming053l.github.io/ReplayMark/" property="og:url"/>
 <meta content="https://ming053l.github.io/ReplayMark/assets/replaymark-comparison.webp" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="https://ming053l.github.io/ReplayMark/" rel="canonical"/>
 <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="style.css?v=2" rel="stylesheet"/>
+<link href="style.css?v=3" rel="stylesheet"/>
 <title>ReplayMark | NeurIPS 2026 FLMSec</title>
 <script defer="" src="script.js"></script>
-
-<script defer="" src="video.js?v=2"></script></head>
+<script defer="" src="video.js?v=3"></script></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-
 <main id="main">
 <header class="hero wrap" id="top">
-
-
-<h1><span class="title-name">ReplayMark</span>: Probe-and-Replay Model-Response<br class="title-break"/> Watermarking for Diffusion Language Models</h1><p class="venue">NeurIPS 2026 · FLMSec Workshop</p><p class="award"><span>NeurIPS</span><span>2026</span><span class="badge-workshop">FLMSec Workshop</span><strong>Distinguished<br/> Paper</strong></p>
+<h1><span class="title-name">ReplayMark</span>: Probe-and-Replay Model-Response<br class="title-break"/> Watermarking for Diffusion Language Models</h1><p class="venue">NeurIPS 2026 · FLMSec Workshop</p><p class="award"><span>NeurIPS</span><span>2026</span><span class="badge-workshop">FLMSec Workshop</span><strong>★ Distinguished<br/> Paper Award</strong></p>
 <div class="authors"><a href="https://ming053l.github.io/">Chia-Ming Lee<sup>1,3</sup></a><span>Wen-Hsin Tsai<sup>2</sup></span><span>Tung Yuk Ying<sup>2</sup></span><a href="https://cchsu.info/">Chih-Chung Hsu<sup>1</sup></a></div>
 <div class="affiliations"><span><sup>1</sup> National Yang Ming Chiao Tung University</span><span><sup>2</sup> National Cheng Kung University</span><span><sup>3</sup> University at Albany, State University of New York</span></div>
 <div class="resource-links">
@@ -36,25 +32,34 @@
 </div>
 <p class="tldr"><strong>TL;DR:</strong> Watermark diffusion language models through <em>their response to context</em>,<br class="desktop-break"/> then verify by <em>replaying the same checkpoint</em>—with the decoding schedule preserved.</p>
 <figure class="comparison-video" id="comparison">
-<div class="film-controls" hidden><button id="film-toggle" type="button" aria-label="Pause comparison video">Ⅱ</button><button id="film-restart" type="button" aria-label="Replay comparison video">↻</button></div>
+<div class="film-controls" hidden=""><button aria-label="Pause comparison video" id="film-toggle" type="button">Ⅱ</button><button aria-label="Replay comparison video" id="film-restart" type="button">↻</button></div>
 <video aria-label="Non-watermarked versus ReplayMark: paired saved LLaDA outputs from the same prompt, followed by their actual full-document verification scores. Reveal order and timing are illustrative." controls="" height="768" id="comparison-video" loop="" muted="" playsinline="" poster="assets/replaymark-comparison.webp" preload="metadata" width="1280"><source src="assets/replaymark-comparison.mp4" type="video/mp4"/><a href="assets/replaymark-comparison.mp4">Download the comparison video</a></video>
 <figcaption><strong>Non-watermarked vs ReplayMark.</strong> Ordinary-looking text, different verification evidence.<br/><span>Saved model outputs; reveal order and timing are illustrative. <a href="assets/comparison-example.json">Example &amp; source</a> · <a href="assets/replaymark-comparison.mp4">Download video</a></span></figcaption>
 </figure>
-<details class="diagram-details"><summary>View the paper’s generation and verification diagram</summary>
-<figure class="hero-figure"><a aria-label="Open the full-size ReplayMark generation and verification diagram" href="assets/pipeline.webp"><img alt="During generation, two hidden-prefix probes split candidate tokens into response directions; a key selects one direction. During verification, the same checkpoint replays those probes on the finished text." fetchpriority="high" height="498" src="assets/pipeline.webp" width="1191"/></a><figcaption><strong>Write with the model. Verify by replay.</strong> The decoding schedule stays intact; the verifier reconstructs the probes from the finished text.</figcaption></figure>
-</details>
+
 </header>
 <section class="section soft" id="idea"><div class="wrap">
 <p class="eyebrow">The idea</p><h2>Introduction</h2>
 <div class="prose"><p>A watermark helps establish where generated text came from. But diffusion language models fill in many positions in parallel, following their own confidence-based order. A scheme designed for left-to-right generation does not naturally fit this process.</p><p>ReplayMark starts from a different observation: <strong>hide part of the context, and the same model consistently changes its token probabilities.</strong> Those changes provide two response directions. A secret key chooses which direction to favor while the model generates; later, a verifier recreates the same conditions and checks for agreement.</p></div>
-<figure><a aria-label="Open the full-size watermarking comparison" href="assets/paradigm.webp"><img alt="Token-level watermarking counts keyed tokens from text alone. ReplayMark queries the same checkpoint on re-masked text and counts keyed model-response matches." height="438" loading="lazy" src="assets/paradigm.webp" width="1191"/></a><figcaption>Figure 1 from the paper. The signal moves from token identities to the checkpoint’s response to re-masked context.</figcaption></figure>
-
+<figure class="comparison-video method-film" id="fig-paradigm">
+<div class="film-controls" hidden=""><button aria-label="Play paradigm animation" class="film-toggle" type="button">▶</button><button aria-label="Replay paradigm animation" class="film-restart" type="button">↻</button></div>
+<video aria-label="Animated comparison of token-level and model-response watermarking, from text generation to verification inputs and statistics." controls="" height="720" id="paradigm-video" loop="" muted="" playsinline="" poster="assets/paradigm-animation.webp" preload="none" width="1280"><source src="assets/paradigm-animation.mp4" type="video/mp4"/><a href="assets/paradigm-animation.mp4">Download animation</a></video>
+<figcaption><strong>Where the signal lives.</strong> Token-level verification reads keyed token patterns; ReplayMark replays the checkpoint’s response.<br/><span>Mechanism illustration, not a measured model run. <a href="assets/paradigm-animation.mp4">Download animation</a></span></figcaption>
+</figure><details class="original-figure"><summary>View the original paper figure (Figure 1)</summary><figure><a aria-label="Open the full-size watermarking comparison" href="assets/paradigm.webp"><img alt="Token-level watermarking counts keyed tokens from text alone. ReplayMark queries the same checkpoint on re-masked text and counts keyed model-response matches." height="438" loading="lazy" src="assets/paradigm.webp" width="1191"/></a><figcaption>Figure 1 from the paper. The signal moves from token identities to the checkpoint’s response to re-masked context.</figcaption></figure></details>
 </div></section>
 <section class="section" id="method"><div class="wrap">
 <p class="eyebrow">How it works</p><h2>Probe-and-Replay Watermarking</h2>
 <p class="section-lead">A carrier is a text position where plausible tokens support both response directions. Choose the carriers first; consult the keyed direction second.</p>
-<ol class="method-steps"><li><span class="step-number">1</span><div><h3>Probe the context</h3><p>Re-mask the current block and suffix, then hide different parts of the completed prefix. Compare the model’s token probabilities and retain positions with two viable response directions.</p></div></li><li><span class="step-number">2</span><div><h3>Write a keyed response</h3><p>At a carrier, draw up to <i>R</i> candidates from the live model distribution. Accept the first plausible token in the keyed direction; otherwise, use an unchecked draw. The model’s commit order remains unchanged.</p></div></li><li><span class="step-number">3</span><div><h3>Replay and count</h3><p>Re-mask the finished text and query the same checkpoint. Reconstruct the carriers, count responses that agree with the key, and calculate an exact binomial-tail <i>p</i>-value.</p></div></li></ol>
-<figure class="carrier-figure"><a aria-label="Open the full-size carrier map" href="assets/carriers.webp"><img alt="Carrier availability in a saved 512-token LLaDA output, arranged in 16 blocks of 32 positions. Blue positions pass the response-balance threshold; outlined positions are skipped." height="285" loading="lazy" src="assets/carriers.webp" width="1191"/></a><figcaption><strong>Where can the signal live?</strong> In this saved LLaDA example, 490 of 512 positions pass the carrier threshold. Positions close to revealed text are often too predictable to support both directions. Figure 3 from the paper.</figcaption></figure>
+<ol class="method-steps"><li><span class="step-number">1</span><div><h3>Probe the context</h3><p>Re-mask the current block and suffix, then hide different parts of the completed prefix. Compare the model’s token probabilities and retain positions with two viable response directions.</p></div></li><li><span class="step-number">2</span><div><h3>Write a keyed response</h3><p>At a carrier, draw up to <i>R</i> candidates from the live model distribution. Accept the first plausible token in the keyed direction; otherwise, use an unchecked draw. The model’s commit order remains unchanged.</p></div></li><li><span class="step-number">3</span><div><h3>Replay and count</h3><p>Re-mask the finished text and query the same checkpoint. Reconstruct the carriers, count responses that agree with the key, and calculate an exact binomial-tail <i>p</i>-value.</p></div></li></ol><figure class="comparison-video method-film" id="fig-pipeline">
+<div class="film-controls" hidden=""><button aria-label="Play pipeline animation" class="film-toggle" type="button">▶</button><button aria-label="Replay pipeline animation" class="film-restart" type="button">↻</button></div>
+<video aria-label="Animated generation and verification process: select carriers before consulting the keyed direction, sample tokens, then re-mask text and replay the same checkpoint." controls="" height="720" id="pipeline-video" loop="" muted="" playsinline="" poster="assets/pipeline-animation.webp" preload="none" width="1280"><source src="assets/pipeline-animation.mp4" type="video/mp4"/><a href="assets/pipeline-animation.mp4">Download animation</a></video>
+<figcaption><strong>Probe, write, replay.</strong> Select carriers first, sample in the keyed direction, then reconstruct the same probes for verification.<br/><span>Mechanism illustration, not a measured model run. <a href="assets/pipeline-animation.mp4">Download animation</a></span></figcaption>
+</figure><details class="original-figure"><summary>View the original paper figure (Figure 2)</summary><figure class="hero-figure"><a aria-label="Open the full-size ReplayMark generation and verification diagram" href="assets/pipeline.webp"><img alt="During generation, two hidden-prefix probes split candidate tokens into response directions; a key selects one direction. During verification, the same checkpoint replays those probes on the finished text." height="498" loading="lazy" src="assets/pipeline.webp" width="1191"/></a><figcaption><strong>Write with the model. Verify by replay.</strong> The decoding schedule stays intact; the verifier reconstructs the probes from the finished text.</figcaption></figure></details>
+<figure class="comparison-video method-film" id="fig-carriers">
+<div class="film-controls" hidden=""><button aria-label="Play carriers animation" class="film-toggle" type="button">▶</button><button aria-label="Replay carriers animation" class="film-restart" type="button">↻</button></div>
+<video aria-label="Illustrative carrier selection: probability masses 0.45 and 0.55 yield score 0.90; masses 0.98 and 0.02 yield score 0.04. At threshold 0.50, retain the balanced position and skip the dominated one." controls="" height="720" id="carriers-video" loop="" muted="" playsinline="" poster="assets/carriers-animation.webp" preload="none" width="1280"><source src="assets/carriers-animation.mp4" type="video/mp4"/><a href="assets/carriers-animation.mp4">Download animation</a></video>
+<figcaption><strong>Which positions are usable?</strong> Compare balanced and dominated response directions before the key chooses a preference.<br/><span>Mechanism illustration, not a measured model run. <a href="assets/carriers-animation.mp4">Download animation</a></span></figcaption>
+</figure><details class="original-figure"><summary>View the measured carrier map from the paper (Figure 3)</summary><figure class="carrier-figure"><a aria-label="Open the full-size carrier map" href="assets/carriers.webp"><img alt="Carrier availability in a saved 512-token LLaDA output, arranged in 16 blocks of 32 positions. Blue positions pass the response-balance threshold; outlined positions are skipped." height="285" loading="lazy" src="assets/carriers.webp" width="1191"/></a><figcaption><strong>Where can the signal live?</strong> In this saved LLaDA example, 490 of 512 positions pass the carrier threshold. Positions close to revealed text are often too predictable to support both directions. Figure 3 from the paper.</figcaption></figure></details>
 </div></section>
 <section class="section soft" id="verification"><div class="wrap">
 <p class="eyebrow">From responses to evidence</p><h2>How many matches are more than chance?</h2>
@@ -98,6 +103,6 @@
 }</code></pre><span id="copy-status" role="status"></span>
 </div></section>
 </main>
-<footer><div class="wrap"><a class="wordmark" href="#top"><span aria-hidden="true">↻</span> ReplayMark</a><p>NeurIPS 2026 FLMSec Workshop · Distinguished Paper</p><p class="footer-links"><a href="https://ming053l.github.io/">Chia-Ming Lee</a><span>·</span><a href="https://github.com/ming053l/ReplayMark">Code &amp; reproducibility</a></p><p class="credits">Figures and results from the ReplayMark paper. Page structure inspired by <a href="https://dgmark-watermarking.github.io/">dgMARK</a>.</p></div></footer>
+<footer><div class="wrap"><a class="wordmark" href="#top"><span aria-hidden="true">↻</span> ReplayMark</a><p>NeurIPS 2026 FLMSec Workshop · Distinguished Paper Award</p><p class="footer-links"><a href="https://ming053l.github.io/">Chia-Ming Lee</a><span>·</span><a href="https://github.com/ming053l/ReplayMark">Code &amp; reproducibility</a></p><p class="credits">Figures and results from the ReplayMark paper. Page structure inspired by <a href="https://dgmark-watermarking.github.io/">dgMARK</a>.</p></div></footer>
 </body>
 </html>
