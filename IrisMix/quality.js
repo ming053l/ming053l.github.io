@@ -1,11 +1,17 @@
 // Browser-only, conservative photo screening. This is not an IrisMix inference model.
+// Pinned upstream SDK without the telemetry path introduced in newer builds.
+const MEDIAPIPE_VERSION = '0.10.21';
+const MEDIAPIPE_ROOT = new URL('./vendor/mediapipe/', import.meta.url);
 let detector;
 async function getDetector() {
   if (!detector) detector = (async () => {
-    const { FaceLandmarker, FilesetResolver } = await import('./vendor/mediapipe/vision_bundle.mjs');
-    const files = await FilesetResolver.forVisionTasks('./vendor/mediapipe/wasm');
+    const { FaceLandmarker, FilesetResolver } = await import(new URL('vision_bundle.mjs?v='+MEDIAPIPE_VERSION,MEDIAPIPE_ROOT).href);
+    const files = await FilesetResolver.forVisionTasks(new URL('wasm',MEDIAPIPE_ROOT).href);
+    // Version both JS and WASM to avoid mixing a cached SDK with a new binary.
+    files.wasmLoaderPath += '?v='+MEDIAPIPE_VERSION;
+    files.wasmBinaryPath += '?v='+MEDIAPIPE_VERSION;
     return FaceLandmarker.createFromOptions(files, {
-      baseOptions: { modelAssetPath: './vendor/mediapipe/face_landmarker.task', delegate: 'CPU' },
+      baseOptions: { modelAssetPath: new URL('face_landmarker.task',MEDIAPIPE_ROOT).href, delegate: 'CPU' },
       runningMode: 'IMAGE', numFaces: 2,
       minFaceDetectionConfidence: .6, minFacePresenceConfidence: .6
     });

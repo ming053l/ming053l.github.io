@@ -1,4 +1,5 @@
-MediaPipe Tasks Vision 1.1.1
-Copyright Google LLC
-Apache License 2.0; see LICENSE.txt
+Google MediaPipe Tasks Vision 0.10.21
+Copyright Google LLC. Apache License 2.0.
 https://github.com/google-ai-edge/mediapipe
+Official npm package pinned to 0.10.21; see SDK-manifest.json for source integrity and file hashes.
+The face_landmarker.task model asset is unchanged.

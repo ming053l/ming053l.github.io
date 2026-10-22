@@ -27,9 +27,10 @@ Stage II 結果，而不是直接貼上 warp。混搭、調色與新選區不會
 臉部大小、姿態、睜眼、亮度與清晰度。結果不保證彩妝品質；遮擋及美顏等
 情況仍須使用者自行確認。自訂照片尚不能進行套妝，介面直接說明此限制。
 
-人臉檢查使用本機提供的 MediaPipe Tasks Vision 1.1.1 與 Face Landmarker，
-選取照片後才載入所需的 WASM 版本與人臉模型（約 17 MB；全部相容版本合計約 43 MB）。照片不會上傳。第三方元件採 Apache 2.0，
-詳見 `vendor/mediapipe/LICENSE.txt` 與 `NOTICE.txt`。
+人臉檢查使用固定的本機 MediaPipe Tasks Vision 0.10.21 與 Face Landmarker，
+選取照片後才載入所需的 WASM 版本與人臉模型（約 14 MB；全部相容版本合計約 23 MB）。照片不會上傳。第三方元件採 Apache 2.0，
+詳見 `vendor/mediapipe/LICENSE.txt`、`NOTICE.txt` 與 `SDK-manifest.json`。
+此版本保留上游套件原始內容，JS／WASM 均由本站提供並固定版本，沒有外部遙測連線。
 
 `tools/export_irismix_demo.py` 以 CPU 匯出已完成的真實 Stage II 輸出與幾何映射，
 匯出器本身不執行生成模型。離線素材準備使用 FULL/lora_step3000_ema、σ=0.65、
@@ -38,5 +39,5 @@ Stage II 結果，而不是直接貼上 warp。混搭、調色與新選區不會
 ## 驗證
 
 以 Chromium 實際檢查自由塗選、圖層調色與背景不變、下載、復原／重做、
-模特切換、23 組可用配對及排除配對、有效照片與不合格照片檢查。
+模特切換、21 組可用配對及排除配對、有效照片與不合格照片檢查。
 版面檢查涵蓋 320、375、390、768、1024、1440 px。
