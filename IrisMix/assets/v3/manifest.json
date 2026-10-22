@@ -1,0 +1,307 @@
+{
+  "version": 3,
+  "width": 640,
+  "height": 640,
+  "maskSize": 512,
+  "defaultSource": "studio",
+  "source": "source-studio.webp",
+  "sources": [
+    {
+      "id": "studio",
+      "label": "柔光人像",
+      "image": "source-studio.webp",
+      "thumbnail": "source-studio-thumb.webp"
+    },
+    {
+      "id": "night",
+      "label": "夜景人像",
+      "image": "source-night.webp",
+      "thumbnail": "source-night-thumb.webp"
+    },
+    {
+      "id": "smile",
+      "label": "微笑人像",
+      "image": "source-smile.webp",
+      "thumbnail": "source-smile-thumb.webp"
+    },
+    {
+      "id": "warm",
+      "label": "暖光人像",
+      "image": "source-warm.webp",
+      "thumbnail": "source-warm-thumb.webp"
+    }
+  ],
+  "looks": [
+    {
+      "id": "satin",
+      "label": "柔霧日常",
+      "category": "daily",
+      "reference": "satin-reference.webp",
+      "thumbnail": "satin-thumb.webp",
+      "description": "細緻眼線、暖色唇妝",
+      "pairs": {
+        "studio": {
+          "layer": "studio-satin-layer.webp",
+          "map": "studio-satin-map.png",
+          "render": "studio-satin-render.webp",
+          "warp": "studio-satin-warp.webp"
+        },
+        "night": {
+          "layer": "night-satin-layer.webp",
+          "map": "night-satin-map.png",
+          "render": "night-satin-render.webp",
+          "warp": "night-satin-warp.webp"
+        },
+        "smile": {
+          "layer": "smile-satin-layer.webp",
+          "map": "smile-satin-map.png",
+          "render": "smile-satin-render.webp",
+          "warp": "smile-satin-warp.webp"
+        },
+        "warm": {
+          "layer": "warm-satin-layer.webp",
+          "map": "warm-satin-map.png",
+          "render": "warm-satin-render.webp",
+          "warp": "warm-satin-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "satin-eyes-mask.png",
+        "lips": "satin-lips-mask.png",
+        "face": "satin-face-mask.png"
+      },
+      "provenance": {
+        "reference": "krelite5g1_ke045_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true
+      }
+    },
+    {
+      "id": "merlot",
+      "label": "酒紅妝容",
+      "category": "daily",
+      "reference": "merlot-reference.webp",
+      "thumbnail": "merlot-thumb.webp",
+      "description": "酒紅眼影、莓果唇色",
+      "pairs": {
+        "studio": {
+          "layer": "studio-merlot-layer.webp",
+          "map": "studio-merlot-map.png",
+          "render": "studio-merlot-render.webp",
+          "warp": "studio-merlot-warp.webp"
+        },
+        "night": {
+          "layer": "night-merlot-layer.webp",
+          "map": "night-merlot-map.png",
+          "render": "night-merlot-render.webp",
+          "warp": "night-merlot-warp.webp"
+        },
+        "smile": {
+          "layer": "smile-merlot-layer.webp",
+          "map": "smile-merlot-map.png",
+          "render": "smile-merlot-render.webp",
+          "warp": "smile-merlot-warp.webp"
+        },
+        "warm": {
+          "layer": "warm-merlot-layer.webp",
+          "map": "warm-merlot-map.png",
+          "render": "warm-merlot-render.webp",
+          "warp": "warm-merlot-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "merlot-eyes-mask.png",
+        "lips": "merlot-lips-mask.png",
+        "face": "merlot-face-mask.png"
+      },
+      "provenance": {
+        "reference": "jpol6g1_jo016_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true
+      }
+    },
+    {
+      "id": "mint",
+      "label": "薄荷眼妝",
+      "category": "daily",
+      "reference": "mint-reference.webp",
+      "thumbnail": "mint-thumb.webp",
+      "description": "綠色眼影、自然唇色",
+      "pairs": {
+        "studio": {
+          "layer": "studio-mint-layer.webp",
+          "map": "studio-mint-map.png",
+          "render": "studio-mint-render.webp",
+          "warp": "studio-mint-warp.webp"
+        },
+        "night": {
+          "layer": "night-mint-layer.webp",
+          "map": "night-mint-map.png",
+          "render": "night-mint-render.webp",
+          "warp": "night-mint-warp.webp"
+        },
+        "smile": {
+          "layer": "smile-mint-layer.webp",
+          "map": "smile-mint-map.png",
+          "render": "smile-mint-render.webp",
+          "warp": "smile-mint-warp.webp"
+        },
+        "warm": {
+          "layer": "warm-mint-layer.webp",
+          "map": "warm-mint-map.png",
+          "render": "warm-mint-render.webp",
+          "warp": "warm-mint-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "mint-eyes-mask.png",
+        "lips": "mint-lips-mask.png",
+        "face": "mint-face-mask.png"
+      },
+      "provenance": {
+        "reference": "jpol5g1_jo050_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true
+      }
+    },
+    {
+      "id": "lily",
+      "label": "睡蓮彩繪",
+      "category": "art",
+      "reference": "lily-reference.webp",
+      "thumbnail": "lily-thumb.webp",
+      "description": "綠色眼妝、花卉圖案",
+      "pairs": {
+        "studio": {
+          "layer": "studio-lily-layer.webp",
+          "map": "studio-lily-map.png",
+          "render": "studio-lily-render.webp",
+          "warp": "studio-lily-warp.webp"
+        },
+        "night": {
+          "layer": "night-lily-layer.webp",
+          "map": "night-lily-map.png",
+          "render": "night-lily-render.webp",
+          "warp": "night-lily-warp.webp"
+        },
+        "smile": {
+          "layer": "smile-lily-layer.webp",
+          "map": "smile-lily-map.png",
+          "render": "smile-lily-render.webp",
+          "warp": "smile-lily-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "lily-eyes-mask.png",
+        "lips": "lily-lips-mask.png",
+        "face": "lily-face-mask.png"
+      },
+      "provenance": {
+        "reference": "eufairy6g1_ef032_ref1",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true
+      }
+    },
+    {
+      "id": "cobalt",
+      "label": "鈷藍眼妝",
+      "category": "art",
+      "reference": "cobalt-reference.webp",
+      "thumbnail": "cobalt-thumb.webp",
+      "description": "飽和藍色舞台眼妝",
+      "pairs": {
+        "studio": {
+          "layer": "studio-cobalt-layer.webp",
+          "map": "studio-cobalt-map.png",
+          "render": "studio-cobalt-render.webp",
+          "warp": "studio-cobalt-warp.webp"
+        },
+        "night": {
+          "layer": "night-cobalt-layer.webp",
+          "map": "night-cobalt-map.png",
+          "render": "night-cobalt-render.webp",
+          "warp": "night-cobalt-warp.webp"
+        },
+        "smile": {
+          "layer": "smile-cobalt-layer.webp",
+          "map": "smile-cobalt-map.png",
+          "render": "smile-cobalt-render.webp",
+          "warp": "smile-cobalt-warp.webp"
+        },
+        "warm": {
+          "layer": "warm-cobalt-layer.webp",
+          "map": "warm-cobalt-map.png",
+          "render": "warm-cobalt-render.webp",
+          "warp": "warm-cobalt-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "cobalt-eyes-mask.png",
+        "lips": "cobalt-lips-mask.png",
+        "face": "cobalt-face-mask.png"
+      },
+      "provenance": {
+        "reference": "smoky6g0_sm033_ref0",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true
+      }
+    },
+    {
+      "id": "line",
+      "label": "藍色線條",
+      "category": "art",
+      "reference": "line-reference.webp",
+      "thumbnail": "line-thumb.webp",
+      "description": "跨越鼻樑的藍色線條",
+      "pairs": {
+        "studio": {
+          "layer": "studio-line-layer.webp",
+          "map": "studio-line-map.png",
+          "render": "studio-line-render.webp",
+          "warp": "studio-line-warp.webp"
+        },
+        "night": {
+          "layer": "night-line-layer.webp",
+          "map": "night-line-map.png",
+          "render": "night-line-render.webp",
+          "warp": "night-line-warp.webp"
+        },
+        "smile": {
+          "layer": "smile-line-layer.webp",
+          "map": "smile-line-map.png",
+          "render": "smile-line-render.webp",
+          "warp": "smile-line-warp.webp"
+        },
+        "warm": {
+          "layer": "warm-line-layer.webp",
+          "map": "warm-line-map.png",
+          "render": "warm-line-render.webp",
+          "warp": "warm-line-warp.webp"
+        }
+      },
+      "masks": {
+        "eyes": "line-eyes-mask.png",
+        "lips": "line-lips-mask.png",
+        "face": "line-face-mask.png"
+      },
+      "provenance": {
+        "reference": "art4_tv150_ref1",
+        "stage2": "FULL/lora_step3000_ema",
+        "sampler": "sigma=0.65, 1 step",
+        "rendered": true
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "source": "warm",
+      "reference": "lily",
+      "reason": "此角度的花卉圖案不完整，未收錄此組合。"
+    }
+  ]
+}

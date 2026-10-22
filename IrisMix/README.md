@@ -1,40 +1,42 @@
-# IrisMix browser studio
+# IrisMix 線上體驗
 
-Static demonstration at `/IrisMix/`, linked from the personal homepage. Serve this
-repository over HTTP; no build, backend or inference service is needed.
+靜態頁面 `/IrisMix/`，以 HTTP 提供檔案即可使用，無需建置或推論伺服器。
 
-## Curated examples and provenance
+## 素材與品質
 
-The v2 library contains four inspected single-reference results: Bare Satin,
-Merlot, Mint Breeze and Water Lily. They replace the earlier mixed teaser looks.
-Every result comes from the actual saved Stage II output in
-`oneface_cache/FULL_lora_step3000_ema_s065n1r2`, not the `_paste.png` warp. The asset
-manifest records the checkpoint, sampler, source and reference. The comparison
-dialog displays both the saved warp and the saved Stage II result.
+v3 提供四位模特、六款日常／藝術妝容，共 23 組經檢視的實際 Stage II
+輸出。暖光人像搭配睡蓮彩繪的花卉圖案不完整，已排除此組合。全部人像來自
+LayerBeauty 合成成人素材，沒有使用受限制的外部基準資料集。
+`assets/v3/manifest.json` 記錄素材、checkpoint、採樣條件與排除原因。
+「查看渲染前後」顯示同一組合的幾何轉移及真正保存的 Stage II 輸出。
 
-The same synthetic adult source portrait is used for every example. All
-references are from LayerBeauty, with no restricted external benchmark images.
+## 操作
 
-## Freehand selection
+介面以繁體中文為主，提供模特切換、分類、放大參考圖的自由塗選與橡皮擦、
+快速選區，以及獨立圖層的拖曳、強度、色調、大小、旋轉、排序、顯示與刪除。
+整體色調只影響彩妝圖層。復原／重做涵蓋選區、圖層與模特切換；換模特時
+會重新對齊圖層，並重設位置、大小及旋轉。下載只包含已加入的圖層。
 
-The reference editor uses a 768-pixel reference photo and a 512-pixel editable
-mask. Pointer strokes and the eraser edit that mask directly. A face landmark
-correspondence map sends each target pixel to its reference mask pixel; the mask
-therefore follows reference geometry rather than a rectangle or fixed face part.
-The lookup is stored losslessly as an opaque RGB PNG containing 24-bit indices.
-Optional eye/lip/face selections initialize the same freehand mask.
+512² 選區經由無損 RGB PNG 的逐像素對應映射至模特；每個圖層來自保存的
+Stage II 結果，而不是直接貼上 warp。混搭、調色、拖曳與新選區不會再次執行
+生成模型，因此不能視為新的 IrisMix 推論結果。完整模型的 WebGPU 移植尚未完成。
 
-Each added selection becomes an independent layer. Users can change opacity,
-reorder, hide or remove layers; undo/redo includes brush edits and layer changes.
-A before/after divider, original toggle and committed-layer PNG download are
-provided. On narrow screens a floating result thumbnail follows reference edits.
+## 自訂照片
 
-## What actually runs
+可選取自己的 source／REF，僅在本機預覽並檢查檔案大小、尺寸、人臉數量、
+臉部大小、姿態、睜眼、亮度與清晰度。結果不保證彩妝品質；遮擋及美顏等
+情況仍須使用者自行確認。自訂照片尚不能進行套妝，介面直接說明此限制。
 
-Browser Canvas composites masks and the layers recovered from prepared Stage II
-renders. Arbitrary mixes and brushed selections do **not** run the diffusion
-model again. The interface states this explicitly. Reference photos cannot be
-uploaded in this demonstration. This is separate from a full WebGPU model port.
+人臉檢查使用本機提供的 MediaPipe Tasks Vision 1.1.1 與 Face Landmarker，
+選取照片後才載入所需的 WASM 版本與人臉模型（約 17 MB；全部相容版本合計約 43 MB）。照片不會上傳。第三方元件採 Apache 2.0，
+詳見 `vendor/mediapipe/LICENSE.txt` 與 `NOTICE.txt`。
 
-`tools/export_irismix_demo.py` exports the v2 assets on CPU from existing model
-outputs and landmark geometry. It invokes no generative model or GPU inference.
+`tools/export_irismix_demo.py` 以 CPU 匯出已完成的真實 Stage II 輸出與幾何映射，
+匯出器本身不執行生成模型。離線素材準備使用 FULL/lora_step3000_ema、σ=0.65、
+一步採樣；公開網站不連接 GPU。
+
+## 驗證
+
+以 Chromium 實際檢查自由塗選、圖層調色與背景不變、拖曳、下載、復原／重做、
+模特切換、23 組可用配對及排除配對、有效照片與不合格照片檢查。
+版面檢查涵蓋 320、375、390、768、1024、1440 px。

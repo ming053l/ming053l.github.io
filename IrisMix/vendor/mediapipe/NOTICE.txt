@@ -1,0 +1,4 @@
+MediaPipe Tasks Vision 1.1.1
+Copyright Google LLC
+Apache License 2.0; see LICENSE.txt
+https://github.com/google-ai-edge/mediapipe

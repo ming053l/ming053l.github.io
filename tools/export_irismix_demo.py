@@ -1,85 +1,42 @@
-"""Export curated, provenance-checked Stage II results and CPU brush correspondence.
-No generative model, diffusion pipeline or GPU is loaded by this exporter.
-Run with the existing flashmakeup Python environment from this website checkout.
+"""CPU export of independently rendered source/reference pairs for the browser studio.
+The inputs are genuine Stage II samples from work/webdemo_prepared/render_samples.py.
 """
 from pathlib import Path
-import json, sys
-import numpy as np
-import cv2
+import json,sys
+import numpy as np,cv2
 from PIL import Image
-
-ROOT = Path('/ssd1/chingheng/FlashMakeUp')
-RENDERS = Path('/ssd5/ming/oneface_cache/FULL_lora_step3000_ema_s065n1r2')
-ITEMS = ROOT / 'LayerBeauty-Creative/items'
-OUT = Path(__file__).resolve().parents[1] / 'IrisMix/assets/v2'
-OUT.mkdir(parents=True, exist_ok=True)
-sys.path.insert(0, str(ROOT / 'work/stage1_data'))
-import make_composites as MC
-
-LOOKS = [('satin', 'Bare Satin', 'Soft liner · warm satin lips', 'krelite5g1_ke045_ref0'),
-         ('merlot', 'Merlot', 'Burgundy eyes · deep berry lips', 'jpol6g1_jo016_ref0'),
-         ('mint', 'Mint Breeze', 'Mint eyes · soft rose lips', 'jpol5g1_jo050_ref0'),
-         ('lily', 'Water Lily', 'Green shadow · floral face art', 'eufairy6g1_ef032_ref1')]
-N, M = 640, 512
-S = np.asarray(Image.open(ITEMS/'dailyjpb8g0_djp009_ref0/bare.webp').convert('RGB'))
-P = MC.landmarks(S)
-assert P is not None
-P = MC.extend(P, S.shape) if hasattr(MC, 'extend') else P
-
-def webp(a, filename, size=(N,N), quality=95):
-    Image.fromarray(a).resize(size, Image.Resampling.LANCZOS).save(OUT/filename, 'WEBP', quality=quality, method=6)
-webp(S, 'source.webp')
-manifest = {'version': 2, 'width': N, 'height': N, 'maskSize': M, 'source': 'source.webp', 'looks': []}
-for ident, name, description, refid in LOOKS:
-    stamp=json.loads((RENDERS/f'{ident}.ckpt.json').read_text())
-    assert stamp['stage2'].endswith('/FULL/lora_step3000_ema.pt')
-    R=np.asarray(Image.open(RENDERS/f'{ident}.png').convert('RGB'))
-    assert R.shape == S.shape
-    ref=np.asarray(Image.open(ITEMS/refid/'madeup.webp').convert('RGB'))
-    bare=np.asarray(Image.open(ITEMS/refid/'bare.webp').convert('RGB'))
-    q=MC.landmarks(bare);assert q is not None, refid
-    # A face-centred reference crop makes the brush editor substantially larger.
-    lo=q.min(0);hi=q.max(0);mid=(lo+hi)/2
-    side=int(min(max(hi-lo)*1.55,*ref.shape[:2]));xy=np.clip(mid-side/2,0,np.array(ref.shape[:2][::-1])-side).astype(int)
-    x,y=xy;refcrop=ref[y:y+side,x:x+side]
-    webp(refcrop, f'{ident}-reference.webp',(768,768))
-    webp(R, f'{ident}-render.webp');webp(np.asarray(Image.open(RENDERS/f'{ident}_paste.png').convert('RGB')),f'{ident}-warp.webp')
-    webp(R,f'{ident}-thumb.webp',(160,160),90)
-    # Recover a layer from the actual Stage II output, never from the warp.
-    B=S.astype(np.float32)/255;I=R.astype(np.float32)/255;d=I-B
-    a=np.clip(np.maximum(np.max(d/np.maximum(1-B,1e-6),2),np.max(-d/np.maximum(B,1e-6),2)),0,1)
-    F=np.clip(B+d/np.maximum(a[...,None],1e-6),0,1)
-    rgba=np.dstack([(F*255+.5).astype(np.uint8),(a*255+.5).astype(np.uint8)])
-    webp(rgba,f'{ident}-layer.webp')
-    # For every target pixel, encode its corresponding pixel in the REF editor.
-    # RGB is a lossless 24-bit index; alpha must stay opaque to avoid premultiplication.
-    pd=P*(N/S.shape[0]);ps=MC.extend(q,ref.shape)
-    MC.pwarp(np.zeros(ref.shape[:2],np.float32),ps,pd,(N,N))
-    mx,my,inside=MC.pwarp.last_map
-    rx=np.rint((mx-x)/side*(M-1)).astype(int);ry=np.rint((my-y)/side*(M-1)).astype(int)
-    valid=inside&(rx>=0)&(rx<M)&(ry>=0)&(ry<M)
-    index=np.where(valid,ry*M+rx,0xffffff).astype(np.uint32)
-    packed=np.stack([(index>>16)&255,(index>>8)&255,index&255],2).astype(np.uint8)
-    Image.fromarray(packed).save(OUT/f'{ident}-map.png',optimize=True)
-    # Quick selections are optional conveniences; freehand masks use this same REF frame.
-    qs=(q-xy)/side*M
-    eye=np.zeros((M,M),np.uint8)
-    for a_,b_ in [(33,133),(362,263)]:
-        center=(qs[a_]+qs[b_])/2;w=np.linalg.norm(qs[a_]-qs[b_])
-        cv2.ellipse(eye,tuple(center.astype(int)),(int(w*.95),int(w*.65)),0,0,360,255,-1)
-    lip=np.zeros_like(eye);lipids=[61,146,91,181,84,17,314,405,321,375,291,409,270,269,267,0,37,39,40,185]
-    cv2.fillPoly(lip,[qs[lipids].astype(np.int32)],255);lip=cv2.dilate(lip,np.ones((9,9),np.uint8))
-    face=np.zeros_like(eye);cv2.fillConvexPoly(face,cv2.convexHull(qs[:468].astype(np.int32)),255)
-    face=cv2.subtract(face,cv2.max(eye,lip))
-    for key,mask in [('eyes',eye),('lips',lip),('face',face)]:
-        mask=cv2.GaussianBlur(mask,(0,0),2.5);Image.fromarray(mask).convert('RGB').save(OUT/f'{ident}-{key}-mask.png',optimize=True)
-    manifest['looks'].append({'id':ident,'label':name,'description':description,'reference':f'{ident}-reference.webp',
-      'render':f'{ident}-render.webp','warp':f'{ident}-warp.webp','thumbnail':f'{ident}-thumb.webp','layer':f'{ident}-layer.webp','map':f'{ident}-map.png',
-      'masks':{key:f'{ident}-{key}-mask.png' for key in ['eyes','lips','face']},
-      'provenance':{'reference':refid,'stage2':'FULL/lora_step3000_ema','sampler':'sigma=0.65, 1 step','source':'dailyjpb8g0_djp009_ref0','rendered':True}})
-    print('Exported',name,flush=True)
-(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-print('Total KiB:',sum(p.stat().st_size for p in OUT.iterdir())//1024)
-if MC.LM is not None:
-    MC.LM.close()
-    MC.LM = None
+ROOT=Path('/ssd1/chingheng/FlashMakeUp');PREP=ROOT/'work/webdemo_prepared';ITEMS=ROOT/'LayerBeauty-Creative/items'
+OUT=Path(__file__).resolve().parents[1]/'IrisMix/assets/v3';OUT.mkdir(parents=True,exist_ok=True)
+sys.path.insert(0,str(ROOT/'work/stage1_data'));import make_composites as MC
+N,M=640,512
+info=json.loads((PREP/'manifest.json').read_text());rejected={('warm','lily'):'此角度的花卉圖案不完整，未收錄此組合。'}
+def save(a,name,size=(N,N),q=95):Image.fromarray(a).resize(size,Image.Resampling.LANCZOS).save(OUT/name,'WEBP',quality=q,method=6)
+manifest={'version':3,'width':N,'height':N,'maskSize':M,'defaultSource':'studio','source':'source-studio.webp','sources':[],'looks':[],'rejected':[]}
+points={}
+for src in info['sources']:
+ sid=src['id'];S=np.asarray(Image.open(PREP/f'source-{sid}.png').convert('RGB'));p=MC.landmarks(S);assert p is not None;points[sid]=MC.extend(p,S.shape)
+ save(S,f'source-{sid}.webp');save(S,f'source-{sid}-thumb.webp',(144,144),90)
+ manifest['sources'].append({**src,'image':f'source-{sid}.webp','thumbnail':f'source-{sid}-thumb.webp'})
+for index,r in enumerate(info['references']):
+ rid,refid=r['id'],r['reference'];ref=np.asarray(Image.open(ITEMS/refid/'madeup.webp').convert('RGB'));bare=np.asarray(Image.open(ITEMS/refid/'bare.webp').convert('RGB'))
+ q=MC.landmarks(bare);assert q is not None;lo,hi=q.min(0),q.max(0);side=int(min(max(hi-lo)*1.55,*ref.shape[:2]));xy=np.clip((lo+hi)/2-side/2,0,np.array(ref.shape[:2][::-1])-side).astype(int);x,y=xy
+ save(ref[y:y+side,x:x+side],f'{rid}-reference.webp',(768,768));save(ref[y:y+side,x:x+side],f'{rid}-thumb.webp',(180,180),91)
+ look={'id':rid,'label':r['label'],'category':'daily' if index<3 else 'art','reference':f'{rid}-reference.webp','thumbnail':f'{rid}-thumb.webp','description':['細緻眼線、暖色唇妝','酒紅眼影、莓果唇色','綠色眼影、自然唇色','綠色眼妝、花卉圖案','飽和藍色舞台眼妝','跨越鼻樑的藍色線條'][index],'pairs':{},'masks':{},'provenance':{'reference':refid,'stage2':'FULL/lora_step3000_ema','sampler':'sigma=0.65, 1 step','rendered':True}}
+ qs=(q-xy)/side*M;eye=np.zeros((M,M),np.uint8)
+ for a,b in [(33,133),(362,263)]:
+  c=(qs[a]+qs[b])/2;w=np.linalg.norm(qs[a]-qs[b]);cv2.ellipse(eye,tuple(c.astype(int)),(int(w*.95),int(w*.65)),0,0,360,255,-1)
+ lip=np.zeros_like(eye);idx=[61,146,91,181,84,17,314,405,321,375,291,409,270,269,267,0,37,39,40,185];cv2.fillPoly(lip,[qs[idx].astype(np.int32)],255);lip=cv2.dilate(lip,np.ones((9,9),np.uint8));face=np.zeros_like(eye);cv2.fillConvexPoly(face,cv2.convexHull(qs[:468].astype(np.int32)),255);face=cv2.subtract(face,cv2.max(eye,lip))
+ for key,mask in [('eyes',eye),('lips',lip),('face',face)]:
+  fn=f'{rid}-{key}-mask.png';Image.fromarray(cv2.GaussianBlur(mask,(0,0),2.5)).convert('RGB').save(OUT/fn,optimize=True);look['masks'][key]=fn
+ for src in info['sources']:
+  sid=src['id'];key=f'{sid}-{rid}'
+  if (sid,rid) in rejected:manifest['rejected'].append({'source':sid,'reference':rid,'reason':rejected[sid,rid]});continue
+  z=np.load(PREP/f'{key}.npz');S,R=z['S'],z['R'];assert S.shape==R.shape
+  save(R,f'{key}-render.webp');save(z['C'],f'{key}-warp.webp')
+  B=S.astype(np.float32)/255;I=R.astype(np.float32)/255;d=I-B;a=np.clip(np.maximum(np.max(d/np.maximum(1-B,1e-6),2),np.max(-d/np.maximum(B,1e-6),2)),0,1);F=np.clip(B+d/np.maximum(a[...,None],1e-6),0,1);save(np.dstack([(F*255+.5).astype(np.uint8),(a*255+.5).astype(np.uint8)]),f'{key}-layer.webp')
+  MC.pwarp(np.zeros(ref.shape[:2],np.float32),MC.extend(q,ref.shape),points[sid]*(N/S.shape[0]),(N,N));mx,my,inside=MC.pwarp.last_map;rx=np.rint((mx-x)/side*(M-1)).astype(int);ry=np.rint((my-y)/side*(M-1)).astype(int);valid=inside&(rx>=0)&(rx<M)&(ry>=0)&(ry<M);ix=np.where(valid,ry*M+rx,0xffffff).astype(np.uint32);packed=np.stack([(ix>>16)&255,(ix>>8)&255,ix&255],2).astype(np.uint8);Image.fromarray(packed).save(OUT/f'{key}-map.png',optimize=True)
+  look['pairs'][sid]={'layer':f'{key}-layer.webp','map':f'{key}-map.png','render':f'{key}-render.webp','warp':f'{key}-warp.webp'}
+ manifest['looks'].append(look);print('Exported',rid,flush=True)
+(OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+MC.LM.close();MC.LM=None
+print('Total MiB:',round(sum(p.stat().st_size for p in OUT.iterdir())/1024/1024,1))
