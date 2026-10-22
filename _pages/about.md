@@ -236,7 +236,13 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div><div class="paper-box" data-sort="20266" id="paper-replaymark">
 <div class="paper-box-image">
-<a href="https://openreview.net/forum?id=fmXX4kVZ30" rel="noopener" target="_blank"><img src="images/web/replaymark-preview.webp" width="776" height="290" alt="ReplayMark compares token-level watermarking with model-response watermarking verified by re-masking text and querying the same checkpoint." loading="lazy" decoding="async"/></a>
+<div class="pv" data-pv>
+<video id="replaymark-home-preview" width="854" height="512" muted loop playsinline preload="none" aria-label="ReplayMark compared with unwatermarked generation: paired saved LLaDA text excerpts are revealed, then replay verification finds p=0.9628 without a watermark and p=0.00002882 with ReplayMark. Scores cover the complete saved outputs; animation timing is illustrative.">
+<source src="images/web/replaymark-home.mp4?v=2" type="video/mp4"/>
+<a href="https://ming053l.github.io/ReplayMark/">View the ReplayMark project page</a>
+</video>
+<picture><img class="pv-poster" src="images/web/replaymark-home.webp?v=2" width="854" height="512" alt="" decoding="async" loading="lazy"/></picture>
+</div>
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">NeurIPS 2026 FLMSec Workshop</div><div class="paper-venue" style="margin-left: 6px;">★ Distinguished Paper</div>
@@ -248,6 +254,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://openreview.net/forum?id=fmXX4kVZ30" rel="noopener" target="_blank">OpenReview</a>
 <a href="https://github.com/ming053l/ReplayMark" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/ReplayMark/" rel="noopener" target="_blank">Project Page</a>
+<a href="https://ming053l.github.io/ReplayMark/assets/replaymark-comparison.mp4" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
 </div>

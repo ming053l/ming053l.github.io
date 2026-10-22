@@ -1,0 +1,20 @@
+{
+  "source": "https://github.com/ming053l/ReplayMark/blob/master/results/29_clean.json",
+  "sample_index": 3,
+  "checkpoint": "LLaDA-8B-Instruct",
+  "generation_budget": 1024,
+  "setting": "R=16, kappa=0.05",
+  "prompt_excerpt": "Should utilities turn off the electricity when wildfire risk is high?",
+  "full_prompt": "Should utilities turn off the electricity when wildfire risk is high? A Los Angeles County Fire Department helicopter makes a water drop on flames sweeping up a steep canyon wall, threatening homes on a ridge line after the Skirball wildfire swept through the Bel Air district of Los Angeles,",
+  "control": {
+    "text": "Research suggests utilities should turn off power when wildfire risk is high. Firefighters have learned that power outages can prevent them from reaching areas that are threatened by wildfires, and that power outages can slow down emergency response teams. Officials expressed concern about the delay in emergency response and fire-fighting efforts caused by power outages. Utility officials in California have …",
+    "p": 0.962825726728431,
+    "match_rate": 0.44876325088339225
+  },
+  "replaymark": {
+    "text": "Utilities may choose to turn off power when wildfire risk is high. This is a controversial decision. On one hand, cutting off power prevents the risk of a wildfire. On the other hand, some utilities continue to keep the power on because they are responsible for maintaining the power grid and to ensure that customers have access to electricity. However, …",
+    "p": 2.8815027269524717e-05,
+    "match_rate": 0.6214285714285714
+  },
+  "note": "Text and document-level scores are from saved runs. Reveal order and timing are illustrative. Scores are for the complete saved continuations, not the displayed excerpts."
+}
