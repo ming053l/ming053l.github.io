@@ -250,51 +250,6 @@
         "sampler": "sigma=0.65, 1 step",
         "rendered": true
       }
-    },
-    {
-      "id": "line",
-      "label": "藍色線條",
-      "category": "art",
-      "reference": "line-reference.webp",
-      "thumbnail": "line-thumb.webp",
-      "description": "跨越鼻樑的藍色線條",
-      "pairs": {
-        "studio": {
-          "layer": "studio-line-layer.webp",
-          "map": "studio-line-map.png",
-          "render": "studio-line-render.webp",
-          "warp": "studio-line-warp.webp"
-        },
-        "night": {
-          "layer": "night-line-layer.webp",
-          "map": "night-line-map.png",
-          "render": "night-line-render.webp",
-          "warp": "night-line-warp.webp"
-        },
-        "smile": {
-          "layer": "smile-line-layer.webp",
-          "map": "smile-line-map.png",
-          "render": "smile-line-render.webp",
-          "warp": "smile-line-warp.webp"
-        },
-        "warm": {
-          "layer": "warm-line-layer.webp",
-          "map": "warm-line-map.png",
-          "render": "warm-line-render.webp",
-          "warp": "warm-line-warp.webp"
-        }
-      },
-      "masks": {
-        "eyes": "line-eyes-mask.png",
-        "lips": "line-lips-mask.png",
-        "face": "line-face-mask.png"
-      },
-      "provenance": {
-        "reference": "art4_tv150_ref1",
-        "stage2": "FULL/lora_step3000_ema",
-        "sampler": "sigma=0.65, 1 step",
-        "rendered": true
-      }
     }
   ],
   "rejected": [
