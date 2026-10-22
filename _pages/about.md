@@ -171,11 +171,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="20266" id="paper-replaymark">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video id="replaymark-home-preview" width="854" height="498" muted loop playsinline preload="none" aria-label="Concept animation comparing green/red word lists with green/red model-response groups. Token watermarking reconstructs word membership from a hash and key; ReplayMark queries the original model to reconstruct keyed response directions.">
-<source src="images/web/replaymark-home-lists-v2.mp4?v=2" type="video/mp4"/>
+<video id="replaymark-home-preview" width="854" height="526" muted loop playsinline preload="none" aria-label="Two-scene illustration: hash-based word lists versus keyed model-response groups, explaining why carpet is red in one example and green in the other, followed by icon diagrams comparing generation and verification.">
+<source src="images/web/replaymark-home-paradigms.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/ReplayMark/">View the ReplayMark project page</a>
 </video>
-<picture><img class="pv-poster" src="images/web/replaymark-home-lists-v2.webp?v=2" width="854" height="498" alt="" decoding="async" loading="lazy"/></picture>
+<picture><img class="pv-poster" src="images/web/replaymark-home-paradigms.webp?v=2" width="854" height="526" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
@@ -188,7 +188,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://openreview.net/forum?id=fmXX4kVZ30" rel="noopener" target="_blank">OpenReview</a>
 <a href="https://github.com/ming053l/ReplayMark" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/ReplayMark/" rel="noopener" target="_blank">Project Page</a>
-<a href="https://ming053l.github.io/ReplayMark/assets/replaymark-comparison.mp4" rel="noopener" target="_blank">Video</a>
+<a href="https://ming053l.github.io/images/web/replaymark-home-paradigms.mp4" rel="noopener" target="_blank">Video</a>
 </div>
 </div>
 </div>
