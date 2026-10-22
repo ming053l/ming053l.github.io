@@ -61,6 +61,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 -->
 
+<p id="replaymark-award"><strong>ReplayMark</strong> was selected as a <strong>Distinguished Paper</strong> at the <strong>NeurIPS FLMSec Workshop</strong>.</p>
+
 <h2 id="publications">Selected Publications</h2>
 
 <div id="pub-container">
