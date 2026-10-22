@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "format": "irismix-guided-regions-v1",
+  "size": 640,
+  "sources": {
+    "studio": {
+      "eyes": "studio-eyes.png",
+      "lips": "studio-lips.png",
+      "face": "studio-face.png"
+    },
+    "night": {
+      "eyes": "night-eyes.png",
+      "lips": "night-lips.png",
+      "face": "night-face.png"
+    },
+    "smile": {
+      "eyes": "smile-eyes.png",
+      "lips": "smile-lips.png",
+      "face": "smile-face.png"
+    },
+    "warm": {
+      "eyes": "warm-eyes.png",
+      "lips": "warm-lips.png",
+      "face": "warm-face.png"
+    }
+  },
+  "sourceReferenceIds": {
+    "studio": [
+      "satin",
+      "merlot",
+      "mint",
+      "lily",
+      "cobalt",
+      "poppy"
+    ],
+    "night": [
+      "satin",
+      "merlot",
+      "mint",
+      "lily",
+      "cobalt"
+    ],
+    "smile": [
+      "satin",
+      "merlot",
+      "mint",
+      "lily",
+      "cobalt"
+    ],
+    "warm": [
+      "satin",
+      "merlot",
+      "mint",
+      "cobalt",
+      "poppy"
+    ]
+  },
+  "encoding": "8-bit grayscale PNG; read red channel /255; source display coordinates",
+  "construction": {
+    "referenceToSource": "existing lossless RGB24 map; invalid indices contribute zero",
+    "union": "pixelwise maximum across every approved pair for that source",
+    "priority": [
+      "lips",
+      "eyes",
+      "face"
+    ],
+    "lips": "L=max(mapped lips)",
+    "eyes": "round(E*(255-L)/255), where E=max(mapped eyes)",
+    "face": "round(F*(255-L-eyes)/255), where F=max(mapped face)",
+    "invariant": "eyes+lips+face<=255 at every source pixel; remainder belongs to whole-look base/source",
+    "meaning": "fixed spatial ownership for UI compositing; these are geometric regions, not model-predicted cosmetic layers"
+  },
+  "guideOptions": {
+    "eyes": [
+      "satin",
+      "merlot",
+      "mint",
+      "cobalt"
+    ],
+    "lips": [
+      "satin",
+      "merlot",
+      "poppy"
+    ],
+    "face": [
+      "lily"
+    ],
+    "availability": "intersect each list with the current source approved pairs"
+  },
+  "limitations": [
+    "Poppy artwork crosses the eye/face boundary and is omitted from separate eye/face choices. Use the whole look for the complete artwork.",
+    "Natural/subtle lip looks mint/lily/cobalt are omitted from the direct lip-color list; source restore remains available.",
+    "Changing regions or mixing references composites cached Stage II results and does not run a new model inference."
+  ],
+  "metrics": {
+    "studio": {
+      "approvedPairs": 6,
+      "maxSum": 255,
+      "parts": {
+        "eyes": {
+          "pixelsAboveHalf": 20227,
+          "boundsAboveHalfXYXY": [
+            149,
+            219,
+            506,
+            306
+          ],
+          "weightedAreaPixels": 20199.152941
+        },
+        "lips": {
+          "pixelsAboveHalf": 6625,
+          "boundsAboveHalfXYXY": [
+            209,
+            367,
+            457,
+            432
+          ],
+          "weightedAreaPixels": 6601.533333
+        },
+        "face": {
+          "pixelsAboveHalf": 59073,
+          "boundsAboveHalfXYXY": [
+            157,
+            144,
+            511,
+            480
+          ],
+          "weightedAreaPixels": 59178.486275
+        }
+      }
+    },
+    "night": {
+      "approvedPairs": 5,
+      "maxSum": 255,
+      "parts": {
+        "eyes": {
+          "pixelsAboveHalf": 8783,
+          "boundsAboveHalfXYXY": [
+            201,
+            268,
+            387,
+            348
+          ],
+          "weightedAreaPixels": 8793.231373
+        },
+        "lips": {
+          "pixelsAboveHalf": 3475,
+          "boundsAboveHalfXYXY": [
+            220,
+            391,
+            324,
+            445
+          ],
+          "weightedAreaPixels": 3488.858824
+        },
+        "face": {
+          "pixelsAboveHalf": 44002,
+          "boundsAboveHalfXYXY": [
+            195,
+            209,
+            445,
+            494
+          ],
+          "weightedAreaPixels": 43912.952941
+        }
+      }
+    },
+    "smile": {
+      "approvedPairs": 5,
+      "maxSum": 255,
+      "parts": {
+        "eyes": {
+          "pixelsAboveHalf": 9345,
+          "boundsAboveHalfXYXY": [
+            192,
+            270,
+            404,
+            346
+          ],
+          "weightedAreaPixels": 9363.796078
+        },
+        "lips": {
+          "pixelsAboveHalf": 4016,
+          "boundsAboveHalfXYXY": [
+            209,
+            391,
+            353,
+            443
+          ],
+          "weightedAreaPixels": 4030.392157
+        },
+        "face": {
+          "pixelsAboveHalf": 42855,
+          "boundsAboveHalfXYXY": [
+            188,
+            209,
+            439,
+            494
+          ],
+          "weightedAreaPixels": 42756.639216
+        }
+      }
+    },
+    "warm": {
+      "approvedPairs": 5,
+      "maxSum": 255,
+      "parts": {
+        "eyes": {
+          "pixelsAboveHalf": 30612,
+          "boundsAboveHalfXYXY": [
+            138,
+            207,
+            557,
+            318
+          ],
+          "weightedAreaPixels": 30606.27451
+        },
+        "lips": {
+          "pixelsAboveHalf": 10002,
+          "boundsAboveHalfXYXY": [
+            216,
+            409,
+            518,
+            499
+          ],
+          "weightedAreaPixels": 10075.541176
+        },
+        "face": {
+          "pixelsAboveHalf": 101073,
+          "boundsAboveHalfXYXY": [
+            149,
+            112,
+            585,
+            559
+          ],
+          "weightedAreaPixels": 100982.098039
+        }
+      }
+    }
+  },
+  "files": {
+    "night-eyes.png": {
+      "bytes": 5986,
+      "sha256": "56a4bd0dc5b5d771075ff3f826c7db83b78057f13505d3a4b698fc884be616da"
+    },
+    "night-face.png": {
+      "bytes": 14386,
+      "sha256": "2e0bb541e22f720f3b761b83c9badd71a7f36390f17f04631ac844eed99b02b9"
+    },
+    "night-lips.png": {
+      "bytes": 3503,
+      "sha256": "71e1c99e427399d9a2375d819cebf97aad2dff2ad4d474cda24e09c9e01ae978"
+    },
+    "smile-eyes.png": {
+      "bytes": 6394,
+      "sha256": "86bac25ae2fbd7dcf551fbe5f4a9777ae45dae830c5d9d3c84e746496c4d2277"
+    },
+    "smile-face.png": {
+      "bytes": 15399,
+      "sha256": "fac33059be4df5a288d8c569bb1816bd192042521818294ffcd6460a3af6e698"
+    },
+    "smile-lips.png": {
+      "bytes": 4153,
+      "sha256": "445c934e36de563cc48d733b25d01cb121c730c164f38b35ceb8bf80a2b5ace3"
+    },
+    "studio-eyes.png": {
+      "bytes": 10274,
+      "sha256": "52890dfbfc3ac9198147e0e81d8789b90e9b8c50919a701400b0be9ee8194aac"
+    },
+    "studio-face.png": {
+      "bytes": 21181,
+      "sha256": "5f4d231d72420904314c75728adaa6cb4ba0151fb6702d631e6cd76514cf7444"
+    },
+    "studio-lips.png": {
+      "bytes": 6110,
+      "sha256": "42d74c3decbe81ab71cb83bd17375c11ee4f206a6ef744bf9e0fa431fb7e4f5c"
+    },
+    "warm-eyes.png": {
+      "bytes": 12127,
+      "sha256": "9832c71efee6b051a38da8aafb0ca110814bebf3d1174389b5840d7598691e5f"
+    },
+    "warm-face.png": {
+      "bytes": 25941,
+      "sha256": "1c1d4c95ce9daf84686a36640cc6324dfb75bf29b8e804852817438176315dc1"
+    },
+    "warm-lips.png": {
+      "bytes": 7468,
+      "sha256": "08c593e5bb75f86b20e427a58d8a1a1700bee848f10c913f4d0daa03ea3ab314"
+    }
+  },
+  "inputs": {
+    "base": "../v3/",
+    "files": {
+      "cobalt-eyes-mask.png": {
+        "bytes": 8055,
+        "sha256": "29e865ffa7b1416026d8be32590356c8210edcb57b3a5cefb8401d863f2a8cff"
+      },
+      "cobalt-face-mask.png": {
+        "bytes": 20835,
+        "sha256": "15ad58cde6a74e04f11085538d2c4c40d5e74d1d25efd0b143165a37a1496ce4"
+      },
+      "cobalt-lips-mask.png": {
+        "bytes": 4659,
+        "sha256": "ef2b3d49cb418bd34be2ba96747c39590cd2ebfab196780455adb4fc6ae0fbc1"
+      },
+      "lily-eyes-mask.png": {
+        "bytes": 7229,
+        "sha256": "90b1642c183f17e061dfa2fa700d801102a2e3520e239af621cdac707f10c38f"
+      },
+      "lily-face-mask.png": {
+        "bytes": 18691,
+        "sha256": "53f1f9ff14355d955db40fe81df6f5311a700b80a2395121c1629a45b6630b9c"
+      },
+      "lily-lips-mask.png": {
+        "bytes": 4388,
+        "sha256": "4d50ee0efe23450b2702fdd88c641d3d2f1fd63d306d899f5f88886c7cf985d8"
+      },
+      "manifest.json": {
+        "bytes": 9122,
+        "sha256": "755f688613368ac220a373d9a8cf0ca3fe22f170e3d1ddf0cb9349a5446de38a"
+      },
+      "merlot-eyes-mask.png": {
+        "bytes": 7238,
+        "sha256": "2386db9c7689ff3385858c355b2f23eda46775c8d015295225798a968cccd7b8"
+      },
+      "merlot-face-mask.png": {
+        "bytes": 20280,
+        "sha256": "fd1222c532baaa401637db7156bf18ff3481bb0dc9065f02dd5aa756d476b8fb"
+      },
+      "merlot-lips-mask.png": {
+        "bytes": 4605,
+        "sha256": "0e19a1abbf25b531a5e61bbd57884a4c3d94ff1a235eca3b26f10ecf5c99f9be"
+      },
+      "mint-eyes-mask.png": {
+        "bytes": 7675,
+        "sha256": "1fd879a2518bc097fecdf84d5eeb0c5b3b481f684756a4718c4fa664f1b6e2a0"
+      },
+      "mint-face-mask.png": {
+        "bytes": 19501,
+        "sha256": "0d81cf7442f74fe0dcff9e8d761de81f36020ab712396e8c857ed1104f2a56a9"
+      },
+      "mint-lips-mask.png": {
+        "bytes": 4377,
+        "sha256": "3977a5f957890887b209274e5b3d8d2d2c10c08047b4ff71af59156b2f3ccce2"
+      },
+      "night-cobalt-map.png": {
+        "bytes": 36131,
+        "sha256": "d1a1f14f4d45d16a91c3d7ab32124d17a7aff85ada22a72eecb828c47d668a27"
+      },
+      "night-lily-map.png": {
+        "bytes": 32132,
+        "sha256": "36eaad21b90b702a2980e8d5c326941aa0076426a63889a2be89fbfe14edff6a"
+      },
+      "night-merlot-map.png": {
+        "bytes": 37537,
+        "sha256": "c543cae6a25ff659ef27cf271e298b51b4f65eca8254ac033e2437df205a5019"
+      },
+      "night-mint-map.png": {
+        "bytes": 36970,
+        "sha256": "539c9a53d8fb7cf5f6a62a8a492994fb171666851f59708bad33a8f82e0f6db7"
+      },
+      "night-satin-map.png": {
+        "bytes": 32667,
+        "sha256": "ceb499896258ccdad8143053351b9aed4cd82b5e4b6ab6aa5ced7c7bc210b8f2"
+      },
+      "poppy-eyes-mask.png": {
+        "bytes": 6999,
+        "sha256": "cec77a6c15820dde948a35b5055ec83f57c2f0477f0da69074500a2378fc07f4"
+      },
+      "poppy-face-mask.png": {
+        "bytes": 19536,
+        "sha256": "f0d88ea659bd79512e8a0ad4eea64dc3904119b64c50368b672e85e8d92fb762"
+      },
+      "poppy-lips-mask.png": {
+        "bytes": 4174,
+        "sha256": "7d1af405c095d27ebb84f1605b834f5a791cd41f2aa5df30e25b6242e02dbd41"
+      },
+      "satin-eyes-mask.png": {
+        "bytes": 7080,
+        "sha256": "df8221f4992fa5aa79e6a1d4f08817f32051ac071303db28b2a63e6371ec477f"
+      },
+      "satin-face-mask.png": {
+        "bytes": 18272,
+        "sha256": "ae2118f0bf0b87d69b659733f008f37f9eb738c158e5cff11a371c46d8facb74"
+      },
+      "satin-lips-mask.png": {
+        "bytes": 4279,
+        "sha256": "eb23473c45fc767b297f6a30a4f116df05b7e0d56e9c0521267da84a8890a3c8"
+      },
+      "smile-cobalt-map.png": {
+        "bytes": 39810,
+        "sha256": "d99f2fff298f79d0e30434dabd41e59fd410c9eb41cd73a3d776f6674d36b335"
+      },
+      "smile-lily-map.png": {
+        "bytes": 36047,
+        "sha256": "50312ae7d56c2bae3daeb56e90bef20e3055d207fe8d8f7bc01fe84aaa012252"
+      },
+      "smile-merlot-map.png": {
+        "bytes": 35992,
+        "sha256": "900dfd6061f111cd21ac26667cf78ed18e9db6649ccebca6ae21bf29aa2f342d"
+      },
+      "smile-mint-map.png": {
+        "bytes": 35142,
+        "sha256": "dfb99ec06e8454329f87b3dd96b324a8197c713c0c15d0a35c9f8c3dd8abe215"
+      },
+      "smile-satin-map.png": {
+        "bytes": 37709,
+        "sha256": "38ccf0d1fa1bc294a5474bf285d9ffe550db379ca293d6fe082f7930eb2bef69"
+      },
+      "studio-cobalt-map.png": {
+        "bytes": 47172,
+        "sha256": "bdbdf9d1e285cd2d86fdf827f234b6dce51f954abd1a7e062fa7e3f6ce3b6128"
+      },
+      "studio-lily-map.png": {
+        "bytes": 40986,
+        "sha256": "65ce40c46d5bd2349c5c8730ad57363f1619e339008a2abdad62b995a57f141a"
+      },
+      "studio-merlot-map.png": {
+        "bytes": 42224,
+        "sha256": "e956ed748478e02d706a115504540af2cc6443044a78c1632977c6ad9b605dd7"
+      },
+      "studio-mint-map.png": {
+        "bytes": 44284,
+        "sha256": "e4dc72e2df0944ef36b84dda514b0856f8af9ee2388eb9b5ce93da843ed030be"
+      },
+      "studio-poppy-map.png": {
+        "bytes": 46197,
+        "sha256": "c8e72d14142be9b014eefdf3e1e8aee36c38a06b9d4b27cea703e379a2d5b2f9"
+      },
+      "studio-satin-map.png": {
+        "bytes": 43673,
+        "sha256": "4db35406a7d070541b8620b2cf3b79667731bd508f30441fb01aa412fba0844e"
+      },
+      "warm-cobalt-map.png": {
+        "bytes": 61789,
+        "sha256": "79c1adc6df6872a12f930c5191603f3a8f7163f8bb4eed68cb08f813697c66a7"
+      },
+      "warm-merlot-map.png": {
+        "bytes": 60098,
+        "sha256": "39e45042e9c921119eb4d1e8e3989c1bf164d43e8c4da376401d899e06d75689"
+      },
+      "warm-mint-map.png": {
+        "bytes": 65583,
+        "sha256": "10aaf622032376614bb954a8ed278731d40c70317d2151a7179da4f6276bf937"
+      },
+      "warm-poppy-map.png": {
+        "bytes": 46513,
+        "sha256": "f8ad9866574625364e32866fd9c2c452ee6e30f7b75d0805a08624ebc9bf9767"
+      },
+      "warm-satin-map.png": {
+        "bytes": 59672,
+        "sha256": "f924895a27ce00e56fa2c888e51f811226953d6e36dbd4a772aae7779be9e8c2"
+      }
+    }
+  }
+}
