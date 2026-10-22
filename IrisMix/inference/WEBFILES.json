@@ -1,6 +1,6 @@
 {
   "format": "irismix-public-frontend-v1",
-  "sourceReleaseInventorySHA256": "fc281e8ef5ffb77b3dde9b0eaf46236ad0c4ee0930335f4d44dfe3d55378fb87",
+  "sourceReleaseInventorySHA256": "513359a164b822531540c9a8e30ded023efc2cc92395fbc62430fe97d02ab60d",
   "modelBase": "https://huggingface.co/ming0531/IrisMix-browser/resolve/b961ede36941fcab68a71a8ce7f2b74677db8aa0/",
   "weightsIncluded": false,
   "parentAssets": {
@@ -25,8 +25,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 1472,
-      "sha256": "f2e9f0b14b3df8db4174f57c32ea817d247b99dc017ee7d15b3eb22c222d8b1b"
+      "bytes": 1964,
+      "sha256": "f058d20f345948f3b21095345acf085d0f19973ab100da666c4bc4df31de7dff"
     },
     {
       "path": "browser-prep/opencv.js",
@@ -185,8 +185,8 @@
     },
     {
       "path": "photo-demo.mjs",
-      "bytes": 11066,
-      "sha256": "5131390ca46b5ee9cd8b1fd56497b4bc54d225848e3f5d9e58d8abb33f00f977"
+      "bytes": 11248,
+      "sha256": "87b66d1506943770b34034e31b6179cd49bc359610973a68f371ebbd2fe4a921"
     },
     {
       "path": "photo-engine.mjs",
@@ -235,8 +235,8 @@
     },
     {
       "path": "transformer.mjs",
-      "bytes": 22240,
-      "sha256": "611c895a27f9f8640cebb0d016bf22978e2846c617fae3071b2475812862520d"
+      "bytes": 23139,
+      "sha256": "9363fcee777532222dfee6fdffefa332482339fee0b20923ae9892f1125d39d6"
     },
     {
       "path": "vae.mjs",

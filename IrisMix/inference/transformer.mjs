@@ -29,7 +29,9 @@ export class GPUOps {
   }
   upload(data,label) {
     const a = data instanceof ArrayBuffer ? new Uint8Array(data) : data;
-    const b = this.alloc(a.byteLength,label); this.device.queue.writeBuffer(b,0,a); return b;
+    const b = this.alloc(a.byteLength,label);
+    try { this.device.queue.writeBuffer(b,0,a); return b; }
+    catch(error) { b.destroy(); throw error; }
   }
   async read(buffer, length=buffer.size/4) {
     const out = this.device.createBuffer({size:length*4, usage:GPUBufferUsage.COPY_DST|GPUBufferUsage.MAP_READ});
@@ -150,11 +152,33 @@ export class IrisMixTransformer {
     catch(error){self.dispose();if(!options.ops)ops.device?.destroy();throw error;}
   }
   check(){if(this.signal?.aborted)throw new DOMException('已取消推論','AbortError');}
-  async load(keys){const out={};try{for(const key of keys){this.check();const t=this.manifest.tensors[key];if(!t)throw new Error(`Missing model tensor ${key}`);const weight=out[key]={kind:t.kind,shape:t.shape};
-      if(t.kind==='q4'){weight.q=this.ops.upload(await fetchBytes(new URL(t.q.file,this.baseURL),t.q,this.signal),key);weight.scales=this.ops.upload(await fetchBytes(new URL(t.scales.file,this.baseURL),t.scales,this.signal),key+' scales');}
-      else weight.data=this.ops.upload(await fetchBytes(new URL(t.file,this.baseURL),t,this.signal),key);
-      if(t.lora){const l=weight.lora={rank:t.lora.rank,scale:t.lora.scale??1};l.A=this.ops.upload(await fetchBytes(new URL(t.lora.A.file,this.baseURL),t.lora.A,this.signal),key+' LoRA A');l.B=this.ops.upload(await fetchBytes(new URL(t.lora.B.file,this.baseURL),t.lora.B,this.signal),key+' LoRA B');}
-    }return out;}catch(e){this.release(out);throw e;}}
+  async load(keys){
+    this.check();const out={},signal=this.signal,downloads=new AbortController(),cancel=()=>downloads.abort();
+    signal?.addEventListener('abort',cancel,{once:true});
+    try{
+      // Prefetch only this requested block. Six bounded workers overlap remote
+      // resolve/CDN latency; GPU uploads retain the original component order.
+      const plans=keys.map(key=>{const t=this.manifest.tensors[key];if(!t)throw new Error(`Missing model tensor ${key}`);return{key,t};});
+      const jobs=plans.flatMap(({t})=>[...(t.kind==='q4'?[t.q,t.scales]:[t]),...(t.lora?[t.lora.A,t.lora.B]:[])]);
+      const bytes=new Array(jobs.length);let next=0,failed=false,failure;
+      await Promise.all(Array.from({length:Math.min(6,jobs.length)},async()=>{
+        while(!failed&&next<jobs.length){const index=next++;
+          try{this.check();const spec=jobs[index];bytes[index]=await fetchBytes(new URL(spec.file,this.baseURL),spec,downloads.signal);}
+          catch(error){if(!failed){failed=true;failure=error;}downloads.abort();}
+        }
+      }));
+      if(failed)throw failure;
+      let index=0;
+      const upload=label=>{this.check();const at=index++;try{return this.ops.upload(bytes[at],label);}finally{bytes[at]=null;}};
+      for(const{key,t}of plans){this.check();const weight=out[key]={kind:t.kind,shape:t.shape};
+        if(t.kind==='q4'){weight.q=upload(key);weight.scales=upload(key+' scales');}
+        else weight.data=upload(key);
+        if(t.lora){const l=weight.lora={rank:t.lora.rank,scale:t.lora.scale??1};l.A=upload(key+' LoRA A');l.B=upload(key+' LoRA B');}
+      }
+      return out;
+    }catch(error){downloads.abort();this.release(out);throw error;}
+    finally{signal?.removeEventListener('abort',cancel);}
+  }
   release(weights){for(const t of Object.values(weights))free(t.q,t.scales,t.data,t.lora?.A,t.lora?.B);}
   rope(txtIds,imgIds){const ids=new Float32Array(txtIds.length+imgIds.length);ids.set(txtIds);ids.set(imgIds,txtIds.length);const n=ids.length/4;const cos=new Float32Array(n*128),sin=new Float32Array(n*128);for(let r=0;r<n;r++)for(let axis=0;axis<4;axis++)for(let j=0;j<16;j++){const angle=ids[r*4+axis]*Math.pow(2000,-j/16),at=r*128+axis*32+j*2;cos[at]=cos[at+1]=Math.cos(angle);sin[at]=sin[at+1]=Math.sin(angle);}return{cos:this.ops.upload(cos),sin:this.ops.upload(sin)};}
   async feedForward(x,rows,prefix,weights,mod,shiftOffset,scaleOffset,gateOffset){const o=this.ops,s=gpuScope(),own=s.own;try{const norm=own(await o.normMod(x,rows,3072,mod,shiftOffset,scaleOffset));for(let at=0;at<rows;at+=512){this.check();const n=Math.min(512,rows-at),part=own(await o.copy(norm,at*3072*4,n*3072*4));const wide=own(await o.matmul(part,n,3072,18432,weights[prefix+'.linear_in.weight']));s.drop(part);const act=own(await o.swiglu(wide,n,9216));s.drop(wide);const delta=own(await o.matmul(act,n,9216,3072,weights[prefix+'.linear_out.weight']));s.drop(act);await o.addGate(x,delta,n,3072,mod,gateOffset,at);s.drop(delta);}}finally{s.clear();}}
