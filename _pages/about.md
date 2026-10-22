@@ -82,6 +82,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-summary">Lets a user compose a makeup look from parts of different references, such as the eyes of one photo, the lips of another and the face paint of a third, and apply it to their own photo while keeping their identity and background. Each reference is split once into a bare face and an explicit makeup layer, so strength, color, lip finish, blending between looks and the placement of a design can all be adjusted directly on the layer before it is rendered onto the face.</p>
 <div class="links">
 <a href="images/web/irismix-teaser.mp4?v=3" rel="noopener" target="_blank">Video</a>
+<a href="{{ "/IrisMix/" | relative_url }}" target="_self">Try interactive demo ↗</a>
 </div>
 </div>
 </div>

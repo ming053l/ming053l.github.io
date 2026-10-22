@@ -1,0 +1,95 @@
+{
+  "width": 640,
+  "height": 640,
+  "source": "source.webp",
+  "looks": [
+    {
+      "id": "everyday",
+      "label": "Everyday",
+      "preview": "everyday-preview.webp",
+      "parts": {
+        "eyes": {
+          "image": "everyday-eyes.webp",
+          "reference": "everyday-eyes-ref.webp",
+          "label": "Soft Brown"
+        },
+        "lips": {
+          "image": "everyday-lips.webp",
+          "reference": "everyday-lips-ref.webp",
+          "label": "Brick Red"
+        },
+        "face": {
+          "image": "everyday-face.webp",
+          "reference": "everyday-face-ref.webp",
+          "label": "Rosy Blush"
+        }
+      }
+    },
+    {
+      "id": "moon",
+      "label": "Sun & Moon",
+      "preview": "moon-preview.webp",
+      "parts": {
+        "eyes": {
+          "image": "moon-eyes.webp",
+          "reference": "moon-eyes-ref.webp",
+          "label": "Rose & Pearl"
+        },
+        "lips": {
+          "image": "moon-lips.webp",
+          "reference": "moon-lips-ref.webp",
+          "label": "Silver Moon"
+        },
+        "face": {
+          "image": "moon-face.webp",
+          "reference": "moon-face-ref.webp",
+          "label": "Sun & Moon"
+        }
+      }
+    },
+    {
+      "id": "rose",
+      "label": "Rose Garden",
+      "preview": "rose-preview.webp",
+      "parts": {
+        "eyes": {
+          "image": "rose-eyes.webp",
+          "reference": "rose-eyes-ref.webp",
+          "label": "Pink Bloom"
+        },
+        "lips": {
+          "image": "rose-lips.webp",
+          "reference": "rose-lips-ref.webp",
+          "label": "Rose Satin"
+        },
+        "face": {
+          "image": "rose-face.webp",
+          "reference": "rose-face-ref.webp",
+          "label": "Painted Roses"
+        }
+      }
+    },
+    {
+      "id": "gold",
+      "label": "Gilded",
+      "preview": "gold-preview.webp",
+      "parts": {
+        "eyes": {
+          "image": "gold-eyes.webp",
+          "reference": "gold-eyes-ref.webp",
+          "label": "Golden Haze"
+        },
+        "lips": {
+          "image": "gold-lips.webp",
+          "reference": "gold-lips-ref.webp",
+          "label": "Crimson"
+        },
+        "face": {
+          "image": "gold-face.webp",
+          "reference": "gold-face-ref.webp",
+          "label": "Gold Leaf"
+        }
+      }
+    }
+  ]
+}
