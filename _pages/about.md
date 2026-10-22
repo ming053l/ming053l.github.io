@@ -171,11 +171,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="20266" id="paper-replaymark">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video id="replaymark-home-preview" width="854" height="556" muted loop playsinline preload="none" aria-label="Concept animation comparing green/red word lists with green/red model-response groups. Token watermarking reconstructs word membership from a hash and key; ReplayMark queries the original model to reconstruct keyed response directions.">
-<source src="images/web/replaymark-home-lists.mp4?v=2" type="video/mp4"/>
+<video id="replaymark-home-preview" width="854" height="498" muted loop playsinline preload="none" aria-label="Concept animation comparing green/red word lists with green/red model-response groups. Token watermarking reconstructs word membership from a hash and key; ReplayMark queries the original model to reconstruct keyed response directions.">
+<source src="images/web/replaymark-home-lists-v2.mp4?v=2" type="video/mp4"/>
 <a href="https://ming053l.github.io/ReplayMark/">View the ReplayMark project page</a>
 </video>
-<picture><img class="pv-poster" src="images/web/replaymark-home-lists.webp?v=2" width="854" height="556" alt="" decoding="async" loading="lazy"/></picture>
+<picture><img class="pv-poster" src="images/web/replaymark-home-lists-v2.webp?v=2" width="854" height="498" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
