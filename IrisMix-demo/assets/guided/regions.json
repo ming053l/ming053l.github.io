@@ -75,21 +75,31 @@
       "satin",
       "merlot",
       "mint",
-      "cobalt"
+      "lily",
+      "cobalt",
+      "poppy"
     ],
     "lips": [
       "satin",
       "merlot",
+      "mint",
+      "lily",
+      "cobalt",
       "poppy"
     ],
     "face": [
-      "lily"
+      "satin",
+      "merlot",
+      "mint",
+      "lily",
+      "cobalt",
+      "poppy"
     ],
     "availability": "intersect each list with the current source approved pairs"
   },
   "limitations": [
-    "Poppy artwork crosses the eye/face boundary and is omitted from separate eye/face choices. Use the whole look for the complete artwork.",
-    "Natural/subtle lip looks mint/lily/cobalt are omitted from the direct lip-color list; source restore remains available.",
+    "REF brush selections may cross preset part boundaries; face artwork is selected before adding a layer.",
+    "All reference looks are selectable subject to each source approved-pair list; some lip looks are natural/subtle.",
     "Changing regions or mixing references composites cached Stage II results and does not run a new model inference."
   ],
   "metrics": {

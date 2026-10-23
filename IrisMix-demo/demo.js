@@ -1,3 +1,4 @@
+import {createReferenceEditor} from './reference-editor.js?v=1';
 import {createMakeupStation} from './makeup-station.js?v=3';
 (() => {
 'use strict';
@@ -5,15 +6,15 @@ const $=id=>document.getElementById(id),SIZE=640,MASK=512,PARTS=['eyes','lips','
 const STEPS=['source','look','eyes','lips','face','finish'];
 const LABELS={source:'選人像',look:'整體妝感',eyes:'眼妝',lips:'唇色',face:'臉部彩繪',finish:'完成'};
 const TITLES={source:'先選一位模特',look:'挑選整體妝感',eyes:'接著搭配眼妝',lips:'換上喜歡的唇色',face:'加上一點臉部彩繪',finish:'看看你的完整搭配'};
-const DESCRIPTIONS={source:'選擇人像後，下一步就可以開始試妝。',look:'可疊加多款妝容，再逐層調整強度與順序；自由上妝會一起保留。',eyes:'可同時選多款眼妝混搭；再點已選款式即可取消。',lips:'可疊加多款唇色，再調整各層強度。',face:'選擇適合這位模特的彩繪。髮絲遮擋與臉型會影響圖案，可隨時清除。',finish:'這是你目前的搭配。點選部位回去修改，或下載完成的妝容。'};
-const GUIDE_OPTIONS={eyes:['satin','merlot','mint','cobalt'],lips:['satin','merlot','poppy'],face:['lily']};
+const DESCRIPTIONS={source:'選擇人像後，下一步就可以開始試妝。',look:'可疊加多款妝容，再逐層調整強度與順序；自由上妝會一起保留。',eyes:'可同時選多款眼妝混搭；再點已選款式即可取消。',lips:'可疊加多款唇色，再調整各層強度。',face:'選一張參考圖，再塗選想要的花朵、花瓣或線條；不必套用整張妝。',finish:'這是你目前的搭配。點選部位回去修改，或下載完成的妝容。'};
+const FLOWER_LOOKS=['lily','poppy'];
 const asset=name=>'assets/v3/'+name,canvas=()=>{const c=document.createElement('canvas');c.width=c.height=SIZE;return c;};
 const result=$('result'),rc=result.getContext('2d'),ref=$('reference'),fc=ref.getContext('2d');
 const brush=document.createElement('canvas');brush.width=brush.height=MASK;const bc=brush.getContext('2d',{willReadFrequently:true});
 const overlay=document.createElement('canvas');overlay.width=overlay.height=MASK;const oc=overlay.getContext('2d');
 const guidedCanvas=canvas(),gc=guidedCanvas.getContext('2d'),working=canvas(),wc=working.getContext('2d');
 const images=new Map(),maps=new Map(),layerPixels=new Map(),regionMasks=new Map(),sourcePixels=new Map(),ownership=new Map(),guidedTint=new Map();
-let makeupStation=null;
+let makeupStation=null;const referenceEditor=createReferenceEditor();
 let manifest,regionManifest,sourceId='studio',selected='satin',guideStep='source',category='all',referenceAction='stack';
 let guided={look:null,eyes:null,lips:null,face:null},layers=[],activeId=null,nextId=1,wholeHue=0;
 let selection=new Uint8ClampedArray(MASK*MASK),selectionCount=0,history=[],future=[],busy=false;
@@ -81,9 +82,9 @@ function renderGuided(){
  }gc.putImageData(output,0,0);guidedDirty=false;
 }
 function makeLayer(refId,mask){
- const key=sourceId+':'+refId,base=layerPixels.get(key),map=maps.get(key),c=canvas();if(!base||!map)return c;
+ const key=sourceId+':'+refId,base=layerPixels.get(key),map=maps.get(key),c=canvas();c.makeupPixelCount=0;if(!base||!map)return c;
  const x=c.getContext('2d'),data=x.createImageData(SIZE,SIZE);data.data.set(base);
- for(let i=0;i<map.length;i++)data.data[4*i+3]=map[i]<mask.length?base[4*i+3]*mask[map[i]]/255:0;x.putImageData(data,0,0);return c;
+ for(let i=0;i<map.length;i++){const alpha=map[i]<mask.length?base[4*i+3]*mask[map[i]]/255:0;data.data[4*i+3]=alpha;if(alpha>12)c.makeupPixelCount++;}x.putImageData(data,0,0);return c;
 }
 function tint(layer){
  const angle=layer.hue+wholeHue;if(!angle)return layer.canvas;
@@ -92,12 +93,14 @@ function tint(layer){
  layer.tintAngle=angle;layer.tintSource=layer.canvas;layer.tintCanvas=c;return c;
 }
 function hasChoices(){return Object.values(guided).some(s=>s?.refId&&available(s.refId))||layers.some(layer=>layer.available)||!!makeupStation?.hasContent();}
-function hasMakeup(){return Object.values(guided).some(s=>s?.refId&&available(s.refId)&&s.opacity>0)||layers.some(l=>l.available&&l.visible&&l.opacity>0)||!!makeupStation?.hasPaint();}
+function hasMakeup(){return Object.values(guided).some(s=>s?.refId&&available(s.refId)&&s.opacity>0)||layers.some(l=>l.available&&l.visible&&l.opacity>0&&l.canvas.makeupPixelCount>0)||!!makeupStation?.hasPaint();}
 function draft(){if(!previewCache)previewCache=makeLayer(selected,selection);return previewCache;}
 function showDraft(){return $('advanced').open&&$('live-preview').checked&&!$('add-layer').disabled;}
-function paint(x,includeDraft){
+function paint(x,includeDraft,override=null){
+ if(override?.isolate){x.clearRect(0,0,SIZE,SIZE);x.globalAlpha=1;x.drawImage(images.get(asset(manifest.source)),0,0,SIZE,SIZE);x.drawImage(tint(override.layer),0,0);return;}
  renderGuided();x.clearRect(0,0,SIZE,SIZE);x.globalAlpha=1;x.drawImage(guidedCanvas,0,0);
- for(const layer of layers){if(!layer.available||!layer.visible)continue;x.globalAlpha=layer.opacity/100;x.drawImage(tint(layer),0,0);}x.globalAlpha=1;
+ let rendered=override?.replacePart?layers.filter(l=>l.fromStep!==override.replacePart):layers;if(override?.targetId)rendered=rendered.map(l=>l.id===override.targetId?override.layer:l);else if(override)rendered=override.replacePart==='look'?[override.layer,...rendered]:[...rendered,override.layer];
+ for(const layer of rendered){if(!layer.available||!layer.visible)continue;x.globalAlpha=layer.opacity/100;x.drawImage(tint(layer),0,0);}x.globalAlpha=1;
  if(includeDraft&&showDraft())x.drawImage(draft(),0,0);
  if(makeupStation)makeupStation.render(x,x.canvas);
 }
@@ -141,23 +144,23 @@ function refreshSummary(){
   const edit=document.createElement('button');edit.type='button';edit.dataset.editStep=part;edit.textContent=part==='look'&&!hasChoices()?'開始試妝':'調整';edit.disabled=busy;edit.onclick=()=>setStep(part);row.append(text,edit);container.append(row);
  }
  if(makeupStation?.hasPaint()){const note=document.createElement('p');note.className='hint';note.textContent='另外保留自由筆刷上妝，可回「自由上妝」繼續細畫。';container.append(note);}
- if(layers.length){const note=document.createElement('p');note.className='hint';note.textContent=`另外保留${layers.length}個細修圖層。`;container.append(note);}
+ if(layers.length){const note=document.createElement('p');note.className='hint';note.textContent=`已保留 ${layers.length} 個參考與細修圖層，可逐層編輯。`;container.append(note);}
 }
 function guidePreview(){const slot=guided[guideStep];return look(slot?.refId||selected);}
 function refreshGuide(){
  const partStep=PARTS.includes(guideStep),makeupStep=guideStep==='look'||partStep,slot=guided[guideStep],index=STEPS.indexOf(guideStep);
- $('guide-title').textContent=TITLES[guideStep];$('guide-description').textContent=guideStep==='source'?'已選'+manifest.sources.find(s=>s.id===sourceId).label+'，可直接按「下一步：整體妝感」。':guideStep==='finish'&&hasChoices()&&!hasMakeup()?'目前妝感已調為原圖效果，可回到各部位調整，或下載目前畫面。':DESCRIPTIONS[guideStep]+(partStep?' 不用更換，就直接按下一步。':'');
+ $('guide-title').textContent=TITLES[guideStep];$('guide-description').textContent=guideStep==='source'?'已選'+manifest.sources.find(s=>s.id===sourceId).label+'，可直接按「下一步：整體妝感」。':guideStep==='finish'&&hasChoices()&&!hasMakeup()?'目前妝感已調為原圖效果，可回到各部位調整，或下載目前畫面。':DESCRIPTIONS[guideStep]+(partStep?' 可疊加不同款式，或先選取局部再加入。':'');
  $('source-stage').hidden=false;$('makeup-stage').hidden=!makeupStep;$('finish-stage').hidden=guideStep!=='finish';
  document.querySelectorAll('#guide-steps [data-step]').forEach(button=>{
   const step=button.dataset.step,active=step===guideStep,state=button.querySelector('[data-step-state]');button.disabled=busy||(step==='finish'&&!hasChoices());button.classList.toggle('is-active',active);if(active)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');
-  const chosen=step==='source'||(step==='finish'?hasChoices():!!guided[step]);button.classList.toggle('is-complete',chosen);
+  const chosen=step==='source'||(step==='finish'?hasChoices():!!guided[step]||layers.some(l=>l.fromStep===step));button.classList.toggle('is-complete',chosen);
   if(state)state.textContent=layers.some(l=>l.fromStep===step)?layers.filter(l=>l.fromStep===step).length+' 款疊加':step==='source'?manifest.sources.find(s=>s.id===sourceId).label:step==='finish'?(hasChoices()?'可下載':'尚未上妝'):guided[step]?.clear?'已清除':guided[step]?.refId?(available(guided[step].refId)?'已選擇':'此人像不適用'):step==='look'?'待選擇':guided.look?'沿用整體':'可略過';
  });
  let optionCount=0;document.querySelectorAll('[data-reference]').forEach(button=>{
-  const item=look(button.dataset.reference),eligible=makeupStep&&(guideStep==='look'||GUIDE_OPTIONS[guideStep].includes(item.id))&&available(item.id)&&(category==='all'||item.category===category);button.hidden=!eligible;button.disabled=busy;const applied=referenceAction==='stack'?layers.some(l=>l.fromStep===guideStep&&l.refId===item.id):!!slot?.refId&&slot.refId===item.id;button.setAttribute('aria-pressed',String(applied));button.querySelector('.applied-check').hidden=!applied;if(eligible)optionCount++;
+  const item=look(button.dataset.reference),eligible=makeupStep&&available(item.id)&&(category==='all'||item.category===category);button.hidden=!eligible;const option=button.closest('.reference-option');option.hidden=!eligible;option.style.order=String((guideStep==='face'&&!FLOWER_LOOKS.includes(item.id)?100:0)+manifest.looks.indexOf(item));option.querySelector('[data-select-region]').disabled=busy;button.disabled=busy;const applied=layers.some(l=>l.fromStep===guideStep&&l.refId===item.id)||!!slot?.refId&&slot.refId===item.id;button.setAttribute('aria-pressed',String(applied));button.querySelector('.applied-check').hidden=!applied;button.querySelector('.reference-part-hint').textContent=guideStep==='face'?(FLOWER_LOOKS.includes(item.id)?'塗選花朵或局部':'可自由取用這張參考的局部'):guideStep==='lips'&&['mint','lily','cobalt'].includes(item.id)?'自然唇色，可選取局部':'可直接套用或先選局部';if(eligible)optionCount++;
  });
- $('empty-options').hidden=!makeupStep||optionCount>0;
- document.querySelectorAll('[data-reference-action]').forEach(b=>{b.disabled=busy;b.setAttribute('aria-pressed',String(b.dataset.referenceAction===referenceAction));});$('reference-action-note').textContent=referenceAction==='stack'?'可複選；再點一次取消。新增同部位圖層預設 50%，可在下方調整。':'替換目前部位的參考圖層；其他部位與自由上妝保留。';
+ $('empty-options').hidden=!makeupStep||optionCount>0;const approved=manifest.looks.filter(item=>available(item.id)),flowerCount=approved.filter(item=>FLOWER_LOOKS.includes(item.id)).length;$('reference-availability').textContent=makeupStep?'此模特可用 '+approved.length+' 款參考'+(guideStep==='face'?'（其中 '+flowerCount+' 款花卉彩繪）':'')+'；每款都能先塗選局部再加入。'+(approved.length<manifest.looks.length?' 圖案不完整的配對仍不開放。':''):'';
+ document.querySelectorAll('[data-reference-action]').forEach(b=>{b.disabled=busy;b.setAttribute('aria-pressed',String(b.dataset.referenceAction===referenceAction));});$('reference-action-note').textContent=referenceAction==='stack'?'可複選；已加入的款式再點一次可取消。同部位新圖層預設 50%，每層皆可再用筆刷編輯。':'替換目前部位的參考圖層；其他部位與自由上妝保留。';
  document.querySelectorAll('[data-category]').forEach(b=>{b.disabled=busy;b.setAttribute('aria-pressed',String(b.dataset.category===category));});
  const preview=guidePreview();$('selected-reference-image').src=asset(preview.reference);$('selected-reference-image').alt=preview.label+'參考原圖';$('selected-reference-name').textContent=preview.label;$('selected-reference-description').textContent=preview.description;
  $('step-adjustments').hidden=!makeupStep||!slot?.refId;
@@ -191,23 +194,32 @@ function setStep(step,{scroll=true}={}){
 function setBusy(value){busy=value;$('studio').setAttribute('aria-busy',String(value));refreshAll();refreshReferenceMix();}
 async function chooseGuided(id){
  if(busy||!(guideStep==='look'||PARTS.includes(guideStep))||!available(id))return;
- const part=guideStep;if(part!=='look'&&!GUIDE_OPTIONS[part].includes(id))return;
+ const part=guideStep;
+ if(guideStep==='face'&&!(referenceAction==='stack'&&layers.some(l=>l.fromStep===part&&l.refId===id))){await openReferenceEditor(id,{part});return;}
  if(referenceAction==='stack'){await toggleReferenceLayer(id,part);return;}
- const same=guided[part]?.refId===id&&!layers.some(l=>l.fromStep===part);
- if(same){announce('目前已使用這款'+LABELS[part]+'。');return;}
+ if(layers.length>=12&&!layers.some(l=>l.fromStep===part)){announce('參考圖層已達 12 層，請先移除不用的圖層。');return;}
  setBusy(true);
- try{
-  await ensureLook(id);remember();selected=id;selection.fill(0);loadBrush();
-  if(part==='look')guided.look={refId:id,hue:0,opacity:100};
-  else guided[part]={refId:id,hue:0,opacity:100};
-  layers=layers.filter(l=>l.fromStep!==part);if(!layers.some(l=>l.id===activeId))activeId=layers.at(-1)?.id??null;refreshLayers();
-  changed();announce('已換上'+look(id).label+'的'+LABELS[part]+'，可調整強度與色調。');
- }catch(error){announce('素材載入失敗，已保留原本搭配。');console.error(error);}
- finally{setBusy(false);refreshAll();schedule();}
+ try{await ensureLook(id);const mask=part==='look'?new Uint8ClampedArray(MASK*MASK).fill(255):regionMasks.get(id+':'+part).slice();remember();selected=id;guided[part]=null;layers=layers.filter(l=>l.fromStep!==part);const layer={id:nextId++,refId:id,fromStep:part,opacity:100,visible:true,available:true,mask,canvas:makeLayer(id,mask),hue:0};if(part==='look')layers.unshift(layer);else layers.push(layer);activeId=layer.id;changed();refreshLayers();announce('已替換此部位的參考圖層，其他部位與自由上妝保留。');}
+ catch(error){announce('素材載入失敗，已保留原本搭配。');console.error(error);}finally{setBusy(false);schedule();}
 }
+async function openReferenceEditor(id,{layerId=null,part=guideStep}={}){
+ if(busy||!available(id))return;if(!layerId&&layers.length>=12&&!(referenceAction==='replace'&&layers.some(l=>l.fromStep===part))){announce('參考圖層已達 12 層，請先移除不用的圖層。');return;}const source=sourceId,action=referenceAction;let returnId=layerId;
+ setBusy(true);
+ try{await ensureLook(id);const existing=layerId?layers.find(l=>l.id===layerId):null;if(layerId&&!existing)return;if(existing)activeId=existing.id;
+ const partName=existing?.fromStep||part,partMask=regionMasks.get(id+':'+partName)||new Uint8ClampedArray(MASK*MASK).fill(255),initial=existing?existing.mask.slice():new Uint8ClampedArray(MASK*MASK),overlap=layers.some(l=>l.fromStep===partName)||!!guided[partName]?.refId||!!guided.look?.refId;
+ const base=existing?{...existing}:{id:0,refId:id,fromStep:partName,opacity:action==='replace'?100:overlap?50:100,visible:true,available:true,hue:0};
+ setBusy(false);refreshLayers();
+ referenceEditor.open({label:look(id).label,editing:!!existing,image:images.get(asset(look(id).reference)),mask:initial,partMask,
+  render(target,mask,isolate){const c=makeLayer(id,mask),candidate={...base,canvas:c};paint(target.getContext('2d'),false,{layer:candidate,isolate,targetId:existing?.id,replacePart:!existing&&action==='replace'?partName:null});return c.makeupPixelCount;},
+  commit(mask){if(sourceId!==source)return;const c=makeLayer(id,mask);remember();if(existing){const layer=layers.find(l=>l.id===layerId);if(!layer)return;layer.mask=mask.slice();layer.canvas=c;layer.partial=true;activeId=layer.id;}else{if(action==='replace'){guided[partName]=null;layers=layers.filter(l=>l.fromStep!==partName);}const layer={...base,id:nextId++,mask:mask.slice(),canvas:c,partial:true};if(action==='replace'&&partName==='look')layers.unshift(layer);else layers.push(layer);activeId=layer.id;returnId=layer.id;selected=id;selection.fill(0);loadBrush();}changed();refreshLayers();refreshAll();const edited=existing&&layers.find(l=>l.id===layerId);announce(existing?'已儲存這一層的局部選區，其他圖層保持不變。'+(!edited.visible?' 這層仍隱藏，可按「顯示」查看。':edited.opacity===0?' 這層強度仍為 0%，可調高查看。':''):'已加入局部圖層，可繼續選其他參考或再次編輯。');},
+  afterClose(){requestAnimationFrame(()=>{const button=$('reference-mix-layers').querySelector(`[data-ref-layer-id="${returnId}"] [data-mix-action="edit"]`)||document.querySelector(`[data-select-region="${id}"]`);button?.focus({preventScroll:true});})}
+ });
+ }catch(error){announce('編輯器無法載入，已保留原本妝容。');console.error(error);}finally{if(busy)setBusy(false);}
+}
+function openLayerEditor(id){const layer=layers.find(l=>l.id===id);if(layer)openReferenceEditor(layer.refId,{layerId:id,part:layer.fromStep||'look'});}
 async function toggleReferenceLayer(id,part){
  const existing=layers.find(l=>l.fromStep===part&&l.refId===id);
- if(existing){remember();layers=layers.filter(l=>l.id!==existing.id);if(activeId===existing.id)activeId=layers.at(-1)?.id??null;changed();refreshLayers();refreshAll();announce('已取消'+look(id).label+'的'+LABELS[part]+'。');return;}
+ if(existing){remember();layers=layers.filter(l=>!(l.fromStep===part&&l.refId===id));if(!layers.some(l=>l.id===activeId))activeId=layers.at(-1)?.id??null;changed();refreshLayers();refreshAll();announce('已取消'+look(id).label+'的'+LABELS[part]+'。');return;}
  if(layers.length>=12){announce('參考圖層已達 12 層，請先移除不用的圖層。');return;}
  setBusy(true);
  try{await ensureLook(id);const mask=part==='look'?new Uint8ClampedArray(MASK*MASK).fill(255):regionMasks.get(id+':'+part).slice();
@@ -218,10 +230,11 @@ async function toggleReferenceLayer(id,part){
 }
 function refreshReferenceMix(){
  const entries=[...layers].reverse().filter(l=>l.fromStep),list=$('reference-mix-layers');list.replaceChildren();$('reference-mix').hidden=!entries.length;$('reference-mix-count').textContent=entries.length;
- for(const layer of entries){const row=document.createElement('div');row.className='reference-mix-row';row.dataset.refLayerId=layer.id;
- const name=document.createElement('strong');name.textContent=look(layer.refId).label+'・'+LABELS[layer.fromStep]+(layer.available?'':'（此人像不適用）');row.append(name);
- const label=document.createElement('label');label.textContent='強度 ';const input=document.createElement('input');input.type='range';input.min=0;input.max=100;input.value=layer.opacity;input.setAttribute('aria-label',name.textContent+'強度');const output=document.createElement('output');output.value=layer.opacity+'%';label.append(input,output);row.append(label);bindRange(input,value=>{layer.opacity=value;syncOpacity(layer);});
- const controls=document.createElement('div');controls.className='reference-mix-controls';for(const[action,text]of[['visibility',layer.visible?'隱藏':'顯示'],['up','↑ 往前'],['down','↓ 往後'],['remove','移除']]){const button=document.createElement('button');button.type='button';button.dataset.mixAction=action;button.textContent=text;const original=$('layers').querySelector(`[data-layer-id="${layer.id}"] [data-action="${action}"]`);button.disabled=busy||!!original?.disabled;button.setAttribute('aria-label',text+' '+name.textContent);button.onclick=()=>original?.click();controls.append(button);}row.append(controls);list.append(row);
+ for(const layer of entries){const row=document.createElement('div');row.className='reference-mix-row';row.dataset.refLayerId=layer.id;row.dataset.selected=String(layer.id===activeId);
+ const name=document.createElement('strong');name.textContent=look(layer.refId).label+'・'+LABELS[layer.fromStep]+(layer.partial?'・局部':'')+(layer.available?'':'（此人像不適用）');row.append(name);
+ for(const [key,labelText,min,max,suffix]of[['opacity','強度 ',0,100,'%'],['hue','色調 ',-90,90,'°']]){const label=document.createElement('label');label.textContent=labelText;const input=document.createElement('input');input.type='range';input.min=min;input.max=max;input.value=layer[key];input.setAttribute('aria-label',name.textContent+labelText.trim());input.disabled=busy;const output=document.createElement('output');output.value=layer[key]+suffix;label.append(input,output);row.append(label);bindRange(input,value=>{layer[key]=value;output.value=value+suffix;if(key==='opacity')syncOpacity(layer);if(layer.id===activeId)refreshEditor();});}
+ const controls=document.createElement('div');controls.className='reference-mix-controls';const edit=document.createElement('button');edit.type='button';edit.dataset.mixAction='edit';edit.textContent='筆刷編輯／選取局部';edit.setAttribute('aria-label','筆刷編輯 '+name.textContent);edit.disabled=busy||!layer.available;edit.onclick=()=>openLayerEditor(layer.id);controls.append(edit);
+ for(const[action,text]of[['visibility',layer.visible?'隱藏':'顯示'],['up','↑ 往前'],['down','↓ 往後'],['remove','移除']]){const button=document.createElement('button');button.type='button';button.dataset.mixAction=action;button.textContent=text;const original=$('layers').querySelector(`[data-layer-id="${layer.id}"] [data-action="${action}"]`);button.disabled=busy||!!original?.disabled;button.setAttribute('aria-label',text+' '+name.textContent);button.onclick=()=>original?.click();controls.append(button);}row.append(controls);list.append(row);
  }
 }
 async function chooseManual(id){
@@ -263,11 +276,12 @@ function refreshLayers(){
  const container=$('layers');container.replaceChildren();$('layer-count').textContent=layers.length;$('empty-layers').hidden=!!layers.length;
  [...layers].reverse().forEach(layer=>{
   const item=look(layer.refId),row=document.createElement('div');row.className='layer'+(layer.id===activeId?' is-selected':'')+(!layer.visible?' is-hidden':'');row.dataset.layerId=layer.id;
-  row.innerHTML=`<button class="layer-select" aria-label="選取${item.label}細修" aria-pressed="${layer.id===activeId}"><img src="${asset(item.thumbnail)}" alt=""></button><div class="layer-meta"><button class="layer-name">${item.label}${layer.available?'':'（此模特不適用）'}</button><div><input type="range" min="0" max="100" value="${layer.opacity}" aria-label="${item.label}細修強度"><output>${layer.opacity}%</output></div></div><div class="layer-tools"><button data-action="visibility" aria-label="${layer.visible?'隱藏':'顯示'}細修">${layer.visible?'◉':'○'}</button><button data-action="up" aria-label="提高細修順序">↑</button><button data-action="down" aria-label="降低細修順序">↓</button><button data-action="remove" aria-label="刪除細修">×</button></div>`;
+  row.innerHTML=`<button class="layer-select" aria-label="選取${item.label}細修" aria-pressed="${layer.id===activeId}"><img src="${asset(item.thumbnail)}" alt=""></button><div class="layer-meta"><button class="layer-name">${item.label}${layer.available?'':'（此模特不適用）'}</button><div><input type="range" min="0" max="100" value="${layer.opacity}" aria-label="${item.label}細修強度"><output>${layer.opacity}%</output></div></div><div class="layer-tools"><button type="button" data-action="edit" aria-label="筆刷編輯此圖層">筆刷</button><button data-action="visibility" aria-label="${layer.visible?'隱藏':'顯示'}細修">${layer.visible?'◉':'○'}</button><button data-action="up" aria-label="提高細修順序">↑</button><button data-action="down" aria-label="降低細修順序">↓</button><button data-action="remove" aria-label="刪除細修">×</button></div>`;
   for(const b of row.querySelectorAll('.layer-select,.layer-name'))b.onclick=()=>{if(busy)return;activeId=layer.id;refreshLayers();};
   const index=layers.indexOf(layer);row.querySelector('[data-action="up"]').disabled=index===layers.length-1;row.querySelector('[data-action="down"]').disabled=index===0;
   bindRange(row.querySelector('input'),value=>{layer.opacity=value;syncOpacity(layer);});
-  row.querySelectorAll('[data-action]').forEach(button=>button.onclick=()=>{if(busy)return;remember();const at=layers.indexOf(layer);switch(button.dataset.action){case'visibility':layer.visible=!layer.visible;break;case'remove':layers.splice(at,1);if(activeId===layer.id)activeId=layers.at(-1)?.id??null;break;case'up':[layers[at],layers[at+1]]=[layers[at+1],layers[at]];break;case'down':[layers[at],layers[at-1]]=[layers[at-1],layers[at]];break;}changed();refreshLayers();refreshAll();announce('細修已更新。');});container.append(row);
+  row.querySelector('[data-action=edit]').disabled=busy||!layer.available;row.querySelector('[data-action=edit]').onclick=()=>openLayerEditor(layer.id);
+  row.querySelectorAll('[data-action]:not([data-action=edit])').forEach(button=>button.onclick=()=>{if(busy)return;remember();const at=layers.indexOf(layer);switch(button.dataset.action){case'visibility':layer.visible=!layer.visible;break;case'remove':layers.splice(at,1);if(activeId===layer.id)activeId=layers.at(-1)?.id??null;break;case'up':[layers[at],layers[at+1]]=[layers[at+1],layers[at]];break;case'down':[layers[at],layers[at-1]]=[layers[at-1],layers[at]];break;}changed();refreshLayers();refreshAll();announce('細修已更新。');});container.append(row);
  });refreshEditor();updateSelection();refreshReferenceMix();
 }
 function addSelection(){
@@ -276,7 +290,7 @@ function addSelection(){
 }
 function buildLibraries(){
  for(const source of manifest.sources){const button=document.createElement('button');button.type='button';button.className='source-card';button.dataset.source=source.id;button.innerHTML=`<img src="${asset(source.image)}" alt="${source.label}" width="96" height="96"><span>${source.label}</span>`;button.onclick=()=>changeSource(source.id);$('sources').append(button);}
- for(const item of manifest.looks){const button=document.createElement('button');button.type='button';button.className='reference-card';button.dataset.reference=item.id;button.dataset.kind=item.category;button.innerHTML=`<img src="${asset(item.reference)}" alt="${item.label}參考圖" width="88" height="88"><span><strong>${item.label}</strong><small>${item.description}</small><small class="applied-check" hidden>✓ 已套用</small></span>`;button.onclick=()=>chooseGuided(item.id);$('references').append(button);const option=document.createElement('option');option.value=item.id;option.textContent=item.label;$('manual-reference').append(option);}
+ for(const item of manifest.looks){const button=document.createElement('button');button.type='button';button.className='reference-card';button.dataset.reference=item.id;button.dataset.kind=item.category;button.innerHTML=`<img src="${asset(item.reference)}" alt="${item.label}參考圖" width="88" height="88"><span><strong>${item.label}</strong><small>${item.description}</small><small class="reference-part-hint"></small><small class="applied-check" hidden>✓ 已套用</small></span>`;button.onclick=()=>chooseGuided(item.id);const card=document.createElement('div');card.className='reference-option';card.append(button);const partial=document.createElement('button');partial.type='button';partial.className='reference-region-button';partial.dataset.selectRegion=item.id;partial.textContent='選取局部';partial.setAttribute('aria-label','選取'+item.label+'的局部');partial.onclick=()=>openReferenceEditor(item.id,{part:guideStep});card.append(partial);$('references').append(card);const option=document.createElement('option');option.value=item.id;option.textContent=item.label;$('manual-reference').append(option);}
 }
 function reset(){if(busy)return;remember();makeupStation?.clearAll();guided={look:null,eyes:null,lips:null,face:null};layers=[];activeId=null;wholeHue=0;guideStep='source';category='all';selection.fill(0);$('whole-hue').value=0;$('whole-hue-value').value='0°';loadBrush();changed();refreshLayers();refreshAll();announce('已清除所有模特的手繪與目前參考妝容；可按「復原」還原。');}
 function download(){if(!hasChoices()||busy)return;const c=canvas();paint(c.getContext('2d'),false);c.toBlob(blob=>{if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='irismix-makeup.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);announce('已下載完成搭配與已加入的細修，不含尚未加入的預覽。');},'image/png');}
