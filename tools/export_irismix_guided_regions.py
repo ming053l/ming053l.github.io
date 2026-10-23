@@ -143,8 +143,8 @@ def build(assets):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--assets-dir', type=Path, default=REPO / 'IrisMix/assets/v3')
-    parser.add_argument('--output-dir', type=Path, default=REPO / 'IrisMix/assets/guided')
+    parser.add_argument('--assets-dir', type=Path, default=REPO / 'IrisMix-demo/assets/v3')
+    parser.add_argument('--output-dir', type=Path, default=REPO / 'IrisMix-demo/assets/guided')
     parser.add_argument('--write', action='store_true')
     args = parser.parse_args()
     if args.assets_dir.resolve() == args.output_dir.resolve():

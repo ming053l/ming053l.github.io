@@ -21,7 +21,7 @@ import numpy as np
 from PIL import Image
 
 ROOT=Path('/ssd1/chingheng/FlashMakeUp')
-DEFAULT_ASSETS=Path(__file__).resolve().parents[1]/'IrisMix/assets/v3'
+DEFAULT_ASSETS=Path(__file__).resolve().parents[1]/'IrisMix-demo/assets/v3'
 N,M=640,512
 PRIVATE_MARKERS=('/ssd1/','/ssd5/','/home/','/tmp/','/raid/')
 

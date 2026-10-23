@@ -10,7 +10,7 @@ import json,sys
 import numpy as np,cv2
 from PIL import Image
 ROOT=Path('/ssd1/chingheng/FlashMakeUp');PREP=ROOT/'work/webdemo_prepared';ITEMS=ROOT/'LayerBeauty-Creative/items'
-OUT=Path(__file__).resolve().parents[1]/'IrisMix/assets/v3';OUT.mkdir(parents=True,exist_ok=True)
+OUT=Path(__file__).resolve().parents[1]/'IrisMix-demo/assets/v3';OUT.mkdir(parents=True,exist_ok=True)
 sys.path.insert(0,str(ROOT/'work/stage1_data'));import make_composites as MC
 N,M=640,512
 info=json.loads((PREP/'manifest.json').read_text());info['references']=[{'id':'poppy','label':'緋紅罌粟','reference':'redhood6g1_rh024_ref0'} if r['id']=='line' else r for r in info['references']];rejected={('warm','lily'):'此角度的花卉圖案不完整，未收錄此組合。',('night','poppy'):'此角度會遮住花形，未收錄此組合。',('smile','poppy'):'此組合的花形與花梗不完整，未收錄此組合。'}
