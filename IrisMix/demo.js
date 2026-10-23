@@ -1,4 +1,4 @@
-import {createMakeupStation} from './makeup-station.js?v=1';
+import {createMakeupStation} from './makeup-station.js?v=2';
 (() => {
 'use strict';
 const $=id=>document.getElementById(id),SIZE=640,MASK=512,PARTS=['eyes','lips','face'];
@@ -91,7 +91,7 @@ function tint(layer){
  const c=canvas(),x=c.getContext('2d'),data=layer.canvas.getContext('2d').getImageData(0,0,SIZE,SIZE);data.data.set(tintPixels(data.data,angle));x.putImageData(data,0,0);
  layer.tintAngle=angle;layer.tintSource=layer.canvas;layer.tintCanvas=c;return c;
 }
-function hasChoices(){return Object.values(guided).some(s=>s?.refId&&available(s.refId))||layers.some(layer=>layer.available)||!!makeupStation?.hasPaint();}
+function hasChoices(){return Object.values(guided).some(s=>s?.refId&&available(s.refId))||layers.some(layer=>layer.available)||!!makeupStation?.hasContent();}
 function hasMakeup(){return Object.values(guided).some(s=>s?.refId&&available(s.refId)&&s.opacity>0)||layers.some(l=>l.available&&l.visible&&l.opacity>0)||!!makeupStation?.hasPaint();}
 function draft(){if(!previewCache)previewCache=makeLayer(selected,selection);return previewCache;}
 function showDraft(){return $('advanced').open&&$('live-preview').checked&&!$('add-layer').disabled;}

@@ -125,45 +125,109 @@ function targetColor(base,color,part){
  return base.map((b,k)=>clamp(colorMix*chroma[k]+softMix*softLight(b,color[k])+multiplyMix*b*color[k]));
 }
 
+const EMPTY_SOURCE=Object.freeze({layers:blank(),commands:blank(),activeLayerId:null});
+const PART_NAMES={eyes:'眼妝',lips:'唇妝',blush:'腮紅'};
+function hueColor(color,degrees){
+ if(!degrees)return color;
+ const high=Math.max(...color),low=Math.min(...color),delta=high-low,light=(high+low)/2;if(delta<1e-6)return color;
+ let h=high===color[0]?(color[1]-color[2])/delta+(color[1]<color[2]?6:0):high===color[1]?(color[2]-color[0])/delta+2:(color[0]-color[1])/delta+4;
+ h=((h/6+degrees/360)%1+1)%1;const saturation=delta/(1-Math.abs(2*light-1)),c=(1-Math.abs(2*light-1))*saturation,t=h*6,x=c*(1-Math.abs(t%2-1)),m=light-c/2;
+ return(t<1?[c,x,0]:t<2?[x,c,0]:t<3?[0,c,x]:t<4?[0,x,c]:t<5?[x,0,c]:[c,0,x]).map(v=>v+m);
+}
+
 export class CosmeticBrushPainter{
- constructor({size=640,onChange=()=>{},maxStrokes=256,maxTotalPoints=32768,maxPointsPerStroke=2048}={}){
+ constructor({size=640,onChange=()=>{},maxStrokes=256,maxTotalPoints=32768,maxPointsPerStroke=2048,maxLayers=24}={}){
   if(!Number.isInteger(size)||size<32||size>1024)throw new RangeError('Unsupported pigment canvas size');
   this.size=size;this.onChange=onChange;
-  this.limits=Object.freeze({maxStrokes:clamp(Math.floor(number(maxStrokes,256)),1,256),maxTotalPoints:clamp(Math.floor(number(maxTotalPoints,32768)),1,32768),maxPointsPerStroke:clamp(Math.floor(number(maxPointsPerStroke,2048)),1,2048)});
-  this.sourceId=null;this._project=new Map();this._guides=new Map();this._guideInputs=new Map();this._buffers=new Map();this._active=null;
+  this.limits=Object.freeze({maxStrokes:clamp(Math.floor(number(maxStrokes,256)),1,256),maxTotalPoints:clamp(Math.floor(number(maxTotalPoints,32768)),1,32768),maxPointsPerStroke:clamp(Math.floor(number(maxPointsPerStroke,2048)),1,2048),maxLayers:clamp(Math.floor(number(maxLayers,24)),1,24)});
+  this.sourceId=null;this._project=new Map();this._guides=new Map();this._guideInputs=new Map();this._buffers=new Map();this._active=null;this._nextLayerId=1;
  }
- _emit(type,extra={}){this.onChange({type,sourceId:this.sourceId,...extra});}
- _commands(){return this._project.get(this.sourceId)||blank();}
- _counts(){let strokes=0,points=0;for(const commands of this._project.values())for(const command of commands){strokes++;points+=command.points.length/3;}return{strokes,points};}
+ _emit(type,extra={}){this.onChange({type,sourceId:this.sourceId,layerId:this.activeLayerId,...extra});}
+ _state(){return this._project.get(this.sourceId)||EMPTY_SOURCE;}
+ _commands(){return this._state().commands;}
+ _store(state){const project=new Map(this._project);project.set(this.sourceId,Object.freeze({...state,layers:Object.freeze(state.layers),commands:Object.freeze(state.commands)}));this._project=project;}
+ _counts(){let strokes=0,points=0,layers=0;for(const state of this._project.values()){layers+=state.layers.length;for(const command of state.commands){strokes++;points+=command.points.length/3;}}return{strokes,points,layers};}
+ get activeLayerId(){return this._active?.layer.id||this._state().activeLayerId;}
+ _layer(id){return this._state().layers.find(layer=>layer.id===id)||(this._active?.layer.id===id?this._active.layer:null);}
+ _renderLayers(){return this._active?.provisional?[...this._state().layers,this._active.layer]:this._state().layers;}
+ _newLayer(part,name){
+  if(this._counts().layers>=this.limits.maxLayers)return null;
+  const index=this._nextLayerId++,label=typeof name==='string'?name:name?.name;
+  return Object.freeze({id:'pigment-'+index,part,name:(typeof label==='string'?label:PART_NAMES[part]+' '+index).trim().slice(0,60)||PART_NAMES[part],visible:true,opacity:1,hue:0});
+ }
+ createLayer(part,name){
+  if(this._active||!PARTS.includes(part)||!this.sourceId||!this._guides.has(this.sourceId))return null;
+  const layer=this._newLayer(part,name);if(!layer)return null;const state=this._state();this._store({...state,layers:[...state.layers,layer],activeLayerId:layer.id});this._emit('layers',{action:'create',layerId:layer.id});return layer.id;
+ }
+ selectLayer(id){
+  if(this._active||!this._layer(id))return false;if(this._state().activeLayerId===id)return true;
+  this._store({...this._state(),activeLayerId:id});this._emit('selection',{layerId:id});return true;
+ }
+ getLayers(){
+  return Object.freeze(this._state().layers.map(layer=>{
+   const commands=this._commands().filter(c=>c.layerId===layer.id),last=[...commands].reverse().find(c=>c.options.tool==='paint');
+   const color=last?'#'+last.options.color.map(v=>Math.round(v*255).toString(16).padStart(2,'0')).join(''):null;
+   return Object.freeze({...layer,selected:layer.id===this.activeLayerId,strokeCount:commands.length,color});
+  }));
+ }
+ moveLayer(id,delta){
+  if(this._active)return false;const state=this._state(),index=state.layers.findIndex(layer=>layer.id===id);if(index<0)return false;
+  const next=clamp(index+Math.trunc(number(delta,0)),0,state.layers.length-1);if(next===index)return false;
+  const layers=[...state.layers],[layer]=layers.splice(index,1);layers.splice(next,0,layer);this._store({...state,layers});this._emit('layers',{action:'move',layerId:id});return true;
+ }
+ setLayerProps(id,props={}){
+  if(this._active)return false;const state=this._state(),layer=this._layer(id);if(!layer)return false;const next={...layer};
+  if(typeof props.visible==='boolean')next.visible=props.visible;
+  if(props.opacity!==undefined)next.opacity=clamp(number(props.opacity,layer.opacity));
+  if(props.hue!==undefined)next.hue=clamp(number(props.hue,layer.hue),-180,180);
+  if(typeof props.name==='string'&&props.name.trim())next.name=props.name.trim().slice(0,60);
+  if(['name','visible','opacity','hue'].every(key=>next[key]===layer[key]))return false;
+  this._store({...state,layers:state.layers.map(l=>l.id===id?Object.freeze(next):l)});this._emit('layers',{action:'update',layerId:id});return true;
+ }
+ removeLayer(id){
+  if(this._active)return false;const state=this._state(),index=state.layers.findIndex(layer=>layer.id===id);if(index<0)return false;
+  const layers=state.layers.filter(layer=>layer.id!==id),activeLayerId=state.activeLayerId===id?(layers[Math.min(index,layers.length-1)]?.id||null):state.activeLayerId;
+  this._store({...state,layers,commands:state.commands.filter(c=>c.layerId!==id),activeLayerId});this._buffers.delete(id);this._emit('layers',{action:'remove',layerId:id});return true;
+ }
  setSource(sourceId,data){
   if(typeof sourceId!=='string'||!sourceId)throw new TypeError('sourceId is required');
   if(this.sourceId===sourceId&&this._guideInputs.get(sourceId)===data)return;
   if(this._guideInputs.get(sourceId)!==data){this._guides.set(sourceId,prepareGuides(data,this.size));this._guideInputs.set(sourceId,data);}
   this._active=null;this.sourceId=sourceId;this._buffers.clear();this._emit('source');
  }
- _buffer(part){
-  if(this._buffers.has(part))return this._buffers.get(part);
-  const buffer={rgba:new Float32Array(this.size*this.size*4),sum:0,bounds:null};this._buffers.set(part,buffer);
-  for(const command of this._commands())if(command.part===part){
-   const active=this._makeActive(part,command.options),points=command.points;
+ _buffer(layerId){
+  if(this._buffers.has(layerId)){const buffer=this._buffers.get(layerId);this._buffers.delete(layerId);this._buffers.set(layerId,buffer);return buffer;}
+  const layer=this._layer(layerId);if(!layer)throw new TypeError('Unknown pigment layer');
+  const buffer={rgba:new Float32Array(this.size*this.size*4),sum:0,bounds:null};this._buffers.set(layerId,buffer);
+  // Four 640px FP32 pigment rasters use about26MiB. Commands remain compact;
+  // an evicted layer is reconstructed deterministically when it is next used.
+  while(this._buffers.size>4){const oldest=[...this._buffers.keys()].find(id=>id!==this._active?.layer.id);this._buffers.delete(oldest);}
+  for(const command of this._commands())if(command.layerId===layerId){
+   const active=this._makeActive(layer,command.options),points=command.points;
    for(let i=0;i<points.length;i+=3)this._append(active,{x:points[i],y:points[i+1],pressure:points[i+2]},buffer);
   }return buffer;
  }
- _makeActive(part,config){return{part,options:config,points:[],coverage:new Float32Array(this.size*this.size),lastInput:null,lastStamp:null,carry:0,changed:false,limited:false};}
+ _makeActive(layer,config,provisional=false){return{part:layer.part,layer,provisional,options:config,points:[],coverage:new Float32Array(this.size*this.size),lastInput:null,lastStamp:null,carry:0,changed:false,limited:false};}
  beginStroke(part,input,start){
   if(this._active)return{ok:false,reason:'stroke-active'};
   if(!PARTS.includes(part))return{ok:false,reason:'unsupported-part'};
   if(!this.sourceId||!this._guides.has(this.sourceId))return{ok:false,reason:'source-guides-required'};
   const count=this._counts();if(count.strokes>=this.limits.maxStrokes)return{ok:false,reason:'stroke-limit'};
   if(count.points>=this.limits.maxTotalPoints)return{ok:false,reason:'point-limit'};
-  const config=options(input),p=point(start,this.size),buffer=this._buffer(part);
-  this._active=this._makeActive(part,config);this._append(this._active,p,buffer);this._emit('preview',{part});
-  return{ok:true,changed:this._active.changed};
+  const config=options(input),p=point(start,this.size);let layer=this._layer(this._state().activeLayerId),provisional=false;
+  if(layer&&!layer.visible)return{ok:false,reason:'layer-hidden'};
+  if(layer?.part!==part){
+   if(config.tool!=='paint')return{ok:false,reason:'select-layer'};
+   layer=this._newLayer(part);if(!layer)return{ok:false,reason:'layer-limit'};provisional=true;
+  }
+  if(!layer.visible)return{ok:false,reason:'layer-hidden'};
+  this._active=this._makeActive(layer,config,provisional);const buffer=this._buffer(layer.id);this._append(this._active,p,buffer);this._emit('preview',{part,layerId:layer.id});
+  return{ok:true,changed:this._active.changed,layerId:layer.id};
  }
  updateStroke(input){
   const active=this._active;if(!active)return{ok:false,reason:'no-active-stroke'};
   const count=this._counts();if(active.points.length/3>=this.limits.maxPointsPerStroke||count.points+active.points.length/3>=this.limits.maxTotalPoints){active.limited=true;return{ok:false,reason:'point-limit'};}
-  const changed=this._append(active,point(input,this.size),this._buffer(active.part));if(changed)this._emit('preview',{part:active.part});return{ok:true,changed};
+  const changed=this._append(active,point(input,this.size),this._buffer(active.layer.id));if(changed)this._emit('preview',{part:active.part,layerId:active.layer.id});return{ok:true,changed};
  }
  _append(active,p,buffer){
   active.points.push(p.x,p.y,p.pressure);const previous=active.lastInput;active.lastInput=p;
@@ -221,31 +285,38 @@ export class CosmeticBrushPainter{
   if(changed){this._extendBounds(buffer,left,right,top,bottom);active.changed=true;}return changed;
  }
  endStroke(){
-  const active=this._active;if(!active)return{ok:false,changed:false,reason:'no-active-stroke'};this._active=null;
+  const active=this._active;if(!active)return{ok:false,changed:false,reason:'no-active-stroke'};
   if(active.changed){
-   const command=Object.freeze({part:active.part,options:active.options,points:new Float32Array(active.points)});
-   const project=new Map(this._project);project.set(this.sourceId,Object.freeze([...this._commands(),command]));this._project=project;
-  }
-  this._emit('commit',{part:active.part,changed:active.changed});return{ok:true,changed:active.changed,...(active.limited?{reason:'point-limit'}:{})};
+   const command=Object.freeze({part:active.part,layerId:active.layer.id,options:active.options,points:new Float32Array(active.points)}),state=this._state();
+   this._store({...state,layers:active.provisional?[...state.layers,active.layer]:state.layers,commands:[...state.commands,command],activeLayerId:active.layer.id});
+  }else if(active.provisional)this._buffers.delete(active.layer.id);
+  this._active=null;this._emit('commit',{part:active.part,layerId:active.layer.id,changed:active.changed});return{ok:true,changed:active.changed,layerId:active.layer.id,...(active.limited?{reason:'point-limit'}:{})};
  }
  cancelStroke(){if(!this._active)return;this._active=null;this._buffers.clear();this._emit('cancel');}
  snapshot(){
-  const token=Object.freeze({format:'irismix-pigment-snapshot-v1',sourceId:this.sourceId});SNAPSHOTS.set(token,{owner:this,project:this._project,sourceId:this.sourceId});return token;
+  const token=Object.freeze({format:'irismix-pigment-snapshot-v2',sourceId:this.sourceId});SNAPSHOTS.set(token,{owner:this,project:this._project,sourceId:this.sourceId,nextLayerId:this._nextLayerId});return token;
  }
  restore(token){
   const state=SNAPSHOTS.get(token);if(!state||state.owner!==this)throw new TypeError('Snapshot belongs to another painter');
-  this._active=null;this._project=state.project;this.sourceId=state.sourceId;this._buffers.clear();this._emit('restore');
+  this._active=null;this._project=state.project;this.sourceId=state.sourceId;this._nextLayerId=state.nextLayerId;this._buffers.clear();this._emit('restore');
+ }
+ clearLayer(id=this.activeLayerId){
+  if(this._active||!this._layer(id))return false;const state=this._state(),commands=state.commands.filter(command=>command.layerId!==id);if(commands.length===state.commands.length)return false;
+  this._store({...state,commands});this._buffers.delete(id);this._emit('clear',{layerId:id,part:this._layer(id).part});return true;
  }
  clear(part){
   if(part!==undefined&&!PARTS.includes(part))throw new TypeError('Unknown cosmetic part');
-  this._active=null;const commands=part?this._commands().filter(command=>command.part!==part):blank(),project=new Map(this._project);
-  project.set(this.sourceId,Object.freeze(commands));this._project=project;this._buffers.clear();this._emit('clear',{part:part||'all'});
+  this._active=null;const state=this._state(),commands=part?state.commands.filter(command=>command.part!==part):blank();
+  this._store({...state,commands});this._buffers.clear();this._emit('clear',{part:part||'all'});
  }
- clearAll(){this._active=null;this._project=new Map();this._buffers.clear();this._emit('clear-all');}
+ clearAll(){this._active=null;this._project=new Map();this._buffers.clear();this._nextLayerId=1;this._emit('clear-all');}
+ layerHasPaint(id){
+  if(!this._layer(id))return false;const pending=this._active?.layer.id===id;
+  return(pending||this._buffers.has(id)||this._commands().some(command=>command.layerId===id))&&this._buffer(id).sum>.01;
+ }
  hasPaint(part){
-  if(!this.sourceId||!this._guides.has(this.sourceId))return false;
-  const parts=part?[part]:PARTS;if(parts.some(p=>!PARTS.includes(p)))return false;
-  return parts.some(p=>(this._active?.part===p||this._buffers.has(p)||this._commands().some(command=>command.part===p))&&this._buffer(p).sum>.01);
+  if(!this.sourceId||!this._guides.has(this.sourceId)||(part!==undefined&&!PARTS.includes(part)))return false;
+  return this._renderLayers().some(layer=>(!part||layer.part===part)&&layer.visible&&layer.opacity>0&&this.layerHasPaint(layer.id));
  }
  footprint(part,input,position,previousPosition=position){
   if(!PARTS.includes(part)||!this._guides.has(this.sourceId))return null;
@@ -254,20 +325,22 @@ export class CosmeticBrushPainter{
   // flat is a rectangle; angled is the same rectangle sheared by x -= .38*y.
   return Object.freeze({x:p.x,y:p.y,angle,radiusX:shape.rx,radiusY:shape.ry,offsetX:shape.shift,brush:config.brush,shear:config.brush==='angled'?.38:0});
  }
- stats(){return Object.freeze({...this._counts(),sourceId:this.sourceId,active:!!this._active,limits:this.limits});}
+ stats(){return Object.freeze({...this._counts(),currentLayers:this._state().layers.length,cachedLayers:this._buffers.size,bufferBytes:this._buffers.size*this.size*this.size*16,sourceId:this.sourceId,active:!!this._active,limits:this.limits});}
  render(ctx,baseCanvas){
   if(!ctx?.canvas||!baseCanvas)throw new TypeError('Render needs a Canvas2D context and base canvas');
   if(ctx.canvas.width!==this.size||ctx.canvas.height!==this.size||baseCanvas.width!==this.size||baseCanvas.height!==this.size)throw new RangeError('Pigment render requires matching source-canvas dimensions');
   if(!this.hasPaint()){if(ctx.canvas!==baseCanvas)ctx.drawImage(baseCanvas,0,0);return{painted:false};}
   // Read the base before writing: rendering onto the same canvas is supported.
   const baseContext=ctx.canvas===baseCanvas?ctx:baseCanvas.getContext('2d',{willReadFrequently:true}),image=baseContext.getImageData(0,0,this.size,this.size),out=image.data;
-  for(const part of PARTS){
-   if(!this._buffers.has(part)&&!this._commands().some(command=>command.part===part))continue;
-   const buffer=this._buffer(part);if(buffer.sum<=.01||!buffer.bounds)continue;
+  // This is actual bottom-to-top pigment compositing: same-part layers keep
+  // separate deposition buffers, so changing their order changes overlap color.
+  for(const layer of this._renderLayers()){
+   if(!layer.visible||layer.opacity<=0||!this.layerHasPaint(layer.id))continue;
+   const part=layer.part,buffer=this._buffer(layer.id);if(!buffer.bounds)continue;
    const pixels=buffer.rgba,mask=this._guides.get(this.sourceId).masks[part],bounds=buffer.bounds;
    for(let y=bounds.top;y<=bounds.bottom;y++)for(let x=bounds.left;x<=bounds.right;x++){
     const i=y*this.size+x,at=4*i,alpha=pixels[at+3];if(!mask[i]||alpha<.00002)continue;
-    const color=[clamp(pixels[at]/alpha),clamp(pixels[at+1]/alpha),clamp(pixels[at+2]/alpha)],base=[out[at]/255,out[at+1]/255,out[at+2]/255],target=targetColor(base,color,part),amount=clamp(alpha)*(part==='blush'?.62:.92);
+    const pigment=[clamp(pixels[at]/alpha),clamp(pixels[at+1]/alpha),clamp(pixels[at+2]/alpha)],color=hueColor(pigment,layer.hue),base=[out[at]/255,out[at+1]/255,out[at+2]/255],target=targetColor(base,color,part),amount=clamp(alpha)*layer.opacity*(part==='blush'?.62:.92);
     for(let k=0;k<3;k++)out[at+k]=(base[k]+(target[k]-base[k])*amount)*255;
    }
   }
