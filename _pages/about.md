@@ -111,6 +111,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
 <a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset</a>
 </div>
+<p style="margin: 8px 0 0;"><a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank" title="SWR-Bench downloads over the last month on Hugging Face"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fdatasets%2Fming0531%2FSWR-Bench&amp;query=%24.downloads&amp;label=HF%20downloads%20%2F%20month&amp;color=0B3C8A&amp;cacheSeconds=3600" alt="SWR-Bench downloads over the last month on Hugging Face" height="20" loading="lazy"/></a></p>
 </div>
 </div>
 
