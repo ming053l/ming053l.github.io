@@ -3,3 +3,5 @@
 @media(max-width:370px){.reference-option{flex-basis:136px}}
 
 .ref-edit-mobile-view{display:none}@media(max-width:720px){.ref-edit-mobile-view{display:flex;gap:7px;margin:12px 0}.ref-edit-mobile-view button{flex:1;min-height:44px;font-size:14px;padding:8px;border:1px solid #d7bfb1;border-radius:23px;background:#fffaf6;color:var(--wine)}.ref-edit-mobile-view button[aria-pressed=true]{background:#ead5d0;border-color:#b68b89}#reference-edit-dialog[data-mobile-view=reference] .ref-edit-images figure:last-child{display:none}#reference-edit-dialog[data-mobile-view=preview] .ref-edit-images figure:first-child{display:none}}
+
+.reference-mix-controls [data-mix-action=add-region]{flex-basis:100%;min-height:44px;font-size:14px;border-style:dashed;background:#fffaf5;color:var(--wine)}
