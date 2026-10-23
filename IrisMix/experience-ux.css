@@ -1,0 +1,488 @@
+/* Final experience overrides: keep the portrait clear and the next action legible. */
+.intro > div { flex: 1; }
+#start-tryon { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 9px 16px; border: 1px solid var(--wine); border-radius: 7px; background: var(--wine); color: #fff; font-size: 16px; white-space: nowrap; }
+#start-tryon:hover { background: #642a3a; text-decoration: none; }
+#workspace { scroll-margin-top: 12px; }
+.intro {
+  padding: 18px 0 16px;
+}
+
+.intro p {
+  line-height: 1.7;
+}
+
+#help-toggle {
+  min-height: 44px;
+}
+
+.project-purpose {
+  margin: 30px 0 22px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-header {
+  margin-bottom: 12px;
+}
+
+#source-stage {
+  margin-bottom: 18px;
+}
+
+#source-stage .upload-trigger {
+  min-height: 44px;
+}
+
+.cosmetic-panel {
+  animation: none;
+}
+
+.cosmetic-panel-heading button,
+.cosmetic-bottom button,
+.cosmetic-actions button,
+.cosmetic-direction-field select,
+.result-heading button,
+.cosmetic-view button {
+  min-height: 44px;
+}
+
+.cosmetic-panel-heading button {
+  padding: 4px 2px 4px 10px;
+}
+
+.cosmetic-panel-heading h3,
+.cosmetic-tools button,
+.cosmetic-actions button,
+.cosmetic-range label,
+.cosmetic-direction-field,
+.custom-color-row {
+  font-size: 16px;
+}
+
+.cosmetic-swatches {
+  gap: 7px;
+}
+
+.cosmetic-swatch {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.custom-color-row {
+  min-height: 52px;
+  gap: 10px;
+}
+
+.custom-color-row label {
+  min-height: 44px;
+}
+
+.custom-color-row input {
+  width: 44px;
+  height: 44px;
+}
+
+.cosmetic-brush-settings {
+  margin: 2px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+}
+
+.cosmetic-brush-settings > summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 9px 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cosmetic-brush-settings > summary::-webkit-details-marker {
+  display: none;
+}
+
+#active-brush-name {
+  color: var(--wine);
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.cosmetic-brush-settings > summary > [aria-hidden] {
+  color: var(--wine);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.cosmetic-brush-settings[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.cosmetic-brush-settings[open] > summary > [aria-hidden] {
+  transform: rotate(45deg);
+}
+
+.cosmetic-brush-settings .cosmetic-brushes {
+  margin: 0;
+  padding: 10px;
+  gap: 7px;
+}
+
+.cosmetic-brushes button {
+  min-height: 80px;
+  padding: 10px 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.cosmetic-range output,
+.cosmetic-tip-row p,
+.active-pigment-layer .active-layer-warning,
+.pigment-layer-meta {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cosmetic-range input {
+  height: 44px;
+}
+
+.cosmetic-blending > summary {
+  min-height: 44px;
+  font-size: 16px;
+}
+
+.cosmetic-direction-field select {
+  font-size: 16px;
+}
+
+#edit-active-pigment-layer,
+#recover-pigment-layer {
+  flex: 0 0 auto;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #c7a2ad;
+  border-radius: 6px;
+  background: var(--wine-soft);
+  color: var(--wine);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#recover-pigment-layer {
+  margin-left: auto;
+}
+
+#edit-active-pigment-layer {
+  max-width: 100%;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+#edit-active-pigment-layer:hover,
+#recover-pigment-layer:hover {
+  border-color: var(--wine);
+}
+
+#cosmetic-guide {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+#cosmetic-frame .image-tag,
+#cosmetic-frame .signature {
+  z-index: 3;
+}
+
+#paint-context {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 3;
+  display: grid;
+  gap: 1px;
+  max-width: calc(100% - 108px);
+  padding: 6px 9px;
+  border: 1px solid #ffffff90;
+  border-radius: 7px;
+  background: #fffdf9e8;
+  color: var(--ink);
+  line-height: 1.5;
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+#paint-context-title {
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+#paint-context-layer {
+  color: var(--muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.cosmetic-view {
+  gap: 4px;
+  padding-top: 5px;
+}
+
+.cosmetic-view > span {
+  margin-right: 4px;
+}
+
+.cosmetic-view button {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+#paint-guide-toggle {
+  margin-left: auto;
+  border-color: var(--line);
+  background: var(--surface);
+}
+
+#paint-guide-toggle[aria-pressed=true] {
+  border-color: #c7a2ad;
+  background: var(--wine-soft);
+  color: var(--wine);
+}
+
+.result-feedback {
+  display: grid;
+  min-height: 52px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: center;
+  padding-top: 6px;
+}
+
+#status {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+
+.guide-history {
+  gap: 4px;
+}
+
+.guide-history button {
+  width: auto;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.guide-history button:hover:not(:disabled) {
+  border-color: #bc909b;
+  background: var(--wine-soft);
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .cosmetic-swatches {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  #cosmetic-frame .image-tag span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  #start-tryon { grid-column: 1 / -1; grid-row: 3; margin-top: 2px; }
+  .intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 10px;
+    padding: 14px 0;
+  }
+
+  .intro > div {
+    display: contents;
+  }
+
+  .intro h1 {
+    grid-column: 1 / -1;
+  }
+
+  .intro p {
+    grid-column: 1;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  #help-toggle {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+
+  .project-purpose {
+    gap: 10px;
+    margin: 22px 0 18px;
+    padding: 18px 0;
+  }
+
+  .experience-header {
+    margin-bottom: 9px;
+  }
+
+  #experience-note {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #source-stage {
+    margin-bottom: 9px;
+    padding: 7px 0;
+  }
+
+  #source-stage .source-note {
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-top: 2px;
+  }
+
+  #source-stage .source-note p {
+    flex: 1;
+    min-width: 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  #source-stage .upload-trigger {
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+
+  .station-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cosmetic-panel-heading h3 {
+    font-size: 17px;
+  }
+
+  .cosmetic-swatches {
+    gap: 8px;
+  }
+
+  .cosmetic-brush-settings .cosmetic-brushes {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .cosmetic-view {
+    flex-wrap: nowrap;
+    gap: 2px;
+    padding-top: 3px;
+  }
+
+  .cosmetic-view > span {
+    font-size: 13px;
+    margin-right: 2px;
+  }
+
+  .cosmetic-view button {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  #paint-context {
+    bottom: 8px;
+    left: 8px;
+    max-width: calc(100% - 100px);
+    padding: 5px 7px;
+    border-radius: 6px;
+  }
+
+  #paint-context-title {
+    font-size: 13px;
+  }
+
+  .result-heading {
+    margin-bottom: 4px;
+  }
+
+  .result-heading > div {
+    gap: 14px;
+  }
+
+  .result-feedback {
+    min-height: 48px;
+    gap: 6px 8px;
+    padding: 2px 0 3px;
+  }
+
+  #status {
+    min-height: 3em;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .guide-history {
+    gap: 3px;
+  }
+
+  .guide-history button {
+    padding: 6px 7px;
+  }
+}
+
+@media (max-width: 720px) and (max-height: 790px) {
+  #paint-context { display: block; max-width: calc(100% - 80px); padding: 4px 6px; }
+  #paint-context-title { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #paint-context-layer { display: none; }
+  #cosmetic-frame .signature { right: 8px; bottom: 8px; font-size: 18px; }
+}
+
+@media (max-width: 360px) {
+  .cosmetic-swatches {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .cosmetic-view > span {
+    font-size: 13px;
+  }
+
+  .cosmetic-view button {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .cosmetic-brush-settings > summary {
+    gap: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .guide-history button {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}

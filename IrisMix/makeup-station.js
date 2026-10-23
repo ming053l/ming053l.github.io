@@ -19,8 +19,10 @@ export async function createMakeupStation(hooks){
  const guides=await response.json();
  const settings=Object.fromEntries(Object.entries(DEFAULTS).map(([p,v])=>[p,{...v}]));
  const painter=createCosmeticBrush({size:640,onChange:()=>hooks.onLive?.()});
- const canvas=$('result'),frame=$('cosmetic-frame'),cursor=$('cosmetic-cursor');
- let sourceId=null,part=null,panelOpen=false,pane='palette',mode='paint',view='full',activePointer=null,historyToken=null,multiTouch=false;
+ const canvas=$('result'),frame=$('cosmetic-frame'),cursor=$('cosmetic-cursor'),guide=$('cosmetic-guide');
+ const guideMask=document.createElement('canvas');guideMask.width=guideMask.height=640;
+ let sourceId=null,part='eyes',panelOpen=true,pane='palette',mode='paint',view='full',activePointer=null,historyToken=null,multiTouch=false;
+ let guideVisible=true,guideKey='',comparing=false;
  const lastLayerByPart=new Map();let adjustmentToken=null,adjustmentChanged=false;
  const touches=new Set();let cursorLastPoint=null;
  const opts=()=>settings[part||'eyes'];
@@ -45,8 +47,9 @@ export async function createMakeupStation(hooks){
   $('pigment-layer-count').textContent=String(layers.length);
   for(const[id,name]of[['palette-tab','palette'],['pigment-layers-tab','layers']]){const tab=$(id);tab.setAttribute('aria-selected',String(pane===name));tab.tabIndex=pane===name?0:-1;}
   $('palette-pane').hidden=pane!=='palette';$('pigment-layers-panel').hidden=pane!=='layers';
-  const active=$('active-pigment-layer');active.replaceChildren();active.append(selected?'正在編輯：'+selected.name:part?'畫第一筆會建立'+NAMES[part]+'圖層。':'點選彩妝工具，建立第一個圖層。');
-  if(selected&&(!selected.visible||selected.opacity===0)){const warning=document.createElement('span');warning.className='active-layer-warning';warning.textContent=!selected.visible?'這層已隱藏，請先在圖層面板顯示後再畫。':'這層強度為 0%，調高圖層強度才會顯示。';active.append(warning);}
+  const active=$('active-pigment-layer'),focusActive=focused?.id==='edit-active-pigment-layer';active.replaceChildren();
+  if(selected){const edit=document.createElement('button');edit.id='edit-active-pigment-layer';edit.type='button';edit.textContent='正在編輯：'+selected.name+' ▾';edit.setAttribute('aria-controls','pigment-layers-panel');edit.title='開啟圖層設定';edit.onclick=()=>setPane('layers');active.append(edit);if(focusActive)edit.focus({preventScroll:true});}else active.append(part?'目前：'+NAMES[part]+' · 新圖層':'點選彩妝工具，建立第一個圖層。');
+  if(selected&&(!selected.visible||selected.opacity===0)){const warning=document.createElement('span');warning.className='active-layer-warning';warning.textContent=!selected.visible?'這層已隱藏。':'這層強度為 0%。';const recover=document.createElement('button');recover.type='button';recover.id='recover-pigment-layer';recover.disabled=busy;recover.textContent=!selected.visible?'顯示並繼續':'恢復強度';recover.onclick=()=>mutateLayer(()=>painter.setLayerProps(selected.id,{visible:true,opacity:selected.opacity===0?1:selected.opacity}),'已恢復'+selected.name+'，可以繼續畫。');active.append(warning,recover);}
   const list=$('pigment-layers');list.replaceChildren();
   for(const layer of [...layers].reverse()){
    const index=layers.indexOf(layer),row=document.createElement('div');row.className='pigment-layer-row';row.dataset.pigmentLayerId=layer.id;row.dataset.selected=String(layer.selected);row.dataset.visible=String(layer.visible);
@@ -71,8 +74,24 @@ export async function createMakeupStation(hooks){
    const box=source.bounds[view];if(box){cx=(box[0]+box[2])/2;cy=(box[1]+box[3])/2;scale=view==='eyes'?2.45:2.65;}
   }
   canvas.style.transform=scale===1?'none':`translate(${(0.5-cx/640*scale)*100}%,${(0.5-cy/640*scale)*100}%) scale(${scale})`;
+  guide.style.transform=canvas.style.transform;
   canvas.dataset.viewScale=String(scale);frame.classList.toggle('is-zoomed',scale!==1);
   document.querySelectorAll('[data-cosmetic-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.cosmeticView===view)));
+  renderGuide();
+ }
+ function guidePath(context,polygons){context.beginPath();for(const polygon of polygons||[]){polygon.forEach(([x,y],i)=>i?context.lineTo(x,y):context.moveTo(x,y));context.closePath();}}
+ function renderGuide(){
+  const data=guides.sources[sourceId],key=sourceId+':'+part;
+  $('paint-guide-toggle').setAttribute('aria-pressed',String(guideVisible));
+  guide.hidden=mode!=='paint'||!part||!data||!guideVisible||comparing||activePointer!==null;
+  if(guide.hidden||key===guideKey)return;guideKey=key;
+  const mask=guideMask.getContext('2d'),context=guide.getContext('2d');mask.clearRect(0,0,640,640);mask.globalCompositeOperation='source-over';mask.fillStyle='#fff';guidePath(mask,data.parts[part].polygons);mask.fill();
+  mask.globalCompositeOperation='destination-in';guidePath(mask,[data.faceClip||data.faceOval]);mask.fill();mask.globalCompositeOperation='destination-out';guidePath(mask,[...(data.exclude?.[part]||[]),...(data.excludePolygons||[])]);mask.fill();mask.globalCompositeOperation='source-over';
+  context.clearRect(0,0,640,640);context.fillStyle='#7b354830';context.fillRect(0,0,640,640);context.strokeStyle='#fff';context.lineWidth=1.2;context.setLineDash([3,3]);guidePath(context,data.parts[part].polygons);context.stroke();context.setLineDash([]);context.globalCompositeOperation='destination-in';context.drawImage(guideMask,0,0);context.globalCompositeOperation='source-over';
+ }
+ function renderContext(){
+  const context=$('paint-context'),layer=selectedLayer(),o=opts();context.hidden=mode!=='paint'||!part||comparing;
+  if(context.hidden)return;$('paint-context-title').textContent=NAMES[part]+'・'+(o.tool==='paint'?o.colorName:o.tool==='blend'?'暈染':'橡皮擦');$('paint-context-layer').textContent=(layer?.name||'新圖層')+(layer&&!layer.visible?'・已隱藏':layer?.opacity===0?'・強度 0%':'');context.style.setProperty('--paint-color',o.color);
  }
  function updateTip(){
   const o=opts(),c=$('cosmetic-tip'),x=c.getContext('2d');x.clearRect(0,0,c.width,c.height);
@@ -85,11 +104,13 @@ export async function createMakeupStation(hooks){
  }
  function renderPanel(){
   renderLayers();
+  renderContext();renderGuide();
   document.querySelectorAll('[data-cosmetic-tool]').forEach(b=>{b.setAttribute('aria-expanded',String(pane==='palette'&&panelOpen&&part===b.dataset.cosmeticTool));b.setAttribute('aria-pressed',String(part===b.dataset.cosmeticTool));});
   $('cosmetic-panel').hidden=!panelOpen;$('station-welcome').hidden=panelOpen;
   canvas.dataset.painting=String(mode==='paint'&&!!part);
   if(!part)return;
   const o=opts();$('cosmetic-panel-title').textContent=NAMES[part]+'調色盤';
+  $('active-brush-name').textContent=BRUSH_NAMES[o.brush];
   const swatches=$('cosmetic-swatches'),focusedColor=document.activeElement?.closest('.cosmetic-swatch')?.dataset.color;swatches.replaceChildren();
   for(const[color,name]of PALETTES[part]){const b=document.createElement('button');b.type='button';b.className='cosmetic-swatch';b.dataset.color=color;b.style.setProperty('--swatch',color);b.setAttribute('aria-label',name+' '+color);b.setAttribute('aria-pressed',String(color===o.color));b.title=name;b.onclick=()=>{o.color=color;o.colorName=name;renderPanel();};swatches.append(b);}
   if(focusedColor)swatches.querySelector(`[data-color="${focusedColor}"]`)?.focus({preventScroll:true});
@@ -109,13 +130,13 @@ export async function createMakeupStation(hooks){
   if(!NAMES[next]||hooks.isBusy?.())return;cancel();finishAdjustment();part=next;panelOpen=true;pane='palette';
   const layers=painter.getLayers(),remembered=lastLayerByPart.get(sourceId+':'+next),matching=layers.find(layer=>layer.id===remembered&&layer.part===next)||[...layers].reverse().find(layer=>layer.part===next);
   if(matching){painter.selectLayer(matching.id);lastLayerByPart.set(sourceId+':'+next,matching.id);}else addLayer(next);
-  if(zoom)view=next==='blush'?'full':next;renderPanel();applyView();
+  guideVisible=!painter.hasPaint(next);if(zoom)view=next==='blush'?'full':next;renderPanel();applyView();
   hooks.announce?.('已打開'+NAMES[next]+'調色盤；選色後直接在人臉拖曳。');
  }
  function setMode(next){
   cancel();finishAdjustment();mode=next==='reference'?'reference':'paint';$('studio').dataset.experience=mode;
   document.querySelectorAll('.experience-switch [data-experience]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.experience===mode)));
-  $('experience-note').textContent=mode==='paint'?'挑一種彩妝，打開調色盤與刷具。':'搭配已完成的 IrisMix 參考妝容，也可回來自由細畫。';
+  $('experience-note').textContent=mode==='paint'?'選色後，直接在標示的部位上色。':'搭配已完成的 IrisMix 參考妝容，也可回來自由細畫。';
   applyView();cursor.hidden=true;renderPanel();hooks.onMode?.(mode);
  }
  function locate(event){const r=canvas.getBoundingClientRect();return{x:(event.clientX-r.left)/r.width*640,y:(event.clientY-r.top)/r.height*640,pressure:event.pointerType==='pen'?Math.max(.1,event.pressure||.5):1};}
@@ -133,7 +154,7 @@ export async function createMakeupStation(hooks){
   cursor.style.transform=`translate(-50%,-50%) rotate(${tip.angle}rad) skewX(${-Math.atan(tip.shear)}rad)`;
  }
 
- function cancel(){cursorLastPoint=null;if(activePointer!==null)painter.cancelStroke();activePointer=null;historyToken=null;cursor.hidden=true;}
+ function cancel(){cursorLastPoint=null;if(activePointer!==null)painter.cancelStroke();activePointer=null;historyToken=null;cursor.hidden=true;renderGuide();}
  canvas.addEventListener('pointerdown',event=>{
   if(mode!=='paint'||hooks.isBusy?.()||event.button!==0)return;
   if(event.pointerType==='touch'){touches.add(event.pointerId);if(touches.size>1){multiTouch=true;cancel();return;}}
@@ -141,7 +162,7 @@ export async function createMakeupStation(hooks){
   if(!part){const picked=pickPart(locate(event));if(picked){event.preventDefault();selectPart(picked);}return;}
   event.preventDefault();historyToken=hooks.captureHistory?.();const started=painter.beginStroke(part,strokeOptions(),locate(event));
   if(!started.ok){historyToken=null;hooks.announce?.(started.reason==='layer-hidden'?'目前圖層已隱藏，請在「妝容圖層」按顯示後再畫。':String(started.reason).includes('limit')?'筆畫已達上限，請清除不用的手繪內容後繼續。':'請先選彩妝，再在對應的臉部區域上色。');return;}
-  activePointer=event.pointerId;canvas.setPointerCapture(event.pointerId);drawCursor(event);
+  activePointer=event.pointerId;canvas.setPointerCapture(event.pointerId);drawCursor(event);renderGuide();
  });
  canvas.addEventListener('pointermove',event=>{
   drawCursor(event);if(activePointer!==event.pointerId||multiTouch)return;event.preventDefault();
@@ -151,12 +172,13 @@ export async function createMakeupStation(hooks){
   if(event.pointerType==='touch'){touches.delete(event.pointerId);if(!touches.size)multiTouch=false;}
   if(activePointer!==event.pointerId)return;
   if(cancelled){cancel();return;}const token=historyToken;activePointer=null;historyToken=null;const ended=painter.endStroke();
-  if(ended.changed){hooks.commitHistory?.(token);hooks.onCommit?.();hooks.announce?.(opts().tool==='erase'?'已擦除這筆顏色。':opts().tool==='blend'?'已暈開這筆顏色。':'已畫上'+opts().colorName+'，可繼續疊色或暈染。');}
-  else hooks.announce?.(opts().tool==='paint'?'這筆沒有畫到可上色區域，請在'+TARGETS[part]+'試畫。':opts().tool==='erase'?'這裡還沒有可擦除的手繪顏色。':'請從已有顏色往邊緣拖曳暈染。');
+  if(ended.changed){guideVisible=false;hooks.commitHistory?.(token);hooks.onCommit?.();hooks.announce?.(opts().tool==='erase'?'已擦除目前圖層，可按復原還原。':opts().tool==='blend'?'已暈開目前圖層的顏色。':'已畫上'+opts().colorName+'，可以繼續畫或切換暈染。');}
+  else{const picked=pickPart(locate(event));guideVisible=true;hooks.announce?.(opts().tool==='paint'?picked&&picked!==part?'目前是'+NAMES[part]+'工具；要畫這裡，請先選「'+NAMES[picked]+'」。':'請在標示的'+TARGETS[part]+'拖曳上色。':opts().tool==='erase'?'目前圖層在這裡沒有顏色，可改選有顏色的圖層。':'先在目前圖層上色，再沿著顏色邊緣暈染。');}
   renderPanel();
  }
  canvas.addEventListener('pointerup',e=>finish(e));canvas.addEventListener('pointercancel',e=>finish(e,true));canvas.addEventListener('lostpointercapture',e=>finish(e,true));canvas.addEventListener('pointerleave',()=>cursor.hidden=true);
  document.querySelectorAll('[data-cosmetic-tool]').forEach(b=>b.onclick=()=>selectPart(b.dataset.cosmeticTool));
+ $('paint-guide-toggle').onclick=()=>{guideVisible=!guideVisible;renderGuide();};
  $('palette-tab').onclick=()=>setPane('palette');$('pigment-layers-tab').onclick=()=>setPane('layers');
  for(const id of ['palette-tab','pigment-layers-tab'])$(id).onkeydown=event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();setPane(event.key==='Home'?'palette':event.key==='End'?'layers':pane==='palette'?'layers':'palette',{focus:true});}};
  $('add-pigment-layer').onclick=()=>{const previous=part;if(addLayer()){panelOpen=true;if(!previous)view=part==='blush'?'full':part;renderPanel();applyView();}};
@@ -173,10 +195,11 @@ export async function createMakeupStation(hooks){
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&panelOpen&&!document.querySelector('dialog[open]')){cancel();panelOpen=false;renderPanel();}});
  return{
   get mode(){return mode;},get activePart(){return part;},setMode,
-  setSource(id){if(!guides.sources[id])throw Error('找不到人像部位');cancel();finishAdjustment();sourceId=id;painter.setSource(id,guides.sources[id]);syncSelectedPart();applyView();renderPanel();},
+  setComparing(value){if(comparing===value)return;comparing=value;renderGuide();renderContext();},
+  setSource(id){if(!guides.sources[id])throw Error('找不到人像部位');cancel();finishAdjustment();const oldPart=part;sourceId=id;painter.setSource(id,guides.sources[id]);syncSelectedPart();if(part!==oldPart)view=part==='blush'?'full':part;guideVisible=!painter.hasPaint();applyView();renderPanel();},
   render(context,base){painter.render(context,base);},hasPaint(){return painter.hasPaint();},hasContent(){return painter.getLayers().some(layer=>layer.strokeCount>0);},snapshot(){return painter.snapshot();},
   restore(state){cancel();adjustmentToken=null;adjustmentChanged=false;if(state)painter.restore(state);else painter.clearAll();if(sourceId)painter.setSource(hooks.getSource(),guides.sources[hooks.getSource()]);sourceId=hooks.getSource();syncSelectedPart();applyView();renderPanel();},
-  clearAll(){cancel();adjustmentToken=null;adjustmentChanged=false;painter.clearAll();lastLayerByPart.clear();part=null;panelOpen=false;pane='palette';view='full';renderPanel();applyView();},
+  clearAll(){cancel();adjustmentToken=null;adjustmentChanged=false;painter.clearAll();lastLayerByPart.clear();part='eyes';panelOpen=true;pane='palette';view='full';guideVisible=true;renderPanel();applyView();},
   refresh(){renderPanel();},guides
  };
 }
