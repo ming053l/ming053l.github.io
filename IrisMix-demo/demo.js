@@ -160,7 +160,7 @@ function refreshGuide(){
   const item=look(button.dataset.reference),eligible=makeupStep&&available(item.id)&&(category==='all'||item.category===category);button.hidden=!eligible;const option=button.closest('.reference-option');option.hidden=!eligible;option.style.order=String((guideStep==='face'&&!FLOWER_LOOKS.includes(item.id)?100:0)+manifest.looks.indexOf(item));option.querySelector('[data-select-region]').disabled=busy;button.disabled=busy;const applied=layers.some(l=>l.fromStep===guideStep&&l.refId===item.id)||!!slot?.refId&&slot.refId===item.id;button.setAttribute('aria-pressed',String(applied));const count=layers.filter(l=>l.fromStep===guideStep&&l.refId===item.id).length;button.querySelector('.applied-check').hidden=!applied;button.querySelector('.applied-check').textContent='✓ 已加入 '+(count||1)+' 層';const regionButton=option.querySelector('[data-select-region]');regionButton.textContent=layers.some(l=>l.refId===item.id)?'再取局部 ＋':'新增局部圖層 ＋';button.querySelector('.reference-part-hint').textContent=guideStep==='face'?(FLOWER_LOOKS.includes(item.id)?'塗選花朵或局部':'可自由取用這張參考的局部'):guideStep==='lips'&&['mint','lily','cobalt'].includes(item.id)?'自然唇色，可選取局部':'可直接套用或先選局部';if(eligible)optionCount++;
  });
  $('empty-options').hidden=!makeupStep||optionCount>0;const approved=manifest.looks.filter(item=>available(item.id)),flowerCount=approved.filter(item=>FLOWER_LOOKS.includes(item.id)).length;$('reference-availability').textContent=makeupStep?'此模特可用 '+approved.length+' 款參考'+(guideStep==='face'?'（其中 '+flowerCount+' 款花卉彩繪）':'')+'；每款都能先塗選局部再加入。'+(approved.length<manifest.looks.length?' 圖案不完整的配對仍不開放。':''):'';
- document.querySelectorAll('[data-reference-action]').forEach(b=>{b.disabled=busy;b.setAttribute('aria-pressed',String(b.dataset.referenceAction===referenceAction));});$('reference-action-note').textContent=referenceAction==='stack'?'局部選取可從同一張參考重複新增，每次各自成層。完整部位再點一次可取消；後加同部位圖層預設 50%。':'點選款式會替換目前部位；「新增局部圖層／再取局部」仍會另加一層，保留原有搭配。';
+ document.querySelectorAll('[data-reference-action]').forEach(b=>{b.disabled=busy;b.setAttribute('aria-pressed',String(b.dataset.referenceAction===referenceAction));});$('reference-action-note').textContent=referenceAction==='stack'?'局部選取可從同一張參考重複新增，每次各自成層。完整部位再點一次可取消；後加同部位圖層預設 50%。':'點選其他款式會替換目前部位；再取同款局部或按「新增局部圖層」會另加一層，保留原有搭配。';
  document.querySelectorAll('[data-category]').forEach(b=>{b.disabled=busy;b.setAttribute('aria-pressed',String(b.dataset.category===category));});
  const preview=guidePreview();$('selected-reference-image').src=asset(preview.reference);$('selected-reference-image').alt=preview.label+'參考原圖';$('selected-reference-name').textContent=preview.label;$('selected-reference-description').textContent=preview.description;
  $('step-adjustments').hidden=!makeupStep||!slot?.refId;
@@ -194,8 +194,8 @@ function setStep(step,{scroll=true}={}){
 function setBusy(value){busy=value;$('studio').setAttribute('aria-busy',String(value));refreshAll();refreshReferenceMix();}
 async function chooseGuided(id){
  if(busy||!(guideStep==='look'||PARTS.includes(guideStep))||!available(id))return;
- const part=guideStep;
- if(part==='face'||referenceAction==='stack'&&layers.some(l=>l.fromStep===part&&l.refId===id&&l.partial)){await openReferenceEditor(id,{part});return;}
+ const part=guideStep,hasPartial=layers.some(l=>l.fromStep===part&&l.refId===id&&l.partial);
+ if(part==='face'||hasPartial){await openReferenceEditor(id,{part,additive:hasPartial});return;}
  if(referenceAction==='stack'){await toggleReferenceLayer(id,part);return;}
  if(layers.length>=12&&!layers.some(l=>l.fromStep===part)){announce('參考圖層已達 12 層，請先移除不用的圖層。');return;}
  setBusy(true);
