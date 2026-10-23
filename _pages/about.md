@@ -109,9 +109,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
-<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset</a>
+<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset<span id="swr-downloads"> (2521 download)</span></a>
 </div>
-<p style="margin: 8px 0 0;"><a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank" title="SWR-Bench downloads over the last month on Hugging Face"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fdatasets%2Fming0531%2FSWR-Bench&amp;query=%24.downloads&amp;label=HF%20downloads%20%2F%20month&amp;color=0B3C8A&amp;cacheSeconds=3600" alt="SWR-Bench downloads over the last month on Hugging Face" height="20" loading="lazy"/></a></p>
 </div>
 </div>
 
@@ -379,3 +378,21 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a class="back-to-top" href="#about-me" aria-label="Back to top">↑</a>
 
 <script src="{{ '/assets/js/previews.js' | relative_url }}?v=3" defer></script>
+
+<script>
+(function () {
+  var count = document.getElementById('swr-downloads');
+  if (!count) return;
+  fetch('https://huggingface.co/api/datasets/ming0531/SWR-Bench')
+    .then(function (response) {
+      if (!response.ok) throw new Error('Dataset statistics unavailable');
+      return response.json();
+    })
+    .then(function (data) {
+      if (Number.isSafeInteger(data.downloads) && data.downloads >= 0) {
+        count.textContent = ' (' + data.downloads + ' download)';
+      }
+    })
+    .catch(function () {});
+})();
+</script>
