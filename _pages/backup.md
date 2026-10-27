@@ -454,7 +454,7 @@ window.addEventListener('scroll', function() {
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;">Ching-Heng Cheng, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><a href="https://chingheng0808.github.io/" target="_blank" style="text-decoration: underline;">Ching-Heng Cheng</a>, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
         <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/chingheng0808/WWE-UIE?style=social" alt="Github Stars">
@@ -547,7 +547,7 @@ window.addEventListener('scroll', function() {
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="_blank" style="text-decoration: underline;">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank" style="text-decoration: underline;">Yu-Chiang Frank Wang</a></p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, <a href="https://chingheng0808.github.io/" target="_blank" style="text-decoration: underline;">Ching-Heng Cheng</a>, <a href="https://vanlinlin.github.io/" target="_blank" style="text-decoration: underline;">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" target="_blank" style="text-decoration: underline;">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" target="_blank" style="text-decoration: underline;">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank" style="text-decoration: underline;">Yu-Chiang Frank Wang</a></p>
       <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
         <span style="font-weight: bold;">About</span>
         <img src="https://img.shields.io/github/stars/chingheng0808/PromptHSI?style=social" alt="Github Stars">
@@ -587,7 +587,7 @@ window.addEventListener('scroll', function() {
     </div>
     <div class="paper-box-text" style="flex: 1; min-width: 300px;">
       <h4 style="margin: 0 0 10px 0; font-size: 1.15em; color: #333;">AuroraHSI: An End-to-End Hyperspectral Image Fusion Method for Degraded Imagery</h4>
-      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Cheng-Jun Kang, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a></p>
+      <p style="margin: 0 0 10px 0; font-size: 1.05em;"><strong>Chia-Ming Lee</strong>, Cheng-Jun Kang, <a href="https://chingheng0808.github.io/" target="_blank" style="text-decoration: underline;">Ching-Heng Cheng</a>, <a href="https://vanlinlin.github.io/">Yu-Fan Lin</a>, <a href="https://nelly0421.github.io/">Yi-Shiuan Chou</a>, <a href="https://cchsu.info/">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a></p>
       <div style="margin-bottom: 5px; font-weight: bold;">About</div>
       <p style="margin: 0 0 15px 0; color: #555;">An end-to-end pipeline that simultaneously denoises and fuses degraded hyperspectral imagery, recovering both spatial sharpness and spectral fidelity even when the input is corrupted by multiple types of real-world noise.</p>
       <div class="links" style="display: flex; flex-wrap: wrap; gap: 6px;">

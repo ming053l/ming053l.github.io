@@ -158,7 +158,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Preprint</div>
 <h4>FlashReFocus: Interactive Image Refocusing in Seconds</h4>
-<p class="paper-authors">Ching-Heng Cheng*, <strong>Chia-Ming Lee*</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+<p class="paper-authors"><a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>*, <strong>Chia-Ming Lee*</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-note">* Equal contribution.</p>
 
 <p class="paper-summary">Enables interactive refocusing of a single photograph, allowing users to explore focal points, aperture settings, and depth-of-field effects with responsive visual feedback. After a one-time restoration step, a lightweight renderer updates each focal edit in about half a second, making it practical to compare and refine the desired look.</p>
@@ -347,7 +347,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box-text"><div class="paper-venue">WACV 2026</div>
 <h4>WWE-UIE: A Wavelet &amp; White Balance Efficient Network for Underwater Image Enhancement</h4>
-<p class="paper-authors">Ching-Heng Cheng, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
+<p class="paper-authors"><a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>, Jen-Wei Lee, <strong>Chia-Ming Lee</strong>, <a href="https://cchsu.info/">Chih-Chung Hsu</a></p>
 
 <p class="paper-summary">Water absorbs red light first, leaving underwater photos hazy and blue-green, and the strongest enhancement networks are too heavy for real-time use. WWE-UIE builds three simple priors into a compact network: adaptive white balance to restore the missing reds, wavelet decomposition to recover both overall structure and fine texture, and an edge-aware module to keep outlines sharp. It restores natural color with a fraction of the computation, fast enough for real-time use on limited hardware.</p>
 <div class="links">
@@ -368,7 +368,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box-text"><div class="paper-venue">TGRS 2026</div>
 <h4>PromptHSI: Universal Hyperspectral Image Restoration with Vision-Language Modulated Frequency Adaptation</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, Ching-Heng Cheng, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" rel="noopener" target="_blank">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" rel="noopener" target="_blank">Yu-Chiang Frank Wang</a></p>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>, <a href="https://vanlinlin.github.io/" rel="noopener" target="_blank">Yu-Fan Lin</a>, Yi-Ching Cheng, Wo-Ting Liao, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a>, <a href="https://fuenyang1127.github.io/" rel="noopener" target="_blank">Fu-En Yang</a>, <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" rel="noopener" target="_blank">Yu-Chiang Frank Wang</a></p>
 
 <p class="paper-summary">Hyperspectral images from satellites and aircraft often arrive with several kinds of damage at once, such as thin cloud, noise, blur and missing bands, while restoration models are usually built for one kind at a time. PromptHSI is a single all-in-one model guided by a short text description of the damage: a vision-language model turns the description into controls that adjust frequency-aware features. One model handles many combinations of damage, and changing the description changes what it repairs.</p>
 <div class="links">
