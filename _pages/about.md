@@ -105,7 +105,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-venue">Preprint</div>
 <h4>DreamVSR: One-Step Autoregressive Diffusion for Streaming Video Super-Resolution via Latent Propagation</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-summary">Sharpens video frame by frame as it streams, using only past frames, so nothing has to wait for the future of the clip. Instead of regenerating every frame from noise, it carries the previous restored result forward and refines it in a single diffusion step, restarting from the input only where that history is unreliable, such as newly revealed regions and scene cuts. Against eight recent methods it reaches the lowest LPIPS, DISTS and tLP on four test sets, with less than half the GPU memory of the four-step model it builds on.</p>
+<p class="paper-summary">Combines high perceptual quality, fidelity and temporal consistency with fast inference, low memory use and a short time to first frame, without customized attention kernels. With a single denoising step per frame, it reaches the lowest LPIPS, DISTS and tLP among the compared methods on four test sets, needs no future frames and, in strict FP32, stays far below the 24 GB of an RTX 4090, which most of them exceed.</p>
 </div>
 </div>
 
