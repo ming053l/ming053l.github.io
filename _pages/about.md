@@ -95,10 +95,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-dreamvsr">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video width="854" height="480" muted loop playsinline preload="none" aria-label="A divider sweeps across a video, comparing the blurry bicubic-upscaled input with the sharper DreamVSR result across a reel of portrait, wildlife, landscape and food clips">
-<source src="images/web/dreamvsr-home.mp4?v=4" type="video/mp4"/>
+<video width="854" height="480" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across a reel of wildlife, architecture, landscape and food clips, comparing the blurry original with the sharper DreamVSR result">
+<source src="images/web/dreamvsr-home.mp4?v=5" type="video/mp4"/>
 </video>
-<picture><source srcset="images/web/dreamvsr-home.avif?v=4" type="image/avif"/><img class="pv-poster" src="images/web/dreamvsr-home.webp?v=4" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/dreamvsr-home.avif?v=5" type="image/avif"/><img class="pv-poster" src="images/web/dreamvsr-home.webp?v=5" width="854" height="480" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
