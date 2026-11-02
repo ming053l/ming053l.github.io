@@ -31,7 +31,7 @@ const tb=$$('#tabs button');tb.forEach(b=>b.onclick=()=>{press(tb,b);$$('[data-t
 /* lightbox */
 const dl=$('dialog');$$('.fig').forEach(b=>b.onclick=()=>{$('img',dl).src=$('img',b).src;dl.showModal()});$('button',dl).onclick=()=>dl.close();dl.onclick=e=>{if(e.target===dl)dl.close()};
 /* copy */
-$('#copy').onclick=async e=>{try{await navigator.clipboard.writeText($('#bib').textContent);e.target.dataset.ok=1;$('#copied').hidden=false}catch(x){}};
+$('#copy').onclick=async e=>{try{await navigator.clipboard.writeText($('#bib').textContent);$('#copied').hidden=false}catch(x){}};
 /* hero video only when visible */
 const hv=$('#hero-video');if(hv&&!matchMedia('(prefers-reduced-motion:reduce)').matches){hv.play().catch(()=>{})}
 })();
