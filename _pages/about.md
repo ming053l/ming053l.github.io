@@ -106,6 +106,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <h4>RenoVSR: One-Step Recurrent Autoregressive Diffusion Refinement for Streaming Video Super-Resolution</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-summary">Recurrently refines what it has already restored: the previous restored latent is aligned, re-noised and corrected in a single step under the current low-resolution frame, while predicted restoration error decides what to keep and what to renew. It reaches the lowest LPIPS, DISTS and tLP among the compared methods on four test sets, needs no future frames and, in strict FP32, stays far below the 24 GB of an RTX 4090, which most of them exceed.</p>
+<div class="links">
+<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Paper (coming soon)</a>
+<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">arXiv (coming soon)</a>
+<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">GitHub (coming soon)</a>
+<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Project Page (coming soon)</a>
+</div>
 </div>
 </div>
 
