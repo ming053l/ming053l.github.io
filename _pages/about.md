@@ -95,10 +95,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-renovsr">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across clips from an animated esports music video, an anime series and an anime music video, comparing the degraded streaming input with the sharper RenoVSR result">
-<source src="images/web/renovsr-home.mp4?v=1" type="video/mp4"/>
+<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across four clips: an animated esports music video, a subtitled anime scene, a live NBA buzzer-beater and an anime close-up, comparing the degraded streaming input with the sharper RenoVSR result">
+<source src="images/web/renovsr-home.mp4?v=2" type="video/mp4"/>
 </video>
-<picture><source srcset="images/web/renovsr-home.avif?v=1" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=1" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/renovsr-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=2" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
