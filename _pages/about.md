@@ -95,10 +95,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-renovsr">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across a reel of wildlife, architecture, landscape and food clips, comparing the blurry original with the sharper RenoVSR result">
-<source src="images/web/dreamvsr-home.mp4?v=7" type="video/mp4"/>
+<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across clips from an animated esports music video, an anime series and an anime music video, comparing the degraded streaming input with the sharper RenoVSR result">
+<source src="images/web/renovsr-home.mp4?v=1" type="video/mp4"/>
 </video>
-<picture><source srcset="images/web/dreamvsr-home.avif?v=7" type="image/avif"/><img class="pv-poster" src="images/web/dreamvsr-home.webp?v=7" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/renovsr-home.avif?v=1" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=1" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
