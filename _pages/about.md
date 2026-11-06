@@ -96,9 +96,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across clips from game CG cinematics (a frost-covered sword being drawn and a gauntlet gripping a ruby-set hilt) and two AI-generated sample videos (a paper dancer leaping and prickly-pear cacti), comparing the clean low-resolution input with the sharper RenoVSR result">
-<source src="images/web/renovsr-home.mp4?v=11" type="video/mp4"/>
+<source src="images/web/renovsr-home.mp4?v=12" type="video/mp4"/>
 </video>
-<picture><source srcset="images/web/renovsr-home.avif?v=11" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=11" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/renovsr-home.avif?v=12" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=12" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
