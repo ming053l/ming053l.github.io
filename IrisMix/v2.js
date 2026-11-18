@@ -72,13 +72,56 @@ $('#sc-replay').onclick=()=>play();
 const sb=$$('#sc-seg button');sb.forEach(b=>b.onclick=()=>{press(sb,b);const v=b.dataset.v;$$('.sc-col',root).forEach(c=>c.hidden=v!=='all'&&c.dataset.col!==v);$('.sc-grid',root).classList.toggle('one',v!=='all')});
 if(matchMedia('(prefers-reduced-motion:reduce)').matches){show(3)}else{show(0);io.observe(root)}})();
 
+
+/* makeup workspace: rendered layers stay editable (recolor, opacity, move, reorder, hide, separate); auto demo */
+(()=>{const root=$('#ws');if(!root)return;const W=V+'ws/',st=$('#ws-stage'),list=$('#ws-list'),op=$('#ws-op'),sep=$('#ws-sep'),sepv=$('#ws-sepv');
+const LY=[{id:'blush',en:'Blush',zh:'腮紅',c:'#c47fcb',pc:'#2E9E62'},{id:'shadow',en:'Eyeshadow',zh:'眼影',c:'#9b6fd6',pc:'#3E7CC9'},{id:'liner',en:'Eyeliner',zh:'眼線',c:'#1a1a1a',pc:'#8A5CC7'},{id:'lips',en:'Lips',zh:'唇妝',c:'#8e4a6a',pc:'#D9455F'}];
+const D0=()=>({order:LY.map(l=>l.id),h:{},o:{},x:{},y:{},hide:{},sel:'lips'});let S=D0();
+const L2=(en,zh)=>`<span class="en">${en}</span><span class="zh">${zh}</span>`;
+const base=document.createElement('div');base.className='ws-plane base';base.style.setProperty('--z',0);base.innerHTML=`<img src="${W}src.webp" alt="Source face"><span class="ws-tag" style="--pc:#8C8C8C">source T</span>`;st.append(base);
+const P={};LY.forEach(l=>{const d=document.createElement('div');d.className='ws-plane';d.style.setProperty('--pc',l.pc);d.innerHTML=`<img src="${W}${l.id}.webp" alt=""><span class="ws-tag">${l.en.toLowerCase()}</span>`;st.append(d);P[l.id]=d});
+function draw(){S.order.forEach((id,i)=>{const d=P[id];d.style.setProperty('--z',i+1);d.style.zIndex=i+1;const im=d.querySelector('img');
+  im.style.setProperty('--h',(S.h[id]||0)+'deg');im.style.setProperty('--o',(S.o[id]==null?1:S.o[id]));im.style.setProperty('--x',(S.x[id]||0)+'px');im.style.setProperty('--y',(S.y[id]||0)+'px');
+  d.classList.toggle('hide',!!S.hide[id]);d.classList.toggle('sel',S.sel===id)});
+ list.innerHTML='';[...S.order].reverse().forEach((id,ri)=>{const l=LY.find(q=>q.id===id),n=S.order.length-ri;const li=document.createElement('li');li.dataset.id=id;li.className=S.sel===id?'sel':'';
+  li.innerHTML=`<span class="ix">0${n+1}</span><span class="nm"><b>${L2(l.en,l.zh)}</b><small>${L2('rendered layer','渲染後圖層')}</small></span><span class="ct"><span class="sw" style="background:${l.c};filter:hue-rotate(${S.h[id]||0}deg)" title="Recolor"></span><input type="range" min="0" max="100" value="${Math.round(((S.o[id]==null?1:S.o[id]))*100)}" aria-label="Opacity"><button type="button" class="${S.hide[id]?'off':''}" aria-label="Show or hide">◉</button><button type="button" aria-label="Move up">↑</button><button type="button" aria-label="Move down">↓</button></span>`;
+  li.onclick=e=>{user();S.sel=id;draw()};const [eye,up,dn]=li.querySelectorAll('button');
+  li.querySelector('.sw').onclick=e=>{e.stopPropagation();user();S.sel=id;S.h[id]=((S.h[id]||0)+60)%360;draw()};
+  li.querySelector('input').oninput=e=>{user();S.o[id]=e.target.value/100;draw()};li.querySelector('input').onclick=e=>e.stopPropagation();
+  eye.onclick=e=>{e.stopPropagation();user();S.hide[id]=!S.hide[id];draw()};
+  up.onclick=e=>{e.stopPropagation();user();mv(id,1)};dn.onclick=e=>{e.stopPropagation();user();mv(id,-1)};list.append(li)});
+ const lb=document.createElement('li');lb.innerHTML=`<span class="ix">01</span><span class="nm"><b>${L2('Source face','原圖人臉')}</b><small>${L2('locked','鎖定')}</small></span><span class="ct">🔒</span>`;lb.style.cursor='default';list.append(lb)}
+function mv(id,d){const i=S.order.indexOf(id),j=i+d;if(j<0||j>=S.order.length)return;[S.order[i],S.order[j]]=[S.order[j],S.order[i]];draw();const li=list.querySelector(`li[data-id="${id}"]`);li&&(li.classList.add('flash'),setTimeout(()=>li.classList.remove('flash'),500))}
+function setSep(v){root.style.setProperty('--sep',v);st.style.setProperty('--sep',v);$$('.ws-plane',st).forEach(p=>p.style.setProperty('--sep',v));sep.value=Math.round(v*100);sepv.textContent=Math.round(v*100)+'%'}
+sep.oninput=()=>{user();setSep(sep.value/100)};
+/* drag the selected layer on the canvas */
+let drag=null;st.addEventListener('pointerdown',e=>{if(+sep.value>5)return;user();drag={x:e.clientX,y:e.clientY,x0:S.x[S.sel]||0,y0:S.y[S.sel]||0};st.setPointerCapture(e.pointerId)});
+st.addEventListener('pointermove',e=>{if(!drag)return;const k=600/340*.55;S.x[S.sel]=Math.max(-60,Math.min(60,drag.x0+(e.clientX-drag.x)*k));S.y[S.sel]=Math.max(-60,Math.min(60,drag.y0+(e.clientY-drag.y)*k));draw()});
+st.addEventListener('pointerup',()=>drag=null);
+/* auto demo */
+const say=(en,zh)=>{op.innerHTML=L2(en,zh);op.classList.add('on')};
+const STEPS=[[0,()=>{S=D0();setSep(0);draw();op.classList.remove('on')}],
+ [900,()=>{S.sel='lips';S.h.lips=140;draw();say('Recolor the lips','唇色改色')}],
+ [2600,()=>{S.sel='blush';S.o.blush=.35;draw();say('Lower the blush opacity','降低腮紅透明度')}],
+ [4300,()=>{S.sel='blush';S.y.blush=-14;S.x.blush=6;draw();say('Move the blush up','把腮紅往上移')}],
+ [6000,()=>{S.sel='liner';mv('liner',-1);say('Put the eyeliner under the eyeshadow','眼線移到眼影下面')}],
+ [7700,()=>{S.sel='lips';S.hide.lips=true;draw();say('Hide the lips','隱藏唇妝')}],
+ [9300,()=>{say('Separate the layers','分離圖層');let t0=performance.now();const f=n=>{const p=Math.min((n-t0)/900,1);setSep(p);if(p<1&&demo)requestAnimationFrame(f)};requestAnimationFrame(f)}],
+ [12300,()=>{say('Reassemble, nothing was re-rendered','重新組合，全程沒有重新渲染');let t0=performance.now();const f=n=>{const p=Math.min((n-t0)/900,1);setSep(1-p);if(p<1&&demo)requestAnimationFrame(f)};requestAnimationFrame(f)}],
+ [14600,()=>{S=D0();draw();op.classList.remove('on')}]];
+let demo=false,timers=[],touched=false;
+function run(){stop();if(touched)return;demo=true;STEPS.forEach(([t,f])=>timers.push(setTimeout(()=>{if(demo)f()},t)))}
+function stop(){demo=false;timers.forEach(clearTimeout);timers=[]}
+function user(){if(!touched){touched=true;stop();op.classList.remove('on');window.dispatchEvent(new CustomEvent('ws-user'))}}
+window.wsDemo={run,stop};draw();setSep(0)})();
+
 /* method walkthrough: auto-advance while visible, step buttons, pause */
 (()=>{const root=$('#manim');if(!root)return;const sc=$$('.mscene',root),bt=$$('.msteps button',root),pg=$('#m-prog'),pb=$('#m-play');
-const DUR=5200;let k=0,t0=0,raf=0,playing=true,vis=false;
-function go(i){k=(i+sc.length)%sc.length;sc.forEach((s,j)=>{s.classList.toggle('on',j===k)});press(bt,bt[k]);t0=performance.now()}
-function tick(now){if(playing&&vis){const p=Math.min((now-t0)/DUR,1);pg.style.width=(p*100)+'%';if(p>=1)go(k+1)}raf=requestAnimationFrame(tick)}
-function setPlay(p){playing=p;pb.querySelector('span').textContent=p?'Pause':'Play';pb.querySelector('path').setAttribute('d',p?'M2 1h3v10H2zM7 1h3v10H7z':'M3 1l8 5-8 5z');if(p)t0=performance.now()-(parseFloat(pg.style.width)||0)/100*DUR}
-bt.forEach((b,i)=>b.onclick=()=>{go(i);setPlay(false);pg.style.width='0%'});pb.onclick=()=>setPlay(!playing);
+const DUR=5200,dur=()=>+(sc[k].dataset.dur||DUR);let k=0,t0=0,raf=0,playing=true,vis=false;
+function go(i){k=(i+sc.length)%sc.length;sc.forEach((s,j)=>{s.classList.toggle('on',j===k)});press(bt,bt[k]);t0=performance.now();if(window.wsDemo){sc[k].querySelector('#ws')?window.wsDemo.run():window.wsDemo.stop()}}
+function tick(now){if(playing&&vis){const p=Math.min((now-t0)/dur(),1);pg.style.width=(p*100)+'%';if(p>=1)go(k+1)}raf=requestAnimationFrame(tick)}
+function setPlay(p){playing=p;pb.querySelector('span').textContent=p?'Pause':'Play';pb.querySelector('path').setAttribute('d',p?'M2 1h3v10H2zM7 1h3v10H7z':'M3 1l8 5-8 5z');if(p)t0=performance.now()-(parseFloat(pg.style.width)||0)/100*dur()}
+bt.forEach((b,i)=>b.onclick=()=>{go(i);setPlay(false);pg.style.width='0%'});window.addEventListener('ws-user',()=>setPlay(false));pb.onclick=()=>setPlay(!playing);
 if(matchMedia('(prefers-reduced-motion:reduce)').matches){setPlay(false)}
 new IntersectionObserver(es=>es.forEach(e=>{const was=vis;vis=e.isIntersecting;if(vis&&!was&&playing){go(k)}}),{threshold:.35}).observe(root);
 go(0);raf=requestAnimationFrame(tick)})();
