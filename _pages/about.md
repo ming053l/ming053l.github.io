@@ -95,10 +95,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-reloopvsr">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across clips from game CG cinematics (a frost-covered sword being drawn and a gauntlet gripping a ruby-set hilt) and two AI-generated sample videos (a paper dancer leaping and prickly-pear cacti), comparing the clean low-resolution input with the sharper ReLoopVSR result">
-<source src="images/web/renovsr-home.mp4?v=13" type="video/mp4"/>
+<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A divider sweeps across six Inter4K clips (city aerials, flowers and paint), comparing the bicubic-upsampled low-resolution input on the left with the ReLoopVSR ×4 result on the right">
+<source src="images/web/reloopvsr-home.mp4?v=1" type="video/mp4"/>
 </video>
-<picture><source srcset="images/web/renovsr-home.avif?v=13" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=13" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/reloopvsr-home.avif?v=1" type="image/avif"/><img class="pv-poster" src="images/web/reloopvsr-home.webp?v=1" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
