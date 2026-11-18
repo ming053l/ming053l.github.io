@@ -150,4 +150,85 @@ function setPlay(p){playing=p;pb.querySelector('svg path').setAttribute('d',p?'M
 pb.onclick=()=>setPlay(!playing);
 if(matchMedia('(prefers-reduced-motion:reduce)').matches)setPlay(false);
 show(0);requestAnimationFrame(tick)})();
+
+/* hero layer playground: drag layer cards onto the face or pull them out, recolor, move, stack, matte / glossy; scripted cursor demo */
+(()=>{const root=$('#pg');if(!root)return;const A=V+'play/';
+const T={
+ blush:{en:'Blush',sc:'腮红',zh:'腮紅',ja:'チーク',ko:'블러셔'},liner:{en:'Lashes & liner',sc:'睫毛与眼线',zh:'睫毛與眼線',ja:'まつげ・ライナー',ko:'속눈썹·라이너'},
+ lips:{en:'Lips',sc:'唇妆',zh:'唇妝',ja:'リップ',ko:'립'},sheer:{en:'Sheer gloss',sc:'透明唇蜜',zh:'透明唇蜜',ja:'シアーグロス',ko:'시어 글로스'},
+ tray:{en:'Layers',sc:'图层',zh:'圖層',ja:'レイヤー',ko:'레이어'},hint:{en:'Drag a layer onto the face, or pull one out',sc:'把图层拖到脸上，或拖出来',zh:'把圖層拖到臉上，或拖出來',ja:'レイヤーを顔にドラッグ、または外へ',ko:'레이어를 얼굴로 끌어오거나 밖으로 빼세요'},
+ matte:{en:'Matte',sc:'雾面',zh:'霧面',ja:'マット',ko:'매트'},glossy:{en:'Glossy',sc:'水光',zh:'水光',ja:'ツヤ',ko:'글로시'},
+ color:{en:'Color',sc:'颜色',zh:'顏色',ja:'カラー',ko:'컬러'},op:{en:'Opacity',sc:'透明度',zh:'透明度',ja:'不透明度',ko:'불투명도'},order:{en:'Order',sc:'顺序',zh:'順序',ja:'重なり順',ko:'순서'},
+ finish:{en:'Finish',sc:'质地',zh:'質地',ja:'仕上がり',ko:'피니시'},
+ s1:{en:'Stack a sheer gloss over the lips',sc:'在唇上叠一层透明唇蜜',zh:'在唇上疊一層透明唇蜜',ja:'リップにシアーグロスを重ねる',ko:'립 위에 시어 글로스 겹치기'},
+ s2:{en:'Matte → glossy',sc:'雾面 → 水光',zh:'霧面 → 水光',ja:'マット → ツヤ',ko:'매트 → 글로시'},
+ s3:{en:'Recolor the lips',sc:'唇色改色',zh:'唇色改色',ja:'リップの色を変える',ko:'립 컬러 변경'},
+ s4:{en:'Move the blush',sc:'移动腮红',zh:'移動腮紅',ja:'チークを動かす',ko:'블러셔 이동'},
+ s5:{en:'Pull the eyeliner out',sc:'把眼线拖出来',zh:'把眼線拖出來',ja:'アイライナーを外す',ko:'아이라이너 빼기'},
+ s6:{en:'Put it back, no re-rendering',sc:'放回去，无需重新渲染',zh:'放回去，不必重新渲染',ja:'元に戻す（再レンダリング不要）',ko:'다시 넣기, 재렌더링 없음'},
+ cap:{en:'Every edit is a closed-form operation on rendered IrisMix layers',sc:'每次编辑都是对 IrisMix 渲染后图层的封闭解操作',zh:'每次編輯都是對 IrisMix 渲染後圖層的封閉解操作',ja:'すべての編集は IrisMix のレンダリング済みレイヤーへの閉形式の操作です',ko:'모든 편집은 IrisMix 렌더링 레이어에 대한 닫힌 형식 연산입니다'}};
+const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const IDS=['blush','liner','lips','sheer'],HUES=[0,-25,30,150,200],SW=['#c9566f','#b8475f','#d97a62','#7f6fb8','#5b8fbf'];
+const photo=$('.pg-photo',root),tray=$('.pg-tray',root),tool=$('.pg-tool',root),cur=$('.pg-cursor',root),toast=$('.pg-toast',root);
+const D0=()=>({on:{blush:true,liner:true,lips:true,sheer:false},x:{},y:{},h:{},o:{},order:[...IDS],gloss:false,sel:'lips'});let S=D0();
+const IM={};IDS.concat(['gloss']).forEach(id=>{const im=document.createElement('img');im.src=A+id+'.webp';im.alt='';im.className='pg-ly';im.dataset.id=id;photo.append(im);IM[id]=im});
+$('.pg-cap',root).innerHTML=L5(T.cap);$('.pg-tray-h',root).innerHTML=`<b>${L5(T.tray)}</b><small>${L5(T.hint)}</small>`;
+const CARD={};IDS.forEach(id=>{const c=document.createElement('div');c.className='pg-card';c.dataset.id=id;c.innerHTML=`<img src="${A}${id}_th.webp" alt=""><span>${L5(T[id])}</span><i></i>`;tray.append(c);CARD[id]=c});
+function place(){const a=photo.getBoundingClientRect(),b=root.getBoundingClientRect();if(innerWidth>1100){tray.style.right=(b.right-a.left-tray.offsetWidth-10)+'px'}else tray.style.right=''}addEventListener('resize',place);
+function draw(){S.order.forEach((id,i)=>{const im=IM[id];im.style.zIndex=2+i;im.style.opacity=S.on[id]?(S.o[id]==null?1:S.o[id]):0;
+  im.style.transform=`translate(${(S.x[id]||0)*100}%,${(S.y[id]||0)*100}%)`;let f=`hue-rotate(${S.h[id]||0}deg)`;if(id==='lips'&&!S.gloss)f+=' saturate(.86) brightness(.97)';im.style.filter=f;im.classList.toggle('pop',false)});
+ IM.gloss.style.zIndex=2+S.order.indexOf('lips')+(S.on.sheer?2:1);IM.gloss.style.opacity=S.on.lips&&S.gloss?1:0;IM.gloss.style.transform=IM.lips.style.transform;
+ IDS.forEach(id=>{CARD[id].classList.toggle('on',!!S.on[id]);CARD[id].classList.toggle('sel',S.sel===id)});tools()}
+function tools(){const id=S.sel,o=S.o[id]==null?1:S.o[id];
+ tool.innerHTML=`<div class="pg-th"><img src="${A}${id}_th.webp" alt=""><b>${L5(T[id])}</b></div>
+ <div class="pg-row"><span>${L5(T.color)}</span>${HUES.map((h,i)=>`<button class="pg-sw${(S.h[id]||0)===h?' on':''}" data-h="${h}" style="background:${SW[i]}" aria-label="color"></button>`).join('')}</div>
+ <div class="pg-row"><span>${L5(T.op)}</span><input type="range" min="0" max="100" value="${Math.round(o*100)}" aria-label="Opacity"></div>
+ ${id==='lips'?`<div class="pg-row"><span>${L5(T.finish)}</span><div class="pg-seg"><button data-f="0" aria-pressed="${!S.gloss}">${L5(T.matte)}</button><button data-f="1" aria-pressed="${S.gloss}">${L5(T.glossy)}</button></div></div>`:''}
+ <div class="pg-row"><span>${L5(T.order)}</span><button class="pg-ob" data-d="1" aria-label="Move up">↑</button><button class="pg-ob" data-d="-1" aria-label="Move down">↓</button></div>`;
+ $$('.pg-sw',tool).forEach(b=>b.onclick=()=>{user();S.h[id]=+b.dataset.h;draw()});
+ $('input',tool).oninput=e=>{user();S.o[id]=e.target.value/100;draw()};
+ $$('.pg-seg button',tool).forEach(b=>b.onclick=()=>{user();S.gloss=b.dataset.f==='1';draw()});
+ $$('.pg-ob',tool).forEach(b=>b.onclick=()=>{user();mv(id,+b.dataset.d)})}
+function mv(id,d){const i=S.order.indexOf(id),j=i+d;if(j<0||j>=S.order.length)return;[S.order[i],S.order[j]]=[S.order[j],S.order[i]];draw()}
+/* geometry */
+const P=window.IRIS_PLAY.parts,rel=(el)=>{const a=el.getBoundingClientRect(),b=root.getBoundingClientRect();return{x:a.left-b.left,y:a.top-b.top,w:a.width,h:a.height}};
+const ptOn=(id)=>{const r=rel(photo);return{x:r.x+(P[id].cx+(S.x[id]||0))*r.w,y:r.y+(P[id].cy+(S.y[id]||0))*r.h}};
+const ptCard=(id)=>{const r=rel(CARD[id]);return{x:r.x+r.w*.32,y:r.y+r.h*.5}};
+const inPhoto=(x,y)=>{const r=rel(photo);return x>r.x&&x<r.x+r.w&&y>r.y&&y<r.y+r.h};
+function pick(x,y){const r=rel(photo);let best=null,bd=.07;S.order.slice().reverse().forEach(id=>{if(!S.on[id])return;const p=ptOn(id),d=Math.hypot((x-p.x)/r.w,(y-p.y)/r.h);if(d<bd){bd=d;best=id}});return best}
+/* ghost while dragging a card */
+const ghost=document.createElement('div');ghost.className='pg-ghost';root.append(ghost);
+function ghostAt(id,x,y,show){ghost.innerHTML=id?`<img src="${A}${id}_th.webp" alt="">`:'';ghost.style.transform=`translate(${x-30}px,${y-30}px)`;ghost.classList.toggle('on',!!show)}
+/* user input */
+let drag=null;
+root.addEventListener('pointerdown',e=>{const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;const card=e.target.closest('.pg-card');
+ if(card){user();const id=card.dataset.id;S.sel=id;draw();drag={kind:'card',id};ghostAt(id,x,y,true);root.setPointerCapture(e.pointerId);e.preventDefault();return}
+ if(inPhoto(x,y)&&!e.target.closest('.pg-tool')){const id=pick(x,y);if(id){user();S.sel=id;draw();const r=rel(photo);drag={kind:'layer',id,x0:x,y0:y,ox:S.x[id]||0,oy:S.y[id]||0,r};root.setPointerCapture(e.pointerId);e.preventDefault()}}});
+root.addEventListener('pointermove',e=>{if(!drag)return;const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;
+ if(drag.kind==='card')ghostAt(drag.id,x,y,true);else{S.x[drag.id]=drag.ox+(x-drag.x0)/drag.r.w;S.y[drag.id]=drag.oy+(y-drag.y0)/drag.r.h;draw();root.classList.toggle('pg-out',!inPhoto(x,y))}});
+root.addEventListener('pointerup',e=>{if(!drag)return;const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;
+ if(drag.kind==='card'){ghostAt(null,0,0,false);if(inPhoto(x,y)){S.on[drag.id]=true;flash(drag.id)}}
+ else if(!inPhoto(x,y)){S.on[drag.id]=false;S.x[drag.id]=0;S.y[drag.id]=0}
+ root.classList.remove('pg-out');drag=null;draw()});
+function flash(id){const im=IM[id];im.classList.remove('pop');void im.offsetWidth;im.classList.add('pop')}
+/* scripted cursor demo */
+let demo=true,touched=false,tid=[];const wait=ms=>new Promise(r=>tid.push(setTimeout(r,ms)));
+const say=o=>{toast.innerHTML=L5(o);toast.classList.add('on')};
+function cursorTo(p,ms){cur.style.transition=`transform ${ms}ms cubic-bezier(.45,0,.2,1)`;cur.style.transform=`translate(${p.x}px,${p.y}px)`;return wait(ms)}
+async function dragPath(from,to,ms,step){cur.classList.add('down');const n=Math.max(8,ms/30|0);for(let i=1;i<=n&&demo;i++){const t=i/n,e=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,p={x:from.x+(to.x-from.x)*e,y:from.y+(to.y-from.y)*e};cur.style.transition='none';cur.style.transform=`translate(${p.x}px,${p.y}px)`;step&&step(p,e);await wait(ms/n)}cur.classList.remove('down')}
+async function click(el){const r=rel(el);await cursorTo({x:r.x+r.w/2,y:r.y+r.h/2},650);cur.classList.add('down');await wait(140);bot=true;el.click();bot=false;cur.classList.remove('down');await wait(250)}
+async function run(){while(demo){S=D0();draw();toast.classList.remove('on');cur.classList.add('on');await cursorTo({x:rel(photo).x+rel(photo).w*.7,y:rel(photo).y+rel(photo).h*.75},10);await wait(700);if(!demo)return;
+ say(T.s1);let a=ptCard('sheer');await cursorTo(a,800);S.sel='sheer';draw();let b=ptOn('lips');await dragPath(a,b,1100,p=>ghostAt('sheer',p.x,p.y,true));ghostAt(null,0,0,false);S.on.sheer=true;draw();flash('sheer');await wait(900);if(!demo)return;
+ say(T.s2);S.sel='lips';draw();await wait(300);await click($('.pg-seg button[data-f="1"]',tool));demoGloss();await wait(900);if(!demo)return;
+ say(T.s3);await click($$('.pg-sw',tool)[1]);await wait(500);await click($$('.pg-sw',tool)[2]);await wait(800);if(!demo)return;
+ say(T.s4);a=ptOn('blush');await cursorTo(a,800);S.sel='blush';draw();const ox=S.x.blush||0,oy=S.y.blush||0,r=rel(photo);
+ await dragPath(a,{x:a.x+r.w*.02,y:a.y-r.h*.025},900,(p,e)=>{S.x.blush=ox+e*.02;S.y.blush=oy-e*.025;draw()});await wait(700);if(!demo)return;
+ say(T.s5);a=ptOn('liner');await cursorTo(a,800);S.sel='liner';draw();b=ptCard('liner');const r2=rel(photo);
+ await dragPath(a,b,1100,(p,e)=>{S.x.liner=(p.x-a.x)/r2.w;S.y.liner=(p.y-a.y)/r2.h;draw()});S.on.liner=false;S.x.liner=0;S.y.liner=0;draw();await wait(800);if(!demo)return;
+ say(T.s6);a=ptCard('liner');b={x:ptOn('liner').x,y:ptOn('liner').y};await dragPath(a,b,1100,p=>ghostAt('liner',p.x,p.y,true));ghostAt(null,0,0,false);S.on.liner=true;draw();flash('liner');await wait(1600)}}
+function demoGloss(){}
+let bot=false;function user(){if(bot||touched)return;touched=true;demo=false;tid.forEach(clearTimeout);cur.classList.remove('on','down');toast.classList.remove('on');ghostAt(null,0,0,false)}
+draw();place();
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){demo=false}else{const io=new IntersectionObserver(es=>{if(es[0].isIntersecting&&demo&&!run.started){run.started=true;run()}},{threshold:.3});io.observe(root)}
+})();
 })();
