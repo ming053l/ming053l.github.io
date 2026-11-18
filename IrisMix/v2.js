@@ -127,4 +127,27 @@ bt.forEach((b,i)=>b.onclick=()=>{go(i);setPlay(false);pg.style.width='0%'});wind
 if(matchMedia('(prefers-reduced-motion:reduce)').matches){setPlay(false)}
 new IntersectionObserver(es=>es.forEach(e=>{const was=vis;vis=e.isIntersecting;if(vis&&!was&&playing){go(k)}}),{threshold:.35}).observe(root);
 go(0);raf=requestAnimationFrame(tick)})();
+
+/* interactive hero (FlashReFocus style): before/after stage, pointer wipe, mode pills, caption card, auto tour */
+(()=>{const hs=$('#hstage');if(!hs)return;const M=window.IRIS_STAGE,inner=$('.hs-in',hs),A=$('#hsA'),B=$('#hsB'),line=$('#hsLine'),pills=$('#hsPills'),card=$('#hsCard'),pb=$('#hs-play');
+const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const SRC=k=>[`${V}stage/${k}_a.webp`,`${V}stage/${k}_b.webp`];
+M.modes.forEach((m,i)=>{const b=document.createElement('button');b.type='button';b.innerHTML=L5(m.pill);b.setAttribute('aria-pressed',i===0);b.onclick=()=>{hold=true;setPlay(false);show(i)};pills.append(b)});
+function fit(){const r=hs.getBoundingClientRect(),ar=16/9;let w=r.width,h=w/ar;if(h<r.height){h=r.height;w=h*ar}inner.style.width=w+'px';inner.style.height=h+'px'}
+addEventListener('resize',fit);fit();
+let k=0,pos=.5,auto=true,hold=false,playing=true,t0=performance.now(),inside=false;
+function setWipe(p){pos=Math.max(0,Math.min(1,p));const bx=M.box[M.modes[k].k],x=(bx.x0+bx.w*pos)*100;B.style.clipPath=`inset(0 0 0 ${x}%)`;line.style.left=x+'%';line.style.top=(bx.y0*100)+'%';line.style.height=(bx.h*100)+'%'}
+function show(i){k=(i+M.modes.length)%M.modes.length;const m=M.modes[k],[a,b]=SRC(m.k);A.src=a;B.src=b;
+ $$('button',pills).forEach((x,j)=>x.setAttribute('aria-pressed',j===k));
+ card.classList.remove('in');void card.offsetWidth;card.innerHTML=`<div class="k">${L5(m.kick)}</div><div class="t">${L5(m.title)}</div><div class="d">${L5(m.desc)}</div><div class="lr">${L5(m.lr)}</div>`;card.classList.add('in');
+ t0=performance.now();setWipe(.82);const n=M.modes[(k+1)%M.modes.length];SRC(n.k).forEach(u=>{const im=new Image();im.src=u})}
+const DUR=5600;
+function tick(now){if(playing&&!inside){const ph=Math.min((now-t0)/DUR,1);setWipe(.5+.34*Math.cos(Math.PI*1.5*Math.min(ph/.8,1)));if(ph>=1)show(k+1)}requestAnimationFrame(tick)}
+hs.addEventListener('pointermove',e=>{const r=inner.getBoundingClientRect(),bx=M.box[M.modes[k].k];const fx=(e.clientX-r.left)/r.width;if(fx<bx.x0-.04){inside=false;return}inside=true;setWipe((fx-bx.x0)/bx.w)});
+hs.addEventListener('pointerleave',()=>{inside=false;t0=performance.now()-DUR*.25});
+hs.addEventListener('touchmove',e=>{const t=e.touches[0];const r=inner.getBoundingClientRect(),bx=M.box[M.modes[k].k];inside=true;setWipe(((t.clientX-r.left)/r.width-bx.x0)/bx.w)},{passive:true});
+function setPlay(p){playing=p;pb.querySelector('svg path').setAttribute('d',p?'M2 1h3v10H2zM7 1h3v10H7z':'M3 1l8 5-8 5z');pb.setAttribute('aria-label',p?'Pause the tour':'Play the tour');if(p)t0=performance.now()}
+pb.onclick=()=>setPlay(!playing);
+if(matchMedia('(prefers-reduced-motion:reduce)').matches)setPlay(false);
+show(0);requestAnimationFrame(tick)})();
 })();
