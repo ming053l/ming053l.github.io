@@ -167,7 +167,12 @@ const T={
  s6:{en:'Put it back, no re-rendering',sc:'放回去，无需重新渲染',zh:'放回去，不必重新渲染',ja:'元に戻す（再レンダリング不要）',ko:'다시 넣기, 재렌더링 없음'},
  s7:{en:'Next model',sc:'下一位模特',zh:'下一位模特兒',ja:'次のモデル',ko:'다음 모델'}};
 const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
-const HUES=[0,-35,40,140,210],SW=['#c9566f','#b8475f','#d9a14f','#5fae7a','#5b8fbf'];
+const HUES=[0,-35,40,140,210];
+/* CSS hue-rotate() matrix (Filter Effects spec), applied to the layer's mean color so each swatch shows the real result */
+const hueRGB=(c,deg)=>{const r=deg*Math.PI/180,cs=Math.cos(r),sn=Math.sin(r),m=[.213+cs*.787-sn*.213,.715-cs*.715-sn*.715,.072-cs*.072+sn*.928,.213-cs*.213+sn*.143,.715+cs*.285+sn*.140,.072-cs*.072-sn*.283,.213-cs*.213-sn*.787,.715-cs*.715+sn*.715,.072+cs*.928+sn*.072];
+ const [R,G,B]=c,f=v=>Math.max(0,Math.min(255,Math.round(v)));return [m[0]*R+m[1]*G+m[2]*B,m[3]*R+m[4]*G+m[5]*B,m[6]*R+m[7]*G+m[8]*B].map(f)};
+/* what is seen: alpha-weighted mean of a·rot(F) plus the uncovered skin (1-a)·T in the layer region */
+const swatch=(p,h)=>{const c=hueRGB(p.rgb,h),b=p.base||[0,0,0],f=v=>Math.max(0,Math.min(255,Math.round(v)));return `rgb(${f(c[0]+b[0])},${f(c[1]+b[1])},${f(c[2]+b[2])})`};
 const photo=$('.pg-photo',root),tray=$('.pg-tray',root),tool=$('.pg-tool',root),cur=$('.pg-cursor',root),toast=$('.pg-toast',root),av=$('.pg-models',root);
 let M=META.order[0],IDS=[],S,IM={},CARD={};
 const D0=()=>({on:Object.fromEntries(IDS.map(i=>[i,true])),x:{},y:{},h:{},o:{},order:[...IDS],sel:IDS.includes('lips')?'lips':IDS[0]});
@@ -186,7 +191,7 @@ function draw(){S.order.forEach((id,i)=>{const im=IM[id];im.style.zIndex=2+i;im.
  IDS.forEach(id=>{CARD[id].classList.toggle('on',!!S.on[id]);CARD[id].classList.toggle('sel',S.sel===id)});tools()}
 function tools(){const id=S.sel,o=S.o[id]==null?1:S.o[id];
  tool.innerHTML=`<div class="pg-th"><img src="${A}${M}/${id}_th.webp" alt=""><b>${L5(T[id])}</b><button class="pg-reset" type="button">↺ ${L5(T.reset)}</button></div>
- <div class="pg-row"><span>${L5(T.color)}</span>${HUES.map((h,i)=>`<button class="pg-sw${(S.h[id]||0)===h?' on':''}" data-h="${h}" style="background:${SW[i]}" aria-label="color"></button>`).join('')}</div>
+ <div class="pg-row"><span>${L5(T.color)}</span>${HUES.map((h,i)=>`<button class="pg-sw${(S.h[id]||0)===h?' on':''}" data-h="${h}" style="background:${swatch(P(id),h)}" aria-label="color"></button>`).join('')}</div>
  <div class="pg-row"><span>${L5(T.op)}</span><input type="range" min="0" max="100" value="${Math.round(o*100)}" aria-label="Opacity"></div>
  <div class="pg-row"><span>${L5(T.order)}</span><button class="pg-ob" data-d="1" aria-label="Move up">↑</button><button class="pg-ob" data-d="-1" aria-label="Move down">↓</button></div>`;
  $$('.pg-sw',tool).forEach(b=>b.onclick=()=>{user();S.h[id]=+b.dataset.h;draw()});
