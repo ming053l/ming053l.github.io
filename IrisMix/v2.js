@@ -367,4 +367,29 @@ function user(){if(touched)return;touched=true;clearInterval(timer);badge(false)
 let step=0;function demo(){clearInterval(timer);t0=performance.now();timer=setInterval(async()=>{if(touched){clearInterval(timer);return}const t=(performance.now()-t0)/1000;p=.5+.22*Math.sin(t*.9);req();
  if(t>7*(step+1)){step++;if(step%3===1){mode=mode==='lr'?'tb':'lr';p=.5;ui()}else if(step%3===2){ib=(ib+1)%ZM[face].length;if(ib===ia)ib=(ib+1)%ZM[face].length;ui();await prep()}else{face=Object.keys(ZM)[(Object.keys(ZM).indexOf(face)+1)%Object.keys(ZM).length];ia=0;ib=1;ui();await prep()}}},60)}
 ui();prep().then(()=>{render();badge(true);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;demo()}},{threshold:.3}).observe(root)}})})();
+
+/* skin-tone slider: one decomposed look rendered on five faces ordered by measured skin tone (ITA) */
+(()=>{const root=$('#tone');if(!root)return;const TD=V+'tone/',TM=window.IRIS_TONE,F=TM.faces,n=F.length;
+const T={made:{en:'Made up',sc:'上妆',zh:'上妝',ja:'メイク後',ko:'메이크업 후'},bare:{en:'Bare face',sc:'素颜',zh:'素顏',ja:'すっぴん',ko:'민낯'},
+ track:{en:'Skin tone, measured on the bare cheeks (ITA°)',sc:'肤色（在素颜脸颊上测得的 ITA°）',zh:'膚色（在素顏臉頰上測得的 ITA°）',ja:'肌の色（すっぴんの頬で測った ITA°）',ko:'피부 톤 (민낯 볼에서 측정한 ITA°)'},
+ light:{en:'lighter',sc:'较浅',zh:'較淺',ja:'明るい',ko:'밝은'},deep:{en:'deeper',sc:'较深',zh:'較深',ja:'深い',ko:'깊은'},ref:{en:'Reference, decomposed once',sc:'参考图，只分解一次',zh:'參考圖，只分解一次',ja:'参照画像（分解は1回）',ko:'참조 이미지(한 번만 분해)'},
+ auto:{en:'Auto demo · click to edit',sc:'自动演示中 · 点击即可编辑',zh:'自動示範中 · 點一下即可編輯',ja:'自動デモ中 · クリックで編集',ko:'자동 데모 중 · 클릭하면 편집'},
+ edit:{en:'Edit mode · paused',sc:'编辑模式 · 已暂停',zh:'編輯模式 · 已暫停',ja:'編集モード · 一時停止中',ko:'편집 모드 · 일시정지됨'},play:{en:'Play',sc:'播放',zh:'播放',ja:'再生',ko:'재생'}};
+const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const st=$('.tn-stage',root),rg=$('.tn-range',root),tr=$('.tn-track',root);let v=0,made=true,touched=false,raf=0,t0=0;
+const imgs=F.map(f=>{const a=document.createElement('img');a.src=`${TD}src${f.k}.webp`;a.className='b';a.alt='';const b=document.createElement('img');b.src=`${TD}out${f.k}.webp`;b.className='m';b.alt='';const d=document.createElement('div');d.className='tn-f';d.append(a,b);st.append(d);return d});
+const rgb=c=>`rgb(${c[0]},${c[1]},${c[2]})`;
+tr.style.background=`linear-gradient(90deg,${F.map((f,i)=>rgb(f.skin)+' '+(i/(n-1)*100)+'%').join(',')})`;
+$('.tn-ticks',root).innerHTML=F.map((f,i)=>`<span style="left:${i/(n-1)*100}%"><i style="background:${rgb(f.skin)}"></i>${f.ita}°</span>`).join('');
+$('.tn-lab',root).innerHTML=`<span>${L5(T.light)}</span><b>${L5(T.track)}</b><span>${L5(T.deep)}</span>`;
+$('.tn-ref',root).innerHTML=`<img src="${TD}ref.webp" alt=""><small>${L5(T.ref)}</small>`;
+const seg=$('.tn-seg',root);function segUI(){seg.innerHTML=`<button data-m="0" aria-pressed="${!made}">${L5(T.bare)}</button><button data-m="1" aria-pressed="${made}">${L5(T.made)}</button>`;$$('button',seg).forEach(b=>b.onclick=()=>{user();made=b.dataset.m==='1';show()})}
+function show(){const i0=Math.floor(Math.min(v,n-1-1e-6)),fr=v-i0;imgs.forEach((d,i)=>{d.style.opacity=i===i0?1:(i===i0+1?fr:0);d.style.zIndex=i===i0+1?2:1;d.classList.toggle('made',made)});rg.value=v*100/(n-1);segUI()}
+rg.oninput=()=>{user();v=rg.value/100*(n-1);show()};
+const MB=$('.tn-badge',root);function badge(a){MB.innerHTML=a?`<span class="dot"></span>${L5(T.auto)}`:`<span>✎ ${L5(T.edit)}</span><button type="button" class="pg-play">▶ ${L5(T.play)}</button>`;MB.classList.toggle('auto',a);const b=$('.pg-play',MB);b&&(b.onclick=()=>{touched=false;badge(true);demo()})}
+function user(){if(touched)return;touched=true;clearInterval(raf);badge(false)}
+function demo(){clearInterval(raf);t0=performance.now();raf=setInterval(()=>{if(touched){clearInterval(raf);return}const t=(performance.now()-t0)/1000,per=2.4,seq=2*(n-1),c=(t/per)%seq,k=Math.floor(c),f=c-k,e=f<.65?0:(f-.65)/.35,s=e*e*(3-2*e);const a0=k<n-1?k:seq-k,a1=k<n-1?k+1:seq-k-1;v=a0+(a1-a0)*s;made=!((t%(per*2))>per*2-.9);show()},50)}
+st.addEventListener('pointerdown',()=>{user();made=!made;show()});
+show();badge(true);
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;demo()}},{threshold:.3}).observe(root)}})();
 })();

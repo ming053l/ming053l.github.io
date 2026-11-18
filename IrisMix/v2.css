@@ -316,3 +316,22 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .zn-mode.seg{display:inline-flex;margin-left:90px}.zn-mode button{width:auto;height:auto;border-radius:0;padding:7px 13px;font-size:13px}
 .zn-hint{font-size:12.5px;color:var(--mute);margin:4px 0 0}
 @media (max-width:900px){.zn-body{grid-template-columns:1fr}.zn-mode.seg{margin-left:0}}
+
+/* ---- skin-tone slider ---- */
+.tone{border:1px solid var(--line);border-radius:var(--r);padding:18px;margin:26px 0 8px;background:var(--card)}
+.tn-body{display:grid;grid-template-columns:150px minmax(0,460px) ;gap:22px;align-items:start;justify-content:center}
+.tn-ref img{width:100%;border-radius:12px;border:2px solid #8C8C8C}.tn-ref small{display:block;font-size:12px;color:var(--ink2);margin-top:6px}
+.tn-stage{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#eee;cursor:pointer}
+.tn-f{position:absolute;inset:0;transition:opacity .12s}.tn-f img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.tn-f img.m{opacity:0}.tn-f.made img.m{opacity:1}
+.tn-stage .pg-mode{position:absolute;left:10px;top:auto;bottom:10px;right:auto}
+.tn-ctl{margin-top:12px}.tn-seg{display:inline-flex;margin-bottom:12px}.tn-seg button{padding:6px 13px;font-size:13px}
+.tn-slider{position:relative;height:46px}
+.tn-track{position:absolute;left:0;right:0;top:9px;height:12px;border-radius:99px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.tn-range{position:absolute;left:-8px;right:-8px;top:2px;width:calc(100% + 16px);-webkit-appearance:none;appearance:none;background:none;height:26px;margin:0}
+.tn-range::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.tn-range::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid var(--ink)}
+.tn-ticks span{position:absolute;top:28px;transform:translateX(-50%);font:600 11px var(--mono);color:var(--mute);white-space:nowrap}
+.tn-ticks i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:3px;vertical-align:-1px}
+.tn-lab{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--mute);margin-top:4px}.tn-lab b{font-weight:600;color:var(--ink2);text-align:center}
+@media (max-width:760px){.tn-body{grid-template-columns:1fr}.tn-ref{display:flex;gap:10px;align-items:center}.tn-ref img{width:90px}}
