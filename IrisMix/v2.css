@@ -296,3 +296,8 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 @media (max-width:1100px){.pg-bar{max-width:none;left:8px;right:8px;justify-content:flex-start}.pg-toast{left:8px!important;transform:none!important}}
 
 .pg-bar{top:54px}
+
+.pg-split em{top:auto;bottom:16px}
+
+.pg-split em{top:72px;bottom:auto}
+.pg-split em{background:#fff;box-shadow:0 2px 8px rgba(30,26,30,.18);color:var(--ink)}
