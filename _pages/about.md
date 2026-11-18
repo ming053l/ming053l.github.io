@@ -77,9 +77,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Preprint</div>
-<h4>IrisMix: Compositional Makeup Transfer with Layered Diffusion Transformers</h4>
-<p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://basiclab.lab.nycu.edu.tw/" rel="noopener" target="_blank">Hong-Han Shuai</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-summary">Lets a user compose a makeup look from parts of different references, such as the eyes of one photo, the lips of another and the face paint of a third, and apply it to their own photo while keeping their identity and background. Each reference is split once into a bare face and an explicit makeup layer, so strength, color, lip finish, blending between looks and the placement of a design can all be adjusted directly on the layer before it is rendered onto the face.</p>
+<h4>IrisMix: Compositional Makeup Transfer and Editing with Layered Diffusion</h4>
+<p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://basiclab.lab.nycu.edu.tw/" rel="noopener" target="_blank">Hong-Han Shuai</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+<p class="paper-summary">IrisMix keeps makeup as explicit layers: a look is composed from parts of several references, rendered onto the user's photo in one step while keeping identity and background, and returned as a layer, so color, strength and placement stay editable after rendering. Glasses and bangs are layers too.</p>
 <div class="links">
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Paper (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Code (coming soon)</a>
