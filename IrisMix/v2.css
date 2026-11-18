@@ -245,3 +245,11 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .pg-cap{position:absolute;left:auto;right:290px;bottom:22px;z-index:3;font-size:11.5px;color:var(--mute);max-width:300px;text-align:right}
 @media (max-width:1100px){.pg-tray{right:auto;left:50%;top:auto;bottom:16px;transform:none;flex-direction:row;width:auto;flex-wrap:wrap}.pg-tray-h{display:none}.pg-cap{display:none}}
 @media (max-width:860px){.pg{position:relative;height:120vw}.pg-photo{height:80%;right:50%;transform:translate(50%,-50%)}.pg-tray{left:8px;bottom:8px}.pg-tool{width:auto;left:8px;right:8px;bottom:auto;top:8px}}
+
+.pg-models{position:absolute;top:14%;right:30%;z-index:4;width:138px;background:rgba(255,255,255,.85);border-radius:10px;padding:5px 6px}
+.pg-models b{display:block;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.pg-models div{display:flex;gap:4px;flex-wrap:wrap}.pg-models button{width:30px;height:30px;border-radius:50%;overflow:hidden;border:2px solid transparent;padding:0}
+.pg-models button img{width:100%;height:100%;object-fit:cover}.pg-models button[aria-pressed=true]{border-color:var(--rose)}
+.pg-th .pg-reset{margin-left:auto;font-size:11.5px;border:1px solid var(--line2);border-radius:99px;padding:2px 9px;color:var(--ink2)}
+.pg-photo .pg-src{transition:opacity .4s}
+@media (max-width:1100px){.pg-models{right:auto;left:8px;top:8px}}
