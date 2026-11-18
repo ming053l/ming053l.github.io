@@ -58,7 +58,7 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .hero2{position:relative;min-height:min(92vh,860px);display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;z-index:0}
-.hero-fade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.96) 30%,rgba(255,255,255,.72) 46%,rgba(255,255,255,0) 64%),linear-gradient(0deg,#fff 0%,rgba(255,255,255,0) 18%)}
+.hero-fade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.96) 30%,rgba(255,255,255,.72) 46%,rgba(255,255,255,0) 64%)}
 .hero-inner{position:relative;z-index:2;width:100%;padding-top:64px;padding-bottom:88px}
 .hero-text{max-width:680px}
 .hero-title{margin:0 0 18px;line-height:1}
@@ -213,7 +213,7 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 /* ---- 2026-11-18: hero layer playground ---- */
 .pg{position:absolute;inset:0;z-index:0;user-select:none;touch-action:none}
 .pg-photo{position:absolute;right:4%;top:50%;transform:translateY(-50%);height:88%;aspect-ratio:768/1024;border-radius:18px;overflow:hidden;
-  -webkit-mask-image:radial-gradient(ellipse 72% 80% at 55% 46%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 72% 80% at 55% 46%,#000 62%,transparent 100%)}
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
 .pg-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
 .pg-ly{transition:opacity .45s,filter .5s,transform .12s linear}
 .pg-ly.pop{animation:pgpop .6s var(--ease)}
@@ -225,7 +225,7 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .pg-card img{width:40px;height:40px;border-radius:8px;object-fit:cover;pointer-events:none}
 .pg-card i{margin-left:auto;width:8px;height:8px;border-radius:50%;background:var(--line2)}.pg-card.on i{background:#2E9E62}
 .pg-card:not(.on){opacity:.72}.pg-card.sel{border-color:var(--rose);box-shadow:0 0 0 2px rgba(196,86,122,.15)}
-.pg-tool{position:absolute;right:22px;bottom:18px;z-index:4;width:250px;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:10px 12px;box-shadow:0 10px 30px rgba(30,26,30,.10);font-size:12px}
+.pg-tool{position:absolute;right:22px;bottom:18px;z-index:4;width:250px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px;box-shadow:0 10px 30px rgba(30,26,30,.10);font-size:12px}
 .pg-th{display:flex;align-items:center;gap:8px;margin-bottom:6px}.pg-th img{width:30px;height:30px;border-radius:7px}.pg-th b{font-size:14px}
 .pg-row{display:flex;align-items:center;gap:6px;margin-top:6px}.pg-row>span{width:62px;color:var(--mute);font-size:11.5px}
 .pg-sw{width:20px;height:20px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line2)}.pg-sw.on{box-shadow:0 0 0 2px var(--rose)}
@@ -271,3 +271,8 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .pg-mode .dot{width:8px;height:8px;border-radius:50%;background:#2E9E62;animation:pgdot 1.4s ease-in-out infinite}
 @keyframes pgdot{50%{opacity:.25}}
 .pg-play{background:var(--ink);color:#fff;border-radius:99px;padding:3px 11px;font-size:12px;font-weight:600}
+
+.pg-tool .pg-row>span{color:var(--ink2)}
+
+.pg-tool{width:350px}.pg-th b{white-space:nowrap}.pg-th button{white-space:nowrap}
+.pg-th{flex-wrap:wrap;row-gap:6px}
