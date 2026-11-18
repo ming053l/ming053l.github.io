@@ -69,7 +69,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="pv" data-pv>
 <video id="irismix-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="IrisMix on one face: eyes, lips and blush are picked from different reference looks and put on her photo part by part; her look splits into a bare face and one layer per part; lip shades and finishes change on the lip layer, and a face-paint design is dragged and scaled before rendering">
 <source src="images/web/irismix-home.mp4?v=2" type="video/mp4"/>
-<a href="images/web/irismix-teaser.mp4?v=3">View the IrisMix video</a>
+<a href="images/web/irismix-teaser.mp4?v=4">View the IrisMix video</a>
 </video>
 <picture><source srcset="images/web/irismix-home.avif?v=2" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=2" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
@@ -84,7 +84,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Paper (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Code (coming soon)</a>
 <a href="{{ "/IrisMix/" | relative_url }}">Project Page</a>
-<a href="images/web/irismix-teaser.mp4?v=3" rel="noopener" target="_blank">Video</a>
+<a href="images/web/irismix-teaser.mp4?v=4" rel="noopener" target="_blank">Video</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Demo (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Dataset (coming soon)</a>
 <a href="{{ "/IrisMix-demo/" | relative_url }}" target="_self">線上體驗 ↗</a>
