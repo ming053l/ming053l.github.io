@@ -96,9 +96,9 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video width="1280" height="720" muted loop playsinline preload="none" aria-label="Four Inter4K clips (city aerials, a portrait and a flower). Each clip plays its main shot at full length, split by a sweeping slanted divider, then freezes and shows the whole frame as the bicubic-upsampled input, then as the ReLoopVSR ×4 result, before the next clip">
-<source src="images/web/reloopvsr-home.mp4?v=11" type="video/mp4"/>
+<source src="images/web/reloopvsr-home.mp4?v=12" type="video/mp4"/>
 </video>
-<picture><source srcset="images/web/reloopvsr-home.avif?v=11" type="image/avif"/><img class="pv-poster" src="images/web/reloopvsr-home.webp?v=11" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/reloopvsr-home.avif?v=12" type="image/avif"/><img class="pv-poster" src="images/web/reloopvsr-home.webp?v=12" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
