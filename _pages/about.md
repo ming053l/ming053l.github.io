@@ -181,7 +181,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-text">
 <div class="paper-venue">Preprint</div>
 <h4>FlashReFocus: Interactive Image Refocusing in Seconds</h4>
-<p class="paper-authors"><a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>*, <strong>Chia-Ming Lee*</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+<p class="paper-authors"><a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>*, <strong>Chia-Ming Lee*</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
 <p class="paper-note">* Equal contribution.</p>
 
 <p class="paper-summary">Enables interactive refocusing of a single photograph, allowing users to explore focal points, aperture settings, and depth-of-field effects with responsive visual feedback. After a one-time restoration step, a lightweight renderer updates each focal edit in about half a second, making it practical to compare and refine the desired look.</p>
