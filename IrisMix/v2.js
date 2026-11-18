@@ -392,4 +392,31 @@ function demo(){clearInterval(raf);t0=performance.now();raf=setInterval(()=>{if(
 st.addEventListener('pointerdown',()=>{user();made=!made;show()});
 show();badge(true);
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;demo()}},{threshold:.3}).observe(root)}})();
+
+/* lip mood board: four rendered lip layers blended linearly in closed form (weights normalized) */
+(()=>{const root=$('#mood');if(!root)return;const MD=V+'mood/',N=560;
+const T={names:[{en:'Red',sc:'正红',zh:'正紅',ja:'レッド',ko:'레드'},{en:'Wine',sc:'酒红',zh:'酒紅',ja:'ワイン',ko:'와인'},{en:'Soft rose',sc:'柔和豆沙',zh:'柔和豆沙',ja:'ソフトローズ',ko:'소프트 로즈'},{en:'Violet',sc:'紫色',zh:'紫色',ja:'バイオレット',ko:'바이올렛'}],
+ mix:{en:'Mixed color',sc:'混合后的颜色',zh:'混合後的顏色',ja:'混ぜた色',ko:'혼합된 색'},bare:{en:'Bare lips',sc:'素颜唇',zh:'素顏唇',ja:'素の唇',ko:'민낯 입술'},
+ auto:{en:'Auto demo · click to edit',sc:'自动演示中 · 点击即可编辑',zh:'自動示範中 · 點一下即可編輯',ja:'自動デモ中 · クリックで編集',ko:'자동 데모 중 · 클릭하면 편집'},
+ edit:{en:'Edit mode · paused',sc:'编辑模式 · 已暂停',zh:'編輯模式 · 已暫停',ja:'編集モード · 一時停止中',ko:'편집 모드 · 일시정지됨'},play:{en:'Play',sc:'播放',zh:'播放',ja:'再生',ko:'재생'}};
+const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const cv=$('canvas',root),cx=cv.getContext('2d');cv.width=cv.height=N;let w=[1,0,1,0],src=null,lips=[],touched=false,tm=null,t0=0;
+const load=u=>new Promise(r=>{const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=c.height=N;const x=c.getContext('2d');x.drawImage(i,0,0,N,N);r(x.getImageData(0,0,N,N).data)};i.src=u});
+const sl=$('.md-sliders',root);
+sl.innerHTML=T.names.map((nm,k)=>`<label class="md-row"><img src="${MD}ref${k}.webp" alt=""><span>${L5(nm)}</span><input type="range" min="0" max="100" value="${w[k]*100}" data-k="${k}" aria-label="weight"><b>0%</b></label>`).join('');
+const ins=$$('input',sl),pct=$$('b',sl),sw=$('.md-sw',root);
+function render(){if(!src)return;const s=w.reduce((a,b)=>a+b,0),out=cx.createImageData(N,N),o=out.data;let r=0,g=0,b=0,n=0;
+ for(let q=0;q<o.length;q+=4){let aa=0,K0=0,K1=0,K2=0;if(s>0)for(let k=0;k<4;k++){if(!w[k])continue;const L=lips[k],a=L[q+3]/255*w[k]/s;aa+=a;K0+=a*L[q];K1+=a*L[q+1];K2+=a*L[q+2]}
+  o[q]=K0+(1-aa)*src[q];o[q+1]=K1+(1-aa)*src[q+1];o[q+2]=K2+(1-aa)*src[q+2];o[q+3]=255;if(aa>.35){r+=o[q];g+=o[q+1];b+=o[q+2];n++}}
+ cx.putImageData(out,0,0);ins.forEach((e,k)=>{e.value=w[k]*100;pct[k].textContent=s?Math.round(w[k]/s*100)+'%':'0%'});
+ sw.innerHTML=n?`<i style="background:rgb(${r/n|0},${g/n|0},${b/n|0})"></i>${L5(T.mix)}`:`<i></i>${L5(T.bare)}`}
+let raf=0;const req=()=>{if(raf)return;raf=setTimeout(()=>{raf=0;render()},16)};
+ins.forEach(e=>e.oninput=()=>{user();w[+e.dataset.k]=e.value/100;req()});
+const MB=$('.md-badge',root);function badge(a){MB.innerHTML=a?`<span class="dot"></span>${L5(T.auto)}`:`<span>✎ ${L5(T.edit)}</span><button type="button" class="pg-play">▶ ${L5(T.play)}</button>`;MB.classList.toggle('auto',a);const b=$('.pg-play',MB);b&&(b.onclick=()=>{touched=false;badge(true);demo()})}
+function user(){if(touched)return;touched=true;clearInterval(tm);badge(false)}
+const P=[[1,0,0,0],[1,0,1,0],[0,1,1,0],[0,1,0,1],[0,0,1,1],[1,1,1,1],[0,0,1,0]];
+function demo(){clearInterval(tm);t0=performance.now();tm=setInterval(()=>{if(touched){clearInterval(tm);return}const t=(performance.now()-t0)/1000,per=2.6,k=Math.floor(t/per)%P.length,f=(t/per)%1,e=f<.6?0:(f-.6)/.4,s=e*e*(3-2*e),a=P[k],b=P[(k+1)%P.length];w=a.map((x,i)=>x+(b[i]-x)*s);req()},60)}
+cv.addEventListener('pointerdown',user);
+Promise.all([load(MD+'src.webp'),...[0,1,2,3].map(k=>load(`${MD}lip${k}.webp`))]).then(([s,...l])=>{src=s;lips=l;render();badge(true);
+ if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;demo()}},{threshold:.3}).observe(root)}})})();
 })();

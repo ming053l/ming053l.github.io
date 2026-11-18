@@ -335,3 +335,13 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .tn-ticks i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:3px;vertical-align:-1px}
 .tn-lab{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--mute);margin-top:4px}.tn-lab b{font-weight:600;color:var(--ink2);text-align:center}
 @media (max-width:760px){.tn-body{grid-template-columns:1fr}.tn-ref{display:flex;gap:10px;align-items:center}.tn-ref img{width:90px}}
+
+/* ---- lip mood board ---- */
+.mood{border:1px solid var(--line);border-radius:var(--r);padding:18px;margin:0 0 34px;background:var(--card)}
+.md-body{display:grid;grid-template-columns:minmax(0,440px) 1fr;gap:22px;align-items:center}
+.md-stage{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#eee}.md-stage canvas{width:100%;height:100%;display:block}
+.md-stage .pg-mode{position:absolute;left:10px;top:auto;bottom:10px;right:auto}
+.md-row{display:grid;grid-template-columns:52px 96px 1fr 44px;align-items:center;gap:10px;margin-bottom:12px;font-size:13px;font-weight:600}
+.md-row img{width:52px;height:52px;border-radius:10px;object-fit:cover}.md-row input{accent-color:var(--rose)}.md-row b{font:600 12px var(--mono);color:var(--ink2);text-align:right}
+.md-sw{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink2);margin-top:6px}.md-sw i{width:44px;height:26px;border-radius:8px;background:#ddd;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+@media (max-width:900px){.md-body{grid-template-columns:1fr}}
