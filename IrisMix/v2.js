@@ -317,4 +317,54 @@ load(M);place();mode(true);
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;start()}},{threshold:.3}).observe(root)}
 })();
 
+
+/* zone mixing: two rendered looks on one face, split by a minimum-cost coverage seam (dynamic programming, as in the paper) */
+(()=>{const root=$('#zone');if(!root)return;const Z=V+'zone/',ZM=window.IRIS_ZONE;
+const T={a:{en:'Look A',sc:'妆容 A',zh:'妝容 A',ja:'メイク A',ko:'메이크업 A'},b:{en:'Look B',sc:'妆容 B',zh:'妝容 B',ja:'メイク B',ko:'메이크업 B'},
+ lr:{en:'Left / right',sc:'左右分区',zh:'左右分區',ja:'左右で分ける',ko:'좌우 분할'},tb:{en:'Upper / lower',sc:'上下分区',zh:'上下分區',ja:'上下で分ける',ko:'상하 분할'},
+ face:{en:'Model',sc:'模特',zh:'模特兒',ja:'モデル',ko:'모델'},
+ hint:{en:'Drag the seam. It follows the path of least makeup coverage, so it does not cut through a design.',sc:'拖动接缝。接缝会沿着妆容覆盖最少的路径走，不会从图案中间切断。',zh:'拖動接縫。接縫會沿著妝容覆蓋最少的路徑走，不會從圖案中間切斷。',ja:'境界線をドラッグしてください。境界線はメイクの被覆が最も少ない経路をたどるため、デザインの途中で切れません。',ko:'경계선을 드래그하세요. 경계선은 메이크업 커버리지가 가장 적은 경로를 따라가므로 디자인 중간을 자르지 않습니다.'},
+ auto:{en:'Auto demo · click to edit',sc:'自动演示中 · 点击即可编辑',zh:'自動示範中 · 點一下即可編輯',ja:'自動デモ中 · クリックで編集',ko:'자동 데모 중 · 클릭하면 편집'},
+ edit:{en:'Edit mode · paused',sc:'编辑模式 · 已暂停',zh:'編輯模式 · 已暫停',ja:'編集モード · 一時停止中',ko:'편집 모드 · 일시정지됨'},play:{en:'Play',sc:'播放',zh:'播放',ja:'再生',ko:'재생'}};
+const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const N=640,G=160,cv=$('canvas.zn-cv',root),ov=$('canvas.zn-ov',root),cx=cv.getContext('2d'),ox=ov.getContext('2d');cv.width=cv.height=ov.width=ov.height=N;
+let face=Object.keys(ZM)[0],ia=0,ib=1,mode='lr',p=.5,seam=null,D={},busy=false,touched=false,timer=null,t0=0;
+const load=u=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.src=u});
+async function data(u){if(D[u])return D[u];const im=await load(u),c=document.createElement('canvas');c.width=c.height=N;const x=c.getContext('2d');x.drawImage(im,0,0,N,N);return D[u]=x.getImageData(0,0,N,N).data}
+function cov(a){const c=new Float32Array(G*G),s=N/G;for(let y=0;y<G;y++)for(let x=0;x<G;x++){let m=0;for(let j=0;j<s;j++)for(let i=0;i<s;i++){const v=a[((y*s+j)*N+x*s+i)*4+3];if(v>m)m=v}c[y*G+x]=m/255}
+ const b=new Float32Array(G*G);for(let y=0;y<G;y++)for(let x=0;x<G;x++){let t=0,n=0;for(let j=-2;j<=2;j++)for(let i=-2;i<=2;i++){const yy=y+j,xx=x+i;if(yy>=0&&yy<G&&xx>=0&&xx<G){t+=c[yy*G+xx];n++}}b[y*G+x]=t/n}return b}
+let CA=null,CB=null;
+function dp(){const band=22,c0=Math.round(p*(G-1)),C=(i,j)=>mode==='lr'?(CA[i*G+j]+CB[i*G+j]):(CA[j*G+i]+CB[j*G+i]);
+ const lo=Math.max(0,c0-band),hi=Math.min(G-1,c0+band),W=hi-lo+1,E=new Float32Array(G*W),B=new Int8Array(G*W);
+ for(let i=0;i<G;i++)for(let k=0;k<W;k++){const j=lo+k,base=C(i,j)+.004*Math.abs(j-c0);if(i===0){E[k]=base;continue}let best=1e9,bk=0;for(let d=-1;d<=1;d++){const kk=k+d;if(kk<0||kk>=W)continue;const v=E[(i-1)*W+kk];if(v<best){best=v;bk=d}}E[i*W+k]=base+best;B[i*W+k]=bk}
+ let k=0,m=1e9;for(let kk=0;kk<W;kk++)if(E[(G-1)*W+kk]<m){m=E[(G-1)*W+kk];k=kk}const s=new Float32Array(G);for(let i=G-1;i>=0;i--){s[i]=lo+k;k+=B[i*W+k]}return s}
+let BA,BB,BT;
+async function prep(){const r=ZM[face];[BT,BA,BB]=await Promise.all([data(`${Z}${face}_bare.webp`),data(`${Z}${face}_${r[ia]}.webp`),data(`${Z}${face}_${r[ib]}.webp`)]);CA=cov(BA);CB=cov(BB)}
+function render(){if(!BT)return;seam=dp();const out=cx.createImageData(N,N),o=out.data,s=N/G;
+ for(let y=0;y<N;y++){for(let x=0;x<N;x++){const q=(y*N+x)*4;let u;if(mode==='lr'){const sx=(seam[Math.min(G-1,y/s|0)]+.5)*s;u=Math.max(0,Math.min(1,(x-sx)/3+.5))}else{const sy=(seam[Math.min(G-1,x/s|0)]+.5)*s;u=Math.max(0,Math.min(1,(y-sy)/3+.5))}
+  const aA=BA[q+3]/255*(1-u),aB=BB[q+3]/255*u;for(let c=0;c<3;c++){let v=BT[q+c];v=aA*BA[q+c]+(1-aA)*v;v=aB*BB[q+c]+(1-aB)*v;o[q+c]=v}o[q+3]=255}}
+ cx.putImageData(out,0,0);ox.clearRect(0,0,N,N);ox.setLineDash([7,6]);ox.lineWidth=2.5;ox.strokeStyle='rgba(255,255,255,.95)';ox.shadowColor='rgba(0,0,0,.35)';ox.shadowBlur=3;ox.beginPath();
+ for(let i=0;i<G;i++){const a=(i+.5)*s,b=(seam[i]+.5)*s;mode==='lr'?(i?ox.lineTo(b,a):ox.moveTo(b,a)):(i?ox.lineTo(a,b):ox.moveTo(a,b))}ox.stroke();ox.setLineDash([]);
+ const m=(seam[G/2|0]+.5)*s,hx=mode==='lr'?m:N/2,hy=mode==='lr'?N/2:m;ox.shadowBlur=6;ox.fillStyle='#fff';ox.beginPath();ox.arc(hx,hy,15,0,7);ox.fill();ox.shadowBlur=0;ox.fillStyle='#4a4248';ox.font='bold 14px sans-serif';ox.textAlign='center';ox.textBaseline='middle';ox.fillText(mode==='lr'?'‹ ›':'︿﹀',hx,hy+1);
+ const tag=(t,x,y,col)=>{ox.font='bold 15px sans-serif';const w=ox.measureText(t).width+18;ox.fillStyle=col;ox.beginPath();ox.roundRect(x-w/2,y-13,w,26,13);ox.fill();ox.fillStyle='#fff';ox.fillText(t,x,y+1)};
+ if(mode==='lr'){tag('A',Math.max(30,m/2),30,'#3E7CC9');tag('B',Math.min(N-30,(m+N)/2),30,'#c4567a')}else{tag('A',30,Math.max(24,m/2),'#3E7CC9');tag('B',30,Math.min(N-24,(m+N)/2),'#c4567a')}}
+let raf=0;const req=()=>{if(raf)return;raf=requestAnimationFrame(()=>{raf=0;render()})};
+function ui(){const r=ZM[face];
+ $('.zn-faces',root).innerHTML=`<span>${L5(T.face)}</span>`+Object.keys(ZM).map(f=>`<button data-f="${f}" aria-pressed="${f===face}"><img src="${Z}${f}_bare.webp" alt=""></button>`).join('');
+ $('.zn-a',root).innerHTML=`<span>${L5(T.a)}</span>`+r.map((x,i)=>`<button data-i="${i}" aria-pressed="${i===ia}" ${i===ib?'disabled':''}><img src="${Z}ref_${x}.webp" alt=""></button>`).join('');
+ $('.zn-b',root).innerHTML=`<span>${L5(T.b)}</span>`+r.map((x,i)=>`<button data-i="${i}" aria-pressed="${i===ib}" ${i===ia?'disabled':''}><img src="${Z}ref_${x}.webp" alt=""></button>`).join('');
+ $('.zn-mode',root).innerHTML=`<button data-m="lr" aria-pressed="${mode==='lr'}">${L5(T.lr)}</button><button data-m="tb" aria-pressed="${mode==='tb'}">${L5(T.tb)}</button>`;
+ $$('.zn-faces button',root).forEach(b=>b.onclick=async()=>{user();face=b.dataset.f;ia=0;ib=1;ui();await prep();req()});
+ $$('.zn-a button',root).forEach(b=>b.onclick=async()=>{user();ia=+b.dataset.i;ui();await prep();req()});
+ $$('.zn-b button',root).forEach(b=>b.onclick=async()=>{user();ib=+b.dataset.i;ui();await prep();req()});
+ $$('.zn-mode button',root).forEach(b=>b.onclick=()=>{user();mode=b.dataset.m;p=.5;ui();req()})}
+$('.zn-hint',root).innerHTML=L5(T.hint);
+let drag=false;const pos=e=>{const r=ov.getBoundingClientRect();return mode==='lr'?(e.clientX-r.left)/r.width:(e.clientY-r.top)/r.height};
+ov.addEventListener('pointerdown',e=>{user();drag=true;ov.setPointerCapture(e.pointerId);p=Math.max(.08,Math.min(.92,pos(e)));req()});
+ov.addEventListener('pointermove',e=>{if(!drag)return;p=Math.max(.08,Math.min(.92,pos(e)));req()});ov.addEventListener('pointerup',()=>drag=false);
+const MB=$('.zn-mode-badge',root);function badge(auto){MB.innerHTML=auto?`<span class="dot"></span>${L5(T.auto)}`:`<span>✎ ${L5(T.edit)}</span><button type="button" class="pg-play">▶ ${L5(T.play)}</button>`;MB.classList.toggle('auto',auto);const b=$('.pg-play',MB);b&&(b.onclick=()=>{touched=false;badge(true);demo()})}
+function user(){if(touched)return;touched=true;clearInterval(timer);badge(false)}
+let step=0;function demo(){clearInterval(timer);t0=performance.now();timer=setInterval(async()=>{if(touched){clearInterval(timer);return}const t=(performance.now()-t0)/1000;p=.5+.22*Math.sin(t*.9);req();
+ if(t>7*(step+1)){step++;if(step%3===1){mode=mode==='lr'?'tb':'lr';p=.5;ui()}else if(step%3===2){ib=(ib+1)%ZM[face].length;if(ib===ia)ib=(ib+1)%ZM[face].length;ui();await prep()}else{face=Object.keys(ZM)[(Object.keys(ZM).indexOf(face)+1)%Object.keys(ZM).length];ia=0;ib=1;ui();await prep()}}},60)}
+ui();prep().then(()=>{render();badge(true);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;demo()}},{threshold:.3}).observe(root)}})})();
 })();
