@@ -92,10 +92,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 
-<div class="paper-box" data-sort="99999" id="paper-renovsr">
+<div class="paper-box" data-sort="99999" id="paper-reloopvsr">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across clips from game CG cinematics (a frost-covered sword being drawn and a gauntlet gripping a ruby-set hilt) and two AI-generated sample videos (a paper dancer leaping and prickly-pear cacti), comparing the clean low-resolution input with the sharper RenoVSR result">
+<video width="1280" height="720" muted loop playsinline preload="none" aria-label="A slanted divider sweeps across clips from game CG cinematics (a frost-covered sword being drawn and a gauntlet gripping a ruby-set hilt) and two AI-generated sample videos (a paper dancer leaping and prickly-pear cacti), comparing the clean low-resolution input with the sharper ReLoopVSR result">
 <source src="images/web/renovsr-home.mp4?v=13" type="video/mp4"/>
 </video>
 <picture><source srcset="images/web/renovsr-home.avif?v=13" type="image/avif"/><img class="pv-poster" src="images/web/renovsr-home.webp?v=13" width="1280" height="720" alt="" decoding="async" loading="lazy"/></picture>
@@ -103,14 +103,14 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 <div class="paper-box-text">
 <div class="paper-venue">Preprint</div>
-<h4>RenoVSR: One-Step Recurrent Autoregressive Diffusion Refinement for Streaming Video Super-Resolution</h4>
+<h4>ReLoopVSR: One-Step Recurrent Autoregressive Diffusion Refinement for Streaming Video Super-Resolution</h4>
 <p class="paper-authors"><strong>Chia-Ming Lee</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://yulunalexliu.github.io/" rel="noopener" target="_blank">Yu-Lun Liu</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-summary">Recurrently refines what it has already restored: the previous restored latent is aligned, re-noised and corrected in a single step under the current low-resolution frame, while predicted restoration error decides what to keep and what to renew. It reaches the lowest LPIPS, DISTS and tLP among the compared methods on four test sets, needs no future frames and, in strict FP32, stays far below the 24 GB of an RTX 4090, which most of them exceed.</p>
+<p class="paper-summary">Recurrently refines what it has already restored: the previous denoised latent is aligned, re-noised and corrected in a single denoising step under the current low-resolution frame, while local and global reliability control decides where to keep the inherited detail and where to restart. It needs no future frames, achieves leading perceptual quality on six paired benchmarks with far lower peak memory and first-frame latency than existing streaming VSR methods, and its fast variant exceeds 240 FPS at 720p with 2.2 GiB of peak memory.</p>
 <div class="links">
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Paper (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">arXiv (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">GitHub (coming soon)</a>
-<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Project Page (coming soon)</a>
+<a href="https://ming053l.github.io/ReLoopVSR/" rel="noopener" target="_blank">Project Page</a>
 </div>
 </div>
 </div>
