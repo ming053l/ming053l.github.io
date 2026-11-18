@@ -276,3 +276,23 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 
 .pg-tool{width:350px}.pg-th b{white-space:nowrap}.pg-th button{white-space:nowrap}
 .pg-th{flex-wrap:wrap;row-gap:6px}
+
+/* ---- playground v3 ---- */
+.pg-g{position:absolute;inset:0;transition:opacity .45s,filter .5s}
+.pg-g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;transition:transform .12s linear}
+.pg-g.pop{animation:pgpop .6s var(--ease)}
+.pg.pg-brushing .pg-photo{cursor:crosshair}
+.pg-bar{position:absolute;z-index:6;top:14px;right:22px;display:flex;flex-wrap:wrap;gap:5px;justify-content:flex-end;max-width:min(640px,52%)}
+.pg-bar button,.pg-ver{background:#fff;border:1px solid var(--line2);border-radius:99px;padding:4px 10px;font-size:12px;font-weight:600;color:var(--ink2);white-space:nowrap}
+.pg-bar button[disabled]{opacity:.4}.pg-bar button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pg-ver{font:600 11px var(--mono);border:0;background:rgba(255,255,255,.85)}
+.pg-toast{top:auto!important;bottom:18px;right:auto!important;left:calc(100% - 22px - 350px - 12px);transform:translateX(-100%)!important}
+.pg-tg{border:1px solid var(--line2);border-radius:7px;padding:2px 8px;font-size:11.5px}.pg-tg[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pg-replay{position:absolute;left:0;right:0;bottom:12px;z-index:9;display:flex;justify-content:center;opacity:0;transition:opacity .3s;pointer-events:none}
+.pg-replay.on{opacity:1}
+.pg-steps{display:flex;gap:5px;align-items:center;background:rgba(255,255,255,.94);border-radius:99px;padding:5px 12px;font-size:12px;box-shadow:0 4px 14px rgba(30,26,30,.12)}
+.pg-steps span{color:var(--mute)}.pg-steps span.done{color:var(--ink2)}.pg-steps span.on{color:var(--rose);font-weight:700}.pg-steps i{font-style:normal;color:var(--line2)}
+.pg-la{z-index:2}
+@media (max-width:1100px){.pg-bar{max-width:none;left:8px;right:8px;justify-content:flex-start}.pg-toast{left:8px!important;transform:none!important}}
+
+.pg-bar{top:54px}
