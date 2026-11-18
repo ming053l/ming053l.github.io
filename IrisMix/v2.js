@@ -158,6 +158,12 @@ const T={
  tray:{en:'Layers',sc:'图层',zh:'圖層',ja:'レイヤー',ko:'레이어'},models:{en:'Models',sc:'模特',zh:'模特兒',ja:'モデル',ko:'모델'},
  hint:{en:'Drag a layer onto the face, or pull one out',sc:'把图层拖到脸上，或拖出来',zh:'把圖層拖到臉上，或拖出來',ja:'レイヤーを顔にドラッグ、または外へ',ko:'레이어를 얼굴로 끌어오거나 밖으로 빼세요'},
  color:{en:'Color',sc:'颜色',zh:'顏色',ja:'カラー',ko:'컬러'},op:{en:'Opacity',sc:'透明度',zh:'透明度',ja:'不透明度',ko:'불투명도'},order:{en:'Order',sc:'顺序',zh:'順序',ja:'重なり順',ko:'순서'},
+ cmp:{en:'Before / after',sc:'前后对比',zh:'前後對比',ja:'ビフォー / アフター',ko:'전후 비교'},
+ s8:{en:'Compare before and after',sc:'前后对比',zh:'前後對比',ja:'ビフォー・アフターを比較',ko:'전후 비교하기'},
+ before:{en:'Before',sc:'之前',zh:'之前',ja:'ビフォー',ko:'전'},after:{en:'After',sc:'之后',zh:'之後',ja:'アフター',ko:'후'},
+ auto:{en:'Auto demo · click to edit',sc:'自动演示中 · 点击即可编辑',zh:'自動示範中 · 點一下即可編輯',ja:'自動デモ中 · クリックで編集',ko:'자동 데모 중 · 클릭하면 편집'},
+ edit:{en:'Edit mode · paused',sc:'编辑模式 · 已暂停',zh:'編輯模式 · 已暫停',ja:'編集モード · 一時停止中',ko:'편집 모드 · 일시정지됨'},
+ play:{en:'Play',sc:'播放',zh:'播放',ja:'再生',ko:'재생'},
  reset:{en:'Reset',sc:'恢复默认',zh:'回到預設',ja:'リセット',ko:'초기화'},
  s1:{en:'Drag the face paint onto the face',sc:'把彩绘拖到脸上',zh:'把彩繪拖到臉上',ja:'フェイスペイントを顔にドラッグ',ko:'페이스 페인팅을 얼굴로 드래그'},
  s2:{en:'Recolor it',sc:'换个颜色',zh:'換個顏色',ja:'色を変える',ko:'색 바꾸기'},
@@ -174,14 +180,20 @@ const hueRGB=(c,deg)=>{const r=deg*Math.PI/180,cs=Math.cos(r),sn=Math.sin(r),m=[
 /* what is seen: alpha-weighted mean of a·rot(F) plus the uncovered skin (1-a)·T in the layer region */
 const swatch=(p,h)=>{const c=hueRGB(p.rgb,h),b=p.base||[0,0,0],f=v=>Math.max(0,Math.min(255,Math.round(v)));return `rgb(${f(c[0]+b[0])},${f(c[1]+b[1])},${f(c[2]+b[2])})`};
 const photo=$('.pg-photo',root),tray=$('.pg-tray',root),tool=$('.pg-tool',root),cur=$('.pg-cursor',root),toast=$('.pg-toast',root),av=$('.pg-models',root);
-let M=META.order[0],IDS=[],S,IM={},CARD={};
+let M=META.order[0],IDS=[],S,IM={},CARD={},SPLIT=false,SX=.5;
+const MODE=document.createElement('div');MODE.className='pg-mode';root.append(MODE);
+function mode(auto){MODE.classList.toggle('auto',auto);MODE.innerHTML=auto?`<span class="dot"></span>${L5(T.auto)}`:`<span>✎ ${L5(T.edit)}</span><button type="button" class="pg-play">▶ ${L5(T.play)}</button>`;const p=$('.pg-play',MODE);p&&(p.onclick=e=>{e.stopPropagation();start()})}
+MODE.addEventListener('pointerdown',e=>e.stopPropagation());
+const LY=document.createElement('div');LY.className='pg-layers';photo.append(LY);
+const SL=document.createElement('div');SL.className='pg-split';SL.innerHTML=`<i></i><em class="l">${L5(T.before)}</em><em class="r">${L5(T.after)}</em>`;photo.append(SL);
+function split(){LY.style.clipPath=SPLIT?`inset(0 0 0 ${SX*100}%)`:'none';SL.style.left=(SX*100)+'%';SL.classList.toggle('on',SPLIT);const b=$('.pg-cmp',tool);b&&b.setAttribute('aria-pressed',SPLIT)}
 const D0=()=>({on:Object.fromEntries(IDS.map(i=>[i,true])),x:{},y:{},h:{},o:{},order:[...IDS],sel:IDS.includes('lips')?'lips':IDS[0]});
 $('.pg-tray-h',root).innerHTML=`<b>${L5(T.tray)}</b><small>${L5(T.hint)}</small>`;
 av.innerHTML=`<b>${L5(T.models)}</b><div>${META.order.map(m=>`<button type="button" data-m="${m}" aria-label="model"><img src="${A}${m}/avatar.webp" alt=""></button>`).join('')}</div>`;
 $$('button',av).forEach(b=>b.onclick=()=>{user();load(b.dataset.m)});
-function load(m){M=m;IDS=['paint','eyes','lips'].filter(n=>META.parts[m][n]);S=D0();
- $('.pg-src',photo).src=`${A}${m}/src.webp`;$$('.pg-ly',photo).forEach(e=>e.remove());IM={};
- IDS.forEach(id=>{const im=document.createElement('img');im.src=`${A}${m}/${id}.webp`;im.alt='';im.className='pg-ly';photo.append(im);IM[id]=im});
+function load(m){M=m;SPLIT=false;SX=.5;split();IDS=['paint','eyes','lips'].filter(n=>META.parts[m][n]);S=D0();
+ $('.pg-src',photo).src=`${A}${m}/src.webp`;LY.innerHTML='';IM={};
+ IDS.forEach(id=>{const im=document.createElement('img');im.src=`${A}${m}/${id}.webp`;im.alt='';im.className='pg-ly';LY.append(im);IM[id]=im});
  $$('.pg-card',tray).forEach(e=>e.remove());CARD={};
  IDS.forEach(id=>{const c=document.createElement('div');c.className='pg-card';c.dataset.id=id;c.innerHTML=`<img src="${A}${m}/${id}_th.webp" alt=""><span>${L5(T[id])}</span><i></i>`;tray.append(c);CARD[id]=c});
  $$('button',av).forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===m));draw();
@@ -190,14 +202,15 @@ function draw(){S.order.forEach((id,i)=>{const im=IM[id];im.style.zIndex=2+i;im.
   im.style.transform=`translate(${(S.x[id]||0)*100}%,${(S.y[id]||0)*100}%)`;im.style.filter=`hue-rotate(${S.h[id]||0}deg)`});
  IDS.forEach(id=>{CARD[id].classList.toggle('on',!!S.on[id]);CARD[id].classList.toggle('sel',S.sel===id)});tools()}
 function tools(){const id=S.sel,o=S.o[id]==null?1:S.o[id];
- tool.innerHTML=`<div class="pg-th"><img src="${A}${M}/${id}_th.webp" alt=""><b>${L5(T[id])}</b><button class="pg-reset" type="button">↺ ${L5(T.reset)}</button></div>
+ tool.innerHTML=`<div class="pg-th"><img src="${A}${M}/${id}_th.webp" alt=""><b>${L5(T[id])}</b><button class="pg-cmp" type="button" aria-pressed="${SPLIT}">◐ ${L5(T.cmp)}</button><button class="pg-reset" type="button">↺ ${L5(T.reset)}</button></div>
  <div class="pg-row"><span>${L5(T.color)}</span>${HUES.map((h,i)=>`<button class="pg-sw${(S.h[id]||0)===h?' on':''}" data-h="${h}" style="background:${swatch(P(id),h)}" aria-label="color"></button>`).join('')}</div>
  <div class="pg-row"><span>${L5(T.op)}</span><input type="range" min="0" max="100" value="${Math.round(o*100)}" aria-label="Opacity"></div>
  <div class="pg-row"><span>${L5(T.order)}</span><button class="pg-ob" data-d="1" aria-label="Move up">↑</button><button class="pg-ob" data-d="-1" aria-label="Move down">↓</button></div>`;
  $$('.pg-sw',tool).forEach(b=>b.onclick=()=>{user();S.h[id]=+b.dataset.h;draw()});
  $('input',tool).oninput=e=>{user();S.o[id]=e.target.value/100;draw()};
  $$('.pg-ob',tool).forEach(b=>b.onclick=()=>{user();mv(id,+b.dataset.d)});
- $('.pg-reset',tool).onclick=()=>{user();const s=S.sel;S=D0();S.sel=s;draw()}}
+ $('.pg-reset',tool).onclick=()=>{user();const s=S.sel;S=D0();S.sel=s;SPLIT=false;split();draw()};
+ $('.pg-cmp',tool).onclick=()=>{user();SPLIT=!SPLIT;SX=.5;split()}}
 function mv(id,d){const i=S.order.indexOf(id),j=i+d;if(j<0||j>=S.order.length)return;[S.order[i],S.order[j]]=[S.order[j],S.order[i]];draw()}
 const rel=el=>{const a=el.getBoundingClientRect(),b=root.getBoundingClientRect();return{x:a.left-b.left,y:a.top-b.top,w:a.width,h:a.height}};
 const P=id=>META.parts[M][id];
@@ -210,12 +223,15 @@ const ghost=document.createElement('div');ghost.className='pg-ghost';root.append
 function ghostAt(id,x,y,show){ghost.innerHTML=id?`<img src="${A}${M}/${id}_th.webp" alt="">`:'';ghost.style.transform=`translate(${x-30}px,${y-30}px)`;ghost.classList.toggle('on',!!show)}
 function flash(id){const im=IM[id];im.classList.remove('pop');void im.offsetWidth;im.classList.add('pop')}
 let drag=null;
-root.addEventListener('pointerdown',e=>{if(e.target.closest('.pg-tool,.pg-models'))return;const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;const card=e.target.closest('.pg-card');
+root.addEventListener('pointerdown',e=>{if(e.target.closest('.pg-mode'))return;user();if(e.target.closest('.pg-tool,.pg-models')){user();return}const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;const card=e.target.closest('.pg-card');
+ if(SPLIT&&!card&&inPhoto(x,y)){const r=rel(photo);if(Math.abs(x-(r.x+SX*r.w))<26){user();drag={kind:'split',r};root.setPointerCapture(e.pointerId);e.preventDefault();return}}
  if(card){user();const id=card.dataset.id;S.sel=id;draw();drag={kind:'card',id};ghostAt(id,x,y,true);root.setPointerCapture(e.pointerId);e.preventDefault();return}
  if(inPhoto(x,y)){const id=pick(x,y);if(id){user();S.sel=id;draw();drag={kind:'layer',id,x0:x,y0:y,ox:S.x[id]||0,oy:S.y[id]||0,r:rel(photo)};root.setPointerCapture(e.pointerId);e.preventDefault()}}});
 root.addEventListener('pointermove',e=>{if(!drag)return;user();const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;
+ if(drag.kind==='split'){SX=Math.max(0,Math.min(1,(x-drag.r.x)/drag.r.w));split();return}
  if(drag.kind==='card')ghostAt(drag.id,x,y,true);else{S.x[drag.id]=drag.ox+(x-drag.x0)/drag.r.w;S.y[drag.id]=drag.oy+(y-drag.y0)/drag.r.h;draw();root.classList.toggle('pg-out',!inPhoto(x,y))}});
 root.addEventListener('pointerup',e=>{if(!drag)return;const b=root.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;
+ if(drag.kind==='split'){drag=null;return}
  if(drag.kind==='card'){ghostAt(null,0,0,false);if(inPhoto(x,y)){S.on[drag.id]=true;flash(drag.id)}}
  else if(!inPhoto(x,y)){S.on[drag.id]=false;S.x[drag.id]=0;S.y[drag.id]=0}
  root.classList.remove('pg-out');drag=null;draw()});
@@ -233,10 +249,11 @@ async function run(g){demo=true;cur.classList.add('on');while(g===gen){
  if(IDS.includes('lips')){say(T.s4);S.sel='lips';draw();await wait(200);await click($$('.pg-sw',tool)[1]);await wait(700);if(g!==gen)return}
  if(IDS.includes('eyes')){say(T.s5);let a=ptOn('eyes');await cursorTo(a,700);S.sel='eyes';draw();const b=ptCard('eyes'),r2=rel(photo);await dragPath(g,a,b,1000,p=>{S.x.eyes=(p.x-a.x)/r2.w;S.y.eyes=(p.y-a.y)/r2.h;draw()});if(g!==gen)return;S.on.eyes=false;S.x.eyes=0;S.y.eyes=0;draw();await wait(600);
   say(T.s6);a=ptCard('eyes');const c=ptOn('eyes');await dragPath(g,a,c,1000,p=>ghostAt('eyes',p.x,p.y,true));ghostAt(null,0,0,false);if(g!==gen)return;S.on.eyes=true;draw();flash('eyes');await wait(900)}
+ say(T.s8);await click($('.pg-cmp',tool));{const r=rel(photo);for(const t of [.85,.15,.55]){const y=r.y+r.h*.42,s0={x:r.x+SX*r.w,y};await cursorTo(s0,300);await dragPath(g,s0,{x:r.x+t*r.w,y},900,q=>{SX=(q.x-r.x)/r.w;split()});if(g!==gen)return}}await wait(700);SPLIT=false;split();if(g!==gen)return;
  say(T.s7);const nm=META.order[(META.order.indexOf(M)+1)%META.order.length];await click($(`button[data-m="${nm}"]`,av));load(nm);await wait(700)}}
-function start(){gen++;touched=false;tid.forEach(clearTimeout);tid=[];run(gen)}
-function user(){if(bot)return;clearTimeout(idle);idle=setTimeout(()=>{if(!drag)start()},12000);if(touched)return;touched=true;gen++;demo=false;tid.forEach(clearTimeout);tid=[];cur.classList.remove('on','down');toast.classList.remove('on');ghostAt(null,0,0,false)}
-load(M);place();
+function start(){gen++;touched=false;tid.forEach(clearTimeout);tid=[];mode(true);run(gen)}
+function user(){if(bot)return;if(touched)return;touched=true;mode(false);gen++;demo=false;tid.forEach(clearTimeout);tid=[];cur.classList.remove('on','down');toast.classList.remove('on');ghostAt(null,0,0,false)}
+load(M);place();mode(true);
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;start()}},{threshold:.3}).observe(root)}
 })();
 
