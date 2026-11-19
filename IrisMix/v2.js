@@ -419,4 +419,12 @@ function demo(){clearInterval(tm);t0=performance.now();tm=setInterval(()=>{if(to
 cv.addEventListener('pointerdown',user);
 Promise.all([load(MD+'src.webp'),...[0,1,2,3].map(k=>load(`${MD}lip${k}.webp`))]).then(([s,...l])=>{src=s;lips=l;render();badge(true);
  if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;demo()}},{threshold:.3}).observe(root)}})})();
+
+/* group photo: before / after wipe, auto sweep until touched */
+(()=>{const root=$('#group');if(!root)return;const st=$('.gp-stage',root),b=$('img.b',st),ln=$('.gp-line',st);let p=.5,touched=false,tm=null,t0=0;
+function set(x){p=Math.max(0,Math.min(1,x));b.style.clipPath=`inset(0 0 0 ${p*100}%)`;ln.style.left=p*100+'%'}
+const pos=e=>{const r=st.getBoundingClientRect();return((e.touches?e.touches[0].clientX:e.clientX)-r.left)/r.width};
+let drag=false;st.addEventListener('pointerdown',e=>{touched=true;clearInterval(tm);drag=true;st.setPointerCapture(e.pointerId);set(pos(e))});
+st.addEventListener('pointermove',e=>{if(drag)set(pos(e))});st.addEventListener('pointerup',()=>drag=false);
+set(.5);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;t0=performance.now();tm=setInterval(()=>{if(touched)return clearInterval(tm);const t=(performance.now()-t0)/1000;set(.5+.42*Math.sin(t*.8))},40)}},{threshold:.3}).observe(root)}})();
 })();
