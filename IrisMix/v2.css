@@ -411,3 +411,4 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .ap-x{position:sticky;top:8px;float:right;margin:8px 8px 0 0;width:34px;height:34px;border-radius:50%;border:1px solid var(--line2);background:#fff;font-size:20px;line-height:1;z-index:5}
 @media (max-width:900px){.ap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.ap-grid{grid-template-columns:1fr}}
+.ap-contain{background:#fff}
