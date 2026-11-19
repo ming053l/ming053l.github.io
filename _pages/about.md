@@ -171,8 +171,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-flashfocus">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video id="flashrefocus-home-preview" width="854" height="570" muted loop playsinline preload="none" aria-label="FlashReFocus montage, with the input shown in the lower-left corner of every frame: a defocused cafe photo is restored once and then refocused, the aperture opens behind a woman on a pier, a depth swap brings the woman behind a horse into focus, focus is pulled from a woman's hair to the hills in a video, and a SAM mask keeps a dancer sharp in a stage video">
-<source src="images/web/flashrefocus-preview.mp4?v=4" type="video/mp4"/>
+<video id="flashrefocus-home-preview" width="854" height="570" muted loop playsinline preload="none" aria-label="FlashReFocus montage, with the input shown in the lower-left corner of every frame: a defocused cafe photo is restored once and then refocused, the aperture opens behind a dog in a forest, a depth swap brings the woman behind a horse into focus, focus is pulled from a woman's hair to the hills in a video, and a SAM mask, shown in green on the input, keeps a dancer sharp in a stage video">
+<source src="images/web/flashrefocus-preview.mp4?v=6" type="video/mp4"/>
 <a href="https://ming053l.github.io/FlashReFocus/">View FlashReFocus</a>
 </video>
 <picture><source srcset="images/web/flashrefocus-preview.avif?v=4" type="image/avif"/><img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=4" width="854" height="570" alt="" decoding="async" loading="lazy"/></picture>
