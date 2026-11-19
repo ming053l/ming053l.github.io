@@ -412,3 +412,5 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 @media (max-width:900px){.ap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.ap-grid{grid-template-columns:1fr}}
 .ap-contain{background:#fff}
+.ap-gl{display:flex;flex-direction:column;justify-content:center;gap:6px}.ap-gl img{height:auto!important}
+.ap-cols{display:grid;grid-template-columns:repeat(4,1fr);column-gap:.86%;text-align:center;font-size:12.5px;font-weight:600;color:var(--ink2)}.ap-cols .ours{color:var(--rose)}
