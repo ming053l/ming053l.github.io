@@ -502,4 +502,11 @@ let k='color',touched=false,tm=null;
 function ui(){$('.ig-pills',root).innerHTML=K.map(([id,v])=>`<button data-k="${id}" aria-pressed="${id===k}">${L5(v)}</button>`).join('');$$('.ig-pills button',root).forEach(x=>x.onclick=()=>{touched=true;clearInterval(tm);k=x.dataset.k;ui();img()})}
 function img(){const e=K.find(x=>x[0]===k);$('.ig-credit',root).innerHTML=`<span class="en">Photo by</span><span class="sc">摄影：</span><span class="zh">攝影：</span><span class="ja">撮影：</span><span class="ko">사진:</span> <a href="https://unsplash.com/@${e[3]}" target="_blank" rel="noopener">${e[2]}</a> · <a href="https://unsplash.com/photos/${e[4]}" target="_blank" rel="noopener">Unsplash</a>`;$('.ig-in',root).src=`${I}${k}_in.webp`;$('.ig-bare',root).src=`${I}${k}_bare.webp`;$('.ig-layer',root).src=`${I}${k}_layer.webp`}
 ui();img();if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;let i=0;tm=setInterval(()=>{if(touched)return clearInterval(tm);i++;k=K[i%K.length][0];ui();img()},3200)}},{threshold:.3}).observe(root)}})();
+
+(()=>{const g=document.querySelector('.ap-grid');if(!g)return;const M=document.getElementById('ap-modal'),B=M.querySelector('.ap-body'),H=document.getElementById('ap-hold');let cur=null;
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.src&&v.dataset.src)v.src=v.dataset.src;v.play().catch(()=>{})}else v.pause()}),{rootMargin:'200px'});
+g.querySelectorAll('video.lazy').forEach(v=>io.observe(v));
+function close(){if(cur){H.appendChild(cur);cur=null}if(M.open)M.close()}
+g.querySelectorAll('.ap-tile').forEach(t=>t.onclick=()=>{const el=document.getElementById(t.dataset.open);if(!el)return;cur=el;B.appendChild(el);M.showModal();M.scrollTop=0});
+M.querySelector('.ap-x').onclick=close;M.addEventListener('close',()=>{if(cur){H.appendChild(cur);cur=null}});M.addEventListener('click',e=>{if(e.target===M)close()})})();
 })();
