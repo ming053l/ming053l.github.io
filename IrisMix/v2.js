@@ -427,4 +427,79 @@ const pos=e=>{const r=st.getBoundingClientRect();return((e.touches?e.touches[0].
 let drag=false;st.addEventListener('pointerdown',e=>{touched=true;clearInterval(tm);drag=true;st.setPointerCapture(e.pointerId);set(pos(e))});
 st.addEventListener('pointermove',e=>{if(drag)set(pos(e))});st.addEventListener('pointerup',()=>drag=false);
 set(.5);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;t0=performance.now();tm=setInterval(()=>{if(touched)return clearInterval(tm);const t=(performance.now()-t0)/1000;set(.5+.42*Math.sin(t*.8))},40)}},{threshold:.3}).observe(root)}})();
+
+/* layer lab: random mix by part, recipe card (color, coverage, location, copy hex), compare two looks with a difference map */
+(()=>{const root=$('#lab');if(!root)return;const Z=V+'zone/',ZM=window.IRIS_ZONE,N=640;
+const T={rand:{en:'Random mix',sc:'随机混搭',zh:'隨機混搭',ja:'ランダムに組み合わせ',ko:'무작위 조합'},
+ recipe:{en:'Recipe',sc:'配方',zh:'配方',ja:'レシピ',ko:'레시피'},pin:{en:'Pin as A',sc:'设为 A',zh:'設為 A',ja:'A に固定',ko:'A로 고정'},
+ cmp:{en:'Compare with A',sc:'与 A 比较',zh:'與 A 比較',ja:'A と比較',ko:'A와 비교'},face:{en:'Model',sc:'模特',zh:'模特兒',ja:'モデル',ko:'모델'},
+ eyes:{en:'Eyes',sc:'眼妆',zh:'眼妝',ja:'アイメイク',ko:'아이 메이크업'},lips:{en:'Lips',sc:'唇妆',zh:'唇妝',ja:'リップ',ko:'립'},other:{en:'Face paint and cheeks',sc:'彩绘与脸颊',zh:'彩繪與臉頰',ja:'フェイスペイントと頬',ko:'페이스 페인팅과 볼'},
+ from:{en:'from look',sc:'取自妆容',zh:'取自妝容',ja:'使用メイク',ko:'가져온 메이크업'},color:{en:'Color',sc:'颜色',zh:'顏色',ja:'カラー',ko:'컬러'},area:{en:'Coverage',sc:'覆盖面积',zh:'覆蓋面積',ja:'被覆面積',ko:'커버리지'},
+ ofFace:{en:'of the face',sc:'占脸部',zh:'占臉部',ja:'顔に対して',ko:'얼굴 대비'},copy:{en:'Copy',sc:'复制',zh:'複製',ja:'コピー',ko:'복사'},copied:{en:'Copied',sc:'已复制',zh:'已複製',ja:'コピーしました',ko:'복사됨'},
+ none:{en:'none',sc:'无',zh:'無',ja:'なし',ko:'없음'},diff:{en:'Where the two looks differ (color difference ΔE)',sc:'两组妆容不同之处（色差 ΔE）',zh:'兩組妝容不同之處（色差 ΔE）',ja:'2つのメイクの違い（色差 ΔE）',ko:'두 메이크업의 차이(색차 ΔE)'},
+ same:{en:'nearly the same',sc:'几乎相同',zh:'幾乎相同',ja:'ほぼ同じ',ko:'거의 같음'},cur:{en:'Current',sc:'当前',zh:'目前',ja:'現在',ko:'현재'},
+ hint:{en:'Pin a mix as A, change it, then compare: the map marks where the colors changed and the list gives the difference for each part.',sc:'把一组混搭设为 A，修改后再比较：差异图会标出颜色改变的位置，列表给出每个部位的色差。',zh:'把一組混搭設為 A，修改後再比較：差異圖會標出顏色改變的位置，列表會列出每個部位的色差。',ja:'組み合わせを A に固定して変更してから比較すると、色が変わった場所がマップに示され、パーツごとの差が一覧に表示されます。',ko:'조합을 A로 고정하고 바꾼 뒤 비교하면, 지도에 색이 바뀐 위치가 표시되고 목록에 부위별 차이가 나옵니다.'}};
+const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const PARTS=['eyes','lips','other'];
+const cv=$('.lb-cv',root),cx=cv.getContext('2d'),ca=$('.lb-a',root),cax=ca.getContext('2d'),cd=$('.lb-d',root),cdx=cd.getContext('2d');[cv,ca,cd].forEach(c=>c.width=c.height=N);
+let face=Object.keys(ZM)[0],pick={eyes:0,lips:1,other:2},bare=null,masks=null,lay={},A=null,view='mix',touched=false,tm=null;
+const data=u=>new Promise(r=>{const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=c.height=N;const x=c.getContext('2d');x.drawImage(i,0,0,N,N);r(x.getImageData(0,0,N,N).data)};i.src=u});
+async function prep(){[bare,masks]=await Promise.all([data(`${Z}${face}_bare.webp`),data(`${Z}${face}_parts.png`)]);lay={};await Promise.all(ZM[face].map(async(r,i)=>{lay[i]=await data(`${Z}${face}_${r}.webp`)}))}
+function compose(p){const o=new Uint8ClampedArray(N*N*4);for(let q=0;q<o.length;q+=4){const m=[masks[q]/255,masks[q+1]/255,masks[q+2]/255];let r=bare[q],g=bare[q+1],b=bare[q+2];
+  for(let k=0;k<3;k++){if(!m[k]||p[PARTS[k]]<0)continue;const L=lay[p[PARTS[k]]],a=L[q+3]/255*m[k];r=a*L[q]+(1-a)*r;g=a*L[q+1]+(1-a)*g;b=a*L[q+2]+(1-a)*b}o[q]=r;o[q+1]=g;o[q+2]=b;o[q+3]=255}return o}
+const lab=(r,g,b)=>{const f=v=>{v/=255;return v>.04045?Math.pow((v+.055)/1.055,2.4):v/12.92};const R=f(r),G=f(g),B=f(b);let X=(R*.4124+G*.3576+B*.1805)/.95047,Y=R*.2126+G*.7152+B*.0722,Zz=(R*.0193+G*.1192+B*.9505)/1.08883;const h=t=>t>.008856?Math.cbrt(t):7.787*t+16/116;X=h(X);Y=h(Y);Zz=h(Zz);return[116*Y-16,500*(X-Y),200*(Y-Zz)]};
+const hex=(r,g,b)=>'#'+[r,g,b].map(v=>Math.round(v).toString(16).padStart(2,'0')).join('').toUpperCase();
+function stats(p){const out={},fa=(()=>{let n=0;for(let q=3;q<masks.length;q+=4)if(masks[q]>127)n++;return n})();
+ PARTS.forEach((k,ki)=>{const i=p[k];if(i<0){out[k]=null;return}const L=lay[i];let n=0,r=0,g=0,b=0,w=0;for(let q=0;q<L.length;q+=4){const m=masks[q+ki]/255,a=L[q+3]/255*m;if(a>.15){n++;const c=a;r+=c*(a*L[q]+(1-a)*bare[q]);g+=c*(a*L[q+1]+(1-a)*bare[q+1]);b+=c*(a*L[q+2]+(1-a)*bare[q+2]);w+=c}}
+  out[k]=n?{hex:hex(r/w,g/w,b/w),area:Math.round(n/fa*1000)/10,look:i}:null});return out}
+function draw(){const o=compose(pick);cx.putImageData(new ImageData(o,N,N),0,0);const st=stats(pick);
+ $('.lb-recipe',root).innerHTML=`<h4>📋 ${L5(T.recipe)}</h4>`+PARTS.map(k=>{const s=st[k],ref=s?`<img src="${Z}ref_${ZM[face][s.look]}.webp" alt="">`:'';return `<div class="lb-r"><b>${L5(T[k])}</b>${s?`${ref}<i style="background:${s.hex}"></i><code>${s.hex}</code><span>${L5(T.area)} ${s.area}% ${L5(T.ofFace)}</span><button data-h="${s.hex}">${L5(T.copy)}</button>`:`<span>${L5(T.none)}</span>`}</div>`}).join('');
+ $$('.lb-recipe button',root).forEach(b=>b.onclick=()=>{user();navigator.clipboard&&navigator.clipboard.writeText(b.dataset.h);b.innerHTML=L5(T.copied);setTimeout(()=>b.innerHTML=L5(T.copy),1200)});
+ $('.lb-picks',root).innerHTML=PARTS.map(k=>`<div class="lb-p"><b>${L5(T[k])}</b>${ZM[face].map((r,i)=>`<button data-k="${k}" data-i="${i}" aria-pressed="${pick[k]===i}"><img src="${Z}ref_${r}.webp" alt=""></button>`).join('')}</div>`).join('');
+ $$('.lb-p button',root).forEach(b=>b.onclick=()=>{user();pick[b.dataset.k]=+b.dataset.i;draw()});
+ const cmp=view==='cmp'&&A;root.classList.toggle('lb-cmpmode',!!cmp);
+ if(cmp){const a=compose(A.p);cax.putImageData(new ImageData(a,N,N),0,0);const d=cdx.createImageData(N,N),dd=d.data,acc={eyes:[0,0],lips:[0,0],other:[0,0]};
+  for(let q=0;q<a.length;q+=4){const x=lab(o[q],o[q+1],o[q+2]),y=lab(a[q],a[q+1],a[q+2]),e=Math.hypot(x[0]-y[0],x[1]-y[1],x[2]-y[2]),t=Math.min(1,e/30);
+   dd[q]=o[q]*(1-t*.85)+255*t*.85;dd[q+1]=o[q+1]*(1-t*.85)+40*t*.85;dd[q+2]=o[q+2]*(1-t*.85)+120*t*.85;dd[q+3]=255;
+   for(let k=0;k<3;k++){const m=masks[q+k]/255;if(m>.5&&masks[q+3]>127){acc[PARTS[k]][0]+=e;acc[PARTS[k]][1]++}}}
+  cdx.putImageData(d,0,0);$('.lb-dlist',root).innerHTML=`<h4>${L5(T.diff)}</h4>`+PARTS.map(k=>{const v=acc[k][1]?acc[k][0]/acc[k][1]:0;return `<div class="lb-r"><b>${L5(T[k])}</b><span class="bar"><i style="width:${Math.min(100,v*4)}%"></i></span><code>ΔE ${v.toFixed(1)}</code>${v<2?`<span>${L5(T.same)}</span>`:''}</div>`}).join('')}
+ bar()}
+function bar(){$('.lb-bar',root).innerHTML=`<div class="lb-faces"><span>${L5(T.face)}</span>${Object.keys(ZM).map(f=>`<button data-f="${f}" aria-pressed="${f===face}"><img src="${Z}${f}_bare.webp" alt=""></button>`).join('')}</div>
+ <button class="lb-btn" data-a="rand">🎲 ${L5(T.rand)}</button><button class="lb-btn" data-a="pin">📌 ${L5(T.pin)}</button><button class="lb-btn" data-a="cmp" aria-pressed="${view==='cmp'}" ${A?'':'disabled'}>⇄ ${L5(T.cmp)}</button>`;
+ $$('.lb-faces button',root).forEach(b=>b.onclick=async()=>{user();face=b.dataset.f;A=null;view='mix';await prep();draw()});
+ $$('.lb-btn',root).forEach(b=>b.onclick=()=>{user();act(b.dataset.a)})}
+function rnd(){const n=ZM[face].length;PARTS.forEach(k=>pick[k]=Math.random()<.12?-1:Math.floor(Math.random()*n));if(PARTS.every(k=>pick[k]<0))pick.eyes=0}
+function act(a){if(a==='rand'){rnd();root.classList.remove('roll');void root.offsetWidth;root.classList.add('roll');draw()}else if(a==='pin'){A={p:{...pick}};draw()}else if(a==='cmp'&&A){view=view==='cmp'?'mix':'cmp';draw()}}
+$('.lb-hint',root).innerHTML=L5(T.hint);
+const MB=$('.lb-badge',root);function badge(au){MB.innerHTML=au?`<span class="dot"></span>${L5({en:'Auto demo · click to edit',sc:'自动演示中 · 点击即可编辑',zh:'自動示範中 · 點一下即可編輯',ja:'自動デモ中 · クリックで編集',ko:'자동 데모 중 · 클릭하면 편집'})}`:`<span>✎ ${L5({en:'Edit mode · paused',sc:'编辑模式 · 已暂停',zh:'編輯模式 · 已暫停',ja:'編集モード · 一時停止中',ko:'편집 모드 · 일시정지됨'})}</span><button type="button" class="pg-play">▶ ${L5({en:'Play',sc:'播放',zh:'播放',ja:'再生',ko:'재생'})}</button>`;MB.classList.toggle('auto',au);const b=$('.pg-play',MB);b&&(b.onclick=()=>{touched=false;badge(true);demo()})}
+function user(){if(touched)return;touched=true;clearInterval(tm);badge(false)}
+function demo(){clearInterval(tm);let s=0;tm=setInterval(async()=>{if(touched)return clearInterval(tm);s++;
+ if(s%6===1){act('rand')}else if(s%6===2){act('pin')}else if(s%6===3){act('rand')}else if(s%6===4){view='cmp';draw()}else if(s%6===5){view='mix';draw()}else{face=Object.keys(ZM)[(Object.keys(ZM).indexOf(face)+1)%Object.keys(ZM).length];A=null;await prep();draw()}},2600)}
+cv.addEventListener('pointerdown',user);
+prep().then(()=>{draw();badge(true);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let st=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!st){st=true;demo()}},{threshold:.3}).observe(root)}})})();
+
+/* lighting / pose card and selfie decomposition card */
+(()=>{const root=$('#cond');if(!root)return;const C=V+'cond/';const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const G={light:{t:{en:'Lighting',sc:'光线',zh:'光線',ja:'光',ko:'조명'},k:[['original',{en:'Daylight',sc:'日光',zh:'日光',ja:'日中',ko:'낮'}],['golden',{en:'Golden hour',sc:'黄金时刻',zh:'黃金時刻',ja:'ゴールデンアワー',ko:'골든 아워'}],['neon',{en:'Neon night',sc:'霓虹夜景',zh:'霓虹夜景',ja:'ネオンの夜',ko:'네온 밤'}],['lamp',{en:'Warm lamp',sc:'暖色灯光',zh:'暖色燈光',ja:'暖かいランプ',ko:'따뜻한 램프'}],['overcast',{en:'Overcast',sc:'阴天',zh:'陰天',ja:'曇り',ko:'흐린 날'}]]},
+ pose:{t:{en:'Expression and angle',sc:'表情与角度',zh:'表情與角度',ja:'表情と向き',ko:'표정과 각도'},k:[['original',{en:'Front',sc:'正脸',zh:'正臉',ja:'正面',ko:'정면'}],['turn',{en:'Turned',sc:'转头',zh:'轉頭',ja:'横向き',ko:'고개 돌림'}],['laugh',{en:'Laughing',sc:'大笑',zh:'大笑',ja:'笑顔',ko:'웃음'}],['closed',{en:'Eyes closed',sc:'闭眼',zh:'閉眼',ja:'目を閉じる',ko:'눈 감음'}],['up',{en:'Looking up',sc:'抬头',zh:'抬頭',ja:'見上げる',ko:'올려다봄'}]]}};
+let g='light',k='original',p=.5,touched=false,tm=null;const st=$('.cd-stage',root),a=$('img.a',st),b=$('img.b',st),ln=$('.gp-line',st);
+function set(x){p=Math.max(0,Math.min(1,x));b.style.clipPath=`inset(0 0 0 ${p*100}%)`;ln.style.left=p*100+'%'}
+function ui(){$('.cd-tabs',root).innerHTML=Object.entries(G).map(([id,v])=>`<button data-g="${id}" aria-pressed="${id===g}">${L5(v.t)}</button>`).join('');
+ $('.cd-pills',root).innerHTML=G[g].k.map(([id,v])=>`<button data-k="${id}" aria-pressed="${id===k}">${L5(v)}</button>`).join('');
+ $$('.cd-tabs button',root).forEach(x=>x.onclick=()=>{user();g=x.dataset.g;k='original';ui();img()});$$('.cd-pills button',root).forEach(x=>x.onclick=()=>{user();k=x.dataset.k;ui();img()})}
+function img(){a.src=`${C}${g}_${k}_a.webp`;b.src=`${C}${g}_${k}_b.webp`}
+let drag=false;st.addEventListener('pointerdown',e=>{user();drag=true;st.setPointerCapture(e.pointerId);const r=st.getBoundingClientRect();set((e.clientX-r.left)/r.width)});
+st.addEventListener('pointermove',e=>{if(!drag)return;const r=st.getBoundingClientRect();set((e.clientX-r.left)/r.width)});st.addEventListener('pointerup',()=>drag=false);
+const MB=$('.cd-badge',root);function badge(au){MB.innerHTML=au?`<span class="dot"></span>${L5({en:'Auto demo · click to edit',sc:'自动演示中 · 点击即可编辑',zh:'自動示範中 · 點一下即可編輯',ja:'自動デモ中 · クリックで編集',ko:'자동 데모 중 · 클릭하면 편집'})}`:`<span>✎ ${L5({en:'Edit mode · paused',sc:'编辑模式 · 已暂停',zh:'編輯模式 · 已暫停',ja:'編集モード · 一時停止中',ko:'편집 모드 · 일시정지됨'})}</span><button type="button" class="pg-play">▶ ${L5({en:'Play',sc:'播放',zh:'播放',ja:'再生',ko:'재생'})}</button>`;MB.classList.toggle('auto',au);const x=$('.pg-play',MB);x&&(x.onclick=e=>{e.stopPropagation();touched=false;badge(true);demo()})}
+MB.addEventListener('pointerdown',e=>e.stopPropagation());
+function user(){if(touched)return;touched=true;clearInterval(tm);badge(false)}
+function demo(){clearInterval(tm);const t0=performance.now();let last=-1;tm=setInterval(()=>{if(touched)return clearInterval(tm);const t=(performance.now()-t0)/1000,i=Math.floor(t/3.2),seq=[...G.light.k.map(x=>['light',x[0]]),...G.pose.k.map(x=>['pose',x[0]])],c=seq[i%seq.length];
+ if(i!==last){last=i;g=c[0];k=c[1];ui();img()}set(.5+.38*Math.sin(t*1.9))},40)}
+ui();img();set(.5);badge(true);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;demo()}},{threshold:.3}).observe(root)}})();
+(()=>{const root=$('#igc');if(!root)return;const I=V+'ig/';const L5=o=>`<span class="en">${o.en}</span><span class="sc">${o.sc}</span><span class="zh">${o.zh}</span><span class="ja">${o.ja}</span><span class="ko">${o.ko}</span>`;
+const K=[['cafe',{en:'Café',sc:'咖啡厅',zh:'咖啡廳',ja:'カフェ',ko:'카페'}],['night',{en:'Night street',sc:'夜晚街头',zh:'夜晚街頭',ja:'夜の街',ko:'밤거리'}],['park',{en:'Park',sc:'公园',zh:'公園',ja:'公園',ko:'공원'}],['party',{en:'Party',sc:'派对',zh:'派對',ja:'パーティー',ko:'파티'}]];
+let k='cafe',touched=false,tm=null;
+function ui(){$('.ig-pills',root).innerHTML=K.map(([id,v])=>`<button data-k="${id}" aria-pressed="${id===k}">${L5(v)}</button>`).join('');$$('.ig-pills button',root).forEach(x=>x.onclick=()=>{touched=true;clearInterval(tm);k=x.dataset.k;ui();img()})}
+function img(){$('.ig-in',root).src=`${I}${k}_in.webp`;$('.ig-bare',root).src=`${I}${k}_bare.webp`;$('.ig-layer',root).src=`${I}${k}_layer.webp`}
+ui();img();if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let s=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!s){s=true;let i=0;tm=setInterval(()=>{if(touched)return clearInterval(tm);i++;k=K[i%K.length][0];ui();img()},3200)}},{threshold:.3}).observe(root)}})();
 })();

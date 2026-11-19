@@ -358,3 +358,36 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .gp-stage em{position:absolute;top:12px;font-style:normal;font-size:12px;font-weight:600;background:#fff;border-radius:99px;padding:3px 10px;box-shadow:0 2px 8px rgba(30,26,30,.15)}
 .gp-stage em.l{left:12px}.gp-stage em.r{right:12px}
 @media (max-width:760px){.gp-body{grid-template-columns:1fr}.gp-ref{display:flex;gap:10px;align-items:center}.gp-ref img{width:90px}}
+
+/* ---- layer lab ---- */
+.lab{border:1px solid var(--line);border-radius:var(--r);padding:18px;margin:0 0 34px;background:var(--card)}
+.lb-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.lb-faces{display:flex;gap:6px;align-items:center;margin-right:10px}.lb-faces span{font-size:12.5px;font-weight:600;color:var(--ink2)}
+.lb-faces button{width:40px;height:40px;border-radius:50%;overflow:hidden;padding:0;border:2px solid transparent}.lb-faces button img{width:100%;height:100%;object-fit:cover}.lb-faces button[aria-pressed=true]{border-color:var(--ink)}
+.lb-btn{border:1px solid var(--line2);border-radius:99px;padding:7px 14px;font-size:13px;font-weight:600;background:#fff}.lb-btn[aria-pressed=true]{background:var(--ink);color:#fff}.lb-btn[disabled]{opacity:.4}
+.lb-body{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:22px;align-items:start}
+.lb-views{display:grid;grid-template-columns:1fr;gap:10px}.lab.lb-cmpmode .lb-views{grid-template-columns:repeat(3,1fr)}
+.lb-v{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:#eee}.lb-v canvas{width:100%;height:100%;display:block}
+.lb-va,.lb-vd{display:none}.lab.lb-cmpmode .lb-va,.lab.lb-cmpmode .lb-vd{display:block}
+.lb-v em{position:absolute;top:8px;left:8px;font-style:normal;font-size:12px;font-weight:700;background:#fff;border-radius:99px;padding:2px 9px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.lb-v .pg-mode{position:absolute;left:8px;top:auto;bottom:8px;right:auto}.lab.lb-cmpmode .lb-v .pg-mode{display:none}
+.lab.roll .lb-cv{animation:lbroll .5s var(--ease)}@keyframes lbroll{0%{transform:scale(.97);filter:brightness(1.15)}100%{transform:none}}
+.lb-p{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-bottom:8px}.lb-p b{width:100%;font-size:12.5px;color:var(--ink2)}
+.lb-p button{width:40px;height:40px;border-radius:8px;overflow:hidden;padding:0;border:2px solid transparent}.lb-p button img{width:100%;height:100%;object-fit:cover}.lb-p button[aria-pressed=true]{border-color:var(--rose)}
+.lb-recipe,.lb-dlist{border-top:1px solid var(--line);padding-top:10px;margin-top:6px}.lb-recipe h4,.lb-dlist h4{margin:0 0 8px;font-size:13.5px}
+.lb-dlist{display:none}.lab.lb-cmpmode .lb-dlist{display:block}
+.lb-r{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px;font-size:12.5px}.lb-r b{width:100%;font-size:12px;color:var(--mute);font-weight:600}
+.lb-r img{width:26px;height:26px;border-radius:6px}.lb-r i{width:26px;height:26px;border-radius:6px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}.lb-r code{font:600 12px var(--mono)}
+.lb-r button{border:1px solid var(--line2);border-radius:99px;padding:2px 9px;font-size:11.5px}
+.lb-r .bar{flex:1;height:8px;border-radius:4px;background:var(--line);overflow:hidden;min-width:80px}.lb-r .bar i{display:block;height:100%;background:var(--rose);border-radius:0;box-shadow:none}
+@media (max-width:900px){.lb-body{grid-template-columns:1fr}}
+
+/* ---- lighting / pose and selfie cards ---- */
+.cond,.igc{border:1px solid var(--line);border-radius:var(--r);padding:18px;margin:26px 0 8px;background:var(--card)}
+.cd-tabs{display:inline-flex;margin-bottom:10px}.cd-tabs button{padding:7px 14px;font-size:13px}
+.cd-pills,.ig-pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.cd-pills button,.ig-pills button{border:1px solid var(--line2);border-radius:99px;padding:5px 12px;font-size:12.5px;font-weight:600;background:#fff}
+.cd-pills button[aria-pressed=true],.ig-pills button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cd-stage{aspect-ratio:1;max-width:520px;margin:0 auto}.cd-stage .pg-mode{position:absolute;left:10px;top:auto;bottom:10px;right:auto}
+.ig-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.ig-row figure{margin:0}.ig-row img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;display:block;background:#eee}
+.ig-row figure.ck img{background:repeating-conic-gradient(#e9e6e8 0 25%,#f7f5f6 0 50%) 0 0/20px 20px}
+.ig-row figcaption{font-size:12.5px;color:var(--ink2);margin-top:5px;text-align:center}
