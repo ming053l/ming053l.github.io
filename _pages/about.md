@@ -141,6 +141,35 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 </div>
 </div>
 
+<div class="paper-box" data-sort="99999" id="paper-flashfocus">
+<div class="paper-box-image">
+<div class="pv" data-pv>
+<video id="flashrefocus-home-preview" width="854" height="570" muted loop playsinline preload="none" aria-label="FlashReFocus montage, with the input shown in the lower-left corner of every frame: a defocused cafe photo is restored once and then refocused, the aperture opens behind a dog in a forest, a depth swap brings the woman behind a horse into focus, focus is pulled from a woman's hair to the hills in a video, and a SAM mask, shown in green on the input, keeps a dancer sharp in a stage video">
+<source src="images/web/flashrefocus-preview.mp4?v=7" type="video/mp4"/>
+<a href="https://ming053l.github.io/FlashReFocus/">View FlashReFocus</a>
+</video>
+<picture><source srcset="images/web/flashrefocus-preview.avif?v=7" type="image/avif"/><img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=7" width="854" height="570" alt="" decoding="async" loading="lazy"/></picture>
+</div>
+</div>
+<div class="paper-box-text">
+<div class="paper-venue">Preprint</div>
+<h4>FlashReFocus: Interactive Image Refocusing in Seconds</h4>
+<p class="paper-authors"><a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>*, <strong>Chia-Ming Lee*</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
+<p class="paper-note">* Equal contribution.</p>
+
+<p class="paper-summary">Enables interactive refocusing and editing of a single photograph or video, supporting a broad range of effects: moving the focal point, changing the aperture, editing the depth map, tilt-shift, keeping chosen people sharp with a mask, and tracking a subject across video frames. Each edit is rendered in about half a second, which makes it practical to compare settings and refine the desired look.</p>
+<div class="links">
+<a href="https://arxiv.org/pdf/2610.23297" rel="noopener" target="_blank">Paper</a>
+<a href="https://arxiv.org/abs/2610.23297" rel="noopener" target="_blank">arXiv</a>
+<a href="https://github.com/ming053l/FlashReFocus" rel="noopener" target="_blank">GitHub</a>
+<a href="https://ming053l.github.io/FlashReFocus/" rel="noopener" target="_blank">Project Page</a>
+<a href="https://youtu.be/g032M7moWQ4" rel="noopener" target="_blank">Video</a>
+<a href="https://huggingface.co/spaces/ming0531/FlashReFocus" rel="noopener" target="_blank">Demo</a>
+<a href="https://huggingface.co/datasets/ming0531/3CReal" rel="noopener" target="_blank">Dataset</a>
+</div>
+</div>
+</div>
+
 <div class="paper-box" data-sort="99999" id="paper-doctor-trigger">
 <div class="paper-box-image">
 <div class="pv" data-pv>
@@ -164,35 +193,6 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://ming053l.github.io/Doctor-Trigger/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/qtT09O2Ib1U" rel="noopener" target="_blank">Video</a>
 <a href="https://youtu.be/F8ZLMuwN4hc" rel="noopener" target="_blank">Video (中文)</a>
-</div>
-</div>
-</div>
-
-<div class="paper-box" data-sort="99999" id="paper-flashfocus">
-<div class="paper-box-image">
-<div class="pv" data-pv>
-<video id="flashrefocus-home-preview" width="854" height="570" muted loop playsinline preload="none" aria-label="FlashReFocus montage, with the input shown in the lower-left corner of every frame: a defocused cafe photo is restored once and then refocused, the aperture opens behind a dog in a forest, a depth swap brings the woman behind a horse into focus, focus is pulled from a woman's hair to the hills in a video, and a SAM mask, shown in green on the input, keeps a dancer sharp in a stage video">
-<source src="images/web/flashrefocus-preview.mp4?v=6" type="video/mp4"/>
-<a href="https://ming053l.github.io/FlashReFocus/">View FlashReFocus</a>
-</video>
-<picture><source srcset="images/web/flashrefocus-preview.avif?v=4" type="image/avif"/><img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=4" width="854" height="570" alt="" decoding="async" loading="lazy"/></picture>
-</div>
-</div>
-<div class="paper-box-text">
-<div class="paper-venue">Preprint</div>
-<h4>FlashReFocus: Interactive Image Refocusing in Seconds</h4>
-<p class="paper-authors"><a href="https://chingheng0808.github.io/" rel="noopener" target="_blank">Ching-Heng Cheng</a>*, <strong>Chia-Ming Lee*</strong>, <a href="https://mingching.github.io/" rel="noopener" target="_blank">Ming-Ching Chang</a>, <a href="https://scholar.google.com/citations?user=gMBvzGoAAAAJ&hl=en" rel="noopener" target="_blank">Xin Li</a>, <a href="https://cchsu.info/" rel="noopener" target="_blank">Chih-Chung Hsu</a></p>
-<p class="paper-note">* Equal contribution.</p>
-
-<p class="paper-summary">Enables interactive refocusing of a single photograph, allowing users to explore focal points, aperture settings, and depth-of-field effects with responsive visual feedback. After a one-time restoration step, a lightweight renderer updates each focal edit in about half a second, making it practical to compare and refine the desired look.</p>
-<div class="links">
-<a href="https://arxiv.org/pdf/2610.23297" rel="noopener" target="_blank">Paper</a>
-<a href="https://arxiv.org/abs/2610.23297" rel="noopener" target="_blank">arXiv</a>
-<a href="https://github.com/ming053l/FlashReFocus" rel="noopener" target="_blank">GitHub</a>
-<a href="https://ming053l.github.io/FlashReFocus/" rel="noopener" target="_blank">Project Page</a>
-<a href="https://youtu.be/g032M7moWQ4" rel="noopener" target="_blank">Video</a>
-<a href="https://huggingface.co/spaces/ming0531/FlashReFocus" rel="noopener" target="_blank">Demo</a>
-<a href="https://huggingface.co/datasets/ming0531/3CReal" rel="noopener" target="_blank">Dataset</a>
 </div>
 </div>
 </div>
