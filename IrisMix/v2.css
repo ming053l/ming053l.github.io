@@ -391,3 +391,5 @@ dialog{border:0;background:rgba(250,248,249,.97);color:var(--ink);width:100vw;he
 .ig-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.ig-row figure{margin:0}.ig-row img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;display:block;background:#eee}
 .ig-row figure.ck img{background:repeating-conic-gradient(#e9e6e8 0 25%,#f7f5f6 0 50%) 0 0/20px 20px}
 .ig-row figcaption{font-size:12.5px;color:var(--ink2);margin-top:5px;text-align:center}
+
+.ig-credit{font-size:12px;color:var(--mute);margin:10px 0 0;text-align:right}.ig-credit a{color:var(--ink2)}
