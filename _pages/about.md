@@ -145,10 +145,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="flashrefocus-home-preview" width="854" height="570" muted loop playsinline preload="none" aria-label="FlashReFocus montage, with the input shown in the lower-left corner of every frame: a defocused cafe photo is restored once and then refocused, the aperture opens behind a dog in a forest, a depth swap brings the woman behind a horse into focus, focus is pulled from a woman's hair to the hills in a video, and a SAM 3 mask, shown in green on the input, keeps the lead singer sharp in a 4K stage video">
-<source src="images/web/flashrefocus-preview.mp4?v=9" type="video/mp4"/>
+<source src="images/web/flashrefocus-preview.mp4?v=10" type="video/mp4"/>
 <a href="https://ming053l.github.io/FlashReFocus/">View FlashReFocus</a>
 </video>
-<picture><source srcset="images/web/flashrefocus-preview.avif?v=9" type="image/avif"/><img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=9" width="854" height="570" alt="" decoding="async" loading="lazy"/></picture>
+<picture><source srcset="images/web/flashrefocus-preview.avif?v=10" type="image/avif"/><img class="pv-poster" src="images/web/flashrefocus-preview.webp?v=10" width="854" height="570" alt="" decoding="async" loading="lazy"/></picture>
 </div>
 </div>
 <div class="paper-box-text">
