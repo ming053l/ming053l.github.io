@@ -136,7 +136,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
-<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset<span id="swr-downloads"> (19,012 downloads)</span></a>
+<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset<span id="swr-downloads" class="hf-downloads" data-hf-dataset="ming0531/SWR-Bench"> (19,012 downloads)</span></a>
 </div>
 </div>
 </div>
@@ -167,7 +167,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://huggingface.co/spaces/ming0531/FlashReFocus" rel="noopener" target="_blank">Demo</a>
 <a href="https://huggingface.co/spaces/ming0531/FlashReFocus-CPU" rel="noopener" target="_blank">CPU Demo</a>
 <a href="https://huggingface.co/spaces/ming0531/FlashReFocus-Video" rel="noopener" target="_blank">Video Demo</a>
-<a href="https://huggingface.co/datasets/ming0531/3CReal" rel="noopener" target="_blank">Dataset</a>
+<a href="https://huggingface.co/datasets/ming0531/3CReal" rel="noopener" target="_blank">Dataset<span class="hf-downloads" data-hf-dataset="ming0531/3CReal"> (265 downloads)</span></a>
 </div>
 </div>
 </div>
@@ -410,19 +410,21 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <script>
 (function () {
-  var count = document.getElementById('swr-downloads');
-  if (!count) return;
-  fetch('https://huggingface.co/api/datasets/ming0531/SWR-Bench?expand[]=downloadsAllTime')
-    .then(function (response) {
-      if (!response.ok) throw new Error('Dataset statistics unavailable');
-      return response.json();
-    })
-    .then(function (data) {
-      var total = data.downloadsAllTime;
-      if (Number.isSafeInteger(total) && total >= 0) {
-        count.textContent = ' (' + total.toLocaleString('en-US') + (total === 1 ? ' download)' : ' downloads)');
-      }
-    })
-    .catch(function () {});
+  var counts = document.querySelectorAll('.hf-downloads[data-hf-dataset]');
+  Array.prototype.forEach.call(counts, function (count) {
+    var repo = count.getAttribute('data-hf-dataset');
+    fetch('https://huggingface.co/api/datasets/' + repo + '?expand[]=downloadsAllTime')
+      .then(function (response) {
+        if (!response.ok) throw new Error('Dataset statistics unavailable');
+        return response.json();
+      })
+      .then(function (data) {
+        var total = data.downloadsAllTime;
+        if (Number.isSafeInteger(total) && total >= 0) {
+          count.textContent = ' (' + total.toLocaleString('en-US') + (total === 1 ? ' download)' : ' downloads)');
+        }
+      })
+      .catch(function () {});
+  });
 })();
 </script>
