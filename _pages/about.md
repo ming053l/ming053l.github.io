@@ -68,10 +68,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="irismix-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="IrisMix as a two-page comic: a makeup photo is split into its bare face and an editable makeup layer; a new face takes the layer part by part and is rendered in one step, and the lip colour of the rendered layer is edited without rendering again; then the same layer is rendered on three more faces and recoloured for each">
-<source src="images/web/irismix-home.mp4?v=6" type="video/mp4"/>
-<a href="images/web/irismix-teaser.mp4?v=5">View the IrisMix video</a>
+<source src="images/web/irismix-home.mp4?v=7" type="video/mp4"/>
+<a href="images/web/irismix-teaser.mp4?v=6">View the IrisMix video</a>
 </video>
-<picture><source srcset="images/web/irismix-home.avif?v=6" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=6" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
+<picture><source srcset="images/web/irismix-home.avif?v=7" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=7" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
 <script>/* top preview: start the lite file buffering while the page is still parsing; same rules as previews.js, which later upgrades it to the full file on fast links */(function(v,c){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,m=c.saveData||/2g$/.test(c.effectiveType||'');if(!r||m||/^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(m||r)return;v.preload='auto';v.load()})(document.getElementById('irismix-home-preview'),navigator.connection||{})</script>
 </div>
@@ -84,7 +84,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Paper (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Code (coming soon)</a>
 <a href="{{ "/IrisMix/" | relative_url }}">Project Page</a>
-<a href="images/web/irismix-teaser.mp4?v=5" rel="noopener" target="_blank">Video</a>
+<a href="images/web/irismix-teaser.mp4?v=6" rel="noopener" target="_blank">Video</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Demo (coming soon)</a>
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Dataset (coming soon)</a>
 <a href="{{ "/IrisMix-demo/" | relative_url }}" target="_self">線上體驗 ↗</a>
