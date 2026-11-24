@@ -68,10 +68,10 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box-image">
 <div class="pv" data-pv>
 <video id="irismix-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="IrisMix as a two-page comic: a makeup photo is split into its bare face and an editable makeup layer; a new face takes the layer part by part and is rendered in one step, and the lip colour of the rendered layer is edited without rendering again; then the same layer is rendered on three more faces and recoloured for each">
-<source src="images/web/irismix-home.mp4?v=8" type="video/mp4"/>
+<source src="images/web/irismix-home.mp4?v=9" type="video/mp4"/>
 <a href="images/web/irismix-teaser.mp4?v=6">View the IrisMix video</a>
 </video>
-<picture><source srcset="images/web/irismix-home.avif?v=8" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=8" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
+<picture><source srcset="images/web/irismix-home.avif?v=9" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=9" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
 <script>/* top preview: start the lite file buffering while the page is still parsing; same rules as previews.js, which later upgrades it to the full file on fast links */(function(v,c){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,m=c.saveData||/2g$/.test(c.effectiveType||'');if(!r||m||/^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(m||r)return;v.preload='auto';v.load()})(document.getElementById('irismix-home-preview'),navigator.connection||{})</script>
 </div>
