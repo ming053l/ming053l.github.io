@@ -67,11 +67,11 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="paper-box" data-sort="99999" id="paper-irismix">
 <div class="paper-box-image">
 <div class="pv" data-pv>
-<video id="irismix-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="IrisMix as a four-panel comic: a makeup photo is split into its bare face and an editable makeup layer; a new face takes the layer part by part and is rendered in one step; then the lip colour of the rendered layer is edited without rendering again">
-<source src="images/web/irismix-home.mp4?v=4" type="video/mp4"/>
+<video id="irismix-home-preview" width="854" height="480" muted loop playsinline preload="none" aria-label="IrisMix as a two-page comic: a makeup photo is split into its bare face and an editable makeup layer; a new face takes the layer part by part and is rendered in one step, and the lip colour of the rendered layer is edited without rendering again; then the same layer is rendered on three more faces">
+<source src="images/web/irismix-home.mp4?v=5" type="video/mp4"/>
 <a href="images/web/irismix-teaser.mp4?v=5">View the IrisMix video</a>
 </video>
-<picture><source srcset="images/web/irismix-home.avif?v=4" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=4" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
+<picture><source srcset="images/web/irismix-home.avif?v=5" type="image/avif"/><img class="pv-poster" src="images/web/irismix-home.webp?v=5" width="854" height="480" alt="" decoding="async" fetchpriority="high"/></picture>
 </div>
 <script>/* top preview: start the lite file buffering while the page is still parsing; same rules as previews.js, which later upgrades it to the full file on fast links */(function(v,c){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,m=c.saveData||/2g$/.test(c.effectiveType||'');if(!r||m||/^3g$/.test(c.effectiveType||'')||(c.downlink>0&&c.downlink<3))v.src=v.querySelector('source').getAttribute('src').replace(/\.mp4(?=\?|$)/,'-lite.mp4');if(m||r)return;v.preload='auto';v.load()})(document.getElementById('irismix-home-preview'),navigator.connection||{})</script>
 </div>
