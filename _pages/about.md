@@ -136,7 +136,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="https://github.com/ming053l/Spectral-World-Renderer" rel="noopener" target="_blank">GitHub</a>
 <a href="https://ming053l.github.io/Spectral-World-Renderer/" rel="noopener" target="_blank">Project Page</a>
 <a href="https://youtu.be/3FrSH7MaSjU" rel="noopener" target="_blank">Video</a>
-<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset<span id="swr-downloads"> (2521 download)</span></a>
+<a href="https://huggingface.co/datasets/ming0531/SWR-Bench" rel="noopener" target="_blank">Dataset<span id="swr-downloads"> (19,012 downloads)</span></a>
 </div>
 </div>
 </div>
@@ -412,14 +412,15 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 (function () {
   var count = document.getElementById('swr-downloads');
   if (!count) return;
-  fetch('https://huggingface.co/api/datasets/ming0531/SWR-Bench')
+  fetch('https://huggingface.co/api/datasets/ming0531/SWR-Bench?expand[]=downloadsAllTime')
     .then(function (response) {
       if (!response.ok) throw new Error('Dataset statistics unavailable');
       return response.json();
     })
     .then(function (data) {
-      if (Number.isSafeInteger(data.downloads) && data.downloads >= 0) {
-        count.textContent = ' (' + data.downloads + ' download)';
+      var total = data.downloadsAllTime;
+      if (Number.isSafeInteger(total) && total >= 0) {
+        count.textContent = ' (' + total.toLocaleString('en-US') + (total === 1 ? ' download)' : ' downloads)');
       }
     })
     .catch(function () {});
