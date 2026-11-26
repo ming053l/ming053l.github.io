@@ -26,7 +26,7 @@ I am an incoming Ph.D. student at the University at Albany, State University of 
 <p>My research goal is to advance <strong>Reliable and Efficient Multimodal Intelligence</strong>, developing systems that integrate complementary information to build a faithful understanding of the world from imperfect observations. Building on my work in visual reconstruction and computational photography, I aim to extend this perspective across modalities: recovering missing information, assessing whether the resulting representations can be trusted, and making that process computationally practical. These challenges connect <strong>perception, trust, and efficiency</strong> within a common goal—to develop intelligent systems that remain useful and dependable when information is incomplete and computational resources are limited. Full list of publications <a href="https://scholar.google.com/citations?user=koBVaaUAAAAJ" target="_blank" rel="noopener">here</a>.</p>
 
 <div class="profile-actions">
-<a href="{{ '/files/Chia-Ming_Lee_CV.pdf' | relative_url }}?v=20261126"
+<a href="{{ '/files/Chia-Ming_Lee_CV.pdf' | relative_url }}?v=20261126b"
    style="color:#0B3C8A;"
    target="_blank" rel="noopener">Curriculum vitae ↗</a>
 <span>Updated Nov 26, 2026</span>
