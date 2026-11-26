@@ -86,9 +86,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <a href="{{ "/IrisMix/" | relative_url }}">Project Page</a>
 <a href="images/web/irismix-teaser.mp4?v=9" rel="noopener" target="_blank">Video</a>
 <a href="https://huggingface.co/spaces/ming0531/IrisMix" rel="noopener" target="_blank">Demo</a>
-<a href="https://huggingface.co/ming0531/IrisMix" rel="noopener" target="_blank">Weights</a>
 <a href="https://huggingface.co/datasets/ming0531/LayerBeauty" rel="noopener" target="_blank">Dataset<span class="hf-downloads" data-hf-dataset="ming0531/LayerBeauty"></span></a>
-<a href="{{ "/IrisMix-demo/" | relative_url }}" target="_self">線上體驗 ↗</a>
 </div>
 </div>
 </div>
