@@ -82,11 +82,12 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <p class="paper-summary">IrisMix keeps makeup as explicit layers: a look is composed from parts of several references, rendered onto the user's photo in one step while keeping identity and background, and returned as a layer, so color, strength and placement stay editable after rendering. It also removes the makeup a person already wears, generalizes to real-world photographs, and edits several faces in a group photo over multiple rounds, enabling interactive and personalized makeup design.</p>
 <div class="links">
 <a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Paper (coming soon)</a>
-<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Code (coming soon)</a>
+<a href="https://github.com/ming053l/IrisMix" rel="noopener" target="_blank">GitHub</a>
 <a href="{{ "/IrisMix/" | relative_url }}">Project Page</a>
 <a href="images/web/irismix-teaser.mp4?v=9" rel="noopener" target="_blank">Video</a>
-<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Demo (coming soon)</a>
-<a aria-disabled="true" title="Coming soon" style="opacity:.55;pointer-events:none;cursor:default">Dataset (coming soon)</a>
+<a href="https://huggingface.co/spaces/ming0531/IrisMix" rel="noopener" target="_blank">Demo</a>
+<a href="https://huggingface.co/ming0531/IrisMix" rel="noopener" target="_blank">Weights</a>
+<a href="https://huggingface.co/datasets/ming0531/LayerBeauty" rel="noopener" target="_blank">Dataset<span class="hf-downloads" data-hf-dataset="ming0531/LayerBeauty"></span></a>
 <a href="{{ "/IrisMix-demo/" | relative_url }}" target="_self">線上體驗 ↗</a>
 </div>
 </div>
