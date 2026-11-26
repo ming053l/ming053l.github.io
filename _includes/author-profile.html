@@ -115,6 +115,9 @@
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a></li>
       {% endif %}
+      {% if author.openreview %}
+        <li><a href="{{ author.openreview }}"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> OpenReview</a></li>
+      {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}">Impactstory</a></li>
       {% endif %}
@@ -131,6 +134,7 @@
       {% if author.github %}<a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
       {% if author.googlescholar %}<a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>{% endif %}
       {% if author.orcid %}<a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a>{% endif %}
+      {% if author.openreview %}<a href="{{ author.openreview }}"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> OpenReview</a>{% endif %}
     </div>
   </div>
 </div>
