@@ -405,39 +405,58 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 
 <h2 id="awards">Awards</h2>
 
-<div id="awards-list" style="padding: 10px 5px; border-left: 2px solid #eee; margin-left: 10px;">
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">CVPR 2026</span><span style="margin-left: 15px;"><b>Computational Transparency Award</b> for ELSA (CVPR Findings 2026).</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">NeurIPS 2026</span><span style="margin-left: 15px;"><b>Distinguished Paper Award</b>, Workshop on Foundation Model Security (FLMSec), for ReplayMark.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ECCV 2026</span><span style="margin-left: 15px;"><b>2nd place</b>, SEE-600K Challenge: Event-Guided Brightness Adjustment, Event-Based Multimodal Vision (EBMV) Workshop.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ECCV 2026</span><span style="margin-left: 15px;"><b>4th place</b>, SEE-600K Challenge: Event-Guided Brightness Adjustment, Event-Based Multimodal Vision (EBMV) Workshop.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ECCV 2026</span><span style="margin-left: 15px;"><b>2nd place</b>, Event-Guided Segmentation Challenge, Event-Based Multimodal Vision (EBMV) Workshop.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">IJCAI 2026</span><span style="margin-left: 15px;"><b>4th place</b>, DDL2.0 Deepfake Localization Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICASSP 2025</span><span style="margin-left: 15px;"><b>3rd place (3/136)</b>, Hyper-Object Challenge, Spectral Reconstruction from Mosaic Images.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICASSP 2025</span><span style="margin-left: 15px;"><b>3rd place (3/274)</b>, Hyper-Object Challenge, Joint Spatial and Spectral Super-Resolution.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">BMVC 2025</span><span style="margin-left: 15px;"><b>4th place (4/418)</b>, Data-Centric Land Cover Classification Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">TIE Award 2025</span><span style="margin-left: 15px;"><b>The Tech Innovation Excellence Award</b> (Spotlight, Top 10%).</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">CVGIP 2025</span><span style="margin-left: 15px;"><b>Best Paper Award</b>, Conference on Computer Vision, Graphics, and Image Processing.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">IPPR 2025</span><span style="margin-left: 15px;"><b>Honorable Mention Award for Master&#x27;s Thesis</b>, The Chinese Image Processing and Pattern Recognition Society.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ACMMM 2025</span><span style="margin-left: 15px;"><b>Winner</b>, Soccer Track Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICCV 2025</span><span style="margin-left: 15px;"><b>Winner</b>, Multi-source COVID-19 Detection Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ACMMM 2025</span><span style="margin-left: 15px;"><b>5th place</b>, Social Media Popularity Prediction Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICRA 2025</span><span style="margin-left: 15px;"><b>Winner</b>, TreeScope Lidar-based Tree Diameter Estimation Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">CVPR 2025</span><span style="margin-left: 15px;"><b>Winner (1/304)</b>, NTIRE Single Image Shadow Removal Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">WACV 2024</span><span style="margin-left: 15px;"><b>Runner-up</b>, USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">TIE Award 2024</span><span style="margin-left: 15px;"><b>The Tech Innovation Excellence Award</b></span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICPR 2024</span><span style="margin-left: 15px;"><b>Winner</b>, Beyond Visible Spectrum: AI for Agriculture Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ACMMM 2024</span><span style="margin-left: 15px;"><b>Top Performance Award</b>, Social Media Popularity Prediction Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">CVPR 2024</span><span style="margin-left: 15px;"><b>9th place (9/288)</b>, AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">CVPR 2024</span><span style="margin-left: 15px;"><b>5th place (5/195)</b>, NTIRE 2024 Image Super-Resolution (x4).</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">CVPR 2024</span><span style="margin-left: 15px;"><b>3rd place (3/21)</b>, COVID-19 Detection Challenge, Domain Adaptation, Explainability and Fairness in AI for Medical Image Analysis.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICIP 2024</span><span style="margin-left: 15px;"><b>Runner-up (2/1200+)</b>, Auto-WCEBleedGen Challenge Version V2.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">2024</span><span style="margin-left: 15px;"><b>Ministry of Education Presidential Education Award Candidate</b> in NCKU.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">WACV 2024</span><span style="margin-left: 15px;"><b>6th place (6/195)</b>, SeaDronesSee Multi-Object Tracking and Re-Identification Challenge, Workshop on Maritime Computer Vision (MaCVi).</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">MMAsia 2023</span><span style="margin-left: 15px;"><b>5th place (5/195)</b>, Embedded AI Object Detection Model Design, PAIR-LITEON Competition.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">SAS Hackathon 2023</span><span style="margin-left: 15px;"><b>Gold Medal Award (1/150+)</b></span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ACMMM 2023</span><span style="margin-left: 15px;"><b>Top Paper Award (3/700+)</b>, Social Media Popularity Prediction Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICCV 2023</span><span style="margin-left: 15px;"><b>Jury Prize (1/176)</b>, Visual Inductive Priors Workshop on Instance Segmentation Challenge.</span></div>
-<div class="award-item" style="margin-bottom: 10px; display: flex; align-items: flex-start;"><span style="flex: 0 0 140px; color: #666; font-size: 0.92em; font-family: monospace;">ICASSP 2023</span><span style="margin-left: 15px;"><b>Winner (1/18)</b>, COV19 Detection Challenge, AI-enabled Medical Image Analysis Workshop.</span></div>
+<style>
+.aw-year{display:flex;align-items:center;gap:12px;margin:22px 0 10px;font-weight:700;font-size:1.05em;color:#1f2a37}
+.aw-year:after{content:"";flex:1;height:1px;background:#e5e7eb}
+.aw-row{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:baseline;padding:7px 0;border-bottom:1px dashed #eef0f3}
+.aw-row:last-child{border-bottom:0}
+.aw-venue{font-size:.82em;font-weight:600;color:#0B3C8A;background:#eef3fb;border-radius:6px;padding:2px 8px;justify-self:start;white-space:nowrap}
+.aw-text{font-size:.95em;line-height:1.5;color:#4b5563}
+.aw-badge{display:inline-block;font-size:.85em;font-weight:700;border-radius:999px;padding:1px 10px;margin-right:6px;color:#1f2a37}
+.aw-award{background:#0B3C8A;color:#fff}
+.aw-gold{background:#f6d365}
+.aw-silver{background:#dfe3e8}
+.aw-bronze{background:#ecc2a0}
+.aw-place{background:#f1f3f5;color:#4b5563}
+@media (max-width:640px){.aw-row{grid-template-columns:1fr;gap:4px}}
+</style>
+<div id="awards-list">
+<div class="aw-year">2026</div>
+<div class="aw-row"><span class="aw-venue">CVPR</span><span class="aw-text"><span class="aw-badge aw-award">Computational Transparency Award</span> for ELSA (CVPR Findings 2026)</span></div>
+<div class="aw-row"><span class="aw-venue">NeurIPS</span><span class="aw-text"><span class="aw-badge aw-award">Distinguished Paper Award</span> Workshop on Foundation Model Security (FLMSec), for ReplayMark</span></div>
+<div class="aw-row"><span class="aw-venue">ECCV</span><span class="aw-text"><span class="aw-badge aw-silver">2nd place</span> SEE-600K Challenge: Event-Guided Brightness Adjustment, Event-Based Multimodal Vision (EBMV) Workshop</span></div>
+<div class="aw-row"><span class="aw-venue">ECCV</span><span class="aw-text"><span class="aw-badge aw-place">4th place</span> SEE-600K Challenge: Event-Guided Brightness Adjustment, EBMV Workshop</span></div>
+<div class="aw-row"><span class="aw-venue">ECCV</span><span class="aw-text"><span class="aw-badge aw-silver">2nd place</span> Event-Guided Segmentation Challenge, EBMV Workshop</span></div>
+<div class="aw-row"><span class="aw-venue">IJCAI</span><span class="aw-text"><span class="aw-badge aw-place">4th place</span> DDL2.0 Deepfake Localization Challenge</span></div>
+<div class="aw-year">2025</div>
+<div class="aw-row"><span class="aw-venue">CVPR</span><span class="aw-text"><span class="aw-badge aw-gold">Winner (1/304)</span> NTIRE Single Image Shadow Removal Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">ICCV</span><span class="aw-text"><span class="aw-badge aw-gold">Winner</span> Multi-source COVID-19 Detection Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">ACM MM</span><span class="aw-text"><span class="aw-badge aw-gold">Winner</span> Soccer Track Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">ICRA</span><span class="aw-text"><span class="aw-badge aw-gold">Winner</span> TreeScope Lidar-based Tree Diameter Estimation Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">CVGIP</span><span class="aw-text"><span class="aw-badge aw-award">Best Paper Award</span> Conference on Computer Vision, Graphics, and Image Processing</span></div>
+<div class="aw-row"><span class="aw-venue">IPPR</span><span class="aw-text"><span class="aw-badge aw-award">Honorable Mention, Master&#x27;s Thesis Award</span> The Chinese Image Processing and Pattern Recognition Society</span></div>
+<div class="aw-row"><span class="aw-venue">TIE Award</span><span class="aw-text"><span class="aw-badge aw-award">Tech Innovation Excellence Award</span> Spotlight, top 10%</span></div>
+<div class="aw-row"><span class="aw-venue">ICASSP</span><span class="aw-text"><span class="aw-badge aw-bronze">3rd place (3/136)</span> Hyper-Object Challenge, Spectral Reconstruction from Mosaic Images</span></div>
+<div class="aw-row"><span class="aw-venue">ICASSP</span><span class="aw-text"><span class="aw-badge aw-bronze">3rd place (3/274)</span> Hyper-Object Challenge, Joint Spatial and Spectral Super-Resolution</span></div>
+<div class="aw-row"><span class="aw-venue">BMVC</span><span class="aw-text"><span class="aw-badge aw-place">4th place (4/418)</span> Data-Centric Land Cover Classification Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">ACM MM</span><span class="aw-text"><span class="aw-badge aw-place">5th place</span> Social Media Popularity Prediction Challenge</span></div>
+<div class="aw-year">2024</div>
+<div class="aw-row"><span class="aw-venue">ICPR</span><span class="aw-text"><span class="aw-badge aw-gold">Winner</span> Beyond Visible Spectrum: AI for Agriculture Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">ACM MM</span><span class="aw-text"><span class="aw-badge aw-award">Top Performance Award</span> Social Media Popularity Prediction Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">TIE Award</span><span class="aw-text"><span class="aw-badge aw-award">Tech Innovation Excellence Award</span></span></div>
+<div class="aw-row"><span class="aw-venue">NCKU</span><span class="aw-text"><span class="aw-badge aw-award">Presidential Education Award Candidate</span> Ministry of Education</span></div>
+<div class="aw-row"><span class="aw-venue">ICIP</span><span class="aw-text"><span class="aw-badge aw-silver">Runner-up (2/1200+)</span> Auto-WCEBleedGen Challenge Version V2</span></div>
+<div class="aw-row"><span class="aw-venue">WACV</span><span class="aw-text"><span class="aw-badge aw-silver">Runner-up</span> USV-based Embedded Obstacle Segmentation Challenge, Maritime Computer Vision Workshop</span></div>
+<div class="aw-row"><span class="aw-venue">CVPR</span><span class="aw-text"><span class="aw-badge aw-bronze">3rd place (3/21)</span> COVID-19 Detection Challenge, Domain Adaptation, Explainability and Fairness in AI for Medical Image Analysis</span></div>
+<div class="aw-row"><span class="aw-venue">CVPR</span><span class="aw-text"><span class="aw-badge aw-place">5th place (5/195)</span> NTIRE 2024 Image Super-Resolution (×4)</span></div>
+<div class="aw-row"><span class="aw-venue">WACV</span><span class="aw-text"><span class="aw-badge aw-place">6th place (6/195)</span> SeaDronesSee Multi-Object Tracking and Re-Identification Challenge, MaCVi Workshop</span></div>
+<div class="aw-row"><span class="aw-venue">CVPR</span><span class="aw-text"><span class="aw-badge aw-place">9th place (9/288)</span> AI City Challenge Track 4: Road Object Detection in Fish-Eye Cameras</span></div>
+<div class="aw-year">2023</div>
+<div class="aw-row"><span class="aw-venue">ICASSP</span><span class="aw-text"><span class="aw-badge aw-gold">Winner (1/18)</span> COV19 Detection Challenge, AI-enabled Medical Image Analysis Workshop</span></div>
+<div class="aw-row"><span class="aw-venue">ICCV</span><span class="aw-text"><span class="aw-badge aw-gold">Jury Prize (1/176)</span> Visual Inductive Priors Workshop on Instance Segmentation Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">SAS Hackathon</span><span class="aw-text"><span class="aw-badge aw-gold">Gold Medal (1/150+)</span></span></div>
+<div class="aw-row"><span class="aw-venue">ACM MM</span><span class="aw-text"><span class="aw-badge aw-award">Top Paper Award (3/700+)</span> Social Media Popularity Prediction Challenge</span></div>
+<div class="aw-row"><span class="aw-venue">MMAsia</span><span class="aw-text"><span class="aw-badge aw-place">5th place (5/195)</span> Embedded AI Object Detection Model Design, PAIR-LITEON Competition</span></div>
 </div>
 
 <a class="back-to-top" href="#about-me" aria-label="Back to top">↑</a>
