@@ -418,6 +418,15 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 .aw-silver{background:#dfe3e8}
 .aw-bronze{background:#ecc2a0}
 .aw-place{background:#f1f3f5;color:#4b5563}
+.aw-more{margin-top:14px}
+.aw-more>summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px;font-size:.92em;font-weight:600;color:#0B3C8A;border:1px solid #cfd9ec;border-radius:999px;padding:5px 14px;user-select:none}
+.aw-more>summary::-webkit-details-marker{display:none}
+.aw-more>summary:hover{background:#eef3fb}
+.aw-more>summary:after{content:"\25BE";font-size:.9em}
+.aw-more[open]>summary:after{content:"\25B4"}
+.aw-more .aw-more-close,.aw-more[open] .aw-more-open,.aw-more[open] .aw-more-n{display:none}
+.aw-more[open] .aw-more-close{display:inline}
+.aw-more-n{font-weight:400;color:#6b7280}
 @media (max-width:640px){.aw-row{grid-template-columns:1fr;gap:4px}}
 </style>
 <div id="awards-list">
@@ -428,6 +437,8 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="aw-row"><span class="aw-venue">ECCV</span><span class="aw-text"><span class="aw-badge aw-place">4th place</span> SEE-600K Challenge: Event-Guided Brightness Adjustment, EBMV Workshop</span></div>
 <div class="aw-row"><span class="aw-venue">ECCV</span><span class="aw-text"><span class="aw-badge aw-silver">2nd place</span> Event-Guided Segmentation Challenge, EBMV Workshop</span></div>
 <div class="aw-row"><span class="aw-venue">IJCAI</span><span class="aw-text"><span class="aw-badge aw-place">4th place</span> DDL2.0 Deepfake Localization Challenge</span></div>
+<details class="aw-more">
+<summary><span class="aw-more-open">Show more</span><span class="aw-more-close">Show less</span> <span class="aw-more-n">(26 awards, 2023–2025)</span></summary>
 <div class="aw-year">2025</div>
 <div class="aw-row"><span class="aw-venue">CVPR</span><span class="aw-text"><span class="aw-badge aw-gold">Winner (1/304)</span> NTIRE Single Image Shadow Removal Challenge</span></div>
 <div class="aw-row"><span class="aw-venue">ICCV</span><span class="aw-text"><span class="aw-badge aw-gold">Winner</span> Multi-source COVID-19 Detection Challenge</span></div>
@@ -457,6 +468,7 @@ In my free time, I enjoy traveling ✈️, capturing moments through photography
 <div class="aw-row"><span class="aw-venue">SAS Hackathon</span><span class="aw-text"><span class="aw-badge aw-gold">Gold Medal (1/150+)</span></span></div>
 <div class="aw-row"><span class="aw-venue">ACM MM</span><span class="aw-text"><span class="aw-badge aw-award">Top Paper Award (3/700+)</span> Social Media Popularity Prediction Challenge</span></div>
 <div class="aw-row"><span class="aw-venue">MMAsia</span><span class="aw-text"><span class="aw-badge aw-place">5th place (5/195)</span> Embedded AI Object Detection Model Design, PAIR-LITEON Competition</span></div>
+</details>
 </div>
 
 <a class="back-to-top" href="#about-me" aria-label="Back to top">↑</a>
